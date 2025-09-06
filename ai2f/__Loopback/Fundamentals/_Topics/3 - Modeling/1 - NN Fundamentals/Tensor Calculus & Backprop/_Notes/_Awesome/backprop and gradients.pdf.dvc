@@ -1,0 +1,5 @@
+outs:
+- md5: c6e527b3e0dac9c975b07698d0a66aa8
+  size: 1043296
+  hash: md5
+  path: backprop and gradients.pdf

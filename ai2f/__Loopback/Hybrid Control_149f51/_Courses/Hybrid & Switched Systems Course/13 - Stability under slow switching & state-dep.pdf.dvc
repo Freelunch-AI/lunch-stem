@@ -1,0 +1,5 @@
+outs:
+- md5: d398322f7647140f03d5fecb30d60cf6
+  size: 260198
+  hash: md5
+  path: 13 - Stability under slow switching & state-dep.pdf

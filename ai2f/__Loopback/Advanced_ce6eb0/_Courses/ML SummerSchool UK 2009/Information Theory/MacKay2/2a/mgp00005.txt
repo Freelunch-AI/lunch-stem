@@ -1,0 +1,13 @@
+
+The binary symmetric channel
+
+
+
+
+Repetition codes
+
+(7,4) Hamming code
+
+
+
+

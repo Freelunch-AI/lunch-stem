@@ -1,0 +1,5 @@
+outs:
+- md5: e777a264ca5c6179789b732efebed4aa
+  size: 128618
+  hash: md5
+  path: 19 - Array-Bounds Checks.pdf

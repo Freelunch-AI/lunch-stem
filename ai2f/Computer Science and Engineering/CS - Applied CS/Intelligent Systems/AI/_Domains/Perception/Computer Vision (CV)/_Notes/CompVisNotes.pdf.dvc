@@ -1,0 +1,5 @@
+outs:
+- md5: 8afa168d1e2f23125267fb41bb3eaa5b
+  size: 7320513
+  hash: md5
+  path: CompVisNotes.pdf

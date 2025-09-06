@@ -1,0 +1,5 @@
+outs:
+- md5: b418a24ce19f1ae380d385a0cda08cba
+  size: 296043
+  hash: md5
+  path: Spectral Learning of HMMs.pdf

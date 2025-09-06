@@ -1,0 +1,5 @@
+outs:
+- md5: 3b6d27d08e1fa16fd3335c8d985c014a
+  size: 208430
+  hash: md5
+  path: lecture12.pdf

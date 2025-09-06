@@ -1,0 +1,5 @@
+outs:
+- md5: 6ece1768ea39c6b1745d65dbd447bdaa
+  size: 2432989
+  hash: md5
+  path: 03-regular-languages-NFA.pdf

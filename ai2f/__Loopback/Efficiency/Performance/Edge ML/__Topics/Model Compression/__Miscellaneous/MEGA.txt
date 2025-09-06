@@ -1,0 +1,7 @@
+https://github.com/BrunoScaglione/awesome-ml-model-compression
+
+https://github.com/BrunoScaglione/EfficientDNNs
+
+https://github.com/BrunoScaglione/Awesome-Pruning
+
+https://github.com/BrunoScaglione/Awesome-Knowledge-Distillation

@@ -1,0 +1,5 @@
+outs:
+- md5: e62ea21c1c5221f639a1b12a4dbedf20
+  size: 1612529
+  hash: md5
+  path: 17_sparse_linnear_solvers.pdf

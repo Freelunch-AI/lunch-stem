@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\ch-02_Slim_MNIST_Example.ipynb_f96ccd

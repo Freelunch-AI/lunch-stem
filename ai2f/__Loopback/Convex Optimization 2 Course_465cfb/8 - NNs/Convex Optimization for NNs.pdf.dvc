@@ -1,0 +1,5 @@
+outs:
+- md5: b55a509fb61f33ee71739f1050aaf3fc
+  size: 5119913
+  hash: md5
+  path: Convex Optimization for NNs.pdf

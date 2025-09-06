@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\wamv_gazebo_thruster_config.xacro_e756ec

@@ -1,0 +1,5 @@
+outs:
+- md5: 2222d82e0e8786af87c29ca323552bae
+  size: 1002017
+  hash: md5
+  path: ssh-keys-in-gitlab.pdf

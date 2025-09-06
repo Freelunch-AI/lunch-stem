@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\ch-11c_TF_Serving_MNIST.ipynb_3a13e2

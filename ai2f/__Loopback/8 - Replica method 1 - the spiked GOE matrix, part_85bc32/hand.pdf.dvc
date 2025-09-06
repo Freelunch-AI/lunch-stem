@@ -1,0 +1,5 @@
+outs:
+- md5: 65609030a1bb5cf1b3adceb4dfe178fa
+  size: 8512499
+  hash: md5
+  path: hand.pdf

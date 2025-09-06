@@ -1,0 +1,3 @@
+https://blog.codingconfessions.com/p/gpu-computing
+https://hazyresearch.stanford.edu/blog/2024-05-12-tk
+https://yosefk.com/blog/simd-simt-smt-parallelism-in-nvidia-gpus.html

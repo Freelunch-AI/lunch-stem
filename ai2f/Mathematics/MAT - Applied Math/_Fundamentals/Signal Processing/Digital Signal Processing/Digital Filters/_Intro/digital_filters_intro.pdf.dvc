@@ -1,0 +1,5 @@
+outs:
+- md5: c28ad70efd78ed5b45bf52e9981b44c3
+  size: 72975
+  hash: md5
+  path: digital_filters_intro.pdf

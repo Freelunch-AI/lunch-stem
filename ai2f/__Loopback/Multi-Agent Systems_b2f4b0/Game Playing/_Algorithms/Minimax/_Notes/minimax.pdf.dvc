@@ -1,0 +1,5 @@
+outs:
+- md5: 4674e7330235570f7f1050b6569eb0b8
+  size: 351000
+  hash: md5
+  path: minimax.pdf

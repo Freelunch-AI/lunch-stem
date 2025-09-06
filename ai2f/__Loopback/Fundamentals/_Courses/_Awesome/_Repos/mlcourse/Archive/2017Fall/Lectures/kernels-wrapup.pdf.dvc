@@ -1,0 +1,5 @@
+outs:
+- md5: ff2f216dd2013950fac4e72a530cb16e
+  size: 353160
+  hash: md5
+  path: kernels-wrapup.pdf

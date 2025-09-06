@@ -1,0 +1,5 @@
+outs:
+- md5: 051bfaff16e87bdd2b6d3af044ffb9c0
+  size: 2808380
+  hash: md5
+  path: nn4nlp-06-condlm.pdf

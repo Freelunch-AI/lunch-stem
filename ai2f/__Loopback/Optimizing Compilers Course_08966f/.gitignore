@@ -1,0 +1,27 @@
+/1 - Intro.pdf
+/10 - Partial Redundancy Elimination.pdf
+/11 - Lazy Code Motion.pdf
+/12 - Region-Based Analysis.pdf
+/13 - Introduction to Static Single Assignment (.pdf
+/14 - SSA-Style Optimizations.pdf
+/15 - Register Allocation.pdf
+/16 - Register Allocation - Coalescing and Spinn.pdf
+/17 - Intro to Instruction Scheduling.pdf
+/18 - List Scheduling & Global Scheduling.pdf
+/19 - List Scheduling.pdf
+/2 - Local Optimizations.pdf
+/20 - Global Scheduling.pdf
+/21 - Software pipelining.pdf
+/22 - Memory Hierarchy Optimizations & Locality .pdf
+/23 - Pointer Analysis.pdf
+/24 - Compiler Algorithms for Prefetching Data.pdf
+/25 - Data Dependence, Parallelization and Local.pdf
+/26 - Intro to Thread-Level Speculation.pdf
+/27 - Compiler Optimizations for Thread-Level Sp.pdf
+/3 - LLVM 1.pdf
+/4 - Intro to data flow analysis.pdf
+/5 - LLVM 2.pdf
+/6 - Foundations of Data flow analysis.pdf
+/7 - More examples of data flow analysis.pdf
+/8 - Loop Invariant computation and code motion.pdf
+/9 - Induction Variables and Strenght reduction.pdf

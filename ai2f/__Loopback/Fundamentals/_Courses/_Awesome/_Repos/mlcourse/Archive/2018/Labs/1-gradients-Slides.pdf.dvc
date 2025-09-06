@@ -1,0 +1,5 @@
+outs:
+- md5: f83f4d6d32bb99f26be78ba8a47c318f
+  size: 2048066
+  hash: md5
+  path: 1-gradients-Slides.pdf

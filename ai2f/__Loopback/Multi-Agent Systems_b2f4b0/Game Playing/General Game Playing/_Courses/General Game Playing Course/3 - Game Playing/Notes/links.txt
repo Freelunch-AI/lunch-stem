@@ -1,0 +1,11 @@
+1 - Game Management
+http://ggp.stanford.edu/chapters/chapter_03.html
+
+2 - Game Playing
+http://ggp.stanford.edu/chapters/chapter_04.html
+
+3 - Small Single-Player Games
+http://ggp.stanford.edu/chapters/chapter_05.html
+
+4 - Small Multiple-Player Games
+http://ggp.stanford.edu/chapters/chapter_06.html

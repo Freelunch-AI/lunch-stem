@@ -1,0 +1,5 @@
+outs:
+- md5: 11861484f354fad4244a0afc4cb611ac
+  size: 25675
+  hash: md5
+  path: mixed.pdf

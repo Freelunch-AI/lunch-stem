@@ -1,0 +1,5 @@
+outs:
+- md5: e43c1051b33f3f4c0479efe6fa33aac0
+  size: 275135
+  hash: md5
+  path: linalg.pdf

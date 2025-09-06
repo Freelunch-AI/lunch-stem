@@ -1,0 +1,5 @@
+outs:
+- md5: e1de9d5b27e00b90e3e05ca07fbfcebb
+  size: 1252720
+  hash: md5
+  path: 17 - Data Parallelism.pdf

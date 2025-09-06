@@ -1,0 +1,2 @@
+https://github.com/msuzen/looper/blob/master/looper.md
+https://github.com/BrunoScaglione/causal-ml

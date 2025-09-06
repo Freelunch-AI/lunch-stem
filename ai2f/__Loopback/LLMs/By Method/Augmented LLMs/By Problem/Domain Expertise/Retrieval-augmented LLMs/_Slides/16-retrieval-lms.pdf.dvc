@@ -1,0 +1,5 @@
+outs:
+- md5: 267e0f3e99cff24e9c10f7a3ed3dcb68
+  size: 3392959
+  hash: md5
+  path: 16-retrieval-lms.pdf

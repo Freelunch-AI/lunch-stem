@@ -1,0 +1,5 @@
+outs:
+- md5: c2b3f4ab53f3d25af469fa715341d8fe
+  size: 9167
+  hash: md5
+  path: regularization-notes.pdf

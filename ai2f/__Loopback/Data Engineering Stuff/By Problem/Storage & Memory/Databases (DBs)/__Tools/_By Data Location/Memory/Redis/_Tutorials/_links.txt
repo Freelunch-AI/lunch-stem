@@ -1,0 +1,2 @@
+https://blog.logrocket.com/guide-to-fully-understanding-redis/
+https://analyticsindiamag.com/a-comprehensive-guide-to-redis-for-data-scientists/

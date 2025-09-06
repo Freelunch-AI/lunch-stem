@@ -1,0 +1,90 @@
+window 1: (general material)
+
+file:///C:/Users/bruno/Desktop/AI/Engineering/ENG%20-%20Robotics/Tools/ROS/overview/a-student-project-using-robotic-operating-system-ros-for-undergraduate-research.pdf
+
+file:///C:/Users/bruno/Desktop/AI/Engineering/ENG%20-%20Robotics/Tools/ROS/material/Miscellaneous/minicurso-ros-vrep.pdf
+
+https://medium.com/analytics-vidhya/getting-started-with-ros-overview-installation-and-ros-computational-graph-model-e94d7a16187f
+
+https://medium.com/swlh/7-simple-steps-to-create-and-build-our-first-ros-package-7e3080d36faa
+
+https://web.fs.uni-lj.si/lakos/rosin/ROS%20Summer%20School/Day%201/ros_intro/
+
+https://wiki.nps.edu/display/ROSSC/ROS+in+Five+Easy+Pieces
+
+https://wiki.ros.org/ROS/Tutorials
+
+http://mediawiki.isr.ist.utl.pt/wiki/Short_course_on_ROS_programming_2020
+
+/////////////////////////////////////////
+
+window 2: (books)
+
+file:///C:/Users/bruno/Desktop/AI/Engineering/ENG%20-%20Robotics/Tools/ROS/books/Book%20-%20A%20Gentle%20Intro%20to%20ROS.pdf
+
+file:///C:/Users/bruno/Desktop/AI/Engineering/ENG%20-%20Robotics/Tools/ROS/books/Book%20-%20Learning%20ROS%20for%20Robotics%20Programming.pdf
+
+file:///C:/Users/bruno/Desktop/AI/Engineering/ENG%20-%20Robotics/Tools/ROS/books/Book%20-%20ROS%20Robotics%20By%20Example%20-%20Carol%20Fair_.pdf
+
+file:///C:/Users/bruno/Desktop/AI/Engineering/ENG%20-%20Robotics/Tools/ROS/books/Book%20-%20ROS_Robot_Programming_EN.pdf
+
+/////////////////////////////////////////
+
+window 3: (guidelines for ros1 developer)
+
+https://wiki.ros.org/DevelopersGuide
+
+/////////////////////////////////////////
+
+window 4: (courses rossetup)
+
+file:///C:/Users/bruno/Desktop/AI/Engineering/ENG%20-%20Robotics/Tools/ROS/material/Zurich%20-%20ROS%20Course/0/0%20-%20Course%20Preparation.pdf
+
+file:///C:/Users/bruno/Desktop/AI/Engineering/ENG%20-%20Robotics/Tools/ROS/courses/ROS%20short%20course%20(Lisboa)/slides/0%20-%20Setup/Pre-workshop%20instructions.pdf
+
+/////////////////////////////////////////
+
+window 5: (video playlist)
+
+The Construct Channel
+https://www.youtube.com/c/TheConstruct/playlists
+
+ROS2 Tutorials
+https://www.youtube.com/playlist?list=PLK0b4e05LnzYNBzqXNm9vFD9YXWp6honJ
+
+ROS2 Learning Week
+https://www.youtube.com/watch?v=LUL_1xh3R4M&list=PLK0b4e05LnzbMKROVmM1IlYb8P9uZ3GlA
+
+Learn to debug ros code
+https://www.youtube.com/playlist?list=PLK0b4e05LnzYrKLETdqVlvEBI9JT3Sbps
+
+////////////////////////////////////////// (outros)
+
+how to create a ROS2 package (py and cpp)
+https://www.youtube.com/watch?v=ARIgQfu7ivE&list=PLK0b4e05LnzbuxWCdip-2Tf-SIiZle5NA&index=24
+
+basic concepts of kalman filters
+https://www.youtube.com/watch?v=xwAPRhxdbfA&list=PLK0b4e05LnzbuxWCdip-2Tf-SIiZle5NA&index=26
+
+localize a robot using gps
+https://www.youtube.com/watch?v=J77kNrfYKoE&list=PLK0b4e05LnzbuxWCdip-2Tf-SIiZle5NA&index=79
+
+how to fuse odometry & imu using robot localization package
+https://www.youtube.com/watch?v=QZ5q59H2qaI&list=PLK0b4e05LnzbuxWCdip-2Tf-SIiZle5NA&index=80
+
+how to create your own controller
+https://www.youtube.com/watch?v=7BLc18lOFJw&list=PLK0b4e05LnzbuxWCdip-2Tf-SIiZle5NA&index=77
+
+ros2 repo of best practices
+https://github.com/BrunoScaglione/ros_best_practices
+
+
+
+
+
+
+
+
+
+
+

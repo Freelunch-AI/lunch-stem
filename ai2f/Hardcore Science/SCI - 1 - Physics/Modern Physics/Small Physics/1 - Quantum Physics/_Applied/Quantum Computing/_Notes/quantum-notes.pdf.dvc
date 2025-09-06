@@ -1,0 +1,5 @@
+outs:
+- md5: 80beefd2001c716b058bd27ebdd8f370
+  size: 277954
+  hash: md5
+  path: quantum-notes.pdf

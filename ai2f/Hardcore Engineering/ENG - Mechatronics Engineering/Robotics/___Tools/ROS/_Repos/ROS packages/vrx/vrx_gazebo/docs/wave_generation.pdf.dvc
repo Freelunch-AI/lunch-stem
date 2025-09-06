@@ -1,0 +1,5 @@
+outs:
+- md5: f7db068ab48be5d2c53b62c51207b377
+  size: 319104
+  hash: md5
+  path: wave_generation.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 0162f2dbeee7313d611258808fe0152f
+  size: 4655356
+  hash: md5
+  path: pg_tutorial.pdf

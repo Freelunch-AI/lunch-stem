@@ -1,0 +1,5 @@
+outs:
+- md5: 3cc70f049ce4d83fd5236f74f1a13c6c
+  size: 386765
+  hash: md5
+  path: L3_bn_semantics_notes.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 9ca18b5d69b38c5a810188a60e5fac03
+  size: 2285647
+  hash: md5
+  path: superresolution.pdf

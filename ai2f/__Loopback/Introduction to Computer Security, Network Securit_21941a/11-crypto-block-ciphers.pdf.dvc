@@ -1,0 +1,5 @@
+outs:
+- md5: 0f03ee976931bad25f024500f6b1cc8b
+  size: 1421807
+  hash: md5
+  path: 11-crypto-block-ciphers.pdf

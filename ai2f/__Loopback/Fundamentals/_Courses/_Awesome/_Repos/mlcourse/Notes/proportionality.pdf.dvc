@@ -1,0 +1,5 @@
+outs:
+- md5: dd1015cddbaf2e9494858c8668a1b7fd
+  size: 221163
+  hash: md5
+  path: proportionality.pdf

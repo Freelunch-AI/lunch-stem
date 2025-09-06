@@ -1,0 +1,2 @@
+Grid Computing when has only 1 entity as compute consumer
+Volunteer Computing when used for research purposes

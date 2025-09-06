@@ -1,0 +1,14 @@
+
+Outline of next lecture
+
+
+
+Information Theory
+
+Source coding (Data compression)
+
+Noisy-channel coding
+the theorem
+state-of-the art error-correcting codes
+
+

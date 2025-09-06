@@ -1,0 +1,5 @@
+outs:
+- md5: 3b42784620e9c2e75c89d3b94045dff7
+  size: 2073365
+  hash: md5
+  path: 14-crypto-public-key.pdf

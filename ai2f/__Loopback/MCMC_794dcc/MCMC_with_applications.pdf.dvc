@@ -1,0 +1,5 @@
+outs:
+- md5: 701f4c190ad2962f54852f1716602cb2
+  size: 9766422
+  hash: md5
+  path: MCMC_with_applications.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 7fc213016a093b6a55e626ba021f6272
+  size: 990677
+  hash: md5
+  path: Apache_Flink_CDC_Slides.pdf

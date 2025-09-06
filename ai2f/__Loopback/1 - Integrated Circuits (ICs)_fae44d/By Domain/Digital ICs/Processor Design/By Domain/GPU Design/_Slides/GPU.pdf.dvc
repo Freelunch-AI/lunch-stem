@@ -1,0 +1,5 @@
+outs:
+- md5: 2f4430e2c00d9bad647e8bf444d2b10d
+  size: 2528527
+  hash: md5
+  path: GPU.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: d910830ea6a4a6edeb86725a0b8f8cec
+  size: 6693245
+  hash: md5
+  path: Lecture_08_Siamese_Triplet_Networks.pdf

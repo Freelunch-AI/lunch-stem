@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\move_base.launch.xml_c0a80f

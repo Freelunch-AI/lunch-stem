@@ -1,0 +1,5 @@
+outs:
+- md5: 2af9cb4ecec5c21207138a31ee669c88
+  size: 1410008
+  hash: md5
+  path: 13.mixture-models.pdf

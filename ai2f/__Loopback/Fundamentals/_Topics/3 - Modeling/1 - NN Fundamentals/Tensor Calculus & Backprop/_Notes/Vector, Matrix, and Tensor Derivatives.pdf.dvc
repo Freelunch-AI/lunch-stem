@@ -1,0 +1,5 @@
+outs:
+- md5: 8c8d074088ede267f024ef91e2240b3b
+  size: 139230
+  hash: md5
+  path: Vector, Matrix, and Tensor Derivatives.pdf

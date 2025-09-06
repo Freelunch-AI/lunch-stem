@@ -1,0 +1,5 @@
+outs:
+- md5: f88c526aca7b6a62e750a1112099ec51
+  size: 5231806
+  hash: md5
+  path: Learning Word Embeddings.pdf

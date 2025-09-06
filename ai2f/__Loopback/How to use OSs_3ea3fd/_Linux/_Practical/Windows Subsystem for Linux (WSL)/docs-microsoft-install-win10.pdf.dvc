@@ -1,0 +1,5 @@
+outs:
+- md5: bfa2ffe6baeda56f95ec1c3ad35788e1
+  size: 1660259
+  hash: md5
+  path: docs-microsoft-install-win10.pdf

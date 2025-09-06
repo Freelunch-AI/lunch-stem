@@ -1,0 +1,5 @@
+outs:
+- md5: 4d1a2074bc8d509109fd73de904dc919
+  size: 48867
+  hash: md5
+  path: calculations-on-bias-variance.pdf

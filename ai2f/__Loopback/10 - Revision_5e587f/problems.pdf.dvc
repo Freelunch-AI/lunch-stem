@@ -1,0 +1,5 @@
+outs:
+- md5: 9981e89558f4a0df5b920de772e0046b
+  size: 81171
+  hash: md5
+  path: problems.pdf

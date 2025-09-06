@@ -1,0 +1,5 @@
+outs:
+- md5: 989d814ae7ea1cf095fc86bdf10a7193
+  size: 3111433
+  hash: md5
+  path: slides.pdf

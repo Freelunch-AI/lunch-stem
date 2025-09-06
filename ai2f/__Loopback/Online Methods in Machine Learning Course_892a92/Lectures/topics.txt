@@ -1,0 +1,67 @@
+Introduction
+	Mind-reading machine. Bit prediction. Cover's result.
+
+
+Online methods for i.i.d. data
+	Stochastic approximation and sample average approximation.
+	Stochastic gradient descent. Sparse updates.
+	Minibatching. Acceleration.
+	Pegasos. SGD for Kernel SVM. Perceptron.
+	Logistic regression. Multiclass learning.
+	Neural nets. Backprop via SGD.
+	Online-to-batch conversion. Bias-variance tradeoff and early stopping.
+
+
+Online methods for dynamic environments
+	Online prediction as an optimization problem.
+	Bit prediction. Dynamic programming. Prediction with side information.
+	Learning in static networks. Laplacian regularization.
+
+
+Probabilistic toolkit
+	Stochastic processes, martingales, maximal inequalities, symmetrization.
+	Sequential complexity measures: random averages, covering numbers, combinatorial parameters.
+	Comparison to the Vapnik-Chervonenkis theory.
+
+
+Optimization toolkit
+	Online convex optimization.
+	Gradient descent, mirror descent, dual averaging, exponential weights.
+
+
+Minimax analysis
+	Learning with absolute loss. Multiclass classification. Online linear optimization.
+
+
+Algorithmic toolkit
+	The general relaxation framework. Approximate dynamic programming.
+	Relaxations for i.i.d. covariates. Transductive learning.
+	Algorithms for online classification and regression.
+	The magic of random playout: general techniques, follow-the-perturbed-leader.
+	Examples: linear classes, kernel methods, static experts, online shortest path.
+	Relaxations for multiclass learning.
+	Approximation algorithms for online relaxations.
+
+
+Learning in evolving networks
+	Online prediction of user attributes; node and link classification.
+	Random playout for evolving graphs.
+	Experiments with social network data.
+
+
+Online collaborative filtering and movie rating prediction.
+
+
+Parital information problems
+	Multi-armed bandits, contextual bandits. Ad placement.
+	Dynamic pricing, partial monitoring.
+
+
+Online regression
+	Minimax analysis, algorithms.
+
+
+Adaptive online learning methods, data-dependent bounds
+
+
+Scoring online competitions: tracking performance of adaptively chosen hypotheses

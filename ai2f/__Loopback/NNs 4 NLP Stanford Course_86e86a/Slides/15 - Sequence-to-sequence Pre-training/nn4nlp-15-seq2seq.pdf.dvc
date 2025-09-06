@@ -1,0 +1,5 @@
+outs:
+- md5: 1906e531dc583317e632da3b6fae30d0
+  size: 2224263
+  hash: md5
+  path: nn4nlp-15-seq2seq.pdf

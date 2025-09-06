@@ -1,0 +1,4 @@
+https://www.freecodecamp.org/news/payment-request-api-javascript/#:~:text=The%20Payment%20Request%20API%20provides,the%20browser%20and%20the%20website.
+https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API
+https://betterprogramming.pub/what-is-the-native-payments-request-api-905c60a996e8
+https://web.dev/how-payment-request-api-works/

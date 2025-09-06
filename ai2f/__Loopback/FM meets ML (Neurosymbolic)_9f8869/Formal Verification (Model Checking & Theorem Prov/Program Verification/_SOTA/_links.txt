@@ -1,0 +1,1 @@
+https://cs.stackexchange.com/questions/127509/a-general-picture-of-formal-verification-in-software

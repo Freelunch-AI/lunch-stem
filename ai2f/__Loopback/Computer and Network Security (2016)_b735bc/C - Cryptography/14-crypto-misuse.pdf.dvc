@@ -1,0 +1,5 @@
+outs:
+- md5: 9f5f5ae9fec7409c0c06d64276f43470
+  size: 2917848
+  hash: md5
+  path: 14-crypto-misuse.pdf

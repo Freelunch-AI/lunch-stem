@@ -1,0 +1,5 @@
+outs:
+- md5: 3248bbe4d7b3a77d72066015c774a725
+  size: 456419
+  hash: md5
+  path: hw4.pdf

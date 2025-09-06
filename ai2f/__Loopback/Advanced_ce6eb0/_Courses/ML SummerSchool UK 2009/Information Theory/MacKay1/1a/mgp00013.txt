@@ -1,0 +1,14 @@
+
+The weighing problem
+
+
+
+You are given 12 balls, all equal in weight except for one that is either heavier or lighter.
+Design a strategy to determine
+         which is the odd ball
+  and whether it is heavier or lighter,
+ in as few uses of the balance as possible.
+
+
+
+

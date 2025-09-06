@@ -1,0 +1,5 @@
+outs:
+- md5: d097d0aa4c9033bcabd8fd0c325d7d31
+  size: 301556
+  hash: md5
+  path: subgrad_method.pdf

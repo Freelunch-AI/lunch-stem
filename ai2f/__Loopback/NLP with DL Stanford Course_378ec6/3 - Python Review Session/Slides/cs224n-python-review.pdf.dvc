@@ -1,0 +1,5 @@
+outs:
+- md5: 47507dfed6c329bf0324f90278c8b981
+  size: 192663
+  hash: md5
+  path: cs224n-python-review.pdf

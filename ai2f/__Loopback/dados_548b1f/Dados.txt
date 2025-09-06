@@ -1,0 +1,45 @@
+indicacoes do site do eeglab:
+https://eeglab.org/tutorials/tutorial_data.html
+
+bnci horizon (bci eeg)
+http://bnci-horizon-2020.eu/database/data-sets
+
+fabienlotte (bci eeg)
+https://sites.google.com/site/fabienlotte/bci-community/links?authuser=0#h.p_ID_172
+
+Google Dataset search
+https://datasetsearch.research.google.com/search?query=eeg&docid=GP7wgKSqyJ%2Fwt6T6AAAAAA%3D%3D
+
+BNCI
+http://bnci-horizon-2020.eu/database/data-sets
+
+Temple University Hospital (largest dataset)
+https://www.frontiersin.org/articles/10.3389/fnins.2016.00196/full
+https://www.isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml
+
+kaggle:
+
+https://www.kaggle.com/c/seizure-prediction
+https://www.kaggle.com/c/seizure-detection
+https://www.kaggle.com/c/grasp-and-lift-eeg-detection
+
+Que o cara do eeglab usou:
+
+nature.com/articles/sdata20151
+openneuro.org/datasets/ds002718
+
+Que o cara do curso de neural signal processing recomendou:
+
+data.donders.ru.nl
+crcns.org
+academic.oup.com/gigascience
+predict.cs.unm.edu
+openneuro.org
+humanconnectomeproject.org/data
+
+OpenNeuro eh o lugar com mais neroimaging data
+NEMAR ehuma extensao do OpenNeuro pra comunidade eeg
+
+https://www.ieeg.org/
+
+

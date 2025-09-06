@@ -1,0 +1,5 @@
+outs:
+- md5: 2d120b31c6d87f4b84f05f933e1be812
+  size: 3259034
+  hash: md5
+  path: csc2535-textModels.pdf

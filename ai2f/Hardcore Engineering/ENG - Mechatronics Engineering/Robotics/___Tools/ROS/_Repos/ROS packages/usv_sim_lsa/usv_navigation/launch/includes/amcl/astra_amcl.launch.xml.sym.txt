@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\astra_amcl.launch.xml_f44bf5

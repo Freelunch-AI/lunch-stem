@@ -1,0 +1,5 @@
+outs:
+- md5: 77ed7019f50d0391b688cddb237c9d49
+  size: 328767
+  hash: md5
+  path: lecture03-superscalars.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 68907b76d2451b6d948fdbf33e462722
+  size: 164532
+  hash: md5
+  path: logistic-regression-moment-matching.pdf

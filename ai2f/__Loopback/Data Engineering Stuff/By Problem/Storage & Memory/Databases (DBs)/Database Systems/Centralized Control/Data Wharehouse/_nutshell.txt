@@ -1,0 +1,1 @@
+Structured data, auto-scaled distributed db, that focuses on trasactional speed (queries & storage requests), with additional communication & security capababilites out-of-the-box

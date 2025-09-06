@@ -1,0 +1,27 @@
+/1 - Overview.pdf
+/10 -  Syntax Analysis - LR(0), SLR.pdf
+/11 - Syntax Analysis - SLR, LALR.pdf
+/12 - Syntax - LALR, Semantic Analysis - Intro.pdf
+/13 - Semantic Analysis - Syntax Directed Trans..pdf
+/14 - Semantic Analysis - Syntax Directed Trans..pdf
+/15 - Semantic Analysis - SDT (3), Symbol Table.pdf
+/16 - Semantic Analysis - Symbol Table, Type Che.pdf
+/17 - A Brief Introduction to GCC and LLVM.pdf
+/18 - What happens after compiling.pdf
+/19 - Intermediate Code - IR.pdf
+/2 - Lexical Analysis - Intro, RegEx.pdf
+/20 - Intermediate Code - Generation.pdf
+/21 - IR Gen, Runtime Management.pdf
+/22 - Runtime, Target Code.pdf
+/23 - Target Code Generation.pdf
+/24 -  Code Optimization (1).pdf
+/25 - Code Optimization (2).pdf
+/26 - The Golden Age of Compilers - Era of HW_SW.pdf
+/27 - Securing Smart Contract with Runtime Valid.pdf
+/3 - Lexical Analysis - NFA, DFA (1).pdf
+/4 -  Lexical Analysis - NFA, DFA (2).pdf
+/5 - Syntax Analysis - Intro, CFG.pdf
+/6 - Syntax Analysis - CFG, Top-down (1).pdf
+/7 - Syntax Analysis - Top-down (2).pdf
+/8 - Syntax Analysis - Bottom-up.pdf
+/9 - Syntax Analysis - LR(0).pdf

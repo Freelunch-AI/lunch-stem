@@ -1,0 +1,5 @@
+outs:
+- md5: c9cbdfafaa5223f2a0edfc72326b7fb3
+  size: 4642359
+  hash: md5
+  path: retrieval4lm.pdf

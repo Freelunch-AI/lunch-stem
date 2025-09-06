@@ -1,0 +1,5 @@
+outs:
+- md5: 7a86606d1c0e899b07dea5c3e8e5d6d5
+  size: 148651
+  hash: md5
+  path: lecture07-memory-consistency.pdf

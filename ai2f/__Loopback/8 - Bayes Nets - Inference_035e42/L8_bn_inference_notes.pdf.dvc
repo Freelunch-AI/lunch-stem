@@ -1,0 +1,5 @@
+outs:
+- md5: a73da37ea523a178ecd8e054f40127cc
+  size: 290586
+  hash: md5
+  path: L8_bn_inference_notes.pdf

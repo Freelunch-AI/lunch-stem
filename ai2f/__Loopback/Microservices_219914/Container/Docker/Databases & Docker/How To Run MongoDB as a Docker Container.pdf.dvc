@@ -1,0 +1,5 @@
+outs:
+- md5: 23e44be0dd146f3f3550ed09146071dd
+  size: 3423992
+  hash: md5
+  path: How To Run MongoDB as a Docker Container.pdf

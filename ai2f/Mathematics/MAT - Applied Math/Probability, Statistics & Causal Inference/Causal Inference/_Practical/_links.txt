@@ -1,0 +1,2 @@
+https://github.com/BrunoScaglione/causalML-2
+https://github.com/kyunghyuncho/2024-causal-inference-machine-learning

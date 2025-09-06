@@ -1,0 +1,5 @@
+outs:
+- md5: 13a976119b3de2d2bfd0d52dcfdbad9d
+  size: 3002819
+  hash: md5
+  path: blog-illustrated-word2vec.pdf

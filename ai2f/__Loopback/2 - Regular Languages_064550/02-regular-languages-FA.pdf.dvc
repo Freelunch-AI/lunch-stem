@@ -1,0 +1,5 @@
+outs:
+- md5: 504b056c30cd3c6b8f59d9e7447c1d30
+  size: 817132
+  hash: md5
+  path: 02-regular-languages-FA.pdf

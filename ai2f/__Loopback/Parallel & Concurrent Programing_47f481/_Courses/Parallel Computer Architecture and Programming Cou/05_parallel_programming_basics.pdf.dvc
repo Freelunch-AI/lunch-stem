@@ -1,0 +1,5 @@
+outs:
+- md5: e5d3e17994e2823b8729d214b693719e
+  size: 1796883
+  hash: md5
+  path: 05_parallel_programming_basics.pdf

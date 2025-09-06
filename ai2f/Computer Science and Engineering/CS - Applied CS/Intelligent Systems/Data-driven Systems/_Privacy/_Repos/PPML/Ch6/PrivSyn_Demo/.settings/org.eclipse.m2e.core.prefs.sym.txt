@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\org.eclipse.m2e.core.prefs_ad9d7b

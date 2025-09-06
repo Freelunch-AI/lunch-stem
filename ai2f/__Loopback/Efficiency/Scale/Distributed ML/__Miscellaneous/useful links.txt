@@ -1,0 +1,16 @@
+github repo: compilation of resources
+
+https://github.com/BrunoScaglione/Awesome-Distributed-Deep-Learning
+
+------------------------------------------------------------------------------
+
+Bulding ML Models on Apache Spark
+
+https://databricks.com/session/building-machine-learning-algorithms-on-apache-spark
+
+------------------------------------------------------------------------------
+
+3 Methods for Parallelization in Spark
+
+https://towardsdatascience.com/3-methods-for-parallelization-in-spark-6a1a4333b473
+

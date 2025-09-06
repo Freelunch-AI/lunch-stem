@@ -1,0 +1,5 @@
+outs:
+- md5: f9099968f0e1adb378e2a2bcd842a7c9
+  size: 400448
+  hash: md5
+  path: notes-backpropagation.pdf

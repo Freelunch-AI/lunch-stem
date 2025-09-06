@@ -1,0 +1,5 @@
+outs:
+- md5: 60d6d32a95c2bc7997079a9d47e7ff7c
+  size: 126229
+  hash: md5
+  path: multiclass-review-ranking.pdf

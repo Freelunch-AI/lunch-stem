@@ -1,0 +1,8 @@
+https://github.com/mlabonne/llm-course
+https://github.com/AI-Maker-Space/LLM-Ops-Cohort-1
+https://github.com/mosharaf/eecs598/tree/w24-genai
+https://github.com/BrunoScaglione/learning-llms-and-genai-for-dev-sec-ops
+https://github.com/iusztinpaul/hands-on-llms
+https://github.com/BrunoScaglione/llm-twin-course
+https://github.com/dstampfli/aie4
+https://github.com/anthropics/courses

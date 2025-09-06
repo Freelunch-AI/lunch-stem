@@ -1,0 +1,5 @@
+outs:
+- md5: 176c51d2efe61b721e6c0f6069034e4f
+  size: 1412101
+  hash: md5
+  path: OpenGLTutorial.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 3db36cfa7cd5f2d3c27d186e68685c01
+  size: 231615
+  hash: md5
+  path: Gradient Descent.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: a91ec51e1de9b832bb7f4b2637095dfb
+  size: 809985
+  hash: md5
+  path: 13.kmeans.pdf

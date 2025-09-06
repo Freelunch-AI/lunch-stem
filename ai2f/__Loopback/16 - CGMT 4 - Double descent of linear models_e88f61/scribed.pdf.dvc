@@ -1,0 +1,5 @@
+outs:
+- md5: 3e0eb13e1f99347b77c45e84b7b3ba78
+  size: 243485
+  hash: md5
+  path: scribed.pdf

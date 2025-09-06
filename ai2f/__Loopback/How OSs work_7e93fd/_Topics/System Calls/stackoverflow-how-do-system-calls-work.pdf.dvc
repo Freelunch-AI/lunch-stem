@@ -1,0 +1,5 @@
+outs:
+- md5: 377abf6f458a43da93744f50f4c535f1
+  size: 358825
+  hash: md5
+  path: stackoverflow-how-do-system-calls-work.pdf

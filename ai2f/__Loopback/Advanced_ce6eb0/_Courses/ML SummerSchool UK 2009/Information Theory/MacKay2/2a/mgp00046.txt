@@ -1,0 +1,7 @@
+
+
+Decoding by the sum-product algorithm
+
+
+ loopy belief propagation       Gallager 1962   
+

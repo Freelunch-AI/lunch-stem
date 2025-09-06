@@ -1,0 +1,5 @@
+outs:
+- md5: ab787b1ce3a23571932055bcb7629568
+  size: 835290
+  hash: md5
+  path: 04-mvcc2.pdf

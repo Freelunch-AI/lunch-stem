@@ -1,0 +1,22 @@
+/01_whyparallelism.pdf
+/03_a_modern_multicore-processor.pdf
+/05_parallel_programming_basics.pdf
+/07_gpu_arch_&_CUDA_programming.pdf
+/08_1_GPU_programming_with_CUDA.pdf
+/09_case_studies.pdf
+/10_performance_evaluation.pdf
+/11_1_OpenMP_programming.pdf
+/11_snooping_cache_coherence.pdf
+/13_directory_cache_coherence.pdf
+/14_performance_monitoring_tools.pdf
+/15_memory_consistency_models.pdf
+/16_interconnection_networks.pdf
+/17_implementing_synchronization.pdf
+/18_1_MPI_programming.pdf
+/19_transactional_memory.pdf
+/22_domain_specific_systems.pdf
+/23_domain_specific_on_graphs.pdf
+/24_parallel_DNNs.pdf
+/Lecture 1 \[Intro and Basics\].pdf
+/Lecture 4 \[Main Memory. DRAM\].pdf
+/Lecture 5 \[Advanced Memory\].pdf

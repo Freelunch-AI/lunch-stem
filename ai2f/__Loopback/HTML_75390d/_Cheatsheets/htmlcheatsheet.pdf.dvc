@@ -1,0 +1,5 @@
+outs:
+- md5: 905e90ea9312a2543ab9873c41ec5dff
+  size: 250205
+  hash: md5
+  path: htmlcheatsheet.pdf

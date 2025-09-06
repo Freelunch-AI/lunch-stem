@@ -1,0 +1,5 @@
+outs:
+- md5: 2865c87551c5bf43aca25e0e89df0768
+  size: 3872726
+  hash: md5
+  path: BagOfWords.pdf

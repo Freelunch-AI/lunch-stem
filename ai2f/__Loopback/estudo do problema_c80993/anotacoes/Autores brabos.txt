@@ -1,0 +1,5 @@
+Arnaud Delorme -> eeglab
+
+Mike X Cohen -> neural signal processing course
+
+Denis Brunet -> cartool

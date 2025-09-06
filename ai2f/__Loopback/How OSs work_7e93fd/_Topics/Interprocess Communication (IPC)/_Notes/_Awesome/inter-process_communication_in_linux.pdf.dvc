@@ -1,0 +1,5 @@
+outs:
+- md5: 2ce7905f640638a8c0aed63cb4d0a7a1
+  size: 629614
+  hash: md5
+  path: inter-process_communication_in_linux.pdf

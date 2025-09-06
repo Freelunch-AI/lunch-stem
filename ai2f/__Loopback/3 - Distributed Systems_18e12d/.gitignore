@@ -1,0 +1,5 @@
+/2 - When replication fails us, Atomicity via sh.pdf
+/3 - Atomicity via Write-ahead logging.pdf
+/4 - Isolation - Conflict serializability, confl.pdf
+/5 - Distributed transactions, multi-site atomic.pdf
+/6 - Distributed transactions - Availability, Re.pdf

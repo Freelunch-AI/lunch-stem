@@ -1,0 +1,5 @@
+outs:
+- md5: 854cf0b68f6d8d74041de762dc1564ed
+  size: 555136
+  hash: md5
+  path: 3a.loss-functions.pdf

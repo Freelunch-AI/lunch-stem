@@ -1,0 +1,2 @@
+https://github.com/google/jax
+https://towardsdatascience.com/getting-started-with-jax-mlps-cnns-rnns-d0bc389bd683

@@ -1,0 +1,5 @@
+outs:
+- md5: a4f6f7b15f810f196f59fc90196a34cf
+  size: 3090504
+  hash: md5
+  path: 24_parallel_DNNs.pdf

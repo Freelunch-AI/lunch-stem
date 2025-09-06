@@ -1,0 +1,5 @@
+outs:
+- md5: d05993d512c370665ca87c000d17d2b2
+  size: 21094190
+  hash: md5
+  path: SparkInternals_All.pdf

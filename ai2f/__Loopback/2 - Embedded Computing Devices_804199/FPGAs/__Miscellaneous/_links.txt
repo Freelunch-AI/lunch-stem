@@ -1,0 +1,1 @@
+https://www.embedded.com/developing-processor-compatible-c-code-for-fpga-hardware-acceleration/

@@ -1,0 +1,6 @@
+ROS package structure
+Integration and programming with Eclipse
+ROS C++ client library (roscpp)
+ROS subscribers and publishers
+ROS parameter server
+RViz visualization

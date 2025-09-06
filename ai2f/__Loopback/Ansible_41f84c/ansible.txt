@@ -1,0 +1,17 @@
+For target machines running Unix/Linux, a control machine:
+
+opens an SSH session to the target node, performs basic preparations (e.g. creates temporary directories);
+
+creates customised scripts (mostly Python) and transfers them using SFTP (default) or SCP (configurable) to the target;
+
+finally it executes the scripts on the target host.
+
+The process is repeated for each single task on each single host (Ansible can also be optimised to leave an open SSH session for multiple tasks).
+
+In Ansible, basic units of work are coded in modules and specified in (called from) tasks.
+
+For most modules the logic is written in Python. Whether a specific module uses external programs or not, the actions to be performed are wrapped in Python scripts.
+
+One exception to the above is the raw module which executes the specific command directly in SSH session.
+
+Another special case is the synchronize module which is executed on the control machine and uses rsync to transfer files.

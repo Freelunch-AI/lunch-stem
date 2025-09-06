@@ -1,0 +1,5 @@
+outs:
+- md5: 109a244330ed73a10b654e4d04901b02
+  size: 152832
+  hash: md5
+  path: week14.pdf

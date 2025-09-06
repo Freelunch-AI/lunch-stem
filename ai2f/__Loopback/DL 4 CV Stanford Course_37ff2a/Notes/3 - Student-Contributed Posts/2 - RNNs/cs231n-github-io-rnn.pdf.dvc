@@ -1,0 +1,5 @@
+outs:
+- md5: a2e3cdc1022adedd07a78fb57e17f7be
+  size: 1419271
+  hash: md5
+  path: cs231n-github-io-rnn.pdf

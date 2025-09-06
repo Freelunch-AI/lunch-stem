@@ -1,0 +1,37 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Eric P. Xing",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Joshua Uyheng",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Geyang Zhang",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Mike Chen",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Wenyu Huang",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Niles Christensen",
+      "university": "Carnegie Mellon University"
+    }
+  ],
+  "university_course_name": "10-708: Probabilistic Graphical Models",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 6,
+  "size_mb": 0.43,
+  "link_to_license": null,
+  "changes_were_made": false
+}

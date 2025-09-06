@@ -1,0 +1,5 @@
+outs:
+- md5: 94d9e6ed1b6fc5e22442cf078965d2aa
+  size: 91594
+  hash: md5
+  path: 15-concurrencycontrol.pdf

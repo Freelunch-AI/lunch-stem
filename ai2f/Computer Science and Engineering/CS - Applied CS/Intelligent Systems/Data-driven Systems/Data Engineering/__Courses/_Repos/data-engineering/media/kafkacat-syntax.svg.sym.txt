@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\kafkacat-syntax.svg_69b357

@@ -1,0 +1,5 @@
+outs:
+- md5: 0543cd9345078772816782c1ace7ec5e
+  size: 198614
+  hash: md5
+  path: limit-cycles-examples.pdf

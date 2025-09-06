@@ -1,0 +1,5 @@
+outs:
+- md5: 41f264445f0d368f006d0733006c4955
+  size: 2475376
+  hash: md5
+  path: 04-generators-recognizers.pdf

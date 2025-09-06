@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\Greetings.egg-info_1a0542

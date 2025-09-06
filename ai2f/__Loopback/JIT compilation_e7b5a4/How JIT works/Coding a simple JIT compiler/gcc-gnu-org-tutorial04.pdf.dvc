@@ -1,0 +1,5 @@
+outs:
+- md5: 106bbc86befa803a513f38a4072f1258
+  size: 294157
+  hash: md5
+  path: gcc-gnu-org-tutorial04.pdf

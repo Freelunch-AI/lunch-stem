@@ -1,0 +1,354 @@
+------------------
+
+title: Clinical Application of Raw and Processed EEG
+*focus on Anesthetics*
+
+
+url: file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/Clinical%20Application%20of%20raw%20and%20preprocessed%20eeg.pdf
+
+notes:
+
+#Key Learning Points
+
+• Raw EEG waveforms and spectrogram patterns help characterize the neurophysiologic
+properties of various anesthetics.
+• Processed EEG monitoring has not been
+shown to reduce the risk of awareness with
+explicit recall (AWR) compared to end-tidal
+anesthetic concentration (ETAC) monitoring
+protocols.
+• EEG-guided titration of anesthetic depth may
+help to minimize the risk of cognitive dysfunction after surgery though multicenter trials are needed to confirm preliminary
+findings.
+• Various EEG markers are indicative of cerebral ischemia, and they tend to demonstrate
+frequency slowing, decreased power and variability of faster frequencies, and increased
+regional asymmetry.
+
+#EEG Data Acquisition
+and Interpretation
+
+##Raw EEG
+
+EEG now has diagnostic and prognostic
+value for various neurologic conditions, such as
+epilepsy [3], stroke [4], traumatic brain injury
+[5], and brain death [6]
+
+The clinical application of EEG has been
+largely confined to the field of neurology, but
+there is growing interest in the use of EEG for 
+194
+brain monitoring during anesthesia [8].
+
+Targeted brain monitoring during anesthesia and
+surgery may improve neurologic outcomes by
+reducing the risk of intraoperative awareness
+with explicit recall (AWR) and by enhancing
+postoperative cognitive recovery. Further
+research is needed to identify reliable EEG
+markers that reflect level of consciousness and to
+explore the ability of EEG to improve such perioperative neurologic outcomes. This approach
+must begin, however, with a basic understanding
+of the neurophysiologic effects of various anesthetics as reflected by the EEG. Thus, in this
+chapter, we will review the anesthetic effects on
+both raw and processed EEG data and then discuss the clinical utility of EEG for surgical
+patients.
+
+#Anesthetics
+
+. As we will see
+below, each anesthetic is associated with a specific pattern in both the raw EEG and corresponding spectrogram
+
+propofol: At depths consistent with general anesthesia,
+propofol predominantly displays alpha, delta,
+and slow oscillations on the raw EEG (Fig. 11.3a).
+On the corresponding spectrogram, high power is
+demonstrated in these corresponding frequency
+bandwidths (Fig. 11.3b)
+
+Ether-based volatile
+anesthetics : demonstrate a similar pattern on the raw
+EEG, which is characterized by alpha, theta,
+delta, and slow oscillations (Fig. 11.3a). On the
+spectrogram, high power is demonstrated in these
+bandwidths, often with more theta power compared to the propofol spectrogram
+
+Halogenated ethers and propofol: share similar
+neurophysiologic traits with non-rapid eye movement (NREM) sleep.
+For example, coherent
+oscillatory spindle activity is present with both
+propofol sedation and NREM sleep, which is
+believed to reflect a breakdown of thalamocortical processing [11–13]
+wave oscillations are also noted during both sleep
+and propofol anesthesia, which may represent
+fragmented cortical connectivity
+
+ketamine: Uniquely, ketamine anesthesia is associated
+with increased beta and gamma oscillatory activity on the raw EEG (Fig. 11.3a). This stands in
+contrast with the lower frequency patterns of propofol and ether-based volatile agents
+general anesthesia with ketamine, increased
+power is noted in the gamma range, particularly
+near 30 Hz (Fig. 11.3b).
+
+desmedetomidine: Lastly, dexmedetomidine induces characteristic EEG changes that
+vary depending on the depth of sedation. For
+example, during periods of light sedation,
+increased power is noted in the low-beta range on
+the spectrogram (Fig. 11.4a), which likely reflects
+the presence of spindle patterns on the raw EEG
+also similar to those observed during NREM
+sleep (Fig. 11.4b).
+With deeper levels of
+dexmedetomidine sedation, increased power is
+noted in the slow-delta bandwidths (Fig. 11.4c),
+and slow-delta oscillations are noted on the corresponding raw EEG (Fig. 11.4d). This presents a
+similar pattern to that observed with propofol and
+ether-based volatile agents but without the alpha
+oscillation (see Fig. 11.3)
+
+Though these EEG patterns reflect neurophysiologic differences among anesthetic classes,
+they do not necessarily provide insights into the
+mechanisms behind anesthetic-induced loss of
+consciousness
+
+Despite these molecular and neurophysiologic differences, all three drug classes
+have the ability to consistently induce loss of
+consciousness
+
+Specifically, loss of consciousness with
+propofol, sevoflurane, and ketamine is correlated
+with reduced EEG measures of frontal-to-parietal
+directed connectivity [17–19], which is believed
+to be a surrogate of information transfer involved
+in conscious experience
+
+In this context, processed EEG refers to the acquisition,
+integration, analysis, and conversion of raw
+EEG data—by a proprietary multivariable
+algorithm—to a dimensionless number meant to
+reflect anesthetic depth 
+
+#Clinical Utility of Raw
+and Processed EEG
+
+Comparative trials have
+not demonstrated a reduced risk of AWR with
+processed EEG monitoring compared to endtidal anesthetic concentration (ETAC) monitoring protocols [23, 24], but processed EEG
+monitoring does reduce the incidence of AWR
+compared to routine care and monitoring
+
+Furthermore, this may be particularly helpful during total intravenous anesthesia (TIVA),
+where ETAC monitoring is not available, and the
+risk of awareness may be increased [26].
+
+There
+are several reasons why processed EEG might
+not be effective in reducing AWR beyond simple
+ETAC monitoring. For example, anesthetists in
+these studies used the processed EEG value,
+rather than raw EEG data interpretation, to gauge
+anesthetic depth. As such, assessment of anesthetic depth came from a processed algorithm,
+rather than from direct neurophysiologic assessment. This approach may be problematic, as
+index values do not take into account the different neurophysiologic properties of various anesthetics. For example, ketamine and nitrous oxide
+lead to an increased EEG oscillation frequency
+[27, 28], which may in turn render a higher processed EEG value.
+
+
+anotacoa  minha: acho q oq ele quer dizer por isso eh  que o remedio faz outras coisas noc erebro (que depedem da sua composicao)
+mas q nao aprecem no eeg -> hmm n sei
+
+Although certain EEG-based
+markers such as frontal-parietal disconnection
+[19, 29] and disruption of thalamocortical connectivity [12, 30] provide insights into causally
+sufficient mechanisms to induce unconsciousness, the neuroscientific framework that defines
+consciousness remains incompletely understood
+
+Thus, attempts to distill a patient’s level of consciousness to a single number are not yet rooted
+in complete scientific understanding
+
+# to avoid burst supression
+EEG may also be useful for appropriately titrating
+anesthetic depth. For example, EEG allows practitioners to detect burst suppression, a pattern of
+electrical bursts interspersed with electrical silence
+(Fig. 11.5). This pattern represents a profound
+depth of general anesthesia that is not observed
+during sleep. Longer periods of intraoperative and
+postoperative burst suppression have correlated
+with postoperative delirium [31, 32], and a recent
+meta-analysis of prospective trials has demonstrated a reduced risk of postoperative delirium
+with BIS-guided protocols [33].
+
+# to achieve burst supression
+Alternatively,
+titrating anesthetic depth to achieve burst suppression can be useful in certain circumstances,
+such as cerebral aneurysm clipping, where burst
+suppression may reduce the risk of ischemic
+injury by reducing cerebral metabolism [34].
+
+Thus, EEG-titrated anesthetic depth may be useful
+in certain clinical scenarios, which would be valuable to anesthesiologists for improving perioperative neurologic outcomes.
+
+*Lastly, both raw continuous (cEEG) and quantitative EEG (qEEG) findings may be useful for
+the detection of cerebral ischemia in high-risk
+settings*. 
+
+Cortical voltage oscillations begin to
+decrease in frequency once cerebral blood flow
+(CBF) decreases below specific ischemic thresholds [35, 36]. This slowing results from ischemic
+damage to neurons, which have high oxygen and
+glucose requirements to maintain electrochemical gradients across cellular membranes [37].
+Frequency slowing is manifested by specific
+EEG patterns. 
+
+Intraoperativel: for example,
+asymmetric oscillatory slowing has been demonstrated during carotid endarterectomy (CEA),
+marked particularly by irregular delta waveforms
+[35, 38] (Fig. 11.6).  Also during CEA, spectral
+edge frequencies and relative delta band power
+are qEEG markers that have helped objectively
+identify ischemia during carotid clamping [39]
+
+Postoperatively: both cEEG and qEEG have been
+shown to successfully predict cerebral ischemia
+in certain pathologic settings. For example, certain features of cEEG and qEEG predict cerebral
+ischemia from vasospasm after subarachnoid
+hemorrhage. For cEEG, pathologic delta patterns
+[40] and regional attenuation of faster frequencies—especially without delta waves present—
+can help acutely diagnose cerebral ischemia [41].
+Reduced total power [42] and decreased relative
+alpha frequency variability [43] are qEEG markers that have demonstrated utility predicting
+cerebral ischemia due to vasospasm. These quantitative markers of the EEG may be particularly
+useful, as they are easier to interpret and do not
+require continuous EEG surveillance and expertise to interpret the data
+
+#Future Directions of EEG
+Monitoring
+
+#problems with anaethic depth measures
+Although significant progress has been made
+since the first suggestion in 1937 that EEG may
+be used as an intraoperative monitoring modality
+[44], the current approach to assessing anesthetic
+depth is still fairly rudimentary. First, it is important to note that the most commonly used metrics
+of anesthetic depth—hemodynamics and MAC—
+are flawed. In the case of hemodynamics, there is
+no consistent relationship between hypertension
+and insufficient anesthetic depth or, perhaps more
+importantly, hypotension and supratherapeutic
+anesthetic depth. There are numerous determinants of blood pressure and heart rate (e.g., hypovolemia) that are independent of anesthetic
+dosing or neural activity. In support of this,
+numerous cases of intraoperative awareness have
+been identified in the absence of frank hemodynamic changes [45]. In the case of MAC, we
+have known since the 1990s that the functional
+endpoint of MAC—movement—is suppressed
+primarily through anesthetic effects on the spinal
+cord [46–48]. Thus, MAC is not intrinsically
+linked to the anesthetic effects on the brain
+
+In order to advance the field, we need a more
+sophisticated knowledge of either anesthetic
+mechanisms in the brain or the neurobiology of
+consciousness (or both)
+
+There are various surrogates for connectivity and communication that can be assessed
+with EEG. Techniques to assess functional connectivity (statistical interdependence between
+two brain areas) include coherence and phase
+synchronization. Techniques to assess
+directed connectivity (a statistical interdependence that unfolds over time) 
+include transfer entropy and Granger causality. Techniques
+to assess effective connectivity (the identification
+of a causal influence of one brain region on
+another) include dynamic causal modeling
+
+Although a complicated
+literature, it has been generally found that longrange functional connections and surrogates of
+communication are broken down during general
+anesthesia, which presumably reflects the interrupted information synthesis that leads to the
+breakdown of consciousness. This has been
+found consistently across all major classes of
+anesthetics [19]
+
+Furthermore, we must
+recognize that all of these techniques aim to monitor the sedative-hypnotic effects of general anesthetics. The potent and clinically important
+amnesic effects are mediated by structures in the
+medial temporal lobe and may be less amenable
+to monitoring.
+
+#Case Presentation
+
+A 62-year-old man with a pertinent past medical
+history significant for a right anterior cerebral
+artery aneurysm presented to the operating room
+for aneurysm clipping
+
+Intraoperative EEG and
+somatosensory-evoked potential (SSEP) monitoring were planned to monitor for ischemia during the procedure. Shortly after anesthetic
+induction, neuromonitoring electrodes were
+placed for EEG and SSEP signal acquisition, and
+baseline data were obtained.
+
+A balanced technique was employed for maintenance of anesthesia, which included propofol and sufentanil
+infusions with 0.5 minimum alveolar concentration (MAC) of isoflurane
+
+Shortly after this maintenance regimen was initiated, the following
+pattern was noted in the EEG (Fig. 11.7). Upon
+detection of burst suppression, the propofol infusion dose was decreased, and the pattern returned
+to slow-wave oscillations. The EEG was used to
+titrate the anesthetic depth for the rest of the case,
+and burst suppression was in fact requested prior
+to aneurysm clipping for ischemic neuroprotection
+
+The aneurysm was successfully clipped, and
+the rest of the case proceeded uneventfully.
+
+
+
+
+#Conclusion
+
+EEG can serve as a valuable tool for surgical
+patients in a variety of clinical settings. Although
+processed EEG monitors do not reduce the incidence of AWR compared with ETAC monitoring
+protocols, this may be due to an incomplete understanding of EEG markers that reflect the loss of
+consciousness. Although promising findings are
+currently being evaluated [17, 54], a further understanding of the neural correlates of consciousness
+is needed before we can confidently identify true
+EEG markers of consciousness. 
+
+Nonetheless, EEG
+monitoring may play a useful role in other clinical
+arenas, such as preventing deleterious neurologic
+outcomes of surgery and anesthesia. EEG-guided
+anesthetic titration might minimize the risk of
+postoperative cognitive dysfunction (POCD) and
+postoperative delirium; multicenter trials are
+needed to further explore these possibilities. The
+amount of time spent in burst suppression and
+deeper planes of anesthesia, as represented in our
+case discussion, has correlated with cognitive dysfunction postoperatively [31, 55], and further
+exploration is warranted to assess whether this has
+causal significance or if the presence of burst suppression is a marker of a vulnerable brain.
+
+Furthermore, EEG monitoring has been shown to
+detect cerebral ischemia in select surgical and
+intensive care unit settings. These monitoring
+strategies may have the potential to detect cerebral
+ischemia and prevent perioperative stroke in highrisk settings although this requires further exploration. We are presently at an exciting interface
+between clinical neuroscience and anesthesiology,
+as technologies for studying the brain continue to
+improve, and subsequent discoveries continue to
+shape our understanding of the central nervous
+system. Anesthesiologists have the first-hand ability to monitor and modulate the brain with everimproving scientific understanding
+
+------------------
+
+title:
+
+url:
+
+notes:
+
+==================
+
+to do:
+

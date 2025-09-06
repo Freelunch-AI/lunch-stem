@@ -1,0 +1,5 @@
+outs:
+- md5: 42372274f57863a10db8b0974f30dfda
+  size: 121185
+  hash: md5
+  path: midterm.pdf

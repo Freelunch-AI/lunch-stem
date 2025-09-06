@@ -1,0 +1,14 @@
+DEVOPS Track:
+https://stackify.com/docker-tutorial/
+https://docs.microsoft.com/en-us/visualstudio/docker/tutorials/docker-tutorial
+https://medium.com/@kmdkhadeer/docker-get-started-9aa7ee662cea
+https://www.docker.com/blog/vm-or-containers/
+https://www.redhat.com/en/topics/containers/containers-vs-vms
+https://opensource.com/article/18/12/cicd-tools-sysadmins
+https://opensource.com/article/19/2/steps-agile-developer
+https://opensource.com/article/18/3/agile-mindset
+https://opensource.com/article/19/9/intro-building-cicd-pipelines-jenkins
+https://opensource.com/article/17/11/kubernetes-lightning-talk
+https://opensource.com/article/19/2/quickstart-guide-ansible
+https://opensource.com/article/19/1/automating-deployment-strategies-ansible
+https://www.youtube.com/watch?v=0LNQxT9LvM0

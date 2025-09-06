@@ -1,0 +1,5 @@
+outs:
+- md5: 68e295407ee35cec6636e74a6c41cd0d
+  size: 258064
+  hash: md5
+  path: gc.pdf

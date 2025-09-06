@@ -1,0 +1,5 @@
+outs:
+- md5: 65fc86445473e59482808f0588f70d04
+  size: 831301
+  hash: md5
+  path: 05-defensive-coding.pdf

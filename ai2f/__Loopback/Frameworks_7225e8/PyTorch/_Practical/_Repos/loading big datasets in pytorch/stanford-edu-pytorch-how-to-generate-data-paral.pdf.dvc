@@ -1,0 +1,5 @@
+outs:
+- md5: 77b12e49b0bcd9da0dead1041f5ad493
+  size: 217027
+  hash: md5
+  path: stanford-edu-pytorch-how-to-generate-data-paral.pdf

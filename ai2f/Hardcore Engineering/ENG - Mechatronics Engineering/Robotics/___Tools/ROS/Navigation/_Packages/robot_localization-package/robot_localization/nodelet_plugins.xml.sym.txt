@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\nodelet_plugins.xml_dd080f

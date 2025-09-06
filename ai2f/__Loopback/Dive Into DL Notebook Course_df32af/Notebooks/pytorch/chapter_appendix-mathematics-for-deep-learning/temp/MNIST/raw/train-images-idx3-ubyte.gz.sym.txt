@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\train-images-idx3-ubyte.gz_f5d078

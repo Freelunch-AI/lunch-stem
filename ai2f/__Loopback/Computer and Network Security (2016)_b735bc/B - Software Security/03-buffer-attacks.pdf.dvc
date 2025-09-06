@@ -1,0 +1,5 @@
+outs:
+- md5: ef57182a69e702213a08999bca34e162
+  size: 2814547
+  hash: md5
+  path: 03-buffer-attacks.pdf

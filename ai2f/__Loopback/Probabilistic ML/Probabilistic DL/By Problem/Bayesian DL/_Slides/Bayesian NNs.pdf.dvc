@@ -1,0 +1,5 @@
+outs:
+- md5: 864ac8db1940507e8e828ea825736696
+  size: 47963881
+  hash: md5
+  path: Bayesian NNs.pdf

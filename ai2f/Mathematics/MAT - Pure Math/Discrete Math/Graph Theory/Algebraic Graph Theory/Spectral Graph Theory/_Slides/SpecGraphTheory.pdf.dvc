@@ -1,0 +1,5 @@
+outs:
+- md5: bb00acb8f55640bc5c1ea4a586cf83d8
+  size: 3494965
+  hash: md5
+  path: SpecGraphTheory.pdf

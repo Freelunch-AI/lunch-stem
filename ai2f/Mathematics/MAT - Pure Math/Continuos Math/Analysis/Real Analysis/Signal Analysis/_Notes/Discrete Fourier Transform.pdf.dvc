@@ -1,0 +1,5 @@
+outs:
+- md5: 4b21c4e4b53797beaffee238c0a95bf3
+  size: 1165721
+  hash: md5
+  path: Discrete Fourier Transform.pdf

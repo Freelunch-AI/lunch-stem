@@ -1,0 +1,5 @@
+outs:
+- md5: 26da05eb1ffee0439ff3d3faae6f46ca
+  size: 31771
+  hash: md5
+  path: neuralnet.pdf

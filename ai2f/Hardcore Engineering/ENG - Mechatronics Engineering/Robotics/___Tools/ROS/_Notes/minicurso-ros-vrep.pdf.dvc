@@ -1,0 +1,5 @@
+outs:
+- md5: e018267140ca94f0b29ac420cfc3f2ae
+  size: 10534470
+  hash: md5
+  path: minicurso-ros-vrep.pdf

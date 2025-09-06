@@ -1,0 +1,5 @@
+outs:
+- md5: 9756b1fc024f9a8c6d758d54b2f284a8
+  size: 2276196
+  hash: md5
+  path: fast-linear-programming.pdf

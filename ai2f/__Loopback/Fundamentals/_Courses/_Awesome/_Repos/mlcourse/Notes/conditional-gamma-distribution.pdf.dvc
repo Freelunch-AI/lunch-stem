@@ -1,0 +1,5 @@
+outs:
+- md5: a3d684362290e13815249c087bdef606
+  size: 162482
+  hash: md5
+  path: conditional-gamma-distribution.pdf

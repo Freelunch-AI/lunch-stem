@@ -1,0 +1,5 @@
+outs:
+- md5: 691bb518b1c6ec51f606e67c19561925
+  size: 3480000
+  hash: md5
+  path: direct.pdf

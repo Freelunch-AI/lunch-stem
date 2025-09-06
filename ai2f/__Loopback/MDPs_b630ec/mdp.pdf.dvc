@@ -1,0 +1,5 @@
+outs:
+- md5: 0a982aa20d3585eee1d5f7bc1c6dcc3e
+  size: 128328
+  hash: md5
+  path: mdp.pdf

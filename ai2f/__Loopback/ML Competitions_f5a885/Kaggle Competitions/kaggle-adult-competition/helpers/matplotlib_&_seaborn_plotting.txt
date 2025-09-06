@@ -1,0 +1,11 @@
+Seaborn (look at python ds handbook also)
+
+https://www.kaggle.com/biphili/seaborn-matplotlib-plot-to-visualize-iris-data
+
+https://seaborn.pydata.org/generated/seaborn.displot.html
+
+Matplotlib
+
+https://www.python-course.eu/matplotlib_subplots.php
+
+https://www.kaggle.com/therealcyberlord/coronavirus-covid-19-visualization-predict

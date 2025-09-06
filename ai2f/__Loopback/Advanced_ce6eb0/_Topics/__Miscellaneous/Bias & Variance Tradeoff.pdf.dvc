@@ -1,0 +1,5 @@
+outs:
+- md5: 31ca19b90aa30c396cac314d806bd32f
+  size: 3418254
+  hash: md5
+  path: Bias & Variance Tradeoff.pdf

@@ -1,0 +1,37 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Eric P. Xing",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Ankur Deka",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Zuxin Liu",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Yash Belhe",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Tejus Gupta",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Rohit Jena",
+      "university": "Carnegie Mellon University"
+    }
+  ],
+  "university_course_name": "Reinforcement Learning and Control Through Inference in GM",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 9,
+  "size_mb": 0.62,
+  "link_to_license": null,
+  "changes_were_made": false
+}

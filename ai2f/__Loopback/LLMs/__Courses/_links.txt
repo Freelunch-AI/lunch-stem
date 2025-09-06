@@ -1,0 +1,3 @@
+https://rycolab.io/classes/llm-s23/
+https://www.promptingguide.ai/research
+https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial

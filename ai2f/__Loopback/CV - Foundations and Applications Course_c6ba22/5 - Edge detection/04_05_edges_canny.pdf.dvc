@@ -1,0 +1,5 @@
+outs:
+- md5: 926338e777020cbe71c21b1f4d0d6c6a
+  size: 1452696
+  hash: md5
+  path: 04_05_edges_canny.pdf

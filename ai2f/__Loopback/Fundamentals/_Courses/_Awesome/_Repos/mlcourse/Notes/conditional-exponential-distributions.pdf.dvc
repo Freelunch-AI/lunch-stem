@@ -1,0 +1,5 @@
+outs:
+- md5: bfa8c924c9f69bc50e9817926cc20062
+  size: 192313
+  hash: md5
+  path: conditional-exponential-distributions.pdf

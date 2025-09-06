@@ -1,0 +1,5 @@
+outs:
+- md5: d1d15bb8076889d08b3230c8ca86cd44
+  size: 89063
+  hash: md5
+  path: hw0.pdf

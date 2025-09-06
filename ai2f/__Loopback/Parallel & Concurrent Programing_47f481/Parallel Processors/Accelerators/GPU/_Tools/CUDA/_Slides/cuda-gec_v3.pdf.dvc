@@ -1,0 +1,5 @@
+outs:
+- md5: 396595f7b3018c03a3662fbce897ff77
+  size: 1714754
+  hash: md5
+  path: cuda-gec_v3.pdf

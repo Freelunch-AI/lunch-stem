@@ -1,0 +1,5 @@
+https://github.com/BrunoScaglione/unilm
+https://github.com/Hannibal046/Awesome-LLM
+https://github.com/KennethanCeyer/awesome-llm
+https://gist.github.com/BrunoScaglione/8345ebc4b62d77f0dc2c6c282a699069
+https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e

@@ -1,0 +1,5 @@
+outs:
+- md5: ebf7950975ecb1cc19d4b3db48bc7a3b
+  size: 1191875
+  hash: md5
+  path: 05_03_ransac_harris.pdf

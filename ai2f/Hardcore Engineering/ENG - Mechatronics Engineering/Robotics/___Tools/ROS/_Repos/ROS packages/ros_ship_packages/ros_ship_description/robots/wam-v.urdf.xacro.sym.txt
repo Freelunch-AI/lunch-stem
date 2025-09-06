@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\wam-v.urdf.xacro_4c777a

@@ -1,0 +1,5 @@
+outs:
+- md5: 7fdbc21cff40fb30a33ec1bbb9a451f9
+  size: 95427
+  hash: md5
+  path: wsl-docs.pdf

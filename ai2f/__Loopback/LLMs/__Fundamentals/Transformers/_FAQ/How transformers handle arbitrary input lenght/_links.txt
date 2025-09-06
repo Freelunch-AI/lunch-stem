@@ -1,0 +1,2 @@
+https://ai.stackexchange.com/questions/41352/why-does-llm-inference-cost-scale-in-both-input-tokens-and-output-tokens
+https://ai.stackexchange.com/questions/37267/how-do-transformer-decoders-handle-arbitrary-length-input/37289#37289

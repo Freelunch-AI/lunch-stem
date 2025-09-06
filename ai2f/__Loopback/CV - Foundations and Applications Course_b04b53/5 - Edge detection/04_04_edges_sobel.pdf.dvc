@@ -1,0 +1,5 @@
+outs:
+- md5: e5854dbf93ff6d5d6fa68a60e1a04091
+  size: 363327
+  hash: md5
+  path: 04_04_edges_sobel.pdf

@@ -1,0 +1,33 @@
+/1 - Intro & Basics.pdf
+/10a - Instruction Set Architecture.pdf
+/14 - Pipelining Issues.pdf
+/15a - Out-of-Order Execution.pdf
+/15b - OoO, DataFlow & Load-Store Handling.pdf
+/16a - Dataflow and Superscalar Execution.pdf
+/17 - Branch Prediction II.pdf
+/18a - VLIW.pdf
+/18b - Systolic Arrays and Beyond.pdf
+/18c - Fine-Grained Multithreading.pdf
+/19 - SIMD Processors.pdf
+/20 - Graphics Processing Units (GPUs).pdf
+/21a -  Memory Organization and Memory Technolog.pdf
+/21b - Memory Hierarchy and Caches.pdf
+/22 - More Caches.pdf
+/23a - Multiprocessor Caches.pdf
+/23b - Virtual Memory.pdf
+/24 - Virtual Memory II.pdf
+/25 -Epilogue.pdf
+/26 - Discussion Session I.pdf
+/27 - Discussion Session II.pdf
+/28 - Preparing for the Final Exam.pdf
+/2a - Course Goals & Logistics.pdf
+/2b - Mysteries in Comp Arch.pdf
+/3a - Mysteries in Computer Architecture.pdf
+/3b -  Introduction to the Labs and FPGAs.pdf
+/4 - Combinational Logic I.pdf
+/5 - Combinational Logic II.pdf
+/6 - Sequential Logic Design.pdf
+/7a - Sequential Logic Design II.pdf
+/7b - Hardware Description Languages and Verilog.pdf
+/8 - Timing and Verification.pdf
+/9 - Von Neumann Model, ISA, LC-3 and MIPS.pdf

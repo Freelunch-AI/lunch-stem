@@ -1,0 +1,5 @@
+outs:
+- md5: 786a4f750c4402eff621d1618d3805f6
+  size: 298030
+  hash: md5
+  path: cs-lmu-edu-intrographs.pdf

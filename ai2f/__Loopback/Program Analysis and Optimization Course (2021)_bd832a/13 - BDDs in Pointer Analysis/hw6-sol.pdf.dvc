@@ -1,0 +1,5 @@
+outs:
+- md5: c7c9f936a6c4563e7ae50c0e6ad8dd17
+  size: 608198
+  hash: md5
+  path: hw6-sol.pdf

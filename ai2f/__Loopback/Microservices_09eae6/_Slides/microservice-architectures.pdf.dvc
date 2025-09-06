@@ -1,0 +1,5 @@
+outs:
+- md5: b0f8e0e61755a84466497774b292cf1c
+  size: 1541118
+  hash: md5
+  path: microservice-architectures.pdf

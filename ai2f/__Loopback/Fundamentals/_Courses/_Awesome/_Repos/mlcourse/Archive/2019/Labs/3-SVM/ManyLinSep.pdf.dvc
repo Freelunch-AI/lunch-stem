@@ -1,0 +1,5 @@
+outs:
+- md5: fbc9c46f98926a8adf8ab3e00ad6c079
+  size: 14256
+  hash: md5
+  path: ManyLinSep.pdf

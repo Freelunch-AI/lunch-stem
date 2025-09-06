@@ -1,0 +1,5 @@
+outs:
+- md5: c33c4e1e41fb38b7e4fc7cc259722b11
+  size: 529341
+  hash: md5
+  path: 2 - When replication fails us, Atomicity via sh.pdf

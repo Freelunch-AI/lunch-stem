@@ -1,0 +1,5 @@
+outs:
+- md5: 1babfe5a80657852a1732cd75ae59f8d
+  size: 802010
+  hash: md5
+  path: 01-intro.pdf

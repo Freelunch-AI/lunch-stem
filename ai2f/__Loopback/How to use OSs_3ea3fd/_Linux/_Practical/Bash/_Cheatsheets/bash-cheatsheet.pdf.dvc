@@ -1,0 +1,5 @@
+outs:
+- md5: 05b3eb4eafe412e6e14b086bbb5c95e6
+  size: 1392071
+  hash: md5
+  path: bash-cheatsheet.pdf

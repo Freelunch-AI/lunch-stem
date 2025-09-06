@@ -1,0 +1,5 @@
+outs:
+- md5: 82e0e6c31f1287a7984512bdee613306
+  size: 220535
+  hash: md5
+  path: cs-lmu-edu-algpatterns.pdf

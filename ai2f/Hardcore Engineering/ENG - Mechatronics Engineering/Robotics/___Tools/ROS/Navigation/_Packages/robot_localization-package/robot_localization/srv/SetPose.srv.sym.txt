@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\SetPose.srv_60eeb0

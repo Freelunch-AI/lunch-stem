@@ -1,0 +1,5 @@
+outs:
+- md5: 4150b37df141f262977326f9e35dbcd8
+  size: 128224
+  hash: md5
+  path: svm-retraining-with-support-vectors.pdf

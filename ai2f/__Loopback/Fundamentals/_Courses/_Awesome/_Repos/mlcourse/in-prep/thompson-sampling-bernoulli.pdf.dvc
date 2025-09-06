@@ -1,0 +1,5 @@
+outs:
+- md5: 2f1d96b75954faabbb023d97fabc0741
+  size: 202359
+  hash: md5
+  path: thompson-sampling-bernoulli.pdf

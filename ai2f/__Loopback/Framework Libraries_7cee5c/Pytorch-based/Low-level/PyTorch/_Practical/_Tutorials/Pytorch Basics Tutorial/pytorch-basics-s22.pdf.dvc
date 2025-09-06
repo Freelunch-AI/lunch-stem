@@ -1,0 +1,5 @@
+outs:
+- md5: cf4e084e9a10c2b298b1f325803d894f
+  size: 445883
+  hash: md5
+  path: pytorch-basics-s22.pdf

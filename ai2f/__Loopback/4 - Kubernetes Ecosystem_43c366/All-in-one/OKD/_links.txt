@@ -1,0 +1,2 @@
+https://www.okd.io/#what-is-okd
+https://github.com/BrunoScaglione/okd

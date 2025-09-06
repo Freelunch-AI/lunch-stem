@@ -1,0 +1,5 @@
+outs:
+- md5: 64912c0514b0902b3d397c2acc4eddf7
+  size: 3228729
+  hash: md5
+  path: ada2020_gpu_1.pdf

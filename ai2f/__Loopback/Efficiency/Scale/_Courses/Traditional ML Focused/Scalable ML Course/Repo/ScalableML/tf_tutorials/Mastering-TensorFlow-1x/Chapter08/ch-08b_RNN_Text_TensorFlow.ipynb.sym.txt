@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\ch-08b_RNN_Text_TensorFlow.ipynb_51e1f0

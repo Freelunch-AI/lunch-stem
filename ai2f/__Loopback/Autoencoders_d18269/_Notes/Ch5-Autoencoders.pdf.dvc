@@ -1,0 +1,5 @@
+outs:
+- md5: 0c00adb1d5d378c4713670c38ab3762f
+  size: 697545
+  hash: md5
+  path: Ch5-Autoencoders.pdf

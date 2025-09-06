@@ -1,0 +1,5 @@
+outs:
+- md5: 0bb8b81b87165e6047fe3777a3f6bf39
+  size: 277138
+  hash: md5
+  path: stackoverflow-what-is-better-int-0x80-or-syscal.pdf

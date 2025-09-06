@@ -1,0 +1,1 @@
+use the standard inference measurement file from ../../inference_evaluation/tf2oda_inference_from_saved_model.py

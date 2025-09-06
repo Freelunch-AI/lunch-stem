@@ -1,0 +1,5 @@
+outs:
+- md5: eaa3bff795c85913e79ecaa635231996
+  size: 1422901
+  hash: md5
+  path: objectNgrams_cvpr14.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 2358ed5da761e265f46d2a7fc8509509
+  size: 159507
+  hash: md5
+  path: SRAM vs DRAM vs Flash.pdf

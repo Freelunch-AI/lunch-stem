@@ -1,0 +1,5 @@
+outs:
+- md5: 7ab1dd9e93d1312090adf3f644774bc7
+  size: 131057
+  hash: md5
+  path: x86-64bit-c-calling-convention.pdf

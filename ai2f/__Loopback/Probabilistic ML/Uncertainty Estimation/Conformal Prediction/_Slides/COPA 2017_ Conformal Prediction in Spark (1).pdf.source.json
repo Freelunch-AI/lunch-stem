@@ -1,0 +1,29 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Marco Capuccini",
+      "university": "Uppsala University"
+    },
+    {
+      "name": "L. Carlsson",
+      "university": null
+    },
+    {
+      "name": "U. Norinder",
+      "university": null
+    },
+    {
+      "name": "O. Spjuth",
+      "university": null
+    }
+  ],
+  "university_course_name": null,
+  "publisher": "IEEE/ACM",
+  "educational_platform": null,
+  "source_link": "https://github.com/mcapuccini/scala-cp",
+  "num_of_pages": 11,
+  "size_mb": 1.61,
+  "link_to_license": null,
+  "changes_were_made": false
+}

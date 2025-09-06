@@ -1,0 +1,5 @@
+outs:
+- md5: 1e5d6dbf6f658136a12fc2c443a656bc
+  size: 88321
+  hash: md5
+  path: hw6.pdf

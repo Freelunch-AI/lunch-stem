@@ -1,0 +1,5 @@
+outs:
+- md5: f6734a7fe4f3649ea6dab31991353bb1
+  size: 7179411
+  hash: md5
+  path: word-embeddings.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 06b537589ceb81d304a114da0b57b8e6
+  size: 162452
+  hash: md5
+  path: cs231n-github-io-setup-instructions.pdf

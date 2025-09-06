@@ -1,0 +1,5 @@
+outs:
+- md5: e51c65ee4e0854efd2a61e26c6689658
+  size: 2535284
+  hash: md5
+  path: Speculative Parallelization.pdf

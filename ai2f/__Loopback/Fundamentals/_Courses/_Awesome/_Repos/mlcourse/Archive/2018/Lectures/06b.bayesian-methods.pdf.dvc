@@ -1,0 +1,5 @@
+outs:
+- md5: 46355272990d9721c6f6e06d4f1f7dcc
+  size: 529100
+  hash: md5
+  path: 06b.bayesian-methods.pdf

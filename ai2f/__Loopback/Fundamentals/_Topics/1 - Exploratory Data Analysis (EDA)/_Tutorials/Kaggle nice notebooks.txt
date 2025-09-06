@@ -1,0 +1,5 @@
+https://www.kaggle.com/ekami66/detailed-exploratory-data-analysis-with-python
+
+https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python
+
+https://www.kaggle.com/dgawlik/house-prices-eda#Categorical-data

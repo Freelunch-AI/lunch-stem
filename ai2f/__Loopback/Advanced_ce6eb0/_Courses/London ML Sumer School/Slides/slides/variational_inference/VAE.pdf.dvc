@@ -1,0 +1,5 @@
+outs:
+- md5: 9dc2e6762c25b2ff781e2f0b8b41e7ce
+  size: 18857554
+  hash: md5
+  path: VAE.pdf

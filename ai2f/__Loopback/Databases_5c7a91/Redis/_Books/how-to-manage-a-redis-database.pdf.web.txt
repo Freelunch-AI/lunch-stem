@@ -1,0 +1,1 @@
+https://assets.digitalocean.com/books/how-to-manage-a-redis-database.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 8bbb9d6aedec0e9a3e06e415dbd26e68
+  size: 143550
+  hash: md5
+  path: cs-lmu-edu-syscalls.pdf

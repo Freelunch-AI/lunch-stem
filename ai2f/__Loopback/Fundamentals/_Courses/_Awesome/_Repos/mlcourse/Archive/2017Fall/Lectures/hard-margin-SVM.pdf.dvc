@@ -1,0 +1,5 @@
+outs:
+- md5: b06d44d8d65095bdc23946652901162b
+  size: 357522
+  hash: md5
+  path: hard-margin-SVM.pdf

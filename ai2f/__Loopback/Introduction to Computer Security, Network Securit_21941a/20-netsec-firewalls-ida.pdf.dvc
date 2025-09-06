@@ -1,0 +1,5 @@
+outs:
+- md5: 38d6952d39337f8588e39287d077c482
+  size: 2260245
+  hash: md5
+  path: 20-netsec-firewalls-ida.pdf

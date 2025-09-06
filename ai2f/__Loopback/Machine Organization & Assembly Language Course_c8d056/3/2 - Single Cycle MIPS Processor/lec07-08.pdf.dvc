@@ -1,0 +1,5 @@
+outs:
+- md5: 60a8722c4a80dfe908d6c5a7ae4d48a5
+  size: 456875
+  hash: md5
+  path: lec07-08.pdf

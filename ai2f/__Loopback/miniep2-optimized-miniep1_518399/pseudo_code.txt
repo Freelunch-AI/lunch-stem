@@ -1,0 +1,17 @@
+# miniEP1 |
+02. # Nome, NºUSP |
+03. # comando para compilar o programa, ex: cc prog.c |
+04. var N = 1 << lerNumeroDaEntrada(); # << é a operação de bitshift |
+05. var primos = 0; |
+06. var primosEspeciais = 0; |
+07. var crivo = cria lista de Booleanos com N+1 elementos # (*) |
+08. para var i = 2 até N: # inclusivo |
+09. > crivo[i] = verdadeiro; |
+10. para var i = 2 até N: # inclusivo |
+11. > se crivo[i] for verdadeiro: |
+12. > > primos = primos + 1; |
+13. > > se i % 4 != 3: primosEspeciais = primosEspeciais + 1; |
+14. > > para var j = i*2 até N com passo de tamanho i: # inclusivo |
+15. > > > crivo[j] = falso; |
+16. imprima(primos, primosEspeciais); 
+

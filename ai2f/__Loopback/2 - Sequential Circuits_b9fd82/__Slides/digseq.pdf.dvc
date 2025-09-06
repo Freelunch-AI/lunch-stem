@@ -1,0 +1,5 @@
+outs:
+- md5: 580a3f1a4a16ec05e78221af632c7c69
+  size: 106008
+  hash: md5
+  path: digseq.pdf

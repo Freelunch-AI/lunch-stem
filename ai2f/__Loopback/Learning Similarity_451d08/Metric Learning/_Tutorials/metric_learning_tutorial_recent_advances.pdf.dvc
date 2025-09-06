@@ -1,0 +1,5 @@
+outs:
+- md5: 4eb99a96aeb38a8ff986037e8eb06db8
+  size: 1390292
+  hash: md5
+  path: metric_learning_tutorial_recent_advances.pdf

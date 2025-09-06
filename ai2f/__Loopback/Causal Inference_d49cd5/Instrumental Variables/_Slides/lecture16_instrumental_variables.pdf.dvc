@@ -1,0 +1,5 @@
+outs:
+- md5: 16d507f8814c6e8f5959987b7b299ddf
+  size: 328571
+  hash: md5
+  path: lecture16_instrumental_variables.pdf

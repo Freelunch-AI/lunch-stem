@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\publish_vehicle_footprint.launch_0f40a6

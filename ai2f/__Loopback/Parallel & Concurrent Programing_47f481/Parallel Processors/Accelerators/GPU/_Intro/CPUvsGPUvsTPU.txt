@@ -1,0 +1,32 @@
+# source: https://www.quora.com/Whats-the-usages-advantages-and-disadvantages-of-a-GPU-a-CPU-and-a-TPU
+Usages:
+
+CPUs can do general purpose work. Used in everywhere from smartphones to washingmachines. They also control input - output instruments of a PC.
+
+GPUs do massively parallel operations such as taking square root of all values in a region of memory quickly. They are used in anywhere an image is needed to be processed, a geometry is needed to be drawn on screen and a mass pool of physics equations are needed to be solved. Such as in PCs, smartphones and super computers.
+
+TPUs are specialized to process neural network simulations. They only do this. So they are better at artificial intelligence. This is very advanced and used in AI related super computers - servers.
+
+Advantages:
+
+CPUs are cheaper, easier to get, have customizable motherboards(with more RAM or other parts) and can blend anything.
+
+GPUs are much faster in graphics related and massively parallel jobs.
+
+TPUs are also very parallel while even more power efficient for their only job.
+
+Disadvantages:
+
+CPUs evolve slower. Different types, say x86 and ARM are incompatible at the binary level (strictly speaking applies to GPUs also; except binaries commonly not distributed, but APIs like CUDA used). Software needed to be optimized/recompiled (or rewritten) for each of type.
+
+GPUs fail on branch prediction. If a software contains very chaotic code flow, GPU becomes even slower than CPU. GPU can’t drive itself, needs a CPU to be controlled (latest GPUs are more Independent and can give themselves new tasks after first task given by CPU).
+
+TPUs can’t be found in local markets easily. They may be expensive and probably limited to work for only one operating systems directly (but accessible through the internet from any node interconnect).
+
+Bonus:
+
+CPU is a motorcycle: carries you to point where you are needed, fast. Whenever you want to add a passenger or two in the middle of the way, you can. You can also take a break at some point and listen to radio. Would be fun when there are other motorcycles in a speed race (but not healthy).
+
+GPU is a train: it carries everyone and doesn’t like exceptions. Its only fun when there are enough passengers. But is more comfortable, healthier than driving on motorcycle for hours.
+
+TPU is Scotty who will beam you up where you want. You guessed right, he doesn’t add others to your beam(except, exceptions) nor can stop the process in the middle of the way. Not funny until process is complete. Other than failures, the effect of this process on health is negligible.

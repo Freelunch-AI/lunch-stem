@@ -1,0 +1,5 @@
+outs:
+- md5: 82f7803dd0a0b92294f18fb23a2e7e3f
+  size: 401643
+  hash: md5
+  path: autograd-handouts.pdf

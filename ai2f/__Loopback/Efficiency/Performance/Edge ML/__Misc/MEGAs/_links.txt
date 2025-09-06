@@ -1,0 +1,2 @@
+https://github.com/bisonai/awesome-edge-machine-learning#other-resources
+https://github.com/crespum/edge-ai

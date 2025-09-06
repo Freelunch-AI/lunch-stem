@@ -1,0 +1,5 @@
+outs:
+- md5: ba3a6042d67427ebacdc4aea5ecdf617
+  size: 691956
+  hash: md5
+  path: file.pdf

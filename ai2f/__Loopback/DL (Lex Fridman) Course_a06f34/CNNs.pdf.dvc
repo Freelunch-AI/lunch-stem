@@ -1,0 +1,5 @@
+outs:
+- md5: f8ba34130e2f3d5c129f1fcd3690b97f
+  size: 8243482
+  hash: md5
+  path: CNNs.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 5d212afdf2caa43ce624b63bad0d8e46
+  size: 1837521
+  hash: md5
+  path: 02-compilation.pdf

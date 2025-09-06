@@ -1,0 +1,5 @@
+outs:
+- md5: 8f0ecd715909aeaf48ba7ccf8b6b1568
+  size: 1354561
+  hash: md5
+  path: 01-SATSolving.pdf

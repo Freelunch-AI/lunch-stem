@@ -1,0 +1,13 @@
+{
+  "id": "brunoscaglione/pmr3508-2021-59-Adult4Classifiers",
+  "title": "PMR3508-2021-59-Adult4Classifiers",
+  "code_file": "./Adult4Classifiers.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "false",
+  "enable_gpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}

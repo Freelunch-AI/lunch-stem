@@ -1,0 +1,5 @@
+outs:
+- md5: b0696082f66c89c6451ff1b99772e6ba
+  size: 761914
+  hash: md5
+  path: ibm-kubernetes-guide.pdf

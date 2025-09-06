@@ -1,0 +1,5 @@
+outs:
+- md5: 79dcb9422c904741de17989b1bca3d06
+  size: 10198829
+  hash: md5
+  path: tierny_topologicalDataAnalysis.pdf

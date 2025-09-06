@@ -1,0 +1,5 @@
+outs:
+- md5: a52d389801b7001d1036a8a99c8a1e81
+  size: 1040258
+  hash: md5
+  path: AC2-01-frequency_analysis.pdf

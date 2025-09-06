@@ -1,0 +1,3 @@
+https://github.com/mlabonne/llm-course
+https://github.com/BrunoScaglione/generative-ai-for-beginners
+https://github.com/karpathy/LLM101n

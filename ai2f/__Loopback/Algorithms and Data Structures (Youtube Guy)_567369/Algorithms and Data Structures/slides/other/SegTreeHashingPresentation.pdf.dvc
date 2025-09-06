@@ -1,0 +1,5 @@
+outs:
+- md5: 3bd48b44582f5add1bb9472620b1cb86
+  size: 1216360
+  hash: md5
+  path: SegTreeHashingPresentation.pdf

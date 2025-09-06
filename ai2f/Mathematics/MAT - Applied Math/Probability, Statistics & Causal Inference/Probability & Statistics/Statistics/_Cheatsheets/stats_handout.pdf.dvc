@@ -1,0 +1,5 @@
+outs:
+- md5: 14ce195e9e1975f5e242f72b9c1307a7
+  size: 1367357
+  hash: md5
+  path: stats_handout.pdf

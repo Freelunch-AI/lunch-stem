@@ -1,0 +1,5 @@
+outs:
+- md5: cd530c3f5f80569744190169ae8c9582
+  size: 353500
+  hash: md5
+  path: linearalgebra.pdf

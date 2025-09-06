@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\mastering_ros_robot_description_pkg_a1c823

@@ -1,0 +1,5 @@
+outs:
+- md5: 08713d4486e9eb5e01b5e43eecc07bc4
+  size: 123698
+  hash: md5
+  path: churn.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 0cd5642c320700473016c8126946b044
+  size: 586021
+  hash: md5
+  path: cheatsheet-variables-models.pdf

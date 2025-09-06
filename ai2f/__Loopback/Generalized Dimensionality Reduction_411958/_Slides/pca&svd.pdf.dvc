@@ -1,0 +1,5 @@
+outs:
+- md5: 8fc8a8a843c0f8a20a4190eec951cfc5
+  size: 1300480
+  hash: md5
+  path: pca&svd.pdf

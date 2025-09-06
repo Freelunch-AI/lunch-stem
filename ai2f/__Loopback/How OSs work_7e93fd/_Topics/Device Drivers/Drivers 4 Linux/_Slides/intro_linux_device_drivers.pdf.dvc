@@ -1,0 +1,5 @@
+outs:
+- md5: 8a6a8c5f2a9d03447b9d825858c4aede
+  size: 438266
+  hash: md5
+  path: intro_linux_device_drivers.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 93b162d8956560d7f2705c65f6ba953f
+  size: 273707
+  hash: md5
+  path: deep_learning_notes.pdf

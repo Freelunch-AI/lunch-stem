@@ -1,0 +1,5 @@
+outs:
+- md5: 38879eb2c06a35fc559b91005420d7b2
+  size: 360282
+  hash: md5
+  path: web-stanford-edu-alphazero.pdf

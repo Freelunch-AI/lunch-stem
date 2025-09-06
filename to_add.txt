@@ -1,0 +1,1757 @@
+# Links to materials to rename, organize & include in the repo
+
+* Biology
+
+Books: https://bio.libretexts.org/Bookshelves
+
+Courses: (aprox. 140)
+https://ocw.mit.edu/courses/20-310j-molecular-cellular-and-tissue-biomechanics-spring-2015/pages/lecture-slides/
+https://ocw.mit.edu/courses/hst-950j-biomedical-computing-fall-2010/
+https://ocw.mit.edu/courses/20-441j-biomaterials-tissue-interactions-fall-2009/
+https://ocw.mit.edu/courses/16-423j-aerospace-biomedical-and-life-support-engineering-spring-2006/
+https://ocw.mit.edu/courses/2-18-biomolecular-feedback-systems-spring-2015/
+https://ocw.mit.edu/courses/20-020-introduction-to-biological-engineering-design-spring-2009/
+https://ocw.mit.edu/courses/9-530-cellular-and-molecular-computation-spring-2000/
+https://ocw.mit.edu/courses/20-110j-thermodynamics-of-biomolecular-systems-fall-2005/
+https://ocw.mit.edu/courses/20-453j-biomedical-information-technology-fall-2008/
+https://ocw.mit.edu/courses/7-16-experimental-molecular-biology-biotechnology-ii-spring-2005/
+https://ocw.mit.edu/courses/7-342-cell-material-crosstalk-engineering-cell-instructive-biomaterials-fall-2013/
+https://ocw.mit.edu/courses/7-342-systems-and-synthetic-biology-how-the-cell-solves-problems-fall-2010/
+https://ocw.mit.edu/courses/12-517-dynamics-of-complex-systems-complexity-in-ecology-spring-2000/
+https://ocw.mit.edu/courses/6-096-algorithms-for-computational-biology-spring-2005/
+https://ocw.mit.edu/courses/7-344-antibiotics-toxins-and-protein-engineering-spring-2007/
+https://ocw.mit.edu/courses/20-010j-introduction-to-bioengineering-be-010j-spring-2006/
+https://ocw.mit.edu/courses/20-320-analysis-of-biomolecular-and-cellular-systems-fall-2012/
+https://ocw.mit.edu/courses/hst-508-genomics-and-computational-biology-fall-2002/
+https://ocw.mit.edu/courses/7-89j-topics-in-computational-and-systems-biology-fall-2010/
+https://ocw.mit.edu/courses/9-40-introduction-to-neural-computation-spring-2018/
+https://ocw.mit.edu/courses/20-011j-statistical-thermodynamics-of-biomolecular-systems-be-011j-spring-2004/
+https://ocw.mit.edu/courses/20-440-analysis-of-biological-networks-be-440-fall-2004/
+https://ocw.mit.edu/courses/18-417-introduction-to-computational-molecular-biology-fall-2004/
+https://ocw.mit.edu/courses/20-416j-topics-in-biophysics-and-physical-biology-fall-2014/
+https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/
+https://ocw.mit.edu/courses/3-034-organic-biomaterials-chemistry-fall-2005/
+https://ocw.mit.edu/courses/7-342-personal-genomics-and-medicine-whats-in-your-genome-spring-2014/
+https://ocw.mit.edu/courses/7-341-designer-immunity-lessons-in-engineering-the-immune-system-spring-2014/
+https://ocw.mit.edu/courses/7-343-network-medicine-using-systems-biology-and-signaling-networks-to-create-novel-cancer-therapeutics-fall-2012/
+https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/
+https://ocw.mit.edu/courses/20-462j-molecular-principles-of-biomaterials-spring-2006/
+https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/
+https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/
+https://ocw.mit.edu/courses/20-201-mechanisms-of-drug-actions-fall-2013/
+https://ocw.mit.edu/courses/9-123-neurotechnology-in-action-fall-2014/
+https://ocw.mit.edu/courses/10-37-chemical-and-biological-reaction-engineering-spring-2007/
+https://ocw.mit.edu/courses/hst-161-molecular-biology-and-genetics-in-modern-medicine-fall-2007/
+https://ocw.mit.edu/courses/9-29j-introduction-to-computational-neuroscience-spring-2004/
+https://ocw.mit.edu/courses/2-785j-cell-matrix-mechanics-fall-2014/
+https://ocw.mit.edu/courses/20-482j-foundations-of-algorithms-and-computational-techniques-in-systems-biology-spring-2006/
+https://ocw.mit.edu/courses/6-877j-computational-evolutionary-biology-fall-2005/
+https://ocw.mit.edu/courses/3-054-cellular-solids-structure-properties-and-applications-spring-2015/
+https://ocw.mit.edu/courses/20-106j-systems-microbiology-fall-2006/
+https://ocw.mit.edu/courses/9-110j-neurology-neuropsychology-and-neurobiology-of-aging-spring-2005/
+https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/
+https://ocw.mit.edu/courses/7-18-topics-in-experimental-biology-fall-2005/
+https://ocw.mit.edu/courses/7-28-molecular-biology-spring-2005/
+https://ocw.mit.edu/courses/7-340-unusual-biology-the-science-of-emerging-pathogens-spring-2013/
+https://ocw.mit.edu/courses/7-349-stem-cells-a-cure-or-disease-spring-2011/
+https://ocw.mit.edu/courses/7-343-an-rna-safari-exploring-the-surprising-diversity-of-mammalian-transcriptomes-spring-2016/
+https://ocw.mit.edu/courses/1-018j-ecology-i-the-earth-system-fall-2009/
+https://ocw.mit.edu/courses/7-88j-protein-folding-and-human-disease-spring-2015/
+https://ocw.mit.edu/courses/9-19j-cognitive-behavioral-genetics-spring-2001/
+https://ocw.mit.edu/courses/7-344-cellular-metabolism-and-cancer-nature-or-nurture-fall-2018/
+https://ocw.mit.edu/courses/7-06-cell-biology-spring-2007/
+https://ocw.mit.edu/courses/7-16-experimental-molecular-biology-biotechnology-ii-spring-2005/
+https://ocw.mit.edu/courses/7-01sc-fundamentals-of-biology-fall-2011/
+https://ocw.mit.edu/courses/7-340-ubiquitination-the-proteasome-and-human-disease-fall-2004/
+https://ocw.mit.edu/courses/7-00-covid-19-sars-cov-2-and-the-pandemic-fall-2021/
+https://ocw.mit.edu/courses/7-343-microbial-megaproducers-discovery-biosynthesis-engineering-and-applications-of-natural-products-fall-2020/
+https://ocw.mit.edu/courses/7-342-cancer-biology-from-basic-research-to-the-clinic-fall-2004/
+https://ocw.mit.edu/courses/7-342-how-to-build-an-animal-cell-fate-and-identity-in-development-and-disease-fall-2017/
+https://ocw.mit.edu/courses/7-342-powerhouse-rules-the-role-of-mitochondria-in-human-diseases-spring-2011/
+https://ocw.mit.edu/courses/7-342-reading-the-blueprint-of-life-transcription-stem-cells-and-differentiation-fall-2006/
+https://ocw.mit.edu/courses/7-342-the-rna-revolution-at-the-frontiers-of-cell-biology-and-molecular-medicine-fall-2016/
+https://ocw.mit.edu/courses/7-345-using-simple-organisms-to-model-human-diseases-spring-2013/
+https://ocw.mit.edu/courses/7-345-non-coding-rnas-junk-or-critical-regulators-in-health-and-disease-spring-2012/
+https://ocw.mit.edu/courses/7-341-biomaterials-and-devices-for-disease-diagnosis-and-therapy-fall-2018/
+https://ocw.mit.edu/courses/7-341-of-mice-and-men-humanized-mice-in-cancer-research-spring-2015/
+https://ocw.mit.edu/courses/7-343-a-love-hate-relationship-cholesterol-in-health-and-disease-fall-2005/
+https://ocw.mit.edu/courses/7-343-photosynthesis-life-from-light-fall-2006/
+https://ocw.mit.edu/courses/7-343-the-radical-consequences-of-respiration-reactive-oxygen-species-in-aging-and-disease-fall-2007/
+https://ocw.mit.edu/courses/7-347-fueling-sustainability-engineering-microbial-systems-for-biofuel-production-spring-2011/
+https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/
+https://ocw.mit.edu/courses/7-344-rna-interference-a-new-tool-for-genetic-analysis-and-therapeutics-fall-2004/
+https://ocw.mit.edu/courses/7-344-treating-infertility-from-bench-to-bedside-and-bedside-to-bench-spring-2015/
+https://ocw.mit.edu/courses/7-13-experimental-microbial-genetics-fall-2008/
+https://ocw.mit.edu/courses/9-301j-neural-plasticity-in-learning-and-development-spring-2002/
+https://ocw.mit.edu/courses/7-342-immune-cell-migration-on-the-move-in-response-to-pathogens-and-cancer-immunotherapy-fall-2021/
+https://ocw.mit.edu/courses/7-343-single-molecule-imaging-capturing-nanoscale-cellular-machines-in-action-fall-2021/
+https://ocw.mit.edu/courses/7-03-genetics-fall-2004/
+https://ocw.mit.edu/courses/7-340-immune-evasion-how-sneaky-pathogens-avoid-host-surveillance-spring-2004/
+https://ocw.mit.edu/courses/7-340-learning-and-memory-activity-controlled-gene-expression-in-the-nervous-system-fall-2009/
+https://ocw.mit.edu/courses/7-340-nano-life-an-introduction-to-virus-structure-and-assembly-fall-2005/
+https://ocw.mit.edu/courses/7-344-directed-evolution-engineering-biocatalysts-spring-2008/
+https://ocw.mit.edu/courses/7-345-evolution-of-the-immune-system-spring-2005/
+https://ocw.mit.edu/courses/7-342-g-protein-coupled-receptors-vision-and-disease-spring-2007/
+https://ocw.mit.edu/courses/7-342-pluripotent-stem-cells-and-genome-engineering-for-modeling-human-diseases-spring-2015/
+https://ocw.mit.edu/courses/7-342-personal-genomics-and-medicine-whats-in-your-genome-spring-2014/
+https://ocw.mit.edu/courses/7-342-the-x-in-sex-a-genetic-medical-and-evolutionary-view-of-the-x-chromosome-fall-2009/
+https://ocw.mit.edu/courses/7-342-the-biology-of-aging-age-related-diseases-and-interventions-fall-2011/
+https://ocw.mit.edu/courses/7-342-to-divide-or-not-to-divide-control-of-cell-cycle-and-growth-by-extracellular-cues-fall-2012/
+https://ocw.mit.edu/courses/7-345-vascular-development-in-life-disease-and-cancer-medicine-fall-2009/
+https://ocw.mit.edu/courses/7-345-the-science-of-sperm-fall-2014/
+https://ocw.mit.edu/courses/7-341-bench-to-bedside-molecularly-targeted-therapies-in-blood-disorders-and-malignancy-fall-2009/
+https://ocw.mit.edu/courses/7-341-designer-immunity-lessons-in-engineering-the-immune-system-spring-2014/
+https://ocw.mit.edu/courses/7-341-the-dna-damage-response-as-a-target-for-anti-cancer-therapy-fall-2008/
+https://ocw.mit.edu/courses/7-343-sophisticated-survival-skills-of-simple-microorganisms-spring-2008/
+https://ocw.mit.edu/courses/7-346-cellular-garbage-disposal-misfolded-proteins-in-normal-biology-and-human-disease-fall-2011/
+https://ocw.mit.edu/courses/7-346-virus-host-interactions-in-infectious-diseases-spring-2013/
+https://ocw.mit.edu/courses/7-347-epigenetic-regulation-of-stem-cells-spring-2014/
+https://ocw.mit.edu/courses/7-347-living-dangerously-how-the-immune-system-maintains-peace-with-trillions-of-commensal-bacteria-while-preventing-pathogenic-invasions-fall-2015/
+https://ocw.mit.edu/courses/7-343-protein-folding-misfolding-and-human-disease-fall-2004/
+https://ocw.mit.edu/courses/7-349-from-molecules-to-behavior-synaptic-neurophysiology-spring-2010/
+https://ocw.mit.edu/courses/9-322j-genetic-neurobiology-fall-2005/
+https://ocw.mit.edu/courses/7-60-cell-biology-structure-and-functions-of-the-nucleus-spring-2010/
+https://ocw.mit.edu/courses/7-22-developmental-biology-fall-2005/
+https://ocw.mit.edu/courses/9-013j-cell-and-molecular-neurobiology-spring-2008/
+https://ocw.mit.edu/courses/7-90j-computational-functional-genomics-spring-2005/
+https://ocw.mit.edu/courses/7-02ci-experimental-biology-communications-intensive-spring-2005/
+https://ocw.mit.edu/courses/7-345-the-war-on-superbugs-antibiotic-development-and-the-emergence-of-drug-resistant-bacteria-fall-2015/
+https://ocw.mit.edu/courses/7-346-fine-tuning-the-synapse-synaptic-functions-and-dysfunction-fall-2014/
+https://ocw.mit.edu/courses/7-342-developmental-and-molecular-biology-of-regeneration-spring-2008/
+https://ocw.mit.edu/courses/7-342-sweet-discoveries-unraveling-the-complex-world-of-sugars-in-health-and-disease-fall-2014/
+https://ocw.mit.edu/courses/7-341-the-microbiome-and-drug-delivery-cross-species-communication-in-health-and-disease-spring-2018/
+https://ocw.mit.edu/courses/7-341-host-hacking-parasitic-manipulations-from-a-micro-to-a-macroscopic-scale-fall-2016/
+https://ocw.mit.edu/courses/7-343-biological-bases-of-learning-and-memory-spring-2014/
+https://ocw.mit.edu/courses/7-343-neuron-glial-cell-interactions-in-biology-and-disease-spring-2007/
+https://ocw.mit.edu/courses/7-343-when-development-goes-awry-how-cancer-co-opts-mechanisms-of-embryogensis-fall-2009/
+https://ocw.mit.edu/courses/7-346-dna-wars-how-the-cell-strikes-back-to-avoid-disease-after-attacks-on-dna-fall-2013/
+https://ocw.mit.edu/courses/7-346-synaptic-plasticity-and-memory-from-molecules-to-behavior-fall-2007/
+https://ocw.mit.edu/courses/7-346-rnai-a-revolution-in-biology-and-therapeutics-spring-2010/
+https://ocw.mit.edu/courses/7-344-the-fountain-of-life-from-dolly-to-customized-embryonic-stem-cells-fall-2007/
+https://ocw.mit.edu/courses/7-347-peptides-as-biological-signaling-molecules-and-novel-drugs-spring-2016/
+https://ocw.mit.edu/courses/7-15-experimental-molecular-genetics-spring-2015/
+https://ocw.mit.edu/courses/7-340-avoiding-genomic-instability-dna-replication-the-cell-cycle-and-cancer-fall-2006/
+https://ocw.mit.edu/courses/7-340-regenerative-medicine-from-bench-to-bedside-spring-2010/
+https://ocw.mit.edu/courses/7-340-under-the-radar-screen-how-bugs-trick-our-immune-defenses-spring-2007/
+https://ocw.mit.edu/courses/7-344-tumor-suppressor-gene-p53-how-the-guardian-of-our-genome-prevents-cancer-fall-2010/
+https://ocw.mit.edu/courses/7-05-general-biochemistry-spring-2020/
+https://ocw.mit.edu/courses/7-342-the-seeds-and-the-soil-roles-of-tumor-heterogeneity-and-the-tumor-microenvironment-in-cancer-metastasis-fall-2020/
+https://ocw.mit.edu/courses/7-342-systems-biology-stochastic-processes-and-biological-robustness-fall-2008/
+https://ocw.mit.edu/courses/7-345-survival-in-extreme-conditions-the-bacterial-stress-response-fall-2010/
+https://ocw.mit.edu/courses/7-342-chronic-infection-and-inflammation-what-are-the-consequences-on-your-health-fall-2007/
+https://ocw.mit.edu/courses/20-400j-perspectives-in-biological-engineering-spring-2006/
+https://ocw.mit.edu/courses/7-a12-freshman-seminar-structural-basis-of-genetic-material-nucleic-acids-fall-2005/
+https://ocw.mit.edu/courses/9-18-developmental-neurobiology-spring-2005/
+https://ocw.mit.edu/courses/7-342-a-double-edged-sword-cellular-immunity-in-health-and-disease-fall-2018/
+https://ocw.mit.edu/courses/7-27-principles-of-human-disease-spring-2006/
+https://ocw.mit.edu/courses/7-29j-cellular-neurobiology-spring-2012/
+https://ocw.mit.edu/courses/7-341-turning-evolutionary-dials-directed-evolution-techniques-for-climate-change-and-beyond-spring-2022/
+https://ocw.mit.edu/courses/20-104j-chemicals-in-the-environment-toxicology-and-public-health-be-104j-spring-2005/
+https://ocw.mit.edu/courses/6-021j-quantitative-physiology-cells-and-tissues-fall-2004/
+https://ocw.mit.edu/courses/20-442-molecular-structure-of-biological-materials-be-442-fall-2005/
+https://ocw.mit.edu/courses/hst-542j-quantitative-physiology-organ-transport-systems-spring-2004/
+https://ocw.mit.edu/courses/20-410j-molecular-cellular-and-tissue-biomechanics-be-410j-spring-2003/
+https://ocw.mit.edu/courses/20-430j-fields-forces-and-flows-in-biological-systems-fall-2015/
+https://ocw.mit.edu/courses/20-420j-biomolecular-kinetics-and-cellular-dynamics-be-420j-fall-2004/
+https://ocw.mit.edu/courses/2-782j-design-of-medical-devices-and-implants-spring-2006/
+https://ocw.mit.edu/courses/3-051j-materials-for-biomedical-applications-spring-2006/
+https://ocw.mit.edu/courses/20-309-biological-engineering-ii-instrumentation-and-measurement-fall-2006/
+https://ocw.mit.edu/courses/20-181-computation-for-biological-engineers-fall-2006/
+https://ocw.mit.edu/courses/20-109-laboratory-fundamentals-in-biological-engineering-spring-2010/
+https://ocw.mit.edu/courses/20-109-laboratory-fundamentals-in-biological-engineering-fall-2007/
+https://ocw.mit.edu/courses/20-380j-biological-engineering-design-spring-2010/
+
+	* Computational Biology
+	
+	MEGA Courses:
+	http://web.stanford.edu/class/cs279/
+
+		* Genetics
+
+			* Genome Analysis
+				
+				* Resource-Efficient Genome Anlaysis
+
+					* Accelerated Genome Analysis
+
+					Courses:
+					https://safari.ethz.ch/projects_and_seminars/spring2022/doku.php?id=bioinformatics
+
+					* Compute Efficient Genome Sequencing
+
+						* Genome Sequencing on Mobile Devices
+					
+						Courses:
+						Genome Sequencing on Mobile Devices
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Chemistry (MIT OCW: check)
+
+Books: https://chem.libretexts.org/Bookshelves
+
+	* Computational Chemistry
+
+	Courses:
+	https://www.youtube.com/watch?v=YF-amZgE2h4&list=PLm8ZSArAXicIWTHEWgHG5mDr8YbrdcN1K&ab_channel=TMPChem
+	https://www.youtube.com/watch?v=Y3_Qsf6Ka6I&list=PLWk-zl-RHnbebm4x4VcdrN3boC-PG-JDY&ab_channel=WisdomCenter
+	https://www.youtube.com/watch?v=d75GP5M5Tb8&list=PLAOKTXws9mMBuJLbInoUh98e9m_wGTK7F&ab_channel=DrBenChem	
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Math
+
+Books: https://math.libretexts.org/Bookshelves
+
+MEGA Courses: https://ocw.mit.edu/search/?d=Mathematics
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Physics
+
+Books: https://phys.libretexts.org/Bookshelves
+
+MEGA Courses: https://ocw.mit.edu/search/?d=Physics&q=engineering
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Engineering
+
+Books: https://eng.libretexts.org/Bookshelves
+
+	* _Computational Engineering
+
+	Courses:
+	https://math.mit.edu/~stoopn/18.086/schedule.html
+	https://inst.eecs.berkeley.edu/~ee127/fa20/
+
+		* Numerical Methods
+
+		Courses:
+		https://services.math.duke.edu/~jtwong/math563-2020/main.html
+		https://hmanikantan.github.io/ECH60/
+
+			* CFD
+
+			Repos:
+			https://github.com/barbagroup/CFDPython/fork
+
+			* FEM
+		
+			Repos:
+			https://github.com/FreeCAD/FreeCAD
+
+	* Systems (Operations) Engineering
+
+	Courses: (17) https://ocw.mit.edu/search/?d=Engineering%20Systems%20Division; https://ocw.mit.edu/search/?d=Institute%20for%20Data%2C%20Systems%2C%20and%20Society
+	https://ocw.mit.edu/courses/esd-33-systems-engineering-summer-2010/
+	https://ocw.mit.edu/courses/esd-33-systems-engineering-summer-2004/
+	https://ocw.mit.edu/courses/esd-00-introduction-to-engineering-systems-spring-2011/
+	https://ocw.mit.edu/courses/esd-04j-frameworks-and-models-in-engineering-systems-engineering-system-design-spring-2007/
+	https://ocw.mit.edu/courses/esd-342-network-representations-of-complex-engineering-systems-spring-2010/
+	https://ocw.mit.edu/courses/esd-342-advanced-system-architecture-spring-2006/
+	https://ocw.mit.edu/courses/esd-34-system-architecture-january-iap-2007/
+	https://ocw.mit.edu/courses/esd-86-models-data-and-inference-for-socio-technical-systems-spring-2007/
+	https://ocw.mit.edu/courses/1-264j-database-internet-and-systems-integration-technologies-fall-2013/
+	https://ocw.mit.edu/courses/esd-260j-logistics-systems-fall-2006/
+	https://ocw.mit.edu/courses/1-212j-an-introduction-to-intelligent-transportation-systems-spring-2005/
+	https://ocw.mit.edu/courses/1-203j-logistical-and-transportation-planning-methods-fall-2006/
+	https://ocw.mit.edu/courses/esd-290-special-topics-in-supply-chain-management-spring-2005/
+	https://ocw.mit.edu/courses/esd-273j-logistics-and-supply-chain-management-fall-2009/
+	https://ocw.mit.edu/courses/esd-s43-green-supply-chain-management-spring-2014/
+	https://ocw.mit.edu/courses/1-259j-transit-management-fall-2006/
+
+	* Materials Engineering
+
+	Courses: (22)
+	https://ocw.mit.edu/courses/3-00-thermodynamics-of-materials-fall-2002/
+	https://ocw.mit.edu/courses/3-35-fracture-and-fatigue-fall-2003/
+	https://ocw.mit.edu/courses/3-091sc-introduction-to-solid-state-chemistry-fall-2010/
+	https://ocw.mit.edu/courses/3-225-electronic-and-mechanical-properties-of-materials-fall-2007/
+	https://ocw.mit.edu/courses/3-46-photonic-materials-and-devices-spring-2006/
+	https://ocw.mit.edu/courses/3-024-electronic-optical-and-magnetic-properties-of-materials-spring-2013/
+	https://ocw.mit.edu/courses/3-032-mechanical-behavior-of-materials-fall-2007/
+	https://ocw.mit.edu/courses/3-016-mathematics-for-materials-scientists-and-engineers-fall-2005/
+	https://ocw.mit.edu/courses/3-071-amorphous-materials-fall-2015/
+	https://ocw.mit.edu/courses/3-205-thermodynamics-and-kinetics-of-materials-fall-2006/
+	https://ocw.mit.edu/courses/3-21-kinetic-processes-in-materials-spring-2006/
+	https://ocw.mit.edu/courses/3-052-nanomechanics-of-materials-and-biomaterials-spring-2007/
+	https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/
+	https://ocw.mit.edu/courses/15-066j-system-optimization-and-analysis-for-manufacturing-summer-2003/
+	https://ocw.mit.edu/courses/20-310j-molecular-cellular-and-tissue-biomechanics-spring-2015/
+	https://ocw.mit.edu/courses/3-37-welding-and-joining-processes-fall-2002/
+	https://ocw.mit.edu/courses/3-23-electrical-optical-and-magnetic-properties-of-materials-fall-2007/
+	https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/
+	https://ocw.mit.edu/courses/3-044-materials-processing-spring-2013/
+	https://ocw.mit.edu/courses/3-063-polymer-physics-spring-2007/
+	https://ocw.mit.edu/courses/3-320-atomistic-computer-modeling-of-materials-sma-5107-spring-2005/
+
+	* Math 4 Engineering
+
+	MEGA Courses: https://ocw.mit.edu/search/?d=Mathematics&q=engineering
+
+	* Mechanical Engineering
+
+	MEGA Courses: https://ocw.mit.edu/search/?d=Mechanical%20Engineering
+
+		* Aeronautics & Aerospace
+
+		Courses: https://ocw.mit.edu/search/?d=Aeronautics%20and%20Astronautics
+
+		* Transport Phenomena
+
+		Courses:
+		https://web2.clarkson.edu/projects/subramanian/ch330/notes/index.html
+		https://web2.clarkson.edu/projects/subramanian/ch560/notes/index.html
+
+			* Fluid Mechanics
+
+			Courses:
+			https://www.cbeaume.com/download/MATH5453_lect1.pdf
+
+	* Eletrical Engineering & Computer Science
+
+	MEGA Courses: https://ocw.mit.edu/search/?d=Electrical%20Engineering%20and%20Computer%20Science
+
+		* Digital Circuits
+
+		Courses:
+		https://www.eng.biu.ac.il/temanad/introduction-to-digital-electronic-circuits/
+		https://www.eng.biu.ac.il/temanad/digital-integrated-circuits/
+		https://faculty.kfupm.edu.sa/coe/mudawar/coe202/lectures/index.htm
+		https://courses.cs.washington.edu/courses/cse370/09sp/calendar.shtml
+		https://www.ee.ucl.ac.uk/~ademosth/E757/
+		https://www.eng.auburn.edu/~strouce/elec2200.html
+		https://www.eng.auburn.edu/~strouce/elec4200.html
+		http://www.ee.ncu.edu.tw/~jimmy/courses/DSD06/
+
+		* Networking
+
+		Courses:
+		https://mews.sv.cmu.edu/teaching/14742/s22/schedule.html
+		https://www.andrew.cmu.edu/course/14-760-s19/index/syllabus_index.html
+			
+			* Wireless networks
+
+			Courses:
+			https://mews.sv.cmu.edu/teaching/14814/s12/schedule.html
+
+		* IC
+
+		Courses:
+		https://inst.eecs.berkeley.edu/~eecs151/sp21/
+
+			* In-memory processing
+
+			Courses:
+			https://safari.ethz.ch/projects_and_seminars/spring2022/doku.php?id=processing_in_memory
+
+			* IO & Peripherals
+
+				* Image Sensors
+
+				Courses:
+				https://isl.stanford.edu/~abbas/aeglect392b.php
+
+			* Microcontrollers
+
+			Courses:
+			https://www.robots.ox.ac.uk/~dwm/Courses/2CO_2014/
+
+			* FPGA
+
+			Courses:
+			https://cse.usf.edu/~haozheng/teach/cda4253/
+
+			* Memory
+
+			Courses:
+			https://safari.ethz.ch/projects_and_seminars/spring2022/doku.php?id=softmc
+			https://safari.ethz.ch/projects_and_seminars/spring2022/doku.php?id=ramulator
+
+				* Testing
+
+				Courses:
+				http://www.ee.ncu.edu.tw/~jfli/memtest/Syllabus.htm
+
+			* Storage
+			
+				* SSDs
+
+				Courses:
+				https://safari.ethz.ch/projects_and_seminars/spring2022/doku.php?id=modern_ssds
+
+			* VLSI
+
+			Courses:
+			https://www.eng.biu.ac.il/temanad/digital-vlsi-design/
+			https://pages.hmc.edu/harris/class/e158/
+			http://www.ee.ncu.edu.tw/~jfli/vlsi21/Syllabus.htm
+			http://www.ee.ncu.edu.tw/~jfli/VLSI/Syllabus.htm
+			https://redirect.cs.umbc.edu/~cpatel2/links/640/
+
+				* SoC
+
+				Courses:
+				https://www.ecb.torontomu.ca/~courses/coe838/lecture-notes.html
+				https://cse.usf.edu/~haozheng/teach/soc/
+				https://www.cerc.utexas.edu/~jaa/soc/
+
+				* Testing
+
+				Courses:
+				https://www.ee.nthu.edu.tw/~syhuang/testing/
+				https://cse.usf.edu/~haozheng/teach/psv/
+
+			* Testing
+
+			Courses:
+			https://www.ida.liu.se/~zebpe83/teaching/test/
+			http://www.ee.ncu.edu.tw/~jfli/soctest/Syllabus.htm
+
+				* Built in Self Test
+
+				Courses:
+				https://www.eng.auburn.edu/~strouce/elec6280.html
+
+			* Hardware-Software Co-design
+
+			Courses:
+			https://safari.ethz.ch/projects_and_seminars/spring2022/doku.php?id=hw_sw_codesign
+
+	* Civil Engineering & Environmental Science & Engineering
+
+	MEGA Courses: https://ocw.mit.edu/search/?d=Civil%20and%20Environmental%20Engineering&q=civil%20engineering
+
+	* Mechatronics Engineering
+
+	* Courses:
+	https://cba.mit.edu/classes/
+
+		* Embedded Computing
+
+		Courses:
+		https://www.eng.auburn.edu/~nelson/courses/elec5260_6260/
+		https://profile.iiita.ac.in/bibhas.ghoshal/teaching_embedded.html
+		https://profile.iiita.ac.in/bibhas.ghoshal/teaching_iot_new.html
+		https://www.cse.wustl.edu/~lu/cse467s/
+		https://www.cse.cuhk.edu.hk/~byu/CENG4480/2021Fall/index.html
+
+		* Signal Processing
+
+		Courses:
+		https://isl.stanford.edu/~abbas/aeglect278.php
+		https://www.robots.ox.ac.uk/~dwm/Courses/2TF_2021/index.html
+
+			* Advanced
+
+			Courses:
+			https://users.ece.cmu.edu/~yuejiec/ece18898G.html
+		
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Computer Science & Engineering
+
+Books: https://eng.libretexts.org/Bookshelves/Computer_Science
+	
+	* Computer Graphics:
+
+	Video:
+	https://www.youtube.com/watch?v=W6yEALqsD7k&list=PL9_jI1bdZmz2emSh0UQ5iOdT2xRHFHL7E&ab_channel=KeenanCrane
+
+	* Quantum Computing
+
+	Courses:
+	https://fagonzalezo.github.io/qcp-2022-2/#/features/05-schedule
+	https://cs269q.stanford.edu/syllabus.html
+	https://indico.cern.ch/event/865287/
+
+	* Building Programming Languages
+
+	Courses:
+	http://6.s081.scripts.mit.edu/sp18/overview.html
+
+	* Compilers & Friends
+
+	Courses:
+	https://people.iith.ac.in/ramakrishna/Compilers-Aug14/
+	https://www.cl.cam.ac.uk/teaching/1516/CompConstr/materials.html
+	https://lambda.uta.edu/cse5317/
+	https://www.cs.cmu.edu/~fp/courses/15312-f04/schedule.html
+	https://scg.unibe.ch/download/lectures/cc/
+
+		* Interpreters
+	
+			* JIT
+
+			Courses:
+			https://www.wolczko.com/CS294/
+	
+		
+		* Advanced Compilers
+
+		Courses:
+		https://suif.stanford.edu/~courses/cs243/
+		https://www.eecis.udel.edu/~cavazos/cisc672-fall08/
+		https://ocw.snu.ac.kr/node/2209
+		https://cseweb.ucsd.edu/classes/sp14/cse231-a/lectures.html
+		
+	* Blockchain-based Web3
+
+	Courses:
+	https://www.ee.iitb.ac.in/~sarva/courses/EE465/Autumn2019.html
+
+	* Data Structures & Algorithms
+
+		* Algorithms
+	
+		Courses:
+		https://www.comp.nus.edu.sg/~rahul/CS3230-12.htm
+
+			* [Advanced]
+
+			Courses:
+			https://www.comp.nus.edu.sg/~rahul/CS6234-16.html
+
+	* Crytography
+
+	Courses:
+	https://crypto.stanford.edu/cs355/23sp/schedule/
+	https://www.cs.princeton.edu/courses/archive/fall07/cos433/
+	https://inst.eecs.berkeley.edu/~cs276/fa20/
+	https://kodu.ut.ee/~swen/courses/crypto-ii/
+	https://www.ee.iitb.ac.in/~sarva/courses/EE720/Spring2020.html
+		
+		* Zero-knowledge proofs:
+
+		Courses:
+		https://zk-learning.org/
+		
+
+	* Cybersecurity
+
+	Courses:
+	https://www.just.edu.jo/~ahmedshatnawi/SE431.html
+	https://www.cse.psu.edu/~trj1/cse497b-s07/slides/
+	https://www.cs.colostate.edu/~massey/Teaching/cs356/
+	https://engineering.purdue.edu/kak/compsec/NewLectures/
+	
+		* Secure Communications
+
+		Courses:
+		http://www2.kinneret.ac.il/mjmay/se425-5783.html
+
+	* Communications
+
+		* Information Theory
+
+		Courses:
+		https://isl.stanford.edu/~abbas/aeglect376b.php
+		https://www.ece.tufts.edu/ee/194NIT/index.html
+
+			* Data Compression
+			
+			Courses:
+			https://www.cim.mcgill.ca/~langer/423.html
+
+			* Error Correcting Codes
+
+			Courses:
+			https://www.ee.iitb.ac.in/~sarva/courses/EE605/Autumn2015.html
+
+		* Digital Communications
+		
+		Courses:
+		https://www.ee.iitb.ac.in/~sarva/courses/EE703/Autumn2022.html
+
+		* SSL Certificates:
+		
+		Stack Overflow:
+		https://stackoverflow.com/questions/188266/how-are-ssl-certificates-verified
+		
+	* Formal Methods
+
+		* Formal Verification (Model Checking)
+	
+		Courses:
+		https://cse.usf.edu/~haozheng/teach/cda5416/
+
+	* Computer Networks
+
+	Courses:
+	https://web.cs.wpi.edu/~rek/Grad_Nets/Spring2013/Spring2013.html
+	https://web.cs.wpi.edu/~rek/Nets1/A15/A15.html
+	https://web.cs.wpi.edu/~rek/Adv_Nets/Fall2014/Fall2014.html
+	https://www.inf.puc-rio.br/~noemi/sd-19/
+	http://www2.kinneret.ac.il/mjmay/se428-5783.html
+	http://www2.kinneret.ac.il/mjmay/se331-5783.html
+	http://www2.kinneret.ac.il/mjmay/archive/eee329-5779.html
+	https://www.ece.tufts.edu/ee/108/
+
+	* Computer Systems
+
+	Courses:
+	https://www.cs.cmu.edu/afs/cs/academic/class/15213-f18/www/schedule.html
+
+		* Operating Systems:
+
+		Courses:
+		https://none.cs.umass.edu/~shenoy/courses/spring20/lectures.html
+		http://www2.kinneret.ac.il/mjmay/archive/se321-5777.html
+		https://cs162.org/
+		
+			* Advanced
+			https://www.cs.cmu.edu/afs/cs/academic/class/15712-f15/www/
+
+			Awesome:
+			https://www.it.uu.se/education/course/homepage/os/vt18/module-1/definitions/
+
+		* Parallel & Concurrent Computing
+
+		Courses:
+		https://www.cs.usask.ca/~spiteri/CMPT851/notes/notes.html
+		https://www.clear.rice.edu/comp422/lecture-notes/index.html
+		https://www.uio.no/studier/emner/matnat/ifi/INF4140/h15/slides/
+		https://cseweb.ucsd.edu/classes/wi12/cse260-a/
+		https://gfxcourses.stanford.edu/cs149/fall23
+
+			* Parallel Processors
+	
+				* GPUs
+
+				Courses:
+				https://sydney-informatics-hub.github.io/training.artemis.gpu/
+
+				* Environments with different types of processors (Heterogeneous Computing)
+
+				Courses:
+				https://safari.ethz.ch/projects_and_seminars/spring2022/doku.php?id=heterogeneous_systems
+
+			* Distributed Computer Systems:
+
+			Courses:
+			https://none.cs.umass.edu/~shenoy/courses/spring22/lectures.html
+			https://profile.iiita.ac.in/bibhas.ghoshal/teaching_distributed.html
+			https://web.cs.wpi.edu/~cs4513/c16/
+			http://www2.kinneret.ac.il/mjmay/se424-5783.html
+			https://web.csie.ndhu.edu.tw/showyang/DistrSys2020s/
+			https://cs.uwaterloo.ca/~rtholmes/teaching/2011winter/cs436/index.html
+			
+				* Distributed Algorithms
+
+				Courses:
+				http://www2.kinneret.ac.il/mjmay/archive/ise441-5775.html
+				https://perso.telecom-paristech.fr/kuznetso/EFREI19/
+		
+
+		* Low-level Computing (Computer Architecture and Organization)
+
+		Courses:
+		https://computationstructures.org/
+		https://www.eng.biu.ac.il/temanad/soc-101/
+		http://www.ee.ncu.edu.tw/~jfli/computer/Syllabus.htm
+		https://cse.usf.edu/~haozheng/teach/eel6764/
+		https://www.cim.mcgill.ca/~langer/273.html
+		https://www.utsc.utoronto.ca/~bharrington/cscb58/lectures.shtml
+		https://taoxie.sdsu.edu/cs370/
+		https://www.robots.ox.ac.uk/~dwm/Courses/3CO_2000/index.html
+		https://web.ist.utl.pt/~luis.tarrataca/classes/computer_architecture/
+		https://profile.iiita.ac.in/bibhas.ghoshal/teaching_coa_2021.html
+		https://www.cse.cuhk.edu.hk/~byu/CENG3420/2022Spring/index.html
+
+			* Memory Mnagement Unit vs Memory Controller:
+
+			Forum:
+			https://www.quora.com/What-are-the-differences-between-MMU-and-Integrated-Memory-Controller
+			https://www.quora.com/What-is-the-function-of-the-memory-controller-in-relation-to-RAM
+		
+			* Reconfigurable Computing (FPGAs being reconfigured on the fly)
+	
+			Misc:
+			https://home.engineering.iastate.edu/~zambreno/classes/cpre583/2006/schedule.html
+			https://inst.eecs.berkeley.edu/~cs294-3/sp04/lectures/intro.pdfhttps://www.iaria.org/conferences2019/filesCENICS19/SergeiSawitzki_Keynote_ApplicationSpecific.pdf
+			https://www.iaria.org/conferences2019/filesCENICS19/SergeiSawitzki_Keynote_ApplicationSpecific.pdf
+			https://web.archive.org/web/20181125211145id_/http://xputers.informatik.uni-kl.de:80/staff/hartenstein/lot/HartensteinBuchKapitel06-v3.pdf
+	
+	* Data-intensive Systems
+
+		* Data Engineering
+
+		Courses:
+		https://gousios.org/courses/bigdata/
+		https://github.com/cu-data-engineering-s15/syllabus
+		https://id2221kth.github.io/schedule/
+	
+			* Database Systems
+
+			Books:
+			https://www.db-book.com/
+	
+			Courses:
+			http://www2.kinneret.ac.il/mjmay/archive/se324-5775.html
+
+				* Databases
+
+				Courses:
+				https://www.itu.dk/~carsten/courses/dd-13/
+
+
+	* AI
+
+	Courses:
+	https://stanford-cs221.github.io/spring2023/
+	https://cs.uwaterloo.ca/~ppoupart/teaching/cs486-spring23/schedule.html
+	https://people.kth.se/~misha/ID2209/s
+
+	* MEGAs:
+	https://storage.googleapis.com/deepmind-media/research/New_AtHomeWithAI%20resources.pdf
+
+		* Perception
+
+		Courses:
+		https://www.cim.mcgill.ca/~langer/546.html
+
+		* NLP
+
+			* Advanced NLP
+
+			Courses:
+			https://cmu-anlp.github.io/schedule.html
+			https://www.youtube.com/playlist?list=PL8PYTP1V4I8A1CpCzURXAUa6H4HO7PF2c
+
+		* ML
+
+		Courses:
+		https://www.robots.ox.ac.uk/~dwm/Courses/3EI_2012/index.html
+		https://psarkar.github.io/sds383c.html
+		https://psarkar.github.io/sds385.html
+		https://www.khoury.northeastern.edu/home/alina/classes/Fall2018/
+		https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/
+		https://eecs189.org/
+		https://cs.uwaterloo.ca/~ppoupart/teaching/cs480-winter23/schedule.html
+		https://cs.uwaterloo.ca/~ppoupart/teaching/cs885-fall22/schedule.html
+		https://hongyanz.github.io/cs480_680_s23
+		https://18661.github.io/
+		https://www.cs.ubc.ca/~schmidtm/Courses/340-F15/
+
+		Notes:
+		https://alvinwan.com/cs189/
+
+			* Data Mining (Advanced EDA)
+
+			Courses:
+			https://web.stanford.edu/class/cs345a/handouts.html
+
+			* Math 4 ML
+
+			Courses:
+			https://ocw.mit.edu/courses/18-657-mathematics-of-machine-learning-fall-2015/
+			https://deeplearningmath.org/
+
+			* ML Explainability
+
+			Courses:
+			https://www.youtube.com/playlist?list=PLoROMvodv4rPh6wa6PGcHH6vMG9sEIPxL
+
+			* ML Engineering
+
+			Courses:
+			https://id2223kth.github.io/
+
+			MEGAs:
+			https://github.com/leehanchung/awesome-full-stack-machine-learning-courses
+
+
+			* Applied
+
+				* Software Engineering
+
+				Courses:
+				https://gousios.org/courses/ml4se/
+
+				* Software Operations (AIOps)
+				
+				https://info.moogsoft.com/rs/092-EGH-780/images/ebook-observability-with-aiops-for-dummies.pdf
+
+			* DL
+			
+			Courses:
+			https://www.cc.gatech.edu/classes/AY2021/cs7643_fall/
+			https://uoft-csc413.github.io/2023/
+			https://fleuret.org/dlc/
+			https://18-786.github.io/
+			
+				* DL Engineering
+
+				Courses:
+				https://www.eng.biu.ac.il/temanad/hardware-for-deep-learning/
+
+			* RL
+	
+			Courses:
+			https://users.ece.cmu.edu/~yuejiec/ece18813B.html
+			https://www.cs.upc.edu/~mmartin/ATCI-RL.html
+
+		* Formal Methods
+
+		Courses:
+		https://web.stanford.edu/class/cs357/
+
+		MEGAs Courses:
+		https://fme-teaching.github.io/courses/
+
+	* Computer Graphics
+
+	Courses:
+	https://gfxcourses.stanford.edu/cs248a/winter24
+
+	* DevOps
+
+	Courses:
+	https://www.cs.ucc.ie/~dgb/courses/wd1.html
+
+		* Mobile Development
+
+			* Android
+
+			Courses:
+			http://www2.kinneret.ac.il/mjmay/archive/se435-5781.html
+
+	* Software Engineering
+
+	Courses:
+	https://cs61a.org/
+	https://home.cs.colorado.edu/~kena/classes/5828/f16/lectures/
+	https://cs.nyu.edu/~jcf/classes/g22.2440-001_sp06/slides/
+
+		* Software Design
+
+		Courses:
+		http://www2.kinneret.ac.il/mjmay/se322-5783.html
+		http://www2.kinneret.ac.il/mjmay/archive/ise325-5773.html
+
+			* High-level: Architecture Design
+
+			Courses:
+			http://www2.kinneret.ac.il/mjmay/se432-5783.html
+
+			* Low-level
+
+				* Design for OOP
+	
+				Courses:
+				https://home.cs.colorado.edu/~kena/classes/5448/f12/lectures/
+
+		* Program Analysis
+
+		Courses:
+		https://www.cs.cmu.edu/~aldrich/courses/17-355-18sp/
+
+	* Symbolic Computation
+
+	Courses:
+	https://cs.uwaterloo.ca/~r5olivei/courses/2022-fall-cs860/
+
+	* Theoretical CS
+
+		* Theory of Computing
+
+		Courses:
+		https://www.cs.cornell.edu/courses/cs6810/2021fa/
+
+		* Complexity Theory
+
+		Courses:
+		https://cs.uwaterloo.ca/~r5olivei/courses/2022-fall-cs860/
+
+			* Algebraic Complexity Theory
+
+			Courses:
+			https://cs.uwaterloo.ca/~r5olivei/courses/2021-winter-cs860/
+	
+
+	* Miscellaneous Courses: (aprox 67)
+
+	https://gousios.org/courses/algo-ds/
+	https://www.cim.mcgill.ca/~langer/557.html
+	https://www.cim.mcgill.ca/~langer/251.html
+	https://www.cim.mcgill.ca/~langer/250.html
+	https://spcl.inf.ethz.ch/Teaching/2016-osnet/
+	https://cs.usm.maine.edu/~behrooz.mansouri/courses/DS2023.html
+	https://cse.buffalo.edu/~hungngo/classes/2006/594/
+	https://cs.brynmawr.edu/Courses/cs312/fall2014/cnotes/index.html
+	http://6.035.scripts.mit.edu/fa18/overview.html
+	https://6.s081.scripts.mit.edu/sp18/overview.html
+	https://www.cs.upc.edu/~jordicf/Teaching/FME/Informatica/index.html
+	https://www.andrew.cmu.edu/user/nbier/15110/schedule.html
+	https://course.ece.cmu.edu/~ece600/schedule.html
+	http://dsg.csail.mit.edu/6.5830/assign.php
+	https://6s062.github.io/6MOB/2018/
+	https://www.cs.cmu.edu/afs/cs/academic/class/15213-f19/www/schedule.html
+	https://www.cs.cmu.edu/afs/cs/academic/class/15712-f15/www/syllabus.html
+	https://www.cs.cmu.edu/afs/cs/academic/class/15745-s19/www/
+	https://www.cs.cmu.edu/~15829/
+	https://www.cs.cmu.edu/afs/cs/academic/class/15418-f22/www/schedule.html
+	https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15745-s23/www/
+	https://schasins.com/cs294-usable-programming-2023/
+	https://inst.eecs.berkeley.edu/~cs164/fa22/schedule.html
+	https://rdi.berkeley.edu/course/berkeley-desys-s22
+	https://inst.eecs.berkeley.edu/~cs162/sp21/
+	https://people.eecs.berkeley.edu/~kubitron/cs262/index_lectures.html
+	https://www.stat.berkeley.edu/~mmahoney/s15-stat260-cs294/
+	https://www.stat.berkeley.edu/~mmahoney/f13-stat260-cs294/
+	https://cs.stanford.edu/people/mmahoney/cs369m/
+	https://sites.google.com/berkeley.edu/cs263sp19/
+	http://web.stanford.edu/class/cs349d/
+	https://web.stanford.edu/class/ee282/
+	https://users.ece.cmu.edu/~ganger/746.spring12/schedule.html
+	https://inst.eecs.berkeley.edu/~cs152/sp21/
+	https://uoft-ecosystem.github.io/CSC2224-Website/content.html
+	https://www.cs.cornell.edu/courses/cs4110/2021fa/
+	https://pages.cs.wisc.edu/~shivaram/cs537-sp20/
+	https://users.ece.cmu.edu/~yuejiec/ece18898G.html
+	https://cs61.seas.harvard.edu/wiki/2017/Schedule
+	https://www.mosharaf.com/eecs582-w16/
+	https://github.com/BrunoScaglione/eecs489
+	https://pdos.csail.mit.edu/6.S081/2020/schedule.html
+	http://nil.lcs.mit.edu/6.824/2020/
+	https://css.csail.mit.edu/6.858/2019/schedule.html
+	https://www.scs.stanford.edu/22sp-cs244b/
+	https://www.scs.stanford.edu/22wi-cs212/
+	https://web.stanford.edu/~ouster/cs111-spring21/
+	https://www.scs.stanford.edu/nyu/05sp/
+	https://none.cs.umass.edu/~shenoy/courses/spring13/lectures.html
+	https://web.mit.edu/6.031/www/sp19/
+	https://web.eecs.umich.edu/~xwangsd/courses/w23/lectures.html
+	https://www.cs.jhu.edu/~huang/cs318/fall22/schedule.html
+	https://symbolaris.com/course/pic14-schedule.html
+	https://course.ece.cmu.edu/~ece733/schedule.html
+	https://symbolaris.com/course/dl22-schedule.html
+	https://symbolaris.com/course/hsatp-schedule.html
+	https://symbolaris.com/course/dcd-schedule.html
+	https://symbolaris.com/course/lahs-schedule.html
+	https://www.cs.cmu.edu/~aplatzer/course/fcps16-schedule.html
+	https://symbolaris.com/course/constlog16-schedule.html
+	https://github.com/barghouthi/cs704
+	https://dzufferey.github.io/concurrency_theory_2018/
+	https://eth-sri.github.io/teaching/rse2022
+	http://people.seas.harvard.edu/~madhusudan/courses/Spring2016/
+	https://www.cs.toronto.edu/~anikolov/csc2414.html
+	https://www.kosbie.net/cmu/spring-22/15-112/schedule.html
+	https://hci.stanford.edu/courses/cs194h/2023/wi
+	https://2022-cs244.github.io/schedule/
+	https://hcicourses.stanford.edu/cs347/2023/index.php
+	https://courses.cs.washington.edu/courses/cse533/05au/
+	http://www.compsci.hunter.cuny.edu/~sweiss/course_materials/csci340/slides/
+	http://www.compsci.hunter.cuny.edu/~sweiss/course_materials/unix_lecture_notes/
+	https://profile.iiita.ac.in/bibhas.ghoshal/teaching_prog.html
+	https://profile.iiita.ac.in/bibhas.ghoshal/teaching_os.html
+	https://profile.iiita.ac.in/bibhas.ghoshal/teaching_ds.html
+	http://www2.kinneret.ac.il/mjmay/se317-5783.html
+	http://www2.kinneret.ac.il/mjmay/cs121511-5783.html
+
+- graph NNs:
+	- https://www.linkedin.com/posts/giuseppefutia_cdl-2024-gnns-masterclass-ugcPost-7277013348045492225-SSwd?utm_source=share&utm_medium=member_desktop
+
+- prompt engineering:
+	- https://arxiv.org/pdf/2406.06608
+
+- gpus:
+	- https://huggingface.co/blog/train_memory
+	- https://www.youtube.com/channel/UCJgIbYl6C5no72a0NUAPcTA
+	- https://www.youtube.com/playlist?list=PLRRuQYjFhpmubuwx-w8X964ofVkW1T8O4
+	- https://github.com/rkinas/triton-resources
+	- https://github.com/gpu-mode/resource-stream
+- aws:
+	- https://media.licdn.com/dms/document/media/v2/D4D1FAQGkLHnftl4TMQ/feedshare-document-pdf-analyzed/B4DZP4wr0GHUAY-/0/1735045361411?e=1736380800&v=beta&t=RZ05iHPseQ5-aO89PDnTCrCZPGvfFrY3jn1YoKppic8
+
+- building LLMs courses: 
+	- https://stanford-cs336.github.io/spring2025/
+	- https://github.com/HandsOnLLM/Hands-On-Large-Language-Models
+
+- llm distrubted training:
+	- https://github.com/huggingface/picotron
+
+- llm finetuning:
+	- https://www.linkedin.com/posts/migueloteropedrido_llm-finetuning-workflow-ugcPost-7292113364153999360-SsBA?utm_source=share&utm_medium=member_android
+
+- Rl algos for LMs: https://yugeten.github.io/posts/2025/01/ppogrpo/
+
+- vision-language models
+	- https://github.com/SkalskiP/vlms-zero-to-hero
+
+- data engineering
+	- https://github.com/sdg-1/data-team-handbook
+
+- agents
+	- https://language-agent-tutorial.github.io/
+
+- multi-agents
+	- https://media.licdn.com/dms/document/media/v2/D561FAQHaRz4UkA51GQ/feedshare-document-pdf-analyzed/B56ZSoXvkEGUAY-/0/1737991595733?e=1738800000&v=beta&t=l6Pfb5IYL-3o-hbApO_6JE0iakHytCMndbC-TH84DTc
+
+- web browsers
+	- https://browser.engineering/
+	- https://developer.chrome.com/blog/inside-browser-part1?hl=pt-br
+
+- transformers
+	- https://poloclub.github.io/transformer-explainer/
+
+- pytorch
+	- https://github.com/pytorch/examples
+
+- ai in agriculture
+	- https://www.freecodecamp.org/news/ai-in-agriculture-book/
+
+- llm foundations book: https://arxiv.org/pdf/2501.09223
+
+- deep rl course: https://huggingface.co/learn/deep-rl-course/en/unit0/introduction
+
+- building (training and inference) llms with scale and high-performance:
+	- http://hf.co/spaces/nanotron/ultrascale-playbook
+	- https://jax-ml.github.io/scaling-book/
+	- https://www.youtube.com/watch?v=1E8GDR8QXKw
+	- https://github.com/rwitten/HighPerfLLMs2024
+	- https://www.jeremyjordan.me/distributed-training/
+
+- e2e agents projects:
+	- https://huggingface.co/blog/open-deep-research
+	- https://github.com/victordibia/multiagent-systems-with-autogen
+	- https://github.com/google-gemini/gemini-fullstack-langgraph-quickstart
+
+- Practical AI Robotics:
+	- https://github.com/LeCAR-Lab/ASAP
+
+- ML Cheatsheet: https://media.licdn.com/dms/document/media/v2/D561FAQEjlTUrmjuuDw/feedshare-document-pdf-analyzed/B56ZTPchUpGUAY-/0/1738647180354?e=1739404800&v=beta&t=6ArHQpitsMa6CeJwaunnEGiTtDBeU-hihjRdtVhjzm8
+
+- Marimo Notebooks Examples: https://github.com/marimo-team/learn
+
+- Awesome AI Channel: https://www.youtube.com/@ai-by-hand
+
+- multimodal lm training: https://github.com/Deep-Agent/R1-V
+
+- ai & data projects: https://github.com/youssefHosni/Awesome-AI-Data-Guided-Projects
+
+- document processing stack: https://github.com/marcelmarais/modern-doc-processing-stack
+
+- deepseek: 
+	- https://stratechery.com/2025/deepseek-faq/
+ 	- https://magedsaeed.github.io/posts/DeepSeek-Presented-Simple/
+	- https://www.youtube.com/watch?v=0VLAoVGf_74
+
+- oss llmops stack: https://oss-llmops-stack.com/
+
+- chip's ai engineering book: https://drive.google.com/drive/folders/1wBbdIoWqtGkqrHjPXMFs46EGbUE6CL7E
+
+- recsys with llms: https://januverma.substack.com/p/large-language-models-for-recommender
+
+- autonomous finetuning system: https://blog.premai.io/premai-autonomous-fine-tuning-system-technical-architecture-documentation/
+
+- data analysis benchmark: https://huggingface.co/blog/dabstep
+
+- tensor cookbook: https://tensorcookbook.com/
+
+- explaining torch.compile: https://themlsurgeon.substack.com/p/dissecting-torchcompile-surgical
+
+- llm systems project-based courses: 
+	- https://decodingml.substack.com/p/master-production-ai-with-our-end
+	- https://www.youtube.com/watch?v=pg1Sn9rsFak
+	- https://github.com/neural-maze/ai-companion
+
+- intro to gpu programming: https://www.pyspur.dev/blog/introduction_cuda_programming
+
+- gpu optimization:
+ - https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html
+ - https://aryagxr.com/blogs/cuda-optimizing-layernorm
+
+- agents: https://aman.ai/primers/ai/agents/
+
+- voice ai project: https://theneuralmaze.substack.com/p/the-ultimate-ai-voice-pipeline
+
+- how andrej karpathy uses llms: https://www.youtube.com/watch?v=EWvNQjAaOHw
+
+- duckdb goes tributed for ai: https://mehdio.substack.com/p/duckdb-goes-distributed-deepseeks
+
+- leetcode for gpu programming: https://tensara.org/
+
+- snaps ml platform: https://eng.snap.com/introducing-bento
+
+- reosoning models course: https://huggingface.co/learn/nlp-course/chapter12/1
+
+- graph extraction: https://medium.com/@irina.karkkanen/build-your-hybrid-graph-for-rag-graphrag-applications-using-the-power-of-nlp-57219b6e2adb
+
+- triton: https://www.youtube.com/playlist?list=PLPefVKO3tDxOJLAmCA75uShbe1z_RNqkQ
+
+- CUDA Alternatives: https://www.modular.com/blog/democratizing-ai-compute-part-5-what-about-cuda-c-alternatives?utm_source=x&utm_campaign=Community
+
+- state of ml competitions: https://mlcontests.com/state-of-machine-learning-competitions-2024/
+
+- mlops template: https://github.com/rayanramoul/ml-project-template
+
+- ** ai for building ai: https://drive.google.com/file/d/1iVedOdZDuEdjS4lcm9Z7i8oEDGWfzVJq/view
+
+- robotics foundation model: https://ai.meta.com/research/publications/zero-shot-whole-body-humanoid-control-via-behavioral-foundation-models/
+
+- gpu utliization: https://modal.com/blog/gpu-utilization-guide
+
+- data product testing strategy: https://moderndata101.substack.com/p/the-data-product-testing-strategy
+
+- hardware-aware attention: https://www.yuan-meng.com/posts/hardware_aware_transformers/
+
+- robotics sample code: 
+ 	- https://github.com/NxRLab/ModernRobotics
+	- https://github.com/BrunoScaglione/CppRobotics
+
+- MEGA robotics: https://github.com/mithi/robotics-coursework/
+
+- awesome robotics courses: https://robotacademy.net.au/
+
+- robotics courses:
+	- http://ais.informatik.uni-freiburg.de/teaching/ss16/robotics/index_en.php
+	- http://www.kostasalexis.com/introduction-to-aerial-robotics.html
+	- http://prg.cs.umd.edu/enae788m
+ 	- https://gaowenliang.github.io/HKUST-ELEC5660-Introduction-to-Aerial-Robots/index.html
+	- https://cmsc828t.github.io/
+	- https://nptel.ac.in/courses/112108093
+
+- SLMs for edge AI: https://blog.premai.io/small-language-models-slms-for-efficient-edge-deployment/
+
+- LLM Systems Course: https://github.com/BrunoScaglione/llm-zoomcamp
+
+- Agents Courses: 
+	- https://github.com/agno-agi/agno/tree/main/cookbook/getting_started
+	- https://github.com/BrunoScaglione/ai-agents-for-beginners
+
+- Understaning internas of LLMs: https://transformer-circuits.pub/2025/attribution-graphs/biology.html
+
+- Curret problems with MCP: https://www.featureform.com/post/what-mcp-gets-wrong
+
+- math for ML book: https://media.licdn.com/dms/document/media/v2/D561FAQEdBZ9XVwCj9A/feedshare-document-pdf-analyzed/B56ZYKR3D6GcAY-/0/1743929238715?e=1744848000&v=beta&t=k9PF2Lqst8SI0ye2JOuoMkkwT_9EKlG6BWIeZAc0Uy0
+
+- illisttrated tensor parallelism: https://danielvegamyhre.github.io/ml/performance/2025/03/30/illustrated-megatron.html
+
+- llm agents books: 
+ - https://arxiv.org/pdf/2504.01990
+ - https://github.com/humanlayer/12-factor-agents
+ - https://media.licdn.com/dms/document/media/v2/D4D1FAQETZ7HYzLotZg/feedshare-document-pdf-analyzed/B4DZaGckr.GcAY-/0/1746012416328?e=1746662400&v=beta&t=Kn76oK_uYXfs1FviLl7_EKT8WNoU7aFI_ReqvVJHxA0
+
+- end-to-end (distributed finetuning + batch inference + online serving) llm Project on ray: e2e-llm-workflows
+
+- building na llm gateway: https://github.com/anyscale/llm-router
+
+- ai index report 2025: https://hai-production.s3.amazonaws.com/files/hai_ai_index_report_2025.pdf
+
+- computer Science study guide book: https://csdiy.wiki/en/
+
+- ml model compilation: 
+	- https://bernsteinbear.com/blog/compiling-ml-models/
+
+- stable diffusion tutorials: https://github.com/BrunoScaglione/Stable-Diffusion-tutorials
+
+- programming parallel computers course: https://ppc.cs.aalto.fi/index/
+
+- score-based generative models thesis: https://stacks.stanford.edu/file/zy983tp3399/submit-augmented.pdf
+
+- autonomous Racing cars course: https://roboracer.ai/course
+
+- from monolith to microservices:
+	- https://github.com/BrunoScaglione/Monolith-To-Microservices
+	- https://dl.ebooksworld.ir/books/Monolith.to.Microservices.Sam.Newman.OReilly.9781492047841.EBooksWorld.ir.pdf
+	- https://martinfowler.com/articles/break-monolith-into-microservices.html
+	- https://run.unl.pt/bitstream/10362/150901/1/TGI1548.pdf
+	- https://is.muni.cz/th/f8zv4/Master_Thesis.pdf
+
+- theoretical dl: https://vixra.org/pdf/2502.0023v1.pdf
+
+- agntic systems live database: https://aiagentindex.mit.edu/index/
+
+- deepseek AI infra: https://github.com/deepseek-ai/open-infra-index
+
+- website Q&A Project: https://github.com/BouajilaHamza/site-ai-assistant-integration
+
+- physics engine books:
+	- https://www.r-5.org/files/books/computers/algo-list/realtime-3d/Ian_Millington-Game_Physics_Engine_Development-EN.pdf
+	- https://elhacker.info/manuales/OReilly%204%20GB%20Collection/O'Reilly%20-%20Physics%20for%20Game%20Developers.pdf
+
+- llm building projects:
+	- https://github.com/XiaomiMiMo/MiMo
+	- https://github.com/NovaSky-AI/SkyThought
+        - https://github.com/huggingface/open-r1
+
+- DL Security (Using DL to attack + attacking DL): https://github.com/Kayzaks/HackingNeuralNetworks/blob/master/Article.pdf
+
+- Observability for RAG Agents: https://decodingml.substack.com/p/observability-for-rag-agents
+
+- survey on llm inference engines: https://arxiv.org/pdf/2505.01658
+
+- ai cheatsheets (pocket reference): https://vectorinstitute.github.io/ai-pocket-reference
+
+- Awesome MLOps tools reference: https://www.mlops-tools.com/
+
+- AgentOps course: https://github.com/panaversity/learn-agentic-ai
+
+- Sell then build founders guide: https://media.licdn.com/dms/document/media/v2/D4E1FAQFrD6txV2rzsg/feedshare-document-pdf-analyzed/B4EZbJueyWHMAg-/0/1747141149592?e=1747872000&v=beta&t=pG8BSo8ac8FLQsNte1oHFEkf-khDPlBMTdD9Tnfgodc
+
+- anthropicagents guide: https://media.licdn.com/dms/document/media/v2/D4D1FAQG5XHRSnj4AMw/feedshare-document-pdf-analyzed/B4DZbOcFD5GUAc-/0/1747220199296?e=1747872000&v=beta&t=N1fw5DGmlx1FoPFpVpcmte5sERRwn-2pg7ySgl6RaYk
+
+- differential privacy for ML: https://arxiv.org/pdf/2303.00654
+
+- VLMs 2025 Guide: https://huggingface.co/blog/vlms-2025
+
+- mcp courses: 
+	- https://huggingface.co/learn/mcp-course/unit0/introduction
+	- https://github.com/microsoft/mcp-for-beginners
+
+- ptx docs: https://docs.nvidia.com/cuda/parallel-thread-execution/
+
+- deepsekk v3 insights: https://arxiv.org/pdf/2505.09343
+
+- building llm inference engine from scrath using CUDA: https://andrewkchan.dev/posts/yalm.html
+
+- a2a + mcp tutorial: https://github.com/Tsadoq/a2a-mcp-tutorial
+
+- awesome MEGA AI courses from huggingface: https://huggingface.co/learn
+
+- awesome ultimate guide to fine-tuning: https://arxiv.org/pdf/2408.13296v1
+
+- MEA LLM Engineer: https://github.com/KalyanKS-NLP/llm-engineer-toolkit
+
+- k8s for ml engineers course: https://github.com/Paulescu/kubernetes-for-ml-engineers
+
+- mlflow course: https://github.com/manuelgilm/mlflow_for_ml_dev
+
+- foundation models course: https://cs.uwaterloo.ca/~wenhuche/teaching/cs886/
+
+- deep research tutorial: https://www.theunwindai.com/p/build-an-ai-domain-deep-research-agent
+
+- RLHF book: https://rlhfbook.com/
+
+- ser workbook: https://sre.google/workbook/table-of-contents/
+
+- ai playbook marine corps: https://media.licdn.com/dms/document/media/v2/D4E1FAQGoI4HsJ9-x4Q/feedshare-document-pdf-analyzed/B4EZcRM1HvHcAg-/0/1748340289102?e=1749081600&v=beta&t=BChpQxVG0BVQ3DUJmW_9LlFebWhQUQXPR14NvvFNFSc
+
+- react server componentes explained: https://www.joshwcomeau.com/react/server-components/
+
+- awesome programming parallel computers course: https://ppc.cs.aalto.fi/
+
+- ML performance engineering blog: https://danielvegamyhre.github.io/
+
+- Interactive Dashboards to learn DS: https://github.com/GeostatsGuy/DataScienceInteractivePython
+
+- CUDA course: https://www.youtube.com/watch?v=F620ommtjqk&list=PLnH7E0IG44jFfiQBd_Ov7FmYHq8SZx6r0
+
+- redisual connections: https://www.youtube.com/watch?v=jEeL5Gf4vkk
+
+- self-improving agentes: https://media.licdn.com/dms/document/media/v2/D4D1FAQGZuB1OozcLsQ/feedshare-document-pdf-analyzed/B4DZcxVd8TGwAY-/0/1748879421576?e=1749686400&v=beta&t=tt-EByjLralOG7JwHxltv3QVtwJTPL8jAte_M0Uvs4s
+
+- microservices with spring boot & k8s: https://www.kufunda.net/publicdocs/Back-end%20Java%20-%20Microsservi%C3%A7os,%20Spring%20Boot%20e%20Kubernetes%20(Eduardo%20Felipe%20Zambom%20Santana).pdf
+
+- platform engineering on k8s: http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202023%20-%20G/CED/Platform%20Engineering%20on%20Kubernetes.pdf
+
+- foundation models + robotics: 
+	mini-course: https://foundation-models-meet-embodied-agents.github.io/
+	course: https://www.youtube.com/watch?v=1ZuvCWvj0HM&list=PLMe2pHxzxHp-UJ1jd-uuGSGK7P7Phtm-f
+
+- how anthropic uses calude code internally: https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf
+
+- building ai agents guide: https://media.licdn.com/dms/document/media/v2/D4D1FAQEQ6H-GTto3Kw/feedshare-document-pdf-analyzed/B4DZdUWjNYHkAc-/0/1749466894826?e=1750291200&v=beta&t=vbvRUfty_qal4ZYRsDN5ooX82O8C164DKM7H5a9a42c
+
+- top 50 llm interview questions: https://drive.google.com/file/d/1cUxKspEXgQ64s4OFEw0kabf_qNauOPiH/view
+
+- llm inference vram calculators: 
+	- https://apxml.com/tools/vram-calculator
+	- https://modal.com/llm-almanac/advisor?filters=model%3DQwen+3+235B-A22B+fp8%2Ctokens%3D128%3B1024
+
+- advanced rl for llms slides: https://docs.google.com/presentation/d/1Jh5p_JDXt4eLD0ireaHJjJNpzqSF8E1WTwIHeojyjNU/edit?slide=id.g35e7f1de1a9_1_0#slide=id.g35e7f1de1a9_1_0
+
+- systems for ml course: https://cs229s.stanford.edu/fall2023/calendar/
+
+- multi-agent RL book: https://www.marl-book.com/download/marl-book.pdf
+
+- ML book (theory-focused): https://mlstory.org/pdf/patterns.pdf
+
+- autonomous robotics book: https://www.me.chalmers.se/~mwahde/courses/aa/2016/FFR125_LectureNotes.pdf
+
+- robotic systems book: https://motion.cs.illinois.edu/RoboticSystems/
+
+- adaptive MPC ==  Model-based RL
+
+- robotics workshop: https://www.youtube.com/watch?v=0OdOvkm5Xi4
+
+- MEGA robotics courses: https://github.com/mithi/robotics-coursework
+
+- explaininatio of ai-related Jobs: https://newsletter.pragmaticengineer.com/p/the-ai-engineering-stack
+
+- robot learning courses (inteligent robotics):
+	- https://liralab.usc.edu/csci699/
+	- https://saurabhg.web.illinois.edu/teaching/ece598sg1/sp2025/schedule.html
+	- https://www.cs.cornell.edu/courses/cs4756/2025sp/
+	- https://antonilo.github.io/real_world_robot_learning_sp25/
+	- https://16-831.github.io/spring25/lectures
+	- https://www.youtube.com/watch?v=1ZuvCWvj0HM&list=PLMe2pHxzxHp-UJ1jd-uuGSGK7P7Phtm-f
+	- https://www.user.tu-berlin.de/mtoussai/teaching/RobotLearning/
+	- https://www.cs.utexas.edu/~abba/fri-robot-learning/schedule.html
+	- https://saurabhg.web.illinois.edu/teaching/ece598sg1/sp2025/schedule.html
+	- https://berenson.robotics.umich.edu/courses/winter2025robotlearning/index.html
+	- https://rllab.snu.ac.kr/courses/robot-learning-spring-2025
+
+- awesome flow matching and diffusion models course: https://diffusion.csail.mit.edu
+
+- dl theory book: https://arxiv.org/abs/2106.10165
+
+- build deepseek from scratch course: https://m.youtube.com/playlist?list=PLPTV0NXA_ZSiOpKKlHCyOq9lnp-dLvlms
+
+- rag template generator: https://github.com/pavanjava/bootstrap-rag
+
+- llm courses:
+	- https://cmu-llms.org/
+
+	- llm inference course: https://www.phontron.com/class/lminference-fall2025/
+
+	- https://xmarva.github.io/teaching/
+
+- awesome gpu computing youtube channel: https://www.youtube.com/@GPUMODE
+
+- examples of SWE best-practices repo: https://github.com/mindbuttergold
+
+- mpc book: https://sites.engineering.ucsb.edu/~jbraw/mpc/MPC-book-2nd-edition-1st-printing.pdf
+
+- agents in produciton repo: agents-towards-production
+
+= agente sin production with dapr: https://github.com/panaversity/learn-agentic-ai
+
+- self-driving courses: 
+	- https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/self-driving-cars/
+	- https://www.youtube.com/watch?v=EBFlmHqgezM&list=PLgnQpQtFTOGQo2Z_ogbonywTg8jxCI9pD
+
+- spec-driven coding agetns whitepaper: https://media.licdn.com/dms/document/media/v2/D561FAQH6A1msdyjUyQ/feedshare-document-pdf-analyzed/B56ZeI5s6rHoAY-/0/1750348518834?e=1751500800&v=beta&t=Vxq5OTdQw9MeN7IkTEzdYkWQ3UpiycnzS2l9yJZKGpc
+
+- topological dl report: https://media.licdn.com/dms/document/media/v2/D561FAQGNNNIOf486iw/feedshare-document-pdf-analyzed/B56Zed0NM2GQAg-/0/1750699410248?e=1751500800&v=beta&t=QPV-Wo-96To8Ws6Cxd20kBg4-mcgpuf_LKkVty5Ek1w
+
+- MEGA n8n workflows: https://github.com/Zie619/n8n-workflows
+
+- Awesome LLM Survey: https://arxiv.org/pdf/2402.06196
+
+- software construciton course: https://web.mit.edu/6.102/www/sp24/
+
+- gemma cookbook: https://github.com/google-gemini/gemma-cookbook
+
+- SQL Course: https://sqlzoo.net/wiki/SQL_Tutorial
+
+- CS Curriculum: https://teachyourselfcs.com/
+
+- Tools for developers with free tiers: https://free-for.dev/#/
+
+- Visualizations of Data Strctures: https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
+- Website for testing webhooks: https://webhook.site/#!/view/90c73749-6c94-433d-ad47-dd60fa54801b
+
+- Problem Solving for the CS Tech Interview COurse: https://web.stanford.edu/class/cs9/
+
+- Open ML Course: https://mlcourse.ai/book/index.html
+
+- Awesome developer roadmaps: https://roadmap.sh/
+
+- MEGA CS Cheatsheets: https://devhints.io/
+
+- super small compiler for educational purposes: https://github.com/jamiebuilds/the-super-tiny-compiler
+
+- resources for people starting to learn compilers: https://c9x.me/compile/bib/
+
+- Strcture and Interpretation of COmputer Programs Book: https://sarabander.github.io/sicp/html/index.xhtml#toc-Building-Abstractions-with-Data
+
+- Writing a Compiler: https://norasandler.com/2017/11/29/Write-a-Compiler.html
+
+- Data Strctures Course: https://cs.lmu.edu/~ray/classes/dsa/
+
+- Data Strctures Book: https://opendatastructures.org/
+
+- Software Enginering Course: https://see.stanford.edu/Course/CS106A
+
+- SQL cheatsheet: https://www.cheat-sheets.org/sites/sql.su/
+
+- Awesome MEGA CS books: https://goalkicker.com/
+
+- Awesome MEGA Dev Courses: https://freecourses.github.io/course/android_tutorial_with_examples_suresh_dasari
+
+- Microfrontends: https://micro-frontends.org/
+
+- llm notes: https://hamel.dev/notes/llm/
+
+- k8s notes: https://hamel.dev/notes/k8s/
+
+- sql course: https://cstorm125.github.io/posts/sql_almost/
+
+- Interactive Handbook for Data Strctures and Algorithms: https://cartesian.app/
+
+- python book: https://runestone.academy/ns/books/published/thinkcspy/index.html
+
+- frontend performance engineering: https://web.dev/explore/fast?hl=pt-br
+
+- llm youtube course: https://www.youtube.com/watch?v=rRdUbdhHjy0&list=PLNg09XqZv0dEWPpb1jJf8woP3cl_boYWZ
+
+- LLM Eval FAQ: https://media.licdn.com/dms/document/media/v2/D561FAQHbbqpIp4WtDQ/feedshare-document-pdf-analyzed/B56Ze_QGbsHEAY-/0/1751260360714?e=1752105600&v=beta&t=mu1Z8_oy7x671WtJMGDGHOcTyKlCRo-vaU2tmpguVWk
+
+- DL youtube course: https://www.youtube.com/playlist?list=PLgPbN3w-ia_PeT1_c5jiLW3RJdR7853b9
+
+- Zero to Production Agent Guide: https://media.licdn.com/dms/document/media/v2/D4D1FAQEaaFB8844Wfw/feedshare-document-pdf-analyzed/B4DZeg81RqGkAY-/0/1750752000435?e=1752105600&v=beta&t=LCN0Dqbt67bKJs3xjtYmhALueHT5-e5PMIkuOM0bkWc
+
+- n8n course: https://www.youtube.com/watch?v=7WsbtZwOx_U
+
+- fastapi playlist: https://www.youtube.com/playlist?list=PLK8U0kF0E_D6l19LhOGWhVZ3sQ6ujJKq_
+
+- Awesome ML Q&A Book: https://sebastianraschka.com/books/ml-q-and-ai/#table-of-contents
+
+- Speculative decoding: https://www.perplexity.ai/hub/blog/accelerating-sonar-through-speculation
+
+- mlops template: https://github.com/jjovalle99/fastapi-langgraph-template
+
+- never start with agents article: https://decodingml.substack.com/p/stop-building-ai-agents
+
+- MEGA GitHub Copilot instructions: https://github.com/github/awesome-copilot
+
+- AI for generating CUDA Kernels: https://generate.mako.dev/
+
+- dataopa cookbook: https://www.devopsschool.com/blog/wp-content/uploads/2021/07/DK_dataops_book_2nd_edition.pdf
+
+- n8n tutorials: https://lnkd.in/dgHVHpUu
+
+- LLM-based self-improvement:
+	- MEGA LLM Self-improvement: https://github.com/BrunoScaglione/Awesome-LLM-Self-Improvement
+	- Foundation of Self-improving agents: https://www.youtube.com/watch?v=Ei6iirrc1kE
+
+- AI Security Landscape: https://failfastlearnloud.hashnode.dev/the-evolving-landscape-of-ai-security-risks-frameworks-and-open-source-defenses
+
+- Awesome Pytorch for begginers in 1 hour: https://sebastianraschka.com/teaching/pytorch-1h/
+
+- n8n agent that builds teams of n8n agents tutorial: https://www.youtube.com/watch?v=Ik8OHT3w4pE
+
+- oenai ai agents guide: https://media.licdn.com/dms/document/media/v2/D4D1FAQFMjtILtT8lJw/feedshare-document-pdf-analyzed/B4DZevlt6oHkAc-/0/1750997600041?e=1752710400&v=beta&t=xekd0q9xw2WaXOJIIckw18iscUFZmC4jLWT8nOmYma4
+
+- Awesome intro to pure mathematics: https://infinitedescent.xyz/dl/infdesc.pdf
+
+- Awesome book about differentiable programming: https://arxiv.org/pdf/2403.14606v3
+
+- COntext Engineering Guide: https://media.licdn.com/dms/document/media/v2/D4E1FAQGXdZlvvKUmWA/feedshare-document-pdf-analyzed/B4EZffE97FHsAY-/0/1751794316061?e=1752710400&v=beta&t=QV2nf-oZ5b-EM5-oIsGRoX4Xv2HTRqHrFRs5GnWy0xI
+
+- MEGA feature selection: https://github.com/LindenbaumLab/project-featselectlib
+
+- Math for CS Book: https://courses.csail.mit.edu/6.042/spring18/mcs.pdf
+
+- Prompt Engineerng Interactive Tutorial: https://github.com/anthropics/prompt-eng-interactive-tutorial
+
+- MCP Illustraed Guidebook: https://media.licdn.com/dms/document/media/v2/D4D1FAQFm_6RWbhDK3w/feedshare-document-pdf-analyzed/B4DZfgOVoGHkAY-/0/1751813575570?e=1752710400&v=beta&t=gfEvGxtt0jpKpA1wjWhw4m0REQqw_kdBidJEE87hxBA
+
+- Sparse NNs tutorial: https://vita-group.github.io/SparsityTutorial23/
+
+- Discrete Mah Book: https://discrete.openmathbooks.org/pdfs/dmoi4.pdf
+
+- Annotted LLM papers with implementations: https://github.com/tanishqkumar/beyond-nanogpt
+
+- Reasoning LMs youtube course: https://www.youtube.com/watch?v=k2QEElQ9eeM&list=PLPTV0NXA_ZSijcbUrRZHm6BrdinLuelPs
+
+- CV youtbe course: https://www.youtube.com/watch?v=Tu11SMJGGIA&list=PLPTV0NXA_ZSgmWYoSpY_2EJzPJjkke4Az
+
+- Math for ML youtube course: https://www.youtube.com/watch?v=C8hEa2qb46k&list=PLPTV0NXA_ZSiLI0ZfZYbHM2FPHKIuMW6K
+
+- Transformers youtube course: https://www.youtube.com/watch?v=FVcUKMu_M5Q&list=PLPTV0NXA_ZSjs5Dz7FfPCzV3BKC7CtJU1
+
+- GNNs youtube course: https://www.youtube.com/watch?v=93FiLSxKr_U&list=PLPTV0NXA_ZSg4Pimkso0nHxwYMB6IGX7l
+
+- Explainable AI youtube course: https://www.youtube.com/watch?v=8EQwpmK49sk&list=PLPTV0NXA_ZShaln9GfiHO_c0HzOSqLOGv
+
+- Data Strctures and Algorithms in ython youtube course: https://www.youtube.com/watch?v=bc3_KmRUcGY&list=PLPTV0NXA_ZSgHj4a9CE1KLSarhkjocecO
+
+- Algorithms for ML Book: https://media.licdn.com/dms/document/media/v2/D4D1FAQFLLI9oqMuvYw/feedshare-document-pdf-analyzed/B4DZft.qh5HAAc-/0/1752044323439?e=1753315200&v=beta&t=ov578_k-txO2W_SM4UORuDiHSByOdFflWTgWDkLruHE
+
+- Buldign your own linter with python ASTs: https://deepsource.com/blog/python-asts-by-building-your-own-linter
+
+- HNETs - Transformers that auto-tokenize: https://goombalab.github.io/blog/2025/hnet-past/
+
+- MLOps courses:
+	- (2025 edition, with slides) https://mlip-cmu.github.io/s2025/
+
+- DeeplSeek from scratch: https://github.com/BrunoScaglione/DeepSeek-from-Scratch
+
+- LLMs MoE guide: https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts
+
+- Advance Linear Álgebra Book: https://arxiv.org/pdf/2506.18666
+
+- LLM inference handbook: https://bentoml.com/llm/
+
+- Multi GPu Parallelism strategies blog post: https://datta0.github.io/posts/understanding-multi-gpu-parallelism-paradigms/
+
+- Transformer explained: https://datta0.github.io/posts/transformer-imagined/
+
+- Late interacionembedding models: https://medium.com/@zz1409/colbert-a-late-interaction-model-for-semantic-search-da00f052d30e
+
+- Interctive Rag Simulator: https://rag.productcompass.pm/
+
+- RAG Series: https://hamel.dev/notes/llm/rag/not_dead.html
+
+- Probabilistic Graphical models: https://visionbook.mit.edu/graphical_models.html
+
+- Awesome CV Book: https://visionbook.mit.edu/
+
+- Reward models: https://cameronrwolfe.substack.com/p/reward-models
+
+- Agentic Design Patterns Books: https://docs.google.com/document/d/1rsaK53T3Lg5KoGwvf8ukOUvbELRtH-V0LnOIFDxBryE/edit?tab=t.0
+
+- Awesome DL youtube Course: https://www.youtube.com/playlist?list=PLgPbN3w-ia_PeT1_c5jiLW3RJdR7853b9
+
+- LLM Architectures: https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison/
+
+- Awesome math for CS & ML Book: https://www.cis.upenn.edu/~jean/math-deep.pdf
+
+- Virtual Cells: https://huggingface.co/blog/virtual-cell-challenge
+
+- Survey of COntext Engineering: https://arxiv.org/pdf/2507.13334
+
+- MEGA AI dev tools: https://github.com/jamesmurdza/awesome-ai-devtools
+
+- Awesome Math Book: https://media.licdn.com/dms/document/media/v2/D4D1FAQGwFA2L9J2KhQ/feedshare-document-pdf-analyzed/B4DZg43rbUGQAY-/0/1753300799760?e=1753920000&v=beta&t=AOytFJdBkB7iNpWEE3kowM0ZAbQ9NrSxic866xc6jk0
+
+- Awesome Interctive Linear Álgebra Book: https://immersivemath.com/ila/index.html
+
+- Distributional RL Book: https://direct.mit.edu/books/oa-monograph/5590/Distributional-Reinforcement-Learning
+
+- A semi-empirical theory of DL book: https://arxiv.org/abs/2507.17912
+
+- Probability and Statistics Book: https://utstat.toronto.edu/mikevans/jeffrosenthal/book.pdf
+
+- visual guide to llm agents: https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-llm-agents
+
+- deep learning course: https://phillipi.github.io/6.7960/
+
+- Advanced topics in ML Course: https://1five9.github.io/
+
+- Deep Probabilisitc Models Course: https://sites.google.com/view/cs-159-spring-2019/lectures?authuser=0
+
+- SoTA Multi-platform Matrix Multiplication Kewrnels Blog Post: https://burn.dev/blog/sota-multiplatform-matmul/
+
+- Topological DL Book: https://tdlbook.org/introduction
+
+- llm embeddings bog post: https://huggingface.co/spaces/hesamation/primer-llm-embedding?section=what_are_embeddings?
+
+- AI Agent Projects: https://github.com/ashishpatel26/500-AI-Agents-Projects
+
+- Non-euclidean ML paper survey: https://arxiv.org/pdf/2407.09468
+
+- PDEs lecture notes: https://media.licdn.com/dms/document/media/v2/D4D1FAQGOSJRiuu1hWA/feedshare-document-pdf-analyzed/B4DZhXxk5SG8AY-/0/1753819275828?e=1754524800&v=beta&t=DQN7cJp0JRxpEA7OTn3Sarf1QoThPNDUOGbx74_tPzo
+
+- Agentic NAS Paper: https://media.licdn.com/dms/document/media/v2/D4E1FAQHIE0f6APfKLg/feedshare-document-pdf-analyzed/B4EZhE1gZ2HgAY-/0/1753501540993?e=1755129600&v=beta&t=Z2dkouEOrkMf6nsgmQCczO9KGz8lEd9BG1JplggyTqY
+
+- Generative Resys: https://www.yuan-meng.com/posts/generative_recommendation/
+
+- MEGA Prompts for Coding Agents: https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools
+
+- Intro to GPU Programming: https://lnkd.in/eMgp5vre
+
+- hands-on transformers: https://xiaolishen.medium.com/hands-on-transformer-deep-dive-part-1-masked-attention-explained-implemented-7755b315066b
+
+- website to see hot GitHub repos: https://www.sourcepulse.org/
+
+- MEGA LLM Benchmarks: https://www.evidentlyai.com/llm-evaluation-benchmarks-datasets
+
+- Awesome The Modern Software Developer Course (Software Developer that leverages AI): https://themodernsoftware.dev/
+
+- Linear ALgebra Book: https://collection.bccampus.ca/textbooks/linear-algebra-with-applications-2023-a-d-vretta-lyryx-inc-446/
+
+- MEGA Scalability: https://github.com/binhnguyennus/awesome-scalability
+
+- Differentiable Inference and Generative Models Course: https://www.cs.toronto.edu/~duvenaud/courses/csc2541/index.html
+
+- Can you train a NN forever? article: https://clarelyle.com/posts/2023-12-27-plasticity.html
+
+- RL for training reasoning langauage models: https://rohit-patel.medium.com/understanding-reinforcement-learning-for-model-training-from-scratch-8bffe8d87a07
+
+- Ridge Regression Lecture Notes: https://media.licdn.com/dms/document/media/v2/D4D1FAQF5Sly7lVXbmg/feedshare-document-pdf-analyzed/B4DZiaoKgdH8AY-/0/1754940882670?e=1755734400&v=beta&t=OHc372-zHG_0QeJBS-YAdrDh_wqdzpzqxNayTPYDm78
+
+- Functional Data Analysis: https://media.licdn.com/dms/document/media/v2/D4D1FAQE2tkrGnS-ueQ/feedshare-document-pdf-analyzed/B4DZiknz6OGsAY-/0/1755108559729?e=1755734400&v=beta&t=JrR0zwaOvevUKhsrntJ4fMICZNk5mURxuwaRMUAxPNg
+
+- Ai Evaluation Guide part 1: https://medium.com/google-cloud/the-engineers-guide-to-ai-evaluation-part-1-b60ec882f354
+
+- Agentic AI Course: https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main/free_courses/agentic_ai_crash_course
+
+- RAG for production usign Ray: https://github.com/ray-project/llm-applications
+
+- LLM vídeo course: https://www.youtube.com/playlist?list=PLxlkzujLkmQ9vMaqfvqyfvZV_o8EqjAk7
+
+- MEGA LLM Projects: https://github.com/Sakil786/LLM-PlayLab
+
+- Tensor methods in statistics book: https://media.licdn.com/dms/document/media/v2/D4D1FAQHqFBZlTMCbWA/feedshare-document-pdf-analyzed/B4DZitSIoRHsAY-/0/1755253878562?e=1756339200&v=beta&t=wkFqf-CUbkX7jXMwL4f5FMOGtggvuElUdT2MhKna3g0
+
+- Calculus 2 lecture notes: https://media.licdn.com/dms/document/media/v2/D4D1FAQHmoOXIEWqPOg/feedshare-document-pdf-analyzed/B4DZiyti0VH4AY-/0/1755344971870?e=1756339200&v=beta&t=ctUkGQkWJZFyu6Zc2oFrynVmI6kiOcBTF8OhMXCHZTc
+
+- Signals & Systems Book: https://www.freetechbooks.com/signal-computing-digital-signals-in-the-software-domain-t1322.html
+
+- Intro to FOrmal Logic Book: https://www.freetechbooks.com/forall-x-an-introduction-to-formal-logic-t1316.html
+
+- Applied Combinatorics Book: https://www.freetechbooks.com/applied-combinatorics-t1311.html
+
+- Scientific COmputing Book: https://www.freetechbooks.com/scientific-computing-t1328.html
+
+- Mathematical Methods for Economic Theory Book: https://www.freetechbooks.com/mathematical-methods-for-economic-theory-t1329.html
+
+- FFT Book: https://www.freetechbooks.com/fast-fourier-transforms-t1338.html
+
+- Free and Open Machine Learning Book: https://www.freetechbooks.com/free-and-open-machine-learning-t1351.html
+
+- Sysadmin Book: https://www.freetechbooks.com/sysadmin-ebook-making-servers-work-t1355.html
+
+- Intro to Scientific Programming with Python Book: https://www.freetechbooks.com/introduction-to-scientific-programming-with-python-t1365.html
+
+- Randomized Algorithms Notes: https://www.freetechbooks.com/notes-on-randomized-algorithms-t1370.html
+
+- Theory of Distributed Systems Notes: https://www.freetechbooks.com/notes-on-theory-of-distributed-systems-t1371.html
+
+- Data Strctures & Porgramming Techniques Book: https://www.freetechbooks.com/notes-on-data-structures-and-programming-techniques-t1372.html
+
+- Intro to COmputational ALgebra Book: https://www.freetechbooks.com/algebra-a-computational-introduction-t1373.html
+
+- Intro to Modern Algebra Book: https://www.freetechbooks.com/introduction-to-modern-algebra-t1374.html
+
+- FOundations of ALgebraic Geometry Book: https://www.freetechbooks.com/the-rising-sea-foundations-of-algebraic-geometry-t1382.html
+
+- Practical Cryptography for Developers Book: https://www.freetechbooks.com/practical-cryptography-for-developers-t1379.html
+
+- Isomorphism -- Mathemetics of Porgramming Book: https://www.freetechbooks.com/isomorphism-mathematics-of-programming-t1381.html
+
+- Intro to Discrete Math Book: https://www.freetechbooks.com/discrete-mathematics-an-open-introduction-3rd-edition-t1384.html
+
+- Foundations of Discrete Math Book: https://www.freetechbooks.com/mathematical-foundations-and-aspects-of-discrete-mathematics-t1386.html
+
+- Signals & Systems Book: https://www.freetechbooks.com/signals-and-systems-edition-60-t1390.html
+
+- Multiresolution Signal & Geometry Processing Book: https://www.freetechbooks.com/multiresolution-signal-and-geometry-processing-filter-banks-wavelets-and-subdivision-t1391.html
+
+- Linux Kernel Book: https://www.freetechbooks.com/linux-kernel-crash-book-t1261.html
+
+- Intro to Statistics Book: https://www.freetechbooks.com/an-introduction-to-the-science-of-statistics-from-theory-to-implementation-preliminary-edition-t1277.html
+
+- Intro to RL Book: https://www.freetechbooks.com/reinforcement-learning-an-introduction-second-edition-draft-t1282.html
+
+- Intro to Differential Equations Book: https://www.freetechbooks.com/introduction-to-differential-equations-t1287.html
+
+- Applied Combinatorics Book: https://www.freetechbooks.com/applied-combinatorics-t1311.html
+
+- Nonlinear Control Course: https://www.egr.msu.edu/~khalil/NonlinearControl/Slides-Full/index.html
+
+- Nonlinear Control LecNotes: https://web.ogu.edu.tr/Storage/akaraman/Uploads/1NL.pdf
+
+- Distributed Training by the Cursor team: https://cursor.com/blog/kernels
+
+- Tensor Prallelism: https://dev.to/lewis_won/tensor-parallelism-by-hand-3eh
+
+- Awesome llm cheatsheet: https://github.com/afshinea/stanford-cme-295-transformers-large-language-models
+
+- Linear Algebra book: https://www.math.ucdavis.edu/~linear/linear-guest.pdf
+
+- Pytorch tutorial: https://hanfang.info/posts/2025/08/pytorch-comprehensive-tutorial/
+
+- Production AI Evals: https://mattstockton.com/2025/08/22/building-production-ai-evaluations-systematic-domain-driven-approach.html
+
+- DL theory Book: https://ma-lab-berkeley.github.io/deep-representation-learning-book/book-main.pdf?s=03
+
+- Convex Optimization Book: https://media.licdn.com/dms/document/media/v2/D4D1FAQHd65rm6_8fWw/feedshare-document-pdf-analyzed/B4DZjyYlKQGsAY-/0/1756413191723?e=1757548800&v=beta&t=5UQs6pSOJ8xQLMU5HRCflKjogyq5fCHiPIunNNqrPGs
+
+- TPU article: https://www.tinytpu.com/
+
+- website that compares python packages: https://pyradar.com/
+
+- Statistics book: https://www.stat.cmu.edu/~brian/valerie/617-2022/0%20-%20books/2004%20-%20wasserman%20-%20all%20of%20statistics.pdf
+
+- Math for GenAI Youtube Course: https://www.youtube.com/playlist?list=PLZ2ps__7DhBa5xCmncgH7kPqLqMBq7xlu
+
+- Rust Repo Course: https://github.com/paiml/ds500-rust-bootcamp
+
+- Online Softmax Article: https://dev.to/lewis_won/online-softmax-by-hand-4h13?trk=public_post_comment-text
+
+- agentic ai crash course: https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main/free_courses/agentic_ai_crash_course
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+* Math
+
+	* Differential Equations
+
+	Courses:
+	https://services.math.duke.edu/~jtwong/math353-2020/main.html
+
+		* ODEs
+
+		Courses:
+
+		* PDEs
+
+		Courses:
+		https://services.math.duke.edu/~jtwong/math551-2019/main.html
+
+	* Probability & Statistcs
+		
+		* Probability
+
+		Courses:
+		https://canvas.stanford.edu/courses/155726/files/folder/Lecture%20slides
+		https://www.ece.tufts.edu/~maivu/ES150/index.html
+		https://www.ee.iitb.ac.in/~sarva/courses/EE325/Spring2015.html
+
+			* [Advanced]
+
+			Courses:
+			https://www.stat.cmu.edu/~arinaldo/Teaching/36752/S18/Notes/
+
+		* Statistics
+
+		Courses:
+		https://www3.nd.edu/~rwilliam/stats1/
+
+			* Theoretical Statistics
+
+			Courses:
+			https://psarkar.github.io/sds384.html
+
+	* Geometry
+
+	Courses:
+	https://www.robots.ox.ac.uk/~dwm/Courses/3CG_2006/index.html
+
+	* Algebra
+
+		* Abstract Algebra
+
+			* Invariant Theory
+			
+			Courses:
+			[already in algebraic complexity theory section] https://cs.uwaterloo.ca/~r5olivei/courses/2021-winter-cs860/
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Physics
+
+	* Classical Physics
+
+		* Wave-based Phenomena
+
+		Courses:
+		http://www.pmaweb.caltech.edu/Courses/ph12/sup12a2013.html
+
+	Courses:
+	http://www.pmaweb.caltech.edu/Courses/ph136/yr2011/
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Miscellaneous
+
+MEGAs Notes:
+https://sist.sathyabama.ac.in/sist_coursematerial/
+
+MEGAs Books:
+https://www.opentextbooks.org.hk/
+https://openstax.org/
+https://libretexts.org/
+https://researchguides.uic.edu/opentextbooks/search
+https://www.opentextbooks.org.hk/
+https://www.opentextbookstore.com/catalog.php
+https://milneopentextbooks.org/
+https://opentextbooks.concordia.ca/catalog/admin

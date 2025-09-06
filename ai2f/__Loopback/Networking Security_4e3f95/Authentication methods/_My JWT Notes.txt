@@ -1,0 +1,13 @@
+JWT payload only stores claims of the user. Therefore doesnt store credentials (password). Besides being totally insecure, 
+it wouldnt make sense to put password in there even if it was secure. Because the authentication is already done by descrypting the signature
+with the public key and checking if the payload == signature after decryption.
+
+JWT is a type of bearer token. 
+
+WIl typically go in Authorization header. But can also go inside Cookie header 
+(and therefore be stored in cookie file in browser and added to any request as header automatically by the browser)
+or as query param, or inside request body.
+
+JWT vs Cookies: https://medium.com/@prashantramnyc/difference-between-session-cookies-vs-jwt-json-web-tokens-for-session-management-4be67d2f066e
+
+Use Cookies istead of JWT (or at least never put JWT in local storage): https://medium.com/kanlanc/heres-why-storing-jwt-in-local-storage-is-a-great-mistake-df01dad90f9e

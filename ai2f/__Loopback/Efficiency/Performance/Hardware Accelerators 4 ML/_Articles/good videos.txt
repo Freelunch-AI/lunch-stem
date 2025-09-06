@@ -1,0 +1,8 @@
+ISSCC 2019: Deep Learning Hardware: Past, Present, and Future - Yann LeCun
+https://www.youtube.com/watch?v=YzD7Z2yRL7Y&ab_channel=ISSCCVideos
+
+Efficient Computing for Deep Learning, Robotics, and AI (Vivienne Sze) | MIT Deep Learning Series
+https://www.youtube.com/watch?v=WbLQqPw_n88
+
+Efficient Processing of Deep Neural Network: from Algorithms to Hardware Architectures #NeurIPS2019
+https://www.youtube.com/watch?v=geLeDFFl8UQ&ab_channel=HengEe%2CAngus

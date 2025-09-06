@@ -1,0 +1,5 @@
+outs:
+- md5: 8444ac9d083ab0bad3719972282b3522
+  size: 7096299
+  hash: md5
+  path: 01_whyparallelism.pdf

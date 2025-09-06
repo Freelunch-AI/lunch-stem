@@ -1,0 +1,44 @@
+Disclaimer: there are ASICs that dont fall into neither of these categories, like autonomous car computing hardware (Embedded with High Computing Capacity)
+, but these are special cases tailored for specific applications.
+
+Types of Edge Devices:
+
+1. Browser Devices:
+
+1.1 Higher Computing capacity - Servers close to client application (Typically not the focus when talking about Edge ML):
+- example: cloud machines
+- internet: good connection
+- OS: yes
+- deployment: over the internet (fecthes image from image registry)
+- approches: runs multiple containers
+- energy: power supply
+
+1.2 High Computing Capacity - User devices (Federeted Learning is strong here):
+- examples: Mobile phones, user pc
+- internet: good connection
+- OS: yes
+- deployment: over the internet 
+	- Code running on the browser: webserver sends code inside JS
+	- Code running as application: user gets apk through app store
+- approches:
+	- Code running on the browser: the user doesnt need to install anything (Web Assembly)
+	- Code running as application: the user needs to install app
+- energy: good battery
+
+2. Embedded Devices (Tiny ML):
+
+2.1 Medium Computing Capacity: 
+- examples: rasberry pi alikes
+- internet: connection is generally poor
+- OS: yes
+- deployment: over the internet (fecthes image from image registry)
+- approaches: runs multiple containers
+- energy: power supply
+
+2.2 Low Computing Capacity: 
+- examples: arduino alikes, smart watches, etc
+- internet: may or not may not have connection, connection is generally poor
+- OS: no
+- deployment: manually send code to RAM via USB port
+- approaches: runs single process bare-metal
+- energy: bad battery

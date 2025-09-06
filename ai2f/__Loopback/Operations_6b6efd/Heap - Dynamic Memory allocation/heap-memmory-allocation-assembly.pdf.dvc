@@ -1,0 +1,5 @@
+outs:
+- md5: 9cf1af8197b72b78665a5f5e2b964cca
+  size: 343703
+  hash: md5
+  path: heap-memmory-allocation-assembly.pdf

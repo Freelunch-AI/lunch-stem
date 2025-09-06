@@ -1,0 +1,14 @@
+Practical Deep Learning course [fast.ai] (11h)
+https://www.youtube.com/watch?v=0oyCUWLL_fU
+
+How to implement Deep Learning Paepers in Pytorch
+https://www.youtube.com/watch?v=GJJc1t0rtSU
+
+Deep learning with Pytorch (9h)
+https://www.youtube.com/watch?v=GIsg-ZUy0MY
+
+Deep learning with Pytorch (6 videos of 2h each)
+https://www.youtube.com/watch?v=vo_fUOk-IKk&list=PLWKjhJtqVAbm3T2Eq1_KgloC7ogdXxdRa
+
+Applied Deep Learning Pytorch (6h)
+https://www.youtube.com/watch?v=CNuI8OWsppg

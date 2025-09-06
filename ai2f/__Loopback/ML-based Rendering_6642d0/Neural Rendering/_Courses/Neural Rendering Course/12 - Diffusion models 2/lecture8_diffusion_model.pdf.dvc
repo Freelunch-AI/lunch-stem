@@ -1,0 +1,5 @@
+outs:
+- md5: d0efc7390f6ac8927c045cc5273545c3
+  size: 10858854
+  hash: md5
+  path: lecture8_diffusion_model.pdf

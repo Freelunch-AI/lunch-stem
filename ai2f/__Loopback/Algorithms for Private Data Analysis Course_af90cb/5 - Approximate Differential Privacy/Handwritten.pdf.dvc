@@ -1,0 +1,5 @@
+outs:
+- md5: 32cf75cc7a9088b5b7b0afecc3a2b203
+  size: 1105698
+  hash: md5
+  path: Handwritten.pdf

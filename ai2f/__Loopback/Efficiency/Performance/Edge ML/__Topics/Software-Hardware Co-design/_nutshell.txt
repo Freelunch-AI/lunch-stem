@@ -1,0 +1,4 @@
+Even model architecture and training procedure are subject to hardware specific optimization to immprove performance on a specific hardware.
+
+''One example of models optimized for mobile devices are MobileNets, which are optimized for mobile vision applications. 
+TensorFlow Hub lists several other models that have been optimized specifically for mobile and embedded devices.''

@@ -1,0 +1,5 @@
+outs:
+- md5: 6cfa38a1f948b7b49d42623c113caab2
+  size: 113990
+  hash: md5
+  path: 0200_exactmatch__strings.pdf

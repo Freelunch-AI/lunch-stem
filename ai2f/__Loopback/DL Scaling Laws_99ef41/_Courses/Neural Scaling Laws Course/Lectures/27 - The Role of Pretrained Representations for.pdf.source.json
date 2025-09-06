@@ -1,0 +1,53 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Andrea Dittadi",
+      "university": null
+    },
+    {
+      "name": "Frederik Träuble",
+      "university": null
+    },
+    {
+      "name": "Manuel Wüthrich",
+      "university": null
+    },
+    {
+      "name": "Felix Widmaier",
+      "university": null
+    },
+    {
+      "name": "Peter Gehler",
+      "university": null
+    },
+    {
+      "name": "Ole Winther",
+      "university": null
+    },
+    {
+      "name": "Francesco Locatello",
+      "university": null
+    },
+    {
+      "name": "Olivier Bachem",
+      "university": null
+    },
+    {
+      "name": "Bernhard Schölkopf",
+      "university": null
+    },
+    {
+      "name": "Stefan Bauer",
+      "university": null
+    }
+  ],
+  "university_course_name": null,
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": "https://arxiv.org/pdf/2107.05686.pdf",
+  "num_of_pages": 34,
+  "size_mb": 1.92,
+  "link_to_license": null,
+  "changes_were_made": false
+}

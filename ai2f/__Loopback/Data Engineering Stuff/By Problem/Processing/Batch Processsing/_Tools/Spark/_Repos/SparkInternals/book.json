@@ -1,0 +1,8 @@
+{
+  "structure": {
+     "readme": "Introduction.md"
+  },
+  "plugins" : [ 
+    "include-highlight" 
+  ]
+}

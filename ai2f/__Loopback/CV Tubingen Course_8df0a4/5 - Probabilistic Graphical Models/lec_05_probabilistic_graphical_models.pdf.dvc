@@ -1,0 +1,5 @@
+outs:
+- md5: b343e7f51d866b6526bd834492cf2d08
+  size: 1663169
+  hash: md5
+  path: lec_05_probabilistic_graphical_models.pdf

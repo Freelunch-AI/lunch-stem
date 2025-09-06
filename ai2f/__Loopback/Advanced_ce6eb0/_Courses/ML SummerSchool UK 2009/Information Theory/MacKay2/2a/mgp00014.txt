@@ -1,0 +1,10 @@
+
+How to compress a redundant file?
+
+
+
+
+
+How to measure information content?
+How much compression should we expect is possible?
+

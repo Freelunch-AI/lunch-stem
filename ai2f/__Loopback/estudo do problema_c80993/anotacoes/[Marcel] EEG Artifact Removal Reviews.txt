@@ -1,0 +1,1083 @@
+title: (2016) Methods for artifact detection and removal
+from scalp EEG: A review
+
+obs: o próximo review é melhor, mais completo que esse
+
+**obs2: mais os dois reviews tem um problema de estarem um pouco  desatualizados, 
+principalmente em relacao ao desenvolvimento dos softwares e plugins que foi bem bom nesse 
+perídodo**
+
+DOI: http://dx.doi.org/10.1016/j.neucli.2016.07.002
+
+notes:
+
+For example, during patient monitoring in a critical care unit or during epilepsy seizure
+detection, artifacts may increase the chance of false alarms
+[26,84].
+
+Another example is during brain-computer interface
+(BCI) applications, where artifacts can modify or alter the
+shape of a neurological event (e.g. event-related potential
+or ERP) that drives the BCI system and that eventually results
+in an unintentional control of the device
+
+The same
+problem may occur during sleep study [82] and diagnosis
+of other neurological disorders such as Alzheimer’s disease
+(AD) [13], schizophrenia [95], etc. Therefore, artifact detection and removal is one of the most important preprocessing
+steps for neural information processing applications
+
+Most of the available techniques are not application-specific
+and therefore unnecessary computational burden arises
+
+In addition, since currently
+there is no universal standard quantitative metric available for performance evaluation of existing artifact removal
+methods,1 this paper does not report such performance evaluation, but rather provides only the functional comparison
+between methods.
+
+Finally, the future direction is discussed to provide
+application-specific solutions with reasonable complexity,
+optimized performance and most importantly with feasible solutions.
+
+Internal
+source of artifacts are due to physiological activities of
+the subject (e.g. ECG, EMG/muscle artifacts, EOG) and its
+movement. External source of artifacts are environmental
+interferences, recording equipment, electrode pop-up and
+cable movement. Also some artifacts may present in several neighboring channels (global) while some of them can
+be found only in single-channel (local). In addition, some
+artifacts appear as regular periodic events such as ECG or
+pulse artifacts (regular/periodic) while some others may be
+extremely irregular. An example of artifact-contamination
+is illustrated in Fig. 1.
+
+A few existing methods adopted the idea of machine
+learning for artifact separation from useful EEG signal by
+training a classifier with (supervised) or without (unsupervised) labeled training datasets. Once artifactual epochs
+are identified by applying a machine learning algorithm,
+such epochs are either highlighted as artifact annotator to
+the clinicians for helping in decision making (e.g. epileptic
+seizure detection) or can be rejected before examination from clinician or before sending to automated signal
+processing system [70].
+
+*Artifact removal*
+Artifact removal involves canceling or correcting the artifacts without distorting the signal of interest. This is
+primarily done in two ways: either by filtering and regression or by separating/decomposing the EEG data into other
+domains.
+
+#Regression
+Regression analysis [43,101], using a multi-modal linear
+model between observed and a reference signal, is a
+traditional way of identifying artifactual samples and consequently removing such sample that do not belong to the
+model. Observed artifact-contaminated EEG signal and an
+artifact reference signal are common methods for removing some physiological artifacts such as ocular and cardiac
+artifacts.
+However, such regression analysis often fails when there
+is no reference channel available. In addition, EEG signal
+being non-linear and non-stationary process, linear regression is not the best choice for analysis in such applications.
+Moreover, it can only be used to treat few particular types
+of artifact, not all types.
+
+#Blind source separation
+
+One of the most popular artifact detection/removal
+methods is based on blind source separation (BSS)
+[33,43,62,86,97], which aims to extract the individual
+unknown source signals from their mixtures and possibly
+to estimate the unknown mixing channels using only the
+information within the mixtures observed at the output of
+each channel with no, or very limited, knowledge about
+the source signals and the mixing channel. Let denote by
+X the observed signals in multi-channel recordings, which is
+assumed to be linear mixture of the sources, S with additive
+white noise vector N, i.e.
+
+• ICA:
+
+já sei
+
+• CCA:
+
+canonical correlation analysis or CCA is another BSS
+method for separating a number of mixed or contaminated
+signals that uses second-order statistics (SOS) to generate
+components derived from their uncorrelated nature. By
+looking for uncorrelated components, the approach uses
+a weaker condition than statistical independence sought
+by the ICA algorithm. ICA does not take temporal correlations into account while CCA addresses this point by
+being capable of finding uncorrelated components [91]. So
+the spatial correlation being zero while it optimizes only
+the temporal correlation (i.e. auto-correlation). Then
+CCA attempts to find an ordered set of components
+from maximum auto-correlation to least auto-correlation.
+The component with least auto-correlation corresponds
+mostly to artifacts. The advantages of CCA over ICA are
+being automatic and more computationally efficient;
+
+• MCA:
+
+MCA: morphological component analysis (MCA) decomposes the recorded signal into components that have
+different morphological characteristics where each component is sparsely represented in an over-complete
+dictionary [91]. It is only applicable to certain known artifacts whose wave shape or morphology are known and
+stored in a database. The efficacy of this method greatly
+depends on the available artifact-template database. In
+[106,107], MCA is used to remove ocular artifacts and
+some of the muscle artifacts originating from jaw clenching, swallowing, and eyebrow rising.
+
+
+Empirical mode decomposition:
+
+ainda nao entendi mt bem
+
+Adaptive filtering:
+
+obs: no próximo review ele expllica bem melhor
+
+An adaptive filter is a system with a linear filter that has
+a transfer function controlled by variable parameters and
+a means to adjust those parameters according to an optimization algorithm [89]. The filter weights can adapt based
+on the feedback from output of the system and it requires
+a reference input to compare the desired output with the
+observed output. An improved adaptive filtering by optimal projection which is based on common spatial pattern
+for artifact removal is mentioned in [9,10], especially for
+epilepsy patient’s EEG [74]. Let s[n] denote the observed
+signal which is combination of the original EEG, x[n] and
+additive artifact r[n]. Then, if the artifact source v[n] is
+available from a dedicated channel (e.g. EOG or ECG); an
+adaptive algorithm (e.g. LMS, RLS, etc.) can be used to
+derive an artifact-free EEG, x
+[n] given that the desired EEG
+and artifact signal are independent (or at least uncorrelated
+[91]). An illustration of the use of adaptive filter for EOG
+artifact removal is shown in Fig. 5
+
+Principal component analysis (PCA):
+
+já sei
+
+Hybrid methods:
+
+In recent years, researchers have been keen to utilize the
+advantages of different methods by combining them into
+a single method for artifact detection and removal
+
+vou pular essa seção pq nao tem necessidade de entrar tao especifico nessse metodos que
+sao baseados nos outros.
+
+#Comparison between methods
+
+In order to compare different artifact handling methods
+qualitatively, several factors need to be considered that can
+evaluate the pros and cons of these methods. Such factors
+are described as follows: a detailed comparison between the
+existing artifact detection and removal methods in the literature found from recognized journals is provided in Table 5.
+
+#Removal performance
+
+**The performance evaluation of artifact removal methods
+found in the literature is always problematic. It can be
+done either by visually by expert(s) which is subjective (not
+standard) or by synthetic/semi-synthetic data (but uncertainty of reconstructed data whether perfectly realistic or
+not). Since there is neither any ground truth data available
+nor any universal or standard quantitative metric(s) used
+in the literature that can capture both amount of artifact
+removal and distortion. Therefore, it is quite difficult to
+compare different artifact removal methods based on their
+ability to remove artifacts since very few quantitative evaluations have been reported in the literature. Most of the
+published articles evaluated their method in terms of some
+qualitative plots. In addition, very few of them quantified
+the distortion to desired EEG signals due to the removal
+effect. Therefore, it is not fair to tell which performs best
+based on the study**
+
+obs: no próximo review ele explica umas tentativas dos autores
+
+
+obs: au acho que o ASR veio um ano depois desse artigo! por isso nao consta nele
+
+#Automatic or semi-automatic
+
+Most of the EEG-based applications require automated information processing, particularly when it is an online/realtime implementation. In addition, manual identification
+of artifactual component or epoch is very time-consuming
+and laborious for multi-channel long-term data sequences.
+Therefore, many signal processing techniques have been
+proposed, and some useful a priori signal or artifact
+statistics/characteristics have been utilized. Among them,
+BSS-based techniques can sometimes be semi-automated
+because of identification of artifactual component may
+require some training or parameter selection/tuning.
+Although there are few papers available that propose automated identification of ICs after ICA [104,111]; however,
+they both require training samples for supervised classification and in addition requires an extra information in the
+form of contactimpedance measurement[31]. Ifthe method
+involves ICA for automatic detection of artifacts, then there
+has to be another stage (or m
+
+obs: aui parece um pouco desatualizado, no eeglab já faz dboa IC component identification
+e exclusao de canais automatica também, inclusive faz ASR que eh online. CARTOOL tambem vai mostrando
+onde deve ser artefatopra vc (semi automatico).
+
+#Real-time/online implementation
+
+Online/real-time implementation requires the algorithm to
+be fast enough and to have low-enough complexity for
+such application. Here, online implementation refers to
+the algorithms implemented in software platform capable
+of online/real-time processing, not in hardware platform.
+However, some EEG-based applications such as wireless
+ambulatory EEG monitoring may require on-chip implementation of the artifact detection/removal algorithm
+
+
+obs: Ta desatualizado tb, ele fala que nao tem mas já tem ASR.
+
+#Single or multi-channel
+
+BSS-based methods require multi-channels to function, the
+more number of channels the better for separating individual sources. Therefore, such methods cannot be used
+in low-channel (e.g. 4—6) or single-channel based applications (e.g. in ambulatory monitoring of epilepsy patient
+or ambulatory BCI-prosthesis). On the other hand, Wavelet
+transform and EMD-based techniques can work with singlechannel analysis by decomposing a single data sequence into
+multiple components (approx./detail coefficientfor wavelet
+decomposition and IMF for EMD).
+
+#Reference channel
+
+Most of the available methods require a dedicated artifact channel to be functional. In order to remove ocular or
+cardiac artifacts, the reference channel often provides satisfactory complementary information to identify ECG/EOG
+artifacts. Besides, real-time contact impedance measurement can provide the complementary information about
+artifacts due to electrode pop, movement or loose connection. Some movement tracking devices such as motion
+captured camera, accelerometer and/or gyroscope can help
+to detect motion artifacts
+
+#EOG
+
+Many articles reported to remove EOG artifacts by the use
+of EOG reference channel [27,43,110]. In [110], a hybrid denoising method has been reported that combines discrete
+wavelet transformation (DWT) and an adaptive predictor
+filter (APF) for automatic identification and removal of
+
+ocular artifacts for portable EEG applications which is
+found to achieve lower MSE and higher correlation between
+cleaned and original EEG in comparison with existing
+methods such as wavelet packet transform (WPT) and
+independent component analysis (ICA), discrete wavelet
+transform (DWT) and adaptive noise cancellation (ANC).
+Another article [43] reported an automated ocular artifact
+removal method using adaptive filtering and ICA with the
+help of vertical (vEOG) and horizontal (hEOG) EOG channel
+as reference. On the other hand, Flexer et al. [27] proposed an ICA-based ocular artifact removal method from
+blind subjects’ EEG utilizing both vertical and horizontal
+EOG references
+
+#ECG
+
+Authors in [21] proposed removal/reduction of ECG/cardiac
+artifacts from EEG using a separate ECG reference channel.
+In [31], an automatic method based on a modified ICA algorithm has been proposed that works for a single-channel EEG
+and the ECG (as reference) which gives promising results
+when compared with two popular methods that use a reference channel namely ensemble average subtraction (EAS)
+and adaptive filtering. The other two articles proposed
+their methods for application in neonatal EEG monitoring.
+Another paper [60] proposed a combination of EMD and
+adaptive filtering based method for ECG artifact removal
+in preterm EEG and reported up to 17% improvement in correlation coefficient between original and cleaned datasets
+compared with removal by only adaptive filtering
+
+#Eye tracker
+Both Kierkels et al. [42] and Noureddin et al. [68] reported
+techniques for removal of ocular artifacts by using an eye
+tracker as reference. The advantage of using eye tracker
+is that it can reduce the undesired EEG distortion produced by using an EOG channel as reference since EOG
+
+not only captures ocular events but also some frontal EEG
+events. Besides, in practical daily applications, the use of
+eye tracker removes the requirement of EOG electrodes
+attached to the face. Results in [42] show significantly
+improved performance in removing of only eye movement
+artifacts by combining Kalman filter with the eye tracker
+information compared with three other popular methods
+namely Regression, PCA, and SOBI. On the other hand,
+Noureddin et al. [68] introduced an online algorithm for ocular artifacts (both movements and blink) removal from EEG
+by utilizing a high-speed eye tracker (> 400 Hz) along with
+the frontal EEG as reference instead of EOG channel. The
+article used two adaptive filters (RLS and H) to prove the
+efficacy of their proposed technique, which was shown to
+outperform the techniques using only EOG as reference
+
+#Accelerometer
+
+There are few articles reported to have used accelerometer
+recordings in conjunction with EEG recordings for detecting
+motion artifacts [82,93]. In [82], it has been shown that
+movement artifacts can be detected automatically using
+an accelerometer with a developed algorithm based on AR
+modeling and thus can increase the speed efficiency for
+automatic computation of EEG model parameters compared
+with manual detection of movement artifacts. Sweeney
+reported in [93] that the use of accelerometer as reference channel not only can detect motion artifacts but also
+can remove them with the use of different filtering techniques such as adaptive filters, Kalman filtering and Wiener
+filtering
+
+#Gyroscope
+
+Authors in [71] proposed to detect different head movement
+artifacts automatically by using a gyroscope as complementary features in fusion with EEG features and finally with
+the help of SVM, to classify artifacts from neural information. The method is inspired by the realization of an artifact
+detection system for implementing with the point-of-care
+REACT (Real-time EEG Analysis for event detection) technology that has potential application in the detection of
+neurological events (e.g. seizure events) in adults. The artifacts were generated for 10 different types of head-related
+movements using 14-channel Emotiv EEG headset and the
+movement time was recorded for validation during artifact detection. The reported accuracy in terms of Avg. ROC
+areas was 0.802 and 0.907 for participant independent and
+dependent systems respectively
+
+#Contact impedance measurement
+
+Bertrand et al. and Mihajlovic et al. [5,55,56] reported that
+by measuring the change in contact impedance due to head
+movements can help to estimate the motion artifacts and by
+utilizing this information with an adaptive filter in combination with band-pass filtering, the artifacts can be reduced
+significantly in real-time. The article also studies the effect
+of head movement artifacts on EEG recordings results in
+contaminating the spectral domain in < 20 Hz frequency.
+
+#Motion captured camera
+
+Authors in [32] proposed a channel and IC-based method
+to remove movement artifacts during walking and running
+
+from a high-density EEG recordings (248-channel) with the
+help of kinematics and kinetics information acquired from a
+8-camera, 120 frames/s, motion capture system. The subject was asked to walk and run on a custom built, dual-belt,
+force measuring treadmill with two 24-inwide belts mounted
+flush with the floor while simultaneously both brain and
+body dynamics were recorded. The findings conclude that
+high-density EEG is possible to use in order to study brain
+dynamics during whole body movements; and the artifact
+from rhythmic gait events can be reduced by template
+regression procedure
+
+#Robustness
+
+Robustness is an important issue in developing any artifact removal algorithm as artifacts are of diverse types and
+contaminate the EEG differently in different recording environments. Some of the factors that should be considered for
+robustness include artifact-SNR, type of artifact, duration
+of artifacts, subject-variability, environmental variability,
+application-specificity.
+
+#Discussion
+
+##Current status
+
+Although significant amount of efforts has been made to
+develop methods for artifact detection and removal in EEG
+applications, it is still an active area of research. Most of
+them handle single type of artifact, many of them cannot
+work for single-channel EEG, some of them require training
+data, some require a dedicated reference channel, some are
+designed for general purpose applications that often leads
+to overcorrection of data and some of them are not fully
+automated. Some of the currently available major software
+plug-in GUIs are discussed in
+
+obs: um pouco desatualizado em relacao ao SMR, desenvolvimento do EEGLAB e software como CARTOOL, mas ok
+
+##Future direction
+
+###Probability mapping
+
+From the above literature review of existing solutions for
+artifact handling, it is obvious that artifacts are of different types and not all types will play major role in all
+EEG-based applications. Sometimes, clinicians prefer manual event detection than automated algorithm for certain
+disease diagnosis (e.g. seizure detection). However, such
+manual analysis is also time-consuming. In such cases, if we
+can give the users an option to choose which particular artifacts they want to be detected and/or removed with what
+amount (%) for each epoch or data-segment of duration 1-
+sec (depends on application), then the process would still
+be automated with tuning facilities for the users either to
+turn-ON or remain OFF if not required. In order to implement such facility, a probability mapping of artifacts can
+be proposed (something similar to the idea of [105]) for
+each epoch of data based on some statistical features t
+quantify the probability of an epoch to be artifactual. Then
+the user can opt for some threshold of probability above
+which he/she may want to remove artifacts while below
+the threshold, to preserve the epoch as it is. Thus it is possible to design automated artifact detection and removal
+algorithm, which is application-specific with tuning facility for user. This would greatly enhance the signal analysis
+process by avoiding the chance of removing important signal information. In addition, it will reduce the unnecessary
+computational resources and time by focusing on the desired
+artifacts for detection/removal (i.e. only those types to be
+expected to affect the signal quality) and ignoring the rest
+of them
+
+obs: software CARTOOL (semi automatico, indica pra vc) e AutoMagic (vc consegue tunar varias parametros "não-técnicos") meio que fazem isso já.
+
+###Standard performance evaluation
+
+One of the important issues in evaluating the performance of any artifact detection or removal method is
+that there is no universal standard quantitative metric
+for the researchers to use. Most of the methods mentioned in the literature use some qualitative time/frequency
+domain plot to evaluate the artifact removal performance
+or evaluated by the clinical expert. Sweeney et al. [92]
+proposed a recording methodology for accurate evaluation and comparison between different artifact removal
+techniques/algorithms which presented the EEG recordings
+of two separate but highly-correlated channels that allow
+recording both artifact-contaminated and artifact-free signal simultaneously
+
+However, such methodology still requires intervention to
+the recording technique and also extra reference channel
+for accelerometer data, which may not be feasible in every
+application (e.g. portable EEG recordings). Although it is
+highly encouraged for the removal performance to be evaluated by the domain experts, however, such evaluation varies
+from one expert to another and still is manual and/or qualitative evaluation. Therefore, it is an urge to have a single
+standard evaluation method consists of both qualitative and
+more importantly quantitative metrics or ways for evaluating the performance in a more realistic and fair manner.
+
+###Ground truth data
+
+Another reason of not being able to evaluate artifact
+removal performance fairly is that the lack of availability
+of ground truth data. It’s now equally important to have
+a public database with sufficiently long-term EEG recordings without or minimal artifacts to be used as a ground
+truth data. Besides such, an acceptable mathematical model
+to generate basic EEG rhythms and finally integrate them
+to simulate an EEG sequence with standard 10—20 system
+EEG channels is required for quantitative evaluation of any
+existing/future artifact removal methods. In addition, more
+study is necessary to characterize as much as possible of all
+artifact types, specially the motion artifacts for different
+movement in an ambulatory environment [15]. Thus, it will
+be easier to label both ground truth EEG and artifacts.
+
+###Recommendation
+
+**In order to choose the right artifact handling method, we
+need to consider the particular application, required specification to be satisfied given the computational resources
+and recording environment available. There are EEG applications where only one or two types of artifacts affect the
+later stage information decoding or processing, thus it is not
+wise to attempt to identify and remove all the artifacts as
+other artifacts may not (or minimally) harm a particular signal processing purpose. If any reference channel is available
+in the targeted application, then regression or adaptive filtering technique may be a preferred solution. In the case
+of ambulatory EEG monitoring, when number of channels
+are fewer, no reference channel is available and wireless
+EEG transfer preferred, in such case it is recommended to
+use computationally cheaper method that can work without
+reference and on single or few channels, e.g. wavelet-based
+methods since BSS-based methods may not perform satisfactory with less number of channels. In some applications, if
+it is possible to have some a priori knowledge about artifacts and some training data available, and the application
+only require to identify artifacts not to remove them, then
+machine learning based classifiers can be good choice. If the
+EEG recording involves high-density channels, then PCA may
+be preferred to reduce the dimensionality before applying
+any artifact removal methods, such as BSS-based methods.
+If the application is based on offline analysis, then we can
+afford some computational expensive techniques such as ICA
+or EMD.**
+
+#Conclusions
+
+An extensive analysis of the existing methods for artifact detection and removal has been presented with their
+comparison, advantages and limitations. The research on
+handling artifacts present in the typical EEG recordings is
+still an active area of research and none of the existing
+methods can be considered as the perfect solution. Most
+of the solutions do not consider the particular application,
+therefore, not optimized for that application. Although,
+most of the removal algorithms provide good performance,
+however, they are only suitable for offline analysis because
+of their high computational complexity and unsupervised
+nature. Some of them even require a dedicated reference
+channel, which is not feasible for some applications. Further studies are required to characterize the properties of
+commonly encountered artifacts and to observe the effects
+of their contamination to the desired later stage signal
+processing/analysis. Some applications may only require to
+identify artifacts and not to remove them, e.g. in applications where classification/identification of two classes
+are required. In such cases, a more realistic mathematical
+model of the desired event(s) to be identified is essential in
+order to easily ignore other non-brain signals (i.e. artifacts
+or interferences). Finally, the future direction will be to
+provide application-specific solutions with reasonable complexity, optimized performance and most importantly with
+feasible solutions
+
+--------------------------------
+
+
+title: (2015) EEG artifact removal—state-of-the-art and guidelines
+
+DOI: http://dx.doi.org/10.1088/1741-2560/12/3/031001
+
+notes:
+
+All of these algorithms have proved
+particularly effective with simulations and, more importantly, with data collected in controlled
+recording conditions. Moreover, whenever prior knowledge is available, then a constrained form
+of the chosen method should be used in order to incorporate such additional information. Finally,
+since which algorithm is the best performing is highly dependent on the type of the EEG signal,
+the artifacts and the signal to contaminant ratio, we believe that the optimal method for removing
+artifacts from the EEG consists in combining more than one algorithm to correct the signal using
+multiple processing stages, even though this is an option largely unexplored by researchers in
+the area.
+
+#2.3.4. Less common physiological artifacts. In addition to the
+artifacts described before, two interferences may arise from
+skin potential: perspiration artifacts, which are slow waves
+caused by shifts of the electrical baseline of certain electrodes;
+and, to a smaller extent, the sympathetic skin response, which
+also consists of slow waves and is an autonomic response
+produced by sweat gland and skin potentials [31].
+Other possible artifacts include movements of the tongue,
+dental restorations with dissimilar metals [31], breathing
+artifacts in the lower part of the spectrum [31] and
+electrodermal interferences due to sweating, chest movements, etc [9].
+We do not deal with these artifacts further since they are
+rarely treated in the literature that we have surveyed.
+
+The BSS problem is typically ill-posed unless further
+assumptions are made [41], since many source configurations may lead to the same measurements [42]. One way to
+restore the well-posedness of the problem is by imposing
+certain diversity conditions among sources, for instance
+that they are temporally independent and identically distributed (i.i.d.) but not Gaussian, or the other way around
+[41] (when both conditions hold simultaneously, then the
+problem has no solution). **In real scenarios there are likely
+to be more cerebral sources than sensors (m n > ), which
+leads to an underdetermined system (1), although decomposition methods can provide at most n sources [43]. This
+is normally not an issue since most methods are able to
+extract a linear combination of sources belonging to the
+same subspace instead of estimating the sources themselves
+[34], hence properly separating the signal from the artifacts [43, 44]**
+
+
+In what follows, we
+follow the typically accepted assumptions that the mixing is
+linear, as assumed in (1), that it is noiseless, with V = 0, that
+it is square, i.e. n = m, and that it is stationary, that is A does
+not change over time [20].
+
+#2.5. Performance evaluation
+
+The greatest challenge for
+evaluating the performance of algorithms that work with EEG
+measurements is that the noiseless signal is not known
+a priori. This can be avoided to some extent by creating
+simulated signals and artifacts, either computer generated or
+obtained from ‘clean’, controlled recordings. Regardless of
+the fact that simulated data can be used to develop and
+evaluate artifact removal algorithms to obtain preliminary
+indications, the methods need to be assessed with real data.
+Therefore, there is a necessity to develop tools (or standardize one of the existing approaches that we comment on
+next) that allow researchers in the field to objectively measure
+and compare the performance of new and current algorithms
+in order to select the optimal one for a certain scenario.
+
+#2.5.1. Simulated versus acquired EEGs
+
+While some
+characteristics of a recorded EEG can be replicated quite
+accurately [45], synchronization among channels, timelocking to ERPs, contamination by different kinds of
+artifacts produced in a realistic manner, etc, are harder to
+mimic. In fact, the assumptions underlying artifact ‘injection’
+may not characterize real contamination, biasing the results in
+favor of techniques that adopt similar premises
+[17, 32, 46, 47]. Simulations in which all of these
+properties are considered valid are, however, very typical
+[15, 34, 48–51]. Some attempts at achieving simulations of
+better quality include [52] and, more recently [34], in which
+3D models of the brain, skull and scalp are implemented, and
+the measured EEG is generated by considering dipolar
+sources and solving the electromagnetic forward problem.
+**In our opinion, methods can be first assessed and
+compared to other methods by using simulations, since it is
+more straightforward to obtain preliminary results that serve
+as a guide. But one has to use recorded EEG data as the final
+testbed for evaluating the true performance, reliability and
+reproducibility of any artifact removal approach**.
+
+#2.5.2. Validation for simulated EEGs
+
+One advantage of
+using simulated EEGs is that the quality of the signal before
+and after artifact removal can be assessed through standard
+performance measures. The metrics commonly employed to
+represent the energy of the signal compared to the energy of
+the artifacts are the signal to noise ratio (SNR) [53], the signal
+to artifact ratio (SAR) [15] and the brain to contamination
+ratio (BCR) [50], the latter being energy ratios equivalent to
+the well-known SNR but with only biological artifacts as
+sources of contamination. In order to obtain a mathematical
+expression for the SAR/BCR, we first rewrite (1) as follows:
+
+The metric most prevalently used to verify the effectiveness of a noise removal method is the normalized mean
+squared error (NMSE) [34, 54, 55], which measures the
+deviation between the channel estimate xˆi
+(s) and the clean
+channel signal xi
+
+where E {·} denotes the expectation operator that averages
+over various runs and estimated signals xˆi
+(s) . This is
+equivalent to the relative root mean squared error (RRMSE)
+of [29, 56–58].
+
+Another popular measure of performance is the (relative/
+percentage) error of the signal in various frequency bands of
+interest; see for instance [14, 15, 49]. A few other ways of
+determining how well an algorithm works have been
+proposed. For example, the authors of [50] use a 2×2 matrix
+of coefficients of correlation between recovered and original
+brain and contaminant sources. Correlation measures are also
+employed in [48, 49], where the authors test the efficacy of
+different algorithms on the basis of Pearson’s correlation
+coefficient and mean square error (MSE) measurements.
+Furthermore, mutual information on estimated and original
+clean data is used in [55] to determine how closely the
+reconstructed EEG resembles the noiseless activation. The
+mutual information has also been used in [7, 59], where the
+EEG is assumed to share less information with the EOG after
+correction than the raw uncorrected data.
+
+
+#2.5.3. Validation for acquired EEGs
+
+**Multiple validation
+procedures for real-life EEG signals have been proposed in
+recent years; however authors do not seem to agree on
+choosing a single mechanism for evaluating and comparing
+the performance of artifact removal algorithms**
+
+ Daly et al [22] propose typical
+values for characteristics of resting state background rhythms
+such as their mean power and its standard deviation, their
+maximum amplitude and its standard deviation, and the
+kurtosis and skewness of their amplitude; Mognon et al [61]
+compute some features intended to best capture the behavior
+of components associated with ocular artifacts, such as
+kurtosis and spatial average difference for eye blinks, or
+maximum epoch variance for vertical eye movements;
+Delorme et al [51] use extreme values, linear trends, data
+improbability, kurtosis and spectral patterns to parameterize a
+greater variety of artifacts. The three studies report excellent
+performances for the detection of artifacts using the
+aforementioned statistical characterizations, with the consequence that they may also be employed quite reliably to check
+whether the cleaned signal resembles a noise-free EEG.
+
+A novel idea for scenarios in which the researcher has
+full control of the EEG recording is given by Sweeney et al
+[62]. The authors propose a methodology for producing two
+highly correlated signals: one that is considered a reference
+artifact-free ‘ground-truth’ and another that is intentionally
+corrupted with artifacts. Given this controlled scenario, it is
+possible to apply artifact removal methods to the noisy EEG
+and compare the correlation between either the noisy or the
+resulting signal and the ground-truth.
+
+#2.5.4. Remarks
+
+Note that while performance evaluation is
+mostly concerned with accuracy, it is also important to study
+the reproducibility of an algorithm [3]. The reproducibility
+describes the ability of an algorithm to produce repeated
+measurements which are coherent, obviously under the
+assumption that the same signal conditions apply to all
+measurements. Although reproducibility is best investigated
+by sequentially repeating an experiment on the same patient,
+simulated signals also represent a powerful and much more
+manageable means of evaluating the reproducibility of an
+algorithm.
+Reproducibility, as well as performance, should ultimately be tested with measured EEGs. In order to determine
+whether the results given by an algorithm are reproducible, a
+series of measures can be obtained under the same recording
+conditions, producing equivalent EEG plus artifact combinations. By showing that the algorithm performs in the same
+way for each dataset, we also demonstrate its reproducibility
+
+
+#2.6. Computational complexity
+
+Typically, there exists a trade-off
+between speed and accuracy; thus if two methods provide
+similar results in terms of the quality of the denoised signal,
+then the faster method should be preferred
+
+The problem
+is that most authors do not report the computational cost of
+their algorithms, either theoretically or in practice. What is
+more, speed is of prime concern for online applications (for
+instance patient monitoring in real time), whilst we want to
+determine which algorithm provides the denoised EEG of best
+quality. The interested reader may find detailed derivations of
+the complexity of some artifact removal algorithms
+in [34, 54].
+
+#3. A survey of denoising techniques
+
+Simple low pass, band pass or high pass filtering represents one of the first classical attempts at removing artifacts
+from a measured EEG. However this is only effective when
+the frequency bands of the signal and interference do not
+overlap [19]. With spectral overlap, which is commonplace
+for typical artifacts recorded along with the EEG, alternative
+techniques are needed such as adaptive filtering, Wiener filtering and Bayes filtering [19], as well as regression [63],
+EOG correction [13], blind source separation [20] and more
+modern attempts like the wavelet transform (WT) method
+[64], empirical mode decomposition (EMD) [65] and nonlinear mode decomposition (NMD) [66].
+BSS techniques are also known as component based
+methods since they find principal or independent components
+equivalent to the input EEG channels and perform processing
+in the transformed domain. The process is reversed by
+applying the inverse transformation to the corrected components, with the consequence that all EEG channels are processed and estimated simultaneously. In contrast, filtering,
+regression, EOG correction, the WT method, EMD and NMD
+(with the exception of multi-channel EMD, which is not used
+in the EEG literature) estimate each artifact-corrected channel
+independently, in the time, frequency or time–frequency
+domain.
+
+#3.1. Linear regression methods
+
+Regression algorithms were arguably the most frequently
+used EEG artifact correction techniques up to the mid 1990s,
+especially for ocular interferences, thanks to their simplicity
+and reduced computational demands. When one or more
+reference channels are available and on the premise that they
+properly represent all interference waveforms, then artifacts
+may be corrected for by subtracting a regressed portion of
+each reference channel from the contaminated EEG (see the
+next section and [13, 63] for EOG correction procedures).
+Regression may be done either in the time or frequency
+
+Linear regression assumes that each EEG channel is the
+sum of the non-noisy source signal and a fraction of the
+source artifact that is available through a reference channel.
+Then, the goal of regression is to estimate the optimal value
+for the factor that represents such a propagation fraction. In
+multiple linear regression the measured signal at each electrode is influenced by more than one (fraction of the) reference waveforms—for instance, vertical, horizontal and radial
+ocular artifacts
+
+lar artifacts.
+Regression methods have been replaced by more
+sophisticated algorithms primarily because the former need
+one or more reference channels, a disadvantage that limits
+their applicability to removing mainly EOG [13] and ECG
+[67] artifacts (note that the authors in [68] have been able to
+record EMG activity as a reference channel; however this
+type of measurement is not routinely performed). Since other
+potentially more efficient algorithms emerged, like PCA and
+ICA that have become commonplace in most recent publications (from [44, 69] to [7, 11, 14–16, 34, 50, 54, 70]),
+regression has no longer been the default choice for EOG or
+ECG removal of artifacts from an EEG. We remark, however,
+that no publication has yet shown that BSS algorithms are
+optimal with measured EEG data; only [71] has preliminary
+results on them producing denoised EEG of quality equivalent to that from optimal EOG correction methods. Therefore,
+despite its drawbacks, regression is still used as the ‘goldstandard’ technique to which the performance of other algorithms may be compared; see for instance [14, 15] for ocular
+contamination.
+
+3.2. EOG correction methods
+Even though EOG correction is a general term, in the EEG
+artifact removal literature it refers to EOG subtraction methods that assume that the measured EEG is a linear combination of the true signal and the ocular artifact, and are based on
+linear regression [13]. Regression calculates B, the proportion
+of one or various EOG references that are present in each
+particular EEG channel (the time domain approach). Correction is then performed by subtracting the regressed portion(s)
+of the EOG reference waveform(s) from each EEG channel,
+resulting in an estimation of artifact-free measurements in the
+scalp.
+Bidirectional contamination, which refers to brain signals
+being measured in the reference EOG as well as the other way
+around, is the main drawback of the early EOG correction
+techniques. Many of these procedures do not take bidirectional contamination into account and, consequently, certain
+possibly relevant cerebral information is cancelled in the EEG
+recordings upon linear subtraction. More advanced EOG
+correction methods overcome this issue in a number of ways,
+the simplest of all being low pass filtering of the EOG
+channels [15]. This is supported by some studies that argue
+that most high frequency content in the EOG is of neural
+origin [72]. However, others argue that in fact all frequency
+bands (alpha, beta, delta and theta) are contaminated
+
+bidirectionally [73]. Alternatively, the aligned-artifact average
+procedure obtains the B coefficients from an average EOG
+waveform that has minimal forward EEG contamination (the
+ratio of EOG to EEG power increases with averaging) [13].
+The procedure was later revised (RAAA) to account for both
+eye movements and blinks [13, 74].
+For comprehensive reviews on the subject, we refer the
+reader to [12, 13, 75]. From the validation papers [10, 17] the
+revised aligned-artifact average procedure stands out as the
+best multiple-regression technique for accounting for ocular
+artifacts such as blinks and eye movements.
+
+3.3. Filtering methods
+Simple filtering is normally not an option for removing artifacts from EEG recordings, except for narrow band artifacts
+like environmental line noise (50/60 Hz interference can be
+removed with a notch filter). **Thus, numerous artifact removal
+techniques described in this section try to adapt the filter
+parameters w to minimize the mean square error between the
+estimated EEG Xˆ and the desired original signal X. To
+overcome the limitation of the artifact-free signal being
+unknown, each method implements strategies following certain optimization criteria**. In what follows, we briefly describe
+some of the main filtering techniques employed in the
+removal of artifacts from the EEG.
+
+# 3.3.1. Adaptive filtering. Adaptive filtering assumes that the
+signal and artifacts are uncorrelated. The filter generates a
+signal correlated with the artifact using a reference signal and
+then the estimate is subtracted from the acquired EEG [19].
+The choice of the artifact reference is key to the proper
+functioning of the algorithm and may be obtained from EOG
+recordings for the removal of eye movements or blinks [13],
+or from EMG recordings for the removal of muscle
+artifacts [70].
+Adaptive filters iteratively adjust a vector of weights
+according to an algorithm of optimization. These weights
+model the contamination of the artifact on the EEG activity
+[49, 76]. Adaptive filtering represents an improvement over
+linear regression since propagation factors do not need to be
+constant or frequency independent [3, 49].
+The most prevalent family of algorithms is based on the
+least mean squares method, which is linear in complexity and
+convergence. Another well-known family is based on the
+recursive least squares (RLS) method, which is quadratic in
+complexity and convergence. According to [77], RLS-based
+filters are superior in accuracy at removing ECG artifacts
+from EMG recordings.
+
+3.3.4. Filtering in practice. Using different forms of filtering
+for the removal of artifacts from an EEG dates at least as far
+back as 1976, when Wright [81] obtained the best linear filter
+for removing EMG from EEG recordings: a least squares
+Kalman filter that exploits a priori knowledge.
+Although other kinds of filters exist and have been used
+in the EEG artifact removal literature, adaptive filtering is the
+most common. It is still in use, for instance in [82], where
+three least mean squares adaptive filters are employed in
+cascade to eliminate line interference, ECG artifacts and EOG
+spikes separately. More generally, they are often used for
+comparison with other artifact removal methods, for instance
+in [11, 49].
+Filtering approaches such as adaptive, Wiener or Bayes
+filtering have the advantage that they can be automized [62];
+however they need a measured or reliably estimated reference
+in order to operate. Some of these methods can operate on
+single channels, a characteristic that makes them attractive for
+the personal healthcare environment [62].
+
+--pulei os métodos, pois a maioria muitos já conheço e nao é necessario
+entrei emespecifico em cada um dos metoddos (que sao muitos), considerando que
+os mais performaticos e usados só são alguns deles 
+
+
+4.7. Is there a single best artifact removal algorithm?
+
+As it turns out, there is no algorithm that is optimal for every
+possible scenario. The performance rather varies according to
+the type of EEG signal, the artifacts present in the measurements and the brain to contaminant ratio, among other factors.
+Despite the fact that some contradictory studies exist,
+ICA based procedures are the main accepted solution for
+obtaining a clean EEG of improved signal quality [32],
+although they do not always completely separate artifactual
+from cerebral sources [32, 139]. In fact, leading researchers in
+the field have been using ICA and improved variations for the
+last 15 years—for example Vigário [21, 44, 159, 160],
+Hÿvarinen [161, 162], Oja [21, 159, 161, 162], James
+[20, 39, 55, 108], Makeig [43, 52, 97, 102], Jung [43, 52, 97],
+Comon [41] and Cichocki [83, 163], among others. PCA, on
+the other hand, may be better employed to extract features of
+the brain signal or of the artifacts to be removed in a preprocessing stage [85] or to whiten the signal prior to applying
+ICA [21, 44, 159].
+
+CA [21, 44, 159].
+Depending on the scenario, a certain ICA algorithm may
+stand out among the others as regards its effectiveness. SOBI
+is repeatedly reported to outperform other artifact removal
+methods [15, 49, 53, 103, 104] especially for a background
+EEG contaminated by EOG, barely distorting any frequency
+band, even when an EOG reference is not available or when
+the data length is short. It is noteworthy that the only studies
+that have validated EOG correction with real signals to date
+[17, 32, 71] conclude that RAAA is the best performing EOG
+correction method when reference channels are available, and
+that ICA with and without a reference proved effective and
+not statistically different from RAAA.
+
+More variability exists for EMG and ECG contaminations. For the former, even though SOBI has been used
+satisfactorily in [70], other BSS algorithms, such as InfoMax
+[43, 147] and CCA [56], have been found to perform successfully too. The latter may be corrected by several ICA
+variants [16, 148, 150, 156], all of which work well, especially when a reference waveform is available. As explained
+before, our choice is SOBI for both kinds of contaminants.
+Finally, for mixtures of artifacts, AMICA and extended
+InfoMax seem to be the best choices according to [7]; however the authors point out that SOBI components look just
+like AMICA ones. SOBI, in fact, performs just as successfully, but possibly did not behave as well according to the
+selected performance measures. We summarize our preferred
+artifact removal choices in table 1.
+Furthermore, when prior knowledge is available, then
+some form of spatially constrained ICA [39] is preferred as
+compared to using ICA alone, since it improves the estimation and allows one to automate the artifact identification and
+removal process [55]. For offline applications and, even more
+so, for scenarios in which human intervention is admissible,
+16
+J. Neural Eng. 12 (2015) 031001 Topical Review
+learning phases may provide valuable information on the
+kinds of artifacts present in the recorded EEG, such that
+experimental spatial constraints can be inferred from the data.
+
+3.8. Semi-automated and automated execution
+
+Artifact removal algorithms can be classified as semi-automated or automated, depending on whether there is a need for
+human intervention or not. Semi-automatic methods require
+visual inspection of the measured signal or of the components
+obtained by the artifact removal method; hence they can only
+be used for offline applications. Therefore, to be able to run
+an algorithm in an online application and, in general, to avoid
+introducing subjectivity in the process, automated execution
+is normally preferred.
+
+Multiple procedures for automatic identification of and
+correction for artifacts have been developed; however no
+single one stands out among them. Automating existing
+algorithms is not easy since, as commented throughout the
+text, there are multiple kinds of signals and contaminants that
+are mixed in undetermined ways in real-life measurements,
+thus limiting the applicability of standard methods unless they
+can be readily adapted to specific scenarios. Regression and
+filtering approaches need a reference channel if they are
+meant to operate automatically [19, 137]. On the other hand,
+component based methods are more versatile in that they can
+be made automatic via a reference signal **and also based on
+values for typical characteristics of the EEG signal or artifacts
+and deviations from normality [22, 51, 61]*
+
+When a reference waveform exists or a prototype signal
+can be generated, viable automation may be performed by
+computing the correlation of certain ICs with the reference
+channel [14, 85], or by combining signal features and correlation [15, 49]. More generally, spatial and temporal probabilistic characteristics of the components derived from
+decomposition of the EEG signal compared to standard values
+for the background EEG and artifacts may serve to automate
+an algorithm on the basis of a combination of thresholds
+
+s. A
+completely automatic ICA-based algorithm for identification
+of artifact-related components in EEG recordings, ADJUST
+[61], works quite reliably following this idea. Similar
+approaches are presented in [22, 51]. Another alternative,
+implemented in [16, 138], consists in performing a training
+phase followed by a clustering step. The training phase needs
+a reference channel that is either measured or obtained from
+clean epochs of the same recording or from epochs of a different recording that contains signal or artifact components
+similar to those of interest. Clustering is performed on the
+basis of the similarity of the temporal dynamics of ICs as
+described via their auto-mutual information
+
+To conclude, WT and EMD can be automated more
+easily and in a common manner using thresholds [34]. For the
+WT, the SURE [116] shrinkage rule and a soft thresholding
+strategy seem to provide good results [34]. With regard to
+EMD, inspired by wavelet thresholding, the authors of [127]
+use an algorithm that evaluates the noise level and filters
+each IMF.
+
+***obs: no review de 2016 ele fala que nao tem metodo automatizado, e esse é
+de 2015 => esse review é melhor e mais completo***
+
+
+
+4. Discussion and guidelines
+
+The vast majority of the literature that we have reviewed
+extracts conclusions on the effectiveness of a certain artifact
+removal method (or of its superiority compared to other
+algorithms) on the basis of simulations or, at best, visual
+inspection and subjective interpretation of the results. As we
+remarked in section 2.5, in our opinion measured EEG signals
+should be the relevant testbed for artifact removal experiments. Thus, in what follows, we separate out the algorithms
+that have been shown optimal for artifact removal from either
+simulated or real EEG signals for EOG, EMG, ECG and a
+mix of contaminants. Note that denoising results differ when
+
+not [15], the former being the preferable scenario.
+Blind source separation techniques are possibly the
+methods most widely used to remove any type of artifact from
+an EEG. Many comparative studies concerning various kinds
+of BSS algorithms and other methods can be found in the
+literature [11, 14–16, 19, 34, 46, 59, 139]; however they
+sometimes lead to contradictory results. In the following
+subsections our goal is to clarify this on the basis of the
+existing literature and some preliminary conclusions extracted
+from our own work that we mean to support in a continuation
+paper, the results of which are still being derived
+
+
+
+4.1. Assumptions for the comparison
+
+Furthermore, we describe techniques meant to deal with
+ocular, muscular and cardiac artifacts, first appearing in isolation and then simultaneously. This separation can only be
+ensured with simulated signals or, to a lesser degree, with
+controlled recording environments. However, conclusions
+should be easily adaptable to clinical environments, taking
+extra care that extraneous artifacts may be present and hence
+make some intervals of the recordings unusable
+
+Finally, we do not take into account the number of
+electrodes when comparing results reported by different
+authors, even though it is a relevant design feature: more
+electrodes provide increased robustness due to redundancy of
+information [53], but they may also lead to overfitting if not
+dealt with carefully [21]
+
+
+5. Conclusions
+
+Over the last 20 years there has been a considerable increase
+in the number of authors trying to solve the blind source
+separation problem given by equation (1) in the biomedical
+context [21], specifically for the removal of artifacts from
+EEG and MEG signals. However, in more recent years, the
+interest has been shifting to automating the artifact removal
+process and to obtaining performance metrics that can
+objectively validate corrected EEG [15, 16, 34, 55]. Since, as
+a matter of fact, most algorithms recommended in the literature produce artifact-free EEGs of similar quality
+[7, 16, 34, 71], researchers in the area are now interested in
+reproducible experiments and in finding reliable algorithms
+that do not require human intervention and can be used in the
+clinical context.
+Regression methods were the default choice for correction for artifacts in EEGs up to the mid-1990s, notably for
+ocular interference for which they still have their place
+[17, 32]. These algorithms gave way to more elaborate
+methods based on statistical features of the EEG signal, i.e.
+blind source separation techniques like principal component
+analysis and independent component analysis. While PCA
+has been widely used, it has only been reported to give good
+results when the contaminant is of substantially bigger
+amplitude than the signal of interest. The fact that most
+researchers now agree with the idea that artifacts and brain
+signals are better modeled as independent rather than orthogonal waveforms justifies the prevalence of ICA techniques
+for solving the EEG–BSS problem. In addition, more modern
+algorithms have also been applied in correcting EEG activity,
+such as the wavelet transform, empirical mode decomposition, nonlinear mode decomposition and their combinations
+with BSS methods.
+To sum up, we recommend using an ICA algorithm
+based on second-order statistics—to be precise, SOBI, as it
+has been reported to be successful for all kinds of contaminants and EEG signals. The more recently developed
+AMICA method is also a promising alternative, especially
+when various kinds of artifacts occur simultaneously. Once
+prior knowledge is available, in the form either of a PCA
+channel (for high amplitude artifacts) or of a certain ICA
+channel that clearly corresponds to a contaminant, then this
+should be used to feed a constrained variation of the ICA
+algorithm of choice to further improve results and to automate
+the artifact removal process. In order to get a clean reference
+channel, techniques like low pass filtering [15] or more
+advanced methods such as WT [55] or regression [134] may
+be employed. **We conclude this review by highlighting that
+we believe that the optimal method for removing artifacts
+from EEGs consists in combining various algorithms in cascade to enhance the quality of the signal by using multiple
+processing stages that eliminate one artifact type at a time,
+although to the best of our knowledge, this is currently an
+alternative that remains unexplored (it is only mentioned
+succinctly in [83])**
+
+
+--> faltou só entender Empirical Mode Decomposition (EMD)
+
+
+
+
+
+
+
+
+

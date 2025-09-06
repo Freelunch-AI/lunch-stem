@@ -1,0 +1,5 @@
+outs:
+- md5: 6a42ce9f5c572d065b72ad9abf74aa30
+  size: 3002528
+  hash: md5
+  path: 02_02_images_transform.pdf

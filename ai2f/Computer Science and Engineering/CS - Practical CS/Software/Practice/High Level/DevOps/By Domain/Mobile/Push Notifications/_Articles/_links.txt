@@ -1,0 +1,2 @@
+https://www.appmysite.com/blog/mobile-app-push-notifications-guide/#:~:text=Web%20push%20notifications%20can%20be,and%20opted%20in%20for%20it.
+https://blog.logrocket.com/create-send-push-notifications-react-native/#push-notification-architecture-react-native

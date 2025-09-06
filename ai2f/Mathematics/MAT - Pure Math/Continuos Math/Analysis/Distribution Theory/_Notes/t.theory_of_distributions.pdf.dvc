@@ -1,0 +1,5 @@
+outs:
+- md5: b418e4aaec9d239e43c8f31c24ba22ce
+  size: 352646
+  hash: md5
+  path: t.theory_of_distributions.pdf

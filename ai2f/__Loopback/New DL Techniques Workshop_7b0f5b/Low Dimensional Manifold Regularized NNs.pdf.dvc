@@ -1,0 +1,5 @@
+outs:
+- md5: 2d834e9647b595aaba8a996353cad894
+  size: 3005603
+  hash: md5
+  path: Low Dimensional Manifold Regularized NNs.pdf

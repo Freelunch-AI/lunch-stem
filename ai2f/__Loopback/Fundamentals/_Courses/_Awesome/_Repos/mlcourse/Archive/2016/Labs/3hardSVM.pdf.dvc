@@ -1,0 +1,5 @@
+outs:
+- md5: 4fab46580cb3d8b2397cf537b91aad69
+  size: 496246
+  hash: md5
+  path: 3hardSVM.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 6594fa34b78ddbbccdd7a11d92f5f413
+  size: 1548615
+  hash: md5
+  path: argus-sec-docker-networking-behind-the-scenes.pdf

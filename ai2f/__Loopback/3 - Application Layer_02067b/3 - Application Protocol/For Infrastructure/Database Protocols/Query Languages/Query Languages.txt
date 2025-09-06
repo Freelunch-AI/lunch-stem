@@ -1,0 +1,8 @@
+Query Languages (e.g. SQL or GraphQL) are basically definining a protocol that goes inside
+the application layer protocol. Examples:
+
+SQL: defines a protocol for clients to interact with table databases, and this protocol goes inside the application protocol the database uses.
+Example: backend gets data from /sends data to database server
+
+GraphQL: defines a protocol for clients to interact with backend APIs, and this protocol is the HTTP payload
+Example:  browser requests data from/posts data to a http server for some data.

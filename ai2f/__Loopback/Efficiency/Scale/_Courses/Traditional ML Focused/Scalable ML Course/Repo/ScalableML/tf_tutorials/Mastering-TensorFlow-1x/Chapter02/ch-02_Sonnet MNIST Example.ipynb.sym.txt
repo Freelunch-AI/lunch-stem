@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\ch-02_Sonnet MNIST Example.ipynb_74776c

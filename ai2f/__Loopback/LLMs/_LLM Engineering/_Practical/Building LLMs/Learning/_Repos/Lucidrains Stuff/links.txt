@@ -1,0 +1,7 @@
+https://github.com/lucidrains/vit-pytorch
+https://github.com/lucidrains/DALLE2-pytorch
+https://github.com/lucidrains/x-transformers
+https://github.com/lucidrains/musiclm-pytorch
+https://github.com/lucidrains/vector-quantize-pytorch
+https://github.com/lucidrains/alphafold3-pytorch
+https://github.com/lucidrains/gigagan-pytorch

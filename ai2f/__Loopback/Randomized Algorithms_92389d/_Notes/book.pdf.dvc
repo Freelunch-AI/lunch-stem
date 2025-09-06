@@ -1,0 +1,5 @@
+outs:
+- md5: 8938a4c19c5c1ccaa87cb9e0eb25bfcd
+  size: 2402279
+  hash: md5
+  path: book.pdf

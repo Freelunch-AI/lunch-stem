@@ -1,0 +1,5 @@
+outs:
+- md5: 2b2f22617a7f97f07079290e89464ba6
+  size: 690097
+  hash: md5
+  path: docker-curriculum.pdf

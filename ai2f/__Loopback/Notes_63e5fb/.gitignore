@@ -1,0 +1,21 @@
+/01-introduction (1).pdf
+/03-storage1.pdf
+/04-storage2.pdf
+/05-bufferpool.pdf
+/06-hashtables.pdf
+/07-trees.pdf
+/08-indexconcurrency.pdf
+/09-sorting.pdf
+/10-joins.pdf
+/11-queryexecution1.pdf
+/12-queryexecution2.pdf
+/13-optimization1.pdf
+/14-optimization2.pdf
+/15-concurrencycontrol.pdf
+/16-twophaselocking.pdf
+/17-timestampordering.pdf
+/18-multiversioning.pdf
+/19-logging.pdf
+/20-recovery.pdf
+/21-distributed.pdf
+/22-distributedoltp.pdf

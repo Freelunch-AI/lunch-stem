@@ -1,0 +1,5 @@
+outs:
+- md5: 80528568a1ddb1cff36335248f2ba931
+  size: 54973630
+  hash: md5
+  path: CERN_MEMS_2020_slides_full.pdf

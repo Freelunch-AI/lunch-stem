@@ -1,0 +1,3 @@
+https://github.com/ritchieng/the-incredible-pytorch
+https://github.com/BrunoScaglione/Deep-Tutorials-for-PyTorch
+https://github.com/yunjey/pytorch-tutorial

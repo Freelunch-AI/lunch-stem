@@ -1,0 +1,5 @@
+outs:
+- md5: 92bac06033e56e6ff400081ab583dc9e
+  size: 364598
+  hash: md5
+  path: multivariate-gaussian.pdf

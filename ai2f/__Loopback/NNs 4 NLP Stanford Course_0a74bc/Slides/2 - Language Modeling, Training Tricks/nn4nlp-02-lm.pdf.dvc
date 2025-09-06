@@ -1,0 +1,5 @@
+outs:
+- md5: 5ba0354a982ad489f22a87ba816809a1
+  size: 3345501
+  hash: md5
+  path: nn4nlp-02-lm.pdf

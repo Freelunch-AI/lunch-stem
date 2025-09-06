@@ -1,0 +1,5 @@
+outs:
+- md5: 7cad2c2f63e997720fa091c7469e1c2f
+  size: 68074
+  hash: md5
+  path: 0220_exactmatch__boyer_moore.pdf

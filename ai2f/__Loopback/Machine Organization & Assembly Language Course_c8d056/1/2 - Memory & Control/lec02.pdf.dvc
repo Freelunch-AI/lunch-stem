@@ -1,0 +1,5 @@
+outs:
+- md5: 95bcaad44ef32126000744080d7bc8db
+  size: 87535
+  hash: md5
+  path: lec02.pdf

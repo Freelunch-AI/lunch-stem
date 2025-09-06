@@ -1,0 +1,5 @@
+outs:
+- md5: 746b4dfd7075e23cad1fc7663b8ebdbf
+  size: 886554
+  hash: md5
+  path: cs231n-github-io-python-numpy-tutorial.pdf

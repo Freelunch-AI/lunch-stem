@@ -1,0 +1,5 @@
+outs:
+- md5: 88d02de8b537bca17c5bd52901ffa4ce
+  size: 280049
+  hash: md5
+  path: ex_abstraction.pdf

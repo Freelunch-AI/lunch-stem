@@ -1,0 +1,5 @@
+outs:
+- md5: 1a439c67d95e2275863ab31a55084bab
+  size: 305627
+  hash: md5
+  path: 8 - Constant Propagation.pdf

@@ -1,0 +1,22 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Profs. Peter Stone and Yuke Zhu",
+      "university": "The University of Texas at Austin"
+    },
+    {
+      "name": "Dan Klein and Pieter Abbeel",
+      "university": "UC Berkeley"
+    }
+  ],
+  "university_course_name": "CS 343: Artificial Intelligence",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": "http://ai.berkeley.edu",
+  "num_of_pages": 40,
+  "size_mb": 3.14,
+  "link_to_licence": null,
+  "changes_were_made": false,
+  "link_to_license": null
+}

@@ -1,0 +1,5 @@
+outs:
+- md5: ae858273cc691c5c814dfd1471f89a50
+  size: 1082835
+  hash: md5
+  path: 18-sortmergejoins.pdf

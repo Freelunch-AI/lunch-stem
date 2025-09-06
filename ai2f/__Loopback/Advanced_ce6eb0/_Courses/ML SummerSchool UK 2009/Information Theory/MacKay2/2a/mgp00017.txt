@@ -1,0 +1,15 @@
+
+
+
+
+My strategy will find the odd ball and whether it is heavier or lighter
+in at most 13 uses of the balance.
+12 
+11 
+10 
+9 
+8 
+7 
+6 
+5 
+

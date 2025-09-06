@@ -1,0 +1,5 @@
+outs:
+- md5: 186d0126e6681ebf1e2ff7e0bedacd48
+  size: 765103
+  hash: md5
+  path: cs231n-github-io-neural-networks-2.pdf

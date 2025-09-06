@@ -1,0 +1,240 @@
+
+<p align="center">
+   <img src="./assets/logos/lunch_stem_light_logo_with_name.png" alt="lunchSTEM Logo" width="300"/>
+</p>
+
+<h1 align="center">Democratizing <i>STEM</i> knowledge in an organized manner</h1><br>
+
+<p align="center">
+   <strong>🌟 Non-profit, open source project 🌟</strong>
+</p>
+
+<p align="center">
+   <em>Think of a better Wikipedia for <i>STEM</i>.<br>
+   It's like FreeCodeCamp, but for documents (and not just for Software Engineering).</em>
+</p>
+
+<p align="center">
+   <a href="https://discord.gg/W6wmJbZx">
+      <img src="https://img.shields.io/badge/Discord-Join%20Our%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+   </a>
+</p>
+
+<p align="center">
+   <a href="README.md">
+      <img src="https://img.shields.io/badge/English-README-blue?style=for-the-badge" alt="English">
+   </a>
+   <a href="README.es.md">
+      <img src="https://img.shields.io/badge/Español-README-red?style=for-the-badge" alt="Español">
+   </a>
+   <a href="README.zh.md">
+      <img src="https://img.shields.io/badge/中文-README-yellow?style=for-the-badge" alt="中文">
+   </a>
+   <a href="README.pt.md">
+      <img src="https://img.shields.io/badge/Português-README-green?style=for-the-badge" alt="Português">
+   </a>
+   <a href="README.fr.md">
+      <img src="https://img.shields.io/badge/Français-README-purple?style=for-the-badge" alt="Français">
+   </a>
+   <a href="README.de.md">
+      <img src="https://img.shields.io/badge/Deutsch-README-orange?style=for-the-badge" alt="Deutsch">
+   </a>
+</p>
+
+---
+
+<br>
+
+<span style="background-color:#ffe066; color:#222; display:block; padding:20px; border-radius:6px"> 
+<span style="font-size:1.1em"><strong>⚠️ Important</strong></span><br><br>
+Documents in <em>lunchSTEM</em> are created by external authors, not by us. We don't support inclusion of non-distributable documents without author permission (for non-distributable documents: check <code>author_permissions.jsonl</code>). <br><br>Each document credits its author(s) in a corresponding <code>[file_name].[file_extension].source.json</code> file.<br><br>
+Authors may request content removal at any time. After following our streamlined protocol for <i>Content Removal Requests</i>, we remove content within 24 hours. This option is faster and more friendly than a <i>Digital Millennium Copyright Act (DMCA)</i> notification (which can shutdown the project).
+</span>
+
+<br>
+
+<span style="background-color:#b6f5b6; color:#222; display:block; padding:20px; border-radius:6px;">
+<span style="font-size:1.1em"><strong>🟩 Coming Soon</strong><br><br></span>
+• <b>Website</b> with author homepages, keyword/semantic search, discussion forums on top of documents, content previews, interactive content visualizations, content starring/tagging/favouriting, making notes on top of documents, trending/popular documents, statistics for documents and authors, and more.<br>
+• <b>MCP Server:</b> useful for AI Agents doing complex engineering work or scientific research.<br>
+• <b>CLI</b> where users can do keyword and semantic search.
+</span>
+
+<br>
+
+## Overview
+
+This is an evolving *STEM* (Science, Technology, Engineering and Mathematics) knowledge base, meant to be reviewed and improved with the effort of the community. It can be used and improved by humans and AI agents.
+
+Its ideal use-case is to be used to **go deep into a *STEM* topic (and related topics) after you have an initial understanding of it** (which you can easily get via Google Search or AI Assistants).
+
+It should be more organized and higher-quality (signal-to-noise ratio) than default Google search/AI deep research for this use-case. 
+
+The goal is to, later on, enable AI agents to easily use it as a tool by making a *lunchSTEM MCP Server*.
+
+## Content Removal and Credit Attribution Requests
+
+A big effort was made to detect and remove copyrighted (non-distributable) content, and to recognize the authors/publishers/universities of the remaining materials. Manual review of each file couldn't be done because of the sheer amount of files (but we welcome the community to help us with this by, opening issues and PRs).
+1. We ran scripts to delete any file containing any other extension outside of: `.pdf`, `.txt`, `.md`, `.ipynb`, `.json`
+2. We ran scripts for automated detection of copyright-related keywords in documents and deletion of such documents
+3. We ran scripts for automated removal of academic papers.
+4. We manually replaced each book pdf for a link to it.
+5. We ran scripts for automated creation of a credit attribution file (`.source.json`) for each remaining pdf, with info such as: authors, link to source, modified or not, etc. Default value of fields are `null`, with the exception of the default value of the `changes_were_made` field which is `False`. Default values are used when the info can't be found in the pdf itself.
+
+However, we cannot guarantee perfection in this process, therefore, if you find any copyrighted content or content without proper credit attribution data, please open an issue and/or make a PR and/or send an email to bruno.c.scaglione@gmail.com. We aim to resolve the problem in 24h. Refer to the `CONTRIBUTING.md` file for the guidelines for this.
+
+> **Streamlined Protocol for Content Removal Requests (Recommended over _DMCA_)**
+   > 1. Read CONTRIBUTING.md to see issue guidelines
+   > 2. Open a *content removal request* issue
+   > 3. Send an email to bruno.c.scaglione@gmail.com with the subject "[lunchSTEM] Content Removal Request: #GITHUB_ISSUE_NUMBER_PLACEHOLDER" explaining: who you are, the path of the content(s) you need to be removed and link to the specific issue you opened.
+
+<br>
+
+> This option is __faster and more friendly than a *DMCA*__ notification. If we receive multiple *DMCA* notifications, the project risks being removed from *Github* (even after taking down the contents) and a lot of people that could benefit from it will be affected.
+
+***Digital Millennium Copyright Act* (*DMCA*) Compliance:** we comply with the Digital Millennium Copyright Act (DMCA). For formal takedown requests, please follow the *DMCA* process.
+
+## Credit Attribution 
+
+Credit attribution data of a pdf file is stored in `[file_name].pdf.source.json` which should be opened directly (without `dvc pull`). This file can contain authors, university, publisher, link do the source, and other metadata about the specific file it references. Default value of fields are `null`, with the exception of the default value of the `changes_were_made` field which is `False`.
+
+## Requirements
+
+Make sure you have these tools installed:
+
+- `git`
+- `dvc`
+
+These can be installed by following their repsective installation guide on their websites.
+
+- [git installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [dvc installation guide](https://dvc.org/doc/install)
+
+## How to Use
+
+1. **Open a terminal**: To open the terminal, use your operating system's search function (by pressing the Windows key or Cmd + Space bar on Mac) and type "terminal," "Command Prompt," or "Windows Terminal" and select the app
+
+2. **Clone the repo with git** (this command will create a `lunch-stem` folder in your current directory)
+
+   ```bash
+   git clone https://github.com/Freelunch-AI/lunch-stem.git
+   ```
+
+3. Enter the `lunch-stem` folder
+
+   ```bash
+   cd lunch-stem
+   ```
+
+4. **Browse inside the `ai2f` folder**
+
+5. **Download a specific pdf file via:**
+
+   ```bash
+   dvc pull [pdf_file_path_placeholder]
+   ```
+
+   - _Note 1:_ the file path used in this command shouldn't have `.source.json` at the end of it. it should end with `.pdf`.
+   - _Note 2:_ other types of files (e.g. `.txt`) should be opened directly, without dvc.
+   - _Note 3:_ if `.web.txt` is present, then you shouldn't try this command, just copy and paste the link inside `.web.txt` in your browser. We will implement a `lunchstem pull` later on to get files from the web.
+   - _Note 4:_ the `.pdf` file shouldn't be visible before you run this command.
+   - _Note 5:_ you can get the file path via the graphical user interface, each operating system has an easy way.
+
+## Directory Structure and Naming Conventions
+
+- **`__Loopback`** directory contains files that had a path that was too long. A pointer `.sym.txt` file was created in place of these files pointing to the actual file located inside the `__Loopback` directory. These pointer txt files follow this naming convention: `file_name.file_extension.sym.txt` and are located in the same directory where the actual file should be.
+
+- **`to-add.txt`** file at root contains links to materials to be included later in lunchSTEM.
+
+- Files or folders starting with **MEGA** indicate aggregator materials (materials that aggregate a bunch of links regarding a specific topic).
+
+- Files or folders starting with **Awesome** indicate super high quality content.
+
+## Notes
+
+- *lunchSTEM* is at the moment more complete in the fields of Computer Science and AI specifically. The fields of `Hardcore Science` are notably more superficial in terms of the tree of topics.
+
+## Roadmap Attempt
+
+> **Note:** Steps with the same **[letter]** can be done in parallel.
+
+### Phase A: Fundamental Problems
+
+1. **[a]** Solve urgent copyright and credit attribution issues related to actual files being stored
+   - Make CI script that builds a list of `.source.json` paths that don't have author info - these should be priority.
+
+2. **[a]** Replace actual files (and homepage/entrypoint links) with links to get the files directly from their original host (use a browser-using AI agent to help with this). The goal is for most files to be `file_name.file_extension.web.txt` with the link inside of it (i.e., file hosted externally). Users can still contribute with actual files if they are the authors of these files (like *arXiv* does) because under the hood we will still be using DVC for actual files.
+
+3. **[a]** Implement proper symlinks that work across Operating Systems. No more manually looking the path inside the `.sym.txt` file and manually going to that directory. Also implementing easy weblinks, to avoid manual copy/paste of paths inside `.web.txt` to the browser.
+
+### Phase B: Important Additions
+
+4. **[b][a]** Create a *lunchSTEM CLI* where you can:
+   1. Pull actual files/directories locally
+   2. Hide/Show certain file types (e.g., hide: .dvc, .source.json, .prerequisites.json, symlinks for other operating systems, etc)
+   3. Do search: keyword search and semantic search
+
+5. **[b]** Make a *lunchSTEM MCP Server*: first, need to create a `.md` version of each `.pdf`
+
+6. **[b][a]** Make a website to ease *lunchSTEM* consumption by humans, where users can:
+   1. Visualize and navigate the repo as a graph
+   2. Use keyword, filter-based and semantic search
+   3. See preview of documents without having to open them
+   4. Open documents directly in the browser
+   5. Star a document
+   6. Make their own tagging/favouriting on top of the materials, that will only be visible to them.
+   7. Make highlights and notes on materials that will only be visible to them
+   8. See author homepages that link to all materials of a specific author.
+   9. Engage in discussions forums on top of specific documents
+   10. See trending/popular documents and authors
+   11. See statistics for documents and authors
+
+7. **[b]** Get sponsors and grants to: (1) support our app hosting; (2) build a dedicated team of *lunchSTEM* maintainers; (3) pay experts for peer-review processes; and (4) to route a percentage of the money to contributing authors. All sponsorship money would be reinvested in the project, it's a non-profit project.
+
+8. **[b][a]** Add malicious file removal, large file removal, git repo removal, coding file removal, copyrighted material removal, etc in CI via *GitHub Actions* to automatically avoid bad PRs.
+
+9. **[b][a]** Add standard conventions enforcement in CI to keep the knowledge base consistent, avoiding inconsistent PRs.
+
+### Phase C: More Core Features
+
+10. **[b][c][d]** Add features to *lunchSTEM*, potentially using *AgentPool* to help (in parallel: keep adding more materials from `to_add.txt`, but add as `file_name.file_extension.web.txt` with the HTTPS link inside the file):
+    - **Prerequisites:** Add `[file_name.[file_extension].prerequisites.json` containing hierarchical list of prerequisites for each file
+    - **Exercises:** Put exercises with solutions in every topic directory inside `__Exercises`
+    - **Tools:** put software tools in very topic inside `__Tools`. Can be tools for doing or understanding something related to the topic.
+    - **Learning & Certification tracks:** guided sequential tracks (e.g., ML Engineer track) with estimated completion time of 3 or 6 months, and with an internal or external exam/certification in the end.
+    - **Sample Projects:** Put sample projects in every topic directory inside `__Sample Projects`
+    - **AI Assistant inside lunchSTEM CLI for making your doc easier to understand**: can add diagrams, notebook, we write in easier to understand words, make examples, etc. A training/prompting dataset can be generated by synthetically worsening good learning materials on purpose.
+    - **AI Tutor that uses lunchSTEM as it's knowledge base**: tutor that can make custom study guides, explain blobs of text giving teaching all its requires prerequisites, make custom interactive materials, etc
+    - **AI Peer-Reviewer that uses lunchSTEM as it's knowledge base**: build an AI Agent capable of reviewing new *STEM* documents included in PRs (and that aren't in the list of respected sources), to avoid having to rely on human peer reviews which are slow and constly. Human Peer Reviews should then be done annually to catch AI Peer Reviewer mistakes and generate data to improve the AI Peer Reviewer on it's weak points.
+    - **lunchSTEM University:** free, online university for people that prefer strict deadlines, responsabilities and learning with others. No exams. Each year, students will build existing technologies or methods from scratch, inspired by [build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) together with a monography with all the important details and share it with the community via a blog post. Students finish the university with a stellar portfolio to show. Top-down teaching approach where we help students learn topics on-demand when they need it to build something.
+
+### Phase D: Nice to Have Improvements
+
+11. **[d]** Migrate from *Google Drive* to a better storage option (e.g., *S3*).
+
+12. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes by finetuning SLMs. Agents are continually modified to ensure diversity and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
+
+## Disclaimer & Terms
+
+**AS-IS BASIS:** This project is provided "as-is" without warranties of any kind. We make no representations about the accuracy, completeness, or legality of the content.
+
+**LIMITATION OF LIABILITY:** To the maximum extent permitted by law, the project maintainers shall not be liable for any damages arising from the use of this repository.
+
+**TERMS OF SERVICE:** By using this repository, you agree to respect copyright laws, use content for educational purposes only, and comply with all applicable laws in your jurisdiction.
+
+**NO LEGAL ADVICE:** Nothing in this repository constitutes legal, financial, or professional advice.
+
+**Educational Purpose:** This project aims to provide organized access to educational materials for non-commercial, educational purposes. We believe many uses of the content may qualify for fair use protections, but fair use determinations are made on a case-by-case basis by courts.
+
+## Sponsors
+
+__Want to be a sponsor? Send an email to bruno.c.scaglione@gmail.com with the subject "[lunchSTEM] Sponsorship"__ 
+
+## [Freelunch](https://freelunch.dev)
+
+![Freelunch Logo](.\sponsors\freelunch\logo_freelunch_with_name.png)
+
+## Acknowledgements
+
+
+

@@ -1,0 +1,5 @@
+outs:
+- md5: 9d5584c882a5ab0527fa35210faa5e19
+  size: 1065392
+  hash: md5
+  path: Robust (Bayesian) Inference.pdf

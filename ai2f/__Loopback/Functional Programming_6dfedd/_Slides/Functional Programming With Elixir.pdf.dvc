@@ -1,0 +1,5 @@
+outs:
+- md5: 69018d5fbb0ed8ffde67ba75bb3b0f43
+  size: 593571
+  hash: md5
+  path: Functional Programming With Elixir.pdf

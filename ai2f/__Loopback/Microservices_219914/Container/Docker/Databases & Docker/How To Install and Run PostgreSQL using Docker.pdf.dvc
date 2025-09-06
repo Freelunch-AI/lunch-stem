@@ -1,0 +1,5 @@
+outs:
+- md5: 827eac8a53e154ba92670693285cc4e8
+  size: 762564
+  hash: md5
+  path: How To Install and Run PostgreSQL using Docker.pdf

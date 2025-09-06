@@ -1,0 +1,5 @@
+outs:
+- md5: bfd109a00ef0962ec9f36fd5fc67ded0
+  size: 50602
+  hash: md5
+  path: ethernet-buffer.pdf

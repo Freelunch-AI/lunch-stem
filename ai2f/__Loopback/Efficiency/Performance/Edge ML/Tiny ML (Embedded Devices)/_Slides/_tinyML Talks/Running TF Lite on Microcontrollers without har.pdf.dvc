@@ -1,0 +1,5 @@
+outs:
+- md5: a3bd4024e98cd98a143d495191094f5c
+  size: 3253802
+  hash: md5
+  path: Running TF Lite on Microcontrollers without har.pdf

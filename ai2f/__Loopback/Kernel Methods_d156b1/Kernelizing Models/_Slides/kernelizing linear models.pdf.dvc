@@ -1,0 +1,5 @@
+outs:
+- md5: cf2bda8e76db3be2aaa1da3c26145dc6
+  size: 1167663
+  hash: md5
+  path: kernelizing linear models.pdf

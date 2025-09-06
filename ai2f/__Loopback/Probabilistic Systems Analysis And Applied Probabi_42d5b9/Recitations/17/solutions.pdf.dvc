@@ -1,0 +1,5 @@
+outs:
+- md5: a0f7bc5ec1db183d87614655ee49fdd8
+  size: 64885
+  hash: md5
+  path: solutions.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 1b20b3142079dde0afbefcb64cfca94c
+  size: 488956
+  hash: md5
+  path: sync-slides.pdf

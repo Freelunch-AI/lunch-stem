@@ -1,0 +1,5 @@
+outs:
+- md5: 317231eba47f1cb219b47dd0c563746a
+  size: 266962
+  hash: md5
+  path: GANs-for-word-embeddings.pdf

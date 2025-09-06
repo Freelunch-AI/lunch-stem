@@ -1,0 +1,5 @@
+outs:
+- md5: 5f67060bf24dc35cda32ee528202ff40
+  size: 1507676
+  hash: md5
+  path: WebAssembly_Specification_Document.pdf

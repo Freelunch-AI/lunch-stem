@@ -1,0 +1,5 @@
+outs:
+- md5: 21ffa1cffd56eb62d59f6169fb705d8b
+  size: 938855
+  hash: md5
+  path: 04_06_edges_hough.pdf

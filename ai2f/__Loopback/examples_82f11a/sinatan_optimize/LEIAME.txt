@@ -1,0 +1,86 @@
+# Exemplo 1: Verificando se o compilador otimizou.
+
+Neste pacote temos  2 arquivos: sinatan.c e  um Makefile. O primeiro  é o código
+implementado de um programa que calcula sin (atan (x)) e o segundo contém regras
+de compilação, gerando os dumps para análise.
+
+
+Primeiro, note o comando da segunda regra:
+	$(CC) $(CFLAGS) -S -masm=intel -fverbose-asm $<
+
+as flags são:
+	-S:              Gere um arquivo assembler (.s) e não um arquivo objeto (.o)
+	-masm=intel      Use a sintaxe da intel no arquivo assembler. Por padrão, o
+                         GCC usa a sintaxe da GNU.
+	-fverbose-asm    Coloque algumas anotações no arquivo assembler na tentativa
+                         de facilitar a leitura.
+
+Agora, note o comando da terceira regra:
+       $(CC) $(CFLAGS) -o $@ $< -fdump-tree-gimple -fdump-tree-optimized
+
+Temos duas flags estranhas aqui:
+
+-fdump-tree-gimple:    Despeje no disco a representação interna do compilador,
+                       já processado do arquivo fonte.  Observe a função
+                       sinatan (x). Nada esquisito.
+
+
+-fdump-tree-optimized: Despejo  no disco  a representação interna  do compilador
+                       após  os vários  passos de  otimização. Observe  a função
+                       sinatan (x).  Apareceu uma  raiz quadrada, uma comparação
+                       a um número enorme  1.3407807e154... por que isso ocorre?
+                       veja [1]
+
+Além dessas  flags, há também o  -fdump-tree-all, que mostra todos  os passos de
+otimização do GCC em ação, embora eu acredite que não tenha muita utilidade além
+de debugar o próprio compilador.
+
+# Exercício:
+
+1- Substitua o compilador pelo clang e verifique se a otimização foi realizada.
+
+2- Descubra  como fazer  o dump  da linguagem intermediária  do clang.   (leia a
+   documentação dele).
+
+[1] https://flusp.ime.usp.br/gcc/making-gcc-optimize-some-trigonometric-functions/
+
+# Apêndice: A aproximação de sin(atan(x))
+
+Provar  que sin  (atan (x))  = x/sqrt  (x*x  + 1)  é um  excelente exercício  de
+trigonometria, e fica para o leitor.
+
+Como  sin  (atan  (x))  =  x/sqrt  (x*x  + 1),  então  caso  x  seja  um  número
+representável em  float, mas  x*x +  1 não,  o resultado  da expressão  seria 0,
+enquanto a expressão original seria algo próximo de 1.  (só calcular o limite)
+
+Assim, o truque é  encontrar o maior número representável c tal que  c*c + 1 não
+dê overflow  para +infinito.  Logo,  seja M o  maior número representavel  em um
+float. M pode  ser calculado setando todos  os bits do expoente  e mantissa para
+1. Assim:
+
+   c*c + 1 = M => |c| = sqrt (M - 1)
+
+Logo, basta  fazer com que  o compilador emita a  seguinte checagem em  tempo de
+execução:
+
+        if (|x| < c)
+            return x/sqrt (x*x + 1);
+        else
+            return copysign (1, x);
+
+Mostrar que no  caso em que |x|  >= c a resposta  é 1 em ponto  flutuante é mais
+complicado,  mas basta  mostrar  que  a resposta  não  é  representada em  ponto
+flutuante  e  usar  que  o  processador, por  padrão,  arredonda  para  o  valor
+representável mais próximo, que será 1.
+
+O número  arbitrário no exemplo  do sinatan é  exatamente essa constante  c (tem
+mais digitos  que necessário pois  a conta é  feita numa biblioteca  de precisão
+arbitrária). Isso garante estabilidade numérica da expressão.
+
+É inviável testar todos os valores para garantir que a expressão é numericamente
+estável, e é mais rápido partir direto para uma demonstração formal de corretude
+da expressão, o que é bem contraintuitivo em desenvolvimento de software.
+
+Ah, e porque fazer essa substituição? Sin  e atan são calculados via software no
+x86, mas sqrt é  calculada em hardware, e por isso, a conta  pode ser feita mais
+rapidamente.

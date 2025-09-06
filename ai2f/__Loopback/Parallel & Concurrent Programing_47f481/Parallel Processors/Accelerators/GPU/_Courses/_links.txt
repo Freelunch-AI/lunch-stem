@@ -1,0 +1,2 @@
+https://enccs.github.io/gpu-programming/
+https://gpu-primitives-course.github.io/

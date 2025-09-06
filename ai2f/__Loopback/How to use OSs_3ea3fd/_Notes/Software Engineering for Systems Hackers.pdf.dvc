@@ -1,0 +1,5 @@
+outs:
+- md5: e4faffe5adb3ead2927f992bf2282549
+  size: 262144
+  hash: md5
+  path: Software Engineering for Systems Hackers.pdf

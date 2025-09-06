@@ -1,0 +1,5 @@
+outs:
+- md5: 9d7e2dd1fb19adfa6d9202bbcd5e0ee1
+  size: 38712169
+  hash: md5
+  path: Lecture_3_convnets.pdf

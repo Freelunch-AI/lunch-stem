@@ -1,0 +1,6 @@
+https://cyces.co/blog/llmops-explained
+https://www.fiddler.ai/blog/llmops-the-future-of-mlops-for-generative-ai
+https://arize.com/blog-course/introduction-fundamentals/
+https://docs.dify.ai/getting-started/what-is-llmops
+https://metatext.io/blog/llmops
+https://deepchecks.com/glossary/llmops/

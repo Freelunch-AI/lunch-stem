@@ -1,0 +1,5 @@
+outs:
+- md5: 2d7ea9d45c8a762bd9b69cf8c06ab180
+  size: 198530
+  hash: md5
+  path: ex_lmcut.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: f471af52e9cfaed0fab780b8e35608d2
+  size: 4697462
+  hash: md5
+  path: 8 - Improved sampling and quasi-Monte Carlo.pdf

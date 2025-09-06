@@ -1,0 +1,5 @@
+outs:
+- md5: ae2f29d60710f6797f35ea5d8afc0404
+  size: 167005
+  hash: md5
+  path: Bayesian Logistic Regression.pdf

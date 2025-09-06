@@ -1,0 +1,5 @@
+outs:
+- md5: 17a41301b6eda08ae9750b26cc20db95
+  size: 3603401
+  hash: md5
+  path: Building LLM applications for production.pdf

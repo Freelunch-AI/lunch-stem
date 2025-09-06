@@ -1,0 +1,4 @@
+https://github.com/gigwegbe/tinyml-papers-and-projects#courses
+
+https://github.com/BrunoScaglione/embeddedml.git
+

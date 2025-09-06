@@ -1,0 +1,5 @@
+outs:
+- md5: 00980e2e10cf0abb18eefeb1dcc0c574
+  size: 809033
+  hash: md5
+  path: constrained-vs-penalized.pdf

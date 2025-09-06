@@ -1,0 +1,41 @@
+# source: https://proceedings.mlsys.org/paper/2021/file/d2ddea18f00665ce8623e36bd4e3c7c5-Paper.pdf
+
+1. Compiler-based
+
+- Graph Lowering (GLOW) (Rotem et al., 2018) is an open-source compiler that accelerates neuralnetwork performance across a range of hardware platforms.
+
+- STM32Cube.AI (STMicroelectronics, 2020) takes models
+from Keras, TensorFlow Lite, and others to generate code
+optimized for a range of STM32-series MCUs. 
+
+- TinyEngine (Lin et al., 2020) is a code-generator-based compiler that
+helps eliminate memory overhead for MCU deployments.
+
+- TVM (Chen et al., 2018) is an open-source ML compiler
+for CPUs, GPUs, and ML accelerators that has been ported
+to Cortex-M7 and other MCUs.
+
+2. Interpreter-based
+
+	2.1 Pure Runtimes
+
+	- ONNX Runtime
+
+	2.2 Runtime Frameworks (Offer development tools and hardware-independent optimizations aswel)
+
+	- OpenVINO toolkit (just for Intel processors)
+
+	- Tensorflow Lite
+
+	- MLKit (built on top of Tensorflow Lite)
+
+	2.3 JIT (Just in Time)
+	
+	- XLA (Compiles specific functions to CPU/GPU/TPU that later the python intepreter will just use a function pointer to execute)
+
+3. Hybrids (Compile .so libraries but also have runtime library for execution management)
+
+- uTensor (uTensor, 2020), a precursor to TFLM, consists of an offline tool that translates
+a TensorFlow model into Arm microcontroller C++ machine
+code and it has a run time for execution management.
+

@@ -1,0 +1,5 @@
+outs:
+- md5: 3f9e7135ea1cf30018a93212b0a2d717
+  size: 1001502
+  hash: md5
+  path: vim-cheatsheet.pdf

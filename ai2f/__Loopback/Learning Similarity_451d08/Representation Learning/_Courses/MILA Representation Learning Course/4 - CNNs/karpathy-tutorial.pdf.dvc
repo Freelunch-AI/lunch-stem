@@ -1,0 +1,5 @@
+outs:
+- md5: 6829d95f665b55deeeb1e812c0fbef77
+  size: 898917
+  hash: md5
+  path: karpathy-tutorial.pdf

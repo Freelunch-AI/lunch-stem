@@ -1,0 +1,45 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Howie Choset",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Nancy Amato",
+      "university": null
+    },
+    {
+      "name": "Sujay Bhattacharjee",
+      "university": null
+    },
+    {
+      "name": "G.D. Hager",
+      "university": null
+    },
+    {
+      "name": "S. LaValle",
+      "university": null
+    },
+    {
+      "name": "James Kuffner",
+      "university": null
+    },
+    {
+      "name": "LaValle",
+      "university": null
+    },
+    {
+      "name": "James Kuffner",
+      "university": null
+    }
+  ],
+  "university_course_name": "RI 16-735, Robotic Motion Planning: Sample-Based Motion Planning",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 109,
+  "size_mb": 1.55,
+  "link_to_license": null,
+  "changes_were_made": false
+}

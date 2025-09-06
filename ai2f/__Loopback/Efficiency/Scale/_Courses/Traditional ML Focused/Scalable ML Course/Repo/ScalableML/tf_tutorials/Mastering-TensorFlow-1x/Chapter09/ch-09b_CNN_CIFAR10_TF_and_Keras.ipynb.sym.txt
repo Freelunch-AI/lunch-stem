@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\ch-09b_CNN_CIFAR10_TF_and_Keras.ipynb_357e66

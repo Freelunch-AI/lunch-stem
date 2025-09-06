@@ -1,0 +1,5 @@
+outs:
+- md5: 9171b6e1510198e1a2ec5c6f0e802e9a
+  size: 410673
+  hash: md5
+  path: Action_recognition-exp.pdf

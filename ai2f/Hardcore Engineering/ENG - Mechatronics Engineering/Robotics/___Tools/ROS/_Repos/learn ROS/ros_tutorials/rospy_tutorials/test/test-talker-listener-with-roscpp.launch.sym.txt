@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\test-talker-listener-with-roscpp.launch_2483b4

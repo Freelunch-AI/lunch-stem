@@ -1,0 +1,33 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Eric P. Xing",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Yihang Shen",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Yizhou He",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Alex Gaudio",
+      "university": "Carnegie Mellon University"
+    },
+    {
+      "name": "Amrit Singhal",
+      "university": "Carnegie Mellon University"
+    }
+  ],
+  "university_course_name": "7: Variational Inference I",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 8,
+  "size_mb": 0.41,
+  "link_to_license": null,
+  "changes_were_made": false
+}

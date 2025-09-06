@@ -1,0 +1,5 @@
+outs:
+- md5: 54e394fb8d31c8b3ab6ab051c36f5a8d
+  size: 1189589
+  hash: md5
+  path: 11 - Variance reduction for stochastic gradient.pdf

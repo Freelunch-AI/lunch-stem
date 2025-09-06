@@ -1,0 +1,5 @@
+outs:
+- md5: b0349dd71beaf969d344288d2732eeee
+  size: 19576203
+  hash: md5
+  path: lec_04_stereo_reconstruction.pdf

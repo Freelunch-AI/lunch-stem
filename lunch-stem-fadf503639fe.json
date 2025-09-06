@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "lunch-stem",
+  "private_key_id": "fadf503639fe92ca3d9454a6417c2b0e5f1395fd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCuwENxbyq6iGxl\nSbErJT2ZhcmzLcndy74QYKlgwFP13ULroC1HfxH7vNFexiKx9ufApcVQ3GZO0aup\neJRw+2eBxgUlgsOy2JAC3pcxjdBzmN2nRNHovqyXuXwxyStrnhEBmZTYRPSt3ZL2\nnB1EPRZj9sjR2VEcUqcKfoS7Ujntiz2GB3tuOq0lWYY6twoVT+fmflLAoufyn7P7\n1UBurl9orQtx7YnDT2bhfdi97xmaPXDJFkM+jUH+et75vFNX+Uam86yNpJ5Kvs3F\nwhwdCUoCnJ8nPdDRReXgePOqAnHXkjpWpGKnfT6Ov8d3zInXgI4aszw1PtGgzoUj\nUfH8JPZHAgMBAAECggEABx6SINb0mLDiKaY875MO1Whb9U7SQJUCY0xs2iI7yXKA\nPXVDIvyMUQM6THAqDbIPcwvN5CN2j5N/OOJOueOkLedRYlvXeTvVcih7ZGtwqKT7\nssrc+mx6P5ww8R5PBI1mB/in1b/JcCPszttBXfxXIy90swf1g//iCk1pPvB0p7bJ\nFDF05hba3QA/ufsUApzg4hO07Ggb+T7BuO4BL/dCOisoHa3UVx2D4ZgjRReLPEK3\nHtODXzBOIpT9H7M6MlcfitklBFp5qPY7MmBx5A2CCtfXlKckcfw7CBMgvtYSjPDc\n1ip1kYFV571WwjEvknWdLp9zV8lla+YcjRgreiYIMQKBgQD21pfDykA8jwSRHJuM\n3QewPvEieFJAJGOSuln3kLOy7mipiNfXQs34bepBvxz44HRYzaeigqFy4ktF6JXK\nD7jIdP4lxz1yk9yibOTKDc6UTxU582/8xPJveVpwye06B9BEVhII3rt+FVPzbVJJ\nt4O9wv+ArsF3QKGOaWLEWjD9ZQKBgQC1PLZfSFcpEw+pisIhNFyXooJapo/mYaDn\nLrcaRa3CZKhDJhHcNxND91BkD54hIMP5ul1Ztyh4WXEEMehqc0V9bkw3DQT8+pXV\nYVYal9H/4Py2RP49BlEQW2gRjGWf1xnO+e12XCJDiQa5DDVuX4nKwkKY485aD0wt\ndEGUk89QOwKBgDaB3LGXj+fPjSqeLptEk9YPkCAUgdU4M+TK0eMhSQ1SKDqHxWH7\nlpAtdXVfRn6O0iJqB4KTZiOAZS7i1XDxV9SsQRMGlEMg86/KbBtSQTPu4rkRUMF4\nnDCRk68kaAZQg2UTvJfI145YF1nB4lH0/FqDHPjFnmM/Gm3gR7ckU30hAoGABckG\nWUxJ2/nLyjGvuLefLQf2+UXP2h7LsBWBqskGnunvpRUWBN2NM+I1IryM46nUF6in\nSjHajNzuCqA9Nwiu8y4OKMO1oQ2usr0ErpyiC3T3HCpfozsMY2VHkSfWJqALJtw7\nhEe0oEtDd6y4F+nc0CgbUB4VfDJ40Aqh/UgqmfkCgYALESmt+FqhsrCqS5MWghZc\nSGa7fDuqSeqpn/zq/uasaGlX9KF9HzU+tPXxBNJJSQ+nnB1BF0/zVzLtrB1ceH1O\nx6mPhpOsNLbxvwZRARzSBZi5QhHwiRBfRyFs66e4B20lNb6WcbE5mlX21fQivRpw\n5PPjjFhZ1n55UxismSE+1Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dvc-lunchstem@lunch-stem.iam.gserviceaccount.com",
+  "client_id": "100448676372127672263",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dvc-lunchstem%40lunch-stem.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

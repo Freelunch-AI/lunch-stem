@@ -1,0 +1,25 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "John Kubiatowicz",
+      "university": "University of California, Berkeley"
+    },
+    {
+      "name": "Indranil Gupta",
+      "university": "University of Illinois"
+    },
+    {
+      "name": "Gene Pang",
+      "university": "University of California, Berkeley"
+    }
+  ],
+  "university_course_name": "cs262a-F19",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": "www.cs.berkeley.edu/~istoica/classes/cs294/11/notes/07-gene-paxos.pptx",
+  "num_of_pages": 26,
+  "size_mb": 0.65,
+  "link_to_license": null,
+  "changes_were_made": false
+}

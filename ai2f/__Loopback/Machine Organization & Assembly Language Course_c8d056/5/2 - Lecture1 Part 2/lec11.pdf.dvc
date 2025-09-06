@@ -1,0 +1,5 @@
+outs:
+- md5: 1e155d96b3b3cc2d8205cec3538f185f
+  size: 311435
+  hash: md5
+  path: lec11.pdf

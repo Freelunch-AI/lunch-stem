@@ -1,0 +1,5 @@
+outs:
+- md5: ec2a56b4acc89d33e9967f011d7dd6a8
+  size: 94648
+  hash: md5
+  path: 6.1 A simple linear classifier.pdf

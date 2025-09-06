@@ -1,0 +1,5 @@
+outs:
+- md5: 38a8e5a4c415d8845d5bb8270bfdb071
+  size: 4057014
+  hash: md5
+  path: blog-bitsrc-io-understanding-asynchronous-javas.pdf

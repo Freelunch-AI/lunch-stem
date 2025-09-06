@@ -1,0 +1,5 @@
+outs:
+- md5: 047e0bffcbf2742ffdbab40a769319ec
+  size: 228149
+  hash: md5
+  path: 08b.bayesian-regression.pdf

@@ -1,0 +1,49 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Kaiyu Yang",
+      "university": "Caltech"
+    },
+    {
+      "name": "Albert Q. Jiang",
+      "university": "Cambridge"
+    },
+    {
+      "name": "Emily First",
+      "university": "UCSD"
+    },
+    {
+      "name": "Anima Anandkumar",
+      "university": "Caltech"
+    },
+    {
+      "name": "Zhangir Azerbayev",
+      "university": "Princeton"
+    },
+    {
+      "name": "Noah Goodman",
+      "university": "Stanford"
+    },
+    {
+      "name": "Alex Sanchez -Stern",
+      "university": "UMass Amherst"
+    },
+    {
+      "name": "Dawn Song",
+      "university": "UC Berkeley"
+    },
+    {
+      "name": "Sean Welleck",
+      "university": "CMU"
+    }
+  ],
+  "university_course_name": null,
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 150,
+  "size_mb": 13.0,
+  "link_to_license": null,
+  "changes_were_made": false
+}

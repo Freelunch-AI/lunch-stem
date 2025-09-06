@@ -1,0 +1,5 @@
+outs:
+- md5: b34374e8dfced5ee2b0286bf7016e1bf
+  size: 1374069
+  hash: md5
+  path: Integration Test Environment with Docker.pdf

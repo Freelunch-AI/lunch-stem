@@ -1,0 +1,5 @@
+outs:
+- md5: d4e67ebac556e0612cf00fcce9928b6c
+  size: 630920
+  hash: md5
+  path: 14_02_dpm_simple.pdf

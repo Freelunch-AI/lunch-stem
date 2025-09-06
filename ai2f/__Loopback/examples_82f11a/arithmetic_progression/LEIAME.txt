@@ -1,0 +1,11 @@
+# Exemplo: Soma aritimética
+
+Todos sabem que
+
+1 + 2 + ... + n = n*(n+1)/2
+
+Agora, considere  a função arithmetic  implementada em arithmetic.c.   Compile e
+veja o assembler arithmetic.s.  Verifique que  o clang consegue simplificar as n
+somas por uma multiplicação e alguns shifts.
+
+Exercício: Substitua o compilador pelo GCC. Ele também consegue fazer isso?

@@ -1,0 +1,5 @@
+outs:
+- md5: a488746741e1353cac73cbb6cdcf8190
+  size: 591314
+  hash: md5
+  path: how_does_word2vec_work.pdf

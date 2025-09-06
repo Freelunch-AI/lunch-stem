@@ -1,0 +1,89 @@
+Type-Safe API Calls: tRPC vs. gRPC
+https://matt-rickard.com/trpc-grpc-type-safety
+
+How to Version an API
+https://matt-rickard.com/how-to-version-an-api
+
+Rebuilding in Rust
+https://matt-rickard.com/rebuilding-in-rust
+
+What's Next After NextJS
+https://matt-rickard.com/whats-next-after-next-js
+
+The Implications of More Developers
+https://matt-rickard.com/the-implications-of-more-developers
+
+An Ideal CI/CD System
+https://matt-rickard.com/an-ideal-ci-cd-system
+
+Excel for Developers
+https://matt-rickard.com/pro-excel
+
+Thoughts on GitHub Actions
+https://matt-rickard.com/thoughts-on-github-actions
+
+r/K Startup Theory
+https://matt-rickard.com/r-k-startup-theory
+
+Webhooks Aren't So Bad
+https://matt-rickard.com/events-vs-webhooks
+
+Fallacies of Distributed Systems
+https://matt-rickard.com/fallacies-of-distributed-system
+
+Elevator Data Structures and Algorithms
+https://matt-rickard.com/elevator-algorithms
+
+Schema-driven Development
+https://matt-rickard.com/schema-driven-development
+
+Accidentally Turing Complete
+https://matt-rickard.com/accidentally-turing-complete
+
+Configuration-to-Code
+https://matt-rickard.com/configuration-to-code
+
+API Warfare
+https://matt-rickard.com/api-warfare
+
+Why TypeScript for Infrastructure?
+https://matt-rickard.com/why-typescript-for-infrastructure
+
+Source Code Generation
+https://matt-rickard.com/generated-code
+
+Embedded DevOps Teams
+https://matt-rickard.com/embedded-engineering-teams
+
+How to Comment Your Code
+https://matt-rickard.com/how-to-comment-your-code
+
+A Browser for Developers
+https://matt-rickard.com/a-browser-for-developers
+
+Data Planes and Control Planes
+https://matt-rickard.com/data-planes-and-control-planes
+
+Extending Applications with WebAssembly
+https://matt-rickard.com/extending-applications-with-webassembly
+
+Ten Things I Look For In a Code Review
+https://matt-rickard.com/code-review-checklist
+
+SaaS Isolation Patterns
+https://matt-rickard.com/saas-isolation-patterns
+
+Incremental Compilation in Build Systems
+https://matt-rickard.com/incremental-compilation-build-systems
+
+How Multiplayer Data Structures Work
+https://matt-rickard.com/collaborative-data-types
+
+Everything is a Graph
+https://matt-rickard.com/everything-is-a-graph
+
+Problem Solving Techniques from Math
+https://matt-rickard.com/problem-solving-like-a-mathematician
+
+Usage or Subscription Pricing
+https://matt-rickard.com/usage-or-subscription-pricing

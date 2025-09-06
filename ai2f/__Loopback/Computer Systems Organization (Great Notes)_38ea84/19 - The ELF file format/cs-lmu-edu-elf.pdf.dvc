@@ -1,0 +1,5 @@
+outs:
+- md5: e12ab0b62b8051e6b3df95683f568ef8
+  size: 25824
+  hash: md5
+  path: cs-lmu-edu-elf.pdf

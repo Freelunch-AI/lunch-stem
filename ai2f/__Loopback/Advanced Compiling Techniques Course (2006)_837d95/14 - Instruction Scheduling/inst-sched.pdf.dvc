@@ -1,0 +1,5 @@
+outs:
+- md5: 210da8b8c21d71bf801c3b6b80720418
+  size: 239474
+  hash: md5
+  path: inst-sched.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 81920fac726db7dce786fed01816623d
+  size: 123418
+  hash: md5
+  path: 0510_asm__overlaps.pdf

@@ -1,0 +1,3 @@
+https://yos.io/2019/11/10/smart-contract-development-best-practices/
+https://www.wslyvh.com/clean-contracts/
+https://consensys.github.io/smart-contract-best-practices/

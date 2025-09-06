@@ -1,0 +1,9 @@
+"The point of game theory is to predict other people's behavior so that with that foresight you can choose the "best" behavior / action for yourself.
+
+It focuses on "strategic situations," which are situations in which the outcome depends not only on YOUR choice alone but your choice AND other people's choices.
+
+For example: Should I take the shortest escape route or the second (or third) shortest escape route? If I can "guess" that most people will all go for the shortest escape route in an emergency, it will be clogged with traffic, making it the "worst" choice for escaping an emergency. I might want to choose an escape route that will be relatively empty, allowing me to make a truly faster escape.
+
+Game theory considers any situation in which the moves and the outcomes for each combination can be quantified a "game."
+
+So, if you can predict the other party's choices, you can make the "best" move possible in light of their choice."

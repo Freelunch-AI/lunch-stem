@@ -1,0 +1,5 @@
+outs:
+- md5: 3ccd44bcadeaa6bdc83c05646a0c36df
+  size: 328355
+  hash: md5
+  path: ROS in OH1.pdf

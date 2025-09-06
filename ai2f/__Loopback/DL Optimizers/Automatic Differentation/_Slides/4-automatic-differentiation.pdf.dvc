@@ -1,0 +1,5 @@
+outs:
+- md5: 92d2a5435905ca3734bd53fa79849e31
+  size: 343205
+  hash: md5
+  path: 4-automatic-differentiation.pdf

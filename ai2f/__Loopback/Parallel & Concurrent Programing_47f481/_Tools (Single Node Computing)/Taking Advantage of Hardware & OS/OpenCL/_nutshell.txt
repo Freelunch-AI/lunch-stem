@@ -1,0 +1,8 @@
+Language Standard that lets you do parallel programming across different computing devices such as CPUs, GPUs, FPGAs.
+Can think of it as generating CUDA or OpenGL code to run on GPUs, OpenMP or OpenGL code to run on CPUs, etc.
+But actually it does not do this, it "copies" all of the aboce, in the sense that it generates direcly assembly code for the 
+computing hardware and just uses the hardware drivers to get machine code. So it basically implements a unified language 
+with all of these different compilers under the hood. Therefore its a competitor to CUDA, OpenMP etc. But because
+it tries to tackle all of this, generally these other frameworks do better the job in there domain.
+
+Simplisitc view of how to produce executable code: 1. frontend (language syntax) ---compiler---- > 2. assembly code ---hardware driver----> 3. machine code

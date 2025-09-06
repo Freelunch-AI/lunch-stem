@@ -1,0 +1,5 @@
+outs:
+- md5: a951b05c5306faf7462623ea58e4513b
+  size: 359726
+  hash: md5
+  path: lecture02-types.pdf

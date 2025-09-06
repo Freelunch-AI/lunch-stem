@@ -1,0 +1,29 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Pascale Fung",
+      "university": "The Hong Kong University of Science & Technology"
+    },
+    {
+      "name": "Yun-Nung (Vivian) Chen",
+      "university": "National Taiwan University"
+    },
+    {
+      "name": "Zhaojiang Lin",
+      "university": "The Hong Kong University of Science & Technology"
+    },
+    {
+      "name": "Andrea Madotto",
+      "university": null
+    }
+  ],
+  "university_course_name": "NeurIPS 2020 Tutorial",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 130,
+  "size_mb": 12.22,
+  "link_to_license": null,
+  "changes_were_made": false
+}

@@ -1,0 +1,5 @@
+outs:
+- md5: fc0e4b505372fc403e2c9efc4370c2e8
+  size: 586568
+  hash: md5
+  path: hw7.pdf

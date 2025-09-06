@@ -1,0 +1,5 @@
+outs:
+- md5: c537b414805689ab8ad2a4a7464024f7
+  size: 615402
+  hash: md5
+  path: bayesian-networks.pdf

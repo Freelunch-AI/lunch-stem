@@ -1,0 +1,11 @@
+
+Purpose: reliable communication over unreliable channels
+
+eg, Binary symmetric channel
+
+
+
+f = 0.1
+
+
+

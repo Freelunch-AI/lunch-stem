@@ -1,0 +1,5 @@
+outs:
+- md5: 52b06a3dea80c4ad821e4aac1dcfd6e3
+  size: 918688
+  hash: md5
+  path: 17-Kubernetes.pdf

@@ -1,0 +1,1 @@
+http://fourier.eng.hmc.edu/e161/lectures/gaussianprocess/index.html

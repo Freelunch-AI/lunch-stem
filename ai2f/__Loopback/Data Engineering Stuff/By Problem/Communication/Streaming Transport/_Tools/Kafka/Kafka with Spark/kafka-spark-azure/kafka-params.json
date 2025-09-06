@@ -1,0 +1,15 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "baseClusterName": {
+      "value": "KafkaCluster"
+    },
+    "clusterLoginPassword": {
+      "value": "SecretPassword1234!"
+    },
+    "sshPassword": {
+      "value": "SecretPassword1234!"
+    }
+  }
+}

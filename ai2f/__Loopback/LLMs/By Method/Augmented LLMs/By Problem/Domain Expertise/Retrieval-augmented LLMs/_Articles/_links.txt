@@ -1,0 +1,13 @@
+https://neo4j.com/developer-blog/fine-tuning-retrieval-augmented-generation/
+https://towardsdatascience.com/build-industry-specific-llms-using-retrieval-augmented-generation-af9e98bb6f68
+https://www.promptingguide.ai/techniques/rag
+https://thesequence.substack.com/p/edge-301-retrieval-augmented-language
+https://docs.langchain.com/docs/use-cases/qa-docs
+https://mattboegner.com/knowledge-retrieval-architecture-for-llms/
+https://simonwillison.net/2023/Jan/13/semantic-search-answers/?ref=mattboegner.com
+
+
+
+
+
+

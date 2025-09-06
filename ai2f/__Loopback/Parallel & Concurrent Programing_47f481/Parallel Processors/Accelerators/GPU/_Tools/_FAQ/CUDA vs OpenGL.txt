@@ -1,0 +1,12 @@
+# source: https://www.quora.com/What-are-the-chief-differences-between-CUDA-and-OpenGL
+
+Chief Differences:
+
+1. OpenGL is a graphics LIBRARY which is used for visualization, gaming and etc., where as CUDA is a programming language which could be utilized 
+for general purpose compute intensive tasks such as image processing, machine learning.
+
+2. OpenGL works on all CPU, integrated Graphics Processors like Intel HD graphics and all GPU (AMD, NVIDIA etc) cards, where as CUDA is proprietary 
+language by NVIDIA for NVIDIA graphics cards.
+
+3. Most important: The code that executes on hardware (GPU) is already written in openGL implementations and programmer is supposed to call the 
+functions appropriately, where as in CUDA, programmer writes the codes which executes on the hardware.

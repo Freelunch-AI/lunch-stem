@@ -1,0 +1,5 @@
+outs:
+- md5: 8d61747a69b0c0ec544b5a62eaf9b5cd
+  size: 576876
+  hash: md5
+  path: lecture06-directory.pdf

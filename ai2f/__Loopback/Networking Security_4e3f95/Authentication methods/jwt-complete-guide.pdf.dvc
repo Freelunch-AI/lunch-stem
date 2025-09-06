@@ -1,0 +1,5 @@
+outs:
+- md5: 89ff217cdb144a7e213ecb09c630b262
+  size: 2655169
+  hash: md5
+  path: jwt-complete-guide.pdf

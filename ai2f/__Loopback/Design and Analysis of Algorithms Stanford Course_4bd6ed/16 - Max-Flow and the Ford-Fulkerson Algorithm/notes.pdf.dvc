@@ -1,0 +1,5 @@
+outs:
+- md5: 6e423c1e2f79b3c32d0697975b63da02
+  size: 76082
+  hash: md5
+  path: notes.pdf

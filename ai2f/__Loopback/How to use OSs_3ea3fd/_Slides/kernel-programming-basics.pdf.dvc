@@ -1,0 +1,5 @@
+outs:
+- md5: 2d03eef6b91487925131a720a3d8cd7b
+  size: 1428739
+  hash: md5
+  path: kernel-programming-basics.pdf

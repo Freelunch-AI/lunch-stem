@@ -1,0 +1,5 @@
+outs:
+- md5: 6d5e2c9e8088828166951df6b57e924f
+  size: 276906
+  hash: md5
+  path: autodiff.pdf

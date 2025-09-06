@@ -1,0 +1,5 @@
+outs:
+- md5: c80dce8de535042d9f1c30117b4ebecc
+  size: 3030457
+  hash: md5
+  path: 19-static-analysis2.pdf

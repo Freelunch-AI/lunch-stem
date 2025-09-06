@@ -1,0 +1,22 @@
+Main reasons:
+
+1. Efficiency
+
+1.1 Making the app fragment the size of the TCP/IP packet payload and
+saying that to the OS which is responsible for making them. Then the OS
+doesnt need to divide large socket (TCP/IP) buffers into various packets.
+
+1.2 If the sizes exceeds the socket buffer max size, then it cannot write 
+the whole app protocol message at once, it will have to keep trying to do it
+and hope the OS has receive TCP ACKs (that allow it to free some space the sending socket buffer)
+
+1.3 In case of TCP/IP packet loss. It is more expensive if one large message is lost and need to be repeated instead of only a small fragment.
+
+1.4 In case of very large files, some protocols allow you to open various sockets and send the fragments in prallel trhough them. 
+These can be reconstructed in the receiving end by having fragmenet identifiers (similar to what Kafka does, where message are always in order in one <topic, partition>).
+
+2. Flexbility (Multiplexing)
+
+Even though it's listed as secondary reason, I'd say that't the primary reason for that fragmentation feature. Imagine, if you try to send first message with 1GB 
+size and right away when you start sending it you also send second message with 1KB size. Framing allows applications to inject second message in between individual 
+frames of the first message, this way receiver will not need to wait for 1GB to be transferred and will receive/handle 1KB second message right away.

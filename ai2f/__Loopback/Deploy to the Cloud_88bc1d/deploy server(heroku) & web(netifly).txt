@@ -1,0 +1,5 @@
+guia rocketseat next level week #2:
+
+https://www.notion.so/Deploy-NLW-56f2a980c20e41d6b1dd22a4d1348e6e
+
+obs: lembrar que a senha do postgres nao vai ser docker pra mim, pq eu jah configurei outra

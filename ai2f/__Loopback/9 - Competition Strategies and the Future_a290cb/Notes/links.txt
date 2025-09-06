@@ -1,0 +1,11 @@
+1 - Games with Incomplete Information
+http://ggp.stanford.edu/chapters/chapter_17.html
+
+2 - Games with Historical Constraints
+http://ggp.stanford.edu/chapters/chapter_18.html
+
+3 - Incomplete Game Descriptions
+http://ggp.stanford.edu/chapters/chapter_19.html
+
+4 - Advanced General Game Playing
+http://ggp.stanford.edu/chapters/chapter_20.html

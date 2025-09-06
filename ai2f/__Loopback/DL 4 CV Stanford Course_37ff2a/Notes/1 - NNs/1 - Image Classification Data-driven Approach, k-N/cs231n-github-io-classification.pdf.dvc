@@ -1,0 +1,5 @@
+outs:
+- md5: a2eb5844ae35cfbca6e9d4a3bb16a2fc
+  size: 1632619
+  hash: md5
+  path: cs231n-github-io-classification.pdf

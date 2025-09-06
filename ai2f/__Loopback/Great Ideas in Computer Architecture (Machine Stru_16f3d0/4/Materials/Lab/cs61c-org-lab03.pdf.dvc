@@ -1,0 +1,5 @@
+outs:
+- md5: c3adc17225331d976a29302549d71ddc
+  size: 77806
+  hash: md5
+  path: cs61c-org-lab03.pdf

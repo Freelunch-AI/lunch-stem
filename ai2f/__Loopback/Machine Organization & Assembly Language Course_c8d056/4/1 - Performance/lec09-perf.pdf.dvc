@@ -1,0 +1,5 @@
+outs:
+- md5: 6332b72ae99d8eb23594e6eb97c06df4
+  size: 126147
+  hash: md5
+  path: lec09-perf.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 72c24b45182debd031d952c1e836a2f8
+  size: 4088264
+  hash: md5
+  path: 08_stream_processing_part1.pdf

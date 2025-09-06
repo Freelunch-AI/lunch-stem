@@ -1,0 +1,9 @@
+https://www.coursera.org/lecture/probabilistic-graphical-models/reasoning-patterns-KMjHs
+https://www.coursera.org/lecture/probabilistic-graphical-models/flow-of-probabilistic-influence-1eCp1
+https://www.coursera.org/lecture/probabilistic-graphical-models/independencies-in-bayesian-networks-JRkCU
+https://www.coursera.org/lecture/probabilistic-graphical-models/naive-bayes-vf9m3
+https://www.coursera.org/lecture/probabilistic-graphical-models/application-medical-diagnosis-A2D3n
+
+
+
+

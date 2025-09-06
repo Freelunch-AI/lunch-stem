@@ -1,0 +1,10 @@
+https://www.coursera.org/lecture/probabilistic-graphical-models-2-inference/overview-conditional-probability-queries-FzvTQ
+https://www.coursera.org/lecture/probabilistic-graphical-models-2-inference/variable-elimination-algorithm-XkOir
+https://www.coursera.org/lecture/probabilistic-graphical-models-2-inference/complexity-of-variable-elimination-HaBqG
+https://www.coursera.org/lecture/probabilistic-graphical-models-2-inference/graph-based-perspective-on-variable-elimination-tAtMr
+https://www.coursera.org/lecture/probabilistic-graphical-models-2-inference/finding-elimination-orderings-ckOIz
+https://www.coursera.org/lecture/probabilistic-graphical-models-2-inference/overview-map-inference-JL8Ap
+
+
+
+

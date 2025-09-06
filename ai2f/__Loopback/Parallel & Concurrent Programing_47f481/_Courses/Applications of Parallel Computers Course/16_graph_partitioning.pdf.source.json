@@ -1,0 +1,29 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Laura Grigori",
+      "university": "University of California, Berkeley"
+    },
+    {
+      "name": "James Demmel",
+      "university": "University of California, Berkeley"
+    },
+    {
+      "name": "Yelick",
+      "university": null
+    },
+    {
+      "name": "Yelick",
+      "university": null
+    }
+  ],
+  "university_course_name": "CS267 Graph Partitioning Lectures",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": "www.cs.berkeley.edu/~demmel/cs267_Spr15",
+  "num_of_pages": 25,
+  "size_mb": 1.4,
+  "link_to_license": null,
+  "changes_were_made": false
+}

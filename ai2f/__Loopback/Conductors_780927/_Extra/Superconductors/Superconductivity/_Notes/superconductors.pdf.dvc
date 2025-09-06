@@ -1,0 +1,5 @@
+outs:
+- md5: 6f45f1fe1cddb53edc6739565c3bef21
+  size: 135693
+  hash: md5
+  path: superconductors.pdf

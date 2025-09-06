@@ -1,0 +1,25 @@
+0. General:
+
+https://devhints.io/
+
+https://github.com/topics/awesome
+
+1. Web:
+
+https://cheatsheets.dev/
+
+https://devresourc.es/category/programming/docs-and-cheatsheets
+
+https://ohmycheatsheet.com/
+
+2. Cpp:
+
+https://hackingcpp.com/cpp/cheat_sheets.html
+
+3. Linux:
+
+https://manualsrepo.com/brands/linux/commands
+
+4. Git:
+
+https://gitcheatsheet.org/

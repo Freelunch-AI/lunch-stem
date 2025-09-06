@@ -1,0 +1,5 @@
+outs:
+- md5: 6b7b5e1f2850a0df725e5cd0240ed5ab
+  size: 80370
+  hash: md5
+  path: 07-indexlocking.pdf

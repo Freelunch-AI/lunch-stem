@@ -1,0 +1,5 @@
+outs:
+- md5: a35acbb1e8287e1604e3f6fb8252e11b
+  size: 1592939
+  hash: md5
+  path: LinearAlgebra2.pdf

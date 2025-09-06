@@ -1,0 +1,414 @@
+para a reabilitacao teremos só sinais de EEG e imagens ou outros tipos de dados tb?
+tudo está anotado ?
+
+temos o processo de reabilitacao , tipo estado cerebral anotado -> acao -> estado cerebral anotado, como dados ?
+
+achar biomarcadores parece mais data science que deep learning
+
+quais tipos de tratamento soa utilizados no hospital para reabilitacao de avc ?
+
+o EEG já é usado atualmente para reabilitacao no hospital? Ou só testes clínicos ? Ou  talvez use um pouco de EEG?
+
+após limpo, qual tipo de processamento voces costumam aplicar para análise ?
+
+
+duvida pros medicos: pq tem que ser tao rapido o preprocessamento/ limpeza ? Tipo coisa mt seria nao fica bem evidente ? Ainda eu n vi necessidades de ser tao rapido
+assim na literatura
+
+testes clinicos parecem dizer o que o problema afeta, 
+o quão afetado está porém nao diz mt bem como atuar para resolver ele-> solucao EEG e outros metodos
+
+cada paciente parece apresentar padrões personalizados relevantes no EEG, 
+embora consiga-se caracterizar tipos de potenciais conhecidos padrões para um tipo de situacao também
+
+parece que prever qusi individuos vao responder melhor a um tipo de tratamento (combase no EEG) já é feito bastante
+correalcao entre caracteristicas do sinal e outcome do paciente
+
+na abordagem de Reinforcement Learning, os resultados dos clinical trials poderiam ser mt sparse rewards
+
+aleteracoes neurologicas diferentes podem ocasionar no mesmo output do teste clinico:
+	- porem a gente já sabe a funcao de cada part do cerebro num high level
+	- mas até que ponto? pode ser que seja muito mais complexo do que se restringir a essas divisoes
+	- talvez o ideal seria misturar as duas abordagens
+
+
+**daria pra hackear a neuroplascticidade? aprender movimentos ótimos que maximizem neuroplacticidade da regiao que a gente quer
+mesmo que esses movimentos possam ser extremamanete extranhos e nao intuitivos** => foda q a gente ao entende o suficiente do cerebro
+
+**motivacao é um fator muito importante na reabilitacao**
+
+personalizacao da reabilitacao promete muito
+
+BCI -> midas touch problem:
+	- acho  que acontece pela falta de diferiancao de sinais como pensar em mexer o braco e mexer o braco
+	- qual a  relaao desses sinais? Mais importante -> o que esta diferennciando eles?
+
+BCI neurofeedback: o paciente tem que aprender a controla ros ritmos do seu cerebro
+
+3 tipos de treinamento:
+	a) o cara treina fazer alguma coisa -> mudar ritmo do cerebro -> que esta mapeado para um movimento de atudador
+	b) o cara faz/é submetido ao estimulo desejado -> e mapeaia o sinal obtido para os movimentos
+	c) o cara aprende/treina a usar o sistema que foi treinado (item a)) num apessoa saudavel -> desse jeito ele forca o cerebro dele a atuar igual o de uma pessoa normal
+
+problema da qualidade dos dados: resolucao espacial e ruido
+até que ponto podemos chegar comm o EEG? Sera que o endpoint nao vai ser chips implantado no cerebro mesmo? (Neuralink)
+
+Oeletrodos só caputuram a componente da linha de campo magnetico (produzido pelo dipolo formado na ativacao do neuronio) normal a superficie da cabeca onde ele ta
+	- e aletorio  a orientacao dos neuronios ? Sabemos alguma coisa sobre isso ? Eles tendem a ter grupos de mesma orientacao? 
+
+parece que limpar o eeg (preprocessar) eh uma questao mais de automacao e nao de IA, e usando software especifico n era pra demorar tanto
+
+existem varios softwares (CARTOOL(standalone), Automagic(eeglab, matlab) etc) e algoritmos de processamento (PREP(eeglab, matlab), MARA(ICA-based), LARG(ICA-based), 
+ASR(artifact subpace recontruction - tempo real), FASTER(stats based, remove channel e ica componente, unsupervised) etc) alguns totalmente automatizados
+
+tabela no word dos softwares
+
+ICA pra tirar artefatos -> retira componente relacionada a artefato (faz eeglab, ainda nao tava implementada no cartool)
+obs: confereir mesmo se a componente indica artefatos comparando com o raw eeg onde aparecem os artefatos (mas tambem tem identificacao automatica)
+
+nao parece ser propenso a IA o problema da limpeza -> arfetatos n tendem a ter padroes complexos, e nao eh admitido erro nessa limpeza senao vai estragar
+todos processamentos, hipoteses e cconclusoes posteriores, alem de que já tem software que deixa esse processo mais facil e ICA-based algoritmos que vao separar compo
+nentes de artefato teoricamente e ai eh soh vc conferir. Resumindo nao eh um  problema de aprendizado complexo, mas mais aritificial e bem rotulado (sabemos as regras)
+
+alem de que eu vi um arrtigo que fale que analisou varios metodos diferentes de preprocessamento de artefato e todos, em larga escala, tendem a ter resultados parecidos
+entao isso sugere que mesmo com abordagen diferentes o resultado nao fica tao diferente, entao nao parece ser uma situacao em que o preprocessamento atual ta longe do ideal,
+ehsoh uma questao de hipoteses usadas em cada algoritmo
+
+obs: simulacao é essencial para validar os metodos -> simualcao padrao no matlab eh geralmente pra testar hipoteses lineares (tipo soma dois sinais)
+
+obs2: eu achoque pra testar as hipoteses usadas pelos metodos de preprocessamento e tal eh quando vc capta sinais intrcraniais (eletroddo direto no cerebro) junto com o sinal normal
+jah ta mt alem da capacidade do medico nesse ponto.
+
+o uso the estimadores robustos (biased toard brain signals and not artifacts) muitas vezes é nnecessario pra avalicao pré e pós retirada de artefatos, pra avaliar o 
+o q aconteceu com o sinal mesmo
+
+fazendo analogia a mudanca de paradigma de machin elearning classica -> deep learning , isso ocorreu pq ganhamos mais dados e capacidade computacional para construir
+modelos mais complexos com objetivo de solucionnar as tasks que "a gente" sabia que tinha estruturas complexas e que nosso modelos anteriores nao eram suficientes pra
+descrever esses relacionamentos. Mas nesse caso artefato nao parece ser uma coisa que vai contruir relacionamentos complexos com osa sinais "reais" porque na ica jah eh bem 
+estabelicido, as relacoes sao lineares (por maxwell) e modela bem dipolos geralmente os componentes do ica. Porém por exemplo, no artefato muscular meio q acontece isso pois ele varia de 20Hz ateh 100Hz
+entao geralmente aplica um filtro passa baixa mas ai continua com noise em frequencias baixas tb.
+
+Uma outra opcao seria de existir artefatos complexos que permeiam os dados mas que nunca
+foram identificados -> pode estar num espectro: totalmente correlacionado até totalmente random e introduzindo noise no sinal só. Se for totalmente correlacionado ai nem da pra chaamr
+de artefato pois a definicao meio q evapora, pq de uma certa forma ele eh sinal nervoso correspondente a situcao do paciente. Indo pro outro lado do espectro que mora eu acho o potenccial
+problema -> mas esses artefatos sao de pequena amplitude (senao os eeg dos paciente seriam competamente diferentes) entao na pratica o medico ignora a sotcasticidade envolvida e analisa
+os padroes gerais nao parece ser um problema, e nem que se fosse atacado conseguiria ser resolvido sem correr grande risco de perder sinal importante.
+
+o que parece mmais de IA é a reabilitacao, porem parece que nao tem dados sificiente pra um algoritmo mais complexo (estado->acao->estado ... e tals) :(
+ai fica só nas correlacoes entre o antes e depois e da pra fazer o datascience/machinne learning classico com
+regressao linear ou logisitca, arvore, svm, knn, etc e isso jah eh feito bastante em td lugar
+
+cartool aplica uum filtro espacial (smothing) depois do ica, por que ainda caba sobrando uma ilhas de descontinuidade -> ou seja mt foda jah
+cartool tem ferramente automatica pra se msm depois disso aind tiver artefatos transientes ele indicar pra vc quais os lugares mais suspeitos e ai jah facilita um monte
+(baseados em estatica descritiva, diferenca em relacao ao baseline)
+"The statistics is based
+on instantaneous values (absolute value, variance, skewness and
+kurtosis among electrodes at a given time point) and on short
+time periods by computing the cross-convolution, which is a
+convenient way to estimate the noise in a signal"
+
+Automagic(matlab, ou eeglab extension) eh um software que permite vc analizar quantitatiavmente a qualidade do preprocessamento, e ai escolher os paramteros/metodos que produzem o sinal
+mais adequado de acordo com as medidas (dentre varias) de qualidade que vc julga mais importantes.
+
+tem software especifico pra identificar eye blinks artifacts e remover
+
+alpha band has probably the highest signal-to-noise ratio
+
+Bigdely-Shamlo et al. also showed that dividing the
+recording channel data by a recording-specific constant prior to
+computing the study or corpus dispersion vector greatly reduces
+the dispersion values. -> tipo tem uma variavel latente que muda com o tempo e afeta todos os sinais do cerebro, ai normalizando por essa variavel
+a gente retira esse fator da variancia -> essa variavel utilizada nesse estudo foi huber mean
+
+ica eh aplicado em cada channel -> e na teoria vc ve manucalmente oq eh de arfetato e oq nao eh -> mas tem alguma coisas de ML que foram feitas pra deteccao automa
+tica tb -> mas mesmo assim, tipo identificar os componentes do ica que sao de artefato (nos padroes dos medicos) eh meio que facil e um modelo linear jah eh o ideal tlg,
+mas ai se vc quer ir mais que o medico jah entra em outro reino -> ai teria que verificar a precisao com base em eletrodos intrcranias eu acho msm
+
+eeglab eh usado pra ica geralmente, n sei se jah impleentaram no cartool
+
+duvida: como que recupera a localizacao dos ica components ? ahhh tipo ele soh retira os componentes depois junta os sinais tudo dnovo
+
+probelmas das hipoteses do ica: 
+	- assumir independencia (certos artefatos podem estar bem dependentes, etrelacados)
+		- mas muitos nao, tipo olho, aparelho saobem independentes entao eh bem bom na real
+	- numero de ICA limitado ao numero de eltrodos (mas ai n tem mt oq fazer, eh a precisao do hardware)
+
+**
+IMPORTANTE: - mixing is linear at eltrodes
+		- true because of maxwells eqautions 
+
+isso eh um argumento forte pra que se fique soh com modelo linear
+porem a ativacao dos neuronios e dependente e isso estragaa hipotese de independencia pra fazer mistura linear e ai "meio q fica nao linear" eu acho**,
+mas isso nao se aplicado a arfetatos pq eles sao coisas de fora do cerebro
+
+tem tipos  comuns de componentes ica e podem ser identificados na mao ou por ML
+
+um jeito de quantificar se oalgoritmo de ica eh bom eh por information reduction
+
+duvida inter-cluster reliability:
+tipo ele ta medindo isso assumindo que um dipolo
+serve pra explicar cada componentemas tipo o numero de componentes soh nao eh gigante pq do limite do numero de eletrodos
+entao tipo alguns dessec componentes provavelmente sao mistura alguns ou varios dipolos pq
+nao deu pra ter esse refinamento -> porem vendo as imagens da pra ver que a mioria eh modelado bem por 1 dipolo
+
+quando os pacientes mexem a cabec produz arfefato gigante tb
+
+dataset do eeglab:
+
+o que já veio feito:
+
+	Multi-subject, multi-modal (sMRI+EEG) neuroimaging dataset
+	on face processing. Original data described at https://www.nature.com/articles/sdata20151
+	This is repackaged version of the EEG data in EEGLAB format. The data has gone through
+	minimal preprocessing including (see wh_extracteeg_BIDS.m):
+	- Ignoring fMRI and MEG data (sMRI preserved for EEG source localization)
+	- Extracting EEG channels out of the MEG/EEG fif data
+	- Adding fiducials
+	- Renaming EOG and EKG channels
+	- Extracting events from event channel
+** essa eh a parte manual
+	- Removing spurious events 5, 6, 7, 13, 14, 15, 17, 18 and 19
+	- Removing spurious event 24 for subject 3 run 4
+** o que são spurious events?
+	- Renaming events taking into account button assigned to each subject
+	- Correcting event latencies (events have a shift of 34 ms)
+	- Resampling data to 250 Hz (this is a step that is done because
+  	this dataset is used as tutorial for EEGLAB and need to be lightweight
+	- Merging run 1 to 6
+	- Removing event fields urevent and duration 
+	- Filling up empty fields for events boundary and stim_file.
+	- Saving as EEGLAB .set format
+
+o cara do eeglab fez isso 
+preprocessing steps:
+
+	1. imported data
+	2. removed bad channels
+	3. performed light artifact rejection with ASR (just first step - filter)
+	4. re-reference data to avg reference with interpolation of removed channels
+	5. run ICA, remove 1 dimension because of the avg reference
+	6. classify ica components using IClabel
+	7. set tresholds that determine rejection
+	8. remove bad components from the data
+	9. perfromed strong artifact rejection with ASR (last two steps)
+	0. extarct epochs according to stimulis
+
+	preprocessing done!
+
+	e foi super rapido,  tudo automatizado, nada manual
+
+**anotacao minha: a primeira opcao de ASR é a filtragem, entao nesse caso por isso q nao foi feita a filtragem normal
+
+importante:
+"This is slightly different form the other pipeline, in the other pipeline we 
+cleaned the data only once, before running ica
+and also ica aritfact components are removed at the STUDY level not at the dataset level. 
+Here we do in two steps because there are a lot of wye movements
+and if we clean the data agressively before running ica, we are going to remove all portions 
+of data containing eye artifacts, instead we clean lightly to clean only portions of data containing large artifacts, we run ica
+and then remove artifact components, then we clean data more agressively to remove small artifacts 
+still present in the data. Finally we extract epochs and create an eeglab study"
+
+importante: no cmd do marlab digita eegh que vai mostrar todos os comandos feitos (traduzidos da ui pra codigo)
+ai se quiser fazer a mesma coisa eh soh copiar e colar isso
+
+importante: Usually single dipole already models well ica component
+
+***
+os caras do eeglab tao usando uma pipeline totalmente automatizada
+
+imagem no word (aquela do pipline que tem as setas )
+***
+
+se vc vai remover um canal, ica eh tipo um ultimo recurso pra n fazer isso
+no  video  do muse data processing:
+	"If we are to precoess the data wtihout running ica, we’d probably ecludedchannel 1 and 4, but lets see if ica take care of it:"
+
+
+quando vc remove um pedaço de time window manualmente -> ele interpola oq sobrou autoaticamente
+
+obs: com aquele aparelho que ele usou: "With the Muse, it is not possible to remove a specific channel within a specific time period. 
+The channel would have to be interpolated using other channel information and this is not possible with only 4 channels."
+
+Duvida: eu nsei, no eeglab, (considerando que não tem soh 4 canais e daria pr ainterpolar) como excluiria segmentos de só alguns canais especificos 
+e não de todos juntos -> mas deve ser bem suave
+
+
+pra validar/testar se as hipoteses de um metodo sao boas (e consequentemente da reusltado bom na aplicacao real) acho que tem que comparar ou 
+com medico (bem limitado a coisas
+mais aparentes dos plots tempoxpotencial)
+ou com eletrodos itracraniais, testar com simulacao (essa que teria de ser testada anteriormente pra provar a validade das suas hipoteses) ou 
+testar com a performance
+pra determinacao de alguam coisa: exemplo acuracia de uma medico ou ML de acerto no prgnostico de alguma coisa que envolve o sinal (porem eh 
+importante que os dados sejam de varios experimentos, tipo
+usnado aparelhos diferentes, pessoas diferentes e tal; especialmente pra ML pq pode ta fitado com supurious correlations causadas por noise especifico do experimento) 
+;ou outro jeito q nao conheco ainda (deve ter alguns outros crtz)
+
+obs2: ele jah tinha removido pedacoes com potencial muito alto quando gravou os dados
+e aplicado ica pra nao ter que remover canais por inteiro (jah q tinha soh 4 canais)
+
+no dataset no muse era dividido 8 arquivos sub-datasets
+o cara demorou 5 minutos pra limpar manualmente um sub-dataset
+total seria 40minutos nisso (manualmente)
+
+explicacao de pq foi manual, rejeitando todos os canais:
+"They are tools in EEGLAB 2019.1 to perform automated rejection. We are currently evaluating 
+their performance compared to manual rejection to assess if these can be used on Muse data 
+(which is not ideal with 4 channels only and relatively low data quality). We will likely publish 
+a paper on the topic this year." -> explicacao do pq foi manual e removeu todos os canais
+
+For aritfacts he said:
+“better to remove more than not enough”
+
+OpenNeuro is leading platform for sharing neuroimageing data
+
+"Nothing can replace looking at the data and assessing efficiency of automated methods"
+
+**
+inclindo só a primeira run dos subjects:
+	demora no rpeprocessing pipeline (BIDS playlist):
+		ASR e ICA demorou uns 10 minutos cada
+
+	na pratic no total 30 minutos pra processar os datasets(study)
+
+como eram 3 runs nesse cao seria 1 hora e meia!
+**
+
+importante: dps que vc fez tudo eh soh copiar o script gerado se quiser aplicar dnovo
+
+esforcos de ML atuais parecem focados em classificacao do eeg (pre-seizure, beggining of seizure, error correction de BCI)
+
+ideia: graph ML, RNN(LSTM especificamente), Bayesian causal nets sera q nao pode sar insights numa arquitetura pra essa area?
+
+**“Artifacts are signals recorded by EEG but not generated by brain**
+tipo nao eh que alguma coisa pode causar ativacao dos neuronios, eh potencial de fora do cerebro (neuronios) mesmo
+que ta interferindo
+
+amplitutude do artefato muscular nao eh necessariamente pequena, correlaciona com a forca
+da contracao muscular
+
+lemnrando que pra ter picos de sinal (dominio do tempo), precisa de varias frequencias (dominio da frequencia)
+
+*A limited experience or untrained eye in reading EEG is one of the most common reasons for an incorrect diagnosis (Bendabis, 2010).*
+
+epilepsy: "A key contribution of EEG is to bring greater specificity in the diagnosis of types of epilepsy, thus aiding clinicians in effectively managing treatment of the disease." 
+
+epilepsy: interictal (periodo antes da seizure, ou entre seizures) can be exactly like normal eeg also
+
+ideia: GAN + Active Learning aproach ?
+https://arxiv.org/abs/1702.07956
+
+ideia: meta-learning for inter subject knowledge transfer ?
+e combinar com outras fontes de dados (especifico ao paciente)
+deve conseguir ajudar bastante
+
+70% dos papers nao lidam com artefatos (irei da review monstra)
+para DL sem artifact handling: eu acho que pra nao retirar artefato vc tem que costruir uma arquitetura que
+facilite que essas componentes sejam excluídas, pq n faz sentido aprender features conjuntas delas com
+os dados cerebrais
+
+e tendencia dos papaers em DL tb parece ser sem preprocessar(incluindo remocao de artefatos)
+mas ainda sao questoes em aberto que tb dependem do campo
+
+almost all studies reported a small improvement from
+using DL when compared to other baselines and benchmarks
+(median = 5.4%)
+
+a questao de ter pouco dado parece ta sendo um bottleneck
+
+authors achieved comparabel results with less number of channels
+-> more
+accessible devices might therefore benefit from DL methods,
+but could also enable faster data collection on a larger-scale,
+thus facilitating DL in return
+
+queria entender a diferenca entre pensar em mexer o braco e mexer melhor
+(eu acho que um eh regiao de planejmaneto e outro de execucao)
+
+lembrar sempre da questao d apersonalizao (intra subject) ou generalizacao (iter subject)
+o probelma de inter subject aqui a variablidade eh muito grande de pessao pra pessoa, tem um moonte de outras variaveis do corpo da apessoa
+que podem explicar essa variabilidade, porem vc consegue mais dados nesse paradigma  (mas n tende a compensar nem de perto a questao da variabilidade atualmente)
+
+vairbailidade:
+ This difference is due, principally, to the fact that our brain changes how it interacts with its surroundings, a phenomenon that is named neuroplasticity.
+
+On stroke management:
+- "CT and MRI are the backbone of stroke analytics
+for both research and clinical decision support"
+
+- "Although more advanced statistical
+methods have been attempted, none of then have
+proved to be much better than simple perfusion–
+diffusion mismatch.12"
+
+- "although an estimate
+of the tissue at risk of ischemia can be made based
+on the site of vessel occlusion, accurate assessment
+is limited by the significant anatomical variability
+in collaterals, particularly in patients with a large
+ischemic core.2
+
+ideia: Contraited Robust ML in overfitted netowrks for explanability?
+
+CT vs MRI
+Expect your MRI to take at least 30 minutes while a typical CT scan may take only 5 minutes. And while CT is great for looking at a tiny bone fracture or an organ, 
+an MRI is better for looking at soft tissue like your brain.
+
+"During a rehabilitation program, therapists first diagnose the condition of a patient with various methods (e.g.
+analyzing patient’s history, conducting tests, or analyzing measurements) and determine in-home interventions."
+ -> ML aqui talvez pra achar movimentos ótimos (de acordo com melhora no eeg) ?
+
+no campo do BCI ainda falta mt entendimento ainda pra saber o jeito de usar
+que vai ser benefico ao paciente -> inclusive varios estudos que tiram conclusoes contraditorias
+ -> pq issoque nao temgrande adocao ainda -> basicamente só em pesquisa
+
+#Na tese de doutorado de stroke rehab com eeg:
+
+". Firstly, at the beginning
+of all EEG related stroke rehabilitation training, it is both time and effort consuming to go
+through data collection and model training for every rehabilitation task"
+
+-> questao da inter personal variablidade : meta-learning/multi-task learning ? RL for each task 
+(tipo aquele a artigo domoto assessment por video que fez RL pra achar melhor conjunto de features) ?
+
+
+# controlling not just with MI, but with MI and real pyhsical motion
+"However, with the utilization of the BCI systems, it is still possible that the patient could
+have learned to control the BCI system fluently during the rehabilitation training instead 
+3
+of gaining motor function recovery [38]. In order to lay emphasis on the rehabilitation
+training and motor function recovery, some researchers suggested combining motor
+imagery training (provided by BCI) and active physical training (provided by active
+minimal movement from the patient) in the rehabilitation training protocol [38]. In the
+combined rehabilitation training, the patients were required to activate BCI control and
+move to the designated direction at the same time, which internally connects the mental
+task and physical task together. Therefore, the combined method could potentially
+further boost motor function recovery [38]. Although there is a need for such a complex
+rehabilitation training system, no such system has been reported in the literature."
+
+
+#motor assessment with eeg
+"In Chapter 7, a configuration of an artificial neural network model is proposed
+and validated for generating scores to assess motor function with EEG data. The
+calculated scores are validated with both within-participant test and cross participant
+test. The proposed method is able to predict the motor function of the participants with
+chronic stroke, using only EEG data. With the proposed method, the motor function
+assessment procedures could potentially be automated with minimal intervention from
+health care professionals"
+
+#Nos artigos de stroke rehab:
+
+** # o cara aprende a fazer a task e só, nao generaliza tanto
+"Both learning rules are supported by various
+systematic reviews, which indicate that the eff ects of
+specific interventions generalise poorly to related tasks
+that are not directly trained in the programme"
+**
+
+#cara do researchgate:
+Hi Kiransing,
+It may be better to stimulate artifact to assess artifact removal procedures 
+because certain EMG artifacts in EEG are not well identified (see Fitzgibbon et al., 2015). 
+Other types are artifact (e.g. EMG due to eye-blinks and eye-movements, electrode dislocations 
+due to movement, and EKG) are well identified by current algorithms such as ICA. Also attached is a review book chapter; 
+Section 6 on artifact removal may be of use

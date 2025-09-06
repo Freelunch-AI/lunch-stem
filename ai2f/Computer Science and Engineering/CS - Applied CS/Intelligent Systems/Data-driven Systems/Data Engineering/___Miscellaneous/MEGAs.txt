@@ -1,0 +1,5 @@
+https://github.com/datastacktv/data-engineer-roadmap
+https://github.com/Data-Learn/data-engineering
+https://github.com/igorbarinov/awesome-data-engineering
+https://github.com/adilkhash/Data-Engineering-HowTo
+https://github.com/newTendermint/awesome-bigdata

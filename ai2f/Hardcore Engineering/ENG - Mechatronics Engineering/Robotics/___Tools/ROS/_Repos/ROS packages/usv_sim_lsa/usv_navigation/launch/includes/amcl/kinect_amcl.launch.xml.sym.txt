@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\kinect_amcl.launch.xml_32bdf3

@@ -1,0 +1,5 @@
+outs:
+- md5: b9c711816640270a137bbbe68c47e8f5
+  size: 461410
+  hash: md5
+  path: 10 - Implementing failure handling for TurtleSi.pdf

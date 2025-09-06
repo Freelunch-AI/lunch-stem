@@ -1,0 +1,1 @@
+https://www.pinecone.io/learn/batch-layer-normalization/#:~:text=What%20is%20Layer%20Normalization%3F,features%20for%20a%20given%20input.

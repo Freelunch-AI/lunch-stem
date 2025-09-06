@@ -1,0 +1,5 @@
+outs:
+- md5: 1784a2873a3b0dfdd9f057dd2d7fc842
+  size: 823812
+  hash: md5
+  path: rand.pdf

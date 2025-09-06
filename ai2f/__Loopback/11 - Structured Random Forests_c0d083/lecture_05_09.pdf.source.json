@@ -1,0 +1,37 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Ben Haghi",
+      "university": "California Institute of Technology"
+    },
+    {
+      "name": "Cody Han",
+      "university": "California Institute of Technology"
+    },
+    {
+      "name": "Yury Tokpanov",
+      "university": "California Institute of Technology"
+    },
+    {
+      "name": "Ben Haghi",
+      "university": null
+    },
+    {
+      "name": "Cody Han",
+      "university": null
+    },
+    {
+      "name": "Yury Tokpanov",
+      "university": null
+    }
+  ],
+  "university_course_name": "CS159",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 97,
+  "size_mb": 3.22,
+  "link_to_license": null,
+  "changes_were_made": false
+}

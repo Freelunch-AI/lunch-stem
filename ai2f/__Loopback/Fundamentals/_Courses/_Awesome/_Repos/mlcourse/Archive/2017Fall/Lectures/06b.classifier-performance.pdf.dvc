@@ -1,0 +1,5 @@
+outs:
+- md5: b1880c7daf9b862ca058c324cd69883e
+  size: 1831163
+  hash: md5
+  path: 06b.classifier-performance.pdf

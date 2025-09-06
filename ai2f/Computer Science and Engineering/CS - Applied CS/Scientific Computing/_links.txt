@@ -1,0 +1,2 @@
+https://weisscharlesj.github.io/SciCompforChemists/notebooks/introduction/intro.html
+https://handsonscicomp.readthedocs.io/en/latest/A/

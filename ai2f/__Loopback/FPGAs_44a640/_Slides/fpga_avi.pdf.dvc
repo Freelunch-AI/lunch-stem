@@ -1,0 +1,5 @@
+outs:
+- md5: 8884b1650b374615c2e7d93da9e13ab3
+  size: 1750703
+  hash: md5
+  path: fpga_avi.pdf

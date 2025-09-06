@@ -1,0 +1,5 @@
+outs:
+- md5: 452e27c639e599a4932206b87d277889
+  size: 9745371
+  hash: md5
+  path: lec22_nerf_for_web.pdf

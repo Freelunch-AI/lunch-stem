@@ -1,0 +1,62 @@
+-----------------
+
+title: Brain–computer interfaces for
+communication and rehabilitation
+
+url: file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/Review%20of%20BCI.pdf
+
+notes:
+
+Abstract | Brain–computer interfaces (BCIs) use brain activity to control external devices,
+thereby enabling severely disabled patients to interact with the environment. A variety of
+invasive and noninvasive techniques for controlling BCIs have been explored, most notably
+EEG, and more recently, near-infrared spectroscopy. Assistive BCIs are designed to enable
+paralyzed patients to communicate or control external robotic devices, such as prosthetics;
+rehabilitative BCIs are designed to facilitate recovery of neural function. In this Review, we
+provide an overview of the development of BCIs and the current technology available before
+discussing experimental and clinical studies of BCIs. We first consider the use of BCIs for
+communication in patients who are paralyzed, particularly those with locked-in syndrome or
+complete locked-in syndrome as a result of amyotrophic lateral sclerosis. We then discuss the
+use of BCIs for motor rehabilitation after severe stroke and spinal cord injury. We also
+describe the possible neurophysiological and learning mechanisms that underlie the
+clinical efficacy of BCIs.
+
+Key points
+• Brain–computer interfaces (BCIs) are starting to prove their efficacy as assistive and
+rehabilitative technologies in patients with severe motor impairments
+• BCIs can be invasive or noninvasive, and designed to detect and decode a variety of
+brain signals
+• Assistive BCIs are intended to enable paralyzed patients to communicate or
+control external robotic devices; rehabilitative BCIs are intended to facilitate
+neural recovery
+• EEG-based BCIs have enabled some paralyzed patients to communicate, but
+near-infrared spectroscopy combined with a classical conditioning paradigm is the
+only successful approach for complete locked-in syndrome
+• The combination of EEG-based BCIs with behavioural physiotherapy is a feasible
+option for rehabilitation in stroke; the approach is to induce neuroplasticity and
+restore lost function after stroke
+• There is an urgent need for more large randomized controlled clinical trials using
+invasive and noninvasive BCIs with long-term follow-ups in patients rather than
+healthy populations
+
+
+
+
+
+
+
+
+
+
+
+-----------------
+
+title: 
+
+url: file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/EEG%20based%20BCI%20Challenges%20and%20Solutions%20Review.pdf
+
+notes:
+
+
+
+

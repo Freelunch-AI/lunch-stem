@@ -1,0 +1,5 @@
+outs:
+- md5: 2a499091a8e314bde8febfbbecfc183d
+  size: 145025
+  hash: md5
+  path: lecture19.pdf

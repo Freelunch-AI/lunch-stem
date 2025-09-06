@@ -1,0 +1,5 @@
+outs:
+- md5: d0b7206fa840368040cfd92e7c4b646c
+  size: 9627313
+  hash: md5
+  path: 02-measurement.pdf

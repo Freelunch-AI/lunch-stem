@@ -1,0 +1,5 @@
+outs:
+- md5: 602ea27215f8b464e9d3695a30b1d136
+  size: 1240405
+  hash: md5
+  path: 2 - inference on chains and factor graphs.pdf

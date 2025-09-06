@@ -1,0 +1,5 @@
+outs:
+- md5: edbfaf60d407155fc7f65c4318a23a30
+  size: 146000
+  hash: md5
+  path: Gaussian identities.pdf

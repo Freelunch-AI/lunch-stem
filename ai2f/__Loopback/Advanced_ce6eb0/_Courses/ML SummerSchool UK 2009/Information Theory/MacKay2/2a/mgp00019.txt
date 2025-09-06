@@ -1,0 +1,11 @@
+
+Testing 'Shannon information content' claims
+
+
+
+
+Shannon says
+Most 'informative' experiment is the one with maximum entropy
+Weighing problem
+
+

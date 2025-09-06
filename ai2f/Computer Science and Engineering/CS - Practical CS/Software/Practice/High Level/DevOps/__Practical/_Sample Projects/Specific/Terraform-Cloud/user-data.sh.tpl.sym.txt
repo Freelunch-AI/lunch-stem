@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\user-data.sh.tpl_78cf17

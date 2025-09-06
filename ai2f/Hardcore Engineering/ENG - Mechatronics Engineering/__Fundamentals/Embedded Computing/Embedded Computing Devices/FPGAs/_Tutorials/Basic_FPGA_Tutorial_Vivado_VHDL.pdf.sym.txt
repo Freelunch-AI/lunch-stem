@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\Basic_FPGA_Tutorial_Vivado_VHDL.pdf_4bb29d

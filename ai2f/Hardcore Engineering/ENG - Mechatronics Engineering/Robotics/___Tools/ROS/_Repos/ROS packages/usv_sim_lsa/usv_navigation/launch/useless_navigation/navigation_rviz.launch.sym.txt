@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\navigation_rviz.launch_69c6cd

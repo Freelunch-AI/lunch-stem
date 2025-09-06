@@ -1,0 +1,98 @@
+Pelo expo:
+
+ele fez o apk
+
+>> expo build:android
+
+guardar com cuiado a key_store que foi gerada pelo expo
+
+se a gente jah criou o aplicativo e quer atulizar, ai a getne precisa passar 
+essa primeira key_store
+
+
+---------------------------
+
+Pelo react-native-cli:
+
+vamos pra parte de configuração native do adroid
+
+cd android/app
+
+se eh a primeira versao do app
+>> keytool -genkeyoair blablablla eh bem grande (ta no pdf)
+
+em andorid>gradle.prperties 
+
+adicionar MYAPP_UPLOAD_STORE_FILE=myupload-key.keystore 
+		blblbla (ta no pdf)
+
+
+em adroid>app>build.gradle
+
+dentro de adroid { signingConfigs { adicionar aqui o trecho de codigo de realease{blblbla (pdf)} } }
+
+
+ir para pasta android
+
+>>gradlew bundleRelease
+
+
+em andorid>app>build>outputs>budle>realease vamos achar app.aab
+
+
+app.aab esse eh o bundle (melhor que o apk!) que vamos publicar 
+
+
+----------------- 
+
+voltando ao expo:
+
+
+gerou o apk  (obs: pra publicar na loja o  app bundle eh o recomendado, mas n da pra usar ele pra testes)
+tem um comando no expo bem simples, e sem expo ele jah gera automaticamente
+
+agora entra na google play console:
+
+-> a conta eh paga 25 dolares uma vez soh
+
+-> na applestore vc paga anual (100 dolares)
+
+em ficha de loja preenche todas as info.
+
+em lanacmentos de aplicacoes e clica em "gerir" em Producao
+
+preenche tudo.
+
+
+tem que preecher obrigatoriamente tambem:
+
+classifcacao de conteudo
+conteudo da aplicacao
+precos e distribuicao
+
+quando terminar volta em lacamento e:
+
+aperta "iniciar implementacao para produção"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

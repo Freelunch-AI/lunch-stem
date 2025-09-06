@@ -1,0 +1,5 @@
+outs:
+- md5: 73df1f8affb315208fa0300900670cb9
+  size: 407611
+  hash: md5
+  path: lec03-mpi.pdf

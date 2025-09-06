@@ -1,0 +1,5 @@
+outs:
+- md5: 513c6211a63bd8b58c410c99359375cc
+  size: 853479
+  hash: md5
+  path: Gumbel-Sinkhorn-Slides.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: aa7b709084058688daef87c2491afbf9
+  size: 2657866
+  hash: md5
+  path: Value iteration solution to LQR.pdf

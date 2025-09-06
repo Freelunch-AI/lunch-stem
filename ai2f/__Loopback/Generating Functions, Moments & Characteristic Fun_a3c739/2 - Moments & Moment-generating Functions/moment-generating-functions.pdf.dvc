@@ -1,0 +1,5 @@
+outs:
+- md5: 4792378f22c05b0e37972a6c979cc59d
+  size: 272172
+  hash: md5
+  path: moment-generating-functions.pdf

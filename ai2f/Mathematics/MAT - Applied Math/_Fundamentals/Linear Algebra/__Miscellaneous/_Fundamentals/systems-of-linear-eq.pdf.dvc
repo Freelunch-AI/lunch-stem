@@ -1,0 +1,5 @@
+outs:
+- md5: be96db0c2c87677b3b9ee98c148bc462
+  size: 384593
+  hash: md5
+  path: systems-of-linear-eq.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 2e4fd2988bb16949f3e56382e224c95e
+  size: 2066048
+  hash: md5
+  path: 04-AccessControl.pdf

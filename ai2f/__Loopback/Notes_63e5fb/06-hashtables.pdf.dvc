@@ -1,0 +1,5 @@
+outs:
+- md5: 1702f766887ea8650fbaf1d14a67cbdc
+  size: 77682
+  hash: md5
+  path: 06-hashtables.pdf

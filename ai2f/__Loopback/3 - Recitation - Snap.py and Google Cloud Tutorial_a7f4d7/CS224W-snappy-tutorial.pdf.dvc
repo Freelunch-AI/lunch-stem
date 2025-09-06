@@ -1,0 +1,5 @@
+outs:
+- md5: 5adec425da521f30a87819821a0bdaab
+  size: 2541001
+  hash: md5
+  path: CS224W-snappy-tutorial.pdf

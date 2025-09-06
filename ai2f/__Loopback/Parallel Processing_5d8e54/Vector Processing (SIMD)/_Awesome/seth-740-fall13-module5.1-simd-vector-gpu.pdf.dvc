@@ -1,0 +1,5 @@
+outs:
+- md5: d29f1fdc5c38df810baa850f9cf3cb11
+  size: 727631
+  hash: md5
+  path: seth-740-fall13-module5.1-simd-vector-gpu.pdf

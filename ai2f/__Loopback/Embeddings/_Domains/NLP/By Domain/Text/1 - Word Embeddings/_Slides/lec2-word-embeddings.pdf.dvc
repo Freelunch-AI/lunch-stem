@@ -1,0 +1,5 @@
+outs:
+- md5: 7b4b9ba351458e42a0dcc27a260f83a1
+  size: 3647153
+  hash: md5
+  path: lec2-word-embeddings.pdf

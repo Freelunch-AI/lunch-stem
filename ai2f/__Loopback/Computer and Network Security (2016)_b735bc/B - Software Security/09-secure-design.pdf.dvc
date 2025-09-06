@@ -1,0 +1,5 @@
+outs:
+- md5: 50a3dba0ef65c7d9cc15b9d8234c3e50
+  size: 11619823
+  hash: md5
+  path: 09-secure-design.pdf

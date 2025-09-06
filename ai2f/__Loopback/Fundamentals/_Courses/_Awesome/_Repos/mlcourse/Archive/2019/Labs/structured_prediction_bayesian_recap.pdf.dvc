@@ -1,0 +1,5 @@
+outs:
+- md5: 40639db5064527ddef5af17d140a2cd3
+  size: 241247
+  hash: md5
+  path: structured_prediction_bayesian_recap.pdf

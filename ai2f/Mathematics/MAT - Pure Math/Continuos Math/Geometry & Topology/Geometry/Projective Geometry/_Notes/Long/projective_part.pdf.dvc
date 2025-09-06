@@ -1,0 +1,5 @@
+outs:
+- md5: 8540f26fc7ca744ca14c8d9c732c3f6a
+  size: 3308332
+  hash: md5
+  path: projective_part.pdf

@@ -1,0 +1,37 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Hyunwoo Chun",
+      "university": "KAIST"
+    },
+    {
+      "name": "Haewoon Kwak",
+      "university": "KAIST"
+    },
+    {
+      "name": "Young-Ho Eom",
+      "university": "KAIST"
+    },
+    {
+      "name": "Yong-Yeol Ahn",
+      "university": "CCNR, Boston"
+    },
+    {
+      "name": "Sue Moon",
+      "university": "KAIST"
+    },
+    {
+      "name": "Hawoong Jeong",
+      "university": "KAIST"
+    }
+  ],
+  "university_course_name": null,
+  "publisher": "ACM SIGCOMM",
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 73,
+  "size_mb": 3.17,
+  "link_to_license": null,
+  "changes_were_made": false
+}

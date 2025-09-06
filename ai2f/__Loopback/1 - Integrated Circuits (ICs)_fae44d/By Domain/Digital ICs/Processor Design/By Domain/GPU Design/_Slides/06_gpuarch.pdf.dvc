@@ -1,0 +1,5 @@
+outs:
+- md5: aaab0bb06b4b475d108d2a4925234ae2
+  size: 11538173
+  hash: md5
+  path: 06_gpuarch.pdf

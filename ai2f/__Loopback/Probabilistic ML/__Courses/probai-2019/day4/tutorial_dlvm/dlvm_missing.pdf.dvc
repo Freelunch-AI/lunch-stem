@@ -1,0 +1,5 @@
+outs:
+- md5: f06b8bfcb90b84b88bb2b31806143f25
+  size: 5453224
+  hash: md5
+  path: dlvm_missing.pdf

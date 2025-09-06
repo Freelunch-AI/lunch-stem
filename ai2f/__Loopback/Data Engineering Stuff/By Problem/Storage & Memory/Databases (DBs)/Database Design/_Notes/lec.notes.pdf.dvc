@@ -1,0 +1,5 @@
+outs:
+- md5: f3faa82dac53b32496e50aad1f5ef49f
+  size: 329017
+  hash: md5
+  path: lec.notes.pdf

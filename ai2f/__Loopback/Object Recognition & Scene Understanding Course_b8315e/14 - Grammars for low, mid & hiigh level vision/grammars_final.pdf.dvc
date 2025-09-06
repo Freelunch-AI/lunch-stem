@@ -1,0 +1,5 @@
+outs:
+- md5: 7b743ec3f1f0fe47a9a1b8aff23828fc
+  size: 6120634
+  hash: md5
+  path: grammars_final.pdf

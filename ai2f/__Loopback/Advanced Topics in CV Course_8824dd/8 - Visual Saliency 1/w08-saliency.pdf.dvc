@@ -1,0 +1,5 @@
+outs:
+- md5: c2211a5b839f010341afc96e50aa5f37
+  size: 16831151
+  hash: md5
+  path: w08-saliency.pdf

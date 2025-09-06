@@ -1,0 +1,3 @@
+https://boinc.berkeley.edu/
+https://github.com/BrunoScaglione/boinc
+https://lhcathome.web.cern.ch/about/volunteer-computing

@@ -1,0 +1,5 @@
+outs:
+- md5: 3120bb792557170d405249e44cc4a905
+  size: 1397356
+  hash: md5
+  path: lec2-vae.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 9efe8f8032d4bf65a161cee02f5a2e7b
+  size: 3207290
+  hash: md5
+  path: 12-clustering.pdf

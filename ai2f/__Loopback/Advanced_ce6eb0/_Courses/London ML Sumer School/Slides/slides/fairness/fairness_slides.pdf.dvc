@@ -1,0 +1,5 @@
+outs:
+- md5: 6dd8ab0608a682f44761e7ba3ca91c0d
+  size: 84225209
+  hash: md5
+  path: fairness_slides.pdf

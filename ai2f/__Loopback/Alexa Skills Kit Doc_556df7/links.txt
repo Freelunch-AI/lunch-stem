@@ -1,0 +1,8 @@
+1 - Overview
+https://developer.amazon.com/en-US/docs/alexa/ask-overviews/what-is-the-alexa-skills-kit.html
+
+2 - Understand Custom Skills
+https://developer.amazon.com/en-US/docs/alexa/custom-skills/understanding-custom-skills.html
+
+3 - Interaction Model Design
+https://developer.amazon.com/en-US/docs/alexa/custom-skills/create-the-interaction-model-for-your-skill.html

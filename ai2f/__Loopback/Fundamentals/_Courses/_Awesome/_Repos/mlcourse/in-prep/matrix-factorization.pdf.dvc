@@ -1,0 +1,5 @@
+outs:
+- md5: 0e7b01ecad23e9451541f2d9cd705d4d
+  size: 691334
+  hash: md5
+  path: matrix-factorization.pdf

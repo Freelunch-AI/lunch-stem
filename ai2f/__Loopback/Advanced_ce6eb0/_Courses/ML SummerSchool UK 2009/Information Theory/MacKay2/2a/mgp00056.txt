@@ -1,0 +1,11 @@
+
+Channels with erasures
+
+
+Binary erasure channel
+
+8-ary erasure channel
+
+Packet-erasing channel
+
+

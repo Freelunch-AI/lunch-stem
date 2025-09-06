@@ -1,0 +1,5 @@
+outs:
+- md5: 1d0471d8f545c3ad1d86fea68dad4d2d
+  size: 935292
+  hash: md5
+  path: algebraic-graph-theory.pdf

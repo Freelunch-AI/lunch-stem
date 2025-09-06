@@ -1,0 +1,5 @@
+outs:
+- md5: fe5013ad38c1510b8cbf5988731fe899
+  size: 24285970
+  hash: md5
+  path: 02_NN_training.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 3d9a68746fde23e1720e679ef05478d1
+  size: 246814
+  hash: md5
+  path: demo.pdf

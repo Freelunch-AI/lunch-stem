@@ -1,0 +1,5 @@
+outs:
+- md5: 15a19d00143d636d67e8c1b8a4cf6e29
+  size: 14806
+  hash: md5
+  path: exercices.pdf

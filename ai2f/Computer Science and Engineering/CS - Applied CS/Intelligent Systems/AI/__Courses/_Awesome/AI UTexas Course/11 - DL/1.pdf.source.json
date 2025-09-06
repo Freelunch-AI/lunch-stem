@@ -1,0 +1,34 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Profs. Peter Stone",
+      "university": "The University of Texas at Austin"
+    },
+    {
+      "name": "Yuke Zhu",
+      "university": "The University of Texas at Austin"
+    },
+    {
+      "name": "Dan Klein",
+      "university": "UC Berkeley"
+    },
+    {
+      "name": "Pieter Abbeel",
+      "university": "UC Berkeley"
+    },
+    {
+      "name": "Anca Dragan",
+      "university": "UC Berkeley"
+    }
+  ],
+  "university_course_name": "CS188 Intro to AI",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": "http://ai.berkeley.edu.",
+  "num_of_pages": 158,
+  "size_mb": 6.19,
+  "link_to_licence": null,
+  "changes_were_made": false,
+  "link_to_license": null
+}

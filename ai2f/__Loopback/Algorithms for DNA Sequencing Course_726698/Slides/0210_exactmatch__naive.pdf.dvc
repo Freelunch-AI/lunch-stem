@@ -1,0 +1,5 @@
+outs:
+- md5: a5bbde9ddb7fe8dfc1084ce911e2f57a
+  size: 109898
+  hash: md5
+  path: 0210_exactmatch__naive.pdf

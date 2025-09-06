@@ -1,0 +1,5 @@
+outs:
+- md5: 19461bc9bb3d712878e03b4da8a54d7e
+  size: 90832
+  hash: md5
+  path: 16-twophaselocking.pdf

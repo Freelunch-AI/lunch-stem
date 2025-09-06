@@ -1,0 +1,5 @@
+outs:
+- md5: 8b93fbe4d147fb1ec8ecd8a4e8b9b91d
+  size: 3178745
+  hash: md5
+  path: nn4nlp-05-rnn.pdf

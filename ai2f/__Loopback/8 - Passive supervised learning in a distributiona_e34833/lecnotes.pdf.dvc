@@ -1,0 +1,5 @@
+outs:
+- md5: 7b602042fbd151334be4d659840fbc8a
+  size: 64252
+  hash: md5
+  path: lecnotes.pdf

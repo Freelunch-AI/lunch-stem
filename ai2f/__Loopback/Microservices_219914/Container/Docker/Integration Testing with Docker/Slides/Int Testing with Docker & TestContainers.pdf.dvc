@@ -1,0 +1,5 @@
+outs:
+- md5: 1124716613a99530e6f96f9a214cd30b
+  size: 2446132
+  hash: md5
+  path: Int Testing with Docker & TestContainers.pdf

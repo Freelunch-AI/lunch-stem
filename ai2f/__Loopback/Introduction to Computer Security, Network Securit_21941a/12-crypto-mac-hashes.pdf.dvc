@@ -1,0 +1,5 @@
+outs:
+- md5: e01a6cd00d5b3df16943c03bf5f664a5
+  size: 1432187
+  hash: md5
+  path: 12-crypto-mac-hashes.pdf

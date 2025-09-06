@@ -1,0 +1,5 @@
+outs:
+- md5: ebc082cadaec7a9a09b5f0e74c154e64
+  size: 474090
+  hash: md5
+  path: 11_snooping_cache_coherence.pdf

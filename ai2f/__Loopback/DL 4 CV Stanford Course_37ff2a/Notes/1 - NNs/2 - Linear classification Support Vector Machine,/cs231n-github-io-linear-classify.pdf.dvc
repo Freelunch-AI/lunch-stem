@@ -1,0 +1,5 @@
+outs:
+- md5: 3e063ea753250daf94be796e4d24a510
+  size: 815645
+  hash: md5
+  path: cs231n-github-io-linear-classify.pdf

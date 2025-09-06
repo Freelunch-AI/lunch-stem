@@ -1,0 +1,2 @@
+https://levelup.gitconnected.com/learn-blockchain-by-building-it-f2f8ccc54892
+https://www.freecodecamp.org/news/build-a-blockchain-in-golang-from-scratch/

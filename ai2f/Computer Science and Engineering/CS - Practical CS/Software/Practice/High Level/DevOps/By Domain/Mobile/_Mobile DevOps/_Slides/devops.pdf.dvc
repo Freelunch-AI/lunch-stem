@@ -1,0 +1,5 @@
+outs:
+- md5: f706c7a65ec5c8f38f2953489bdb0319
+  size: 25931520
+  hash: md5
+  path: devops.pdf

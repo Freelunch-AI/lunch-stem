@@ -1,0 +1,5 @@
+outs:
+- md5: c624e80472bcd7cb764315df37a71c8c
+  size: 394251
+  hash: md5
+  path: 12-Concurrency.pdf

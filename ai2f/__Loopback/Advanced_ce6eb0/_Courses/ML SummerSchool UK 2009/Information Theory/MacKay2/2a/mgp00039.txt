@@ -1,0 +1,15 @@
+
+Shannon's noisy channel coding theorem
+
+
+
+
+For any channel:
+Reliable (virtually error-free) communication is possible
+at rates up to C
+
+Information theory  Shannon, 1948
+Coding theory  Hamming, 1948; Reed-Solomon; Forney (Convolutional & concatenated codes)
+
+Skip to page 44   
+

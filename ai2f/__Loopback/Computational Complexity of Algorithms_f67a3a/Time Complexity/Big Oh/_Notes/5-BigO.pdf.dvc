@@ -1,0 +1,5 @@
+outs:
+- md5: 24db8bc503f1e036f89783f7e1037259
+  size: 725266
+  hash: md5
+  path: 5-BigO.pdf

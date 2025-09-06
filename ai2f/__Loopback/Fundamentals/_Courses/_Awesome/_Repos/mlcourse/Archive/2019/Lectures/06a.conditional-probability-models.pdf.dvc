@@ -1,0 +1,5 @@
+outs:
+- md5: 7256f4f043a78c597a76cf22a9a56170
+  size: 340512
+  hash: md5
+  path: 06a.conditional-probability-models.pdf

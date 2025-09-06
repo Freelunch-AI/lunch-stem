@@ -1,0 +1,5 @@
+outs:
+- md5: d96b5f0b2a4cbffe32984bc81b84af5f
+  size: 2785032
+  hash: md5
+  path: lecture4-function-approximation.pdf

@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\ch-08c_RNN_Text_Keras.ipynb_6c6dda

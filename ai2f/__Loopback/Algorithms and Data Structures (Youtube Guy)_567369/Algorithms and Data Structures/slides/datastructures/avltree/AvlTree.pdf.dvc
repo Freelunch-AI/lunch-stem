@@ -1,0 +1,5 @@
+outs:
+- md5: d98cc8a09e40f0737adca96b70d7836e
+  size: 777837
+  hash: md5
+  path: AvlTree.pdf

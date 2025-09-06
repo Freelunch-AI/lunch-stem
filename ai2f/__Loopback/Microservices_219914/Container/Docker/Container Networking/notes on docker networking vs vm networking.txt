@@ -1,0 +1,17 @@
+docker bridge and host networks != vm bridge and host only netwrks (although share similar concepts):
+
+docker:
+
+bridge: creates separate nwtwork, each container receivera public IP address, connects to host via the bridge
+that acts as a NAT, and host acts as a router
+
+host: container can only be accessed by host, doesnt have an IP, running on a host port
+
+
+vm:
+
+NAT: vms are isolated from one another, each vm has its own NAT that connects to the host, which acts as a router
+
+bridge: receives public IP like it was another machine connected on host LAN, one NAT for all the vm's and connects to the host, which acts as a router
+
+host-only: only accessible to host, creates isolated LAN with the host included

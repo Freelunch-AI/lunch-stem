@@ -1,0 +1,5 @@
+outs:
+- md5: 747a74ffe74d157ec337d2eb27749538
+  size: 400355
+  hash: md5
+  path: stackoverflow-accessing-a-docker-container-from.pdf

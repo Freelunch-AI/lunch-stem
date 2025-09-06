@@ -1,0 +1,191 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "baseClusterName": {
+            "type": "string",
+            "metadata": {
+                "description": "Kafka cluster name"
+            }
+        },
+        "clusterLoginUserName": {
+            "type": "string",
+            "defaultValue": "admin",
+            "metadata": {
+                "description": "These credentials can be used to submit jobs to the cluster and to log into cluster dashboards."
+            }
+        },
+        "clusterLoginPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "The password must be at least 10 characters in length and must contain at least one digit, one non-alphanumeric character, and one upper or lower case letter."
+            }
+        },
+        "sshUserName": {
+            "type": "string",
+            "defaultValue": "sshuser",
+            "metadata": {
+                "description": "These credentials can be used to remotely access the cluster."
+            }
+        },
+        "sshPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "The password must be at least 10 characters in length and must contain at least one digit, one non-alphanumeric character, and one upper or lower case letter."
+            }
+        }
+    },
+  "variables": {
+    "defaultApiVersion": "2015-05-01-preview",
+    "clusterApiVersion": "2015-03-01-preview",
+    "clusterWorkerNodeCount": "3",
+    "disksPerWorkerNode": "2",
+    "clusterVNetName": "[concat(parameters('baseClusterName'),'-vnet')]",
+    "clusterStorageAccountName": "[concat(parameters('baseClusterName'),'store')]",
+    "kafkaClusterName": "[concat('kafka-', parameters('baseClusterName'))]",
+    "clusterVNetAddressSpace": "10.0.0.0/16",
+    "clusterVNetSubnetName": "default",
+    "clusterVNetSubnetAddressRange": "10.0.0.0/24"
+  },
+  "resources": [
+    {
+      "name": "[variables('clusterVNetName')]",
+      "type": "Microsoft.Network/virtualNetworks",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "[variables('defaultApiVersion')]",
+      "dependsOn": [ ],
+      "tags": { },
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "[variables('clusterVNetAddressSpace')]"
+          ]
+        },
+        "subnets": [
+          {
+            "name": "[variables('clusterVNetSubnetName')]",
+            "properties": {
+              "addressPrefix": "[variables('clusterVNetSubnetAddressRange')]"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "[variables('clusterStorageAccountName')]",
+      "type": "Microsoft.Storage/storageAccounts",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "[variables('defaultApiVersion')]",
+      "dependsOn": [ ],
+      "tags": { },
+      "properties": {
+        "accountType": "Standard_LRS"
+      }
+    },
+    {
+      "name": "[variables('kafkaClusterName')]",
+      "type": "Microsoft.HDInsight/clusters",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "[variables('clusterApiVersion')]",
+      "dependsOn": [
+        "[concat('Microsoft.Storage/storageAccounts/',variables('clusterStorageAccountName'))]",
+        "[concat('Microsoft.Network/virtualNetworks/',variables('clusterVNetName'))]"
+      ],
+      "tags": { },
+      "properties": {
+        "clusterVersion": "3.6",
+        "osType": "Linux",
+        "clusterDefinition": {
+          "kind": "kafka",
+          "configurations": {
+            "gateway": {
+              "restAuthCredential.isEnabled": true,
+              "restAuthCredential.username": "[parameters('clusterLoginUserName')]",
+              "restAuthCredential.password": "[parameters('clusterLoginPassword')]"
+            }
+          }
+        },
+        "storageProfile": {
+          "storageaccounts": [
+            {
+              "name": "[concat(variables('clusterStorageAccountName'),'.blob.core.windows.net')]",
+              "isDefault": true,
+              "container": "[variables('kafkaClusterName')]",
+              "key": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('clusterStorageAccountName')), variables('defaultApiVersion')).key1]"
+            }
+          ]
+        },
+        "computeProfile": {
+          "roles": [
+            {
+              "name": "headnode",
+              "targetInstanceCount": "2",
+              "hardwareProfile": {
+                "vmSize": "Large"
+              },
+              "osProfile": {
+                "linuxOperatingSystemProfile": {
+                  "username": "[parameters('sshUserName')]",
+                  "password": "[parameters('sshPassword')]"
+                }
+              },
+              "virtualNetworkProfile": {
+                "id": "[resourceId('Microsoft.Network/virtualNetworks', variables('clusterVNetName'))]",
+                "subnet": "[concat(resourceId('Microsoft.Network/virtualNetworks', variables('clusterVNetName')), '/subnets/', variables('clusterVNetSubnetName'))]"
+              }
+            },
+            {
+              "name": "workernode",
+              "targetInstanceCount": "[variables('clusterWorkerNodeCount')]",
+              "hardwareProfile": {
+                "vmSize": "Large"
+              },
+              "dataDisksGroups": [
+                {
+                  "disksPerNode": "[variables('disksPerWorkerNode')]"
+                }
+              ],
+              "osProfile": {
+                "linuxOperatingSystemProfile": {
+                  "username": "[parameters('sshUserName')]",
+                  "password": "[parameters('sshPassword')]"
+                }
+              },
+              "virtualNetworkProfile": {
+                "id": "[resourceId('Microsoft.Network/virtualNetworks', variables('clusterVNetName'))]",
+                "subnet": "[concat(resourceId('Microsoft.Network/virtualNetworks', variables('clusterVNetName')), '/subnets/', variables('clusterVNetSubnetName'))]"
+              }
+            },
+            {
+              "name": "zookeepernode",
+              "targetInstanceCount": "3",
+              "hardwareProfile": {
+                "vmSize": "Medium"
+              },
+              "osProfile": {
+                "linuxOperatingSystemProfile": {
+                  "username": "[parameters('sshUserName')]",
+                  "password": "[parameters('sshPassword')]"
+                }
+              },
+              "virtualNetworkProfile": {
+                "id": "[resourceId('Microsoft.Network/virtualNetworks', variables('clusterVNetName'))]",
+                "subnet": "[concat(resourceId('Microsoft.Network/virtualNetworks', variables('clusterVNetName')), '/subnets/', variables('clusterVNetSubnetName'))]"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+    "outputs": {
+        "vnet": {
+            "type": "object",
+            "value": "[reference(resourceId('Microsoft.Network/virtualNetworks',variables('clusterVNetName')))]"
+        },
+        "kafkaCluster": {
+            "type": "object",
+            "value": "[reference(resourceId('Microsoft.HDInsight/clusters',variables('kafkaClusterName')))]"
+        }
+    }
+}

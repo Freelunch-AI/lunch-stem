@@ -1,0 +1,5 @@
+outs:
+- md5: 37c8ea61c0563a82e4e7ebe0b823499c
+  size: 1361328
+  hash: md5
+  path: lec.pdf

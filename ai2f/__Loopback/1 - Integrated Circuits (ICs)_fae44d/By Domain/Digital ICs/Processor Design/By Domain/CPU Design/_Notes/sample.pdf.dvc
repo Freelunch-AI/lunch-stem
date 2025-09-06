@@ -1,0 +1,5 @@
+outs:
+- md5: e4a1b587b32bc5bd54acd5dc132b8537
+  size: 284439
+  hash: md5
+  path: sample.pdf

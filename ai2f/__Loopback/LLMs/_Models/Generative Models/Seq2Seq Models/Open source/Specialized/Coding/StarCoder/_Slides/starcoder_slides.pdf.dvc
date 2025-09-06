@@ -1,0 +1,5 @@
+outs:
+- md5: 9251e910f4c591f6b336448fb4498a44
+  size: 8972182
+  hash: md5
+  path: starcoder_slides.pdf

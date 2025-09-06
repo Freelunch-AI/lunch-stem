@@ -1,0 +1,12 @@
+basicamente tem só esses 2 papers (de denoising em geral) de acordo com a review:
+file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/DL%20for%20EEG%20review.pdf
+
+a principio parecem bem fracos esses papers, quase nenhuma citacao, não explicam
+porque eles tao fazendo abordagem com ML e nao preprocessamento usado atualmente em larga
+escala, e nem comparam os resultados vantagens/ desvantagens nem nada.
+
+papers:
+
+file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/Denoising%20eeg%20papers/EEG%20detection%20and%20De-noising%20based%20on%20CNN%20and%20Hilbert%20Transform%20(filtering).pdf
+
+file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/Denoising%20eeg%20papers/Adaptive%20RNN%20for%20noise%20reduction%20and%20soruce%20estimation%20from%20eeg.pdf

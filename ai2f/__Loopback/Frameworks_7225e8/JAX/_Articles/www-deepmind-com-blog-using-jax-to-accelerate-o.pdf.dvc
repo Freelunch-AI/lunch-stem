@@ -1,0 +1,5 @@
+outs:
+- md5: adcbbbefb8e6f0d7b83b44162b56f775
+  size: 223380
+  hash: md5
+  path: www-deepmind-com-blog-using-jax-to-accelerate-o.pdf

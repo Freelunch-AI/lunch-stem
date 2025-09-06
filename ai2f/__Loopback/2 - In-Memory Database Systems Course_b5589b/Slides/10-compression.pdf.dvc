@@ -1,0 +1,5 @@
+outs:
+- md5: 3982cf5d4855269e4542e4ce6a53bd86
+  size: 977835
+  hash: md5
+  path: 10-compression.pdf

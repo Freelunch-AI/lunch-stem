@@ -1,0 +1,9 @@
+
+Low-density parity-check code
+
+
+
+
+Gallager 1962; MacKay & Neal 1995    
+
+

@@ -1,0 +1,5 @@
+outs:
+- md5: 10843215d0fe81f575bd908066f58300
+  size: 17694362
+  hash: md5
+  path: learning-from-demonstrations.pdf

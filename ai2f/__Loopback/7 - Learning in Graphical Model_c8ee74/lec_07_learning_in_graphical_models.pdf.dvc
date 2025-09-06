@@ -1,0 +1,5 @@
+outs:
+- md5: 61c0ebac9e867d1ba6c47927a9785618
+  size: 2532020
+  hash: md5
+  path: lec_07_learning_in_graphical_models.pdf

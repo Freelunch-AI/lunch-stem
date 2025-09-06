@@ -1,0 +1,11 @@
+# Language-agnostic Best practices
+
+.env
+*.log
+*.tmp
+
+# Custom Rules
+
+write_scripts
+
+

@@ -1,0 +1,22 @@
+/1 - Intro.pdf
+/11 -  Factor Analysis and State Space Models.pdf
+/12 - Conditional Random Fields (CRFs).pdf
+/13 - Variational Inference - Loopy Belief Propagation.pdf
+/15 - Mean Field Approximation and Topic Models.pdf
+/17 - Approximate Inference - MCMC.pdf
+/18 - Advanced topics in MCMC.pdf
+/19 - Bayesian Nonparametrics - Dirichlet Processes.pdf
+/20 - Hierarchical Dirichlet Processes.pdf
+/21 - The Indian Buffet Process.pdf
+/22 - Hilbert Space Embeddings of Distributions.pdf
+/24 - Spectral Algorithms for Graphical Models.pdf
+/25 - Graphical Induced Structured Input-Output Methods.pdf
+/26 -  Structured Sparse Additive Models.pdf
+/28 - Maximum-Margin Learning of Graphical Models.pdf
+/29 - Posterior Regularization.pdf
+/3 - Representation of Undirected GMs.pdf
+/4 - Exact Inference - Variable Elimination.pdf
+/5 - Sum-Product Message Passing.pdf
+/7 - Learning in Fully Observed Bayesian Networks.pdf
+/8 - Learning in Fully Observed Markov Networks.pdf
+/9 - Learning Partially Observed GM - EM Algorithm.pdf

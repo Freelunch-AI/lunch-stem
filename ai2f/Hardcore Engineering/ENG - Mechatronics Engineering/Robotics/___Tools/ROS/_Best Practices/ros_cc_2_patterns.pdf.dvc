@@ -1,0 +1,5 @@
+outs:
+- md5: 758d6099011e10659feb7823f7bd386e
+  size: 409848
+  hash: md5
+  path: ros_cc_2_patterns.pdf

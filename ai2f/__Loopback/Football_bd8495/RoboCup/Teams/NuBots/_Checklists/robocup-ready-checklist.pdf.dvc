@@ -1,0 +1,5 @@
+outs:
+- md5: e5ddb2ff1d118a50801b353e6199ad32
+  size: 182409
+  hash: md5
+  path: robocup-ready-checklist.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 66fd511e3b20a2b3f2eda17ec09988c9
+  size: 6402618
+  hash: md5
+  path: 19_transactional_memory.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 17e6a36887e187ee5eca48c4ffdc79e6
+  size: 574817
+  hash: md5
+  path: convex-optimization.pdf

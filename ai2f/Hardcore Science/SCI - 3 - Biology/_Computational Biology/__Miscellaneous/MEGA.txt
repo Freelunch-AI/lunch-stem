@@ -1,0 +1,3 @@
+https://github.com/BrunoScaglione/Awesome-Bioinformatics
+https://github.com/mdozmorov/Bioinformatics_notes/fork
+https://github.com/BrunoScaglione/training-collection

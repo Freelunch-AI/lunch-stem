@@ -1,0 +1,5 @@
+outs:
+- md5: 538c23c6f9ed379fe3a7e867a792c7b9
+  size: 360757
+  hash: md5
+  path: week0.pdf

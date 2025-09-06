@@ -1,0 +1,5 @@
+outs:
+- md5: 80f1530067619dc9ec37f904da4bd6ba
+  size: 611748
+  hash: md5
+  path: coding_theory-lecture-notes.pdf

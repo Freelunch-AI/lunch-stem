@@ -1,0 +1,5 @@
+outs:
+- md5: 41f504776efe3bfd7f76b3d3419f56ac
+  size: 1915915
+  hash: md5
+  path: 05-context-free-languages.pdf

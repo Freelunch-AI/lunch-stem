@@ -1,0 +1,3 @@
+https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html
+https://transformer-circuits.pub/2022/toy_model/index.html
+https://transformer-circuits.pub/2021/framework/index.html

@@ -1,0 +1,17 @@
+Aula 1: Busca de Armijo e convergência global via análise de complexidade:
+https://drive.google.com/file/d/1R5FTrxyDyo_4Q-2rXIwLEQlkn55jP6eD/view
+
+Aula 2: Teorema de convergência global:
+https://drive.google.com/file/d/1FAYHf2e4nsi9YVhtcIQr0Z7dzxaJV937/view
+
+Aula 3: Perturbação de inversa e método de Newton:
+https://drive.google.com/file/d/1rFRBDGRbA1OJJwJvy2O-CU2wZ4u4APSe/view
+
+Aula 4: Teorema convergência quadrática de Newton:
+https://drive.google.com/file/d/1yjRzhyx1MwQ1GQaNA452sez5x0rZE074/view
+
+Aula 5: Método de Newton para minimização, Quase-Newton e Newton globalizado.:
+https://drive.google.com/file/d/1zbCohHLfo7yKi8gDcvFWVwTPtmlpI7EP/view
+
+Aula 6: Newton globalizado, Gauss-Newton, Levenberg-Marquardt, Globalização via fatoração de Cholesky:
+https://drive.google.com/file/d/1GpDLjD8KzzWA3ta_M22heDBTAkVH5kjm/view

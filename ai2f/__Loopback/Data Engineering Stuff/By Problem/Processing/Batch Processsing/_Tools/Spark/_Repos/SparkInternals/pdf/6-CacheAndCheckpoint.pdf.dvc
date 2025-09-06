@@ -1,0 +1,5 @@
+outs:
+- md5: 47e447d632a45a9dac18228ea598f189
+  size: 2016578
+  hash: md5
+  path: 6-CacheAndCheckpoint.pdf

@@ -1,0 +1,61 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "John Thickstun",
+      "university": "University of Washington"
+    },
+    {
+      "name": "J G Daugman",
+      "university": null
+    },
+    {
+      "name": "J G Daugman",
+      "university": null
+    },
+    {
+      "name": "Dr. Emily White",
+      "university": "The Open University"
+    },
+    {
+      "name": "J G Daugman",
+      "university": null
+    },
+    {
+      "name": "Andrew Ng",
+      "university": "Stanford University"
+    },
+    {
+      "name": "Dr. Alice Smith",
+      "university": "University of Washington"
+    },
+    {
+      "name": "J G Daugman",
+      "university": null
+    },
+    {
+      "name": "J G Daugman",
+      "university": null
+    },
+    {
+      "name": "Andrew Ng",
+      "university": "Stanford University"
+    },
+    {
+      "name": "John Doe",
+      "university": "Stanford University"
+    },
+    {
+      "name": "Jane Smith",
+      "university": "Stanford University"
+    }
+  ],
+  "university_course_name": null,
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 15,
+  "size_mb": 8.06,
+  "link_to_license": null,
+  "changes_were_made": false
+}

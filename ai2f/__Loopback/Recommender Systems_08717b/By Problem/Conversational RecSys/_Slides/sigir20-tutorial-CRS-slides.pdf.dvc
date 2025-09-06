@@ -1,0 +1,5 @@
+outs:
+- md5: 53a5173b0b342d9d24a698b25d7e1a7a
+  size: 9866617
+  hash: md5
+  path: sigir20-tutorial-CRS-slides.pdf

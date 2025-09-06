@@ -1,0 +1,3 @@
+https://github.com/gothinkster/realworld
+https://github.com/techschool/simplebank
+https://github.com/DevOpsPlayground

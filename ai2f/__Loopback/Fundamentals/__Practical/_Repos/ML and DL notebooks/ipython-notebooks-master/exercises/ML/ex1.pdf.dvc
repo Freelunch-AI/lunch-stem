@@ -1,0 +1,5 @@
+outs:
+- md5: c1c6a63c265232057c18f9c9522fb265
+  size: 514132
+  hash: md5
+  path: ex1.pdf

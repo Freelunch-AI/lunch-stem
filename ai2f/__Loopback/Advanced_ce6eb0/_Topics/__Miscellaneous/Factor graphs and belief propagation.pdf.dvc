@@ -1,0 +1,5 @@
+outs:
+- md5: 58556ceec1e4039f78efdce7c7326362
+  size: 130263
+  hash: md5
+  path: Factor graphs and belief propagation.pdf

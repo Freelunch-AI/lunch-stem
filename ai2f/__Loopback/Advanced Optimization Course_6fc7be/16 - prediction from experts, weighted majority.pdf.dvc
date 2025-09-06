@@ -1,0 +1,5 @@
+outs:
+- md5: 9833695ec2b22d1a0fac858d4280f046
+  size: 329049
+  hash: md5
+  path: 16 - prediction from experts, weighted majority.pdf

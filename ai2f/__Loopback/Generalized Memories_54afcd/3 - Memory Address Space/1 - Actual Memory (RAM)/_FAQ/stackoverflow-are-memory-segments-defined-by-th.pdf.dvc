@@ -1,0 +1,5 @@
+outs:
+- md5: 95595e1fff423b84e444f2fd3454e9aa
+  size: 59251
+  hash: md5
+  path: stackoverflow-are-memory-segments-defined-by-th.pdf

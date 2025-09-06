@@ -1,0 +1,5 @@
+outs:
+- md5: 2c27d3eb55a4436e6695eae63c65405d
+  size: 3265826
+  hash: md5
+  path: intel_tgn.pdf

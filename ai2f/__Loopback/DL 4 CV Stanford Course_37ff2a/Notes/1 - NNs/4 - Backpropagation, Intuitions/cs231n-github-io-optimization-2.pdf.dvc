@@ -1,0 +1,5 @@
+outs:
+- md5: 27339e15f098c65074cd86e6e4659e4d
+  size: 272442
+  hash: md5
+  path: cs231n-github-io-optimization-2.pdf

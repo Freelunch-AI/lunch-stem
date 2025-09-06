@@ -1,0 +1,5 @@
+outs:
+- md5: dbf08221ec7efb23665742f9058b0aed
+  size: 12735228
+  hash: md5
+  path: tut2_linalg_slides.pdf

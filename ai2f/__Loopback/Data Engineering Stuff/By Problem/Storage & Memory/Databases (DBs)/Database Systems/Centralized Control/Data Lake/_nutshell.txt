@@ -1,0 +1,1 @@
+Unstructured data, auto-scaled distributed db, with additional querying, processing, communication & security capababilites out-of-the-box

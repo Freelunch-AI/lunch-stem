@@ -1,0 +1,2 @@
+1 - Heuristic Search
+http://ggp.stanford.edu/chapters/chapter_07.html

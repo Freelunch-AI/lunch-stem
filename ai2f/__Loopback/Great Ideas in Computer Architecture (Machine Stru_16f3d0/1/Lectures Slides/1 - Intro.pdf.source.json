@@ -1,0 +1,21 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Dr. Jack Kolb",
+      "university": "Berkeley"
+    },
+    {
+      "name": "Dr. Nick Weaver",
+      "university": "Berkeley"
+    }
+  ],
+  "university_course_name": "CS61C: Great Ideas in Computer Architecture (a.k.a. Machine Structures)",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 60,
+  "size_mb": 29.16,
+  "link_to_license": null,
+  "changes_were_made": false
+}

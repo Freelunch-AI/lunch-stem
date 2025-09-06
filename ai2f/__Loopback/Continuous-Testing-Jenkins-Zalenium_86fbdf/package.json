@@ -1,0 +1,18 @@
+{
+  "name": "PG",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "wdio-mocha-framework": "^0.6.1",
+    "webdriverio": "^4.13.2",
+    "wdio-allure-reporter": "~0.8.2"
+  }
+}

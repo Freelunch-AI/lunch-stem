@@ -1,0 +1,79 @@
+1
+	Intro
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L01/Class.html
+-----------------------------
+2
+	The Unix philosophy and "the shell" - intro to bash
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L02/Class.html
+-----------------------------
+3	login and rc files, the login process
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L03/Class.html
+-----------------------------
+4	
+	A C Primer Part I
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L04/Class.html
+-----------------------------
+5
+	More C
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L05/Class.html
+-----------------------------
+6	
+	C vs Unix, Does anybody really know what time it is?
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L06/Class.html
+-----------------------------
+7
+	Birth & death of a C program; exit
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L07/Class.html
+-----------------------------
+8
+	Programs, Processes and Memory
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L07/Class.html
+-----------------------------
+9
+	The Unix Filesystem
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L09/Class.html
+-----------------------------
+10
+	Fork
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L10/Class.html
+-----------------------------
+11
+	Exec
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L11/Class.html
+-----------------------------
+12
+	Signals
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L12/Class.html
+-----------------------------
+13
+	IPC with pipes
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L13/Class.html
+-----------------------------
+14
+	Concurrency I
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L14/Class.html
+-----------------------------
+15
+	Concurrency II
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L15/Class.html
+-----------------------------
+16
+	Concurrency III
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L18/Class.html
+-----------------------------
+17
+	Networks I
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L20/Class.html
+-----------------------------
+18
+	Networks IV, a TCP simple server
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L21/Class.html
+-----------------------------
+19
+	Networks V, a UDP Client
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L22/Class.html
+-----------------------------
+20
+	Networks VI, a UDP Server
+	https://www.usna.edu/Users/cs/wcbrown/courses/IC221/classes/L23/Class.html
+-----------------------------

@@ -1,0 +1,57 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Prof. Serge Belongie",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Kuowei Tseng",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Mengjue Wang",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Ming Chen",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Haotian Zhang",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Zaid Haque",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Brook Du",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Han Nie",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Kelly Wang",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Feston Kastrati",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Vijay Pillai",
+      "university": "Cornell Tech"
+    }
+  ],
+  "university_course_name": "CS 5785 Applied Machine Learning",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 7,
+  "size_mb": 1.75,
+  "link_to_license": null,
+  "changes_were_made": false
+}

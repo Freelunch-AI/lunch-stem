@@ -1,0 +1,5 @@
+outs:
+- md5: dfc9bcb15f0d05296f45ea184df1eda9
+  size: 722906
+  hash: md5
+  path: 05_01_ransac_ransac.pdf

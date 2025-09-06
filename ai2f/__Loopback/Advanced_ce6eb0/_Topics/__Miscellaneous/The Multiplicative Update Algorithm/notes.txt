@@ -1,0 +1,239 @@
+		15-859(B) Machine Learning Theory            01/20/10
+Online learning contd
+* The Winnow algorithm for disjunctions
+* Winnow for k-of-r functions and general LTFs in terms of L_1 margin
+* If time: Infinite-attribute model, string-valued features
+=======================================================================
+
+WINNOW ALGORITHM
+================
+If you think about the problem of learning an OR-function, we
+saw an algorithm: "list all features and cross off bad ones on
+negative examples" that makes at most n mistakes.  But, what if most
+features are irrelevant?  E.g., if representing a document as vector
+indicating which words appear in it and which don't, then n is pretty
+large!  What if the target is an OR of r relevant features where r is
+a lot smaller than n.  Can we get a better bound in that case?
+
+What could we do if computation time were no object?  How many bits to
+describe an OR of r variables, where r << n?  Ans: O(r log n).  So, in
+principle, we'd like to obtain a bound like this.
+
+Winnow will give us a bound of O(r log n) mistakes efficiently.
+
+So, this means you only have a small penalty for "throwing lots of
+features at the problem".  In general, will say that an algorithm with
+only polylog dependence on n is "attribute-efficient".  
+
+Winnow Algorithm: (basic version)
+
+1. Initialize the weights w_1, ..., w_n of the variables to 1.
+
+2. Given an example x = (x_1, ..., x_n), output + if
+	w_1x_1 + w_2x_2 + ... + w_nx_n >= n,
+   else output -.
+
+3. If the algorithm makes a mistake:
+
+  (a) If the algorithm predicts negative on a positive example, then
+  for each x_i equal to 1, double the value of w_i.
+
+  (b) If the algorithm predicts positive on a negative example, then
+  for each x_i equal to 1, cut the value of w_i in half.
+
+4. repeat (goto 2)
+
+THEOREM: The Winnow Algorithm learns the class of disjunctions in the
+Mistake Bound model, making at most 2 + 3r(1 + lg n) mistakes when the
+target concept is an OR of r variables.
+
+PROOF: Let us first bound the number of mistakes that will be made on
+positive examples.  Any mistake made on a positive example must double
+at least one of the weights in the target function (the *relevant*
+weights), and a mistake made on a negative example will *not* halve
+any of these weights, by definition of a disjunction.  Furthermore,
+each of these weights can be doubled at most 1 + lg(n) times, since
+only weights that are less than n can ever be doubled.  Therefore,
+Winnow makes at most r(1 + lg(n)) mistakes on positive examples.
+
+Now we bound the number of mistakes made on negative examples.  The
+total weight summed over all the variables is initially n.  Each
+mistake made on a positive example increases the total weight by at
+most n (since before doubling, we must have had w_1x_1 + ... + w_nx_n
+< n).  On the other hand, each mistake made on a negative example
+decreases the total weight by at least n/2 (since before halving, we
+must have had w_1x_1 + ... + w_nx_n >= n).  The total weight never
+drops below zero.  Therefore, the number of mistakes made on negative
+examples is at most twice the number of mistakes made on positive
+examples, plus 2.  That is, 2 + 2r(1 + lg(n)).  Adding this to the
+bound on the number of mistakes on positive examples yields the
+theorem.  QED.
+
+Open question: is there an attribute-efficient algorithm for Decision
+Lists?  Want mistake bound poly(L, log n), where L is length of list.
+
+Open question: There is no known poly-time algorithm for performing
+nearly as well as the *best* OR-function when none is perfect.  Best
+known guarantees are (1) sqrt(n) factor worse, or (2) # mistakes
+proportional to the number of *attribute errors* of the best OR
+function (# bits you'd need to flip in the examples to make them
+consistent).  Alternatively, you can run RWM with one expert per OR
+function but that's not poly-time...
+
+--------------------------------------------------------------------------
+
+Winnow for Majority Vote functions
+===================================
+
+How about learning a majority-vote (k of r) function:  n variables
+total, r are relevant, and an example is positive iff at least k are
+on.  (Classify as SPAM if at least k keywords are present).
+
+Say we know k.  Let epsilon = 1/(2k).  Our algorithm will multiply by
+1+epsilon for mistakes on positives, and divide by 1+epsilon for
+mistakes on negatives. 
+
+Think of multiplying by 1+epsilon as putting a poker chip on the weight,
+and dividing as removing the chip (can have neg chips).
+
+Max number of chips on relevant weights <= r*log_{1+epsilon}(n).
+
+M.on pos.:put >= k chips on rel weights. Total weight up by at most epsilon*n
+M.on neg.:take <=k-1 off rel weights. total wt down by at least n(eps/(1+eps))
+
+Use to create two inequalities in two unknowns:
+
+k*(M_pos) - (k-1)*(M_neg) <= r*log_{1+epsilon}(n)
+
+total weight >= 0.  Or,
+n + (M_pos)*n*epsilon >= (M_neg)*n*(epsilon/(1+epsilon))
+
+Solve: Rewrite 2nd inequality as: M_neg <= (1+eps)M_pos + (1+eps)/eps.
+Plug into first, and use log_{1+eps}(n) ~ (1/eps)*ln(n) to get:
+
+  k*M_pos - (k-1)(1+eps)M_pos <= (r/eps)*ln(n) + (k-1)(1+eps)/eps
+
+Now we have set eps = 1/2k so that (k-1)(1+eps) < k - 1/2, so we get:
+
+                   (1/2)M_pos <= (r/eps)*ln(n) + (k-1)(1+eps)/eps
+
+So M_pos = O(rk*log(n)), and same with M_neg.
+
+What if don't know k??
+
+If know r, then can guess and double.  If dont, can guess and double r
+too, but then cost is O(r^2*log(n)).  So we have:
+
+THEOREM: Winnow learns the class of "k of r functions" with at most
+O(r^2 log n) mistakes.
+
+----------------------------------------------------------------
+
+
+Using Winnow for general LTFs
+=============================
+What if the target is a general linear threshold function of the form
+w*_1 x_1 + ... + w*_n x_n >= w*_0?
+
+Let's scale so that all weights are integers, and assume all are
+non-negative (can do that by introducing new variables y_i = 1-x_i).
+
+Let W = w*_1 + ... + w*_n.
+
+If we know W (or say W is just an upper bound on true value) then we
+can solve the problem like this:  just repeat each variable W times.
+We then have a "k=w*_0 out of r=W" problem, so we get a mistake-bound
+of O(W^2 log(nW)).
+
+Now, here's a cute thing: the above algorithm --- repeating each variable
+W times --- does *exactly* the same thing if we had run the algorithm
+without repeating each variable! (it's equivalent to initializing each
+weight to W instead of 1 and using a threshold of nW instead of n,
+which is the same as initializing weights to 1 and a threshold of n)
+So, we really didn't have to do anything!
+
+So, we get a good bound as a function of the L_1-size of the
+solution.  Can in fact remove W from log as well.
+
+More generally can directly argue using the same basic analysis that
+if the target vector w* is a general LTF such that w* \cdot x > c on
+positives and w* \cdot x < c - alpha on negatives, then the mistake
+bound is O((L_1(w*)/alpha)^2 log(n)).  I.e., don't have to assume
+integer weights.  Can extend also to the case where features x_i aren't
+just {0,1}.  In that case, need to multiply L_1(w*) by L_\infty(X),
+the maximum magnitude of any feature in the instance space.
+
+[Will this on hwk 2]
+
+The quantity gamma = alpha/[L_1(w^*)L_infty(X)] is called the "L_1
+margin" of the separator, and our bound is O((1/gamma^2)*log(n))
+
+The perceptron algorithm, which we'll look at next time, has a mistake
+bound of O(1/gamma^2) where gamma = alpha/[L_2(w*)L_2(X)].  If "n" is
+large but most are irrelevant (i.e. target is sparse but examples are
+dense), then Winnow is better because adding irrelevant features
+increases L_2(X) but not L_infty(X).  On the other hand, if the target
+is dense and examples are sparse, then perceptron is better.
+
+-------------------------------------------------------------------
+[probably won't have time for this]
+
+
+String-valued features and the IA model
+=======================================
+The discussion so far has focused on learning over the instance space
+{0,1}^n. I.e., examples have n Boolean-valued attributes.
+Another common setting is one in which the attributes are
+string-valued; that is, X = (\Sigma^*)^n.  For instance, one
+attribute might represent an object's color, another its texture, etc.
+If the number of choices for each attribute is small, we can just
+convert this to the Boolean case, for instance by letting ``x_1 =
+red'' be a Boolean variable that is either true or false in any
+given example.  However, if the number of choices for an attribute is
+large or is unknown apriori, this conversion may blow up the number of
+variables.  
+
+Question: how does this change the learning problem?
+
+This setting is a version of the Infinite Attribute model.  Here, we
+have an infinite number of boolean features but each example has at
+most n that are "on".  Example described as the set of the
+on-features.  Goal is to be polynomial in n.  E.g., if we think of
+representing email messages by the set of words in them, then here n
+is the maximum number of words in a given email message, which might
+be much smaller than the total size of the dictionary.
+
+These two models (n string-valued features, or just an example is a
+list of at most n strings) are basically equivalent.
+
+Claim: can use Winnow to do well in this model.  Idea:
+
+   Say we know r.  solve for smallest N >= n*(MB of Winnow)
+                                         = n*(3r(log N + 1) + 2).
+        (e.g., N = n*r^2 is sufficient if r and n are large, since RHS
+         gives us O(nrlog(nr)) < rn^2)
+
+   Define y_1, ..., y_N as N boolean features.  What we'll do is
+   assign these to strings as they come up in examples that winnow
+   makes a mistake on. 
+
+   Say we see example: (buy xanax real cheap).  Then we'll
+   *temporarily* assign y_1 = "buy", etc.  Give winnow the
+   example:  1 1 1 1 0 0 ... 0
+
+   If we make a mistake, we make this assignment permanent.  Otherwise
+   we undo it (we forget we ever saw the example).
+
+   Claim: What winnow sees is consistent with an OR of r boolean features.
+
+   So, by its mistake bound and the defn of N, we won't ever run out
+   of y's to assign.
+
+   # mistakes at most 3r(log N + 1) + 2, which is O(rlog(nr)).
+
+In general: any algorithm that is Attribute-Efficient (or even has up to
+an n^{1-epsilon} dependence on the total number of variables) can be
+translated to this model.
+
+Note: decision list alg (from your hwk) fails.  Not known if it is
+possible to learn DLs in this setting mistake bound poly(n,L).

@@ -1,0 +1,13 @@
+
+Idea
+
+
+
+Decoding problems, such as
+
+look a bit like Boltzmann machines + Hopfield networks.... so
+
+Solve the decoding problem
+
+using variational methods?
+

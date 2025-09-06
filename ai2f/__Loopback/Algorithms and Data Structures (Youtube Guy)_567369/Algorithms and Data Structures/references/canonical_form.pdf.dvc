@@ -1,0 +1,5 @@
+outs:
+- md5: c504a7faa12d8ffb39f13c0efd1612c2
+  size: 83807
+  hash: md5
+  path: canonical_form.pdf

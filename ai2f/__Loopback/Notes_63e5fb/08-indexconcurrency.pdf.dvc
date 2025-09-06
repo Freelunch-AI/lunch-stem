@@ -1,0 +1,5 @@
+outs:
+- md5: c0512f868d2093b80b0246007171472d
+  size: 79028
+  hash: md5
+  path: 08-indexconcurrency.pdf

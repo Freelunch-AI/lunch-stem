@@ -1,0 +1,5 @@
+outs:
+- md5: 058179439543a537e7e30fe12514678b
+  size: 158181
+  hash: md5
+  path: directional-derivative.pdf

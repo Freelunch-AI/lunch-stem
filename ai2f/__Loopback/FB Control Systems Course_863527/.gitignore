@@ -1,0 +1,26 @@
+/1 - Intro.pdf
+/10 - State-space model features.pdf
+/11 - Controllability.pdf
+/12 - Full-state feedback control.pdf
+/13 - Pole placement approach.pdf
+/14 - LQ servo introduction.pdf
+/15 - Open-loop and closed-loop estimators.pdf
+/16 - Combined estimators and regulators.pdf
+/17 - Adding reference inputs.pdf
+/18 - LQ servo - improving transient performance.pdf
+/19 - Deterministic linear quadratic regulator (.pdf
+/2 - Basic root locus - analysis and examples.pdf
+/20 - Linear quadratic Gaussian (LQG).pdf
+/21 - Digital control basics.pdf
+/22 - Systems with nonlinear functions.pdf
+/23 - Analysis of nonlinear systems.pdf
+/24 - Overview of nonlinear control synthesis.pdf
+/25 - Anti-windup.pdf
+/26 - Closed-loop system analysis.pdf
+/3 - Frequency response methods.pdf
+/4 - Control design using Bode plots.pdf
+/5 - Introduction to state-space models.pdf
+/6 - Estimation and Control of Aerospace Systems.pdf
+/7 - Developing state-space models based on tran.pdf
+/8 - State-space models - basic properties.pdf
+/9 - System zeros and transfer function matrices.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 87cd392850b52ddf486cdb1d9e6ec2d2
+  size: 32278340
+  hash: md5
+  path: GPUArchitecture.pdf

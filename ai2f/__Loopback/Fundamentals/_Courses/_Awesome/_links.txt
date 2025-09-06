@@ -1,0 +1,2 @@
+https://developers.google.com/machine-learning/crash-course/ml-intro?hl=en
+https://mlcourse.ai/book/index.html

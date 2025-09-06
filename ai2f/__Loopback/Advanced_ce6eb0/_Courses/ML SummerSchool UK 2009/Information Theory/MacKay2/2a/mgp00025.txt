@@ -1,0 +1,5 @@
+
+Explain the Huffman algorithm on the blackboard
+
+
+

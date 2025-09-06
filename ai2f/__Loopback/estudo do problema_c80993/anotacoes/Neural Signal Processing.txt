@@ -1,0 +1,3427 @@
+===============================
+
+*1 Playlist - Neural signal processing and analysis: Zero to Hero
+4) Syncronisation
+url: https://www.youtube.com/watch?v=ardi0hO6lOU&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs
+------------------------
+
+title: * - Four things to keep in mind about connectivity
+
+url: https://www.youtube.com/watch?v=ardi0hO6lOU&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs
+
+notes:
+
+#Things to keep in mind about connectivity
+- bi vs multivariate interactions
+	bivariate is simplification but is what is used usually
+	basicamente existem dinamicas muito mais complicadas do q simplisment tirar conclusoes de um canal de eeeg por ex
+- volume conduction
+	source of magnetic waves affects morethan on eletrode, ruining independence of eletrodes	
+- connectivity over time vs trials
+	avarage over trails or time
+- directionality
+	the brain is causal, some activity causes activity in another region -> is directional
+	symetric, acausal ou functional metric of synchronisation
+		- we very often apply, like correlation (we dont know which the direction of causal effect, or even if it is causal 
+		(may be just suprious correlation, a cause being a something external))
+			
+------------------------
+
+title: *1 - Volume conduction
+
+url: https://www.youtube.com/watch?v=74qX6zG5Hn4&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=2
+
+notes:
+
+predictions from volume conduction
+	- zero or pi phase lag
+	- decreasing synchroniszation strengh with increasing
+	disance
+	- all positive correlations in frequency domain (where there are no negative values)
+	- correlation between synchronization and power at the same frequency
+		power vs frequency(hz) with time (ms) 
+ 		and synchinisation vs vs frequency(hz) with time (ms) should look very similar
+
+
+startegias to mitigate volume conduction artifacts
+	1. Use spatial filter (Laplacian, ICA, GED, dipole, beamforming)
+	2. Look for negative correlations (for power time series)
+	3. Test for temporal lags
+	4. Focus on condition differences (if power not differ)
+	5. Examine cross-frequency interactions
+	6. Test for dissociation of local power ans synchronization
+	7. statiscally test phase lag against 0 or pi
+	8. use phase-lag based measures
+	9. compute partial correaltions (for power time series anlysis)
+	10. remove real part of time series (for power time series)
+
+
+------------------------
+
+title: *1 - Intuition about phase synchronization
+
+url: https://www.youtube.com/watch?v=MTPE4k8X2tk&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=3
+
+notes:
+
+Fica mt mais difícil atingir o treshold pra o action potential (transmitir sinal) entre azul e preto, 
+pois o sinal chegando tem que ser mt positivo pra compensar o negativo jah existente no neurônio. 
+
+Isso eh a explicação do hebbian learning e neurplasticity
+
+Eh análogo a redes neurais articiais, em que um neurônio de uma camada anterior não consegue transmitir 
+sua informação par aum neurônio seguinte, se os outros neurônios da sua camada estiverem negativos e a função de ativação usada for relu
+
+- timing is important (not amplitude)
+- consistency in phase difference, not relative phase, is important (inclding relative phase)
+- synchronization is dynamic over time (by changes in frequency)
+------------------------
+
+title: *1 - Inter-site phase clustering (ISCP); pahse synchronization
+
+url: https://www.youtube.com/watch?v=4vwj7t6yDQk&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=4
+
+notes:
+
+- reminder of phase angle time series
+	
+- averaging phase values
+
+- mean vector lenght
+
+- formula for ISPC
+
+tudo no word
+
+------------------------
+
+title: *1 - Surface Laplacian for connectivity analyses
+
+url: https://www.youtube.com/watch?v=CodQ5-pmXdQ&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=5
+
+notes:
+
+best spatial filter for eletrolevel syncronisation analysis
+
+tudo no word
+
+retira frquencias baixas, e fica soh com frequencias altas de dinamicas locais
+
+funciona pegando a segunda derivada na superficie
+
+os eltrodos ficam independetes, mas ai a gente tb ta descartando sinais que tao vindo lah de dentro  e afetando varios eltrodos
+
+a medida de coherence (que tava num paper) tem o mesmo objetivo disso
+
+tirar o sinal debaixo do 1/f no power spectrum eh tipo isso tb
+
+anotacao minha: as dinamicas locais de um eletrodo tambem afetam os outros eltrodos, mas isso nao vai ser filtrado pleo laplaciano,
+pq nao causa frequencia baixa
+------------------------
+
+title: *1 - Phase-lag-based connectivity
+
+url: https://www.youtube.com/watch?v=jdY-qHz6Zo8&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=6
+
+notes:
+
+- The motivation for ignoring 0 and pi phase lags
+	0 and because its an dipole
+	flow of ions is going to be positive in one direction and negative in the oposite direction
+	so eletrodes in opposite directions, relative to the source of the signal (population of neurons activation) 
+	will have one 0 lag and other pi lag
+
+anotacao minha: nao tem como melhorar os eltrodos pra  soh receber sinal de uma direcao, alguma coisa assim?
+
+anotacao importante: 
+	mas isso assume que estamos fazendo uma anlaise bivariada(simplificada) pois por ex:
+	poderiamos ter um sinal dos eltrodos lagados com 0 de fase, e chegar a conclusao que tem uma source na no meio afetando os dois
+	mas isso pode ter sido resultado duma soma de dinamicas locais em um eletrodo que acabou ficando, por coincidencia, sem lag com a 
+	soma de dinamicas locais do outro eletrodo. Ou o contrario. E claro,  interpolacoes entre essas duas opções. 
+	Assumindo aqui que as dinamicas locais de um eletrodo nao influenciam no outro soh pro argumento.
+	
+- How phase-lag connectivity works
+	obs: na formula, que ta no word, sgn eh sign()	
+
+
+------------------------
+
+title: *1 - When to use phase-lag vs phase clustering measures
+
+url: https://www.youtube.com/watch?v=An1sqkLRPz4&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=7
+
+notes:
+
+- why phase-lag based connectivity must be iterpreted cautiosly
+	
+- when to use phase-lag vs ISPC for connectivity
+	phase lag
+		- can miss true connectivity
+		- no confound of volume conduction
+		- best for exploratory analyses
+			- lots of anlyses, cannot get wrong to choose what to do nexxt
+	phase clustering
+		- best for hypothesis driven analyses
+		- maximal sensitivity to detect effects
+		- potential of volume conduction artifacts
+			- already chosen what to do, have to get it precise effects, 
+			not lots of analyses so cant affor to lose cusal correlations
+	best to use both usually
+
+------------------------
+
+title: *1 - Connectivity over time vs over trials
+
+url: https://www.youtube.com/watch?v=UNj6f_4b8lU&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=8
+
+notes:
+
+over time
+	- resting-state or long tasks
+	- no or poor temporal resolution
+	- use when: resting-state or single-trial connectivity
+over trials
+	- common for trial-based design
+	- maximize temporal resolution
+	- use when: phasic changes in task experiments
+
+------------------------
+
+title: *1 - Two methods of power-based connectivity
+
+url: https://www.youtube.com/watch?v=A-JzJTR9OYY&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=9
+
+notes:
+
+obs: connectivity means causal correlation of firing neurons, but we dont knowing the direction
+bacialy means not supurious correlation by volume conduction
+
+obs: There isnt that much theory behind this method
+
+- using ampltitude time series correlations
+	- amplitude envolope correlations
+	- imagem no word
+
+- trial-to-triasl powerc coupling
+	- correlate two vectors (of two eletrodes), each vector is composed of the avg value of poweer 
+	in a given region in the powerx(freqxtime) plot, for each trial
+	- regions of each eltrode can be tottaly different
+	- ta no wrod imagem
+
+obs: bonferroni correction:
+	is an djustment to p-values that is "supposed to be" applied, when two or more statistical
+	analyses have been performed on the *same* sample of data. 
+	
+	the correction is supposed to be applie, as the familywise type 1 error rate is known to be larger 
+	than the per anlysis error rate (i.e alpha = 0.05)
+
+
+	Family wise error rate: the prob of comitting one type 1 error amogst two or more statistical anlyses 
+	on the same sample of data
+
+	formulas in word
+	
+------------------------
+
+title: *1 - granger "causality" (prediction)
+
+url: https://www.youtube.com/watch?v=XqsSB_vpHLs&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=10
+
+notes:
+
+finally we are seing a method of directional connectivity
+as opposed to those explained before which were biderectional
+
+
+- concern over name
+	
+
+- autoregressive modeling
+
+- how granger causality works
+	neither implies causality or requires causality
+	imagens no word
+	- autoregreesive models
+	- when x and y independent -> e = epslon -> GC = log(1) = 0
+	- when y explains x -> epslon < e -> GC > 0
+	parameters:
+		- time window: compute GC in windows for the two time series
+		- order: order of the autoregressive model, how much time we are looking back
+			use bayes information criteria (BCI) as a rough guideline
+	- spectral granger causality
+		Narrowband filtering and applying GC is the wrong procedure
+		Instead, a Fourier-transfrom like Transfer function is applied to the atoregressive coefficients
+
+------------------------
+
+title: *1 - "Hubness" from graph theory
+
+url: https://www.youtube.com/watch?v=Iubs6weMXZQ&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=11
+
+notes:
+
+- representing networks using graphs and matrices
+	- imagem word
+	- hub is a really important node in the network
+	- each node has a measure of hubness
+- computing and interpreting "hubs" in networks
+	- iamgem word
+- reminder of caution in over-interpreting connectivity
+from non-invasive measures
+
+
+------------------------
+
+title: *1 - When to use which connectivity method?
+
+url: https://www.youtube.com/watch?v=xXER2E9Eqq8&list=PLn0OLiymPak1wp4wMQ7tbYrtyFUatMVJs&index=12
+
+notes:
+
+possibilities:
+	- phase sync
+	- phase lag index
+	- weighted PLI
+	- Debiased wPLI
+	- Phase slope index
+	- cross-freq coupling
+	- imaginary coherence
+	- spectral coherence
+	- mutual information
+	- granger causality
+	- transfer entropy
+	- freq flows
+	...
+
+
+considerations:
+	volume conduction issues?	
+	directed synchronization?
+	physiological constraints?
+	replicating/following-up on previous research?
+	hypothesis-driven or exploratory?
+
+
+------------------------
+
+===============================
+
+*2 - Playlist Neuroscience source separation (3-part lecture series)
+url: https://www.youtube.com/playlist?list=PLn0OLiymPak2PX8sAmypP1zuPmchxvz8_
+
+------------------------
+title: *2 - Neuroscience source separation 1a: Spectral separation
+
+url: https://www.youtube.com/watch?v=S_RrWZ4eXoE&list=PLn0OLiymPak2PX8sAmypP1zuPmchxvz8_
+
+notes:
+
+how sources can be separated?
+	- anatomical source separation
+	- cognitive source separation
+	- temporal source separation
+		- spectral separation
+			assumes sources can be separable in the frequency domain
+	- spatial source separationn
+
+imagens no word
+
+time-freq via gaussian  filter-hilbert
+	- is a band-pass filter of the original signal (excluded distant freq)
+		each band pass filter(f) where f is the mean of the gaussian used to filter, in hz
+		corresponds to one row in  freq time plot, and then we get power by sqaring amplitude envelope
+
+------------------------
+title: *2 -  Neuroscience source separation 2a: Spatial separation
+
+url: https://www.youtube.com/watch?v=78Sc6rijNV4&list=PLn0OLiymPak2PX8sAmypP1zuPmchxvz8_&index=3
+
+notes:
+
+different of making assumptions about the real sources to recostruct aproximate sources in form of components
+	-ica (ind comp analysis)
+		based on assumption that signals are non-gaussian distributed
+		applications include artifact subtraction, sound localization, chemometric, and the large-scale structure of the universe
+
+		in contrast assumes noise as gaussian distributed
+	-pca (prin comp analysis)
+		analogy of paper sheet
+
+		for cov matrix, eigen vectors represent directions of most variance
+		weighting channels in a way that produces most variance when applied the weithted sum
+		this is when we get most covariance in cov matrix also (using weithed channels)
+		
+		eigen values tell the magnitutude of the contribution of  the eigenvector (vectr of weights), we sort the compoonents by it
+		eigen vectors tells us the actual weights, ou better, as vector whwre we project our data (dot product)
+
+		limitations:
+			- pc's of cov matrices are ortogonal becuase cv matrice are simetric
+			- assumes variance = relevance, which can be false sometimes
+			- Nulllhypothesis of pcs is that each channel has null correlation to every other channel	
+	-ged(generalized eigen decomposition)
+		(R^-1* S) is necessarily symetric, o componnents are not restraint to be ortogonal
+		weighting channels in a way that produces biggest ratio of covariances matrices R and S when applied the weithted sum
+
+imagens no word
+
+
+obs: A null hypothesis is a type of hypothesis used in statistics that proposes that there is no difference between certain characteristics of a 
+population (or data-generating process)
+
+------------------------
+title: *2 - 3a: Multivariate cross-frequency coupling
+
+url: https://www.youtube.com/watch?v=pZBq_Im6Xr4&list=PLn0OLiymPak2PX8sAmypP1zuPmchxvz8_&index=5
+
+notes:
+
+cross frequcny coupling (CFC) is a statstical relationship between activity in two different freq bands
+two signals interaction with each other that create a relationship between  statistics in each of them
+ex: fase-amplitude coupling: amplitude of faster rythm is higher when lower rythm is at its positive peak, at gets lower when slower ryhtm distances from positive peak
+also have: all combinations of power, phase and frq 2 by two coupling
+
+its like a hierachical structure, general slower computations enables local computations in some condition
+
+
+Problem: CFC methods do not measure CFC
+
+Most measures of CFC cannot distinguish between "real" CFC and harmonics/dynamics resulting
+from non-stationary narrowband activity, aka, somlicated signals
+
+This makes it difficult to use CFC measures to infer CFC, without additional data investigations
+	and we know that brain waves can often be not sinusoidal
+
+The gedCFC aproach
+
+Assumptions:
+	1.CFC reflects regulation of two distinct populations
+	of neurons. Those populations an be spatially overlapping
+	and spatially correlated, but must be linearly separable
+
+	2.Those networks must be spatially stationary
+
+	3. There must be "many" eletrodes that pick upfields from these populations
+
+
+Benefits:
+	1. Higher SNR due to "smart" avareging over many eletrodes
+	2. Completely robust to the confounds of univariate CFC.
+	3. Many to customize the anlysis for specific hypothesis
+
+Limitations:
+	1. may require additional data cleaning or preparation
+	2. Many ways to customize the anlysis for specific hypothesis
+
+
+how it works: data that create R matrix is the raw data itslef(after preprocessing etc) of all the channels
+but the data that creates S is from concatanatin chunks of time of the channels that ccorrespond to the low peak 
+of the theta low freq rythm underlying the data, assuming we already got such a signal to work with
+
+we find wieghts the maximily differentiate the signal during theta lows to the whole signal
+
+eu acho que o resultado do coupling eh o envolope de amplitude que sai como resultado dos w*channels, onde w é o eigenvector correpsondente ao maior eigenvalue
+
+===============================
+
+*3 Playlist - Neural signal processing and analysis: Zero to Hero (sorce separation via temporal filtering)
+1) Introductions 
+
+url: https://www.youtube.com/playlist?list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT
+
+------------------------
+title: *3 - Neuroscience as source separation
+
+url: https://www.youtube.com/watch?v=ukjuFUghieg&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT
+
+notes:
+
+repeticao soh
+
+------------------------
+title: *3 - Origin, significance, and interpretation of EEG
+
+url: https://www.youtube.com/watch?v=Bmt89hHyxuM&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT&index=2
+
+notes:
+when use lots of eletrodes:
+if you see some different activity in just one eletrode its probably noise contamination
+
+imagens no word
+
+disavantadges of eeg:
+	- eletricla fields of neurons can cancel out
+	- misses activity of small numbers of neurons at the same time (only get signal when a lot of neurons fire at the same time)
+	- uncertanties in anatomical localization (there are methods to estimate 3d location of signals but involves a lot of uncertainty)
+		there is already so much richness in the temporal, spectral and spatial information inn the eeg that we dont have to estimate the locations
+	- data, analyses, stats, and vizualization are complicates, time-consuming and annoying
+	- high temporal precision and resulution -> can be bad in situatios where the proceess you are meassuring the person do is a slow one, and you dont know at which point to look
+		- like coming with a hypothesis of why something happened in a story
+
+------------------------
+title: *3 - Overview of possible preprocessing steps
+
+url: https://www.youtube.com/watch?v=JMB9nZNGVyk&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT&index=3
+
+notes:
+
+obs: type 1 error -> reject a true null hypothesis
+     type 2 error -> accept a false null hypothsis
+
+possible preprocessing steps:
+	- import ddata into MATLAB
+	- high-pass filter (e.g 5 hz)
+	- import channel locations
+	- rereference eog, ekg, emg
+	- epoch data around important events
+	- subtract pre-stimulus baseline
+	- adjust marker values (characterize trial according to something, study specific)
+	- manual trial rejection (which trials should be excluded due to artifacts etc)
+		algorithms tend to not work very weel in experience 
+	- mark bad electrodes
+	- avg referencce eeg channels
+		make sure reference eltrode is as clean as possible
+	- run ica to clean data
+
+------------------------
+
+title: *3 - Signal artifacts (not) to worry about
+
+url: https://www.youtube.com/watch?v=VDqwfP0mlfU&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT&index=4
+
+notes:
+
+toolbox eeglab to see eeg data
+
+artifacts:
+- eyeblinks -> comes out in the ica
+- leave tiny artifacts in there (dont remove trial) [subjective]
+- remove trial of big disperse artifacts [subjective]
+- edge artifacts (beggining or end of trial) -> will be cut off automatically of 
+the data after you apply time-freq anlyses, "buffer zone"
+- hard to tell cases of we such remove trial or not, requires anlyses and specifics of the type of study
+- giant slow meta-frequency activity 
+	-> one option is to remove eletrode of data and interpolate base don neighboor eletrodes
+	-> second: try to get it out with ica
+	-> consider getting higher quality data also
+------------------------
+
+title: *3 - Topographical mapping
+
+url: https://www.youtube.com/watch?v=2edwDBSPLFs&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT&index=5
+
+notes:
+
+- are created interpolating results of eletrodes
+
+imagens no word
+
+------------------------
+
+title: *3 - Overview of time-domain analyses (Event related potentials or ERPs)
+
+url: https://www.youtube.com/watch?v=iFWrVzLYop0&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT&index=6
+
+notes:
+
+-overview of time-domain analyses (ERP's)
+
+- you get it by avg all trials of the event (window of data)
+
+- erp avges out noise but also interesting individual dynamics that ancel each other
+
+imgs no word
+------------------------
+
+title: *3 - Motivations for rhythm-based analyses
+
+url: https://www.youtube.com/watch?v=3hk4z3yrMzk&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT&index=7
+
+notes:
+
+- explanations and examples ofphase-locked and non-phase-locked signals
+	we do time-frq analysis on each individual trial and then aavg them
+- justification of anlyses focused on rhythmic activity
+	there is something fundamentall about the organization of information over time or space where rythms 
+	and narrowband activity is important
+
+------------------------
+
+title: *3 - Interpreting time-frequency plots
+
+url: https://www.youtube.com/watch?v=s2MfmIx8wv4&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT&index=8
+
+notes:
+
+- vary fast and loose intro to spectral and time-freq analysis
+	
+- what to think and what questions to ask when looking at a time-freq plot
+
+repeticao soh
+
+how to  inspect time-frq results like a pro
+
+1. Determine ehat is being shown in the plot. Poweer,
+connectivity, correlation with behaviour, etc.
+
+2. Inspect the ranges and limits of the plot. What are the x- and
+y-axes Color scale? Is activity cut off at the edges?
+
+3. Look a the results. Distributed or localized? Why only this eletrode or time/freq window?
+
+4. Link the results to the experiment design. What is time=0?
+Multiple task event?
+
+5. Understand the statistical procedures. Thresholding? Multiple
+comparisons addressed? Exploratory?
+	if we dont see statistcs we just interpret the data qualitevely
+
+------------------------
+
+title: *3 - The empirical datasets used in this course
+
+url: https://www.youtube.com/watch?v=gUwnxmLLQwc&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT&index=9
+
+notes:
+
+word
+
+------------------------
+
+title: *3 - Where to get more eeg data?
+
+url: https://www.youtube.com/watch?v=x-jk8qDaTsc&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT&index=10
+
+notes:
+
+word
+
+------------------------
+
+title: *3 - Simulating data to understand analysis methods
+
+url: https://www.youtube.com/watch?v=AQFyrrgNCjM&list=PLn0OLiymPak0t1moK3sn4Sl1seXlEOPHT&index=11
+
+notes:
+
+- why, when and how to simulate data
+	- to make inferences about the brain
+	- constraints:
+		- biophysical
+		- cognitive
+		- morphological
+		- practical
+
+	- evaluate, understand, optimize, improve data anlysis methods
+	constraints:
+		- qualititive characteristics of real signals
+	goals:
+		- validate methods
+		- understand advantages and limitations
+		- understand your data better
+		- imporve programming and thinking skills
+	motivations:
+		- appropriate anlyses depend on data and hypotheses
+		- all analysis parameters introduce biases
+		- anlyses have different sensitivities to noise and signal features
+
+	how to simmulate data?:
+		1. pick your anlysis method
+		2. Decide the key features of the data to stimulate (based on hypothesis)
+		3. generate the data in matlab
+		4. anlyze ad compare against ground truth (qualitative or quantative)
+		5. build intuition by poking around in the data/analysis parameter space
+		6. vary parameters systematically
+
+- simulating ongoing activity (noise and signal)
+	noise:
+		- white noise
+		- pink noise (1/f) 
+			-> - closer aprox to real brian signals
+			-> numbers also from gaussian
+			-> but in freq domain, we see a fucntion 1/f (remember f is the x axis)
+				low frequncies have more power
+			-> can maniulate spectrum with 1/f^c where you choose c
+	signal:
+		- ongoing
+		- transient
+			- time domain gausssian
+			- freq domain gaussian
+				- create in freq domain and take inverse fourier tranfom to go to time domain,, gives another intersiting shape
+		- stationary
+		- non-stationary
+			- closer aprox to real brain signals
+	
+------------------------
+
+===============================
+
+*4 Playlist - Neural signal processing and analysis: Zero to Hero (sorce separation via temporal filtering)
+2) Static spectral analysis
+
+title: *4 - Time and freq domains
+
+url: https://www.youtube.com/playlist?list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A
+
+notes:
+
+check
+------------------------
+
+title: *4 - Sine waves
+
+url: https://www.youtube.com/watch?v=9RvZXZ46FRQ&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=2
+
+notes:
+
+check
+------------------------
+
+title: *4 - Complex numbers
+
+url: https://www.youtube.com/watch?v=fNfXKiIIufY&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=3
+
+notes:
+
+complex number dot conjugate   = power = maginutude^2
+------------------------
+
+title: *4 - Euler's formula
+
+url: https://www.youtube.com/watch?v=7JDaNL_P_-o&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=4
+
+notes:
+
+check
+------------------------
+
+title: *4 - the dot product
+
+url: https://www.youtube.com/watch?v=C0sPtQ3wX9o&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=5
+
+notes:
+
+check
+------------------------
+
+title: *4 - Complex sine waves
+
+url: https://www.youtube.com/watch?v=iZCDOuzfsY0&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=6
+
+notes:
+
+check
+------------------------
+
+title: *4 - The complex dot product
+
+url: https://www.youtube.com/watch?v=Xa4veFZpEkA&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=7
+
+notes:
+
+extract magnitude and phase from result of complex dot product
+
+------------------------
+
+title: *4 - Fourier coefficients
+
+url: https://www.youtube.com/watch?v=_htCsieA0_U&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=8&pbjreload=101
+
+notes:
+
+treat signal as only cossine (real) component of an complex sine wave
+so we do  the dot product of the complex sine wave of the signal and the signal of each freq
+------------------------
+
+title: *4 - Frequencies in the Fourier transform
+
+url: https://www.youtube.com/watch?v=RHjqvcKVopg&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=9
+
+notes:
+
+------------------------
+
+title: *4 - Positive and negative frequencies
+
+url: https://www.youtube.com/watch?v=Nupda1rm01Y&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=10
+
+notes:
+
+word
+
+------------------------
+
+title: *4 - Accurate scaling of Fourier coefficients
+
+url: https://www.youtube.com/watch?v=Ee9btm3tros&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=11
+
+notes:
+
+word
+
+------------------------
+
+title: *4 - The perfection of the Fourier transform
+
+url: https://www.youtube.com/watch?v=YBDer9pSIuQ&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=12
+
+notes:
+
+word
+
+------------------------
+
+title: *4 - The inverse Fourier Transform
+
+url: https://www.youtube.com/watch?v=HFacSL--vps&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=13
+
+notes:
+
+word
+
+------------------------
+
+title: *4 - Frequency resolution and zero-padding
+
+url: https://www.youtube.com/watch?v=oh7WvhlkxnU&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=14
+
+notes:
+
+need to have N frequencies with N time points in order to have invertible matrix
+
+word
+------------------------
+
+title: *4 - Estimation errors and Fourier coefficients
+
+url: https://www.youtube.com/watch?v=IYDU9Mj6grQ&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=15
+
+notes:
+
+error are related to signal not fourier transform
+
+remember = fourirer coefficient is a compex number our case here
+
+- unetanties in estimating fourier coefficients
+
+- interaction between aplitude and phase
+
+- why healthy skepticism of phase values of small-amplitude coefficients is apropriate
+
+phase in fact depennds on amplitude in presence of uncertainty
+
+word
+------------------------
+
+title: *4 - Signal nonstationarities and their effects on the power spectrum
+
+url: https://www.youtube.com/watch?v=rea6M1oagmA&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=16
+
+notes:
+
+we dont have toworry to much, becaus we are going to due analysis of the powerx(freqxtime) plot which has no problem with non stationarity
+
+the brain is hihgly non stationarity 
+
+------------------------
+
+title: *4 - Welch's method for smooth spectral decomposition
+
+url: https://www.youtube.com/watch?v=YK1F0-3VvQI&list=PLn0OLiymPak2jxGCbWrcgmXUtt9Lbjj_A&index=17
+
+notes:
+
+full fft method -> one ft on entire time of signal:
+	- advantages:
+		- maximal spectral precision (more time points)
+	- disavantadges:
+		- sensitive to noise
+		- sensitive to non-stationarities
+		- no temporal dynamics
+
+welch's method -> convolution (gaussian) on sliding window of signal avg all together:
+	- advantages:
+		- smooths over non-systematic noise
+		- roobust to some non-stationarties
+	- disavantadges:
+		- reduced spectral precision
+		- no temporal dyamics
+			- can instead of avareging, plot in sequence all windows (has another name)
+			- gives you temporal dynamics
+------------------------
+
+===============================
+
+*5 Playlist - Neural signal processing and analysis: Zero to Hero (sorce separation via temporal filtering)
+3) Time-Frequency analysis
+
+------------------------
+
+title: *5 - Morlet wavelets in time and in frequency
+
+url: https://www.youtube.com/watch?v=7ahrcB5HL0k&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs
+
+notes:
+
+- limitation of "static spectral analysis"
+
+- motivation for time-freq analysis
+
+- morlet wavelets in the time domain
+ 	morlet wavelets (or just wavelets) : multipling sine wave by gaussian low freq wave
+	we are going to basically convulte the signal by the wavelet
+	we will be working with complex wavelets 
+- morlet wavelets in the freq domain
+	in time domain we use a gaussian to create wavelet, and prodoces a gaussian en the freq spectrum!
+------------------------
+
+title: *5 - Convolution in the time domain
+
+url: https://www.youtube.com/watch?v=9Hk-RAIzOaw&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=2
+
+notes:
+
+result of convolution is shorter than original signal
+
+so we start and end conviltion with zero padding
+
+and then cut the result signal to be the same lenght as original signal
+
+lenght of the result convolution: n + m -1 
+where n is the signal lenght;
+m is the kernel lenght
+
+kernel flipping: have to flip the kernel to do convolution
+(only happens in time domain)
+
+------------------------
+
+title: *5 - Convolution as spectral multiplication
+
+url: https://www.youtube.com/watch?v=hj7j4Q8T3Ck&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=3
+
+notes:
+
+wavelet is a narrow band filter
+
+to get temporal dynamics, we apply this filter for alot of frequencies
+and we get temporal dynamics in each frequency
+
+esse eh o gaussian filter-hilbert que jah tinha vito antes!
+
+word
+
+------------------------
+
+title: *5 - Complex Morlet wavelet convolution
+
+url: https://www.youtube.com/watch?v=uSslgfKmno0&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=4
+
+notes:
+
+if we only used real valued wavelet (narrowband filtered signal axis no word)
+we you get a filtered signal like we had first seen, because it brings a coupling of similarity of poeer and phase
+
+by using complex sine waves, we can decouple these two!
+
+
+------------------------
+
+title: *5 - Convolution coding tips
+
+url: https://www.youtube.com/watch?v=EIKq5HqCz1o&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=5
+
+notes:
+
+can concatanate trials, and then do filtering then split again
+
+edge effets are unavoidable (even if you dont concatenate)
+
+------------------------
+
+title: *5 - Averaging phase values
+
+url: https://www.youtube.com/watch?v=R1Pro555H6s&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=6
+
+notes:
+
+repetido
+
+------------------------
+
+title: *5 - Inter-trial phase clustering (ITPC/ITC)
+
+url: https://www.youtube.com/watch?v=oVfv7pUkT4Y&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=7
+
+notes:
+
+word
+
+itpc is sensitive to:
+	- # of samples
+		only inflates de result (seems always better with  few samples)
+	- temporal jitter (delay of 30 mlseconds changes alot itpc)
+		have to make sure you are extremely confident about the milisecond timing of your experiment design
+
+------------------------
+
+title: *5 - Parameters of Morlet wavelet (time-frequency trade-off)
+
+url: https://www.youtube.com/watch?v=LMqTM7EYlqY&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=8
+
+notes:
+
+MW parameters:
+- understand the key parameter of wavelets
+	freq of gaussian and number of cycles per cycle of gaussian
+- know the two formulations for creating wavelets
+- understand the mechanism of the time-freq trade-off
+	- get more time precision or more freq precision
+- build intuition for the effects of gaussian FWHM on the time-freq domain
+
+------------------------
+
+title: *5 - The stationarity assumption of wavelet convolution
+
+url: https://www.youtube.com/watch?v=eZh0CToqFUw&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=9
+
+notes:
+
+- reminder of the stationary "assumption" of the fourier transform
+
+- the corresponding assumption of interpreting results os wavelet convolution
+	inside the gaussian window (as expected), so we assume that the signl is stationary in this window of time (a lot of mini fourier tranforms)
+
+
+------------------------
+
+title: *5 - The "1/f" structure of spectral brain dynamics
+
+url: https://www.youtube.com/watch?v=ToZFyIvnQnI&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=10
+
+notes:
+
+1/f stuff tells us how the brain is structured
+that there is this scale free organization both in time and space
+
+we are going to measure in dB like this (normalize 1/f out):
+# of dB = 10log(activity/baseline)
+
+but baseline time window parameter is not trivial -> next lesson
+------------------------
+
+title: *5 - Baseline normalization of time-frequency power
+
+url: https://www.youtube.com/watch?v=4m3d5eQzCYk&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=11
+
+notes:
+
+advantages of baseline norm:
+- compare across individuals(skull thickness, data quality/preparation)
+
+- compare across freq
+	beacause norm is done per freq
+
+- separate taskfrom background activity
+
+- normally  distributed
+
+percent change or decibel
+
+task specific or condition avg baseline (more often used)
+
+word
+
+------------------------
+
+title: *5 - Scale-free dynamics via detrended fluctuation analysis (DFA)
+
+url: https://www.youtube.com/watch?v=-RmxLZF8adI&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=12
+
+notes:
+
+DFA:
+
+1. convert to mean-centeres cumulative sum
+2. define log-spaced "scales"
+3. split signal into epochs, detrend, compute Root Mean Square (RMS)
+4. repeat 3. for each scale
+5. compute linear fit between llog-scales and log-RMS
+
+systems that have long range memory, so strong autocorrrelations in time, the herst exponent (slope of the line) is higher 
+than .5 (white noise baseline)and generally close to 1
+
+anotacao minha: nao é ao contrário nao? tipo um sinal autocorrelated tende a ter menos variancia em relacoa a tendencia dele 
+do que o noise, para aintervalos cada vez maiores de tempo
+resposta: eh pq eh feito com sinal acumulado ai inverte, o noise vai ficar cancelando e ficar uma linha reta msi ou menos, 
+e o sinal vai ganhar umas variacoeszonas causadas pelo acumulo
+
+
+need long time series to do this anlysis
+
+------------------------
+
+title: *5 - The filter-Hilbert method
+
+url: https://www.youtube.com/watch?v=jy7IxIXUAJk&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=13
+
+notes:
+
+application of the hilbert tranform:
+- convert real-values signa into a complex-valued signal
+-the result is analogous to the result of the complex morllet wavelt convolution
+- you can then extract magnitude and phase
+
+do not apply hilbert tranform to broadband data:
+	filter first
+	FIR bandpass filters:
+		#  of time points is calle dorder or taps
+		
+prefer wavelet over FIR (manly because of the parameters we are likely to need to tunne in FIR)
+
+word
+------------------------
+
+title: *5 - The short-time Fourier transform (STFFT)
+
+url: https://www.youtube.com/watch?v=T9x2rvdhaIE&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=14
+
+notes:
+
+just fourier transform of parts of the signal
+we build up the plot one time point at a time for all frquencies
+
+is the non avg version of welch method, instead we are keeping the mini fourier transform separate and putting them as columns
+
+paraeters: time window, freq resolution and overlap of windows
+also changing the time widnwos according to freq (higher freq smaller window) to balance time-freq precision trade off
+
+the results tend to look similar as wavlet and hilbert
+------------------------
+
+title: *5 - Comparing wavelet, filter-Hilbert, and STFFT
+
+url: https://www.youtube.com/watch?v=6x3iFs_j5j8&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=15
+
+notes:
+
+word
+
+Wavelet is always better than STFFT 
+
+Wavalet and filterHilbert have trade offs
+	- only use filterhilbert when want more personalized filter
+
+results are basically the same though
+------------------------
+
+title: *5 - The multi-taper method
+
+url: https://www.youtube.com/watch?v=OBwnmiVT9TE&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=16
+
+notes:
+
+results not as closely comparableas the other methods we saw
+
+good for non phase locked, non time locked signals
+
+obs: number of tapers is parameter also
+
+slepian taper sequences
+	all ortogonal to each other, uncorrelated
+	dot products of each taper with signal highlishts diferent features of the signal
+	do FFT to each resulting signal and avg
+
+we losse finer details and get prominent broad characteristics of the signal
+
+word
+------------------------
+
+title: *5 - Within-subject, cross-trial regression
+
+url: https://www.youtube.com/watch?v=QChkMRi5VXE&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=17
+
+notes:
+
+word
+
+obs: can avoid intercept term by mean-centering variables
+
+------------------------
+
+title: *5 - Temporal resolution vs. precision, pre- and post-convolution
+
+url: https://www.youtube.com/watch?v=iIriSrCoGsc&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=18
+
+notes:
+
+temporal precision:
+	sampling rate
+
+temporal resolution:
+	the ability to distinguish neighboring points
+	reflects information content
+
+example: brain data cahnges in the scale of miliseconds, so samling with 1M Hz isnt wise
+you should have temporal precision aprox = temporal resolution
+
+time-freq analysis 
+	- doesnt change temporal resolution
+	- reduces temporal precision (related to the dot prodcut, smoothing, calculating result based on neighbors)
+
+good idea to downsample results to aprox 50hz after wavelet convolution
+
+------------------------
+
+title: *5 - Separating phase-locked and non-phase-locked power
+
+url: https://www.youtube.com/watch?v=Vu40fdVXJc0&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=19
+
+notes:
+
+Obs: erp is result of trial avareging
+
+word
+
+obs: total power is avg of time-freq of all trials
+obs: do this for each experiment condition
+
+to compute total power:
+	Time-freq of each trial, the avg
+to compute non-phase locked power:
+	Subtract ERP from each trial
+	Time-freq of each trial, the avg
+to compute phase-locked power;
+	Subtract non-phase-locke from total
+
+time-freq power of ERP is difficult to work with, becaus eits difficult to basleine normalize (because power tends to 
+be pretty flat pre stimulus)
+the more interpretable way to lock at the phase locked-power
+
+in his opninion this dinstinction between pahase locked and non phase locked is a little bit artificial, not shure if brain has this distinction
+isnt recommended separating unless in specific cases, hypothisis  driven
+------------------------
+
+title: *5 - Edge effects, buffer zones, and data epoch lengths
+
+url: https://www.youtube.com/watch?v=9j_FoEFJqV0&list=PLn0OLiymPak2BYu--bR0ADNBJsC4kuRWs&index=20
+
+notes:
+
+we ust have to accept that they will be present
+so we can:
+	-  buffer zone aproach: get epochs  with size bigger than we are interested 
+	(buffer zones at beggining and end of aprox 3 cycles of the lowest freq of signal)
+	- clippinng aproach: just remove parts of the data you think might be contaminated
+===============================
+
+*6 Playlist - Neural signal processing and analysis: Zero to Hero (sorce separation via temporal filtering)
+5) Permutation Based Statistics
+
+------------------------
+
+title: *6 - The basis of statistics; necessity and levels of statistics
+
+url: https://www.youtube.com/watch?v=7W11BOlM02I&list=PLn0OLiymPak1Ch2ce47MqwpIw0x3m6iZ7
+
+notes:
+
+word
+
+------------------------
+
+title: *6 - 
+
+url: 
+
+notes:
+
+assumptions undelying parametric statistics:
+- data sampled randomly from a population
+	- we are not sampling randomly from population of world
+	- we are not sampling randomly from neurons in brain
+
+	is sometimes met sometimes not
+- that population has known parameter distributions
+	under null hypothesis
+
+	sometimes met: poer,ITPC
+	sometimes not: granger, CFC
+
+	some distributions can be transformed into kown distributions
+	ex: raw poer -> power in dB
+- variance across repeated measurements is homogeneous
+	not necessarily
+- measurement error an sample variability independent
+	in large scal recording typically not, a lot of correlation in space 
+	and autocorrelation in time for ex
+
+conclusion:
+
+do sppectral data meet these assumption
+sometimes yes, sometimes no
+
+assumptions undelying nonparametric statistics:
+- there exists a null hypothesis
+
+- you have suffcient data which to create a situation that would arise
+under the null hypothesis
+
+------------------------
+
+title: *6 - Permutation-based statistics
+
+url: https://www.youtube.com/watch?v=5Z7pIWMYi64&list=PLn0OLiymPak1Ch2ce47MqwpIw0x3m6iZ7&index=3
+
+notes:
+
+permutation (bootstrapping) based:
+get distribution by simulting that could have arisen unnder null hypothsis
+
+meta permutation test: 
+	repeat permutation test multiple times an then avg Z values, so that
+	we dont have problems with the variance in a trial leading to a biased Z
+
+example of permuation for each pixel in time-freq plot
+	randomly reasign time 0 point and swap concatnate behind the part of the signal after it
+
+word
+------------------------
+
+title: *6 - Multiple comparisons and limitations of Bonferroni method
+
+url: https://www.youtube.com/watch?v=0j1zWdcaFMU&list=PLn0OLiymPak1Ch2ce47MqwpIw0x3m6iZ7&index=4
+
+notes:
+
+why there is multiple ccomparisons problem
+
+for time-freq: standard correction (bonferroni) and its limmitations
+ 	- to stringent
+		0.05/640 000 kkkk muito pequeno
+ 	- assumes independence
+		points are already very correlated,and it is worse, because we smothed because 
+		we imposed temporal smothing and spectral smothing
+	- based on N, not on information in data
+		ex: if we downsample timepoints after -> get smaller N -> p-value more liberal -> now
+		what wasnt significant can very likely be but our results are the same
+------------------------
+
+title: *6 - Cluster-based multiple comparisons correction
+
+url: https://www.youtube.com/watch?v=51y6OAGeS2Q&list=PLn0OLiymPak1Ch2ce47MqwpIw0x3m6iZ7&index=5
+
+notes:
+
+2 methods for multi-comparisons correction in time-freq:
+	1. Correct for clusters within the entire map
+	2. Correct for extreme pixel values from the entire map
+
+
+1. Correct for clusters within the entire map:
+	Assumption: activity is meaningful if it is in a "big enough" cluster 
+	(a cluster is a continuously significant region)
+
+	how big is "big enough"?
+		- # of time points?
+		- # of freq bins?
+		solution: cluster size defined from data during permutation
+
+		for eacg iteration ount # of pixels of largest cluster than plot a distribution, then
+		set a threshold and verify in our true time-freq results what will be significant according to threshold
+
+		Each iteration is a permutation (bootstrapping) of the time-freq results, 
+		that we generated earlier
+
+	Istead of  just counting pixels, soing an avg value of the test statistic tends to be better -> can find small powerful clusters also
+	
+	good feature is that the clusters are direclty related to the parameters of wavelet convolution
+		- ex: if we impose more smoothing on the data -> all clusters will be larger -> so no relative changes occur!
+
+
+obs: can have bias: lower freq tend to show bigger clusters because have more smoothing
+one solution: run cluster correction separately for two intervals of freq ([0-x]; [x+1, final_freq])
+
+word
+------------------------
+
+title: *6 - Extreme pixel-based multiple comparisons correction
+
+url: https://www.youtube.com/watch?v=fAYFtpKwJRQ&list=PLn0OLiymPak1Ch2ce47MqwpIw0x3m6iZ7&index=6
+
+notes:
+
+2. Correct for extreme pixel values from the entire map
+
+	Assumption: 
+	
+	for each interation get max and min value of pixel(test statistic) and create a distribution 
+	with all theses values (will be bimodal), the we define two separate threshols for min and max
+
+	
+word	
+
+
+1. tends to be better usually,
+exception is when you want the possibility of separate pixels being statistically significant
+
+------------------------
+
+title: *6 - Illustrating statistical significance in plots
+
+url: https://www.youtube.com/watch?v=wrjfSNrmJL4&list=PLn0OLiymPak1Ch2ce47MqwpIw0x3m6iZ7&index=7
+
+notes:
+
+indicate statiscal significance in the plot, dont remove other data points
+------------------------
+
+title: *6 - Subject- vs. group-level analyses
+
+url: https://www.youtube.com/watch?v=PmBeGKqMJ_Y&list=PLn0OLiymPak1Ch2ce47MqwpIw0x3m6iZ7&index=8
+
+notes:
+
+single-subject:
+	- variance of data over trials
+	- no population generalization (we generalize to the subject trials, not very interesting)
+	- generally require large effect size (# of trials) because variance of a single trial tends to be large
+	pois na estimacao de mi_xbarra, temos que sigma_xbarra = sigma/root(n) [law of large numbers], 
+	caso em que que queremos saber a distribuicao de uma variavel aleatoria que eh a media de sucessivas 
+	variveis aleatorias somadas (se sigma n conhecido -> aprox por s e se n for < 30 usa t-statistic)
+group-level:
+	- consistency (mean) of effect across  group
+	- generalize to population
+	- sensitive to small effect sizes (# of people)
+group-level:
+
+Obs: seestatiscal significance in relation to value o zero of the statistic, when 95% error bar doesn’t intercept 
+(p-value=0.05) it is a statiscally significant difference
+
+word
+
+------------------------
+
+title: *6 - Error bars and guessing significance
+
+url: https://www.youtube.com/watch?v=i1CNQbI-hdg&list=PLn0OLiymPak1Ch2ce47MqwpIw0x3m6iZ7&index=9
+
+notes:
+
+We cant say they are stat significantly different just by looking at the bar and error alone in a lot of cases,
+ need to do more stuff (t-test stuff with means)
+If left and right were two groups: 
+-	error bars tells us varianccce across subjects -> subject level effects
+-	mean tells us mean in group -> group level effects
+But we can infer that the right one is stat sign diff from zero across subjects, as for the left one it is not
+
+
+------------------------
+
+title: *6 - Three approaches for group-level statistics
+
+url: https://www.youtube.com/watch?v=cx2YavOwD8w&list=PLn0OLiymPak1Ch2ce47MqwpIw0x3m6iZ7&index=10
+
+notes:
+
+
+aporach1 - exploratory
+	idea: 
+		permutation testing and cluster correction(orother correction), 
+		just like with the mass-univariate(one test for pixel) approach you already know
+
+	advantadges:
+		don't worry about assumptions. Lower chane of bias or subjectivity. 
+		Open to exploratory discovery	
+	disavantadges:
+		designed for 2-test or correlation comparisons. Potential lower sensitivity
+		to small but theoretically motivated effects
+aproach 2a - hypothesis driven
+	idea:
+		get avg (over trials, subjects and conditions) time freq power plot normalized with baseline and then
+		pick some time-freq window (will be discussed how later) 
+		we do this just to select the window 
+
+		now we use the data in this window of eac individual subject and each individual condition time-freq power plot
+		we avg all pixels on the window and construcct a table of subjects vs conditions of 
+
+		we run a t-test of this avg value against zero
+		HOWEVER IT WOULD BE AND BIASED TEST IN THE WAY WERE ARE DOING NOW (circular inference)
+		next cclass we will see why and how to do this
+
+	advantadges:
+		amenable to factorial (when not just comparing just condition A to condition B, more levels like anova etc) 
+		designs. Hypothesis driven. Minimal multiple comparisons issues (Bonferroni is OK here)
+	disavantadges:
+		potential for bias. Can miss important unpredicted results
+
+aproach 2b - hypothesis driven
+
+	idea:
+		basically aproach 2a but we select a bigger window than we wouls for 2a
+		and for each subject or condition, we choose a sub window inside this bigger window that will
+		maximize differetiability of the subject or condition time-freq
+
+		one thing also that is done (and cant be done in 2a) is to get not only avg power, but peak freq and peak time (on the peak of subwindow)
+
+	advantages:
+		amenable to factorial (when not just comparing just condition A to condition B, more levels like anova etc) 
+		designs. Hypothesis driven. Minimal multiple comparisons issues (Bonferroni is OK here)
+
+		can also extract peak time/freq 
+	disavantadges:
+		potential for bias. Can miss important unpredicted results
+
+		can also miss important but unpredicted results
+
+combine aproaches 1 and 2 is a good idea
+
+------------------------
+
+title: *6 - Circular inference ("double-dipping")
+
+url: https://www.youtube.com/watch?v=KdQKk__uoB8&list=PLn0OLiymPak1Ch2ce47MqwpIw0x3m6iZ7&index=11
+
+notes: 
+
+what is cirular inference ("double dipping")?
+	- selecting data in a way tha tbaises the test statistic
+	(and thus interpretation) toward a particular result
+
+word
+	
+solutions:
+	1. Test all pixels, with cluster (or other) correction
+	2. select data, test orthoganally
+		ex: time-freq plot of (A+B)/2
+		the thing is that when we select the windows here, we dont know if the high cotrast color is due to A or B, or both
+		so we are not biasing towars a big diff in test
+		data selecction (ondition avg) and statistical tsting (condition difference) are orthogonal
+
+		Obs: testing individually conditions against like said before is biased, but here we are comparing conditions 
+		ith appropriate data selection so it is totally valid
+
+		if it were time-freq of (A-B)/2:
+			it would be a biased selection, because it will biase toward big differences in conditions, but we dont know in which way
+			coul be that A is close to zero, B is high, or that B is just higher or vice versa etc, but we certainly know that we are never going to get
+			very close bars for A and B
+
+			however it is still usefull to see the way the bars will be, the type or pattern of diifferences can inform us a lot
+
+
+run 100 times, and if you expect that t-test will give more than 5 (aprox) significant differences something is wrong (assuming p = 0.05)
+
+word
+
+------------------------
+
+title: Spatiotemporal Analysis of Multichannel EEG: CARTOOL
+
+url: https://www.hindawi.com/journals/cin/2011/813870/
+
+notes:
+
+Besides this direct neurophysiological interpretability, the analysis of the topography of the electric fields has another important advantage as compared to the analysis 
+of waveforms: it is completely reference independent
+
+With the program CARTOOL, which exists now since over 14 years with constantly increasing capabilities, we wanted to provide an analysis tool for those researchers 
+and clinicians who are interested in such reference-free EEG mapping techniques.
+
+Important aspects of the software are the 3-dimensional visualization of the data as well as the fast display of the temporal dynamics of the scalp electric fields and the 
+corresponding estimated sources. For that, the software puts particular emphasis on interactive manipulation and synchronization of the different windows by the user, using 
+mouse and keyboard commands.
+
+In the following we will describe some of the main methods for the spatial analysis of the scalp electric fields and how they are implemented in CARTOOL
+
+Artifacts on one particular channel are not always easy to detect if only EEG waveforms are displayed. In contrast, contaminated channels are readily seen on time series of EEG 
+maps because they behave differently from the neighboring channels and appear as isolated “spots” in the maps (Figure 2; see also [13]).
+
+They generate steep gradients in the electric field and consequently produce strong sources in the inverse solution (here LAURA). Interpolating these electrodes using spline interpolation 
+eliminates the bad electrodes and the sources caused by these artifacts disappear.
+
+*ele ajuda na vizualizacao, mas tirar artefato eh manual*
+
+
+-----------------------
+
+title: EEG Source Localization in the Cartool toolbox: solving a single subject case
+
+url: https://www.youtube.com/watch?v=WCBo4C4NrfM
+
+notes:
+
+word
+
+3. Global Topographic Measures
+
+The Global Field Power (GFP) is the standard deviation of the potentials at all electrodes of an average-reference map.
+
+s. GFP is a one-number
+measure of the map at each moment in time. Displaying this
+measure over time allows to identify moments of high signalto-noise ratio, corresponding to moments of high global
+neuronal synchronization
+
+The Global Map Dissimilarity measure (GMD) is a
+measure of topographic differences of scalp potential maps.
+
+potential values at each electrode
+of a given map by its GFP. The GMD is 0 when two maps
+are equal, and maximally reaches 2 for the case where the
+two maps have the same topography with reversed polarity
+
+
+ Artifact detection by inspecting the potential maps. The left panel shows spontaneous EEG recorded from 204 electrodes. Some
+artifacts, like the one encircled, are easy to see in the traces and such epochs can be eliminated. However, other artifacts are not easy to see
+in the traces but are readily detected in the maps by isolated “islands” of potential of a certain electrode. In this example a mid-frontal and a
+right frontal electrode are artifact contaminated. They generate steep gradients in the electric field and consequently produce strong sources
+in the inverse solution (here LAURA). Interpolating these electrodes using spline interpolation eliminates the bad electrodes and the sources
+caused by these artifacts disappear.
+
+he calculation of the GMD
+is a first step for defining whether different sources are
+involved in generating the electrical activity at the scalp
+for the two processes/populations being compared. If two
+maps differ in topography independently of their strength,
+it directly indicates that the two maps were generated by a
+different configuration of sources in the brain
+
+It is generally
+observed (particularly in evoked potentials) that GMD is
+inversely correlated with the GFP
+
+The display of the GMD across time has a very characteristic
+behavior which is similar for spontaneous EEG and for
+evoked potentials: the topography of the maps remains
+stable for several tens of milliseconds and then abruptly
+switches to a new configuration in which it remains stable
+again. This leads to periods of low GMD interrupted by
+sharp GMD peaks (Figure 3). This highly reproducible
+observation of periods of stable map topography has led
+to the concept of functional microstates
+
+The microstate
+segmentation is based on cluster analysis using either a
+modified k-means cluster analysis [28] or an atomize and
+agglomerate hierarchical cluster analysis with or without
+GFP normalization [17], followed by some temporal postprocessing steps
+
+The result of
+the microstate segmentation is displayed color-coded under
+the GFP curve with each color representing a different
+cluster map. 
+
+It has been shown that both ICA and cluster analysis lead to
+rather similar results and thus have compatible underlying
+assumptions
+
+However, the main limitation of ICA
+is that it assumes that global brain activity is generated by
+a superimposition of a number of independent processes.
+While this assumption might be valid in the case of artifacts
+such as eye movements or cardiac activity, it is difficult to
+accept for brain activity, where the principal organization
+relies on distributed neural networks with tightly linked
+cross-talk between the different areas. In such systems, the
+different components are dynamically coupled and cannot
+be separated in independent components. ICA would fail to
+uncover such processes, while the cluster analysis does not
+require such independence.
+
+The labeling procedure and the display of
+the results of this labeling as color-coded segments under the
+GFP curves allows the experimenter to generate hypotheses
+about the specificity of certain microstate maps for certain
+experimental conditions/populations (Figure 4)
+
+A
+second statistical step is needed to confirm these hypotheses and define those microstates that remain statistically
+significant. The “microstate fitting” module of CARTOOL
+allows to perform this test. The fitting procedure is the
+same as for the grand mean, but now the cluster maps
+are fitted to the individual ERPs of each subject and
+each condition/population [32] (Figure 4). Several different
+parameters are then computed that describe the goodness
+of fit, the number of maps that each cluster explained, the
+onset and the offset of each cluster map, and so forth [17].
+
+Only microstates that are
+significantly different after this statistical fitting procedure
+are considered as stable
+
+5. Statistical Analysis Using CARTOOL
+
+In order to test for differences in topography, CARTOOL
+implemented what has been called a “topographic ANOVA”,
+or TANOVA [17, 40]. Since GMD is a single measure of
+difference between the maps of two conditions, mean and
+standard error of topography for each condition/population
+cannot be calculated. The way to overcome this problem is to
+perform a non-parametric randomization test based on the
+GMD values. This is done in the following way: (1) assigning
+the maps of the single subject in a randomized fashion
+to different experimental conditions, (2) recalculating the
+group-average ERPs, and (3) recalculating the resulting
+GMD value for these “new” group-average ERPs. The
+number of permutations that can be made with a groupaverage ERP based on n participants is 2n. The GMD value
+from the actual group-average ERPs is then compared with
+the values from the empirical distribution to determine the
+likelihood that the empirical distribution has a value higher
+than the GMD from the actual group-average ERPs
+
+7. Source Localization
+
+
+While the analysis of the scalp potential maps as described
+up to now has the advantage, as compared to waveform
+analysis, to be reference independent and considers the
+whole brain electrical activity, it does not provide any direct
+conclusions about the number, location and orientation of
+the intracranial generators [50]. Inverse solution methods
+are required to estimate these sources.
+
+A major breakthrough in the spatial analysis of multichannel EEG/MEG was the development of distributed
+inverse solution methods that allow the estimation of
+the 3-dimensional distribution of neuronal activity in the
+whole brain at each moment in time [3, 51, 52]. **The
+stability and reliability of these methods are impressive,
+and they have been validated by several direct comparisons
+with intracranial recordings, lesion studies and other neuroimaging methods [53]. The advancement in this field
+has tremendously boosted the use of electrophysiological
+methods in experimental and clinical studies because of
+the major advantages that the high temporal resolution
+provides**. CARTOOL has implemented some of the major
+distributed linear inverse solutions, namely the weighted
+minimum norm solution (WMN) [54], the low resolution
+electromagnetic tomography (LORETA) [55] and the local
+autoregressive average (LAURA) [56] and EPIFOCUS [57].
+CARTOOL calculates the inverse matrices for these different
+source models. It is well known that the regularization
+parameter can strongly influence the inverse solutions. It
+cannot only eliminate, but also create “ghost sources” in
+case of overfitting the data [58]. CARTOOL uses the Lcurve method [59] to find the optimal regularization value
+for a given data file.
+
+It is worthwhile to note that the segmentation of the brain
+surface and the grey matter is implemented in CARTOOL
+including manual correction tools to exclude incorrect classification of grey matter or exclude structures as brainstem and
+cerebellum if desired. Alternatively, already segmented brains
+can be read into CARTOOL if preferred, such as standard
+template brains. Also the warping transformations as well
+as the distribution of the solution points are done within
+CARTOOL. Thus, the whole source localization process can
+be performed within CARTOOL, starting with the original
+EEG and the original MRI.
+
+CARTOOL can read any type of 3D volumes in Analyze
+format. In case of functional images (fMRI or PET) the
+activation areas are displayed as colored blobs within the
+MRI. Several different volumes can be overlapped and thus
+results of different imaging modalities (including the inverse
+solutions) can be displayed within the same MRI. MRIs
+can also be manipulated and converted in various ways and
+stored as new volumes.
+
+A large palette of 3D display tools is available in
+CARTOOL that allows flexible visualization of the data. Any
+3D object can be inserted into another one by a single
+click, allowing the merging of different information instantly,
+while retaining the spatial coherence of the objects. Different
+windows can easily be synchronized, allowing the user to
+visualize the dynamic behavior of the data on traces, maps
+and inverse solutions simultaneously (Figure 9)
+
+An important new development in the field of EEG/MEG
+analysis is the measure of connectivity between different
+brain areas as a way to understand the organized behavior of
+different brain regions [63]. The use of EEG data to examine
+
+the functional connectivity has a long history [64, 65] and
+a variety of techniques have been used, most prominently
+the calculation of cross-correlation or phase synchronization
+between pairs of scalp electrodes or sensors [66]. Also graphtheory-based tools from the study of complex network have
+been proposed [67]. The problem with such analysis on the
+scalp surface is that the interpretation with respect to the
+sources that generated the connectivity between electrodes
+is ambiguous because of the spreading of electromagnetic
+signals from the cortex to the sensors. More appropriate
+is the use of connectivity measures in the inverse space.
+A popular method that is often applied to MEG data
+(but can also be used for EEG) is the so-called dynamic
+imaging of coherent sources (DICS), proposed by [68]. This
+method uses a beamformer spatial filter to identify coherent
+sources in the brain for specific frequency bands. Like other
+spectral coherence methods, DICS does not give information
+of the direction of information flow. Several alternative
+methods have therefore been proposed that are based on
+the Granger causality theory and multivariate autoregressive
+models such as Partial Directed Coherence [69] or the
+Directed Transfer Function [70]. Applying these methods to
+the data in the inverse space after applying the distributed
+linear inverse solutions described above will allow estimating
+the flow of electrical information in large-scale neuronal
+networks in real time. Such methods will be implemented in
+future versions of CARTOOL together with other promising
+distributed inverse solutions and head models that currently
+emerge in the literature.
+
+10. Software details
+
+CARTOOL is not an Open Source project; however the
+program is distributed freely to any nonprofit research group.
+Users need to register only once and will then be informed
+of any updates of the software. They are asked to cite the use
+of CARTOOL in the Methods and Acknowledgements sections
+of their papers. Currently about 650 users from all over the
+world have registered and downloaded CARTOOL.
+CARTOOL runs only on Windows platforms (ranging
+from Windows 95 up to Windows 7) as a standalone
+compiled executable program, included with its complete
+documentation within a single installation program. It is
+fully written in C++ in order to attain the highest speed
+and compactness in memory use. The advanced display
+is completely done in OpenGL, so it needs an OpenGL
+accelerated graphic card, and as much memory as possible
+for the most demanding operations. Matlab is not needed to
+run CARTOOL.
+
+Files formats read by CARTOOL include formats produced by the EEG systems form the companies Biologic,
+Biosemi, Brain Products, Deltamed, EGI, and Neuroscan.
+Also EDF format and standard text files can be read.
+Concerning MRI, Analyze and AVS formats are read. A
+complete list of file formats is included in the Reference
+Guide of Cartool.
+
+-----------------------
+
+**title**: EEG Source Imaging: A Practical Review of the Analysis Steps
+
+url: https://www.frontiersin.org/articles/10.3389/fneur.2019.00325/full
+
+notes:
+
+his holds for the EEG as well as for the MEG.
+Localization of a limited number of equivalent dipoles is
+the most classical approach to solve the inverse problem (7).
+The a priori assumption in this solution is that only one or a
+few active areas in the brain generated the scalp potential field.
+Under this constraint, non-linear multidimensional optimization
+procedures allow to determine the dipole parameters that best
+explain the observed scalp potential measurements in a leastsquare sense (8, 9). The maximal number of dipoles that can
+be reliably localized depends on the number of scalp electrodes
+and is further limited by the non-linear complexity of the search
+algorithms with multiple sources
+
+It is important to be aware of
+the fact that if the number of dipoles is underestimated the
+source localization is biased by the missing dipoles. On the
+other hand, if too many dipoles are assumed, spurious sources
+will be introduced. Nevertheless, dipole source localization can
+produce reasonable results under some particular conditions
+(12), in particular in localizing the irritative zone in focal epilepsy
+(13–15) or the localization of primary sensory areas in evoked
+potentials, such as the sensorimotor cortex in surgical candidates
+(16). Dipole source localization is still widely used in the MEG
+community for these clinical applications (17).
+
+
+Recent development in brain source imaging has offered more
+exciting options to localize brain sources from scalp EEG signals
+and have largely replaced the dipole source localization approach.
+These so-called distributed source localization methods do not
+
+make a priori assumption with respect to the number of
+dipoles. The most popular distributed source models currently
+used in the EEG community are modifications of a solution
+initially proposed by Hämäläinen and Ilmoniemi (18), called
+the Minimum Norm Solution (MN). The constraint introduced
+in this solution is that the current distribution over all
+solution points has minimum energy (minimizing the leastsquare error, i.e., the L2-norm) and that the forward solution
+of this distribution optimally explains the measured data. MN
+solutions are biased toward superficial sources because of their
+spatial vicinity to the sensors. Therefore, weighting parameters
+have been introduced to mitigate this bias, leading to the socalled weighted minimum norm (WMN) solutions (19–21).
+A variation of WMN is the low resolution electromagnetic
+tomography (LORETA) in which the norm of the secondorder spatial derivative of the current source distribution is
+minimized to ensure spatial coherence and smoothness (22).
+This constraint has been justified by the physiological plausible
+assumption that activity in neighbored voxels are correlated.
+Another modification has been suggested by Grave de Peralta
+Menendez (23), called LAURA (Local AUtoRegressive Average).
+It incorporates the biophysical law that the strength of the source
+falls off with the inverse of the cubic distance for vector fields.
+LAURA integrates this law in terms of a local autoregressive
+average with coefficients depending on the distances between
+solution points. The general communality of all these linear
+inverse solutions is that they provide a distribution of the current
+density in the whole brain volume that is described as a 3D grid of
+discrete solution points. In each of these solution points, a current
+dipole with a certain orientation and strength is estimated.
+Usually, the space of these solution points is restricted to the
+gray matter (24). Several other linear and non-linear source
+localization algorithms have been described in the literature. This
+review focuses on the pre-processing steps that are needed for
+source localization and not on the characteristics of the different
+inverse solutions. For detailed discussions we refer to previous
+comprehensive review articles (3, 25–28)
+
+https://sites.google.com/site/cartoolcommunity/
+
+A comprehensive overview of different academic
+software applications can be found in a special issue of the Journal
+Computational Intelligence and Neuroscience (30), where
+programs such as BrainStorm (31), EEGLAB (32), FieldTrip (33),
+NUTMEG (34), SPM (35), and Cartool (29) are described. Widely
+used commercially available software packages for EEG/MEG
+source localization are BESA, Curry, GeoSource, and BrainVision
+Analyzer.
+
+tabela dos softwares, site e inverse models no word!
+
+
+#BASIC REQUIREMENTS
+
+##EEG Pre-processing
+
+**Raw EEG data are contaminated by artifacts from many
+non-physiological (power line, bad electrode contact, broken
+electrodes, etc.) and physiological (cardiac pulse, muscle activity,
+sweating, movement, etc.) sources. These artifacts have to be
+carefully identified and either removed or excluded from further
+analysis. This is a cumbersome work and should be done by visual
+inspection of the raw data by experienced electrophysiologists.
+However, with the increasing availability of public EEG databases
+and the desire to analyze large datasets, the need for and the
+usage of automatic artifact detection and removal software is
+on the rise. Blindly applying such programs is problematic,
+because the type of artifacts is manifold and can vary in different
+experimental conditions. It is therefore recommended that if
+automatic artifact detection and correction methods are used,
+they should still be followed up by visual inspection of the data
+(36). In the following we e describe the pre-processing pipeline
+implemented in Cartool**
+
+##Temporal Filtering
+
+and an increasing recognition of physiological relevance of
+frequencies below and above the conventional EEG frequencies
+[infraslow frequencies in resting state activity (37), high
+frequency oscillations in normal and pathological brains (38)],
+the range of the band-pass filter is driven by the study question.
+Resting-sate EEG is often filtered between 1–40 Hz, while evoked
+potential data usually considers broader frequency ranges (0.1–
+100 Hz). Filtering the data can have important effects on the
+time-courses and the phases of the data (39, 40), as well as
+on the localization of the waveforms’ local extrema. This is of
+particular relevance in evoked potential studies, time-frequency
+analysis and connectivity measures. The exact characteristics of
+the filter that has been used should be described in the study
+report (36). In Cartool, we implemented a non-causal, Infinite
+Impulse Response (IIR) Butterworth filter of 2nd order, known
+for its optimally flat passband response, which limits the artificial
+introduction of new local maxima (41). Both Butterworth lowand high-pass filters have a−12 db/octave roll-off, and are
+computed linearly with forward and backward passes, which
+eliminates any phase shifts. This ensures that the local maxima
+will remain at their expected positions, irrespectively of their
+frequency content. In the specific case of Butterworth high-pass
+filtering, the D.C. value is explicitly removed beforehand, as very
+high baselines could cause IIR filters to become instable.
+
+
+##Down Sampling
+
+After filtering, it is often useful to down-sample the data
+as most of the frequencies higher than the low-pass cutting
+frequency should be gone. It can dramatically reduce the memory
+requirements for the subsequent processing, without losing
+any information. The Nyquist theorem would require downsampling not lower than twice the highest remaining frequency.
+In practice, though, because the filters’ cut-offs are never perfectly
+sharp, and in order to keep some additional time resolution,
+the final sampling frequency should be chosen to be about four
+
+times the highest remaining frequency after low-pass filtering. In
+Cartool and for integer down-sampling ratios, down-sampling is
+done with a Cascaded Integrator-Comb (CIC) filter (42), which
+in practice is quite easy to compute in off-line applications.
+Other software packages, such as for example EEGLAB (32) apply
+antializing filters to reduce the sampling frequency.
+
+##Electrode Interpolation and ICA
+
+In Cartool, data inspection is performed semi-automatically.
+The user scrolls through the data and the program detects and
+visualizes electrodes with amplitudes above a certain range. If
+the user decides that a given electrode is an outlier due to bad
+contact, this electrode is marked and ignored in the subsequent
+independent component analysis (ICA).
+The ICA is used to detect and correct artifacts, particular
+eye movements, eye blinks and cardiac pulse artifacts (43). It is
+important that the time course of the ICA components that are
+considered to reflect one of these artifacts is inspected together
+with the raw EEG data and it is assured that they indeed spatially
+(topography) and temporally correlate with the appearance of
+these events. Once this is assured, the data are back-projected
+by excluding these components. **At the time of publication, ICA
+is not fully implemented in Cartool. An often used software for
+artifact removal using ICA is EEGLAB (44)**.
+After ICA correction, the bad electrodes detected in the first
+step are interpolated using a 3D or spherical spline algorithm
+(45). In order to do that, the 3-dimensional position of each
+electrode needs to be known (see section Determining the
+Solution Points in the Gray Matter.)
+
+
+##spatial filtering
+
+The precursor of EEG source imaging is the scalp potential
+map (5). Therefore, visualizing and inspecting the quality of the
+topography of the maps is as important as the inspection of
+the waveforms. **Even after interpolation of artifacted electrodes
+and removing irrelevant ICA components, transient events can
+corrupt a few electrodes for a short time period. They can be seen
+on the potential map displays as isolated “islands” within the local
+neighborhood**. Such outlier electrodes will have dramatic effects
+on source localization as the steep gradients will lead to local
+maxima beneath the electrode [see Figure 4.7. in (46)].
+Here we describe a spatial filter that we designed and
+implemented in Cartool. It is an instantaneous filter which
+removes local outliers by spatially smoothing the maps without
+losing its topographical characteristics.
+The spatial filter is designed in the following
+way (see Figure 1A):
+• For each electrode, the values of the 6 closest neighbors are
+determined, plus the central electrode value itself.
+• The 7 data points are sorted.
+• The minimal and maximal values are removed by dropping the
+first and last items of this list.
+• The remaining 5 values are then averaged, with weights
+proportional to the inverse distance to the central electrode.
+The central electrode is given a weight of 1.
+
+figura dessse filtro sendo implementado no word
+
+##Detecting bad epochs
+Hopefully, at this stage the EEG data is clean enough for further
+processing. Still, transient artifacts may remain (muscle artifacts,
+sweating, remaining eye blinks, etc.) that none of the steps above
+successfully removed. It is therefore strongly recommended that
+the “cleaned” data are visually inspected and that bad epochs
+are marked. In Cartool, we have implemented a tool that helps
+to identify these bad epochs. It is based on a set of simple
+statistics on the tracks and then estimates how much each track
+deviates from its own individual baseline. The statistics is based
+on instantaneous values (absolute value, variance, skewness and
+kurtosis among electrodes at a given time point) and on short
+time periods by computing the cross-convolution, which is a
+convenient way to estimate the noise in a signal. All these outlier
+estimators are merged together to a single compound estimator
+and the highly suspicious time periods are highlighted. By visual
+inspection, the user can then decide whether these periods should
+be marked as “bad” or not. These bad epochs will be conveniently
+used in later processing, as many toolboxes of Cartool allow to
+skip them
+
+** pulei a parte que explica como eh feita a solucoa inversa em detalhes (da pra ver dps se necessario)
+** jah ta explicaod em linhas gerais no artigo anterior (sobre cartool tb) em 7. "source localization"
+
+##APPLICATIONS OF EEG
+SOURCE LOCALIZATION
+
+ation, but also for localization of eloquent cortex (3, 47, 83,
+91–93). Besides the clinical significance, EEG source localization
+in epilepsy also gives the unique possibility to evaluate the
+performance and precision of different head- and source-models
+because intracranial recordings or the outcome after surgery
+can serve as “gold-standard” (71, 82, 94, 95). The most direct
+way to evaluate EEG source localization is the simultaneous
+recording of scalp- and intracranial EEG. A recent study with
+high-density (256-channel) scalp EEG recorded simultaneously
+with intracranial local field potentials from deep brain structures
+in patients undergoing deep brain stimulation demonstrated that
+EEG source localization is able to sense and properly localize
+spontaneous Alpha activity generated in the thalamus or the
+nucleus accumbens (84). This demonstration opens new doors
+in the use of high-density EEG source imaging, as it shows that
+source localization is not restricted to the cortex only.
+
+It has thereby become
+clear that such connectivity measures have to be applied in
+source space and not on the level of the scalp electrodes,
+since volume conduction and reference-dependency make the
+interpretability of sensor-based connectivity measures difficult
+(105–110). Therefore, EEG source imaging is a pre-requisite
+for functional connectivity analysis
+
+----------------------
+How Sensitive are EEG Results to
+Preprocessing Methods: A Benchmarking Study
+
+url: https://www.biorxiv.org/content/10.1101/2020.01.20.913327v1.full.pdf
+
+notes:
+
+#INTRODUCTION
+
+Our analysis also
+assesses differences in residual signals both in the time and
+spectral domains after blink artifacts have been removed. Using
+fully automated pipelines, we evaluate these measures across 17
+EEG studies for two ICA-based preprocessing approaches
+(LARG, MARA) plus two variations of Artifact Subspace
+Reconstruction (ASR). Although the general structure of the
+results is similar across these preprocessing methods, there are
+significant differences, particularly in the low-frequency spectral
+features and in the residuals left by blinks. These results argue for
+detailed reporting of processing details and for using a federation
+of processing pipelines to quantify effects of processing choices.
+
+In
+this paper, we begin to address this question by assessing
+differences in signal distributions across studies when different
+preprocessing methods are applied. We also examine
+differences in event-related potentials and event-related
+spectral perturbations computed by both by trial averaging
+(ERPs and ERSPs, respectively) as well as by temporal overlap
+regression (rERPs and rERSPs, respectively) [3] [4] [5]. We
+quantify correlations between corresponding features
+calculated by different preprocessing methods for each (eventtype, channel, recording) tuple. We also evaluate how
+consistent these event-related features are across recordings. 
+
+We study four distinct processing pipelines, denoted as
+LARG, MARA, ASR_5* and ASR_10*, respectively. The
+LARG [6] and MARA [7] pipelines use ICA-based processing
+methods, while ASR_x* pipelines are based on the Artifact
+**Subspace Reconstruction algorithm [8], an automated EEG
+artifact removal algorithm that can be applied in real-time,
+online settings and is now part of the recommended
+preprocessing pipeline for EEGLAB [9] [10]**. We apply our
+metrics to the output generated from each of the preprocessing
+pipelines for 17 studies performed at six experimental sites, as
+described in [6].
+
+#METHODS AND MATERIALS
+
+The data corpus for this study consists of EEG recordings
+from 17 studies performed at six experimental sites and
+contains approximately 7.8 million ERPs from 1,100 recordings
+[11]. In the preparation phase, the raw EEG data was converted
+to EEGLAB .set format. The events in the individual studies
+were annotated using the HED (Hierarchical Event Descriptor)
+system [12] as described more fully in [11]. Datasets with more
+than 64 channels were reduced to the 64 channels closest to the
+standard 10-20 positions and assigned standard 10-20 labels to
+facilitate comparisons across studies. 
+
+# A EALY STAGE PRE-PROCESSING
+The curated data was preprocessed using the automated
+PREP pipeline [13]. PREP removes line noise, identifies bad
+channels, and references the data using a robust average
+reference. The noisy or invalid (“bad”) channels identified by
+PREP were subsequently interpolated prior to application of the
+LARG and MARA preprocessing pipelines. The ASR_x*
+pipelines used PREP only to remove line noise and to calculate
+and remove the robust average reference. Blink events,
+identified as the positions of the maximum amplitude of the
+blink, were then inserted into the EEG structure using the
+automated BLINKER toolbox [14]. 
+
+# B The LARG pipeline
+
+LARG is an automated pipeline that emphasizes the removal
+of eye artifacts. LARG high-pass filters the data with a 0.5-1 Hz
+transition band using the EEGLAB pop_eegfiltnew() function
+using a zero-phase FIR filter with a Hamming window. It then
+down-samples the data to 128 Hz using the EEGLAB
+pop_resample() function. LARG computes independent
+components using the CUDAICA GPU implementation of the
+Infomax independent component algorithm (ICA) [15] applied
+to cleaned sections of the data as described in [16]. LARG
+removes from the signal the contributions of independent
+components identified by EyeCatch [17] as being associated
+with eye artifacts, and then applies temporal overlap regression
+to remove the residual time-domain contribution of blinks in
+intervals of [−1, 1] seconds time-locked to the blink maximum
+events as determined by BLINKER.
+
+# C MARA pipeline
+
+MARA (Multiple Artifact Rejection Algorithm) automates
+the selection of artifactual independent components (ICs) by
+applying multiple statistical tests [18]. Our MARA pipeline
+uses the independent components computed for LARG with the
+default MARA settings. MARA usually identifies many more
+artifactual components than LARG does. Our MARA pipeline
+does not regress out the temporal contributions of blink events
+or apply EyeCatch to specifically identify eye artifacts. 
+
+# D ASR pipeline
+
+The ASR (Artifact Subspace Reconstruction) algorithm [8]
+uses principal-component-like subspace decomposition to
+eliminate large transients. ASR can be applied in an online
+setting for real-time artifact removal. We applied ASR using the
+clean_asr() function from the Clean Rawdata toolbox,
+available as an EEGLAB plugin. Note that the recommended
+ASR artifact removal pipeline and the default approach
+implemented in the Clean Rawdata plugin additionally include
+bad channel removal and bad window removal, which can
+significantly improve performance for removal of artifacts.
+However, here we performed comparisons with only the basic
+ASR method implemented in the clean_asr() function, without
+the benefits of these additional offline artifact removal steps.
+We therefore denote this approach as ASR*.
+Our ASR pipeline starts with the non-interpolated robust
+average referenced signal produced by the modified PREP
+pipeline. We then removed the channel mean and high-pass
+filtered the data using the same pop_eegfiltnew() high-pass
+filtering approach used for LARG and MARA, albeit with a
+higher cutoff (0.75 - 1.5 Hz). The higher cutoff (compared to a
+1 Hz cutoff for LARG and MARA) was needed to achieve
+suitable stop-band suppression below 0.5 Hz for some
+recordings that had significant drift thereby ensuring the data
+had a mean of approximately zero within short windows (an
+essential stationarity pre-condition for ASR to function
+properly). We note that the Clean Rawdata toolbox includes its
+own linear-phase FIR drift removal filter (which uses a Kaiser
+window), but here we chose to use the same Hamming
+windowed filtering approach used for LARG and MARA.
+ASR has a user-settable burst cutoff parameter for
+determining how aggressively it removes transient highvariance artifacts, with smaller values corresponding to more
+aggressive removal of artifacts. We applied ASR with two
+choices of the burst cutoff parameter: 5 (highly aggressive) and
+10 (modestly aggressive, typical setting), denoting the pipelines
+as ASR_5* and ASR_10*, respectively. 
+
+# Computation of signal summay features
+
+Bigdely-Shamlo et al. [6] introduced several robust summary
+metrics for signal channel distributions which we use here,
+including the recording channel amplitude vector and the study
+channel dispersion vector. These metrics capture the signal
+scale across channels in a recording, and the dispersion of that
+scale across a study, respectively. Due to the robust estimators
+being used, these measures are partially biased towards brain
+signals rather than artifacts, and can thus be used to track
+impacts on those brain signals before and after a given preprocessing method is applied. 
+
+The
+recording channel amplitude vector is a 26×1 positive vector of
+the robust standard deviations (defined as 1.4826 × the median
+absolute deviation from the sample median) of the filtered
+channel signals from these 26 common channels.
+The study amplitude matrix is a 26×S matrix of the recording
+channel amplitude vectors stacked across the S recordings in the
+study. The corpus amplitude matrix A is a 26×C matrix formed
+by stacking the study amplitude matrices across all of the
+studies in the corpus. Here C is the total number of recordings
+in the corpus. The dispersion vector for a study or corpus
+amplitude matrix is a 26×1 positive vector calculated as the
+robust standard deviation of each row of the respective
+amplitude matrix divided by the median of that row. 
+
+Bigdely-Shamlo et al. also showed that dividing the
+recording channel data by a recording-specific constant prior to
+computing the study or corpus dispersion vector greatly reduces
+the dispersion values. Several methods of computing the
+recording-specific constant were shown to be effective in
+reducing study-wide channel dispersion. Here we use the Huber
+mean of the recording channel amplitude vector as the
+recording-specific constant. The normalized study amplitude
+matrix and the normalized corpus amplitude matrix in this
+paper are formed by dividing each column of the respective
+amplitude matrix by its column Huber mean
+
+To quantify to what extent dividing each recording by a
+recording-specific constant reduces channel dispersion across a
+corpus, we calculated the percentage of dispersion reduction for
+each study, channel, and method separately using the formula
+100*(dispersion before – dispersion after)/(dispersion before).
+We then averaged these percentages for each preprocessing
+method to obtain an overall dispersion reduction percentage
+
+# F Computation of signal spectral characteristics
+
+To see how different preprocessing approaches might distort
+the signal spectral characteristics, we calculated both summary
+and local measures as follows. Each recording was scaled by a
+recording-specific constant (the Huber mean of the recording
+amplitude vector). We computed the time-varying spectral
+decomposition of each of the 26 common channels by applying
+the MATLAB continuous wavelet transform cwt() using the
+complex Morlet wavelet family cmor1-1.5 and 50 frequencies
+logarithmically sampled in the range 2 to 30 Hz. We then
+normalized the amplitude at each frequency for each
+spectrogram by subtracting the median over time and dividing
+by the median absolute deviation from the median (MAD). We
+refer to this operation as robust z-scoring.
+For each preprocessing method, we created a spectral
+fingerprint of each recording by vectorizing the normalized
+spectrograms. We then computed correlations of the
+corresponding fingerprint vectors associated with pairs of
+preprocessing methods to summarize how much preprocessing
+affects spectral results. In addition, we averaged each
+spectrogram within standard frequency bands (delta: [2, 4] Hz,
+theta: [4, 7] Hz, alpha: [7, 12] Hz, beta: [12, 30] Hz) to form
+separate fingerprints for each band and computed correlations
+across corresponding fingerprint bands for pairs of
+preprocessing methods. 
+
+For each preprocessing method, we also created a recording
+spectral sample by choosing at random 100 non-overlapping
+segments of 4 seconds duration from each recording and
+calculating the power spectral density (PSD) of each sample
+segment. We used the Matlab pmtm() multi-taper spectral
+density function with tapers having a half-bandwidth of 4 using
+512 points and 256 frequency bins in [1, 50] Hz. PSD samples
+were normalized by dividing by total spectral power. The
+spectral parameters were similar to those selected by CruzGarza et al. [19] for their headset comparison. We then
+computed the correlation (across frequency) between PSD
+samples for different pairs of preprocessing methods. This
+metric quantifies the relationship between preprocessing
+methods for each recording by 26×100 = 2,600 correlations
+rather than via a single correlation value
+
+
+We also computed the mean spectra for each spectral sample
+in each of five specified frequency bands (the delta, theta, alpha,
+and beta bands listed above, as well as a gamma band of [30,
+50] Hz) for each channel in each recording. We then calculate
+correlations between corresponding band spectral samples for
+pairs of preprocessing methods. 
+
+# Computation of event related features
+
+We computed the event-related features on intervals of [−2,
+2] seconds time-locked around individual events separately for
+each preprocessing method. As described in [11], we used two
+different computation methods: ordinary trial averaging (ERPs
+and ERSPs) and temporal overlap regression (rERPs and
+rERSPs). We computed (r)ERPs for each (recording, studyspecific event code, channel) and (r)ERSPs for each (recording,
+study-specific event code, channel, frequency) combination.
+The (r)ERSPs were computed based on the time-varying
+amplitude spectrogram computed by applying the MATLAB
+continuous wavelet transform function, cwt(), to the continuous
+signal at 50 frequencies logarithmically sampled between 2 and
+40 Hz. We scaled the resulting amplitudes by subtracting the
+median and then dividing by 1.4826 times the median, with
+median computed separately at each frequency over all time
+points for each recording. We used the outlier detection scheme
+described in [11] to more robustly compute these features. 
+
+For each of the 26 common channels, we computed the
+pairwise correlations, between pairs of preprocessing methods,
+of the corresponding event-related (r)ERP features (recording,
+study-specific event code, channel). For (r)ERSP features, we
+vectorized the spectrograms before computing pairwise
+correlations. We displayed the resulting distributions of these
+correlations using boxplots and also performed statistical tests
+to determine which pairs of preprocessing methods produced
+event-related features that were more closely related. 
+
+# H evaluating effects of blinks
+
+We used the blink amplitude ratio to characterize the effect
+of blink removal for different preprocessing methods. Blink
+(r)ERPs were computed by time-locking to the maxFrame
+event inserted by BLINKER at the blink amplitude maxima in
+the EEG signal. We only consider the 26 common channels
+specified in the previous section. For each (recording, channel),
+we baselined the blink (r)ERP by subtracting the mean of the
+(r)ERP in the time intervals [−2, −1.5] and [1.5, 2] from the
+entire (r)ERP. We then computed the blink amplitude ratio by
+dividing the mean absolute value of the baselined blink (r)ERP
+in the time interval [−0.5, 0.5] by the mean absolute value of
+the baselined blink signal in the union of the intervals [−2, −1.5]
+and [1.5, 2]. Ratios close to 1 indicate that the blink signal has
+been removed during preprocessing without impacting the
+underlying activity. Ratios much greater than 1 indicate that the
+blink amplitude has not been fully subtracted from the signal,
+while ratios close to zero indicate that both the blink and
+underlying activity have been removed. 
+
+##Results
+
+#A. Effect of artifact removal on EEG signal statistics 
+
+figure no word
+
+The scalp maps after normalization (second column of Fig.
+1) have a similar appearance to those prior to normalization, but
+with a much lower amplitude because normalizing by a constant
+results in a relative reweighting of the points contributing to the
+median, keeping the points in a roughly similar relationship.
+To investigate whether there is a linear relationship between
+robust channel amplitudes across recordings (third column of
+Fig. 1), we plot A(i, k) versus A(j, k) with channel i ≠ channel j
+for all recordings k. The plots of column 3 show a distinct linear
+trend irrespective of processing method, indicating the presence
+of an underlying co-varying relationship. However, the average
+referenced only data (top row) have many more points on the
+outer arms, corresponding to the presence of large amplitude
+blinks and other eye artifacts. The plots corresponding to the
+other preprocessing methods have much smaller distributions
+along the axes.
+After dividing the channel data by the recording-specific
+Huber mean normalization factor (an overall robust measure of
+the recording’s channel amplitude), the A(i, k) versus A(j, k)
+plots become much less elongated (fourth column of Fig. 1).
+The top graph of column 4 still has arms, reflecting the
+continued amplitude dominance of the frontal channels after
+normalization, as do the ASR variants. The linear channel i vs j
+dependence is greatly reduced as indicated by the median
+adjusted R
+2
+ values, which are around 0.5 before normalization
+and nearly 0 afterwards. To quantify the statistical significance
+of these patterns, we fit a linear regression model to A(i, k) and
+A(j, k) for each (i, j) channel pair with i ≠ j. Table 1 shows the
+results of this analysis. 
+
+Fig. 2 shows that channel dispersion (top graph) is
+substantially reduced after dividing each recording by its
+recording-specific Huber mean (bottom graph). The overall
+average percentage dispersion reduction resulting from
+dividing each recording by a recording-specific constant ranged
+from 38% to 45% across studies with no obvious dependence
+on preprocessing method. The percent reduction was greater
+than zero with significance p < 0.001 (t-test, FDR corrected),
+indicating normalization reduces cross-recording variability.
+
+# Effects of preprocessing on eeg spectral characteristics
+
+of ASR_10* and ASR_5* are
+very highly correlated, and LARG and MARA have reasonably
+high spectral correlations
+
+The disagreement between the ICA-based methods (LARG
+and MARA) and the ASR-based methods (ASR_10* and
+ASR_5*) in the delta frequency band ([2, 4] Hz for this
+analysis) is likely due to the differences in baselining and highpass filtering that occurred at the beginning of the respective
+pipelines. However, ASR_10* and ASR_5* used the same
+input signals and even in this case, the correlations in the delta
+bands were much lower than in other bands. This suggests that
+not only should care be taken in specifying all baseline and
+preliminary filtering operations, but that small algorithmic
+differences in removal of large-amplitude low frequency
+artifacts such as blinks may affect downstream analysis in lower
+frequency bands.
+
+Somewhat surprising is that the gamma band agreement of
+spectral samples between LARG and MARA is relatively good,
+since one of the main differences between these methods is that
+MARA identifies more artifactual ICs, particularly those
+associated with muscle artifacts. The agreement in the alpha
+band is higher than in other bands for all pairs of preprocessing
+methods, likely due to high signal-to-noise ratio of EEG in this
+band.
+
+# C Effects of preprocessing on removal of blinks
+
+Using box plots of the blink amplitude ratio, Fig. 4 summarizes
+how well the respective preprocessing methods remove blinks
+in the time domain. MARA and both variants of ASR display
+significant residuals in blink amplitude (ratio > 1) as shown by
+the extended whiskers in the corresponding box plots. In some
+recordings, this residual is very large, The ASR variations tend
+to leave more blink residual than MARA, while LARG tends to
+remove signal along with blinks (ratio <1).
+Paired t-tests of blink amplitude ratios between
+preprocessing methods give a strict ordering of mean blink
+amplitude ratio of LARG << 1 << MARA < ASR_5* <
+ASR_10* with p values of essentially 0. Differences in blink
+amplitude ratios among the various preprocessing methods are
+consistently greater for regressed features than averaged
+features with high significance.
+The bottom graph of Fig. 4 shows a typical blink ERPs
+overlaid for different preprocessing methods and different
+computation strategies
+
+This example is typical of the others that we have examined.
+The residual signal is quite large for all preprocessing methods
+except LARG, which directly regresses out the blink signal in
+the interval [−1, 1]. In this example (which is typical), the other
+methods appear to remove too much signal at the blink
+maximum and too little signal before and after the maximum.
+The averaged and regressed blink ERPs are close for the ASR
+variants, but the averaged blink ERP for MARA shows more
+blink residual than its regressed version. 
+
+
+figura no word
+
+The top group shows channel FCz, while the bottom group
+shows channel O1. All of the methods exhibit a significant
+burst-like increase in power in the beta frequency range
+occurring slightly after the blink maximum, possibly associated
+with the beginning of the eye opening phase. MARA, and to a
+lesser extent the ASR variants, show significant low-frequency
+activity time-locked to the blink maximum, which may be
+associated with residual blink activity. 
+
+
+# D. Relationships of event-related features across methods
+
+figura word
+
+
+econds.
+The graphs show that the relative levels of correlation
+between corresponding features are similar to those levels seen
+in the spectral analysis. The two variants of ASR are the most
+highly correlated although there are quite a few outlier features.
+LARG and MARA are more highly correlated for ERPs than
+either of those methods are with the ASR_5* and ASR_10*.
+LARG and ASR_10* are slightly more correlated than LARG
+and MARA for ERSPs.
+For each pair of pre-processing methods, we used onesample t-tests to test whether the mean of the distribution of
+ERP correlations (over all channels, analyzed events, and
+recordings) is significantly non-zero. Table 2 shows the means
+and 99% confidence intervals, confirming that the average
+correlation is significantly non-zero for all pairs of methods.
+Also shown in Table 2 are the median and the signed-rank
+statistic calculated using the Wilcoxon signed rank test for each
+pair of preprocessing methods. Regressed ERPs as well as
+averaged and regressed ERSPs gave similar statistical results.
+In all cases, the mean correlation was lower than the median.
+
+
+The statistical results for averaged features were similar.
+Although the feature correlations between preprocessing
+methods are similar, the actual features computed using trial
+averaging and regression have substantial differences as
+illustrated by Fig.7. 
+
+figura no word
+
+Importantly, the problematic nature of averaging is evident
+across all preprocessing methods. The bottom group of plots in
+Fig. 7 clearly shows the effect of other correlated and
+confounded events on ERSP estimation, with significant
+activity prior to the target event.
+
+##Discussion
+
+Our large-scale analysis shows that the resulting
+signals have generally similar characteristics, but there are
+small systematic differences in outcomes, even between closely
+related methods
+
+#A. Eye artifacts affect signal characteristics
+
+**The characteristics of signals with just external artifacts
+removed (top row of Fig. 1) are dramatically different than the
+characteristics of signals in which subject-generated artifacts
+(rows 2 through 5 of Fig. 1) are also removed. Fig. 1 also shows
+that the global signal characteristics after subject-generated
+artifacts are removed are very similar across preprocessing
+methods. Further, since LARG mainly focuses on the removal
+of blinks and eye artifacts, one can conclude that the majority
+of the large-scale difference is due to the effect of blinks.**
+
+These methods produce data in which blinks are difficult to
+observe in single trials. LARG, which directly regresses out
+blinks during preprocessing, has blink amplitude ratios less than
+1, leading to the concern that perhaps too much EEG signal has
+been removed, while the other preprocessing methods may not
+remove enough of the blink artifacts (Fig. 4). All of the
+methods, including LARG, show similar well-defined timefrequency features time-locked to blink events after blink
+removal (Fig. 5). 
+
+Blink entrainment in certain visual tasks can further
+complicate the interpretation [20]. We recommend that
+researchers generally assume residual blink signals are present
+in their data after preprocessing and take active measures to
+address this when interpreting their results. Researchers have
+observed neural activity locked to spontaneous blinks. This is
+hypothesized to be related to attentional disengagement and
+transient activation/deactivation of cortical brain networks [21].
+It is therefore important to examine multiple factors, including
+the spatial and spectral distribution of residual activity locked
+to blinks, when characterizing the origin of this activity.
+Temporal overlap regression [4] [5] may also be a particularly
+suitable method to address this problem by regressing out
+common patterns of activity unique to blink events.
+
+# Channel amplitude normalization (eh analogo a tirar frequencia baixa, mas n eh outra coisa)
+
+As we reported in earlier work [6], our results highlight the
+potential for factoring out a portion of inter-recording
+variability by uniform scaling of channel amplitudes (Fig. 2).
+This simple step is effective across preprocessing methods and
+is strongly recommended for cross-recording comparisons,
+even within a single study. This scaling does not change the
+relative sizes of the respective channel amplitudes. 
+
+# Filtering and pre-processing differences
+
+One place where there was a distinct difference in the choice
+of filter parameters was in the high-pass filter used for ASR
+versus the other preprocessing methods. ASR depends on the
+signal having zero mean, both globally, as well as over local
+(e.g., 0.5 sec) analysis windows. High-pass filtering is an
+effective way to remove local signal drift and produce a zeromean time series. However, EEG recording hardware from
+
+some manufacturers, such as Biosemi, have large DC offsets or
+drift that may require a suitably large stop-band suppression in
+the filter to ensure that power at 0 Hz (corresponding to the
+mean) is as close to zero as possible. In this work, we used an
+FIR high-pass filter with a 0.75-1.5 Hz transition band to
+achieve 70 dB reduction in power at 0.5 Hz using the same FIR
+filtering approach used for LARG and MARA. However, since
+LARG and MARA used a 0.5-1 Hz transition band, we cannot
+rule out that some differences observed between these methods
+and ASR, particularly in the delta band, may be attributed to
+differences in the filter cutoff. However, since each pair of
+methods (pair 1: LARG and MARA; pair 2: ASR_10* and
+ASR_5*) used the same input within the pair, the large spectral
+differences within each pair of methods is likely attributable to
+differences in artifact handling not filtering
+
+Another difference between the input signals to the four
+preprocessing pipelines is that ASR requires full-rank data and
+thus cannot be applied after channel interpolation, ICA
+component removal, or other rank-reducing methods. However,
+the comparison metrics described here require a fixed, common
+set of channels. 
+
+**LARG and MARA interpolated bad channels
+prior to performing their analysis and used PCA to reduce rank.
+** 
+
+anotacao minha: n entendi, achei q esses n usavam pca,
+tipo as dimensoes n teriam q ter ficado iguais?
+
+The normal offline ASR algorithm operates after bad channels
+have been removed. ASR* just dealt with the bad channels as
+part of its subspace removal and did relatively well. The effects
+of channel interpolation should be further investigated.
+
+Fig. 6 shows that, although one might expect roughly similar
+event-related features across preprocessing methods, the details
+of individual corresponding features may differ considerably.
+Even the two ASR variants, which have a median feature
+correlation greater than 0.9, have many outlier examples with
+very low correlation. All of the event-related features computed
+in this paper used a trial outlier method that excludes epochs
+with unusually large amplitudes. Identifying other types of
+artifactual trials before preprocessing and systematically
+examining how excluding these trials changes the feature, may
+be useful in evaluating feature generalizability. 
+
+To improve the generalizability, we utilized a diverse set of
+stimulus events and extended the comparison to event-locked
+time-frequency features and regression-derived features. Our
+conclusions are generally consistent across feature and event
+types. However, as shown by Fig. 7, ERSPs computed by trial
+averaging showed a significant mixing of evoked responses
+from temporally adjacent event. This was particularly evident
+for RSVP paradigms, which elicit overlapping activity from
+rapidly presented stimuli. 
+
+# Conclusion
+
+This large-scale analysis suggests that even small changes in
+artifact removal strategy may result in differences with large
+effects on particular portions of the signal. While there is
+general agreement on the steps that should be taken for
+preprocessing (e.g., filtering, line-noise removal, references,
+bad channels handling, artifact removal), a range of “standard”
+choices may affect results in unknown ways. **While differences
+may be small when averaged over a large, diverse corpus, they
+may be significant when considered for a single study**
+
+anotacao minha: na vdd isso significa que essa variacao de cada paciente grande
+eh devido a variacao alta dos proprios metodos -> devido a variacao alta entre 
+sinais de pacientes diferentes eu acho-> individualizacao.
+
+Rather
+than anoint a particular analysis path as the “gold standard”, a
+diversity approach may lead to more reproducible and
+meaningful results
+
+---------------------
+
+*7 playlist eeglab - eeg preprocessing
+
+---------------------------
+
+title: *7 - #1: Importing raw data
+
+url: https://www.youtube.com/watch?v=gEk33jWB0MY
+
+notes:
+
+can install a lot of plugins
+
+word
+
+---------------------------
+
+title: *7 - #2: Events and channel locations
+
+url: https://www.youtube.com/watch?v=2CPmmPG5Beo&list=PLXc9qfVbMMN1ZS3sU2xT2hhfB5PAmuNae&index=2
+
+notes:
+
+word
+
+---------------------------
+
+title: *7 - #3: Rereferencing and resampling
+
+url: https://www.youtube.com/watch?v=nshi47blz7Q&list=PLXc9qfVbMMN1ZS3sU2xT2hhfB5PAmuNae&index=4
+
+notes:
+
+Filter main reason: remove slow drift (low freq)
+
+word
+
+---------------------------
+
+title: *7 - #4: Filtering
+
+url: https://www.youtube.com/watch?v=nshi47blz7Q&list=PLXc9qfVbMMN1ZS3sU2xT2hhfB5PAmuNae&index=4
+
+notes:
+
+word
+
+---------------------------
+
+title: *7 - #5: vizualize data
+
+url: https://www.youtube.com/watch?v=SgQxdVgryVY&list=PLXc9qfVbMMN1ZS3sU2xT2hhfB5PAmuNae&index=5
+
+notes:
+
+“there is no universal method for cleaning eeg data -> have to look”
+
+word
+
+---------------------------
+
+title: *7 - #6: Remove bad channels
+
+url: https://www.youtube.com/watch?v=5BTT-L2Ab04&list=PLXc9qfVbMMN1ZS3sU2xT2hhfB5PAmuNae&index=6
+
+notes:
+
+temporal channelsusually have more high freq
+
+only reject channels which spectrum is widely different
+
+demo: automatic channels rejectio selected channels which he think shouldnt be excluded
+
+word
+
+---------------------------
+
+title: *7 - #7:  Removing bad data segments 
+
+url: https://www.youtube.com/watch?v=ZvbRiX84mgc&list=PLXc9qfVbMMN1ZS3sU2xT2hhfB5PAmuNae&index=7
+
+notes:
+
+after asr reults look pretty good
+
+word
+
+---------------------
+
+*8 playlist eeglab - ICA
+
+---------------------------
+
+title: *8 -  part 1: What is ICA?
+
+url: https://www.youtube.com/watch?v=kWAjhXr7pT4&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc
+
+notes:
+
+unmixing matrix does the best the get the components (result of multiplication) to be
+independent according to some metric (some types of ica)
+
+---------------------------
+
+title: *8 - part 2: How does Infomax ICA work?
+
+url: https://www.youtube.com/watch?v=l7io0u1kFhA&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=2
+
+notes:
+
+maximize entropy -> done by learning (optimization by differentiating H to the weights)
+
+word
+
+---------------------------
+
+title: *8 - part 3: ICA applied to EEG data
+
+url: https://www.youtube.com/watch?v=lCfYbwT0AA4&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=3
+
+notes:
+
+Remove artifact by zeroing out column for example
+
+assumptions:
+	- mixing is linear at eltrodes
+		- tru because of maxwells eqautions
+	- propagation delays are negligible
+		- true, very fast 
+	- component time courses are independent
+		- not very reasonable
+		- most algorithms find maximumm independent solution
+		- dont have to be fully independent
+	- # of components less than the number of channels
+		- not  necessarily a resonable assumptions
+		- ica will select the ones whcih contribute the most
+		
+
+eeg vs fmri
+
+	isread of channels, in fmri we have different time points of 3d fmri activation in time, 
+	and the weight correpond to weighting different time points -> result is components so 
+	compoentns will be mapped to points in time not space
+
+	and we apply this to each 3d volume of fmri
+	word
+
+
+---------------------------
+
+title: *8 - Removing ICA component artifacts in EEG data
+
+url: https://www.youtube.com/watch?v=pSYqVBp5ZjU&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=4
+
+notes:
+
+zeroin out columns of removed components then multiple by inverse of unmixing matrix
+
+When we have high noise ICA becomes much better than automated common methods to take artifact off and recover signal (based on simulation)
+
+Example: gamma power  of medidator showed to be higher than controls  , but how do we now it is not just because of muscle artifact?
+
+If It was muscle doing the same anlysis on the muslce artifact component would give the same result, but it didn’t. So it gives confidence 
+that its actual braina activity that caused that difference
+
+word
+
+---------------------------
+
+title: *8 - Source localization of ICA components
+
+url: https://www.youtube.com/watch?v=kQI3Yzv1wqs&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=5
+
+notes:
+
+word
+
+---------------------------
+
+title: *8 - Reproducibility of ICA decompositions
+
+url: https://www.youtube.com/watch?v=0KiHpmEPyqw&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=6
+notes:
+
+word
+
+if we run ica several times on similar data, will it give similar solution?
+
+how repproducible across days of the same pacient?
+
+
+
+---------------------------
+
+title: *8 - part 6: Reproducibility of ICA decompositions
+
+url: https://www.youtube.com/watch?v=0KiHpmEPyqw&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=6
+
+notes:
+
+word
+
+duvida inter-cluster reliability:
+tipo ele ta medindo isso assumindo que um dipolo
+serve pra explicar cada componentemas tipo o numero de componentes soh nao eh gigante pq do limite do numero de eletrodos
+entao tipo alguns dessec componentes provavelmente sao mistura alguns ou varios dipolos pq
+nao deu pra ter esse refinamento
+
+---------------------------
+
+title: *8 - part 7: Running ICA in EEGLAB and visualizing components
+
+url: https://www.youtube.com/watch?https://www.youtube.com/watch?v=2hrYEYSycGI&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=7
+
+notes:
+
+can do ica on fitlered data and use on ulfiltered data (same matrix)
+no problem with it (example of taking away low freq but then putting it back because for ERP is important)
+
+options in eeglab for ica
+
+extended (default is 0) -> helps detect line noise -> in general we want to use
+stop (default is 1e-7)-> small number (when optimization changes less than this , it stops )
+lrate (default is determined from the data)-> learning rate
+maxsteps (default is 512)
+pca -> decompose only a principal subspace (example of use is when have avarage reference one eletrode is dependent od the others, have to take on dimension out)
+
+Lesson: don’t use pca to reduce dimensionality before ica unless you need to
+
+In a good icca we can see that we can use dipoles to model activity
+
+---------------------------
+
+title: *8 - part 8: Removing Artifactual Components in EEGLAB
+
+url: https://www.youtube.com/watch?v=ocJhWbV4b50&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=8
+
+notes:
+
+We cant identify each one just by looking at yopography, we need to see each one in detail
+
+Good to note that thecomponent that has mucle noise can also only have it in some subset of trials, often this happens
+
+He would not remove bad channels components, he wold remove correpsonding channels/trials
+Because these channels might still contain activity related to brain
+
+word comment:
+We can see that in the eye channel, erp was very affected, probably happended because subject blinked right after stimulus. 
+Hoverver there is a good side: that might not be representing a cognitive erp so it is good to take it
+
+---------------------------
+
+title: *8 - part 9: Automatically detecting ICA component classes
+
+url: https://www.youtube.com/watch?v=Gi-0KiV_Az8&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=9
+
+notes:
+
+word
+
+---------------------------
+
+title: *8 - part 10: Looking at brain components
+
+url: https://www.youtube.com/watch?v=5-hMJ8VKXBU&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=10
+
+notes:
+
+word
+
+usefull to look at subject level and find regularities
+than look at group level ad look at cluster component contribution to the erp
+
+can also plot the difference envolope between two conditions
+
+---------------------------
+
+title: *8 - part 11: Common misconceptions about ICA and conclusion
+
+url: https://www.youtube.com/watch?v=vQa6T7QqR-s&list=PLXc9qfVbMMN2uDadxZ_OEsHjzcRtlLNxc&index=11
+
+notes:
+
+word
+
+word comment:
+Altough ica finds independent components there tends to be still residual dependence
+1 and 2 are the tendecies of the fied -> but this is a individualized aproach and may not geenralize between subjects
+
+---------------------
+
+*9 playlist eeglab - General Linear Modeling of EEG in EEGLAB/LIMO
+
+---------------------------
+
+title: *9 - part 1: Basic Theory
+
+url: https://www.youtube.com/watch?v=mZbK6KvMF2I&list=PLXc9qfVbMMN2Vrzte9ul3nrrG8AgB5OkU
+
+notes:
+
+LIMO is one of the most important pllugins of eeglab
+
+Why its better to fit GLM istead of doing regression and ANOVA separately?
+Beccause in GLM it will fit treting type of stimuli(cat variables) independently of the noise fitting, 
+while separatly your ANOVA might be biased by noise
+
+word comments:
+To assess the if there is a singificant difference in the type of stimulis we can just subtract the beta 
+aprameters and acess is 95% confidence interval overlaps zero
+To compute the confidence interval you can use parametric statistics , but usually we use bootstrapping
+ -> fit a lot of trails with random event labeling
+
+Applying this mask is equivalent to doing t test between the two erp’s for each stimulus and tresholding in 0.5
+Obs: remember to correct for multiple comparisons
+
+Interaction are usually modeled with factorial design (2)
+Full factorial -> interaction at single subject level
+
+Same as group analysis for erp’s, however instead of suing avg potential in tiem we use beta parameter in time as input
+
+Remermbering: this is done for each latency and for each eletrode and we will need to corrrect for multiple comparison
+
+Mainly for computational reasons the heirachical glm is most adopted
+---------------------------
+
+title: *9 - part 2: Practicum
+
+url: https://www.youtube.com/watch?v=7EWN2w0kSy4&list=PLXc9qfVbMMN2Vrzte9ul3nrrG8AgB5OkU&index=2
+
+notes:
+
+need to isntall eeglab LIMO
+
+DATA:
+
+huge dataset (all kinds of data not just eeg):
+nature.com/articles/sdata20151
+
+download data at:
+openneuro.org/datasets/ds002718
+
+obs: all modification of raw data commented in reading file
+
+we are only going to compare stimulus across types of faces here
+
+preprocessing steps:
+
+1. imported data
+2. removed bad channels
+3. performed light artifact rejection with ASR (just first step - filtering)
+4. re-reference data to avg reference with interpolation of removed channels
+5. run ICA, remove 1 dimension because of the avg reference
+6. classify ica components using IClabel
+7. set tresholds that determine rejection
+8. remove bad components from the data
+9. perfromed strong artifact rejection with ASR (last two steps)
+10. extarct epochs according to stimulis
+
+preprocessing done!
+
+**anotacao minha: primeira opcao do ASR eh a filtragem**
+
+importante: no cmd do marlab digita eegh que vai mostrar todos os comandos feitos (traduzidos da ui pra codigo)
+ai se quiser fazer a mesma coisa eh soh copiar e colar issos
+
+importante:
+"This is slightly different form the other pipeline, in the other pipeline we cleaned the data only once, before running ica
+and also ica aritfact components are removed at the STUDY level not at the dataset level. Here we do in two steps because there are a lot of wye movements
+and if we clean the data agressively before running ica, we are going to remove all portions of data containing eye artifacts, instead we clean lightly to clean only portions of data containing large artifacts, we run ica
+and then remove artifact components, then we clean data more agressively to remove small artifacts still present in the data. Finally we extract epochs and create an eeglab study"
+---------------------
+
+*10 playlist eeglab - EEGLAB introduction
+
+---------------------------
+
+title: *10 - Why EEGLAB
+
+url: https://www.youtube.com/watch?v=R_nf1HRScx4&list=PLXc9qfVbMMN2NksmDeqizCI1z5DJBlqC6
+
+notes:
+
+alpha power: when you do standard ERP analysis
+remove all trials with alpha because you consider
+as strong background noise
+
+image in word shows that ERP is very different in both
+cases (high and low alpha)
+
+word
+---------------------------
+
+title: *10 - #2: The origin of the EEG signal
+
+url: https://www.youtube.com/watch?v=KhEKRHw0qFg&list=PLXc9qfVbMMN2NksmDeqizCI1z5DJBlqC6&index=2
+
+notes:
+
+word
+---------------------------
+
+title: *10 - Source resolved EEG brain dynamics
+
+url: https://www.youtube.com/watch?v=MzJTZuyznQ4&list=PLXc9qfVbMMN2NksmDeqizCI1z5DJBlqC6&index=3
+
+notes:
+
+inverse problem has many solutions -> many methods and aproaches
+
+ 
+Usually single dipole already models well ica component
+
+important difference between source separtion (ica)
+ans source localization (inverse problem)
+
+for inverse problem thre is a range of methods going from simple
+assumptions to complex ones, and using MRI
+---------------------------
+
+title: *10 - #4: EEGLAB history and usage statistics
+
+url: https://www.youtube.com/watch?v=XtOIwaYjS1M&list=PLXc9qfVbMMN2NksmDeqizCI1z5DJBlqC6&index=4
+
+notes:
+
+word 
+---------------------------
+
+title: *10 - #5: Single subject processing pipeline
+
+url: https://www.youtube.com/watch?v=-V48rhAGzJI&list=PLXc9qfVbMMN2NksmDeqizCI1z5DJBlqC6&index=5
+
+notes:
+
+EEGLAB standard processing pipeline in image (word)
+
+can import events from separte file or event chanel
+
+1. import
+2. look at data
+3. import channel location
+4. preprcess:
+	- subsample
+	- filter
+	- re-reference
+	- interpolate eletrodes
+	- reject continuos data by eye
+5. plot
+6. run ICA
+ 	- see localizationof components
+ 	- contribution to erp
+ 	- contribution to spectrum
+
+
+
+no extract epochs, vc define o evento e o tempo em volta dele que vai ser o trial e ai 
+vc consegue extrair
+
+word
+
+---------------------------
+
+title: *10 - #6: Multi subject analysis and scripting
+
+url: https://www.youtube.com/watch?v=kofJh7biGsE&list=PLXc9qfVbMMN2NksmDeqizCI1z5DJBlqC6&index=6
+
+notes:
+
+1. build study and design
+2. pre-compute measures
+3. cluster components
+4. analyze components
+------------------------
+
+obs: rest of playlist is the sma econtent as mike x cohen course
+
+title: Time-Frequency Analysis of EEG Time Series Part 4: Inter-Trial Coherence (ITC)/Phase locking factor
+
+url: https://www.youtube.com/watch?v=rh_ZVt-VCoY&list=PLXc9qfVbMMN2TAoLHVW5NvNmJtwiHurzw&index=4
+
+notes:
+
+ITC = ITPS do mike x cohen
+
+example (imagem no word):
+Shows that erp hypothesis here was a bad simplification because ignored important variablity in single trials
+
+-----------------------
+
+title: Time-Frequency Analysis of EEG Time Series Part 5: Practicum in EEGLAB
+
+url: https://www.youtube.com/watch?v=b0430f_W0mo&list=PLXc9qfVbMMN2TAoLHVW5NvNmJtwiHurzw&index=5
+
+notes:
+
+word
+
+---------------------
+
+*11 playlist eeglab - Processing Muse data
+
+muse eh um aparelho comercial
+
+eh tipo um exemplo completo
+
+---------------------------
+
+title: *11 - Acquiring data
+
+url: https://www.youtube.com/watch?v=omn7y3TIsGc&list=PLXc9qfVbMMN1U9FsDmY6vUdvM8HPEmzAy
+
+notes:
+
+o video eh soh ele gravando usando o headet
+
+5 minutes of data
+
+need to set recording interval of celphone to constant
+
+---------------------------
+
+title: *11 - Part II: Artifact rejection
+
+url: https://www.youtube.com/watch?v=H6-e3tNT9EQ&list=PLXc9qfVbMMN1U9FsDmY6vUdvM8HPEmzAy&index=2
+
+notes:
+
+physiological data is between 2 to 10 mV, anything above 10mv is artifact
+
+1. installed mus eimport extension to import .csv file
+2. plotted channels
+3. removed dc offset (baseline)
+4. ran ica -> pq ele nao queria excluir canais já que tinha mt pouco ( 4 só)
+5. removed first component
+6. saved components
+7. lot the channels
+8. changed scale of plot
+9. selcted manual removal, with larger time window
+
+dont know why he didnt run automatic methods:
+foi pq aqui ele só tirou arfefatos gritantes (amplitude)
+10. removed time windows of atifact manually
+
+---------------------------
+
+title: *11 - Analysis of multiple data files
+
+url: https://www.youtube.com/watch?v=fB6TJjhO674&list=PLXc9qfVbMMN1U9FsDmY6vUdvM8HPEmzAy&index=3
+
+notes:
+
+obs: had 2 minutes of data
+obs2: ele jah tinha removido pedacoes com potencial muito alto quando gravou os dados
+e aplicado ica pra ano ter que remover canais
+
+1. imported data
+2. removed dc offset (baseline)
+3. filtered with FIR filter, pass everything above 1 hz
+4. increased window time and scale
+5. removed part of the data he knew he wasnt doing task he was supposed to do
+6. removed artifacts manually -> he took about 5 min to remove of one file
+and there were 8 files -> 8*5 = 40 minutes total
+
+"They are tools in EEGLAB 2019.1 to perform automated rejection. We are currently evaluating 
+their performance compared to manual rejection to assess if these can be used on Muse data 
+(which is not ideal with 4 channels only and relatively low data quality). We will likely publish 
+a paper on the topic this year." -> explicacao do pq foi manual e removeu todos os canais
+
+7. save dataset
+8. saved sataset
+9. repeated 1-7 for each dataset
+10. clear data
+11. create study
+12. write conditions and subjects
+13. save study
+14. edit study design
+15. check things and change ame if you want
+16. precompute channel measures
+17. plot channel measures
+
+a coluna da esquerda eh avg dos dias (sub datasets), e a coluna da direita
+eh plota cada dia (sub dataset) individualmente
+
+No statistics yet, but we can see that two are dfifferent, probably signifcantly different but need statistics to confirm it
+
+---------------------------
+
+title: *11 - Part IV: Statistical analysis
+
+url: https://www.youtube.com/watch?v=y8jK-bW1U3A&list=PLXc9qfVbMMN1U9FsDmY6vUdvM8HPEmzAy&index=4
+
+notes:
+
+word
+
+---------------------------
+
+title: BIDS data format for Neuroimaging: Export/Import BIDS EEG data from EEGLAB
+
+url: https://www.youtube.com/watch?v=EClpeP7WREw&list=PLXc9qfVbMMN3II4EnVQNjOeVl-UprWlnM&index=2
+
+notes:
+
+The advantage of using BIDS is that EEGLAB can automatically import the BIDS folder as
+an EEGLAB STUDY, which means as a group of datasets from multiple subjects, that is ready for group 
+processing
+
+
+difference between runs and days (sub datasets for a subject)
+	almost the same thing, its more of a semantic difference
+	in runs its all measures in seq uence continuosly, its just to divide in more files
+	in sessions between files, there was a period of time without using eeg (decontinuity)
+
+
+in raw data files channel locations are often not available
+in EEGlab we can use the "channel location" menu item and based on the
+channel labels it will automaticaly use template locations
+
+Using  script is recommended, has more fucntinalities than gui, just go to github and change it for your dataset
+
+word
+
+---------------------------
+
+title: From raw data to group level analysis in EEGLAB
+
+url: https://www.youtube.com/watch?v=-jL3PuHD3aY&list=PLXc9qfVbMMN3II4EnVQNjOeVl-UprWlnM&index=3
+
+notes:
+
+advantage of using bits is that eeglab can automatically import the
+bits folder structure as an eeglab study including aditional events and channel infor
+mation that might not be available at the raw eeg data files
+
+in the setting of ASR:
+"im gonna change the settings a little bit, i'l add a filter, this option is checked out by default because
+you can also filter the data using filter menu in eeglab, and will use filter centerd at 1hz because this si recommended when using ica
+and looking for components as brain sources"
+
+"I will also change the settings for rejecting channels, when i was looking at this data before this presentation
+this function rejected to many channels for my taste, so i will lower minimum correlation treshold to 0.7"
+
+word
+
+most of the time was due to:
+ASR and ICA -> about 10 minutes each
+
+------------------------
+
+title: Autoreject: Automated artifact rejection for MEG
+and EEG data
+** muito bom -> algoritmo de bad traisl rejection and interpolation,
+que tuna os parametros de treshold  com otimizaacao bayesiana e tem seus prórios parametros
+user friendly (facil interpretacao do usuario)
+
+doi: http://dx.doi.org/10.1016/j.neuroimage.2017.06.030
+
+notes:
+****************** DADOS
+#data
+This has given rise to the practice of sharing and publishing data in open archives (Gorgolewski
+and Poldrack, 2016). Examples of such large electrophysiological datasets include the Human Connectome
+Project (HCP) (Van Essen et al., 2012; Larson-Prior et al., 2013), the Physiobank (Goldberger et al., 2000)
+and the OMEGA archive (Niso et al., 2016). A tendency towards ever-growing massive datasets as well as
+a shift towards common standards for accessing these databases (Gorgolewski et al., 2016; Bigdely-Shamlo
+et al., 2013) is clearly visible. The UK Biobank project (Ollier et al., 2005) which currently hosts data from
+more than 50,000 subjects is yet another example of this trend
+
+Despite being so fundamental to M/EEG analysis given how easily such data can be corrupted
+by noise and artifacts, there is currently no consensus in the community on how to address this particular
+issue.
+
+Another example quite common in practice, both in the case of EEG and MEG, is the
+presence of a bad sensor. When kept in the analysis, an artifact present on a single bad sensor can spread to
+other sensors, for example due to spatial projection
+
+A
+common practice to mitigate this issue is to visually inspect the data using an interactive viewer and mark
+manually, the bad sensors and bad segments in the data. Although trained experts are very likely to agree
+on the annotation of bad data, their judgement is subject to fluctuations and cannot be repeated. Their
+judgement can also be biased due to prior training with different experimental setups or equipments, not to
+mention the difficulty for such experts to allocate some time to review the raw data collected everyday
+
+Luckily, popular software tools such as Brainstorm (Tadel et al., 2011), EEGLAB (Delorme and Makeig,
+2004), FieldTrip (Oostenveld et al., 2011), MNE (Gramfort et al., 2013) or SPM (Litvak et al., 2011) already
+allow for the rejection of bad data segments based on simple metrics such as peak-to-peak signal amplitude
+differences that are compared to a manually set threshold value. When the peak-to-peak amplitude in the
+data exceeds a certain threshold, it is considered as bad. However, while this seems quite easy to understand
+and simple to use from a practitioner’s standpoint, this is not always convenient. In fact, a good peak-topeak threshold turns out to be data specific, which means that setting it requires some amount of trial and
+error.
+
+On the one hand, are pipeline-based approaches, such as
+Fully Automated Statistical Thresholding for EEG artifact rejection (FASTER by Nolan et al. (2010)) which
+detect bad sensors as well as bad trials using fixed thresholds motivated from classical Gaussian statistics.
+Methods such as PREP (Bigdely-Shamlo et al., 2015), on the other hand, aim to detect and clean the bad
+sensors only. Unfortunately, they do not offer any solution to reject bad trials. 
+
+Other methods are available
+to solve this problem. For example, the Riemannian Potato (Barachant et al., 2013) technique can identify
+the bad trials as those where the covariance matrix lies outside of the “potato” of covariance matrices for
+good trials. By doing so, it marks trials as bad but does not identify the sensors causing the problem, hence
+not offering the ability to repair them
+
+It appears that practitioners are left to choose between different
+methods to reject trials or repair sensors, whereas they are in fact intricately related problems and must
+be dealt with together. Robust regression (Diedrichsen and Shadmehr, 2005) also deals with bad trials
+using a weighted average which mitigates the effect of outlier trials. Trials with artifacts end up with low
+
+A somewhat related approach, which is also data-driven, is Sensor Noise Suppression (SNS) (De Cheveign´e
+and Simon, 2008). It removes the sensor-level noise by spatially projecting the data of each sensor onto
+the subspace spanned by the principal components of all the other sensors. This projection is repeated in
+leave-one-sensor-out iterations so as to eventually clean all the sensors. In most of these methods, however,
+, 4
+there are parameters which are somewhat dataset dependent and must therefore be manually tuned
+
+**This led us to adopt a pragmatic approach in terms of algorithm design, as it focuses on the tuning of the
+parameters that M/EEG users presently choose manually. The goal is, not only to obtain high quality data
+but also to develop a method which is transparent and not too disruptive for the majority of M/EEG users**.
+A first question we address below is: can we improve peak-to-peak based rejection methods by automating
+the process of trial and error? In the following section, we explain how the widely-known statistical method
+of cross-validation (see Figure 1 for a preview) in combination with Bayesian optimization (Snoek et al.,
+2012; Bergstra et al., 2011) can be employed to tackle the problem at hand. We then explain how this
+strategy can be extended to set thresholds separately for each sensor and mark trials as bad when a large
+majority of the sensors have high-amplitude artifacts. This process closely mimics how a human expert
+would mark a trial as bad during visual inspection
+
+In a major validation
+effort, we take advantage of cleaned up evoked response fields (ERFs) provided by the Human Connectome
+Project (Larson-Prior et al., 2013) enabling ground truth comparison between alternative methods. This
+work represents one of the first efforts in reanalysis of the MEG data from the HCP dataset using a toolkit
+stack significantly different from the one employed by the HCP consortium. In addition to this, we validated
+our algorithm on the MNE sample data (Gramfort et al., 2013), the multimodal faces dataset (Wakeman
+and Henson, 2015), and the EEGBCI motor imagery data (Goldberger et al., 2000; Schalk et al., 2004).
+A preliminary version of this work was presented in Jas et al. (2016).
+
+3.1 Evaluation metric
+The evoked response from the data cleaned using our algorithm or a competing benchmark is denoted by
+X(method). This is compared to the ground truth evoked response X(clean) (See Section 3.2.1 to see how
+these are obtained for different datasets) using:
+kX(method) − X(clean)k∞ (9)
+where k · k∞ is the infinity norm. The reason for using infinity norm is that it is sensitive to the maximum
+amplitude in the difference signal as opposed to the Frobenius norm which averages the squared difference.
+The k · k∞ is a particularly sensitive metric to quantity artifacts which are also visually striking such as
+those localized on one sensor or at a given time instant.
+
+**Human Connectome Project (HCP) MEG data**
+
+Human Connectome Project (HCP) MEG data The HCP dataset is a multimodal reference dataset
+realized by the efforts of multiple international laboratories around the world. It currently provides access to
+, 12
+both task-free and task-related data for more than 900 human subjects with functional MRI data, 95 of which
+have presently also MEG (Larson-Prior et al., 2013). An interesting aspect of the initiative is that the data
+provided is not only in unprocessed BTi format, but also processed using diverse processing pipelines. These
+include annotations of bad sensors and corrupted time segments for the MEG data derived from automated
+pipelines and supplemented by human inspection. The automated pipelines are based on correlation between
+neighboring sensors, z-score metrics, ratio of variance to neighbors, and ICA decomposition. Most significant
+for our purposes, the clean average response X(clean) is directly available. It allows us to objectively evaluate
+the proposed algorithm against state-of-the-art methods by reprocessing the raw data and comparing the
+outcome with the official pipeline output.
+============================
+to do:
+
+TEST-RETEST VALIDATION MEASURE, AND BEST METHOD OF PREPROCESSING ACCORDING TO IT:
+file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/Validation%20of%20eeg%20preprocessing%20pipeline%20by%20test-retest%20reliability.pdf
+
+COMPARISON OF EEG PREPROCESSING METHODS TO
+IMPROVE THE CLASSIFICATION OF P300 TRIALS:
+file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/COMPARISON%20OF%20EEG%20PREPROCESSING%20METHODS%20TO%20IMPROVE%20CLASSIFICATION%20OF%20P300%20TRIALS.pdf
+
+Preprocessing/Artifact removal softawares/algorithms:
+
+	Automagic (plugin, also standalone software, integrated method):
+	https://www.biorxiv.org/content/10.1101/460469v3.full.pdf
+
+	PREP (plugin, integrated method) => pra retirada de eletrodos ruins
+	file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/The%20PREP%20pipeline.pdf
+
+	ASR (plugin, Artifact subspace reconstruction method, widely used, can do real-time):
+	file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/The%20artifact%20subspace%20reconstrucction%20(asr)%20comparative%20study.pdf
+	https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4710679/pdf/nihms733482.pdf
+
+	Faster (plugin, just another method):
+	https://www.tcd.ie/biomedicalengineering/assets/pdf/faster.pdf
+
+
+

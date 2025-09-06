@@ -1,0 +1,41 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "W.P.M.H. Heemels",
+      "university": "Delft University of Technology"
+    },
+    {
+      "name": "D. Lehmann",
+      "university": null
+    },
+    {
+      "name": "J. Lunze",
+      "university": null
+    },
+    {
+      "name": "B. De Schutter",
+      "university": null
+    },
+    {
+      "name": "M. Heemels",
+      "university": "Eindhoven University of Technology"
+    },
+    {
+      "name": "Lunze",
+      "university": "Ruhr University Bochum"
+    },
+    {
+      "name": "B. De Schutter",
+      "university": "Delft University of Technology"
+    }
+  ],
+  "university_course_name": null,
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 31,
+  "size_mb": 0.6,
+  "link_to_license": null,
+  "changes_were_made": false
+}

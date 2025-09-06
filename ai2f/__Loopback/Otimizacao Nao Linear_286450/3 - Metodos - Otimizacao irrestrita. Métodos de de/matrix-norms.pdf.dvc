@@ -1,0 +1,5 @@
+outs:
+- md5: 9c678764af8b1a8230da6f7181d0a3c1
+  size: 2191041
+  hash: md5
+  path: matrix-norms.pdf

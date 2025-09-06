@@ -1,0 +1,11 @@
+
+Shannon's noisy channel coding theorem
+
+
+
+
+For any channel:
+Reliable (virtually error-free) communication is possible
+at rates up to C
+
+

@@ -1,0 +1,5 @@
+outs:
+- md5: 960ca1c340177a2493d22ba76b7b0606
+  size: 23437402
+  hash: md5
+  path: vision_nlp.pdf

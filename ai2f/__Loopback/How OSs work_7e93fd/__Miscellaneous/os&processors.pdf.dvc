@@ -1,0 +1,5 @@
+outs:
+- md5: 3ee22e06b677eb72d86d64ef50c0eba3
+  size: 59610
+  hash: md5
+  path: os&processors.pdf

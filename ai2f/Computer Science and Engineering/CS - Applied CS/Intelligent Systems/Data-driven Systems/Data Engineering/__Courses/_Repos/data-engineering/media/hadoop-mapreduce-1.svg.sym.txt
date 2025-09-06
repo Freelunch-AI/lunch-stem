@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\hadoop-mapreduce-1.svg_c9c848

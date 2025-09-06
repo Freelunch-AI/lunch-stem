@@ -1,0 +1,5 @@
+outs:
+- md5: 4f1b5661dbbed192114bb950030921a3
+  size: 296202
+  hash: md5
+  path: suffix-array.pdf

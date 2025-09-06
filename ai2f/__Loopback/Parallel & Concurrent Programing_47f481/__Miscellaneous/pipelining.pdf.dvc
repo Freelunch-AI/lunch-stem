@@ -1,0 +1,5 @@
+outs:
+- md5: fa77e3787813b90b210a91bf71288bfb
+  size: 160054
+  hash: md5
+  path: pipelining.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: dc2f4be33e0eea5723897a507223988e
+  size: 10036425
+  hash: md5
+  path: se-program-synthesis.pdf

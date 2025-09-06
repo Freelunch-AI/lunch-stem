@@ -1,0 +1,5 @@
+outs:
+- md5: 73354654f10860bf36e6e61053df8f62
+  size: 4337058
+  hash: md5
+  path: os-level-virtualization-linux.pdf

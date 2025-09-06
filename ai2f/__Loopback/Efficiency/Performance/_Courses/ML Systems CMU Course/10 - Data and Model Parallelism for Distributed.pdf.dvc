@@ -1,0 +1,5 @@
+outs:
+- md5: a6242a8e057a61911a1cb20f35655540
+  size: 18601747
+  hash: md5
+  path: 10 - Data and Model Parallelism for Distributed.pdf

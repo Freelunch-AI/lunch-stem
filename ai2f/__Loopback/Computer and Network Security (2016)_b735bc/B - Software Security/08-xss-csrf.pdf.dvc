@@ -1,0 +1,5 @@
+outs:
+- md5: 7f098ac3a629f1cb79168e357029482b
+  size: 3874912
+  hash: md5
+  path: 08-xss-csrf.pdf

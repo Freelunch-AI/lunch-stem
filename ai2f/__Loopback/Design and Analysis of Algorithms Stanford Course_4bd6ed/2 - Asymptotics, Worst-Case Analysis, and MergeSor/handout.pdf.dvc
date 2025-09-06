@@ -1,0 +1,5 @@
+outs:
+- md5: f8f7c1157d96d41b3df40cffae81bc1f
+  size: 27200
+  hash: md5
+  path: handout.pdf

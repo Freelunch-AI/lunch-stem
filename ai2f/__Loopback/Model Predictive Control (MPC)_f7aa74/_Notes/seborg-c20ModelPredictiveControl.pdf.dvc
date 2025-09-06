@@ -1,0 +1,5 @@
+outs:
+- md5: 5b9780444c9aed5f34db17695264c3da
+  size: 605689
+  hash: md5
+  path: seborg-c20ModelPredictiveControl.pdf

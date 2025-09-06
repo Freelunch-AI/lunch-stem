@@ -1,0 +1,5 @@
+outs:
+- md5: 807f9446cc8b7eaf0d5020835032e3ba
+  size: 1220088
+  hash: md5
+  path: 03-shared_memory.pdf

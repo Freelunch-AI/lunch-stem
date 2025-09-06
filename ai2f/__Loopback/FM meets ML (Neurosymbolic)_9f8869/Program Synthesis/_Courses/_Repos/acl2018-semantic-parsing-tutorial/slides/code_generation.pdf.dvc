@@ -1,0 +1,5 @@
+outs:
+- md5: 5568b5803770307753073fa5c3ea9f2f
+  size: 3941118
+  hash: md5
+  path: code_generation.pdf

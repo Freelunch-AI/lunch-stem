@@ -1,0 +1,5 @@
+outs:
+- md5: 3e3609240f0d1b9badbd5aeb9dbb6b58
+  size: 966225
+  hash: md5
+  path: main_mpc.pdf

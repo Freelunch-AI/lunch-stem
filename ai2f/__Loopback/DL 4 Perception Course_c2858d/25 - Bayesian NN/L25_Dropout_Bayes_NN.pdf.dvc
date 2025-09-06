@@ -1,0 +1,5 @@
+outs:
+- md5: 0c807fb80e01ba0d1ff445dfe2b72654
+  size: 839127
+  hash: md5
+  path: L25_Dropout_Bayes_NN.pdf

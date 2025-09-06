@@ -1,0 +1,5 @@
+outs:
+- md5: e311cdbff05e5dde0e389c4f1484b2ec
+  size: 349207
+  hash: md5
+  path: devsecops-security-checklist.pdf

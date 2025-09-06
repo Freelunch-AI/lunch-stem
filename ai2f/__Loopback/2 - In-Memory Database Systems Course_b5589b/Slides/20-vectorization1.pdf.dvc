@@ -1,0 +1,5 @@
+outs:
+- md5: 2a90a6cafd0e882ef8da8bdeb36bdd1d
+  size: 1713389
+  hash: md5
+  path: 20-vectorization1.pdf

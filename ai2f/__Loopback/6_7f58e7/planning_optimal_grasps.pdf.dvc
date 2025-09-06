@@ -1,0 +1,5 @@
+outs:
+- md5: 2ff58578a1afc2e1c6ff80217e4f2d20
+  size: 612572
+  hash: md5
+  path: planning_optimal_grasps.pdf

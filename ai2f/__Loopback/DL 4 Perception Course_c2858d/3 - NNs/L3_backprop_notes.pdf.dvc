@@ -1,0 +1,5 @@
+outs:
+- md5: 9dbefe83d4866acc69bac38bd405f65e
+  size: 698583
+  hash: md5
+  path: L3_backprop_notes.pdf

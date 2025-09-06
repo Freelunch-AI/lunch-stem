@@ -1,0 +1,5 @@
+outs:
+- md5: 158c5d7c2b6e030b2528f1265ab2fe9b
+  size: 480564
+  hash: md5
+  path: 17_implementing_synchronization.pdf

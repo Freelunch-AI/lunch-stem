@@ -1,0 +1,5 @@
+outs:
+- md5: a7f62540af0d8a475b56c9f5181b637a
+  size: 784253
+  hash: md5
+  path: 21-vectorization2.pdf

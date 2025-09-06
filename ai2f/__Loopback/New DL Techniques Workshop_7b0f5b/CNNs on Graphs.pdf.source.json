@@ -1,0 +1,41 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Xavier Bresson",
+      "university": "NTU, Singapore"
+    },
+    {
+      "name": "M. Defferrard",
+      "university": "EPFL"
+    },
+    {
+      "name": "P. Vandergheynst",
+      "university": "EPFL"
+    },
+    {
+      "name": "M. Bronstein",
+      "university": "USI"
+    },
+    {
+      "name": "F. Monti",
+      "university": "USI"
+    },
+    {
+      "name": "R. Levie",
+      "university": "TAU"
+    },
+    {
+      "name": "T. Laurent",
+      "university": "LMU"
+    }
+  ],
+  "university_course_name": null,
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 87,
+  "size_mb": 55.92,
+  "link_to_license": null,
+  "changes_were_made": false
+}

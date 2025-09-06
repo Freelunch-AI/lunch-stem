@@ -1,0 +1,3 @@
+C is a compiled language. You can't create code at run-time "in C"; there is no specific C support to emit instructions to memory and so on. You can of course try just allocating memory, making sure it's executable, and emit raw machine code there. Then call it from C using a suitable function pointer.
+
+You won't get any help from the language itself though, this is just like generating code and calling it in BASIC on an old 8-bit machine.

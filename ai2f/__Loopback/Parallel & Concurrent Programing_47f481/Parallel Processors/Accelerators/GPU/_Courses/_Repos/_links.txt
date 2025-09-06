@@ -1,0 +1,2 @@
+https://github.com/gpu-mode/lectures
+https://github.com/omlins/julia-gpu-course

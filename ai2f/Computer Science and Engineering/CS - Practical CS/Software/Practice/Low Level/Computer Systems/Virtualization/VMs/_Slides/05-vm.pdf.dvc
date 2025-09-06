@@ -1,0 +1,5 @@
+outs:
+- md5: c8b6b33b94cde4396386dfedd861b4ed
+  size: 625389
+  hash: md5
+  path: 05-vm.pdf

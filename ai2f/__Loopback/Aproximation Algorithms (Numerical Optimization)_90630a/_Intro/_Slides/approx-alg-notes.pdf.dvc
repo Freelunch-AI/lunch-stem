@@ -1,0 +1,5 @@
+outs:
+- md5: 5caf26396b46c1a8a71244a20dcf47c3
+  size: 1024358
+  hash: md5
+  path: approx-alg-notes.pdf

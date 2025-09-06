@@ -1,0 +1,23 @@
+
+ Outline
+
+
+
+Source coding (Data compression)
+key ideas
+optimal symbol codes
+arithmetic coding
+
+Noisy-channel coding
+the theorem
+state-of-the art error-correcting codes
+
+Lecture notes - Chapters 4, 5, 6, 47
+ Cambridge University Press
+ 640 pages, 35 pounds
+ Also available free online
+
+ www.inference.phy.cam.ac.uk/mackay/itila/
+
+
+

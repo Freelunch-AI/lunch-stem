@@ -1,0 +1,62 @@
+# Compilando um programa C sem chamar o binário `gcc'
+
+Quando  você chama  `gcc',  você não  está  chamando o  compilador,  mas sim  um
+programa que chama outros programas!
+
+O compilador C da gnu se chama, na  verdade, cc1. Você pode ver o gcc chamando-o
+compilando qualquer arquivo com -v (verbose).
+
+Nesse exemplo,  eu mostro como  compilar um programa em  C sem chamar  o binário
+gcc. Observe o Makefile e olhe quão complicado ele fica.
+
+Em  CC, temos  o caminho  para o  compilador cc1.  Mudou a  versão do  GCC?  não
+funciona mais...
+
+em CFLAGS, temos o  -quiet é autoexplicativo, e o -I, que  diz onde o compilador
+deverá procurar os arquivos de include.
+
+Em ASM, temos de fato o assembler  da GNU, o gas.  Em ASMFLAGS, apenas indicamos
+que o arquivo assembler é de 64 bits.
+
+Em  LD,  temos   o  linker,  o  GNU   ld.   Em  LDFLAGS,  temos   um  troço  bem
+complicado. Precisamos mostrar para ele onde encontrar:
+
+* A biblioteca do linker.
+
+* Os  arquivos objetos  da libc  que precisam  ser ligados  com todo  e qualquer
+programa em C (por exemplo, a função _start está em um desses objetos).
+
+* Onde estão as bibliotecas a serem ligados pelo -L, assim podemos especificar o
+-lc.
+
+Já  imaginou ter  que ficar  fazendo  isso na  mão  para todo  o programa?   que
+pesadelo!
+
+
+# Exercícios:
+
+1-
+ (a) Encontre onde o binário cc1 está na sua máquina e modifique
+     a flag CC indicando o seu caminho.
+
+ (b) Encontre onde estão os arquivos:
+  * ld-linux-x86-64.so.2
+  * Scrt1.o
+  * crti.o
+  * crtbegin.o
+  * crtendS.o
+  * crtn.o
+
+  e atualize o Makefile na sua máquina.
+
+  Dica: Use o comando `find -name nome` na raiz do seu sistema
+
+2-
+ (a) Compile um arquivo .c qualquer com o gcc com a flag -v e
+     verifique que ele chama os binários cc1, as, e collect2
+
+ (b) Compile um arquivo .c qualquer com o g++ com a flag -v e
+     verifique que ele chama os binários cc1plus, as, e collect2
+
+O binário collect2 é só uma "casca" para o ld. Ele facilita algumas
+coisas em um processo de otimização chamado Link Time Optimization (LTO).

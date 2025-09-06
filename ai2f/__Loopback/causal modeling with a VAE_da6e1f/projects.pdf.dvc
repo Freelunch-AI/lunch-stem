@@ -1,0 +1,5 @@
+outs:
+- md5: f00590822a4526eb02d027cb81ac1a3c
+  size: 150570
+  hash: md5
+  path: projects.pdf

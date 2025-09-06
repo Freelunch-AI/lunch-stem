@@ -1,0 +1,2 @@
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django
+https://docs.djangoproject.com/en/3.2/intro/tutorial01/

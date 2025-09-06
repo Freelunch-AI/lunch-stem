@@ -1,0 +1,33 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Guido Gerig",
+      "university": null
+    },
+    {
+      "name": "Marc Pollefeys",
+      "university": "UNC Chapel Hill"
+    },
+    {
+      "name": "J. Ponce",
+      "university": null
+    },
+    {
+      "name": "Trevor Darrell",
+      "university": "Berkeley"
+    },
+    {
+      "name": "W. Freeman",
+      "university": null
+    }
+  ],
+  "university_course_name": "CS 6320 Spring 2015",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 24,
+  "size_mb": 0.44,
+  "link_to_license": null,
+  "changes_were_made": false
+}

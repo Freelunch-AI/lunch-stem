@@ -1,0 +1,5 @@
+outs:
+- md5: b37d47524e929159ffb43cc0484fc9d6
+  size: 2442935
+  hash: md5
+  path: lec-notes-robotics.pdf

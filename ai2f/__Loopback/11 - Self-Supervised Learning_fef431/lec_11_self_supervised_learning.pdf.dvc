@@ -1,0 +1,5 @@
+outs:
+- md5: 7b78a0261053e517d1a83f60b8d638e2
+  size: 15288120
+  hash: md5
+  path: lec_11_self_supervised_learning.pdf

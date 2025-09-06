@@ -1,0 +1,3 @@
+Ray Toal courses found on https://cs.lmu.edu/~ray/classes/
+https://programming-23.mooc.fi/
+https://www.eecg.utoronto.ca/~yuan/teaching/ece244/

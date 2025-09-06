@@ -1,0 +1,8 @@
+
+How to measure information content?
+
+
+
+(sketch h(p))
+Point out additivity of h.
+

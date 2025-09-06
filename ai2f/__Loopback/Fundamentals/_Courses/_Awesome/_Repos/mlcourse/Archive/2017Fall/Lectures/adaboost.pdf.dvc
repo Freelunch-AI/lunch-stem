@@ -1,0 +1,5 @@
+outs:
+- md5: 1dbaee928822f7206a0b2fc24012d4ce
+  size: 957634
+  hash: md5
+  path: adaboost.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 1b04c967372f3cbfcfe6ef3af682c34f
+  size: 6966360
+  hash: md5
+  path: Semantic_Segmentation.pdf

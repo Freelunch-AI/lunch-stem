@@ -1,0 +1,5 @@
+outs:
+- md5: f4325c681afa0a4b8d1e190fb998212f
+  size: 75343
+  hash: md5
+  path: whitepaper.pdf

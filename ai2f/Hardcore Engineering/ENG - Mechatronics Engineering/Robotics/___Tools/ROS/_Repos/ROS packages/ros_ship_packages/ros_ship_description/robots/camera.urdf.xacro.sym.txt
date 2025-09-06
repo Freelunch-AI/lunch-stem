@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\camera.urdf.xacro_dc2433

@@ -1,0 +1,5 @@
+outs:
+- md5: 58bcfe3d1ac3d8d4c2d544b5bc64814b
+  size: 1512124
+  hash: md5
+  path: nfs_cern.pdf

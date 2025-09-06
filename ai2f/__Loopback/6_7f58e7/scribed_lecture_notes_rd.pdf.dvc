@@ -1,0 +1,5 @@
+outs:
+- md5: 1a2421c9cc81dc39e14f1da257baea02
+  size: 6495531
+  hash: md5
+  path: scribed_lecture_notes_rd.pdf

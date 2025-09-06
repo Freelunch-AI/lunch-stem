@@ -1,0 +1,17 @@
+"MLIR is an infrastructure for creating IRs and performing transformations on them. 
+Hence MLIR is not yet another IR, it can be used to create new IRs which can model 
+properties of source or target languages.
+
+Problem with LLVM IR
+LLVM IR cannot model various features of source languages. 
+The information about these features is generally lost by the 
+time the source is lowered to LLVM IR. The unavailability of this 
+information hinders many optimisations that would have been possible.
+A simple example is OpenMP regions. There is no way to capture information 
+that a block of code corresponds to a parallel region. Outlining is carried 
+out (which moves the block of code to a separate function) to capture this. 
+This creates artificial boundaries between the block of code (that is the parallel region) 
+and the surrounding code converting all intraprocedural optimisations to interprocedural 
+optimisations. OpenMP regions can be easily represented in MLIR by an operation. 
+Operations can have a region of code nested in it.
+"

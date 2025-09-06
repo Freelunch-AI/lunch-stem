@@ -1,0 +1,5 @@
+outs:
+- md5: ec8c7d1f93d494306babde56f3eba7d2
+  size: 1209774
+  hash: md5
+  path: s17-federated-learning.pdf

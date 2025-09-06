@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\properties.urdf.xacro_77e2fd

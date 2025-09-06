@@ -1,0 +1,2 @@
+https://github.com/GT-RIPL/Awesome-LLM-Robotics
+https://github.com/BrunoScaglione/Everything-LLMs-And-Robotics

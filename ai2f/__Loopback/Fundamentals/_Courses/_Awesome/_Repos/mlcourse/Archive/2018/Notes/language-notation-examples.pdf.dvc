@@ -1,0 +1,5 @@
+outs:
+- md5: 17fd062867f92b7f81082583fae96b38
+  size: 128971
+  hash: md5
+  path: language-notation-examples.pdf

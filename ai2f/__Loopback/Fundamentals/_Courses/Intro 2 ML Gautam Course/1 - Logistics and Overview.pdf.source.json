@@ -1,0 +1,37 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Gautam Kamath",
+      "university": "University of Waterloo"
+    },
+    {
+      "name": "Zeou Hu",
+      "university": "University of Waterloo"
+    },
+    {
+      "name": "Yuxiang Huang",
+      "university": "University of Waterloo"
+    },
+    {
+      "name": "Lena Podina",
+      "university": "University of Waterloo"
+    },
+    {
+      "name": "Jingjing Wang",
+      "university": "University of Waterloo"
+    },
+    {
+      "name": "Ruixue Zhang",
+      "university": "University of Waterloo"
+    }
+  ],
+  "university_course_name": "CS680",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": "http://www.piazza.com/uwaterloo.ca/spring2022/cs480680/",
+  "num_of_pages": 14,
+  "size_mb": 0.64,
+  "link_to_license": null,
+  "changes_were_made": false
+}

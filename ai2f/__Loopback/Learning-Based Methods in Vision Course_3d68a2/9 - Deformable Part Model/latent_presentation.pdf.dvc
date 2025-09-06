@@ -1,0 +1,5 @@
+outs:
+- md5: 075c74d1219eeed9b202d60e04dce504
+  size: 3485580
+  hash: md5
+  path: latent_presentation.pdf

@@ -1,0 +1,1137 @@
+title: Empowering the Mind to Heal the Brain for Stroke | Dr. Eric C. Leuthardt | TEDxGatewayArch
+
+url: https://www.youtube.com/watch?v=UYNVbem-7VY
+
+notes:
+
+da pra o car aperder a funcao da area que trasmite que ele quer mexer o braco
+mas ele n perder a funcao da area do cerebro uqe planeja isso por exemplo
+ai da pra pegar esse sinal, porcessar e converter em output num braco robotico por ex
+
+neuroplasticity: por hebbian learning, da pra o pensamento do cara em querer mexer o  braco criar novas conexoes e 
+ele ir recuperando a funcao. Tipo quando ele pensa, os a interface brain-computer instiga o sinal eletrico em regioes
+desconnectadas pela lesao, e quando neuronios sao ativados ao mesmo tempo eles tendem a fortificar a conexao entre eles.
+
+cada paciente se recupera de uma forma diferente.
+
+------------------------------
+
+title: Understanding potentials
+
+url: https://www.youtube.com/watch?v=0_boSag4f8g
+
+notes:
+
+- action potential (what neurons use to communicate)
+	
+- post synptic potential (eeg tends tog et this one)
+	
+actions potential:
+	- from dendrit eto axon terminal (travels axon)
+	-at rest neuron has more negative charges than outside
+	- when a neuron receives enoughpositive charge to exeed a treshold
+	changes permeatibility of membrane -> more ions crossing -> spike in voltage
+
+post synaptic potential:
+	- from axon terminal to dendrit
+	- when a neuron receives enoughpositive charge to exeed a treshold
+	changes permeatibility of membrane -> changes the net charge of the dendrite
+	- volatge can get negative or positive by receiving postive or negative charges
+	- are individually smaller in amplitude, but when they sm togetherthe treshold of action potention is reached and
+	a  new action potential is fired
+	- ai acho que quando o sinal obtido for maior em amplitude (analogia rede neural artificial) ele fica amis tempo mandando esses action potentials e no final acaba mandando
+	mas carga para os proximos neuronios
+	-  uma diferencca em relacao a rede neural artifical ehq o sinal apos a funcao de ativacao no cerebro nao serve de input pra todos os neuronios em quele ele esta conectado 
+	pois tem um numero finito de cargas, entao seila divide pra todos os neuronios, mas isso parece ser soh um detalhe que nao contribui em nada e soh complicaria sem necessidade
+------------------------------
+
+title: Formration of a Dipole
+
+url: https://www.youtube.com/watch?v=rzgDOaGjjOs
+
+notes:
+
+- imagem no word
+-------------------
+
+title: EEG basics - Introduction to EEG
+
+url: https://www.youtube.com/watch?v=XMizSSOejg0&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp
+
+notes:
+
+eeg is always relative between the eletrodes
+
+diff amplifierer is used to write the output signals
+
+terminlogy of eletrodes: 
+	- odd/even numbers -> left/right side 
+	- z stands for zero, the eletrodes exactly in the middle
+	- bigger numbers are further from the z line
+	- F stands for frontal (N), C for central, P for parietal (SW or SE), O stand for occipital (S)
+	- Montages: different ways it can be displayed
+
+Most common montage:
+	- bipolar (anterior-posterior):
+		- usualy left chains apear on top
+		- chain: we move (2 by 2) along a longitude (front to back)
+			- left temporal chain
+			- left parisatigal chain
+			- midline
+			- right parisatigal chain
+			- right temporal chain
+	- common avarege reference:
+		now we look at the difference of an eletrode and the avarege of 
+		the signals of the rest of the head
+	
+Common eeg patterns:
+	1. Eye blink: 		
+		eye: has negative charge behind and positive in front
+			- vertical movement: when we blink the eyeball rotates up, so we get large + signal at Fp1 and Fp2. 
+			- horizontal: now ++ F7 and --F8
+			- simple rule: look at first 2 channels at the temporal chains -> if you have a point were the signals
+			move away from each other (positive in first and negative in second) probably the eye was rotated toward that direction
+
+		
+		obs: defletcion seen in the eeg in downwards 
+	2. The alpha rythm:
+		- is a normal rythm during waitfullness and is especially present when eyes are closed
+		
+		- although there is a range of frequencies, it is usally around 10Hz
+
+	3. Focal Epileptiform Discharges
+		- synchronus abnormal acctivity in a large # of nneurons in the cortex
+
+		- situated in a region, possible indicator that the brain can generate ceasures
+		
+		- epilepsy detection
+
+	4. Generalized Epileptiform Discharges
+		- seen in patients with generalized epilepsy syndroms
+
+		- involve the whole head at once
+		
+		- tipical case: 3hz generalized spike-wave discharges
+		in childhod abscence epilepsy
+	
+Diagnostic Yield of EEG:
+
+	suppose someaone had a ceasure:
+			case              |  likelihood of finding epileptiform discharges
+		- single eeg within 24h:     50%
+		- //          after 24h:      20 - 55%
+		- 24h eeg recording:         80-90%
+		- 4 or more routine eegs:    80-90%
+
+	why this happens?
+		cant pick signals if:
+		- the area of the abnormality is small
+		- its far from eltrodes (deep)		
+
+------------------------------
+
+title: EEG basics - polarity rules 
+
+url: https://www.youtube.com/watch?v=gpnGEHHVtRs&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=2
+
+notes:
+
+polarity rules:
+	sinal positivo -> input 1 negative wrt input 2
+	sinal negativo -> input 1 positive wrt input 2
+
+
+se a gente fazer essa analise nos channels a gente consegue chegar
+a cocnlcusoes a respeito da polaridade absoluta dos eletrodos (qual eh o mais negativo ou positivo)
+
+------------------------------
+
+title: EEG basics - eye movements 
+
+url: https://www.youtube.com/watch?v=s1GknlqKGYo&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=3
+
+notes: 
+
+-- nothing new
+
+------------------------------
+
+title: EEG basics - eeg montages
+
+url: https://www.youtube.com/watch?v=AcW97nMLGEs&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=4
+
+notes:
+- Bipolar
+	- anterior/posterior -> the one we talked about earlier
+	- transverse -> now chains are in latitude
+		- good to detect things at the center of the head
+		- usefull at looking at sleep
+		
+- Common Reference
+	- compare every eletrode to a single eletrode of reference (usually the ccenter one)
+	- chains are in latitude
+
+- Common Avarege reference 
+	- compare each eletrode to the avarage of the rest of the head
+	- Fp1, Fp2 and O1, O2 are excluded of the avarage because they are very suceptible to eye and head movements respectively
+	- reference contamination: 
+		- avarage is crap if we have something weird going on in another region that modifies the avarege to much
+		- solution: laplacian montage -> compare to 4 (or 3 in lateral eletrodes) nearest neighbors
+			problem: not good for broad eletrical fields because there will appear no difference in eletrodes
+- Laplacian
+	- just talked about
+
+- Ipsolaterial Mastoid
+	- compare to avarage of M1 (far SE), M2 (far SW)
+
+Summary (obs: never read eeg with just one montage): 
+
+	|       Strenght     |    Weakness
+Montage	|	             |
+==================================================
+Bipolar 
+	     versatile           not best at either focal or diffuse
+==================================================
+Common reference
+	   not good for focal    great for broad
+===================================================
+Avarege reference
+		versatile          susceptible to ref contamination
+====================================================
+Laplacian	
+	     great for focal        not good for broad
+=====================================================
+
+------------------------------
+
+title: EEG basics - 5 technical issues in eeg
+
+url: https://www.youtube.com/watch?v=KrJaJDMBo54&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=5
+
+notes:
+
+	frequency bands     |  range
+		Delta          <4hz
+		Theta          4-7hz
+		Alpha          8-13Hz
+		Beta           >13Hz
+		Gamma          >30Hz (can be interisting in more advanced eeg techniques,
+		but wont be discussed here)
+
+- LFF (low frequency filter - most frequencies eliminated) or HPF (High pass filter)
+- HFF or LPF 
+- Notch filter -> filters 60hz
+
+Interference of external signals (noise):
+	if an eletrode is poorly connected to the head -> has a higher impedence
+        -> more suceptible to capturing the 60 hz external signal -> amplitude is higher
+	-> consequently in coparison to the other eletrode there will be a difference in 
+	the output signal, in 60hz
+
+Representation:
+	- Sensitivity:
+		- realtion between mm of amplitude and voltage
+		- common is 40uV of amplitude
+		- ex: 7uV/mm (usually default)
+	- Timebase:
+		- realtion between mm of x axis and time
+		- common 10-15 seconds on single page
+		- ex: 30mm/sec (usually default)	
+	
+------------------------------
+
+title: EEG basics - Normal Awake eeg
+
+url: https://www.youtube.com/watch?v=17uKMFfTupY&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=6
+
+notes:
+
+
+
+alpha rythm caracteristics:
+	example of eeg
+	looking at single first epoch 
+	starting with anterior posterior bipolar montage
+
+	- reactive: ex: yes. alpha ryhthym with higher voltage in eye closed
+ 	and lower voltage with eye open
+	- frequency: ex: 11hz
+	
+	switch to reference montage to explore amplitutude of signal,
+	much easieer to get sense of absolute value of signals
+
+	place scale legend in the graph
+	- amplitutude: ex: 40-50 uV. The normal is 20-50uV in a normal awake adult
+	- symetry: ex: normal symetry
+		compare amplitude on the left and right side
+		ex: 30-40uV on the left and 40-50 uV on the right.  
+			- normal asymetry: <50% difference
+			- right is often higher voltage than left
+			- obs: may vary from epoch to epoch, look at other epochs to get conclusion
+	-distribution: ex: posterior dominant -> occipital-maximal  
+		generally is the alpha rythm is maximal in posterior head regions, specifcally occipital
+	-other common patterns:
+		- fairly constant in a individual:
+			- can slow down in dowsiness
+			- can slow down with older age
+		- reaches peak frequency in adolescence/eraly adulthood
+
+
+Common Normal Variants:
+	1. Alpha "Squeak"
+		we will remain on first epoch
+		look at the period after second eye closure
+		right after closure (negative peak) the frequency is much higher than the rest	
+	2. Mu rhythm
+		choosing another epoch
+		we can see the patient is awake by:
+			- prominent myogenic (muscle) artifact in the frontal and temporal regions
+			suggesting active muscle tone in facial and jaw muscles which is more prominent during wakefullness
+			
+			- eye blinking artifacts
+		we do not see alpha rythm, which is not surprising considering the patietns eyes are open
+
+		mu rhythm:
+			in the right side, peristagal region we can see a period where its maximum in F4-C4;C4-P4
+			caracteristics:
+				1. shape: Arch-Shaped -> resembles mu greek letter
+			 	2. frequency: 8-12 hz (like alpha)
+				generated by sensory motor cortex at rest
+				3. prominent when limbs are at rest
+				4. Blocked by movement (or thinking of moving contralateral limb)
+				5. is often seen on one side or the other, but can be seen syncronously in both sides
+				6. more prominent when ayes are open (probably because alpha doesnt block it)
+		
+	3. Lambda waveforms	
+		most prminent whrn ayes are open
+
+		we can see the patient is awake by:
+			- prominent myogenic (muscle) artifact in the frontal and temporal regions
+			suggesting active muscle tone in facial and jaw muscles which is more prominent during wakefullness
+			
+			- eye blinking artifacts
+			
+		lambda wavefrom:
+			- ex: we can see in this epoach in the posterior head regions
+			- resemble lamba greek letter
+			caracteristics:
+			1. phases: Diphasic (goes up and down)
+			2. amplitude: Occipital Maximal
+			3. polarity: Eletro-Positive
+				initial postive peaks in:
+					- p7-O1;p3-O1;p4-O2;p8-O2
+					suggests that either the waves are eletro neagative at p's (O's being less -) or eletropositive at O's (p's being less +)
+					- generally we would say that they are eltro positive in O's with lack of other materials
+					
+					swich to reference montage
+					- O1-Avg; O2-Avg had negativ peaks suggesting O's are really eletropositive
+			4. Are generated by complex visual patters
+				ex: looking at dots in a ceiling tile; computer screen
+	
+			5. Are blocked by eye closure
+------------------------------
+
+title: EEG basics - eeg in normal sleep
+
+url: https://www.youtube.com/watch?v=4LcnZJ9L3rg&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=7
+
+notes: 
+
+we wil look at the stages of normal sleep
+
+1. Drowsiness
+	- deascresed myogenic (muscle) artifact
+	- slow rolling eye movments (big waves between F7 channels and F8 channels)
+		while +++ (wave opens)in F7, --- in F8 (wave closes)
+	- loss of normal alpha rhythm
+	- increased theta activity
+	- obs: there will be still some fluctuation between drawsiness and normal in the first epochs (like 2-3 min)
+2. Stage 1 sleep
+	lets look at posterior area channels
+	- POSTS waves (positive occipital sharp transients of sleep)
+		obs: have to check reference montage to get conclusion of polarity
+	- sleep analagous of lambda waves
+	- patients with prominant lambda often have prominent posts
+	lets look at the central area channels
+	- Vertex waves (late stage 1)
+		- maximal in Cz,C3,C4 and --- (wave close between channels of these eletrodes)
+			- we confirm it with avg-ref montage
+		- are best seen in transverse montage
+		- difference to lambda: have higher voltage tahn lambda waves, more spikes and do not resemble lambda
+3. Stage 2 sleep
+	K-complex waveform:
+		-  generated by arousals and external stimulus (ex:when technologist knocks on the wall or door)
+		-  preceeds arousal signals in eeg (very high frequency, "meta-oscilation", and very high voltage)
+		caracteristics:
+		- high voltage
+		- broad contour (long duration or"low-meta-freuqency")
+		- maximal frontal-central with a broad field
+		- 2 or more phases
+		- superimposed fast activity (high frequency)
+	Sleep Spindles waveforms:
+		- medium-voltage
+		- central-maximal
+		- durantion: 0.5-1.5 sec
+		- frequency: 11-15hz (avg 12-14hz)
+		- asynchronus sleep spindles: at times spindles are maximal at left at times at right
+			- normal for 3-18 months babies generally (but can go up to 24 months)
+			- in babies often longer duration than adults
+		- asymetric spindles: inilateral or predominantly on one side
+
+OBS: IT IS COMMON TO BE SOME FLUCTUATION BETWEEN STAGE 1 AND STAGE 2 CHARACTERISTICS
+
+4. Slow wave sleep (stage 3/4)
+	- here we do not see vertex waves, k-complex and spindles
+	- we see difuse (entire head), high voltage, low frequency ("meta-frequency") delta activity with some superimposed
+	higher frequency alpha and beta
+	- is defined when > 20% of the sleep background looks like this
+5. REM sleep
+	- background is much lower voltage
+	- main wavefroms are in alpha beta range, better seen in midline
+	- very little or almost no muscle artifact
+	- oblique eye movents: eye movements with horintal and vertical components
+		- horizontal: oposite polarity in F7 (wave opens between channels) and F8 (wave closes between channels)
+		- vertical: synchronus deflection in Fp1 and Fp2 (not that easy to see, low voltage)
+	- rapid, chaotic (random different movements) oblique aye movements	
+
+
+------------------------------
+
+title: EEG basics - interactal epileptiform discharges
+
+url: https://www.youtube.com/watch?v=3KIYD1QakU8&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=8
+
+notes:
+
+1. Focal epileptiform discharges
+	we will se an eeg with 2 more chains in the lateral
+		- left/right inferior temporal
+	ex: in the temproal chains we can see
+	obs: helps a lot to decrease sensitivity here
+	obs2: most epiletform discharges are eletronegative in nature
+	caracteristics:
+		- sharply contoured (< 200ms)
+		- multiple phases
+		- disrupt he background
+		- after coming slow wave
+		- there should be a field that makes sense
+		in the example we have left anteiror charp wave:
+			- inferior temporal left chain: fp1-f9 -> downward wave;f9-t9 -> no wave; t9-p9 upward wave;
+				suggests that we have f9-tp as maximal eletronegative
+			- regulat temporal left chain: fp1-f7 -> downward;f7-t7 -> upward; t7-p7 -> upward; p7-O1 ->upward
+				suggests f7 is maximal eletronegative
+		we also have a lower voltage abnormality in the right side:
+		so in this page of eeg we have independent bitemporal anterior temporal sharp waves
+	
+2. Generalized epiletform discharges
+	involve most of the head, very high voltage -> must decrease sensitivity to vizualize
+	follows the same rules as before
+	runs of generalized epileptiform dicharges constitutes seizures
+	on the other hand, the relationship between focal and seizures is less clearly understud
+
+------------------------------
+
+title: EEG basics - Focal Slowing and Attenuation
+
+url: https://www.youtube.com/watch?v=OCRA0B_q8CE&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=9
+
+notes: 
+
+- Location: region, hemisphere
+	
+- Frequency: Theta, delta, mixed
+
+- Continuos or intermitent
+
+- Rhythmic or polymorphic
+
+1. scan through the page second-by-second
+2. sistematically compare analagous head regions
+
+ex: in the first second, we saw that in the left temporal there is a hint of a theta or delta wave
+which we dont see in the right. In seconds 3-5 we ccan see more of this
+	- focal intermittent polymorphic left temporal theta-delta activity
+	- interpretation: mild nonspecific focal cerebral dysfunction
+switching to avg reference montage
+	- in seconds 3-5 we can clearlt see medium voltage theta/delta waves in the left side that 
+	are not seen in the right side
+	-takes time, but with experience gets faster
+in another pacient we see the differences, but they occur continuosly in the right hemisphere (but more in the temporal right)
+	 - continuos polymorphic theta and delta right hemisphere maximal right temporal
+	 - suggests significant focal cerebral disfunction: 
+	 - continuos slow:
+		- stroke;tumor;other structural abnormality;post-ictal (after seizure)
+in another pacient we see continuos slowing in left hemisphere, but with a clear frequency pattern
+	- lateralized rhythmic delta activity (LRDA) or temporal rhythmic intermittent delta activity (TIRDA)	
+		is more strongly associated with seizures than polymorphic delta activity
+in another pacient we see 
+	- attenuation of fast activity on the left (we dont see alpha activity in the left)
+	- continuos polymorphic delta activity on the left
+	first cconclusion: focal cerebral/cortical dysfunction in the left hemisphere
+	- decreased muscle activity in the right temporal chain
+	- symmetrical function of forehead muscles
+	- irregularly iregular EKG -> patient could be in atrofibrilation
+	conclusion: embolic left hemispheric inarction due to atrialfibrilation producing
+	right upper neuron facial weakness (because it is more on temporal than frontal)
+in another pacient we see
+	- polimorphic slowing in the left hemisphere, particularly in the temporal region
+	- in the left posterior region we see higher voltage in the alpha and beta range
+		- this is a breach artifact: when there is a openedregion in the skull next to an eletrode
+			- makes it easier to high frequencies pass skull (which is a low pass filter) so
+			we see in the eeg higher amplitude
+	
+------------------------------
+
+title: EEG basics - Diffuse (Generalized) Slowing and Periodic Discharges
+
+url: https://www.youtube.com/watch?v=K_2xu7oDFT0&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=10
+
+notes:
+
+1. Diffuse (Generalized) Slowing
+
+- often arbitrarily graded as 'mild,moderate or severe'
+
+- indicators of severe dysfunction:
+	- frequency (theta vs delta)
+	- organization (i.e. anterior-posterior gradient)
+	- continuity
+	- reactivity
+
+- rythmic or polymorphic
+
+lets see first pacient eeg
+
+- we see significant differencce in theta/delta in the left and right hemisphere
+- we see more muscle artifact in the right side, but that can fluctuate from time-to-time and be asymetrical
+in any given patient
+- no difference between anterior and posterior (no anterior-posterior gradient)
+as opposed to normal eeg where we see normal alpha rythm maximal in posterior
+- predominantly theta activity
+- eeg interpretation: mild-moderate diffuse background slowing
+- clinical correlate: mild-moderate nonspecific diffuse cerebral dysfunction
+
+if the patient had predomintantly delta activity it would be worse
+if the patient had discontinuos background even worse
+	- eeg interpretation: "burst-supression" or discontinuos pattern
+	- clinical interpretation: nonspecific severe cerebral dysfunction
+and if we see no singals:
+	- eeg interpretation: diffuse background attenuation or supression
+	- clinical interpretation: nonspecific very severe cerebral dysfunction
+
+2. Periodic Discharges
+
+- generalized periodic discharges (GPDs)
+	lets see our first patient
+	- we see regurlarly sharp discharges ocurring at 1Hz
+	- they are maximal in frontal regions bilateraly
+	- we can see 3 pahses in the waveform of the discharge
+	- eeg interpretation: generalized periodic dicharges with triphasic morphology ("triphasic waves")
+	- clinical significance: diffuse cerebral dysfunction metabolic encephalopathy versus increased epileptic potential
+	
+	second patient
+	- no discharges in the begging of epoch
+	- when dicharges start, muscle artifact also starts in temporal chains
+	- could be stimulus-indiced GPDs or SI-GPDs, which is a common finding 
+
+	third patient
+	- background is diffusely supressed with minimal activity in between discharges
+	- dicharges are very high voltage and very sharp
+	- eeg interpretation: GPDs on a sppressed background
+	- clinical significance: 
+		- diffuse cerebral disfunction
+		- diffuse cortical irritability
+
+	fourth patient
+	- we see regurlarly much less sharp discharges ocurring at 1 Hz
+	- eeg interpretation: "Blunt" GPDs and mild diffuse slowing
+	- clinical significance: 
+		- mild diffuse cerebral dysfunction
+		- mild diffuse cortical irritability
+
+- lateralized periodic discharges (LPDs)
+also known as periodic lateralized eplieptiform discharges (PLEDs)
+	- clear disctiontion on the left/right sides
+	- on the left: 
+		- sharp, complex, high voltage, occuring at 1-2Hz dicharges
+	- eeg interpretation: Left sided laterilized periodic discharges (LPDs)
+	- clinical significance: 
+		- focal cortical hyperexcitability on left
+		- increased risk of seizures from left hemisphere
+		- common clinical correlates:
+			1. acute stroke
+			2. HSV encephalitis 
+			3. In association with status epilepticus in estabileshed epilepsy 
+		-  important: when you see it, continue to record to make sure they do not develop eltrographic seizures
+		- seizures: the pattern is to the frequency of dicharges to become much higher, higher voltage
+		and evolves in complexity
+		-  at the end of the seizure we see re-emargence of the LPDs
+		
+- bilateral independent periodic dicharges (BIPDs)
+also known as bilateral indepenndent periodic lateralized epileptiform discharges (BILEDs)
+	-  dicharges of left are independent of discharges of right side
+	- eeg interpretation: bilateral independent periodic dicharges (BIPDs or BIPLEDs)
+	- clinical significance: 
+		- focal cortical hyperexcitability bilaterally
+		- severe cerebral dysfunction
+		- dysfunction of left-right connections
+	- are uncommon but indicate severe cerebral dysfunction
+
+------------------------------
+
+title: EEG basics - eeg workshop - recognizing seizures in a comatose patient
+
+url: https://www.youtube.com/watch?v=FQ8K0RsVeO8&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=11
+
+notes:
+
+- first study baseline of patient
+
+- tip: start with the first arfifact-free page
+
+arfiacts:
+	- muscle
+	- 60hz
+	- chest percussion(very hard to notice). nest noted with video input
+	- pulse
+		- waveform pulsed correlate directly with EKG pulse
+	- eye blink 
+	- eyelid fluttering (hard also, looks rythmic, high voltage)
+	
+features of absnormaities (analogy of eeavesdropping couple):
+	obs: seizures can also have slower waveform patters
+
+	1. Change from background
+		a. Screaming match
+		b. Silent treatment
+	2. Sustained
+	3. Rhythmic
+	4. *Evolution
+
+first question to ask when we see an abnorality in eeg:	
+	is there a clinical correlate (what is the patient doing at the time of the pattern)?
+	
+clinical vs subclinical 
+	ex: for seizures it is easier because we have an obvious clinical correlate
+	however for ex: a comatose patient doesnt show clinical amanifestations so we have to depende on the eeg
+	and we see in the eeg of this patient ictal waveforms ocurring at low frequency (a periodic dicharge with big interdischarge interval), is it a seizure?
+
+what is an eletrographic seizure?
+	an abnormal, sustained (> 10 sec), ryhtmic(no interdischarge interval) eletrical discharge [that evolves]
+
+waht defines Evolution?
+	any one of these (having more being more definitive):
+		1. frequency: two consecutive changes oin the same direction of at leat 0.5 hz (ex: 2hz ->1.5hz -> 1hz)
+		2. morphology: two consecutive changes (obs: exclude amplitude or "sharpness" alone, because they are soft indicators, but together become strong indicator)
+		3. location: spread to two additional leads
+
+logical tree:
+
+	1. does the aptient have > 10sec rythmic pattern that differs from the background?
+		Yes -> 2. ; 
+		No -> No seizure -> END;
+	2. it is >= 3hz?
+		Yes -> seizure -> END;
+		No -> 3.
+	3. does it evolve?
+		Yes -> seizure -> END;
+		No -> 4.
+	4. If clinical suspicion for seizures consider trial of rapid-acting AED (e.g benzodiazepine)
+		Did the patient imporve?
+			Yes -> seizure -> END;
+			No -> no seizure -> END;
+
+what does NCSE (non convolsive status epilepticus), which means no clinical manifestation, look like?
+	any of these:
+		- occupies >50% of record
+		- > 10 min
+
+almost but no quite?
+	- B(I)RDs
+		- (< 10 sec)
+	- Artifacts
+	- "Possible NCSE"
+	- The "ictal-interactical continuum"
+------------------------------
+
+title: EEG basics - eeg minilesson - smal sharp spikes
+
+url: https://www.youtube.com/watch?v=XyOv1RFT2ak&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=12
+
+notes:
+
+lets see an example of an patient
+	- we can see he is awake because of bilateral posterior dominant rythm, symmetrical of aprox 9hz
+	- we see attenuation if this rythm with eye opening and augmentation with eye closing
+	- patient is possibly drawsy because of the slow rolling aye movments seen in the temporal chains (low meta-frequency, large waves)
+	- then we start to sse loss in muscle artifact and emergence of some theta rhythm
+	- also see mild slowing and anterior migration of the psoterior dominant rythm -> patient is now drowsy
+	-  we see small sharp spikes in temporal region, we change to reference montage to see bettter
+		- low voltage (<50 uV )and small duration, or sharp (<50msec)
+		- note: these are easiley mistaken for artifact of the ekg
+	- going forward we see also some sharp, hight voltage temporal maximal spikes, with 3 phases, follewed by slow wave
+		this represents an *epilefiform dicharge
+
+Epiletform discharges:
+	1. Sharply Contoured
+	2. Multiple phases
+	3. Field that makes sense
+	4. After-coming slow wave
+	5. Disrupt the background
+
+summary of smal sharp spikes
+	- small
+	- sharp
+	- occur during sleep
+	- temporal (broad field)
+	- simple -> 2 phases
+	- not epileptic
+
+summary of focal sharp spikes
+	- anywhere
+	- any state
+	- any location
+	- complex
+	- epileptic
+	- more often occur solitary and not in runs 
+
+------------------------------
+
+title: EEG basics - mini lsson - Wickets
+
+url: https://www.youtube.com/watch?v=duX9Eg6MqH4&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=13
+
+notes:
+
+- it is important to distinguish from epileptiform dicharges, to not diagnose someone with epilepsy wrongly
+
+lets see a patient a sleep
+	- we know the patient is a sleep because there is no muscle artifact 
+	and we can see some sleep transisents, specifcally POSTS
+	Wickets:
+		-  if we look at the left temproal region, we see run of sharp discharges occuring at aprox 7-8hz 
+		with suttle increase and decrease in amplitutude over the run
+		-  they have a simple biphasic morphology
+		- can be seen independentlyin both temporal regions
+		- dont disrupt the background, and dont have slow wave after
+		-  maximal in mid-temporal region (T7/T8)
+		- occur during drawsiness and sleep
+		- can also occur individually 
+		- are not associated with epilepsy
+
+------------------------------
+
+title: EEG basics - misilesson - 14 and 6 hz positive bursts
+
+url: https://www.youtube.com/watch?v=9Jzb5bAEa7k&list=PLxaiR6teSdjoEZWaDWm28A9QjFN7eguAp&index=14
+
+notes:
+
+- normal sign, not associated with abnormalitites
+- relatively rare
+
+lets see a patient:
+	- we can see hes asleep because:
+		- no PDR (posterior dominant alpha rhythm)
+		- No muscle artifact
+		- Emergence of diffuse intermitent theta
+	14/6s (or tenoid) bursts:
+		- have broad field
+		- dificult to localize on ant/post montage
+		- we will switch to avg ref montage
+			- waveforms are best seen in right posterior temporal region
+			- but becaus of ref contamination of the broad filed, there is aparent envolvement of
+			the left temporal region
+			- contralateral mastoid montage is the best in this case
+			- sequence of 14 hz followed by 6 hz waveform
+			- most common in young people
+			- biggest spikes are downward -> therefore is +++
+		
+------------------------------
+
+title: eeg on stroke patients
+
+url: https://www.youtube.com/watch?v=pTKI5zWlRHI
+
+notes:
+
+ - eeg is common to diagnose epilepsy and brain death
+
+ -  we will use 256 eletrodes
+
+ - partial  least sqaures model (PBS model)
+	- software that is able to interpret the variance in eeg recordings and quantify into a graph
+
+ - paper: utility of eeg in patients with acute stroke
+
+in ipsiolesional and contralesional:
+	- delta waves have positive correlation with lesion, and beta waves have negative correlation
+
+obs: eeg is easy accesible
+
+------------------------------
+
+title: using eeg to help guide treatment
+
+url: https://www.youtube.com/watch?v=l0mHwRgdrjc
+
+notes:
+
+use eeg to see signals to find correlation between these signals and type of tretament most effective for patients
+
+------------------------------
+
+title: triage of stroke patients in the ambulance with eeg
+
+url: https://www.youtube.com/watch?v=PXOSmM_GRS0
+
+notes:
+
+ischemic stroke:
+	- poor blood flow  to distal brain areas
+	- ischemic (our focus): blockage of blood vessel
+	- hemorragic: bleeding of blood vessel
+
+treatment of ischemic stroke:
+	- large vessel occlusion -> intra-arterial thrombectomy (IAT) which is better, and intravenous trombolysis
+		(IAT needs hospital with EVT(endovascular treatment), fewer)
+	- non LVO -> intravenous trombolysis
+
+why trat early:
+	the area affected (infarct core) gets larger and larger -> within 12h it is very severe
+	
+core: infarcted tissue (beyond recovery)
+penumbra: viable cerebral tissue (blood supply by collaterals)
+
+gold standard for large vessel occlusion ischemic stroke: Computed Tomography (CT)
+
+only 7% of pacients have LVO
+
+one solution would be to have a ct in ambulance
+	problems: expensive, need training, radiation
+
+wet eletrode eeg:
+	streghts: excellent eltrical contact, good signal quality
+	weaknesses: long setup times, skjn abrasion, eletrode paste, experiencced users
+
+dry eletrode eeg (solution chosen):
+	streghts: quick setup times, no skin abrasion, no eletrode paste, all trained users
+	weaknesses: decreased eletrical contact, lower signal quality
+
+stroke signal:
+	- signal becomes predomintantly lower frequency than before
+	- increase in delta activity in the ischemic tissue (core)
+	- slowing, attenuation or loss of the alpha + beta background activity (unilateral or biateral)
+	- data absed on records of 12h after stroke
+
+there is little data of eeg in stroke patients before t = 12h
+no data before t = 1h
+
+erani, stroke, 2020:
+	- using deep learning with clinical + eeg gave good results
+	- just with eeg didnt give good specificity and auc
+
+singal quality (artifacts)
+	movement:
+		- huge spikes
+	muscle:
+		- very high frequency superimposed on the background
+	bad electrode-skin contact:
+		- can produce low frequncy complex waveforms or just dead line
+		- this can be similiar to stroke signals, hard to tell
+
+singal quality challenges:
+	- loose cap fit
+	- hair type (people with a lot of hair)
+	- no visible access to eletrodes
+	- no impedence check (yet, thwy will start implementing)
+		-  to be shure the impedence is correct
+
+signal quality is sufficient for anlysis in 80% of the data.
+
+------------------------------
+
+title: EEG in ASD (Autism): Can Brain Waves Help Us Predict Treatment Response and Outcomes?
+
+url: https://www.youtube.com/watch?v=txsMbQc6Xfk
+
+notes:
+
+- eeg signal are produce by firing of a lot of neurons together
+
+- using high desnsity eeg (aprox 120 eletrodes)
+
+- we have in the eeg: ocillations and event realted potentilas (ERP)
+
+event related potentilas (ERP)
+	we can see how the brain responds to stimulus
+	we can caracterize by latency, amplitude, location
+
+why eeg?
+	- provides information about perception, cognition, and different brains states
+	- exquisite temporal resolution
+		- can obtain info about processing in real time (with accuracy in order of milliseconds)
+	- sheds light on neural processes and brain development
+		- genes -> brain -> behaviour
+
+can eeg biomarkers inform behaviour/ability?
+
+can eeg biomarkers characterize brain changes over time and with treatment?
+
+goal : can we use eeg biomarkers to better inform treatment options and to presict treatment response?
+
+ex: when shown objects autistic kids have erp reponse of a tipical kid to faces
+
+- posterior alpha power, and posterior gamma power good biomarkers for identifying Autism
+
+obs: kids were placed seeing bubles in awake rest
+
+obs: visual cortex is in the posterior
+
+treatment showed trend between asd kids and normal kids (with respect to alpha, gamma power) from autistic pattern to 
+normal pattern
+
+waveform for visual stimulus, expected vs unexpected:
+
+- first goes downward (N1, recognition of the stimulus), then upwards (P300, represents attention and surprise)
+	- in or controls group we expect to see: bigger n1 to expected stimulis and bigger p300 to unexpected
+	- kids with autism have inverted response in P3 
+
+in autistic:
+	- p3 ampltitude diff corr with adaptive social function
+	- n1 ampltitude diff corr with iq
+
+in controls:
+	- no correlations, but very little variability in phenotype
+
+in tis case treatment showed increase in inverted P3 in autistic kids, an consequently better social skills and iq
+
+------------------------------
+
+title: Use of EEG as a Biomarker for Diagnosis and Outcomes in Neurodevelopmental Disorders
+
+url: https://www.youtube.com/watch?v=mkZ9lGrzCYA
+
+notes:
+
+// EEG Biomarkers of autism risk //
+
+## Use of biomarkers:
+- to use as endo-(intermediate) phenotype...
+	- to link brain function with underlying genetics
+	- to examine functions that lie "beneath the surface", out of range behavioral assays
+-to shed light on mechanism
+	- to use transationally (e.g. mouse to human)
+- to use as predictor and "characterizer"...
+	- to distiguish those at high or low risk for a disorder
+	- to predict who develops a disorder
+	- to predict severity of a disorder
+- to use as an moderator/mediator to outcome in clinical trials
+	- to stratify a sample in a clinical trial
+	- to examine response to treatment
+	- to shed light on neural/biological mechanisms underlying tretment efficacy
+
+
+## Considerations
+
+can the measures get us close to the mechanisms?
+	- underlying disorder
+	- that mediate response to tretment?
+
+can the measures be tolerated by most infants/children?
+Expense?
+Replicable across labs?
+Replicable across individuals?
+When used longitudinally (over time in one individual), can they distinguish changes in
+the disorder from developmental changes?
+
+goal: early detection of autism
+tool : cognitive science
+
+focusing on brain: since changes in the brain precede changes in behaviour, and thus can be done much earlier
+
+todays focus: infants at risk for autism bt having older brothre with autism
+
+to date, no behavioral measure in infants <1year reliably predicts autism outcome (exception: some evidence for eye tracking for <1/2year)
+
+power spectrum = espectro de freq
+
+examining eeg though the first year of a baby is highly predictive of autism appearence
+
+the brain is an adaptively built complex system
+(struccturally and functionally)
+	1. brain structure is complex
+	2. signals produced are compex
+
+and these are correlated:
+	complex heirachical networks produce nonlinear, chaotic time series ...
+	that contain info about network structure
+
+autism classification & symptom severity estimate using SVM (whith features extracted from time series)
+
+summary
+
+- there are now sophisticate ways to capture the non-linear dynamics of the eeg
+
+- Bosl et al. (2018) have shown that is possible to predict from 3-month eeg which infants will:
+	- be diagnosed with autism at 36 months 
+	- severity of disorder
+- combined with our ealier work using conventional approaches to eeg analysis, this opens the door to the development
+of predictive biomarkers
+
+questions for the future
+	- regarding intervention, do we treat the biomarker or the disorder (clinical evidence) ?
+
+
+// EEG Biomarkers in children with "Fragile X" syndrome //
+
+the need:
+	- biological markers associated with functionality significant
+	outcome measures (languages, cognition, behaviour) to:
+		- be used in trails to monitor improvement
+		- imporve our understanding of the pathophysiology
+
+experiment: kids awake without stimulus, just looking at an scrren saver
+
+fragile x people showed more power in higher frequencies (increased gamma power) 
+in frontal and auditory cortex
+
+how to measure gamma power
+	FOOOF: fitting oscillations and on over f (1/f = T)
+	periodic component: E[signal above 1/f in the freq interval - singal below] -> they think relates to the oscillations per se
+	aperiodic component: E[singal below 1/f in the frq interval] -> they think this component relates to noise or E/I (excitation/inhibition) Balance
+	then we get aperiodic adjusted power spectrum	
+
+increased power in the beta/gamma badn is due to:
+	- aperidiodic power spectrum: decreased slope of aperiodic component
+	- aperidiodic adjusted power spectrum:increassed amplitutude/shift of aprox 30hz peak
+
+conclusions:
+	- gamma power associated with fragile x development
+
+	- in fragile x people the higher hte gamma power , the higher were the language skills develpment
+
+	- aperiodic strongly correlated with language ability
+
+	-  no associations with other clinical measures
+
+	- increased E/I - maybe its good?
+		
+------------------------------
+
+title: tDCS, EEG and Motor Rehabilitation - Neuroelectrics webinar featuring Mar Cortes
+
+url: https://www.youtube.com/watch?v=0ITnfgYQHRg
+
+notes:
+
+adaptive plasticity :incomplete recovery of mmotor function 
+maladaptive plasticity: pain spasticity
+
+after injury, stimulation of the nervous system cana augment plasticity of
+spares or latent circuits through focal modulation
+	- repetitive transcanial magnetic stimulation (rTMS)
+	- transcranial direct current stimulation (tDCS)
+	- Theta burst stimulation (TBS)
+	- Paired associative stimulation (PAS)
+
+	- Trans-spinal direct current stimulation (tsDCS)
+	- Epidural stimulation
+	- Spinal associative stimulation (SAS)
+
+	- Functional eletrical stimulation
+	- Transcutaneous eletrical nerve stimulation (TENS)
+	- Moto skill training
+
+Brain stimulation and sroke rehabilitation
+	- in stroke we have typically one affected hemisphere and one not
+	- the affected hemipsphere presents decreased excitability after stroke
+	- the unnefected hemisphere presents increased excitability after stroke
+	- the goal has been to equalize the sides
+	- to increase excitability in affected hemisphere:
+		- HF-rTMS
+		- iTBS
+		- Anodal tDCS
+	- to decrease excitability in uneffected hemisphere:
+		- LF-rTMS
+		- cTBS
+		- Cathodal tDCS
+
+
+Neuroplacticity: the basis of motor recovery
+	The ability of the nervous system to respond to instrinsic or extrinsic stimuli
+	by reorganizing its structure, function and connections
+	It can be triggered by injury an/or activity/training
+
+Active training enhances neuroplacticity and results in reorganization of cortical maps
+
+Key factors for motor recovery duraing training:
+	- Intensity
+		- repetitions
+		- duration
+		- distribution/frequency
+		- effort
+		- difficulty
+	- Psychological Factors
+		- motivation
+	- Manner
+		- task segmentatoin
+		- specificity/functionality
+		- variablity
+		- initiation
+		- shaping
+	- Information
+		- instructions
+		- feedback
+
+
+There is a need for novel approaches
+	-tDCs (modulates cortical excitability); VR; Sensor tech; robotics
+
+
+read and write the brain:
+	cloud -> monitor (eeg) -> predict and personalize -> stimulate (tDCS)
+
+but tDCS needs to be a coadjuvant motor rehabilitation strategy
+
+
+why do some people respond and others dont?
+	
+cortical integraity, assesses by TMS, is a predictor
+of clinicaly meaningfull response to itensive arm therapy in chronic stroke
+
+how do we optimize brain stimulation?
+	- how much? Dose (# sessions)
+	- how long? long term adaptation
+	- who? subject selection
+	- where? targeted brain region
+	- when? timing in combined therapies
+
+precision rehabilitation
+	- reponders vs no responders. Predictors of recovery
+	- interaction of brain and spinal placticity
+	- neurophysiology to guide rehabilitation
+	- development of new objective (and more sensitive) outcome measures
+	- multidisciplinary teams
+
+
+AI could be used to personalize stimulation protocols to optimize their effectiveness ?
+
+glossario:
+
+ERSP -> event related spectral dynamics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

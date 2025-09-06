@@ -1,0 +1,5 @@
+outs:
+- md5: 55cc12ef81f14e1e2b4352fa261b69ae
+  size: 205313
+  hash: md5
+  path: svm-lecture-prep.pdf

@@ -1,0 +1,36 @@
+/1 - Overview.pdf
+/10 - Stochastic Subgradient.pdf
+/11 - Stochastic Average Gradient.pdf
+/12 - Kernel Methods.pdf
+/13 - Structured Prediction.pdf
+/14 - Density Estimation.pdf
+/15 - Directed Acyclic Graphical Models.pdf
+/15 - Mixture Models 1.pdf
+/16 - Mixture Models 2.pdf
+/17 - EM Algorithm.pdf
+/18 - Kernel Density Estimation.pdf
+/19 - Markov Chains.pdf
+/2 - Fundamentals of Learning.pdf
+/20 - Monte Carlo Methods.pdf
+/21 - Message Passing.pdf
+/22 - More DAGs.pdf
+/23 - Undirected Graphical Models.pdf
+/24 - Approximate Inference.pdf
+/25 - More Approximate Inference.pdf
+/26 - Intro 2 Probabilistic Programming.pdf
+/27 - Latent Graphical Models.pdf
+/28 - Conditional Random Fields (CRFs).pdf
+/29 - Fully-Convolutional Networks.pdf
+/3 - Convex Optimization.pdf
+/30 - RNNs.pdf
+/31 - Empirical Bayes.pdf
+/32 - Hierarchal Bayes.pdf
+/33 - Topic Models.pdf
+/34 - Variational Inference, Non-Parmametric Bay.pdf
+/35 - VAEs & GANs.pdf
+/4 - Convergence of Gradient Descent.pdf
+/5 - Rates of Convergence.pdf
+/6 - Subgradients and Projected Gradient.pdf
+/7 - Proximal-Gradient.pdf
+/8 - Structured Regularization.pdf
+/9 - Coordinate Optimization.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 575b3d19fb138bdddd65c9c330744027
+  size: 10975184
+  hash: md5
+  path: eth2-book.pdf

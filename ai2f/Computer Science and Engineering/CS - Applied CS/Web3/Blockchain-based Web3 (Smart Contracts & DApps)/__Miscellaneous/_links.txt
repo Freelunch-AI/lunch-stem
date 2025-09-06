@@ -1,0 +1,5 @@
+https://developer.bitcoin.org/
+
+https://ethereum.org/en/developers/
+
+https://docs.cardano.org/

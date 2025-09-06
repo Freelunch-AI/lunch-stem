@@ -1,0 +1,5 @@
+outs:
+- md5: 9a74f9527a7351c4cc4329145d42afa4
+  size: 969823
+  hash: md5
+  path: verilog_tutorial_fa16.pdf

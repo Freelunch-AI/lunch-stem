@@ -1,0 +1,21 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Ding et al",
+      "university": null
+    },
+    {
+      "name": "Nguyen A, Dosovitskiy A, Yosinski J, Brox T, Clune J",
+      "university": null
+    }
+  ],
+  "university_course_name": "CSC2541: Differentiable Inference and Generative Models",
+  "publisher": "Advances in Neural Information Processing Systems 29",
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 46,
+  "size_mb": 7.23,
+  "link_to_license": null,
+  "changes_were_made": false
+}

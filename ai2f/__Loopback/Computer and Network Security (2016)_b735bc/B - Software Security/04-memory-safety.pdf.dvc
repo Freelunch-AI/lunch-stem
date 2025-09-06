@@ -1,0 +1,5 @@
+outs:
+- md5: ac0477e825a1ec3aca186bf75fa98f5f
+  size: 2389068
+  hash: md5
+  path: 04-memory-safety.pdf

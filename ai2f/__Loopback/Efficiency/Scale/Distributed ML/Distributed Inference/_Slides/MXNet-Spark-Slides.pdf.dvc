@@ -1,0 +1,5 @@
+outs:
+- md5: d83bdb184f95c2a051a8156fd721e211
+  size: 13153307
+  hash: md5
+  path: MXNet-Spark-Slides.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 4948b39281a6044f6676a2859c750e3d
+  size: 48495
+  hash: md5
+  path: cs-lmu-edu-cuda.pdf

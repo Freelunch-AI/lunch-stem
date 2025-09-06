@@ -1,0 +1,5 @@
+outs:
+- md5: 885f8424e4f615f8def10fe60dba5772
+  size: 375056
+  hash: md5
+  path: AllChecks_sol.pdf

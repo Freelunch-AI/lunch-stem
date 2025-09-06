@@ -1,0 +1,8 @@
+lecture
+https://www.youtube.com/watch?v=92-98SYOdlY&t=2276s
+
+material
+https://thegradient.pub/gaussian-process-not-quite-for-dummies/
+
+outro materila muito bom - interativo!
+https://distill.pub/2019/visual-exploration-gaussian-processes/

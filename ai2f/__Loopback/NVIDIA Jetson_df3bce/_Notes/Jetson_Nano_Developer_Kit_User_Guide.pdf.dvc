@@ -1,0 +1,5 @@
+outs:
+- md5: c7e447db641bfb5af6db515009e997d2
+  size: 1236243
+  hash: md5
+  path: Jetson_Nano_Developer_Kit_User_Guide.pdf

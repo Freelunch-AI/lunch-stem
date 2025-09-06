@@ -1,0 +1,2 @@
+https://github.com/BrunoScaglione/awesome-embedding-models
+https://github.com/BrunoScaglione/awesome-sentence-embedding

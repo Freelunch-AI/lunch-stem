@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\pipeline-select-kafka.svg_5646e0

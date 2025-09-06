@@ -1,0 +1,5 @@
+outs:
+- md5: 0e50575423f315c857c8a31c8eca1823
+  size: 2442176
+  hash: md5
+  path: FenwickTree.pdf

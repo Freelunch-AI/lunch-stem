@@ -1,0 +1,5 @@
+outs:
+- md5: 658d4ebe219cb25d8eaec75cafa87019
+  size: 1323362
+  hash: md5
+  path: docker tutorial.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 8d1dbc6586819d04835d5640af9b7e75
+  size: 208591
+  hash: md5
+  path: cloud-cost-optimization.pdf

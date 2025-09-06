@@ -1,0 +1,1 @@
+C:\Program Files\PostgreSQL\12\scripts\runpsql.bat

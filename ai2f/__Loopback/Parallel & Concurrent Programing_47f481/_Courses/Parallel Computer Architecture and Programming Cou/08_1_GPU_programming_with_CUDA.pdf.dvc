@@ -1,0 +1,5 @@
+outs:
+- md5: 226d0e8aa5a66d89ab92dc088bab807b
+  size: 842483
+  hash: md5
+  path: 08_1_GPU_programming_with_CUDA.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: a2cfc456a46bbd86ced6201b688d5f82
+  size: 789749
+  hash: md5
+  path: 01-inmemory.pdf

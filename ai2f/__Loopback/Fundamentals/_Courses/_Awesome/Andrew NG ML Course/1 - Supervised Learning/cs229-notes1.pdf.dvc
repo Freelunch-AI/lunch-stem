@@ -1,0 +1,5 @@
+outs:
+- md5: 73241a52de8ca0544803fb5cc5844771
+  size: 357392
+  hash: md5
+  path: cs229-notes1.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: e3b39c0924517333cab5799ffa75ea27
+  size: 1338444
+  hash: md5
+  path: 48 - Aligning MAGMA by finetuning and few-shot .pdf

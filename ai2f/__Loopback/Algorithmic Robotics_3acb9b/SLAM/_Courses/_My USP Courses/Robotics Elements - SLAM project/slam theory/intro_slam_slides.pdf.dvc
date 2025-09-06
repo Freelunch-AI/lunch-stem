@@ -1,0 +1,5 @@
+outs:
+- md5: 43b4a241f88b48dea2f557513b56fc36
+  size: 11562247
+  hash: md5
+  path: intro_slam_slides.pdf

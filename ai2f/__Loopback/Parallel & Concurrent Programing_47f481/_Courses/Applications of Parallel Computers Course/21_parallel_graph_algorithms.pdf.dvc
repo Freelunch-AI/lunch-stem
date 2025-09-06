@@ -1,0 +1,5 @@
+outs:
+- md5: 4a87d071106055b77ddd0fc3ed94d775
+  size: 7768145
+  hash: md5
+  path: 21_parallel_graph_algorithms.pdf

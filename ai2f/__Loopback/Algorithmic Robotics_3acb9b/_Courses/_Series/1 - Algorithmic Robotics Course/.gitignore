@@ -1,0 +1,37 @@
+/0 - Intro.pdf
+/1 - Getting Started with ROS.pdf
+/10 - Reactive navigation 1.pdf
+/11 - Reactive navigation 2.pdf
+/12 - Navigation with a map.pdf
+/13 - Maps as occupancy grids.pdf
+/14 - WA0 review.pdf
+/15 - Exam 0 Q&A.pdf
+/16 - Review of graph search algorithms.pdf
+/17 - Exact path planning methods.pdf
+/18 - Exam 0 review.pdf
+/19 - Exact medial axis roadmap method.pdf
+/2 - Coordinate frames and transformations.pdf
+/20 - Distance transform and Dstar.pdf
+/21 - Dstar Lite - animation.pdf
+/22 - Intro to sample-based planning methods.pdf
+/23 - Preview of PA3.pdf
+/24 - Sampling Theory.pdf
+/25 - Incremental sampling and search.pdf
+/26 - Rapidly-exploring Dense Trees (RDTs).pdf
+/27 - Behind the Scenes at Neato Robotics.pdf
+/28 - Roadmap methods for multiple queries.pdf
+/29 - Exam 1 Q&A.pdf
+/3 - More on transformations.pdf
+/30 - Localization.pdf
+/31 - Bayes Filters.pdf
+/32 - Kalman FIlters.pdf
+/33 - ROS&STDR and navigation stack.pdf
+/34 - EKF localization.pdf
+/35 - EKF SLAM.pdf
+/36 - EKF SLAM 2.pdf
+/4 - Time and motion and trajectory generation 1.pdf
+/5 - Time and motion and trajectory generation 2.pdf
+/6 - RoboRally.pdf
+/7 - More trajectory generation.pdf
+/8 - Models of wheeled robots.pdf
+/9 - Control of wheeled robots.pdf

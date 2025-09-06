@@ -1,0 +1,5 @@
+outs:
+- md5: 5754042a7a0c2aa3662006387826670b
+  size: 263256
+  hash: md5
+  path: 6 - Transaction Locking and Concurrency.pdf

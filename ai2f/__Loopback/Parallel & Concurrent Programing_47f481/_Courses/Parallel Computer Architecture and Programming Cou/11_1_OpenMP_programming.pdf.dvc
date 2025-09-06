@@ -1,0 +1,5 @@
+outs:
+- md5: 95b47c8edf7fc34cd73d8b098db40d45
+  size: 171630
+  hash: md5
+  path: 11_1_OpenMP_programming.pdf

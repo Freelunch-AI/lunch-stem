@@ -1,0 +1,5 @@
+outs:
+- md5: 8d8a836685276db53ba50517b739653b
+  size: 274256
+  hash: md5
+  path: prob-vs-stats.pdf

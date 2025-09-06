@@ -1,0 +1,3 @@
+https://ml-course.github.io/master/intro.html
+https://compphysics.github.io/MachineLearning/doc/LectureNotes/_build/html/chapter11.html
+https://www.cs.cornell.edu/courses/cs4780/2023sp/

@@ -1,0 +1,5 @@
+outs:
+- md5: e2080b6e77532269770dc44d4c6457ef
+  size: 427299
+  hash: md5
+  path: 3 - Atomicity via Write-ahead logging.pdf

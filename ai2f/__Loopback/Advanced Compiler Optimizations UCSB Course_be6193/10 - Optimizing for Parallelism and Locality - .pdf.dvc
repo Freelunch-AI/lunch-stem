@@ -1,0 +1,5 @@
+outs:
+- md5: 14eb16216b7548fe16952713b922a8a9
+  size: 547585
+  hash: md5
+  path: 10 - Optimizing for Parallelism and Locality - .pdf

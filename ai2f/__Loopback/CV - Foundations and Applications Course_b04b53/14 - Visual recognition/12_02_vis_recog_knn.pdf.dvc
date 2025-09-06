@@ -1,0 +1,5 @@
+outs:
+- md5: fde81331e861b4db2719d0ed2ccda1a8
+  size: 894446
+  hash: md5
+  path: 12_02_vis_recog_knn.pdf

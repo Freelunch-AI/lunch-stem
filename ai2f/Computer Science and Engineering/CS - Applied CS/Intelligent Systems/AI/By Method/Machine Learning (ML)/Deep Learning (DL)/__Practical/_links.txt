@@ -1,0 +1,4 @@
+https://github.com/NVIDIA/DeepLearningExamples
+https://github.com/JarnoRalli/deep-learning-examples
+https://github.com/fchollet/deep-learning-with-python-notebooks
+https://github.com/enggen/Deep-Learning-Coursera

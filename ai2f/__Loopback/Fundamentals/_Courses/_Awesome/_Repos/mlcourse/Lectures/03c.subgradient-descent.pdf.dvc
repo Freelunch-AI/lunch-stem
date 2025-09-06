@@ -1,0 +1,5 @@
+outs:
+- md5: 2fa6da2496bbcf2beb046ea10fa714d9
+  size: 5962770
+  hash: md5
+  path: 03c.subgradient-descent.pdf

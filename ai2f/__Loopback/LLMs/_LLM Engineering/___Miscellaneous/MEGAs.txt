@@ -1,0 +1,5 @@
+https://github.com/BrunoScaglione/LMOps
+https://github.com/DefTruth/Awesome-LLM-Inference
+https://medium.com/@abonia/best-llm-and-llmops-resources-for-2023-75e96ac37feb
+https://github.com/tensorchord/Awesome-LLMOps
+https://github.com/BrunoScaglione/Awesome-Efficient-LLM

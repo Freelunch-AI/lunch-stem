@@ -1,0 +1,5 @@
+outs:
+- md5: e301e28e599719a75b99d2ec7a548eb9
+  size: 1550478
+  hash: md5
+  path: AhoCorasick.pdf

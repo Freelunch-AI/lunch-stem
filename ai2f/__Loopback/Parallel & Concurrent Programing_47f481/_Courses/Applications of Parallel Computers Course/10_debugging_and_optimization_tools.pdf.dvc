@@ -1,0 +1,5 @@
+outs:
+- md5: dbc1d47b86b966d7a9447a7bf4c2de38
+  size: 8051144
+  hash: md5
+  path: 10_debugging_and_optimization_tools.pdf

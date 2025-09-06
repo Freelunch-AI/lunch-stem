@@ -1,0 +1,29 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Trevor Darrell",
+      "university": "Berkeley"
+    },
+    {
+      "name": "Marc Pollefeys",
+      "university": "UNC/ETH-Z"
+    },
+    {
+      "name": "Andrew Zisserman",
+      "university": null
+    },
+    {
+      "name": "Guido Gerig",
+      "university": null
+    }
+  ],
+  "university_course_name": "CS 6320 Spring 2015",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 113,
+  "size_mb": 3.75,
+  "link_to_license": null,
+  "changes_were_made": false
+}

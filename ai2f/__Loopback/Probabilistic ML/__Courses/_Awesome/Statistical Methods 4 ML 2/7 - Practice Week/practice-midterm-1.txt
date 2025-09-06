@@ -1,0 +1,2 @@
+Practice midterm 1:
+https://probmlcourse.github.io/sta414/sample_tests/sample_midterm/

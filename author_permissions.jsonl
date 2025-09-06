@@ -1,0 +1,15 @@
+{
+    "author_name": "Placeholder Author",
+    "author_public_key": "placeholder_author_public_key",
+    "files_authorized": [
+        {
+            "file_name": "placeholder_file_name",
+            "file_size": "placeholder_file_size",
+            "number_of_pages": "placeholder_number_of_pages",
+            "file_path_authorized_by_author": "placeholder/file/path.extension",
+            "file_path_signed_by_author": "placeholder-path-cryptographic-signature",
+            "file_hash": "placeholder-file-hash",
+            "file_hash_signed_by_author": "placeholder-hash-cryptographic-signature"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+outs:
+- md5: 80a904c90bbe8ed856f1545efc284102
+  size: 128719
+  hash: md5
+  path: nyse.pdf

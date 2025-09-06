@@ -1,0 +1,77 @@
+{
+  "license": "CC BY",
+  "authors": [
+    {
+      "name": "Derek Hoiem",
+      "university": null
+    },
+    {
+      "name": "Margaret Mitchell",
+      "university": null
+    },
+    {
+      "name": "Blaise Agüera y Arcas",
+      "university": null
+    },
+    {
+      "name": "Hee Jung Ryu",
+      "university": null
+    },
+    {
+      "name": "Hartwig Adam",
+      "university": null
+    },
+    {
+      "name": "Josh Lovejoy",
+      "university": null
+    },
+    {
+      "name": "Dirk Hovy",
+      "university": null
+    },
+    {
+      "name": "Adrian Benton",
+      "university": null
+    },
+    {
+      "name": "Blake Lemoine",
+      "university": null
+    },
+    {
+      "name": "Brian Zhang",
+      "university": null
+    },
+    {
+      "name": "Alex Beutel",
+      "university": null
+    },
+    {
+      "name": "Andrew Me",
+      "university": null
+    },
+    {
+      "name": "Simone Parker",
+      "university": null
+    },
+    {
+      "name": "Lucy Ben",
+      "university": null
+    },
+    {
+      "name": "Elena Deb",
+      "university": null
+    },
+    {
+      "name": "Timnit Gebru",
+      "university": null
+    }
+  ],
+  "university_course_name": "Applied Machine Learning",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": "m-mitchell.com",
+  "num_of_pages": 114,
+  "size_mb": 6.18,
+  "link_to_license": null,
+  "changes_were_made": false
+}

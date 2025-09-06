@@ -1,0 +1,5 @@
+outs:
+- md5: 0aae9dd23d538c30ba556a8ec4ae53ff
+  size: 2379580
+  hash: md5
+  path: variational_inference_and_optimization_1.pdf

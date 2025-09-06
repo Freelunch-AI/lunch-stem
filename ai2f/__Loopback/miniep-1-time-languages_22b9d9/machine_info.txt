@@ -1,0 +1,4 @@
+OS: Windows 10
+Processor: Intel i5-6200U
+Python version: Python 3.8.1
+C compiler version: gcc 6.3.0

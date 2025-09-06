@@ -1,0 +1,5 @@
+outs:
+- md5: 01d6d9d7095ce14d288f1b3531080aa5
+  size: 405639
+  hash: md5
+  path: emnotes.pdf

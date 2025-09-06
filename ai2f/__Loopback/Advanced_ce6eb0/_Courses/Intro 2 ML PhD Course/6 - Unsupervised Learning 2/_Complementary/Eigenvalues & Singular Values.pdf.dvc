@@ -1,0 +1,5 @@
+outs:
+- md5: 408e443e0aa205c68e1e68cc6f6e806c
+  size: 755400
+  hash: md5
+  path: Eigenvalues & Singular Values.pdf

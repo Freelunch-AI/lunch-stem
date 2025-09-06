@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\GraphQL with Apollo & React_212b3d

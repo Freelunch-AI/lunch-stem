@@ -1,0 +1,5 @@
+outs:
+- md5: 2e61f0edb3556b4a96395ec1c96bf3eb
+  size: 89026
+  hash: md5
+  path: 12-logging.pdf

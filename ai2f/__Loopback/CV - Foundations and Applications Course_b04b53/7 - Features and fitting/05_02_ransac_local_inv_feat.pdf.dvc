@@ -1,0 +1,5 @@
+outs:
+- md5: c71f651cd6dd104ac480e50c199b0bec
+  size: 1025785
+  hash: md5
+  path: 05_02_ransac_local_inv_feat.pdf

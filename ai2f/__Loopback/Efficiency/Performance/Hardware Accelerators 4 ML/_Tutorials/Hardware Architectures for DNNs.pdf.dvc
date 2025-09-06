@@ -1,0 +1,5 @@
+outs:
+- md5: 5cc17f496adae91e970457d8495c430e
+  size: 31900704
+  hash: md5
+  path: Hardware Architectures for DNNs.pdf

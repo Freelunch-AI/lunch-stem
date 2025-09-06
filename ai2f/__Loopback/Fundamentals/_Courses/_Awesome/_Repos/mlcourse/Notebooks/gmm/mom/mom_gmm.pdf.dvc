@@ -1,0 +1,5 @@
+outs:
+- md5: 7a46015e3584e52f9490ddcf42d04c7c
+  size: 221520
+  hash: md5
+  path: mom_gmm.pdf

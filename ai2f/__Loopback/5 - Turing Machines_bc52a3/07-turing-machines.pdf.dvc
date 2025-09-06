@@ -1,0 +1,5 @@
+outs:
+- md5: 9035362f686ee4524046320cb3cd0efc
+  size: 1308926
+  hash: md5
+  path: 07-turing-machines.pdf

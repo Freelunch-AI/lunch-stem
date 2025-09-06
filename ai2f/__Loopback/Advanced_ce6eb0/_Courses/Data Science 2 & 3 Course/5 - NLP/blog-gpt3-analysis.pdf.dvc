@@ -1,0 +1,5 @@
+outs:
+- md5: fd596f51ddb2abd8969e8e522bbc9b2a
+  size: 920394
+  hash: md5
+  path: blog-gpt3-analysis.pdf

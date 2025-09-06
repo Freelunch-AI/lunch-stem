@@ -1,0 +1,5 @@
+outs:
+- md5: 99eed92b7e2808239ab2310436f1c1b5
+  size: 3763257
+  hash: md5
+  path: AbstractAlgebra.pdf

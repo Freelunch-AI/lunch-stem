@@ -1,0 +1,5 @@
+outs:
+- md5: 5021618b1453895cd9b97846a400bdce
+  size: 2052743
+  hash: md5
+  path: geometric-interpretation-cov-matrix.pdf

@@ -1,0 +1,17 @@
+1 - Exposure
+https://cs.brown.edu/courses/csci1290/labs/lab_exposure/index.html
+
+2 - RAW Images
+https://cs.brown.edu/courses/csci1290/labs/lab_raw/index.html
+
+3 - Bilateral Filter
+https://cs.brown.edu/courses/csci1290/labs/lab_bilateral/index.html
+
+4 - Compositing and Morphology
+https://cs.brown.edu/courses/csci1290/labs/lab_compositing/index.html
+
+5 - Night Lab
+https://cs.brown.edu/courses/csci1290/labs/lab_nightlab/index.html
+
+6 - Light Field Lab
+https://cs.brown.edu/courses/csci1290/labs/lab_lightfields/

@@ -1,0 +1,5 @@
+outs:
+- md5: 91ad15c876ef8bbf8b31d1f0666f89b2
+  size: 104556
+  hash: md5
+  path: parameters-vs-latentvariables.pdf

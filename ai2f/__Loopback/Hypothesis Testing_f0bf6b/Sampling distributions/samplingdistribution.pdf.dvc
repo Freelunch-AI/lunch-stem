@@ -1,0 +1,5 @@
+outs:
+- md5: f0d57b09ec2b522552f9972cba373c1c
+  size: 3073182
+  hash: md5
+  path: samplingdistribution.pdf

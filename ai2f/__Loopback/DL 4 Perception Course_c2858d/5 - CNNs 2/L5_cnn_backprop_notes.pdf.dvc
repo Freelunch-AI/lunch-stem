@@ -1,0 +1,5 @@
+outs:
+- md5: c6444a3a63cfa96eaaa01f9c961c15a7
+  size: 419278
+  hash: md5
+  path: L5_cnn_backprop_notes.pdf

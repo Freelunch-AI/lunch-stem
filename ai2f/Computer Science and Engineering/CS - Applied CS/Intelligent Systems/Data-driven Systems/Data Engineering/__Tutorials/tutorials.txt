@@ -1,0 +1,11 @@
+https://www.striim.com/what-is-a-data-pipeline-and-must-have-features-of-modern-data-pipelines/
+
+https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7
+
+https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-ii-47c4e7cbda71
+
+https://medium.com/@rchang/a-beginners-guide-to-data-engineering-the-series-finale-2cc92ff14b0
+
+https://www.youtube.com/watch?v=1WUIua-xjJA
+
+https://www.youtube.com/watch?v=p67LUCj1ros

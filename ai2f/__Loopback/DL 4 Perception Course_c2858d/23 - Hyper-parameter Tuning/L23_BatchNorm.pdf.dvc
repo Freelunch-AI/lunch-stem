@@ -1,0 +1,5 @@
+outs:
+- md5: a8e5d64ffb389c2522dcd90f7fac27d6
+  size: 729141
+  hash: md5
+  path: L23_BatchNorm.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: dd6358fcf0570c5b45c13641ea9dcff6
+  size: 450637
+  hash: md5
+  path: 5 - NFA Implementation, NFA_DFA conversion.pdf

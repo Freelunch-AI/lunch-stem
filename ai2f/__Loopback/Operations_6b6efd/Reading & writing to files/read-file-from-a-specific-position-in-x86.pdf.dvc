@@ -1,0 +1,5 @@
+outs:
+- md5: 8e52a7ecc4618f78162236abcbdc4814
+  size: 103832
+  hash: md5
+  path: read-file-from-a-specific-position-in-x86.pdf

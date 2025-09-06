@@ -1,0 +1,5 @@
+outs:
+- md5: abc4e8880370c4c1605254fa434854aa
+  size: 351445
+  hash: md5
+  path: stackoverflow-can-a-system-call-happen-in-a-c-p.pdf

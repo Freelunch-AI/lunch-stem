@@ -1,0 +1,53 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Prof. Serge Belongie",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Prof. Nathan Kallus",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Mor Cohen",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Sagar C",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Asaf P",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Brunno A",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Jacqueline P",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Kiyan R",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Chao S",
+      "university": "Cornell Tech"
+    },
+    {
+      "name": "Zijun Z",
+      "university": "Cornell Tech"
+    }
+  ],
+  "university_course_name": "CS 5785 Applied Machine Learning",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 8,
+  "size_mb": 0.72,
+  "link_to_license": null,
+  "changes_were_made": false
+}

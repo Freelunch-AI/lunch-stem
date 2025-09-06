@@ -1,0 +1,5 @@
+outs:
+- md5: fd544a95263327baa82a6710c25dc91d
+  size: 550078
+  hash: md5
+  path: lagrangiano-aumentado.pdf

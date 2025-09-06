@@ -1,0 +1,5 @@
+outs:
+- md5: f5699a5c5c99636a29d867045361f7c1
+  size: 999257
+  hash: md5
+  path: pthreads-openmp.pdf

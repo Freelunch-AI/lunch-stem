@@ -1,0 +1,21 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Frank Hutter",
+      "university": "University of Freiburg"
+    },
+    {
+      "name": "Joaquin Vanschoren",
+      "university": "Eindhoven University of Technology"
+    }
+  ],
+  "university_course_name": "AutoML Tutorial",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": "automl.org/events",
+  "num_of_pages": 60,
+  "size_mb": 3.91,
+  "link_to_license": null,
+  "changes_were_made": false
+}

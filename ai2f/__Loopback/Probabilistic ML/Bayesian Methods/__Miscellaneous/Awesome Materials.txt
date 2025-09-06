@@ -1,0 +1,9 @@
+https://metacademy.org/roadmaps/rgrosse/bayesian_machine_learning
+
+https://www.cse.wustl.edu/~garnett/cse515t/spring_2017/
+
+nesse link acima alem das aulas tem mt material recomendado tb
+
+### gaussin processes
+
+https://thegradient.pub/gaussian-process-not-quite-for-dummies/

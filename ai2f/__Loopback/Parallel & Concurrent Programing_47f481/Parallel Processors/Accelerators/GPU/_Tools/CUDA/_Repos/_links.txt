@@ -1,0 +1,2 @@
+https://github.com/CisMine/Parallel-Computing-Cuda-C
+https://github.com/srush/GPU-Puzzles

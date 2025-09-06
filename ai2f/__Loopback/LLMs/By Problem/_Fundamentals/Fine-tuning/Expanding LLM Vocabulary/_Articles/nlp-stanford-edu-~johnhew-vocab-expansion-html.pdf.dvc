@@ -1,0 +1,5 @@
+outs:
+- md5: 1d3af21c40dc71f440104b2c1580a22b
+  size: 997486
+  hash: md5
+  path: nlp-stanford-edu-~johnhew-vocab-expansion-html.pdf

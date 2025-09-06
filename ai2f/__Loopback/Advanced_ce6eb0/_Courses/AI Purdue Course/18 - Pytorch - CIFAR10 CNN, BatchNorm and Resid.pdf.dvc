@@ -1,0 +1,5 @@
+outs:
+- md5: 84e4ab07c62375698eb70f1c902ac2ba
+  size: 787875
+  hash: md5
+  path: 18 - Pytorch - CIFAR10 CNN, BatchNorm and Resid.pdf

@@ -1,0 +1,3 @@
+https://medium.com/value-stream-design/introducing-one-of-the-best-hacks-in-machine-learning-the-hashing-trick-bf6a9c8af18f
+https://booking.ai/dont-be-tricked-by-the-hashing-trick-192a6aae3087
+https://medium.com/flutter-community/dealing-with-categorical-features-with-high-cardinality-feature-hashing-7c406ff867cb

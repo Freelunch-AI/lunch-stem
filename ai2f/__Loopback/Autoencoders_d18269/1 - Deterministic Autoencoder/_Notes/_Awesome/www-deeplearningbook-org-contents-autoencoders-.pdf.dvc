@@ -1,0 +1,5 @@
+outs:
+- md5: fd7ad7c7a8a8b30391f6c58cff3f58db
+  size: 181611
+  hash: md5
+  path: www-deeplearningbook-org-contents-autoencoders-.pdf

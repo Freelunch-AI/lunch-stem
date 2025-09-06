@@ -1,0 +1,25 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Michael Jordan",
+      "university": "University of California, Berkeley"
+    },
+    {
+      "name": "Horia Mania",
+      "university": "University of California, Berkeley"
+    },
+    {
+      "name": "Lydia T. Liu",
+      "university": "University of California, Berkeley"
+    }
+  ],
+  "university_course_name": "DS 102: Two-sided markets and bandits",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 47,
+  "size_mb": 1.38,
+  "link_to_license": null,
+  "changes_were_made": false
+}

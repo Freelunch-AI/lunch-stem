@@ -1,0 +1,5 @@
+outs:
+- md5: 53cbc8cf2d4d4cdbfe761f8bae4cb3a0
+  size: 4020245
+  hash: md5
+  path: Intro2Robotics.pdf

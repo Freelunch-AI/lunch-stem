@@ -1,0 +1,5 @@
+outs:
+- md5: f16b65b4a67722c372b17de2d32baa78
+  size: 3524041
+  hash: md5
+  path: Lecture_7_Distributed_ML.pdf

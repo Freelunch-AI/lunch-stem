@@ -1,0 +1,5 @@
+outs:
+- md5: 1ca40e5d80a80f3378beeb14a334a4c9
+  size: 1163271
+  hash: md5
+  path: Intro_Parallel_Computing.pdf

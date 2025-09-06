@@ -1,0 +1,751 @@
+title: Practical Electroencephalography (EEG) Applications in
+Stroke Rehabilitation: towards brain-computer interface
+(BCI) setup and motor function assessment
+
+obs: esse aqui é uma tese de doutorado, gigante.
+entao melhor tentar escolher as partes mais importantes pra ler
+
+url: file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/Practical%20Electroencephalography%20(EEG)%20Applications%20inStroke%20rehab%20-%20toward%20bci%20setup%20and%20motor%20assesment.pdf
+ 
+notes:
+
+#Abstract
+
+Electroencephalography (EEG) records electrical brain activity typically in a non-invasive
+manner. Recent literature has shown its potential in stroke rehabilitation, to actively
+engage stroke survivors in rehabilitation. In Chapter 3 of this thesis, the problems of
+EEG applications in stroke rehabilitation were firstly identified with a pilot study. Two
+main challenges were identified, hindering further application of EEG in stroke
+rehabilitation training.
+One of the challenges is that the BCI involved rehabilitation process is
+unsatisfying. Three objectives were derived from this challenge. Firstly, at the beginning
+of all EEG related stroke rehabilitation training, it is both time and effort consuming to go
+through data collection and model training for every rehabilitation task. Therefore, in
+Chapter 4 of the thesis, the possibility of using an EEG model from one type of motor
+imagery (e.g.: elbow extension and flexion) to classify EEG from other types of motor
+imagery activities (e.g.: open a drawer) was investigated. Secondly, a novel training
+method was introduced together with a rehabilitation platform in Chapter 5. The results
+suggested that the proposed methods in this thesis are feasible and potentially effective.
+Thirdly, the transition of the offline analysis method to an online control method is one of
+the major factors that affect BCI performance. However, research particularly focused on
+the method of filtering the prediction of an online classification is scarce. In Chapter 6,
+two methods of filtering online classification predictions were proposed and evaluated in
+a pseudo-online classification paradigm, with the EEG data collected from Chapter 5.
+The other challenge is related to motor function assessments in rehabilitation.
+Motor function is generally assessed with standard questionnaire-based assessments. In
+these assessments, the rater requires the ratee to perform pre-defined movements and
+gives scores based on the quality of the movements. Therefore, those motor function
+assessments have inevitable subjective influences on the functional scores. In Chapter 7
+of the thesis, the author investigated the possibility of using EEG data to assess motor
+function. As a preliminary investigation, EEG-based motor function assessments were
+only investigated for upper-extremity among participants with stroke. The results
+suggested that EEG data can be used to assess motor function accurately. 
+
+
+Stroke has become one of the leading causes of death worldwide, and has also
+been the main cause of disability for adults [1], [2]. In clinical practice, rehabilitation
+training has been the primary treatment for motor function loss in stroke survivors [3]–[6].
+Currently, rehabilitation training is generally administered in one-to-one sessions
+between the healthcare professionals and the patients. Therefore, the throughput of the
+rehabilitation training is limited by the number of healthcare professionals in the facility.
+Additionally, the full-time involvement of healthcare professionals becomes a big
+financial burden to the patients [1]. In order to decrease the involvement of healthcare
+professionals, some research groups have proposed rehabilitation devices, like robots or
+functional electrical stimulation (FES) devices, that are capable of delivering automated
+repetitive rehabilitation training for the stroke survivors [7]–[13]. However, some papers
+suggested that rehabilitation training with passive movements of individual joints was not
+efficient [4], [6], [14]. The engagement of the patients during the training has been
+reported to be crucial for better rehabilitation outcomes. Therefore, some studies have
+introduced EEG into rehabilitation training to investigate the possibility of ensuring the
+patients’ engagement with the rehabilitation protocol [15]–[17]. In addition, some other
+papers also reported that EEG has the potential to indicate motor function [18], [19], [28],
+[20]–[27], which implies it might be feasible to use EEG as a bio-marker of motor
+function recovery for patients with stroke
+
+Research on EEG and its clinical applications have been going on for decades.
+However, the application of EEG during rehabilitation still seems preliminary despite its
+great potential [29]–[31]. In this thesis, two primary obstacles of EEG applications in
+rehabilitation training were identified. Possible solutions were also proposed and
+validated with several preliminary studies. 
+
+This thesis starts with a pilot study to identify the challenges in EEG applications
+for stroke rehabilitation. In this pilot study, a rehabilitation training platform is presented
+with a portable EEG acquisition system based BCI, controlling a lightweight exoskeleton.
+To use the proposed platform, the user is required to perform motor imagery on the
+designated protocol, and a BCI system classifies the EEG data to check if the user is
+focused on the training protocol. If true, assistance from the exoskeleton is activated to
+help the user complete the protocol. From this pilot study, the author identifies two
+challenges in the rehabilitation applications for EEG technologies
+
+One of the challenges is that the current BCI involved rehabilitation is still
+unsatisfactory. Three objectives are proposed to overcome this challenge.
+
+# aproveitar MI classification de uma task pra outra, pr anao ter q fazer varios treinamentos diferentes
+Firstly, the BCI application setup process consumes a great portion of time in BCI
+involved rehabilitation training. Typical rehabilitation protocols may contain several
+training tasks, for example, the Graded Repetitive Arm Supplementary Program
+(GRASP) [32]. With multiple tasks in one rehabilitation protocol, the BCI setup process in
+BCI involved rehabilitation training would require data acquisition for every task of the
+training protocol, which is labor intensive and time-consuming. In order to solve the
+problem, it is necessary to investigate if there are certain types of motor imageries (MIs)
+that generate BCI models with higher testing accuracy in other MIs. This is referred to as
+higher versatility of MIs in this thesis. Using MIs with higher versatility in the BCI setup,
+the time EEG data acquisition could be minimized. However, to the best of our
+knowledge, no study has been reported to investigate the versatility of MIs in the
+literature, and no study has been reported on investigating guidelines for choosing MIs in
+BCI related rehabilitation applications.
+
+
+# bci fitting to suprious correlations of the patient i think
+Secondly, the rehabilitation training is still a long, painful and expensive process
+for most patients with chronic stroke. Some recent papers suggested the utilization of
+BCI systems in stroke rehabilitation training resulted in better rehabilitation outcomes
+than passive rehabilitation training, as the active training brought by the BCI systems
+might have potentially reinforced the motor learning/re-relearning processes [33]–[37].
+However, with the utilization of the BCI systems, it is still possible that the patient could
+have learned to control the BCI system fluently during the rehabilitation training instead 
+of gaining motor function recovery [38]. In order to lay emphasis on the rehabilitation
+training and motor function recovery, some researchers suggested combining motor
+imagery training (provided by BCI) and active physical training (provided by active
+minimal movement from the patient) in the rehabilitation training protocol [38]. In the
+combined rehabilitation training, the patients were required to activate BCI control and
+move to the designated direction at the same time, which internally connects the mental
+task and physical task together. Therefore, the combined method could potentially
+further boost motor function recovery [38]. Although there is a need for such a complex
+rehabilitation training system, no such system has been reported in the literature.
+
+# classificar as windows eh mais dificil to que partes que vc sabe que contem o padrao e partes
+que nao tem, pq windows podem ter parte do padrao acho q tem a ver com isso
+Thirdly, offline EEG analysis methods have been investigated extensively for
+decades [39]–[43]. The latest EEG offline analysis algorithm was able to distinguish
+eight class of MIs with very high accuracy (<80%) [44]. Many BCI applications have also
+been reported in the literature to investigate the performance of BCI control as an
+extension of the offline analysis [45]–[51]. In the previous literature on actual BCI online
+applications, the control signal was based on the predictions generated by directly
+applying the BCI models on the buffered EEG data. The accuracy of those proposed
+systems was still not satisfactory. Considering the predictions generated by the BCI
+model directly affects the performance of the BCI application, filtering those predictions
+has the potential to improve the performance of the BCI systems.
+
+#motor function assessment
+The other challenge is with the motor function assessment process, which is
+difficult to perform for people without prior experience. One objective is proposed to
+overcome the motor function assessment challenge in this thesis. The traditional way of
+motor function assessment is done in one-to-one sessions between the patients and
+health care professionals. Usually, the examiner requires the examinee to perform
+designated movements in the assessment protocol and gives scores based on the
+quality of the movements. The Medical Research Council (MRC) 0-to-5 scale muscle
+power assessment tool is the common motor function assessment in clinical practice.
+Other motor function assessments like Fugl-Meyer Assessment (FMA) [52], Wolf Motor
+Function Test (WMFT) [53], Functional Independent Measure(FIM) [54] and National
+Institutes of Health Stroke Scale (NIHSS) [55] are common motor function assessments
+used in the research field. The one-to-one motor function assessments between the
+healthcare professionals and patients are not completely objective. 
+
+The proper
+administration of those motor function assessments requires experience and
+professional skills. In the literature, several objective scores calculated from EEG have
+been reported to correlate with motor function performance. For example, brain
+symmetry index (BSI) has been reported to correlate with NIHSS score in patients with
+acute stroke [23]. Delta to alpha ratio (DAR) has been reported to correlate with FIM
+score in patients with post-acute stroke [26]. Large-scale phase synchrony(LPS) has
+been reported to correlate with FIM score in patients with post-acute ischemic stroke
+[28]
+
+These pieces of evidence suggest there is a great potential for translating EEG
+data into a motor function assessment method. However, there are several limitations of
+the previous studies. Firstly, the previous studies were done with acute or post-acute
+populations, it is unknown if those findings could be transferred to a population with
+chronic stroke. Secondly, the EEG scores for motor function proposed in the literature
+(like BSI) were not accurate enough to be used to assess motor function. The
+correlations reported in the literature were still low (𝜌 < 0.8). A more reliable and
+accurate method is need for EEG to be used as a motor function assessment. 
+
+changes in the EEG or calculated from phase information from EEG. With the
+development of modern artificial neural network (ANN) methods, there is a great
+potential to combine those inputs from EEG and create a score for accurate and reliable
+motor function assessment [56], [57].
+
+
+In this thesis, the author firstly identifies the potential challenges of EEG
+applications in stroke rehabilitation through a pilot study. Two challenges are identified
+about the BCI involved rehabilitation training and motor function assessment. A total
+number of four objectives are identified:
+
+• Objective 1: Reduce the time for repetitive raw data acquisition by
+investigating the possibility of using one MI to generate the BCI model and
+classify other MIs.
+
+• Objective 2: Design and develop a rehabilitation training platform, which
+assists the user when both mental and physical engagement were detected.
+The feasibility of the proposed platform with multiple sessions will be
+investigated.
+5
+• Objective 3: Investigate methods of improving online classification
+performance using biased-classification and moving-average.
+
+• Objective 4: Investigate the feasibility of translating EEG data into an accurate
+and reliable motor function assessment.
+
+#1.3. Outline of the Dissertation
+
+
+In Chapter 5, a portable rehabilitation training platform is designed and
+fabricated. The proposed platform includes an EEG based BCI system for active training
+and a robotic/FES device for physical training. A load cell is integrated into the robotic
+exoskeleton to measure the interactive force between the user and the robotic orthosis.
+This training platform is designed to combine mental and physical training in
+rehabilitation for patients with chronic stroke. For the proposed platform, the user is
+required not only to focus on motor imagery, but to also move to the designated
+direction, to activate the assistance from the proposed system
+
+n Chapter 6, the author proposes two methods of filtering the predictions from a
+BCI application (biased-classification method and moving average method). This chapter
+focuses on binary online BCI classification applications. The proposed methods are
+validated in a pseudo-online paradigm with EEG data collected from Chapter 5.
+Performance measures such as accuracy and response delays are summarized. The
+chapter is included in this thesis to address Objective 3
+
+In Chapter 7, a configuration of an artificial neural network model is proposed
+and validated for generating scores to assess motor function with EEG data. The
+calculated scores are validated with both within-participant test and cross participant
+test. The proposed method is able to predict the motor function of the participants with
+chronic stroke, using only EEG data. With the proposed method, the motor function
+assessment procedures could potentially be automated with minimal intervention from
+health care professionals. The chapter is included in this thesis to address Objective 4.
+
+
+#2.2. Stroke rehabilitation for motor function
+
+In clinical practice, rehabilitation of motor function in stroke survivors requires
+healthcare professionals to assist the patients with designated training protocols with a
+high number of repetitions. More recent literature suggests that rehabilitation training has
+better outcomes if those designated training protocols are goal oriented (context
+specific) [65], [66], [69]. Although the patients may gain some motor function
+improvement through rehabilitation training, there is no solid evidence to support that
+rehabilitation training results in neural repair in the brain for human subjects. [70]
+
+Instead, the majority of papers in the rehabilitation field support the fact that functional
+recovery is based on compensatory mechanisms [70].
+
+#2.3. EEG and its characteristics
+
+EEG rhythmic activity within a certain
+frequency band has been found to correlate with designated distribution on the scalp
+(i.e. mu band with motor imagery or motor execution) or with the biological state (i.e.
+alpha band with eye closure). As shown in Table 2.1, the Delta band (<4Hz) activity
+correlates with slow-wave sleep for adults which is normally seen in frontal areas. The
+Theta band activity usually refers to the frequency components between 4-7 Hz, which
+relates to drowsiness and idling. The Alpha activity (8-15 Hz) can be found in posterior
+regions of the brain, and relates to relaxation. The Beta activity usually refers to a 
+12
+frequency component around 16 to 31 Hz. Literature suggests that Beta activity is seen
+in the frontal lobe and often relates to active thinking. The Gamma activity usually refers
+to the frequency component greater than 32 Hz, which is primarily found in the
+somatosensory cortex and related with sensory processes. The majority of the EEG
+frequency power can be observed between 1-20 Hz.
+
+The time domain
+analysis reflects the true electrical activities around EEG recording regions, which was
+widely used in clinical and research applications, such as hearing test (N80 signal) and
+cognitive function (P300 signal).
+
+In this thesis, the author’s research primarily focused on ERD/ERS related Mu
+band changes, which is related to motor imagery/action [79]–[81].
+
+2.4. EEG applications in stroke rehabilitation
+
+Due to the fact that EEG directly correlates with brain cell activity, incorporating
+EEG based BCI into traditional training can be used to indicate the engagement level of
+the patient [17]. There have been several preliminary studies in the literature suggesting
+that using EEG based BCI has the potential to improve motor function rehabilitation
+training outcomes [29]–[31].
+
+However, some papers have pointed out that using BCI aided rehabilitation
+training may not be the best for motor function rehabilitation training.[38]. The
+combination of motor imagery training (facilitated by the EEG based BCIs) and physical
+training (facilitated by other physiological signals or other external systems) might be
+necessary for the users to get the most out of the training [33]–[37]
+
+#2.4.1. Brain-computer interfaces (BCIs) and data acquisition protocol
+in the BCI model generation
+ 
+Due to the characteristics of EEG signals, EEG based BCIs are relatively low
+in control accuracy with a limited number of control signal classes. It is challenging for
+BCIs to deal with complex assistance situations in daily living [84]. However, with
+predefined rehabilitation training protocols, the BCI technology is more suitable for 
+14
+applications in rehabilitation[91], which also facilitates the active training in the
+rehabilitation[40], [92]
+
+Both goal-oriented and non-goal-oriented MI tasks have been used in BCI
+applications. Table 2.2 summarizes some of the MI tasks and BCI setup methods in the
+literature. The MI tasks selected in the literature were mainly selected based on the
+training protocol. In fact, the MI tasks selection affects the outcomes of rehabilitation
+training. Some researchers have suggested that goal-oriented rehabilitation training
+tasks tend to show longer effects with larger areas in the brain even after the training [3],
+[6], [94], [95]. However, as shown in Table 2.2, goal-oriented MI tasks were, in fact, not
+widely used. Only studies reported by Frisoli et al. [30], Royer et al.[96] and Min et al.
+[97] used goal-oriented MI tasks. The majority of other studies were using non-goaloriented MI tasks
+
+
+Although goal-oriented tasks have advantages both in the BCI control accuracy
+and the rehabilitation training outcomes, selection of an appropriate MI task for
+rehabilitation training with BCIs is still unclear and largely depends on the arbitrary 
+16
+choice of the authors
+
+One problem is related to the BCI setup time. During rehabilitation
+training for clinical applications, it is common for the actual rehabilitation training protocol
+to consist of several relevant training exercises. It requires a lot of time and effort, from
+both the participants and the examiners, to go through repetitive EEG data acquisition
+sessions for each MI task involved in the training. The feasibility of using only one BCI
+model from one specific MI task for the entire rehabilitation training (which involve other
+types of MI tasks) is unknown. Specific guidelines for selecting such MI tasks are also
+needed to decrease the setup time of rehabilitation training involving EEG based BCI
+
+
+#2.4.2. Offline EEG analysis to BCI application
+
+The research on offline EEG analysis is well established in the literature. Many
+methods and algorithms have been developed to analyze the target EEG signal in an
+offline paradigm [41]. From a machine learning point of view, there are a lot of wellestablished features and classification algorithms investigating how to build a model with
+relatively high offline test accuracy [41], [120]–[122]. In a recent publication, EEG offline
+analysis algorithms can reach 8-class classification with high accuracy (>80%) [44]. In
+addition to the development of the offline analysis method, many studies have also
+pushed one step further to investigate online classification process of EEG based BCI to
+control external devices [123]–[126]. The performance of those BCI applications was still
+not satisfactory. The methods used to set up the BCI application are still preliminary.
+Most of the reported BCI applications apply the offline BCI model directly to buffered
+EEG data. Extra analysis effort could be put on the predictions of the BCI models, which
+may improve the online classification performance. For example, filtering or thresholding
+the probability prediction from the BCI model has the potential to minimize false positives
+and inter-trial variation. However, to the author’s knowledge, no paper has been
+published on analyzing the online prediction of a BCI model to improve the performance
+of BCI applications.
+
+#2.4.3. EEG based assessment for motor function
+
+Motor function assessments play an important role in the field of stroke
+rehabilitation, as they quantify motor function improvements and contribute to decision
+making during the intervention [27]. In healthcare facilities, motor function is usually 
+17
+assessed with standardized questionnaires which require the examinees to perform predefined standard tasks and the examiners to give scores based on the examinees’
+performance. Therefore, those assessments are partially subjective and require prior
+training of the examiner.
+
+Some papers have shown that some EEG features could be related to the motor
+function recovery of stroke survivors [24], [127]. Therefore, various scores were
+proposed in the literature, which claimed to correlate directly with motor function. For
+example, event-related desynchronization/synchronization (ERD/ERS) signal [22],
+[128]–[130], Delta-alpha ratio (DAR) [26], Brain symmetry indexes (BSI) [23], [25] and
+recently, Large-Scale Phase Synchrony (LPS) [28] were the scores proposed in the
+literature. Those scores are basically band power shifts or phase information from the
+EEG signal. Most of these scores were tested with acute/subacute stroke populations. It
+is not known if the results could be extended to the chronic stroke population. The
+scores proposed in the literature are neither accurate nor reliable enough to be used as
+motor function assessments. However, considering that the algorithms proposed in the
+literature are still preliminary, as they only utilize preliminary features like band power or
+phase information, there is a great potential of using EEG to accurately assess motor
+function for chronic stroke survivors, with the help of advanced machine learning
+technology like artificial neural networks.
+
+
+obs: pulei a aprte que elle explica os algoritmos
+
+
+Chapter 3.
+A pilot study to identify the challenges of EEG
+applications in stroke rehabilitation
+
+3.1. Introduction
+
+. However, some papers have pointed out that therapeutic training with
+only passive robotic-assisted joint movements is not efficient, as those training protocols
+do not need the patients’ active participation in rehabilitation training [14], [155].
+Therefore, BCI controlled robotic-assisted rehabilitation devices were developed to
+ensure the users’ focus in rehabilitation training [156]–[160]. In this specific application,
+the BCI system interprets the user’s intention of moving to control commands for the
+robotic-assisted rehabilitation device, which assists the user in the rehabilitation training
+[15]. Misinterpretation of the users’ intention would deteriorate the training efficiency and
+the stability of the BCI system, as the users may be misled by the misclassification.
+
+Most BCI controlled robotic-assisted rehabilitation devices reported in the
+literature used motor imagery to trigger the assistance. The utilization of BCI and robotic
+rehabilitation creates a feedback loop that includes active training and somatosensory
+feedback at the same time. This feedback loop may have a strong and positive influence
+on rehabilitation outcomes
+
+3.2. Methods
+3.2.1. BCI Setup
+
+Rehabilitation seems to be a good match for BCI
+technologies, as rehabilitation applications generally deal with less complex situations
+and have less requirement on the accuracy, compared to assistive applications in dailyliving [84].
+
+For example, principal component analysis (PCA), independent
+component analysis (ICA) [166] and common spatial pattern (CSP) [132] were the basic
+spatial filters proposed in the literature. Some other variants of spatial filters were also
+reported to have positive effects on classification accuracy, such as filter bank common
+spatial pattern (FBCSP) [167]. In order to select the relevant features in the BCI model
+generation, the feature extraction/selection process was included in the BCI setup. The
+correlation-based feature selection, information gain, and 1R ranking methods were the
+top feature extraction/selection methods as reported in [168]. With the development of
+modern machine learning technologies, the boundary between feature selection and
+classification has become unclear, such as in the modern artificial neural network
+technologies. The modern artificial neural network is a data processing framework
+designed to learn features and classify directly and jointly from the data (i.e.
+convolutional neural networks (CNNs), restricted Boltzmann machines (RBMs)) [165].
+However, modern artificial neural networks usually require a large amount of system
+computational resources, which is a big challenge for online BCI applications
+
+Despite many papers published in the field of BCI, spatial filtering the EEG
+signals and utilizing frequency band power or time domain features are still common
+practice, especially for real-time BCI applications [165]
+
+In this part of the session, the participant was required to sit
+comfortably in front of a screen. On the screen, two pictures (rest and motor imagery)
+were shown consecutively, one at a time. The participant was required to follow the
+picture on the screen and react correspondingly. When the rest picture was on the
+screen, the participant was required to look at the screen and stay at rest. When the
+motor imagery picture was shown on the screen, the participant was required to imagine
+hand grasping with his/her stroke-impaired hand. The sequence of the two pictures was
+randomized. Each picture was shown for a random time between 4 to 6 seconds on the
+screen, in order to minimize adaption. Each of the stimulus presentation consisted of two
+runs, the total session lasted for about 15 mins. In total 20 trials of EEG data were
+recorded, for each participant and each visual stimulation. The participants were
+encouraged to take breaks when needed.
+
+The EEG acquired from the Emotiv was firstly filtered with a finite impulse
+response (FIR) bandpass filter, whose passband was set to 1-45 Hz. 
+
+***
+The influence of
+artifacts on the EEG data was minimized. 
+***
+
+anotacao minha: o cara nao removeu os artefatos,
+ai eh meio zoado
+
+The mu band power of the EEG data was
+extracted as the main feature input for the BCI. A classifier was trained to distinguish
+between the rest and motor imagery states of the user. The output of the classifier was
+then sent to the exoskeleton and the FES unit.
+
+Then, the collected EEG data of the two states were processed to generate the
+BCI models for each participant, which were used in the rehabilitation training. A
+MATLAB based toolbox (BCILAB) was used to generate the BCI model [171]. To
+generate a BCI model, a spatial filter algorithm was first applied to the EEG data. In this
+chapter, Common Spatial Pattern (CSP) algorithm [132], [134] was used to filter the 
+
+EEG signals. The standard deviations of the filtered signals were used as features for
+the model generation. Linear Discriminant Analysis (LDA) was used as classifiers to
+classify the EEG data [141]. To evaluate the performance of the BCI, the 10 x 10 crossvalidation method was used [141]. In the 10 x 10 cross-validation, the entire data set
+was randomly shuffled and divided into ten subsets. Nine of the subsets were used to
+train the classifier and the remaining one subset was used to test the prediction
+accuracy of the obtained model. This procedure was repeated for ten times, with the ten
+subsets in turn. Then, the average BCI cross-validation classification accuracy was
+computed by averaging the validation accuracy in the ten folds. Among the ten folds, the
+BCI model with the highest test accuracy in the cross-validation was saved for later
+online application.
+
+For online testing, the EEG data were streamed to the classifier with a twosecond data buffer (256 data samples of 14 channels). The output of the classifier was
+either “0” or “1”. The classifiers were configured to produce classification decision output
+every 0.5 seconds. The classification output was used to control the exoskeleton arm or
+the FES unit, depending on the process of the rehabilitation protocol. The classifier “0”
+output represented the resting state of the user. The classifier “1” output represented the
+motor imagery state (or active state) of the user
+
+#3.2.3. Participants
+
+Participants with chronic stroke (> 6 months post) were recruited through local
+rehabilitation hospitals and stroke clubs. All potential participants were screened to meet
+the following inclusion criteria: (a) age range from 35 to 85 years, (b) post-stroke
+duration ≥ 6 months, (c) Montreal Cognitive Assessment (MoCA) ≥ 25 [172], or pass any
+other cognitive assessment test, (d) shoulder active range of motion (ROM) in all
+directions of 10
+-15
+, (e) elbow passive extension and flexion ROM of 0
+-130
+, (f) wrist
+passive extension ROM of 0
+-15
+, and (g) fingers full passive extension. The exclusion
+criteria included: a) any other neurological conditions in addition to stroke, b) unstable
+cardiovascular disease, c) contraindications to FES or d) other conditions (e.g. poor
+sitting balance) that precluded them from undergoing the study. Nine male stroke 
+38
+participants (mean age 66 ±11.9 years) agreed to participate in this study. The protocol
+of this study was approved by the Office of Research Ethics at Simon Fraser University
+and all the participants gave informed consent before participating.
+
+#3.2.4. Training Protocol
+
+During phase 1, participants were required to perform motor imagery to activate
+the BCI. If the classification result changed from “0” to “1”, the BCI system would then
+activate the assistance from the exoskeleton to extend the participants’ elbow to the
+designated elbow position.
+
+During phase 2, participants were required to perform the same motor imagery
+as the one used during the EEG data acquisition session, to activate the BCI. If the
+classification result changed from “0” to “1”, the BCI system would turn on the assistance
+from the FES unit to open the participants’ hand.
+
+During phase 3, participants were required to adjust their shoulder and trunk to
+aim at a target cup on the table with the hand on the impaired side.
+
+During phase 4, when the hand was placed beside the cup, participants were
+required to use BCI to deactivate the FES unit. The FES unit would remain on during
+phase 3 and phase 4 until it received an “1” output from the BCI system. With the FES
+unit deactivated, the participants were able to grasp with the hand on the impaired side
+to hold the cup.
+
+During phase 5, participants were required to lift the cup up with elbow flexion. In
+order to perform this movement, the participant was required to perform motor imagery
+to activate the BCI again, and the BCI would activate the assistance from the
+exoskeleton. The exoskeleton helped the participant perform elbow flexion with a small
+angle (approximately 15°) to lift the cup.
+
+During phase 6, participants were required to move their shoulder and trunk to
+aim for the designated new location for the cup.
+40
+
+During phase 7, participants were required to place the cup in a new position. In
+order to perform this movement, the participants were required to perform motor imagery
+to activate the BCI. The BCI system would activate the assistance from the exoskeleton.
+Then, the exoskeleton would assist the participants to perform elbow flexion to put the
+cup on the table again.
+
+During phase 8, participants were required to release the cup at the target
+location. The participants were required to perform motor imagery to activate the BCI.
+The BCI system would activate the FES Unit. Then, the participants were able to release
+the cup.
+
+During phase 9, participants were required to use their shoulder and trunk, to
+move the impaired hand away from the target cup. In this phase, the participants do not
+need to maintain the MI state to maintain the elbow extension state of the exoskeleton.
+
+During phase 10, participants were required to perform motor imagery to
+deactivate the FES unit using the BCI.
+
+During phase 11, participants were required to flex their elbow and return to the
+initial position using the exoskeleton. The participants were required to perform motor
+imagery again and activate the BCI. The BCI system would activate the assistance from
+the exoskeleton, and the exoskeleton would help the participants flex the impaired arm
+to return to the initial position.
+The sequence of the training protocol was repeated during one hour of training.
+The participants were able to pause or terminate the rehabilitation training on their own
+volition
+
+#3.4. Discussion
+
+The BCI cross-validation accuracy is an important metric that has been widely
+used to assess the performance of the BCI model generated offline. The results showed
+that the BCI cross-validation accuracy was in a range between 55.78% and 83.20%,
+which was within the same range compared to the BCI applications reported in the
+literature [174]. The BCI accuracy for some of the participants (P02, P04, P05, P06, P07,
+and P08) was not very high (<70%). Some of these participants reported that they were
+not able to focus when performing motor imagery due to their age and stroke-related
+problems
+
+Also, the configuration of electrodes placed around the motor cortex area for
+the Emotiv system was sparse, which may also result in the relatively low accuracy in
+these participants. To improve the performance of the BCI system, dense EEG
+acquisition montage could be used, with more electrodes around the motor cortex area.
+
+Also, EEG signals are generally considered to have a low signal-to-noise ratio and are
+frequently contaminated by artifacts. These types of unwanted noise originate either 
+43
+from the user (e.g. ocular and adjacent muscle activity) or from other non-physiological
+sources, such as power line interference. These artifacts could affect the quality of the
+EEG signals and subsequently deteriorate the BCI classification performance
+
+During this study, the author noticed four potential problems with EEG
+applications in stroke rehabilitation
+
+Firstly, a rest-vs-MI BCI model was generated from the model generation
+process. The rising edge of the BCI output (output switching from “0” to “1”) was
+configured as the triggering signal to move from one phase of the training protocol to the
+next phase. One type of MI was used consistently throughout the training. According to
+the literature, goal-oriented tasks are generally preferred in rehabilitation training
+protocols [65], [66], [69]. However, with the EEG based BCI involved in the protocol, it
+takes time and effort to go through EEG data acquisition and model training for every
+rehabilitation training task. Therefore, a general model, which is reusable for different
+rehabilitation training tasks, would drastically reduce the training time as the data
+acquisition would be done with only one single motor task. However, no study has
+investigated whether an EEG model trained using the EEG signals from motor imagery
+of a single upper extremity movement (e.g. elbow flexion and extension) could be used
+to classify the motor imagery from other similar motor imagery (e.g. motor imagery of
+opening a door, combing hair, placing a ball into a basket, etc.)
+
+Secondly, for this preliminary pilot study, the participants were able to learn to
+control the proposed portable EEG based BCI system within a few trials. However,
+based on the feedback from the participants, they were expecting substantial motor
+function improvement with less effort. Some papers suggested that combining motor
+imagery training and physical training would further boost the rehabilitation outcome.
+With major hardware and software modifications, the proposed platform could facilitate
+such sophisticated rehabilitation training protocols. The feasibility and possible efficacy
+of such rehabilitation training platforms should be investigated with a relatively long-term
+rehabilitation training protocol
+
+Thirdly, although many methods and algorithms have been developed to analyze
+the target EEG signals, the transition of the offline analysis method to an online BCI
+application is another major factor that affects the BCI performance. Potentially, filtering 
+44
+the prediction/classification output of the BCI system could supress the false positives
+and improve the sensitivity. However, no papers have investigated how to improve the
+performance of the online BCI application by filtering the prediction output of the
+classifier
+
+Fourthly, in order to quantify the rehabilitation outcomes, motor function is
+generally monitored through standardized clinical motor ability assessments during or
+after the rehabilitation. However, those standard motor assessments are neither efficient
+nor completely objective. According to the literature, EEG has shown its potential as a
+motor function indicator (BSI, DAR, LPS). However, in previous studies, the correlation
+between the EEG-based motor function scores and questionnaire-based motor function
+assessment scores were low. Those scores proposed in the literature are not accurate
+enough to be used as motor assessments. New methods of calculating motor function
+scores from EEG data should be investigated, in order to assess motor function
+automatically and reliably
+
+obs: agora pulei direto pra conclusao, nao achei necessario entrar nso detalhes nesse momento
+
+Chapter 8.
+Conclusions and future work
+8.1. Conclusions
+
+#objective 1 
+This piece of evidence suggests
+that the Weight Task is the most versatile MI task in the MI tasks investigated. For future
+studies with BCI applications in rehabilitation training, single joint MI tasks should be
+considered to avoid repetitive EEG data acquisition for different goal-oriented tasks. For
+future studies with BCI applications in rehabilitation training of upper-extremity
+specifically, Weigh Task is recommended.
+
+#objective 2
+The proposed rehabilitation training platform consisted of three major subsystems: a BCI control system, a robotic orthosis, and an FES system. The BCI control
+system was incorporated to ensure the user’s focus on the rehabilitation protocol. A
+force sensor was embedded in the robotic orthosis to monitor the interaction force
+between the user and the device. The FES system was used for hand opening when the
+user had limited control of his/her fingers. To use the proposed rehabilitation platform,
+the user was required to perform pre-defined MI to activate the assistance from the BCI
+control system. Then, the user was required to move his/her stroke-impaired elbow in
+the designated direction to activate the assistance from the robotic orthosis. A threelevel progressive rehabilitation training protocol was also proposed to support the
+rehabilitation training platform. The feasibility of the proposed system was investigated
+with one participant with chronic stroke during six weeks of rehabilitation training. WMFT
+was performed every other week to monitor possible motor function improvement. The
+participant learned how to use the proposed system within the first training session. At
+the end of the six weeks of training, the user was able to control the proposed
+rehabilitation training platform with very high accuracy (90.6% for the BCI control, 83.1%
+for the BF control). The proposed rehabilitation training platform, which combines motor
+imagery and physical training, has been proven to be feasible for patients with chronic
+stroke. In addition, the participant showed improvement in WMFT (12% improvement),
+which supported the potential efficacy of the proposed rehabilitation training platform.
+The strong correlation between the BSI and the WMFT also suggested motor function
+improvement. However, since only one participant was recruited for this study, the
+efficacy of the proposed rehabilitation training platform cannot be concluded.
+
+#objective 3
+Objective 3 was addressed in Chapter 6. In that chapter, in order to deal with the
+low accuracy problem with the BCI online classification, two methods of filtering the
+probability prediction output of online BCI applications were introduced. One of the
+methods was proposed based on machine learning theory, which was a biasedclassification method toward resting state, with decision thresholds calculated from a
+normal distribution assumption. The other method was proposed based on signal
+processing theory, which utilized a moving-average method to smooth the classification
+output, with decision thresholds observed from 30 seconds of rest state EEG data at the
+beginning of each training day. The proposed methods were evaluated with a pseudo
+online analysis based on EEG recordings of one participant with chronic stroke during
+six weeks of rehabilitation training with BCI. Performance measures like accuracy, false
+positive rate and response delay were summarized to evaluate the two proposed
+methods. The performance of the proposed methods was also compared with the nonfiltering method. It was concluded that both proposed methods showed superior
+performance than the traditional non-filtering method. Between the two proposed
+methods, the moving average method showed better performance with lower false
+positive rate (0.5275), higher precision (0.5789), higher accuracy (0.5989) and higher
+Cohen’s Kappa Score (0.1978). The biased-classification method had a significantly
+lower delay (Wilcoxon rank sum test, n1 = 443, n2 = 560, P = 8.56×10-6
+). In BCI
+applications for stroke rehabilitation, where response delay is not a major issue, the
+moving average method is recommended.
+
+#objective 4
+
+Objective 4 was addressed in Chapter 7. The primary objective was to deal with
+the problems in the questionnaire-based motor function assessment methods. In that
+chapter of the thesis, a CNN configuration for generating a motor function score from
+EEG was proposed and evaluated with within-participant testing and cross-participant
+testing. Fourteen participants with chronic stroke and twelve healthy participants were
+recruited in this part of the study. EEG data were recorded while the participants were
+performing button clicking once every self-estimated 10 seconds. The proposed CNN
+was trained with regression on the FMA scores, which were collected on the same day
+as the EEG data acquisition. The within-participant testing results suggested that the
+model converged well during the training, and the resulted prediction score outperformed
+the scores proposed in the literature (r = 0.9931, p = 8.0751×10-24). The cross-participant
+testing results suggested that the prediction scores were still accurate and reliable, even 
+129
+if the participants’ EEG data were not involved in the model generation (r = 0.9590, p =
+1.2098×10-14). The cross-participant testing results was a crucial piece of evidence
+suggesting the proposed method would potentially have reliable performance in actual
+clinical applications when the majority of the users’ EEG data were not involved in the
+model generation.
+
+#conclusion
+In conclusion, all four objectives proposed at the beginning of this thesis were
+successfully addressed. Future research paths may involve investigating advances
+specific to the methods proposed in this thesis. Alternatively, non-approach specific
+related modifications of the research methods may also be investigated with respect to
+the challenges of EEG applications in stroke rehabilitation. 
+
+8.2. Future works
+
+#MI task
+For the study presented in Chapter 4, limitations were mainly related to the
+methodology. In that part of the thesis, a limited number of MI tasks were investigated.
+Due to the lack of expertise in neuroscience, the conclusion was drawn only with the test
+accuracy of the MI tasks investigated in the study, without specific explanations based
+on the neuro-scientific theories. For better understanding of the performance variation of
+the MI tasks, a study utilizing neuro-imaging tools with high spatial resolution is
+necessary. In addition, the study in Chapter 4 focused on upper-extremity only. Whether
+the conclusions in this study can be used for other joints remains unclear. 
+
+#low number of participants to cocnlude efficacy of the paltform
+For the study introduced in Chapter 5, a portable rehabilitation platform together
+with a special supporting protocol were proposed to fulfill the need of combining motor
+imagery and physical training in the rehabilitation field. The proposed platform and
+protocol were evaluated during six weeks of rehabilitation training with one participant
+with chronic stroke. Limitations of the study in that chapter were mainly related to the
+fact that only one individual participated, which limited conclusions about the possible
+efficacy of the proposed platform. The efficacy of the proposed platform needs to be
+investigated in a controlled clinical study with a larger population with stroke.
+
+#low number of participants to cocnlude efficacy of filtering ML results to improve accuracy
+For the study presented in Chapter 6, the major limitation was also related to the
+number of participants. Although the data were collected for a relatively long time (six
+weeks), the data were recorded from only one participant with chronic stroke. Therefore, 
+130
+the conclusions of that chapter are still preliminary. In order to further consolidate the
+conclusions, a group of participants with chronic stroke in a long-term rehabilitation
+training is necessary. The two methods proposed in this chapter are simple and
+straightforward, there is still plenty of room for improvement in the performance. More
+complex processing/filtering methods can be further investigated to improve the BCI
+application accuracy.
+
+#more data, understand CNN model
+For the CNN model proposed in Chapter 7, although the configuration was
+reliable and accurate in the cross-participant testing, the performance can be further
+improved with a larger population. For example, a training dataset without gaps in the
+distribution of the motor function scores would definitely improve the performance of the
+proposed CNN model. The detailed CNN configuration and parameters can also be
+further investigated with a larger population. In addition, the sensitivity and longitudinal
+effect of the proposed method were not investigated thoroughly. A long-term clinical
+study with repetitive EEG data acquisition and motor function assessments is needed for
+such purpose. The EEG data protocol of mouse clicking is hard for some patients with
+severe chronic stroke. Possible protocols that are less constraining should be explored
+(for instance: eyes-closed, or resting state with eyes open etc.). At last, it would be
+interesting to investigate which features of the PSD and phase information contributed to
+the motor function score. This is a limitation of the CNN method. As the features are
+highly abstracted with neural networks, it is difficult to determine the key features from
+the trained CNN models. Some literature suggested the input-maximization approach
+could be a possible method, which might be an interesting topic for future studies.
+
+
+

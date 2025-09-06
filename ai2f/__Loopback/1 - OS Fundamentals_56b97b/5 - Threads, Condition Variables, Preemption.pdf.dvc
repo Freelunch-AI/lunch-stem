@@ -1,0 +1,5 @@
+outs:
+- md5: cf86729df0f7b6de675a5132131ed32d
+  size: 330526
+  hash: md5
+  path: 5 - Threads, Condition Variables, Preemption.pdf

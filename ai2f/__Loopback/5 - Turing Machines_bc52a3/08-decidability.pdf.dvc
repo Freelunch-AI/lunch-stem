@@ -1,0 +1,5 @@
+outs:
+- md5: 2876c5455f339ca934fc4df9ba1134e5
+  size: 1155685
+  hash: md5
+  path: 08-decidability.pdf

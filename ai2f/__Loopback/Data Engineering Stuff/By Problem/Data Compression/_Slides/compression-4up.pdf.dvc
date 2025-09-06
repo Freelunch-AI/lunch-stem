@@ -1,0 +1,5 @@
+outs:
+- md5: e67212e45e1828f0a49475df466bb739
+  size: 69790
+  hash: md5
+  path: compression-4up.pdf

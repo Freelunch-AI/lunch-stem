@@ -1,0 +1,5 @@
+outs:
+- md5: 235ce2c6c802ffae159c3b1ea79b9d56
+  size: 191003
+  hash: md5
+  path: SVM-main-points.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: d8796dcc58f1646f59b05eecf8aa4c35
+  size: 306850
+  hash: md5
+  path: 4 - Bounded Buffers, Concurrency, Locks.pdf

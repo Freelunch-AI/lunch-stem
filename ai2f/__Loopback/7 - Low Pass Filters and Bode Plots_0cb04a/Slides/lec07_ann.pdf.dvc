@@ -1,0 +1,5 @@
+outs:
+- md5: 54e66c020a1c8ed393fd6a78b3a720a3
+  size: 5008869
+  hash: md5
+  path: lec07_ann.pdf

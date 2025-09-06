@@ -1,0 +1,1486 @@
+** - Other Kaggle competitions regarding eeg data
+(for me, far away from our (c4ai) proposal)
+
+-------------------------
+
+title: ** - Grasp-and-Lift EEG Detection
+
+url: https://www.kaggle.com/c/grasp-and-lift-eeg-detection
+
+notes:
+
+# best competition iterms of notebooks
+
+# issue: the task is kind of simple, scores close to 1 (mean AUC)
+i think solutions overfited patient/dataset (and probably that's not a problem if you are going to make a BCI model for each patient)
+
+#problem description: [classsification] identify type of movement patient is doing from eeg healthy while doing
+
+this fits in the case that damaged patient will have to train "correctly" their brain according to healthy singal
+advantages: dont fit supurious correlations and produce "bad" neuro plasticity
+desavatadges: hard to train, dismotivation
+
+The previous examples show that deep learning techniques are now present in all EEG decoding applications and represent the current state of the art. There are still many open questions, such as which models work best, and whether EEG- specific models and algorithms are needed 
+
+-------------------------
+
+title: ** - American Epilepsy Society Seizure Prediction Challenge
+
+url: https://www.kaggle.com/c/seizure-prediction/
+
+notes:
+
+# important: was used intracranial eeg (no preprocessing, sorce localization etc) !
+
+#problem description: [classification] predicting pre-seizure state of patients suffering with epilepsy
+
+Seizure forecasting systems hold promise for improving the quality of 
+life for patients with epilepsy.
+
+Epilepsy afflicts nearly 1% of the world's population, and is characterized 
+by the occurrence of spontaneous seizures. For many patients, anticonvulsant 
+medications can be given at sufficiently high doses to prevent seizures, but 
+patients frequently suffer side effects. For 20-40% of patients with epilepsy, 
+medications are not effective -- and even after surgical removal of epilepsy-causing 
+brain tissue, many patients continue to experience spontaneous seizures. 
+Despite the fact that seizures occur infrequently, patients with epilepsy experience 
+persistent anxiety due to the possibility of a seizure occurring.
+
+Seizure forecasting systems have the potential to help patients with epilepsy 
+lead more normal lives. In order for EEG-based seizure forecasting systems 
+to work effectively, computational algorithms must reliably identify periods 
+of increased probability of seizure occurrence. If these seizure-permissive 
+brain states can be identified, devices designed to warn patients of impeding 
+seizures would be possible. Patients could avoid potentially dangerous activities 
+like driving or swimming, and medications could be administered only when needed to prevent 
+impending seizures, reducing overall side effects.
+
+There is emerging evidence that the temporal dynamics of brain activity 
+can be classified into 4 states: Interictal (between seizures, or baseline), 
+Preictal (prior to seizure), Ictal (seizure), and Post-ictal (after seizures). 
+Seizure forecasting requires the ability to reliably identify a preictal state that 
+can be differentiated from the interictal, ictal, and postictal state. The primary challenge 
+in seizure forecasting is differentiating between the preictal and interictal states. 
+The goal of the competition is to demonstrate the existence and accurate classification of 
+the preictal brain state in dogs and humans with naturally occurring epilepsy.
+
+ The challenge is to distinguish between ten minute long data clips covering an hour prior 
+to a seizure, and ten minute iEEG clips of interictal activity. Seizures are known to cluster, 
+or occur in groups. Patients who typically have seizure clusters receive little benefit from forecasting 
+follow-on seizures. For this contest only lead seizures, defined here as seizures occurring four hours or 
+more after another seizure, are included in the training and testing data sets. In order to avoid any potential 
+contamination between interictal, preictal, and post-ictal EEG signals interictal segments in the canine training 
+and test data were restricted to be at least one week before or after any seizure. In the human data, where the entire 
+monitoring session may last less than one week, interictal data segments were restricted to be at least four hours 
+before or after any seizure. Interictal data segments were chosen at random within these restrictions for both canine 
+and human subjects.
+
+Participants are invited to visit the NIH-sponsored International Epilepsy Electrophysiology portal (http://ieeg.org) to review 
+and download annotated interictal and preictal data from other patients and animal subjects. Using ieeg.org data for additional 
+algorithm training is permitted.
+
+#notebooks are not so good
+
+-------------------------
+
+title: ** - UPenn and Mayo Clinic's Seizure Detection Challenge
+
+url: https://www.kaggle.com/c/seizure-detection
+
+notes:
+
+#problem description: [classification] predict in-seizure and beggining of seizure states
+
+
+# important: was used intracranial eeg (no preprocessing, sorce localization etc)!
+
+-------------------------
+
+title: ** - Melbourne University AES/MathWorks/NIH Seizure Prediction
+
+url: https://www.kaggle.com/c/melbourne-university-seizure-prediction
+
+notes:
+
+#problem description: [classification] predict pre-seizure eeg state
+
+#same as American Epilepsy Society Seizure Prediction Challenge, 
+but with long term recording from humans
+
+#this one has a lot of notebooks, but few upvotes nad top leaderboard notebooks
+
+-------------------------
+
+title: ML methods with EEG data + Kaggle Competitions
+
+url: https://www.youtube.com/watch?v=AjMdirPPnQQ
+
+notes:
+
+genereally people use ML on eeg to:
+	- clustering, future prediction, classfication, feature extraction
+
+eeg signals:
+	- high dependency between data points: spatial and temporal
+	- need more feature engineering
+
+#Preprocessing:
+
+	1. Epoching + cleaning
+	2. Feature extraction
+
+1. Epoching + cleaning:
+ 	- extract epochs, filter,subtract baseline
+
+2. Feature extraction
+	- spatial filters: xdawn covariances algorrithm
+		-> reduces dimension
+		-> applies 5 spatial filters
+        - tangent space algorithm: basically to instead of working with time-series lower a dimension and work normally
+		as it where a standard ML data matrix
+		-> reduced covariances are then projected in the tnagent space
+		-> useful to convert covariances matrices in euclidean vectors while conserving
+		the inner structure
+
+#Models:
+	RF, LR
+	eegnet -> conv NN for eeg data (some diferences from normal conv NN)
+	stacknet -> ensemble architecture (nothing new)
+
+obs: references in word image chek it out
+
+obs2: clonei o repositorio na pasta codigos
+
+obs3: pickle very usefull to save parameteres
+
+------------------------
+
+title: How Deep Learning is changing machine learning AI in EEG data processing
+
+url: https://www.bitbrain.com/blog/ai-eeg-data-processing
+
+notes:
+
+However, EEG data is not easy to interpret: it has a lot of noise, varies significantly 
+between individuals and, even for the same person, changes substantially over time.
+
+#Why do we need machine learning for EEG data?
+
+Temporal and spatial filtering is usually applied, as well as artefact rejection procedures, 
+even if the participant is still during recording. This processed EEG can then be visually inspected 
+to detect anomalies (e.g. episode of epilepsy), changes in the mental state (e.g. sleep phases) or to 
+study grand average responses of groups of people.
+
+Visual inspection is a long, expensive, and tedious process. It does not scale up well and cannot be transferred 
+to BCI applications. AI and machine learning tools are the perfect companion to automate, extend, and improve EEG 
+data analysis. Indeed, BCI systems such as spellers or brain-controlled devices are based on decoding pipelines that use 
+extensively different machine learning algorithms
+
+#Pre-deep learning era: Signal processing, EEG feature extraction, and classification
+
+Before the deep learning revolution, the standard EEG pipeline combined techniques from signal 
+processing and machine learning to enhance the signal to noise ratio, deal with EEG artefacts, 
+extract features, and interpret or decode signals. Figure 1 shows the most common pipeline when processing EEG. 
+
+
+##1. EEG signal - Preprocessing
+
+Once the signal is clean, it is time to enhance and uncover the brain patterns and neural correlates of interest. 
+In many cases, the brain processes under study are located in a particular frequency band, such as the P300 evoked response 
+that occurs in the Theta band (4-7 Hz) or the modulation of the sensorimotor or mu rhythms, which occur between 8 and 15 Hz. 
+The simplest processing is to use frequency filters, such as low-pass or band-pass filters, to isolate the bands of interest and 
+remove those frequencies of no interes
+
+
+##2. EEG Signal Feature extraction
+
+he latter range from generic methods such as principal component analysis and independent component analysis, to more EEG specific ones 
+such as CSPs (Blankertz, 2007) and variants (Ang, 2008) for power features and X-Dawn (Rivet, 2009) for temporal ones
+
+The extracted features are usually tailored to the specific application, such as finding differences between experimental conditions 
+(e.g. levels of attention, responses to mismatched actions), distinguishing between a group of predefined classes (e.g. a speller), 
+predicting behavior (e.g. by anticipating motion in neurorehabilitation), finding anomalies with respect to a normative database (e.g. QEEG or seizures). 
+Current state-of-the-art techniques include Riemannian geometry-based classifiers, filter banks, and adaptive classifiers, used to handle, with varying levels 
+of success, the challenges of EEG data (Perronnet, 2016, Lotte 2018).
+
+
+##3. EEG Data Decoding
+
+
+The most common are classification methods, which classify an EEG pattern into one of a set of predefined classes, or regression methods, which transform the EEG pattern into another signal such as a motion direction. Used methods include simple linear methods (LDA for classification and Multiple Linear Regression), SVM like kernel methods, random forests, neural networks (see Section 4 for the Deep Learning methods), or a more sophisticated combination of methods. 
+
+There are some important considerations for EEG decoders due to the non-stationary and subject dependent EEG nature: 1) the extracted features for one person at a certain point in time may not be well-suited for the same person later on; and 2) the features for a particular participant may be different than the features for another participant. In technical terms, the distribution of the features changes, and the models need to be retrained on an updated training dataset. Initially, decoders were participant and session-specific, i.e. a dedicated training set is acquired for each participant and session. In practical terms, this has a big impact on the effort that has to be made to build and train these models and in the deployment of them out of laboratory settings. Calibrating each participant is an expensive and tedious process!
+
+There is one last point that deserves discussion. Up to now, we have assumed that we know exactly at what point in time we have the relevant EEG information. Although this is the case for many applications (e.g. an EEG speller), in many other BCI and neurotech applications, this assumption does not hold. Consider, for instance, detecting an epilepsy seizure at home, or detecting the intention of moving a limb during a neurorehabilitation session. In this setup, it is necessary to process EEG seizure online or in an asynchronous manner. This adds an additional challenge to the decoding task: it is not enough to distinguish the patterns of interest, but one also has to deal with background EEG.
+
+All the previous processing has to be extended or adapted to obtain such asynchronous decoding. The simplest way is to use a sliding window where we compute our output for each window independently (see Figure 4 for a motion decoding example). During training, background EEG is labeled as “rest, while the onset of motion is extracted using some calibration protocol such as EMG activity or buttons. The same supervised learning algorithms can then be applied to learn the decoder. The latter can then be used over a sliding window to provide a continuous decoding.
+
+#Deep-Learning for EEG
+
+This end-to-end learning ability fits perfectly with the requirements of EEG analysis, where multiple interdependent processes are key and, until recently, were carefully designed for each different purpose. 
+
+##1. Deep learning EEG challenges
+
+###1.1 Data availability: First, data collection is still expensive, time-consuming, and restricted to a small number of teams working mainly in research laboratories. Medical data is not usually available due to personal data regulation, and data collected from companies is also private due to the same reason. Consequently, the corpus of data is by no means close in size to other domains such as computer vision or speech recognition. Many public EEG datasets only have a small number of participants, the order of tens (see Google Dataset search for EEG datasets and the BNCI database for BCI datasets). Some fields such as sleep and epilepsy do have public larger datasets with thousands of participants. For epilepsy, the Temple University Hospital dataset has over 23,000 sessions from over 13,500 patients, for a total of over 1.8 years of recording (Obeid, 2016). In sleep, the Massachusetts General Hospital Sleep Laboratory has over 10,000 participants with 80,000 hours of recordings, which is over 9 years.
+
+###1.2 Lowsingal/noise ratio and dependence on data collection protocol: First, data collection is still expensive, time-consuming, and restricted to a small number of teams working mainly in research laboratories. Medical data is not usually available due to personal data regulation, and data collected from companies is also private due to the same reason. Consequently, the corpus of data is by no means close in size to other domains such as computer vision or speech recognition. Many public EEG datasets only have a small number of participants, the order of tens (see Google Dataset search for EEG datasets and the BNCI database for BCI datasets). Some fields such as sleep and epilepsy do have public larger datasets with thousands of participants. For epilepsy, the Temple University Hospital dataset has over 23,000 sessions from over 13,500 patients, for a total of over 1.8 years of recording (Obeid, 2016). In sleep, the Massachusetts General Hospital Sleep Laboratory has over 10,000 participants with 80,000 hours of recordings, which is over 9 years.
+
+###1.3 EEG is different than other (more studied) tasks: Third, models developed for images and speech have been studied for many years and, although technically generic, they are not necessarily the most appropriate ones for EEG. This also includes many good strategies used for training the models that cannot be so efficiently implemented in EEG, such as data augmentation techniques for images
+
+##2 How can deep learning be used for EEG decoding?
+
+In many cases, the pre-processing is simplified, for example, by computing power features or segmenting 
+the input data. Interestingly, some deep models have shown end-to-end decoding performance, improving 
+previous methods while dealing directly with common EEG issues such as eye motions 
+(eye-opening and closing, blinking, etc.), artifacts, or background EEG
+
+anotacao minha: isso mostra que tem muito oq entender ainda
+
+##3  What are the results of Deep Learning EEG decoding? And, how do results compare to previous methods? 
+
+The authors of the meta-review in Roy (2019) have computed the median improvement in accuracy to be around 
+5.4% consistently across all domains shown in Fig. 6. Although they also point out some reproducibility concerns, 
+the results show that, despite the challenges mentioned above, Deep Learning improves decoding results - in many 
+cases, with minimal or no pre-processing. One interesting consequence of using data-hungry deep learning techniques 
+is that the standard participant/session-specific setup has been substituted for a more ecological one where all 
+sessions and participants contribute for decoders. To give a more detailed view, we highlight results in three 
+different applications that are relevant for understanding the current state of the art:
+
+###3.1 Mental task decoding
+
+Perhaps the most successful deep learning models are Convolutional Neural Networks
+
+Convolutional networks were designed in computer vision and they can be seen as shift-invariant spatial 
+filters over the image
+
+This same idea can be used to create time and frequency filters that automatically learn features from the 
+raw EEG, and then learn more complex features from there. Figure 6 shows the ConvNet architecture proposed 
+in (Schirrmeister, 2017). The results show that an end-to-end mapping can perform as well as filter bank 
+common spatial patterns (FBCSP), the current state of the art method developed specifically for motor 
+imagery (Ang et al., 2008). While FBCSP is designed to use spectral power modulations, the features used 
+by ConvNets are not fixed a priori. For those interested in detailed technical implementation aspects, 
+(Schirrmeister, 2017) provides a deep insight on how recent developments in regularization and normalization 
+can make a big difference when training your model
+
+images of convnet architecture in word
+
+
+###3.2 Sleep EEG decoding:
+
+The SLEEPNET model (Biswal, 2016) has been trained and evaluated in the largest sleep physiology database 
+assembled to date, consisting of polysomnography (PSG) recordings from over 10,000 patients 
+from the Massachusetts General Hospital (MGH) Sleep Laboratory. SLEEPNET implements a recurrent network 
+and achieves human-level annotation performance on an independent test set of 1,000 patients, with an average 
+accuracy of 85.76% and algorithm-expert inter-rater agreement (IRA) of κ= 79.46%, comparable to expert-expert 
+inter-rater agreement. This represents a 10% increase in accuracy over non deep learning methods. For those 
+interested, Cohen’s kappa κ is used in sleep studies to measure agreement between different annotations of 
+the sleep done by medical doctors, which have an inter-rate agreement around 65-75%. Figure 7 below shows 
+an example of annotated sleep EEG and predicted states. 
+
+###3.3 Decoding affective states:
+
+One of the most common databases for decoding affective states is DEAP (Koelstra, 2011). It consists of 
+40 minute EEG and other biosensors recordings while watching music videos for a total of 32 subjects 
+(see Figure 8 for some examples). It has been widely used to evaluate deep learning techniques with 
+different architectures from autoencoders, CNNS, recurrent networks, and hybrid approaches, and with 
+different preprocessing pipelines by varying the number of channels and including raw data or simple 
+features (e.g. PSD). Current results obtain accuracies between 70 and 80% (see Craik, 2019) for a 
+complete review and (Li, 2020) for recent results and comparisons with non deep learning approaches).
+
+###3.4 Epilepsy detection:
+
+The last method is about detecting patterns of clinical interest in brain activity that might be useful 
+in diagnosing brain disorders, in particular, brain patterns related to epilepsy. In contrast with the 
+previous examples, the system described in (Golmohammadi, 2019) uses a hybrid approach (see Figure 9) 
+that combines deep learning with dynamic hidden Markov models and statistical language modeling techniques 
+to capture expert knowledge and include it in the system. In addition to this, it has dedicated feature 
+extraction tailored to detect three brain patterns that occur during epileptic episodes 
+(spike and sharp waves, periodic lateralized discharges, and generalized periodic discharges) 
+and three patterns to model artefacts, eye movements, and background noise. The model was trained 
+and evaluated in the TUH EEG Corpus (Obeid, 2016), which is the largest publicly available corpus 
+of clinical EEG recordings in the world. It achieved a sensitivity above 90% while maintaining a false 
+alarm rate below 5%, which may be enough for clinical practice. 
+
+For those interested in the technical details of how the different networks have been used with EEG, 
+we recommend consulting some very complete reviews (Roy, 2019; Craik, 2019) that provide references 
+to the appropriate works. Most of the results have been obtained using public datasets and code is 
+available in the corresponding repositories (see for instance, the braindecod github for a complete 
+deep learning decoding using CNN networks (Schirrmeister,2017)). 
+
+#A final note of caution:
+
+Beware of the hype! The increased number of EEG experiments or studies claiming better results with 
+deep learning have not been free of controversy. Reproducibility and, when possible, comparison against 
+well based established baselines are a must, and their lack should be treated carefully when evaluating 
+any claims. Interestingly, Roy (2019) points out that only 7% of the reported results provide both the 
+software (19%) and the datasets (54%) required to evaluate and replicate the method. Sometimes there are 
+sensitive reasons for not providing source and datasets, such as privacy in medical records, or the need 
+to exploit the dataset or the code for your own research before making it public. Nevertheless, nowadays 
+these good practices are becoming more common and, in some cases, are required to publish the data. They 
+are always a good indicator of the quality of the work and a good starting point for your own projects. 
+
+-------------------------
+
+title: All about EEG artifacts and filtering tools
+
+url: https://www.bitbrain.com/blog/eeg-artifacts
+
+notes:
+
+single electric signal from neuron to neuron is not recordable but when millions of neurons synchronize, 
+the electric field generated can be measured from the scalp. These electroencephalographic signals (EEG) 
+are transmitted through tissue, bone, and hair before it is recorded, and by then its amplitude is very attenuated 
+
+**“Artifacts are signals recorded by EEG but not generated by brain**. Some artifact may mimic true 
+epileptiform abnormalities or seizures. Awareness of logical topographic field of distribution for true 
+EEG abnormality is important in distinguishing artifact from brain waves. Physiologic artifacts originate 
+from the patient and non-physiologic artifacts originate from the environment of the patient.” (EEG Artifacts, Springer)
+
+The EEG device used to create most of the figures showing the artifacts was collected with the Bitbrain 
+EEG versatile 16ch system, band pass filtered between 0.5 and 30 Hz. Independent components were extracted 
+using logistic infomax ICA algorithm (Bell & Sejnowski, 1995).
+
+Physiological artifacts
+	- ocular activity
+	- muscle activity
+	- cardiac activity
+	- perspiration
+	- respiration
+
+Non physiological/ Technical artifacts
+	- eletrode pop
+	- cable movement
+	- incorrect reference placement
+	- AC eletrical placement
+	- body movements
+
+#Physiological artifacts
+
+##Ocular activity:
+word
+- origin: The eye can be electrically modeled as a magnetic dipole and it distorts the electric field in 
+the region when it moves.
+- why it affects eeg: This distortion is known as the EOG (Electrooculogram) signal and has an amplitude 
+usually one order of magnitude larger than the EEG signal, reaching values around 100-200 microvolts.
+- types of effects: Blinking, lateral movement, eye movements
+- effect on time-domain: Blinking produces a quick change with high amplitude on the EEG signals in the 
+electrodes of the frontal area, more pronounced in those closer to the eyes. Lateral movements of the eye 
+affect also the frontal areas but are more significant the closer to the temples. In general the artifact 
+amplitude of the artifact is almost proportional to the angle of gaze.
+- effect on freq domain:Effect in low frequencies that can be confused with delta and theta bands.
+
+##Muscular activity:
+word
+- origin: Muscles produce electrical activity when they are contracted. This activity can be measured and 
+the resulting signal is called electromyography (EMG)
+- why it affects eeg:  That electrical activity produced by the muscles can interfere with the actual EEG 
+activity. We can observe these high frequency artifacts with the naked eye.
+- types of effects: Clenching the jaw, neck and shoulder muscles tension, swallowing, chewing, talking, 
+sucking, sniffing, grimacing, frowning or hiccupping
+- effect on time-domain: We can observe a high frequency signal that overlaps the EEG signal. 
+The amplitude correlates with the strength of the muscle contraction.
+- effect on freq domain: Effect in high frequencies overlapping artifacts in beta and gamma EEG bands
+
+##Cardiac activity:
+word
+- origin: Electrical activity from the heart. This signal is called Electrocardiogram (ECG) but also 
+referred as to pulse artifact
+- why it affects eeg: Although the amplitude of the ECG is low on the scalp, sometimes, depending on 
+the placement of the electrode or the body shape of the participant we would see a rhythmic distortion on the EEG signals.
+- types of effects: Cardiac activity, pulse
+- effect on time-domain: A rhythmic pattern, corresponding with the heartbeats that overlaps the EEG signal.
+- effect on freq domain: The frequency components of the ECG overlap EEG band frequencies so it is difficult 
+to visualize them with the naked eye.
+
+##perspiration:
+word
+- origin: Sweat glands of the skin 
+- why it affects eeg: Small drops of sweat produced by the glands cause changes in the electrical baseline 
+of the electrodes. In case of intense perspiration it could even create shorts between electrodes.
+- types of effects: Sweat glands, skin potentials.
+- effect on time-domain: Slow waves overlapping the EEG signal.
+- effect on freq domain: Low frequency artifact that overlaps delta and theta bands principally.
+
+##respiration:
+word
+- origin: Movement of chest and head when breathing (inhale / exhale)
+- why it affects eeg: It is more common in sleep recordings as respiration-related movement modifies 
+the contact between the electrodes and the scalp if the participant is lying on a bed.
+- types of effects: Inhale, Exhale
+- effect on time-domain: low waves synchronized with breathing rhythm that overlaps the EEG signals.
+- effect on freq domain: Low frequency artifact that overlaps delta and theta bands.
+
+#Non physiological/ Technical artifacts
+
+##eletrode pop:
+word
+- origin: Temporary failures in the contact between the EEG sensor and the scalp produced by touching 
+the sensor or by spontaneous changes in electrode-skin contact.
+- why it affects eeg: It is due to changes in contact potential between the scalp and the electrode. 
+- types of effects: Electrode pop.
+- effect on time-domain: Abrupt and usually high amplitude interference on the EEG signal usually 
+localized in a single channel. 
+- effect on freq domain: The characterization of an electrode pop is difficult due to the wide range 
+of possible distortions.
+
+##cable movement:
+word
+- origin: Movement of the cables connecting the electrodes and the amplification system.
+- why it affects eeg: changes in the electromagnetic fields produce distortion in the signal recorded 
+and also in the scalp-sensor contact.
+- types of effects: cable movement, cable touch
+- effect on time-domain: It is very dependent on the type of cable movement. If the movement is rhythmic, 
+distortions overlapping EEG signals will appear with the same rhythm that the cable movement.
+- effect on freq domain: It also depends on the type of movement. If movements are rhythmic we can find 
+non-EEG related frequency peaks.
+
+##incorrect reference placement:
+word
+- origin: Reference channel not placed or bad contact on the reference channel.
+- why it affects eeg: the signal recorded is not EEG.
+- types of effects: reference sensor not placed.
+- effect on time-domain: abrupt changes in all the channels with high amplitude. All channels will 
+converge slowly (filtering effects) to actual EEG signals when the reference is placed properly.
+- effect on freq domain: very high power in all channels, and in non-eeg related eeg signals.
+
+##AC eletrical placement:
+word
+- origin: AC electrical lines and devices
+- why it affects eeg: Due to insufficient or lack of wire shielding, the signal can be affected by 
+surrounding electromagnetic fields like AC power sources and wires. 
+- types of effects:  50 Hz. or 60 Hz
+- effect on time-domain: You can observe a high frequency noise continuously overlapping the EEG signal.
+- effect on freq domain: You will see a big spike around 50 Hz. or 60 Hz. depending on the AC frequency 
+standard for the country you are in (50 Hz. or 60 Hz. artifact).
+
+##body movements:
+word
+- origin: Body movements, principally affected by head movements.
+- why it affects eeg: When moving, although unintentionally, the contact between electrode and skin is 
+affected and the EEG signal corrupted. 
+- types of effects:  Head movements, arm movements, walking, running.
+- effect on time-domain: temporary slow waves corresponding with the rhythm of the movement.
+- effect on freq domain: Effect is localized in lower frequencies overlapping delta and theta bands.
+
+#EEG artifact filtering techniques (by data analysis)
+
+##Rejection
+
+The first approach is to select and reject EEG epochs with artifacts. The different techniques define 
+a pattern (usually one of the above artifacts) to select EEG epochs to be removed. The pattern 
+identification methods range from visual inspection by an EEG expert, to automated statistics in 
+the time or frequency domain (Nolan et al., 2010). For example, in an ERPs protocol, you can define 
+a statistical threshold to remove trials that have a significantly higher amplitude. 
+
+Rejection is a very costly method as, while almost all artifacts can be removed,  all the valuable 
+EEG information of the epoch is also eliminated. Typically you will be interested in retaining as 
+much of the true EEG data as possible, especially when the recordings are short.
+
+##Filtering
+
+The goal of these techniques is to remove the artifacts while keeping as much EEG information as possible. 
+This classification includes techniques such as a simple linear filter to remove certain frequency bands 
+(Panych et al.,1989), regression methods to remove EOG or ECG signals from EEG using a reference signal 
+(Wallstrom et al., 2004), adaptive filters with reference signal (Marque et al., 2005), Wiener filters 
+(Sweeney et al., 2012)  or Bayes filters (Sameni et al., 2007).
+
+For example, we can use linear filters to remove the 50 Hz. or 60 Hz artifact. AC electrical interference.  
+This will also remove the EEG information (brain waves), however such high frequencies are not usually 
+the focus of EEG studies. Another example is the use of EOG signal as a reference channel to remove that 
+info from the EEG contaminated signal by regression or adaptive filters. 
+
+Regression methods assume the recorded EEG is a combination of real EEG and artifacts (EOG). The regression 
+filter calculates the proportion of the references (EOG) that are present in a single EEG channel and subtracts it.
+
+Obs:  n entendi tao bem esssa tecnica, eu acho que ele correlaciona o sinal de referencia (ocular aqui) 
+com todos os outros e filtra todos os sinais tirando o spectro do sinal de referencia na proporcao da correlacao
+
+
+##Source decomposition methods:
+
+These methods decompose each individual channel into basic waveforms, eliminating the ones that contain 
+an artifact, and then reconstructing the EEG clean channel. The main example of these methods is the 
+Wavelet decomposition (Unser & Aldroubi, 1996), and some variants less investigated such as the Empirical 
+Mode Decomposition (EMD) (Safieddine et al., 2012), or Non-linear Mode Decomposition (NMD) (Iatsenko et al., 2015). 
+
+In wavelet decomposition, the signal of each channel is decomposed in coefficients for different scales 
+and drifts of the selected wavelet (“mother”). To filter the signal, after decomposing it, some 
+coefficients are thresholded and then the signal is reconstructed. 
+
+The main advantage of these methods is that we can retain EEG data at a channel level.  The main 
+disadvantage is that we need to find a correct basic waveform (wavelets, intrinsic mode functions, 
+nonlinear modes) to decompose the noise in order to be able to threshold coefficients that only remove 
+the artifacts without removing EEG data. They are also more complex and still under research.
+
+ An important aspect of these techniques is whether they operate offline or online  (Ismal et al., 2016). 
+Offline methods are not automatic and require human intervention, and therefore can not be integrated in 
+a system that runs autonomously. For instance, visual inspection to reject EEG epochs or visual selection 
+of artifactual components/sources are offline methods that require the supervision of an expert.
+
+Online methods can be fully automated and integrated in a system that runs autonomously. For example, 
+methods with a reference signal as regression or adaptive filters can easily run online. Also, processes 
+involving signal decomposition as Blind Source Separation ones or Source decomposition methods can be 
+automated by establishing some thresholds or statistic thresholds from clean EEG data to automatically remove components. 
+
+
+#Software for EEG artifacting
+
+
+#1. EEGLAB
+
+EEGLAB (EEGLAB, EEGLAB Wiki): This is an interactive Matlab toolbox for processing continuous and 
+event-related EEG, MEG and other electrophysiological data. It includes filtering techniques such as 
+independent component analysis (ICA) or artifact rejection and several filtering plugins can be downloaded 
+to increase the toolbox potential. It also incorporates time/frequency analysis, event-related statistics, 
+and several modes of visualization of the averaged and single-trial data. EEGLAB runs on Windows, Mac OS X, Linux and Unix.
+
+#2. FieldTrip
+
+FieldTrip (FieldTrip toolbox): This is a MATLAB toolbox for MEG, EEG, iEEG and NIRS analysis. It offers 
+preprocessing techniques and analysis methods, such as time-frequency analysis or source reconstruction 
+using dipoles. It supports the data formats of all major MEG systems and of the most popular EEG, iEEG and 
+NIRS systems and new data formats can be added easily. You can implement your own analysis protocols in a 
+MATLAB script using FieldTrip high-level functions. FieldTrip  is an open source software under the GNU 
+general public license.
+
+#3. MNE (python)
+
+MNE (MNE — MNE 0.20.0 documentation): Open-source Python software for exploring, visualizing, and analyzing 
+human neurophysiological data: MEG, EEG, sEEG, ECoG, and more. The software has a growing community behind 
+and several python packages has been developed to add a graphical user interface, automatic bad channel 
+detection and interpolation, independent component analysis (ICA), connectivity analysis, general-purpose 
+statistical analysis of MEG/EEG signals or a python implementation of the Preprocessing Pipeline (PREP) for 
+EEG data among others.
+
+
+#Conclusions
+
+Several artifacts and methodologies to remove or reject them have been presented in this post. There is 
+not yet a magical rule to deal with all the spectrum of possible artifacts at the same time. Depending on 
+the experimental nature of the data collection, some artifacts are more prone to appear and some removal 
+methodologies fit better. 
+
+There is a lot of research literature about using a combination of methods to deal with artifacts 
+(Akhtar et al., 2012; Mijovic et al. 2010). ICA-based algorithms seem to be the default first approach 
+to EEG filtering if simpler methods as regression or rejection are not valid for your application 
+(Urigüen & Garcia-Zapirain, 2015).  As a rule, it is important to remind participants of the nature of 
+EEG and ask them to avoid movements or actions that might contaminate the signals as much as possible. 
+Moreover, non-physiological artifacts should be minimized by the experimenter.
+
+If artifacts are reduced to those that are unavoidable (eye-movements or small body movements), 
+it will be easier to pick a correct tool to remove those specific artifacts and clean the EEG data 
+(Sörnmo & Laguna, 2005; Urigüen & Garcia-Zapirain, 2015; Ismal et al., 2016). However, this is not 
+always feasible when the EEG monitoring is performed in natural conditions. 
+-------------------------
+
+title: Epilepsy and EEG seizure-detection
+
+url: https://www.bitbrain.com/blog/eeg-seizure
+
+notes:
+
+Epilepsy is a chronic neurological disorder that affects about 50 million people worldwide. 
+The most visible symptom is the appearance of seizures, an abnormal electrical signal that occurs inside the brain
+
+Indeed, one of the most valuable capabilities of EEG is its precision in identifying brain waves 
+abnormalities, providing a unique insight into a patient's level of impairment. 
+
+an EEG test can assist in seizure detection and classification. 
+
+Therefore, high specificity is another useful feature of EEG (i.e. false-positive detection only 
+in 0.5-3.5% of cases, WHO, 2012), which it may be clinically relevant in cases wherein the manifestation 
+of the seizure is not clear (e.g. non-convulsive epileptic state) or a differential diagnosis is needed
+
+EEG can also aid in the medical advice and management of epilepsy. Often, the frequency and period between 
+seizures (i.e. interictal) are unpredictable making it difficult to control the epileptic status of the patient. 
+Here, the role of EEG is to predict or evaluate the risk of seizure relapses and recurrence. 
+This is particularly useful in guiding the medical treatment and measuring its effectiveness.
+
+Seizures occur due to brain wave abnormalities, and the EEG is a great tool capable of providing 
+unique information about the landscape of a patient's epilepsy and predicting and monitoring an ongoing seizure activity.
+
+Furthermore, EEG monitoring is essential to control ongoing seizure activity that may be subtle 
+or absent especially during medication intake or after withdrawal (Berg and Shinnar, 1994; Smith, 2005).
+
+*A limited experience or untrained eye in reading EEG is one of the most common reasons for an 
+incorrect diagnosis (Bendabis, 2010).*
+
+#There are three main applications in which EEG is highly valuable for epilepsy: 
+
+##1. Medical diagnosis and management: A primary role of EEG is to help clinicians and neurologists 
+to establish an accurate diagnosis (Alebesque et al., 2017; NICE, 2012).
+
+
+
+##2. Research: As a research tool, EEG technique is extremely useful in the study of how seizures 
+begin, spread, and stop. Questions like why certain types of seizures emerge at specific ages or 
+only in response to distinct events, the comorbidity with cognitive decline, and how anti-seizures 
+medications affect brain cells to block seizures are nowadays topics of great scientific research 
+(Helmstaedter and Witt, 2017; Holmes, 2013; Rogawski, Löscher, and Rho, 2016)
+
+
+
+##3. Early detection: EEG devices that are capable of alerting the patient or caregiver of the 
+occurrence of seizures several minutes in advance.
+
+
+
+#What is detected in an EEG test?
+
+
+
+In patients suspected of suffering from epilepsy, performing an EEG test is advised after the 
+first seizure that is not known to be caused by alcohol/drug withdrawal or other medical conditions 
+(e.g. encephalopathy; Pohlmann-Eden et al., 2006). Once the diagnosis is set, an EEG test will 
+provide accurate information about ongoing brain electrical activity while the test is carried out. 
+It will inform the doctor about when a seizure begins, when and how the seizure spreads, and when the seizure stops. 
+
+EEG-detected seizures can be characterized according to delimited periods of time. For instance, 
+the term ictal refers to the EEG activity recorded during a seizure event whereas interictal and 
+postictal indicates the EEG activity captured between and after seizures respectively 
+(Britton, Frey and Hopp, 2016). In the diagnosis of epilepsy and seizure onset localization, 
+these recordings entail different wave morphologies resulting highly informative.
+
+##1 Ictal EEG patterns
+
+###1.1For clinical reasons, seizures can be classified according to one of these two categories: 
+focal-partial seizures and generalized seizures (Blume, 2010; Sharbrough, 1993). 
+The main difference between these types of seizures relies on how they begin. 
+
+####1.1.1 Focal seizure: If the seizure activity arises from a very specific area of the brain, 
+then it is identified as a focal seizure. Focal seizures generally originate in subcortical structures 
+and are limited to one hemisphere. These types of seizures last about one or two minutes 
+and are typically observed in Temporal Lobe Epilepsy. 
+
+####1.1.2 General: Conversely, when the epileptic seizure is shown as a widespread electrical 
+discharge involving both brain hemispheres at the same time, then it may be indicative of a generalized seizure type
+
+###1.2 Usually, when an epileptic seizure arises, abnormal EEG signatures will show up as rapid 
+spiking waves (between 30-80ms) or sharp waves (70-200ms) that may or may not be followed by slow waves. 
+At least five different patterns of epileptic waveforms can be distinguished during an ictal EEG (Fischer, 2014):
+
+####1.2.1
+
+Rhythmical frequencies that evolve in the delta (0–3Hz/s), theta (4–7Hz/s) or alpha (8–12Hz/s) 
+bands with different degrees of sharpness
+
+####1.2.2
+
+Rhythmic fast-spiking seizures (40-50Hz/s) are common in a seizure with focal onset (e.g. hippocampus origin).
+
+####1.2.3
+
+Spike-wave complexes are generalized discharges varying from 1.5 to 2.5Hz, with a sharp peak 
+duration of 20 to 70 milliseconds; such types of epileptiform activity can be observed during 
+the course of focal or generalized tonic-clonic seizures.
+
+####1.2.4
+
+Electrodecremental patterns reflect temporal lobe epilepsy seizures and are characterized by 
+a general flattening of brain rhythms at the start of a seizure.
+
+####1.2.5
+
+Clinical seizure without changes in the EEG activity. The main assumption in this case is a 
+seizure origin that is far from scalp electrodes.
+
+##2 Interictal and postictal EEG patterns
+
+During this type of EEG test, patients with seizure disorder epilepsy history often show a 
+specific pattern of pathological activity referred to as interictal epileptiform discharges (IEDs), 
+which is clearly distinguished from the activity observed during the seizure itself.*
+
+*However, we know from research that such abnormal brain activity may not be so evident in all 
+epileptic patients (Pillai and Sperling, 2006). This means that aside from the seizure interval itself, 
+the remaining time the EEG activity may appear entirely normal."
+
+A recovery period called postictal interval follows the seizure event (Abood and Bandyopadhyay, 2019). 
+During this phase, the brain recovers from the trauma of the epileptic seizure. Usually, postictal EEG 
+recordings are characterized by attenuation or slowing in slow-wave activity (delta-theta waves). 
+The observed average time for EEG to return to baseline is approximately 2h with a maximum of 8h in adults 
+(Arkilo et al., 2013) which will partly depend on the severity, brain location and type of the seizure episode. 
+Typical symptoms include migraine, drowsiness, confusion, and other altered states of consciousness like memory loss.
+
+#What is the EEG procedure for epilepsy diagnosis?
+
+Prior to the EEG test, the patient is prepared for the recording, a necessary step that may last 
+between 20 and 25 minutes. The EEG room should be quiet, well-conditioned, and often dimly lit. 
+
+During the EEG test, the technician proceeds with the recording while asking the patient to report 
+any seizure symptoms that may experience. Importantly, the EEG procedure is painless, comfortable 
+and generally, it does not entail any risk.
+
+Usually, one of the following types of EEG test can be adopted, each entailing different procedures:
+
+- Routine EEG:  the EEG test is carried out in a specialized clinic or in the hospital and it should 
+last less than 1.5 hours.
+
+- Sleep EEG: may be considered when a routine EEG does not provide enough information. The procedures 
+are the same as in normal awake EEG but the patient is sleeping during the test.
+
+- Prolonged EEG: requires the patient to stay in an epilepsy monitoring unit for continuous EEG monitoring 
+for 1 or 2 hours or inpatient over several days. A video camera may use to capture the onset and 
+characteristics of seizures simultaneously with the EEG registering.
+
+- Ambulatory EEG: when appropriate, the test may be done in the outpatient setting or in the patient's 
+home over a number of hours or during a few days.
+
+It could be the case that seizures itself may not show up when the EEG is being recorded. 
+When necessary, epileptiform activity will be provoked with standard seizure activation procedures, 
+which will increase the chance of capturing seizure-like activity or even seizures.  
+Typical activation procedures include fast eyes opening and closing for several times, 
+photic stimulation (e.g. staring at flashing lights), breathing deeply or rapidly (hyperventilation), 
+and sleep deprivation (staying up the entire night before the EEG test).
+
+#Wearable devices for epilepsy seizure detection 
+
+The unpredictable nature of epileptic seizures causes distress and is highly disabling for both 
+patients and caregivers. Today, the technology for seizure detection is already being commercialized, 
+making it more accessible to the general public and 24/7 monitoring out of medical environments. 
+
+Seizure-detection devices are capable of warning the patient or caregiver of the early occurrence 
+of seizures events. Importantly, this early detection is not equivalent to seizure prediction. 
+It refers to the earliest time interval when abnormal EEG activity can be detected before the 
+onset of clinical symptoms. As you can imagine, this technology has become tremendously essential 
+for patients as early detection and actuation in case of epileptic attack can prevent head injury 
+due to a fall or even death
+
+##1 Key features of epilepsy seizure-detection devices:
+
+According to current recommendations (Bruno et al., 2018, 2020; Simblett et al., 2019; Van de Vel et al., 2019), 
+there are at least five key factors that commercial epilepsy biometric devices must meet to ensure users´needs: 
+
+###1.1 Reliability
+
+This is probably the most important. A seizure-detection device can be considered reliable if first, 
+it achieves a detection level greater than 90% and second, it proves a false alarm level of less than 
+2 per week. These two metrics are more than critical as low performance will only have detrimental 
+effects on patients and caregivers’ lives.
+
+anotacao minha: mas ter false alarm nao eh mt mais dboa do que ter sensitivity (false nagative) baixa ? 
+sepa ele jah asssume q tem sensitivity alta
+
+###1.2 Safety and privacy
+
+EEG seizure-detection systems are completely secure devices. In addition to this, an important 
+requirement is to ensure the confidentiality of the recorded brain data, so they must be subject 
+to stringent privacy requirements and provided to users. 
+
+###1.3 Self-management
+
+Self-management of seizures is another critical patient need that must supplement seizure detection 
+technologies. This implies being able to support users´  regulation of rest and daily activities.
+
+###1.4 Suitability
+
+Design (e.g., discreteness and low intrusiveness) and comfort are key factors that may impact a 
+device´s suitability ensuring an optimal level of acceptability and usability.
+
+###1.5 Proof of Evidence
+
+Additionally, marketed seizure-detection devices should include scientific evidence of their 
+reliability and proven efficacy to meet the needs of users.
+
+##2. Wearable seizure-detection devices currently available in the market
+
+word 
+
+#Conclusions
+
+"A key contribution of EEG is to bring greater specificity in the diagnosis of types of epilepsy, 
+thus aiding clinicians in effectively managing treatment of the disease." 
+
+a major challenge of currently marketed devices will be to improve seizure detection accuracy and 
+increase their versatility in self-management of the disease
+
+-------------------------
+
+title: **Deep learning-based electroencephalography analysis: a systematic review**
+obs: ta mt bem feita essa review
+url: file:///C:/Users/bruno/Desktop/Poli/TCC/projeto/estudo%20do%20problema/artigos%20(pdfs)/DL%20for%20EEG%20review.pdf
+
+notes:
+
+Whether DL truly presents advantages as compared to more traditional EEG processing
+approaches, however, remains an open question
+
+Results. Our analysis reveals that the amount of EEG data used across studies varies
+from less than ten minutes to thousands of hours, while the number of samples seen during
+training by a network varies from a few dozens to several millions, depending on how epochs
+are extracted. Interestingly, we saw that more than half the studies used publicly available data
+and that there has also been a clear shift from intra-subject to inter-subject approaches over the
+last few years. About 40% of the studies used convolutional neural networks (CNNs), while
+13% used recurrent neural networks (RNNs), most often with a total of 3–10 layers. Moreover,
+almost one-half of the studies trained their models on raw or preprocessed EEG time series
+
+Finally, the median gain in accuracy of DL approaches over traditional baselines was 5.4%
+across all relevant studies. More importantly, however, we noticed studies often suffer from
+poor reproducibility
+
+1. Introduction
+1.1. Measuring brain activity with EEG
+
+There are many applications for EEG. For example, in
+clinical settings, EEG is often used to study sleep patterns
+[1] or epilepsy [3]. Various conditions have also been linked
+to changes in electrical brain activity, and can therefore
+be monitored to various extents using EEG. These include
+attention deficit hyperactivity disorder (ADHD) [11], disorders of consciousness [48, 54], depth of anaesthesia [68],
+etc. EEG is also widely used in neuroscience and psychology research, as it is an excellent tool for studying the brain
+and its functioning. Applications such as cognitive and
+affective monitoring are very promising as they could allow
+unbiased measures of, for example, an individual’s level of
+fatigue, mental workload, [21, 195], mood, or emotions [5].
+Finally, EEG is widely used in brain–computer interfaces
+(BCIs)—communication channels that bypass the natural
+output pathways of the brain—to allow brain activity to
+be directly translated into directives that affect the user’s
+environment [117].
+
+1.2. Current challenges in EEG processing
+
+First, EEG has a low signalto-noise ratio (SNR) [23, 86], as the brain activity measured is
+often buried under multiple sources of environmental, physiological and activity-specific noise of similar or greater amplitude called ‘artifacts’
+
+EEG is also a non-stationary signal [37, 65], that is its
+statistics vary across time. As a result, a classifier trained on
+a temporally-limited amount of user data might generalize
+poorly to data recorded at a different time on the same individual. This is an important challenge for real-life applications of
+EEG, which often need to work with limited amounts of data.
+
+Finally, high inter-subject variability also limits the usefulness of EEG applications. This phenomenon arises due to
+physiological differences between individuals, which vary in
+magnitude but can severely affect the performance of models
+that are meant to generalize across subjects [36]. Since the
+ability to generalize from a first set of individuals to a second,
+unseen set is key to many practical applications of EEG, a lot
+of effort is being put into developing methods that can handle
+inter-subject variability
+
+To solve some of the above-mentioned problems, processing pipelines with domain-specific approaches are often used.
+A significant amount of research has been put into developing processing pipelines to clean, extract relevant features,
+and classify EEG data. State-of-the-art techniques, such as
+Riemannian geometry-based classifiers and adaptive classifiers [116], can handle these problems with varying levels of
+success.
+
+Additionally, a wide variety of tasks would benefit from
+a higher level of automated processing. For example, sleep
+scoring, the process of annotating sleep recordings by categorizing windows of a few seconds into sleep stages, currently
+requires a lot of time, being done manually by trained technicians. More sophisticated automated EEG processing could
+make this process much faster and more flexible. Similarly,
+real-time detection or prediction of the onset of an epileptic 
+seizure would be very beneficial to epileptic individuals, but
+also requires automated EEG processing. 
+
+For each of these
+applications, most common implementations require domainspecific processing pipelines, which further reduces the flexibility and generalization capability of current EEG-based
+technologies.
+
+1.3. Improving EEG processing with deep learning
+
+Usually, when c channels are available and
+a window has length l samples, the input of a neural network
+for EEG processing consists of an array Xi ∈ Rc×l
+ containing the l samples corresponding to a window for all channels.
+This two-dimensional array can be used directly as an example for training a neural network, or could first be unrolled
+into a n-dimensional array (where n = c × l) as shown in
+figure 1(b). As for the m-dimensional output, it could represent
+the number of classes in a multi-class classification problem.
+Variations of this end-to-end formulation can be imagined
+where the window Xi is first passed through a preprocessing
+and feature extraction pipeline (e.g. time-frequency transform), yielding an example X
+
+, DL facilitates the development of
+tasks that are less often attempted on EEG data such as generative modelling [60] and domain adaptation [18]. The use of
+deep learning-based methods allowed the synthesis of highdimensional structured data such as images [28] and speech
+[136]. Generative models can be leveraged to learn intermediate representations or for data augmentation [60]. In the case
+of domain adaptation, the use deep neural networks along
+with techniques such as correlation alignment [184] allows
+the end-to-end learning of domain-invariant representations,
+while preserving task-dependent information. Similar strategies can also be applied to EEG data in order to learn better
+representations and thus improve the performance of EEGbased models across different subjects and tasks
+
+On the other hand, there are various reasons why DL might
+not be optimal for EEG processing and that may justify the
+skepticism of some of the EEG community. First and foremost, the datasets typically available in EEG research contain
+far fewer examples than what has led to the current state-ofthe-art in DL-heavy domains such as computer vision (CV)
+and NLP. Data collection being relatively expensive and data
+accessibility often being hindered by privacy concerns—
+especially with clinical data—openly available datasets of
+similar sizes are not common. Some initiatives have tried to
+tackle this problem though [73]
+
+Second, the peculiarities of
+EEG, such as its low SNR, make EEG data different from 
+other types of data (e.g. images, text and speech) for which
+DL has been most successful. Therefore, the architectures and
+practices that are currently used in DL might not be readily
+applicable to EEG processing
+
+3. Results
+
+3.2. Domains
+. Most studies (86%) focused on using DL
+for the classification of EEG data, most notably for sleep staging, seizure detection and prediction, brain–computer interfaces (BCIs), as well as for cognitive and affective monitoring.
+Around 9% of the studies focused instead on the improvement
+of processing tools, such as learning features from EEG, handling artifacts, or visualizing trained models. The remaining
+papers (5%) explored ways of generating data from EEG, e.g.
+augmenting data, or generating images conditioned on EEG.
+
+Despite the absolute number of DL-EEG publications
+being relatively small as compared to other DL applications
+such as computer vision [98], there is clearly a growing interest in the field. Figure  5 shows the growth of the DL-EEG
+literature since 2010. The first seven months of 2018 alone
+count more publications than 2010–2016 combined, hence the
+relevance of this review. It is, however, still too early to conclude on trends concerning the application domains, given the
+relatively small number of publications to date.
+
+The wide range of windowing
+approaches (see section 3.3.4) indicates that a better understanding of its impact is still required.
+
+The amount of data across different domains varies significantly. In domains like sleep and epilepsy, EEG recordings
+last many hours (e.g. a full night), but in domains like affective and cognitive monitoring, the data usually comes from lab
+experiments on the scale of a few hours or even a few minutes
+
+Often correlated with the amount of data,
+the number of subjects also varies significantly across studies
+
+In [211],
+an increase in performance was observed when using more
+subjects during training before testing on new subjects. The
+authors tested using from 1 to 30 subjects with a leave-onesubject-out cross-validation scheme, and reported an increase
+in performance with noticeable diminishing returns above 15
+subjects.
+
+The EEG data used in the selected studies was recorded
+with 1–256 electrodes, with half of the studies using between
+8 and 62 electrodes (see figure  8(b)). The number of electrodes required for a specific task or analysis is usually arbitrarily defined as no fundamental rules have been established.
+In most cases, adding electrodes will improve possible analyses by increasing spatial resolution. However, adding an electrode close to other electrodes might not provide significantly
+different information, while increasing the preparation time
+and the participant’s discomfort and requiring a more costly
+device. Higher density EEG devices are popular in research but
+hardly ecological. In [171], the authors explored the impact of
+the number of channels on the specificity and sensitivity for
+seizure detection. They showed that increasing the number of
+channels from 4 up to 22 (including two referential channels)
+resulted in an increase in sensitivity from 31% to 39% and
+from 40% to 90% in specificity. They concluded, however,
+that the position of the referential channels is very important
+as well, making it difficult to compare across datasets coming
+from different neurologists and recording sites using different
+locations for the reference(s) channel(s).
+
+Around
+50% of studies used sampling rates of 250 Hz or less
+after downsampling
+
+Gaussian noise, examples generated by GAN, artifacts, overlapping windows
+were used to augment data -> improved significantly some models, other not so much
+
+the fact that overlapping windows share information was used to design an additional term
+to the cost function, which further regularizes the models by
+penalizing decisions that are not the same while being close
+in time
+
+also swapping left with right side channels,
+*using data thrown away in down sampling*
+
+In their case, they reused the data thrown away during that step as new samples: a downsampling by a factor of N
+would therefore allow an augmentation of N times.
+
+anotacaominha: achei bem interressante isso
+
+class imbalance is a problem is a lot of the classification tasks
+
+group [199] showed that when training a GAN on individual subjects, augmenting data with an overlapping window
+increased accuracy from 60.91% to 74.33%. For more on
+imbalanced learning, we refer the interested reader to [173]
+
+
+3.4. EEG processing
+One of the oft-claimed motivation for using deep learning on
+EEG processing is automatic feature learning [12, 53, 77, 85,
+125, 145, 232]. This can be explained by the fact that feature engineering is a time-consuming task [109]. Additionally,
+preprocessing and cleaning EEG signals from artifacts is a
+demanding step of the usual EEG processing pipeline. Hence,
+in this section, we look at aspects related to data preparation,
+such as preprocessing, artifact handling and feature extraction.
+This analysis is critical to clarify what level of preprocessing 
+EEG data requires to be successfully used with deep neural
+networks.
+
+In [80], it is mentioned
+that ‘a substantial amount of preprocessing was required’ for
+assessing cognitive workload using DL. More specifically, it
+was necessary to trim the EEG trials, downsample the data to
+512 Hz and 64 electrodes, identify and interpolate bad channels, calculate the average reference, remove line noise, and
+high-pass filter the data starting at 1 Hz. On the other hand,
+Stober et  al [182] applied a single preprocessing step by
+removing the bad channels for each subject. In studies focusing on emotion recognition using the DEAP dataset [91], the
+same preprocessing methodology proposed by the researchers
+that collected the dataset was typically used, i.e. re-referencing to the common average, downsampling to 256 Hz, and
+high-pass filtering at 2 Hz.
+
+A considerable proportion of the reviewed articles (72%)
+employed at least one preprocessing method such as downsampling or re-referencing. This result is not surprising, as
+applications of DNNs to other domains, such as computer
+vision, usually require some kind of preprocessing like cropping and normalization as well.
+
+Artifact removal techniques usually require the intervention of a human expert [131]. Different techniques leverage
+human knowledge to different extents, and might fully rely on
+an expert, as in the case of visual inspection, or require prior
+knowledge to simply tune a hyperparameter, as in the case of
+wavelet-enhanced independent component analysis (wICA)
+[30]. Among the studies which handled artifacts, a myriad
+of techniques were applied. Some studies employed methods
+which rely on human knowledge such as amplitude thresholding [125], manual identification of high-variance segments
+[80], and handling EEG blinking-related noise based on highamplitude EOG segments [120]. Moreover, in [53, 144, 146
+185, 226, 227], independent component analysis (ICA) was
+used to separate ocular components from EEG data [119].
+
+Given
+those results (70% dos papers) , we are encouraged to believe that using DNNs
+on EEG might be a way to avoid the explicit artifact removal
+step of the classical EEG processing pipeline without harming
+task performance
+
+anotacao minha: eu acho que pra nao retirar artefato vc tem que costruir uma arquitetura que
+facilite que essas componentes sejam excluídas, pq n faz sentido aprender features conjuntas delas com
+os dados cerebrais
+
+Figure 9 presents the result of our analysis. One can observe
+that 49% of the papers used only raw EEG data as input,
+whereas 49% used hand-engineered features, from which 38%
+corresponded to frequency domain-derived features. Finally,
+2% did not specify the type of input of their model. **According
+to these results, we find indications that DNNs can be in fact
+applied to raw EEG data and achieve state-of-the-art results**
+
+@until checkpoint 3.5. Deep learning methodology
+
+4. Discussion
+
+
+4.1. Rationale
+
+It was expected that most papers selected for the review
+would focus on the classification of EEG data, as DL has historically led to important improvements on supervised classification problems [98]. Interestingly though, several papers
+also focused on new applications that were made possible
+or facilitated by DL: for instance, generating images conditioned on EEG, generating EEG, transfer learning between
+subjects, or feature learning. One of the main motivations
+for using DL cited by the papers reviewed was the ability to
+use raw EEG with no manual feature extraction steps. We
+expect these kinds of applications that go beyond using DL
+as a replacement for traditional processing pipelines to gain
+in popularity.
+
+4.2. Data
+
+Although a definitive answer cannot be reached, the results
+of our meta-analysis show that the amount of data necessary
+to at least match the performance of traditional approaches is
+already available
+
+Out of the 154 papers reviewed, only six
+reported lower performance for DL methods over traditional
+benchmarks. To achieve these results with limited amounts of
+data, shallower architectures were often preferred. Data augmentation techniques were also used successfully to improve
+performance when only limited data was available. However,
+more work is required to clearly assess their advantages and
+disadvantages. Indeed, although many studies used overlapping sliding windows, there seems to be no consensus on
+the best overlapping percentage to use, e.g. the impact of
+using a sliding window with 1% overlap versus 95% overlap
+is still not clear
+
+Many authors concluded their paper suggesting that having
+access to more data would most likely improve the performance of their models. With large datasets becoming public,
+such as the TUH Dataset [73] and the National Sleep Research
+Resource [236], deeper architectures similar to the ones
+used in computer vision might become increasingly usable.
+However, it is important to note that the availability of data is
+quite different across domains. In clinical fields such as sleep
+and epilepsy, data usually comes from hospital databases containing years of recordings from several patients, while other
+fields usually rely on data coming from lab experiments with
+a limited number of subjects.
+
+The potential of DL in EEG also lies in its ability (at least
+in theory) to generalize across subjects and to enable transfer learning across tasks and domains. Although intra-subject
+models still work best when only limited data is available,
+given the inherent subject variability of EEG data, transfer learning might be the key to moving past this limitation.
+**Indeed, Page and colleagues [141] showed that with hybrid
+models, one can train a neural network on a pool of subjects
+and then fine-tune it on a specific subject, achieving good
+performances without needing as much data from a specific
+subject.**
+
+anotacao minha: eh transfer leaning/meta-learning parece ser o caminho msm
+
+While the amount of data is critical in achieving high performance on machine learning tasks (and particularly for deep
+learning), the quality of the data is also very important. In
+many fields of application of DL, input data usually has a high
+SNR: in both CV and NLP, for instance, virtually noise-free
+images and natural language excerpts are easy to obtain. EEG
+data, on the other hand, can accumulate noise at many different levels, which makes learning from it much harder. Most
+often, once the data is recorded, the noise is impossible or
+
+y. Prepping participants to ensure their compliance
+with the recording protocol is also fundamental to obtaining
+meaningful data. Similarly, reliable recording requires well
+planned out experimental design, including stimulus presentation when applicable. Furthermore, while naturally modulated
+by its end purpose, the quality of the data is influenced by its
+diversity, e.g. how many different individuals and how different they are. A balanced number of examples in each class can
+also drastically improve the usefulness of a large dataset
+
+s. The impact of
+the number of channels though, was specifically studied. For
+example, in [33], the authors showed that they could achieve
+comparable results with a lower number of channels. As
+shown in figure 8(a), a few studies used low-cost EEG devices,
+typically limited to a lower number of channels. These more
+accessible devices might therefore benefit from DL methods,
+but could also enable faster data collection on a larger-scale,
+thus facilitating DL in return
+
+We
+noticed that many studies reviewed did not clearly describe
+the EEG data that they used (e.g. the number of subjects, number of sessions, window length to segment the EEG data, etc)
+and therefore made it hard or impossible for the reader to evaluate the work and compare it to others. Moreover, reporting
+learning curves (i.e. performance as a function of the number
+of examples) would give the reader valuable insights on the
+bias and variance of the model
+
+4.3. EEG processing
+According to our findings, the great majority of the reviewed
+papers preprocessed the EEG data before feeding it to the
+deep neural network or extracting features. Despite observing
+this trend, we also noticed that recent studies outperformed
+their respective baseline(s) using completely raw EEG data.
+Almogbel et al [7] used raw EEG data to classify cognitive
+workload in vehicle drivers, and their best model achieved
+a classification accuracy approximately 4% better than their
+benchmarks which employed preprocessing on the EEG data.
+Similarly, Aznan et al [12] outperformed the baselines by a
+4% margin on SSVEP decoding using no preprocessing. Thus,
+the answer to whether it is necessary to preprocess EEG data
+when using DNNs remains elusive
+
+As most of the works considered did not use, or explicitly mention using, artifact removal methods, it appears that
+this EEG processing pipeline step is in general not required.
+However, one should observe that in specific cases such as
+tasks that inherently elicit quick eye movements (MATB-II
+[38]), artifact handling might still be crucial to obtaining
+desired performance
+
+One important aspect we focused on is whether it is necessary to use EEG features as inputs to DNNs. After analyzing
+the type of input used by each paper, we observed that there
+was no clear preference for using features or raw EEG timeseries as input
+
+5. Conclusion
+
+The usefulness of EEG as a functional neuroimaging tool is
+unequivocal: clinical diagnosis of sleep disorders and epilepsy, monitoring of cognitive and affective states, as well as
+brain–computer interfacing all rely heavily on the analysis
+of EEGHowever, various challenges remain to be solved.
+For instance, time-consuming tasks currently carried out by
+human experts, such as sleep staging, could be automated to
+increase the availability and flexibility of EEG-based diagnosis. Additionally, better generalization performance between
+subjects will be necessary to truly make BCIs useful. DL
+has been proposed as a potential candidate to tackle these
+
+**
+Among the major trends that emerged from our analysis,
+we found that (1) DL was mainly used for classifying EEG in
+domains such as brain–computer interfacing, sleep, epilepsy,
+cognitive and affective monitoring, (2) the quantity of data
+used varied a lot, with datasets ranging from 1 to over 16000
+subjects (mean = 223; median = 13), producing 62 up to
+9750000 examples (mean = 251532; median = 14000) and
+from two to 4800000min of EEG recording (mean = 62602;
+median = 360), (3) various architectures have been used successfully on EEG data, with CNNs, followed by RNNs and
+AEs, being most often used, (4) there is a clear growing interest
+towards using raw EEG as input as opposed to handcrafted features, (5) almost all studies reported a small improvement from
+using DL when compared to other baselines and benchmarks
+(median = 5.4%), and (6) while several studies used publicly
+available data, only a handful shared their code—the great
+majority of studies reviewed thus cannot easily be reproduced
+**
+
+This review also shows that more targeted work needs to
+be done around the amount of data required to fully exploit
+the potential advantages of DL in EEG processing. Such work
+could explore the relationship between performance and the
+amount of data, the relationship between performance and
+data augmentation and the relationship between performance,
+the amount of data and the depth of the network.
+
+a. A planned
+follow-up to this review will be an online portal providing
+clear and reproducible benchmarks for deep learning-based
+analysis of EEG data, accessible at http://dl-eeg.com.
+
+-------------------------
+
+title: What is BCI? An introduction to brain-computer interface using EEG signals
+url: https://www.bitbrain.com/blog/brain-computer-interface-using-eeg-signals
+
+notes:
+
+is a system that establishes a direct communication between the brain and an external device (Lebedev & Nicolelis, 2017; Millán 
+et al., 2010; J. R. Wolpaw et al., 2002)
+
+The basic setup of a BCI system includes three components:
+1.Specific electrodes to record electric, magnetic, or metabolic brain activity. 
+2.A processing pipeline to interpret those signals, extracting relevant features from them, decoding patterns of interest, and outputting commands.
+3.A computer or external device that operates via the generated commands.
+
+to replace, restore, enhance, supplement or improve some human function (J. Wolpaw & Wolpaw, 2012).
+
+#Tecniques to measure brain activity:
+
+Invasive recordings: allow measuring the electrical activity of neural populations with very high temporal and spatial 
+resolution, meaning that we can know very precisely when and where a certain pattern of neural activity 
+occurred. However, they require very expensive equipment and a complex set-up that involves surgery, with non-negligible 
+postsurgical potential risks associated. For this reason, most of the BCI research in this field has been conducted with animals, although the number of research laboratories in the world using implantable BCIs with humans (mostly patients with motor impairment) is growing.
+
+Non-invasive sensors: allow recording electric activity (with electroencephalography, EEG), magnetic activity 
+(with magnetoencephalography, MEG), or metabolic activity (with functional near-infrared spectroscopy, fNIRS).
+
+Generally, for non-invasive BCIs, EEG is the preferred technology due to its lower cost and portability. 
+For this reason, most of the information contained in this post refers to EEG-based brain-computer interface technology.
+
+#Neural processes for EEG-based brain-computer interfaces
+
+There are different patterns of brain activation that can be measured with EEG. Spontaneous—or ongoing—brain activity 
+is the activity measured in the absence of any explicit task or stimulus. In contrast, induced activity appears as 
+a response to an event, such as a sensory stimulus or a specific action (e.g., a motor response or mental processing).
+
+EEG-based BCI systems rely on detecting changes in the brain patterns produced as a response to some voluntary or 
+involuntary mental command. One of these types of neural processes are event-related potentials (ERPs), which appear 
+as a response to external sensory stimuli. Some of the most common ERPs used for brain-computer interaction are the following:
+
+- P300: the P300 response is reflected as a positive fluctuation in the EEG that occurs approximately 300 ms after 
+perceiving a stimulus. In the context of BCIs, it is generally elicited through an oddball paradigm, which consists 
+of receiving a series of stimuli of two classes, one of which is presented infrequently (e.g., 20% of the times) and 
+generates the measured P300 potential (Fazel-Rezai et al., 2012). 
+
+- Steady-state evoked potentials: these are natural brain responses to repetitive stimuli, which vary with the 
+specific frequency of presentation. They are usually elicited with visual stimuli (steady-state visually evoked 
+potentials, SSVEP), although there are examples of BCI paradigms using somatosensory (SSSEP) or auditory (SSAEP) stimuli (Zhu et al., 2010).
+
+- Error-related potentials: these potentials appear as a pronounced negativity in the EEG 
+(termed the error-related negativity, ERN) as a response to detecting an erroneous action, either 
+committed by the own participant, by another participant, or even by a machine (Chavarriaga et al., 2014).
+
+The other type of neural process commonly used in BCIs do not require explicit stimuli, but are associated 
+with internal brain events and can even be measured asynchronously (i.e., without evident information of when 
+they start). There are two common phenomena in this category:
+
+- Event-related desynchronization/synchronization (ERD/ERS): the ERD/ERS represent a decrease/increase in the 
+amplitude of the ongoing EEG oscillations at a specific frequency as a response to a certain mental command. 
+The most common is the sensorimotor ERD/ERS, which appears over the motor cortex during motor tasks (e.g., 
+execution of a movement, motor imagery, or the attempt of movement by a patient with paralysis) (Pfurtscheller & Lopes da Silva, 1999).
+
+- Slow cortical potentials (SCP): this refers to EEG frequencies below 1 Hz, and generally represents planning 
+or preparation for an action. Movement-related cortical potentials (MRCP), which are a slow decay of 
+EEG voltage over the motor cortex before a voluntary movement, are also a very frequent source of activity 
+used to control motor-related BCIs (Shibasaki & Hallett, 2006).
+
+#AI for brain-computer interfaces using EEG 
+
+In order to close-the-loop between the brain and the device, the BCI requires algorithms of signal processing, 
+feature extraction, and pattern recognition.
+
+1. The signal processing usually involves the use of spectral and spatial filtering to maximize the signal to 
+noise ratio, as well as procedures to deal with contamination of EEG data (i.e., artifacts) and the changes 
+in the characteristics of the signal in session-to-session recordings (i.e., nonstationarities). After all the 
+signal processing steps, one usually needs to simplify this highly-dimensional sensor-space data into a feature 
+vector that can be handled by a classifier/decoder. 
+
+2. feature extraction was traditionally based on previous knowledge of human electrophysiology, although some 
+modern approaches relying on computers with high computational power exploit black-box methodologies to 
+automatically extract relevant features without any prior assumptions.
+
+3. With the feature vectors computed from training data, a classifier/decoder is trained to learn how to detect 
+brain states that should be associated with control commands for the device. Once the classifier is trained, it 
+can be used to evaluate new, unseen data to operate in closed-loop.
+
+The classification methods have received more attention since their output is normally used for assessing the 
+BCI performance (e.g., classification accuracy). In this regard, there is an enormous variety of classifiers 
+that have been evaluated in the field of BCIs, from very simple linear thresholding to complex deep neural networks (Lotte et al., 2018).
+
+For instance, in some contexts, we want the users to learn and adapt their brain patterns towards a desired
+ state (e.g., in neurorehabilitation, where we want to change the brain to induce some behavioral changes as 
+a consequence). In that case, a simple linear classifier can be enough to guide the user by indicating if the 
+activation over a specific brain region should be higher or lower. In contrast, some other applications, like 
+the brain-control of a wheelchair, require more complex algorithms to maximize the decoding accuracy, adapting 
+to the specific patterns of activity of each participant, and trying to minimize errors.
+
+#Applications of EEG-based brain-computer interfaces
+
+In 2009, the BCI team at the University of Zaragoza, founders of Bitbrain, presented a prototype of a 
+**wheelchair controlled with a BCI based on the P300 paradigm** (Iturrate et al., 2009). The users had to focus 
+their attention on specific targets in a 3-D representation of their environment, which were illuminated in a 
+random order. After a few seconds, the system decoded where they wanted to go by analyzing the brain responses 
+to each stimulus, and the wheelchair drove them to the desired location (see video with explanation).
+
+**A BCI can also be used to restore a lost function**. For example, people with paralysis or limb weakness 
+after a spinal cord injury can control exoskeletons or electrical stimulation to move their own limbs 
+(AL-Quraishi et al., 2018). The MoreGrasp project, funded by the H2020 EU program and where Bitbrain was 
+one of the partners, worked in this direction by developing a technology that allowed tetraplegic patients 
+to control, with their brain waves, functional electrical stimulation of the muscles and nerves that move 
+their paralyzed hand. The video below shows a brief description of the project.
+
+#rehabilitation
+Finally, interventions based on BCI can be used to improve some functions. For example, people suffering a 
+stroke can experience damage to the central nervous system that causes upper-limb paralysis. A BCI that links 
+brain activation during movement intention with peripheral feedback on the paralyzed limb can exploit 
+activity-dependent plasticity mechanisms to improve the function of the patient (López-Larraz et al., 2018). 
+
+The first time that a BCI was scientifically demonstrated to have rehabilitative effects in stroke patients 
+was in 2013 by a research team at the University of Tübingen (Ramos-Murguialday et al., 2013). The association 
+of specific brain patterns with congruent feedback, also known as neurofeedback, has the potential to help 
+reorganize brain circuits, leading to improvements in neuropsychiatric disorders like attention deficit and 
+hyperactivity, but also for cognitive enhancement in healthy populations (Sitaram et al., 2017).
+
+#Conclusion
+
+Communication between brains and machines sounded like science fiction until a few decades ago. Joint efforts 
+by engineers, neuroscientists, and clinicians have led to impressive advances in the field of brain-computer 
+interfaces, including the control of wheelchairs, robots, prosthetic limbs, and even implantable stimulators. 
+So far, most of the progress in this field has been done in research environments as proofs-of-concept, and 
+some small-scale clinical trials have provided very promising results for patients with different neurological diseases. 
+
+We foresee that in this decade, we will see actual BCI systems reaching the market for clinical and consumer 
+applications. This will come as a result of R&D milestones that are expected to occur in the next few years:
+
+Improvement of portable EEG technologies in terms of usability and reliability to effectively take BCIs home 
+(e.g., for video games, virtual reality, domotics, and even home-based rehabilitation).
+Development of more advanced implantable technologies to extend the real-world application of these systems 
+to other populations of patients, and even to healthy people, such as the invasive BCI technology that is 
+being developed at Elon Musk's new company, Neuralink.
+Exploitation of big data tools with many brain activity recordings for the optimization and personalization 
+of the BCI algorithms so that they can work reliably in uncontrolled environments.
+
+-------------------------
+
+title: What is neurorehabilitation and 4 leading projects in Europe
+
+url: https://www.bitbrain.com/blog/projects-neurorehabilitation
+
+notes:
+
+Although the brain has a basic structure and a given shape, the reality is that each human brain is unique 
+and behaves in a very different way to the rest. This difference is due, principally, to the fact that our 
+brain changes how it interacts with its surroundings, a phenomenon that is named neuroplasticity.
+
+-------------------------
+
+title: 
+
+url: https://www.bitbrain.com/blog/eeg-human-enhancement-rehabilitation
+
+notes:
+
+Although the brain has a basic structure and a given shape, the reality is that each human brain is unique 
+and behaves in a very different way to the rest. This difference is due, principally, to the fact that our 
+brain changes how it interacts with its surroundings, a phenomenon that is named neuroplasticity.
+
+#taxi drivers larger hippoampus
+One of the most well-known studies about this subject, which shows that neuroplasticity also occurs in adults, 
+is the study that was done of taxi drivers in London in 2000 [Ref] where the brains of a group of taxi drivers 
+were analysed against the brains of a control group. You must keep in mind that London taxi drivers are required 
+to pass a demanding exam, The Knowledge, which consists of learning more than 320 routes through more than 25,000 
+streets. The results of this study demonstrated that there were significant differences in the size of the rear 
+part of the hippocampus, the area of the brain which, amongst other things, plays an important role in spatial 
+memory and orientation. Therefore, the taxi drivers, above all those that had driven for longer, presented a 
+larger hippocampus than the rest of the participants.
+
+The plasticity allows the neurons to regenerate as much anatomically as functionally, forming new synaptic 
+connections and helping the nervous system to reorganise, restructure and even recover in some cases of brain 
+damage including stroke and traumatic brain injury.
+
+Many other diseases, such as brain haemorrhages, dementia, ADHD, major depression, ageing or neurological 
+injuries, cause damage in the brain that can bring associated changes in its structure, activity and 
+functioning. Usually, this brings a loss or decrease in some function of our body with it, which could be 
+the loss of movement of an arm or the loss of our ability to keep attention. However, this extraordinary 
+ability to reorganise that the brain has, allows new neural connections to be made, which in many cases can 
+support the recovery of the lost functions through programmes of neurorehabilitation.
+
+#What is neurorehabilitation and what types are there?
+
+Rehabilitation is a group of techniques and methods that are used to recover a function or activity of the 
+body that has been decreased or lost because of an accident or illness. The most common are motor rehabilitation 
+(lost motor ability), cognitive rehabilitation (lost cognitive ability and executive actions), and visual, 
+emotional or neurologic rehabilitation. Neurorehabilitation is a process we refer exclusively to for 
+rehabilitation that is used when the illness has happened in the nervous system. Rehabilitation is carried 
+out by a team of health professionals including occupational therapy.
+
+The objective of neurorehabilitation is to take advantage, appropriately, of neural plasticity, in order to 
+achieve a recovery from an injury, neurological disorders or neurological disabilities.
+
+These new therapies and scientific research projects around neurorehabilitation are based in the following 
+theoretical outline:
+
+1.Producing neuroplastic changes by methods of exogenous cerebral stimulation (caused by external measures) 
+or endogenous stimulation (caused by the person themselves).
+
+2. Measuring in real time the cerebral response to be able to generate feedback processes 
+(by means of a sensory method), in order to direct these neuroplastic changes, used in a passive form to 
+give information, or active to direct changes by learning.
+
+anotacoa minha: n entendi tao bem esse 2
+
+#Leading research projects on motor rehabilitation in Europe
+
+**The objective of motor rehabilitation is to recover the functionality and mobility of a limb, which has 
+been lost or decreased by an injury to the nervous system caused by a stroke, brain injury or spinal cord 
+injury, amongst others. This type of cerebral motor rehabilitation tries to regenerate the deteriorated 
+neural pathways, combining systems of measuring the neural activity (brain-computer interface), 
+neuroprosthetics, exoskeletons and neurorobots that mobilise limbs and systems that provide both visual 
+(e.g. virtual reality) as much as somatosensory (e.g. tactile stimulation) feedback. The central idea 
+is to mobilise the affected limbs at the precise moment in which the registered brain activity indicates 
+that it is trying to make the movement, maintaining the temporal consistency of the information that goes 
+by the afferent and efferent routes as much as possible in order to maximise the probability of achieving 
+a neural reorganisation that recovers the functionality.**
+
+The results of the innovation in neurorehabilitation are becoming an ally for millions of people in the 
+world that suffer some sort of disease that affects their nervous system. Although many of these projects 
+are in the investigation phase, accessible and specific solutions exist that are improving the quality of 
+life of the people that live their daily lives with this reality.
+-------------------------
+
+title: 
+
+url: 
+
+notes:
+
+
+-------------------------
+
+title: 
+
+url: 
+
+notes:
+
+-------------------------
+
+title: 
+
+url: 
+
+notes:
+
+==========================================
+
+to do:
+
+https://www.bitbrain.com/blog/qeeg-brain-mapping
+https://www.bitbrain.com/blog/eeg-technical-features
+https://www.bitbrain.com/blog/alpha-brain-waves
+
+recomendados pelo bitbrain para DL (estado da arte):
+state of the art models:
+	https://www.frontiersin.org/articles/10.3389/fnins.2020.00087/full
+	https://www.frontiersin.org/articles/10.3389/fnhum.2019.00076/full

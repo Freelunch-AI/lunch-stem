@@ -1,0 +1,7 @@
+Complete Learning Spark Tutorial Sequence:
+
+https://runawayhorse001.github.io/LearningApacheSpark/index.html
+
+Begginers guide:
+
+https://towardsdatascience.com/a-beginners-guide-to-apache-spark-ff301cb4cd92

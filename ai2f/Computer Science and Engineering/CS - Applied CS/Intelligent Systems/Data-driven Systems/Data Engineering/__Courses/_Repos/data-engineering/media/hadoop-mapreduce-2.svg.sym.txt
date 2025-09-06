@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\hadoop-mapreduce-2.svg_ee2300

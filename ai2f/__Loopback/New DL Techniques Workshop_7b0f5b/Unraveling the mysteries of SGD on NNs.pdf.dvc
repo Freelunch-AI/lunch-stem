@@ -1,0 +1,5 @@
+outs:
+- md5: 39a82ac28f91e6ba7357f916a4675637
+  size: 2192342
+  hash: md5
+  path: Unraveling the mysteries of SGD on NNs.pdf

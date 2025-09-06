@@ -1,0 +1,5 @@
+outs:
+- md5: dc3d49e78317b1671294aa4723af7cff
+  size: 13201747
+  hash: md5
+  path: bayesian_methods_for_rank_and_preference_data.pdf

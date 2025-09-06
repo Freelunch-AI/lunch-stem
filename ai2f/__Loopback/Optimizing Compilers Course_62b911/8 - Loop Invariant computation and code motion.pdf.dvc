@@ -1,0 +1,5 @@
+outs:
+- md5: 2661afa540d1c62b1e1b424d2f17b55a
+  size: 97091
+  hash: md5
+  path: 8 - Loop Invariant computation and code motion.pdf

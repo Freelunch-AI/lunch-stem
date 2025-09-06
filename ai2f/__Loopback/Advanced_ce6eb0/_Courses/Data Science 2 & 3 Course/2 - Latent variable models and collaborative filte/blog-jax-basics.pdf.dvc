@@ -1,0 +1,5 @@
+outs:
+- md5: 8bae0c6ca7c8e559986553004a1e7966
+  size: 216847
+  hash: md5
+  path: blog-jax-basics.pdf

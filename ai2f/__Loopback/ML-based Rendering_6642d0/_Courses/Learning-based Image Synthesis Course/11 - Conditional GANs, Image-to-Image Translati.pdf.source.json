@@ -1,0 +1,29 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Jun-Yan Zhu",
+      "university": null
+    },
+    {
+      "name": "Phillip Isola",
+      "university": null
+    },
+    {
+      "name": "Ming-Yu Liu",
+      "university": null
+    },
+    {
+      "name": "XunHuang",
+      "university": null
+    }
+  ],
+  "university_course_name": "16-726 Conditional GANs, Image-to-Image Translation",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 78,
+  "size_mb": 27.29,
+  "link_to_license": null,
+  "changes_were_made": false
+}

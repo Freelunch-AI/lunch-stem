@@ -1,0 +1,5 @@
+resposta exercício Bellman-Ford (slide p. 25)
+https://edisciplinas.usp.br/mod/resource/view.php?id=2970339
+
+Resposta exercício caminhos mínimos (slide p.40)
+https://edisciplinas.usp.br/mod/resource/view.php?id=2970345

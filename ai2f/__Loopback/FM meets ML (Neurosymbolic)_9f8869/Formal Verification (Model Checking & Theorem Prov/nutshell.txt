@@ -1,0 +1,6 @@
+# Theorem proving: can be used to prove any mathematical property (conjecture)
+
+# Model checking: can be used to prove any mathematical prperty of a system with finite states (discrete)
+or give high confidence in a system with infinite states (continuos)
+
+Both can be applied to program verification.

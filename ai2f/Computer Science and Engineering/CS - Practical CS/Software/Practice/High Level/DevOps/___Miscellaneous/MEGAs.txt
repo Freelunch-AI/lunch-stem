@@ -1,0 +1,6 @@
+https://github.com/kamranahmedse/developer-roadmap
+https://github.com/BrunoScaglione/devops-resources
+https://github.com/Lets-DevOps/awesome-learning
+https://github.com/BrunoScaglione/awesome-devops
+https://github.com/bregman-arie/devops-exercises
+https://github.com/HariSekhon/DevOps-Bash-tools

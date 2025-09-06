@@ -1,0 +1,5 @@
+outs:
+- md5: c93d6bb1977ba8511452c339a4910a85
+  size: 314205
+  hash: md5
+  path: L15_mrf_inference_variational_notes.pdf

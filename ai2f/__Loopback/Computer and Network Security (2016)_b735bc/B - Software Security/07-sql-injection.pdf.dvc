@@ -1,0 +1,5 @@
+outs:
+- md5: 5277606f95a9199af7bd504748dec2d7
+  size: 2424215
+  hash: md5
+  path: 07-sql-injection.pdf

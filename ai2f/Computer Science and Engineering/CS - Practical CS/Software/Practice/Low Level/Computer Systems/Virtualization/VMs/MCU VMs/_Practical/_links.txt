@@ -1,0 +1,5 @@
+https://github.com/SynchronVM/SynchronVM
+https://github.com/atomvm/AtomVM
+https://github.com/buserror/simavr
+https://github.com/lcgamboa/picsimlab
+https://github.com/PalatinCoder/PIC-Simulator

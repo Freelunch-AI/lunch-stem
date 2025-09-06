@@ -1,0 +1,6 @@
+Intro to prob theory
+https://online.stat.psu.edu/stat414/
+
+http://fourier.eng.hmc.edu/e176/lectures/probability/index.html
+
+https://www.probabilitycourse.com/chapter6/6_1_4_characteristic_functions.php

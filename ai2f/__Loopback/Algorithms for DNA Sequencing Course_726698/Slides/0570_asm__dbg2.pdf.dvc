@@ -1,0 +1,5 @@
+outs:
+- md5: 77a79077a4ee9d2b0b4665fba7bba1b7
+  size: 123634
+  hash: md5
+  path: 0570_asm__dbg2.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 2c25bc7c7339caff405a6b33fe8be4cd
+  size: 22009116
+  hash: md5
+  path: lecture_slides.pdf

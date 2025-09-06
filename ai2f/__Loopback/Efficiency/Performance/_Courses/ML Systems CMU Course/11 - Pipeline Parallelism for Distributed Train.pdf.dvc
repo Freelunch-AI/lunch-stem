@@ -1,0 +1,5 @@
+outs:
+- md5: 5ed80e67970ce8418b11b7980cbce553
+  size: 3997496
+  hash: md5
+  path: 11 - Pipeline Parallelism for Distributed Train.pdf

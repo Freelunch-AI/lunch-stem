@@ -1,0 +1,5 @@
+outs:
+- md5: f99dfe49116432c4c0345c39f3be317b
+  size: 186808
+  hash: md5
+  path: lasso_figure.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 2441b114df2bfc38a5b07c336066ea16
+  size: 459034
+  hash: md5
+  path: RPiSetup.pdf

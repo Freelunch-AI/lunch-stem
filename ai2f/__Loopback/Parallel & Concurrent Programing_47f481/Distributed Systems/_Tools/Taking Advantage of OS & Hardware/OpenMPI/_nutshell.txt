@@ -1,0 +1,5 @@
+Open MPI (based on Message Passing Interface) is also a programming platform, but instead provides one the ability to parallelize code 
+over a (non-)homogenous distributed system (e.g., a supercomputer). For instance, it's possible to parallelize an entire program over 
+a network of computers, or nodes, which communicate over the same network. Since these nodes are essentially computers, they have their 
+own memory layout and their own set of cores (see OpenMP description). Communication between nodes, when compared to shared memory systems, 
+can be difficult and is usually expensive.

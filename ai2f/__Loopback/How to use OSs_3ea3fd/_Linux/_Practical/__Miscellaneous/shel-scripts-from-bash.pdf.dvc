@@ -1,0 +1,5 @@
+outs:
+- md5: cda4a9ceb9be8bcdde405c705f731d82
+  size: 297082
+  hash: md5
+  path: shel-scripts-from-bash.pdf

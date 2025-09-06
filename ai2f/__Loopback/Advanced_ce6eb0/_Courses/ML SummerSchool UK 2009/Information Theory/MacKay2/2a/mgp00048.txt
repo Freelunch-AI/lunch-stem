@@ -1,0 +1,9 @@
+
+Low Density Parity Check Code (f = 7.5%)
+
+Iterative probabilistic decoding
+
+
+
+
+

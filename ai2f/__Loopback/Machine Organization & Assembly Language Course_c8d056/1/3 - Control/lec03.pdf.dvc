@@ -1,0 +1,5 @@
+outs:
+- md5: 30fe045f9e5bf38ad6f389e29d45d5f7
+  size: 65197
+  hash: md5
+  path: lec03.pdf

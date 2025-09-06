@@ -1,0 +1,5 @@
+outs:
+- md5: f8b797d1d9c93d5b7abac16366c6675c
+  size: 689924
+  hash: md5
+  path: approximation-algorithms.pdf

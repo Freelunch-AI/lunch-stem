@@ -1,0 +1,5 @@
+outs:
+- md5: 4754df695fec92f42b97a49b6d719921
+  size: 325554
+  hash: md5
+  path: LinearApproximation.pdf

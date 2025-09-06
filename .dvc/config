@@ -1,0 +1,8 @@
+[core]
+    remote = lunch-stem-remote-gdrive
+['remote "lunch-stem-remote-gdrive"']
+    url = gdrive://1bIMn9s6ZC9_fGNZrP_hg7o3SnGbolaDL
+    gdrive_acknowledge_abuse = true
+    gdrive_use_service_account = true
+    gdrive_service_account_json_file_path = ../lunch-stem-fadf503639fe.json
+    gdrive_service_account_user_email = dvc-lunchstem@lunch-stem.iam.gserviceaccount.com

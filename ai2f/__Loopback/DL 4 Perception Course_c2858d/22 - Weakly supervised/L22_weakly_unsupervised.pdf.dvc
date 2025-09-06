@@ -1,0 +1,5 @@
+outs:
+- md5: 85f0eaeb6f65a0b0437c77db2da958c4
+  size: 4772672
+  hash: md5
+  path: L22_weakly_unsupervised.pdf

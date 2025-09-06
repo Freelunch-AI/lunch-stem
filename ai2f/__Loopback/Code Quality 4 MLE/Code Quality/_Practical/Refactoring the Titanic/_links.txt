@@ -1,0 +1,2 @@
+https://github.com/BrunoScaglione/CQ4DS-notebook-sklearn-refactoring-exercise
+https://laszlo.substack.com/p/refactoring-the-titanic

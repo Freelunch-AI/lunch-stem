@@ -1,0 +1,5 @@
+outs:
+- md5: 206cd7237b743b4eb7be03235d1d0276
+  size: 111880
+  hash: md5
+  path: lecture09-multithreading.pdf

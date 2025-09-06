@@ -1,0 +1,5 @@
+outs:
+- md5: 3e64738c5bec76ee569944da2e090af0
+  size: 6061636
+  hash: md5
+  path: agi_lecture.pdf

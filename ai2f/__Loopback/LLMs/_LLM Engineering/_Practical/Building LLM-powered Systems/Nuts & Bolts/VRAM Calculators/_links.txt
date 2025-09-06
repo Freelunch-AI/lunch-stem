@@ -1,0 +1,2 @@
+https://huggingface.co/spaces/NyxKrage/LLM-Model-VRAM-Calculator
+https://vram.asmirnov.xyz/

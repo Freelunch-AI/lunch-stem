@@ -1,0 +1,1 @@
+https://doc.sling.si/en/workshops/programming-gpu-cuda/intro/hetsis/

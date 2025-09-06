@@ -1,0 +1,8 @@
+Aula 1 - Apresentação do curso e alguns pré-requisitos:
+https://drive.google.com/file/d/19WlybMNDNtyzFTyf9HD45QnSeMXzioH2/view
+
+Aula 2 - Teoremas de existência de solução, condições de otimalidade para otimização irrestrita:
+https://drive.google.com/file/d/1119npjDu6JICvLf9QPcYf6zDkASHd0Ug/view
+
+Aula 3 - Cone tangente, e o caso convexo:
+https://drive.google.com/file/d/1vo8I3Muna_-dw-q7nTGci-0MZB6_hRNU/view

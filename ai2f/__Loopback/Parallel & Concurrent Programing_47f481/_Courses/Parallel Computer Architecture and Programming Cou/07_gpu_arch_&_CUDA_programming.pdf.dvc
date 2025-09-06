@@ -1,0 +1,5 @@
+outs:
+- md5: 70c888fd57a40bd280c48c7203a1d800
+  size: 7821661
+  hash: md5
+  path: 07_gpu_arch_&_CUDA_programming.pdf

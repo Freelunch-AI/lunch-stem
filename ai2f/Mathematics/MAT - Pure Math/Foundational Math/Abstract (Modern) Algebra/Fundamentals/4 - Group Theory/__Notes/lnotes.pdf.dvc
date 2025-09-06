@@ -1,0 +1,5 @@
+outs:
+- md5: 5375237c409f25e7d89f386caacf1b9d
+  size: 278373
+  hash: md5
+  path: lnotes.pdf

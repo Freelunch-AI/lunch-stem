@@ -1,0 +1,5 @@
+outs:
+- md5: 8e80eb6978adcd2099613df48da5f1fb
+  size: 711505
+  hash: md5
+  path: Introduction_to_HDFS.pdf

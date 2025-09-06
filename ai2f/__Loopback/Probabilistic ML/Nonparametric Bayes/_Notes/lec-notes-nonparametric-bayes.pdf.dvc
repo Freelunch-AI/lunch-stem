@@ -1,0 +1,5 @@
+outs:
+- md5: fce6d5cb7c5d09118436a1bbbf7d5298
+  size: 1292458
+  hash: md5
+  path: lec-notes-nonparametric-bayes.pdf

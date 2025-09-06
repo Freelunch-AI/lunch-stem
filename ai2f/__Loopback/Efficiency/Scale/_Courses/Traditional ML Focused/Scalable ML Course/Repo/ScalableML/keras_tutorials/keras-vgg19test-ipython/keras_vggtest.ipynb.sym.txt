@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\keras_vggtest.ipynb_7afcca

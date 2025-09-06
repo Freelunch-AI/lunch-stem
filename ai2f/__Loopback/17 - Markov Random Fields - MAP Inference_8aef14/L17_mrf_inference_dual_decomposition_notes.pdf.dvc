@@ -1,0 +1,5 @@
+outs:
+- md5: 75875d9a68414519f276227df77fff5a
+  size: 210323
+  hash: md5
+  path: L17_mrf_inference_dual_decomposition_notes.pdf

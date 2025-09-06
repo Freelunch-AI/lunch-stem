@@ -1,0 +1,9 @@
+ALL of these procedures are done inside the new IP packet payload
+
+1. Confidentiality: encrypt original IP packet
+
+2. Integraty: crypto hash original IP packet
+
+3. Authentication: add signature to new IP packet
+
+4. Duplication: add ID in new IP packet payload

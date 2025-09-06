@@ -1,0 +1,5 @@
+outs:
+- md5: 20fe42add199edf2ef230748fa1bb8fa
+  size: 6444035
+  hash: md5
+  path: 05-normalizing-flows.pdf

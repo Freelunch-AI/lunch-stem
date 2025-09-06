@@ -1,0 +1,2 @@
+https://encord.com/blog/vision-language-models-guide/
+https://huggingface.co/blog/vision_language_pretraining

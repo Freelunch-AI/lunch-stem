@@ -1,0 +1,20 @@
+Aula 1 - Condições de Fritz-John e KKT, método de penalidade externa, Condições sequenciais de otimalidade:
+https://drive.google.com/file/d/1e5nbDiuyHOx8P7Grx1q_qXqm_xnaWsIa/view
+
+Aula 2 - Lema de Farkas, condição de Guignard, Condições de segunda ordem:
+https://drive.google.com/file/d/1K5bi0ccutClfOFZtgFhVnYqNxcv18P57/view
+
+Aula 3 - LICQ implica Abadie (igualdades):
+https://drive.google.com/file/d/1BwmfScsF3uCrQ_PiyPIC_UnqKkqTzjUI/view
+
+Aula 4 - Cond. necessária de segunda ordem:
+https://drive.google.com/file/d/1wSHfLrV_WGy2GPfcR0h1LG5nwwxLyBUo/view
+
+Aula 5 - Condição suficiente de segunda ordem (Fritz John):
+https://drive.google.com/file/d/1BDyi6bi4f0oz1u0tJeSKqyDER4x0faH9/view
+
+Aula 6 - Equações KKT. Exemplo: Desigualdade das médias:
+https://drive.google.com/file/d/1TZ9jnaQd_o5mtzlPERYMKGbRV9j1PJ1-/view
+
+Aula 7 - Exemplo: Lei da refração de Snell e lei da reflexão:
+https://drive.google.com/file/d/1aYtbx5Rr2VGN-X7CiU3RYKviv8qLFGkm/view

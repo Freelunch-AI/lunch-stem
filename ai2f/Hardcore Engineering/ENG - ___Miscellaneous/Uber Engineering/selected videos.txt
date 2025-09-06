@@ -1,0 +1,171 @@
+Uber:
+
+Videos na media de 15 min
+
+[Uber Seattle] Introduction to Kappa+ Architecture using Apache Flink
+https://www.youtube.com/watch?v=4qSlsYogALo
+
+[Uber Seattle] When Apache Pulsar Meets Apache Flink
+https://www.youtube.com/watch?v=_Kjn8oLy-H8
+
+[Destination:Web] AVS: An Open Standard for Autonomy Visualization in the Web
+https://www.youtube.com/watch?v=Cb5_Gy6oM0w
+
+[Uber Open Source] Engineering Sub-City Geos for a Hyper-Local Marketplace with Uber
+https://www.youtube.com/watch?v=wDuKeUkNLkQ
+
+[Uber Seattle] Michelangelo (MA) Learners and Transformers
+https://www.youtube.com/watch?v=I07n5qHnrpo
+
+[Visualization Nights] Introducing Uber’s Open Source Autonomous Visualization System
+https://www.youtube.com/watch?v=lSV7lyAAvuI
+
+[Uber Open Source ] Distributed Deep Learning with Horovod -- Alex Sergeev
+https://www.youtube.com/watch?v=D1By2hy4Ecw
+
+[Payments Platform] Evolution of Payments at Uber -- Nimish Sheth & Steven Karis
+https://www.youtube.com/watch?v=Dz6dAZs8Scg
+
+[Uber Open Summit 2018] Ingestion/Dispersal with our Generic Any-to-Any Marmaray Framework
+https://www.youtube.com/watch?v=6dyip49CdIw
+
+[Uber Open Summit 2018] Building Your Own Metrics Pipeline with M3
+https://www.youtube.com/watch?v=cHx4DuqINTM
+
+[Uber Open Summit 2018] Urban Computing with Advanced Visualization
+https://www.youtube.com/watch?v=ySmqs6dXQxc
+
+[Uber Open Summit 2018] Pyro: Deep Probabilistic Programming
+https://www.youtube.com/watch?v=aLFJ5ERxt2c
+
+[Go NYC] End-to-End Testing with Golang -- Adrian Witas
+https://www.youtube.com/watch?v=hfVAXTi39UA
+
+[Payments Platform] Payments Integration at Uber: A Case Study -- Gergely Orosz
+https://www.youtube.com/watch?v=yooCE5B0SRA
+
+[Uber Seattle] Building Reliable Microservices @ Uber -- Siva Kalva
+https://www.youtube.com/watch?v=LFyK-Li2-ZQ
+
+[Uber Seattle] Chaos Engineering @ Uber -- Dianne Laguerta
+https://www.youtube.com/watch?v=ywSAwYsIk8k
+
+[Distributed Tracing - NYC] Tracing a Kafka Pipeline -- Mahmoud Saada Agolo
+https://www.youtube.com/watch?v=ZpUMpaWj0i8
+
+[React Native] Uber's Deployment of React Native at Scale -- Arun Nagarajan
+https://www.youtube.com/watch?v=_81U12ome9k
+
+[Uber Open Source] Profile Spark Applications at Scale -- Bo Yang
+https://www.youtube.com/watch?v=fCTdbX-mG2I
+
+[Visualization Nights] Painting the World with Data - Erik Klimczak
+https://www.youtube.com/watch?v=Yl5Ey3phMXM
+
+Uber Tech Day: The Evolution of World Map Computing Quality
+https://www.youtube.com/watch?v=twF_CBPG9Tk
+
+Uber Tech Day: Software Networking at Uber through the Ages
+https://www.youtube.com/watch?v=83_Pj7olRFk
+
+[Visualization Nights] Augmenting Visualization Tools with Automated Design & Recommendation
+https://www.youtube.com/watch?v=4aH_wBBxS6Y
+
+[Destination:Web] Server Rendering with React & Next.js
+https://www.youtube.com/watch?v=4OeXjefI5dQ
+
+Uber NYC Engineering Tech Talk Series: Call me, MABI: Iterating at scale
+https://www.youtube.com/watch?v=ysrApvOZ-IM
+
+Introduction to Machine Learning at Uber
+https://www.youtube.com/watch?v=ydsrZcKLqi0
+
+Uber Technology Day: Automatic Algorithm Selection for Anomaly Detection
+https://www.youtube.com/watch?v=15_zK9RXKyc
+
+Uber Technology Day: Mobile Architecture for Scale
+https://www.youtube.com/watch?v=ZTZioPnsJtc
+
+Serverless Meetup - Intro to AWS Lambda and Uber's Catalyst Serverless platform
+https://www.youtube.com/watch?v=8DXJkkoTgfQ
+
+Serverless Meetup - Intro to AWS Lambda and Uber's Catalyst Serverless platform
+https://www.youtube.com/watch?v=8DXJkkoTgfQ
+
+Uber NYC Engineering Tech Talk Series: Jigsaw: Helping Users in Distress
+https://www.youtube.com/watch?v=t-egJv9NQ_U
+
+Uber NYC Engineering Tech Talk Series: Linked Data for the Smart City
+https://www.youtube.com/watch?v=I5NXI6MHHDo
+
+Uber Seattle Engineering: Meet Driver Engineering
+https://www.youtube.com/watch?v=X5Cx14EORFU
+
+[Uber Mobility] Architecture Rewrite - Tuomas Artman
+https://www.youtube.com/watch?v=bB9e7ZYVYCo
+
+Uber Technology Day: Automatic Algorithm Selection for Anomaly Detection
+https://www.youtube.com/watch?v=15_zK9RXKyc
+
+Uber Technology Day: Monorepo to Multirepo and Back Again
+https://www.youtube.com/watch?v=lV8-1S28ycM
+
+Uber Technology Day: Thinking Like a Human: Toward Flexible Artificial Intelligence
+https://www.youtube.com/watch?v=nft_HkUBIU8
+
+Uber Technology Day: Building an Experimentation Platform at Uber
+https://www.youtube.com/watch?v=9bl7SPSqbX0
+
+Uber Engineering: Towards 99.99% Availability via Intelligent Real-Time Alerting
+https://www.youtube.com/watch?v=_AkX42u72wk
+
+Uber Engineering: Sequential Testing Method in A/B Experimentation
+https://www.youtube.com/watch?v=4rWOx5fOJbg
+
+[Uber Mobility] Speeding Up Mobile Releases with 3x3 - Drew Hannay
+https://www.youtube.com/watch?v=dtdFIJ04EDo
+
+[Uber Mobility] Faster Tests with Test Parallelization - Justin Martin & Daniel Ribeiro
+https://www.youtube.com/watch?v=RU-HyXyfzsI
+
+[Uber Mobility] An Ideal CI Setup for Mobile - Valera Zakharov
+https://www.youtube.com/watch?v=T5GUcIzx750
+
+[Uber Mobility] High-Performance Networking -- Ganesh Srinivasan
+https://www.youtube.com/watch?v=7mFPeQxsVxk
+
+Engineering for the Long Game: Managing System Complexity Over Time
+https://www.youtube.com/watch?v=fn5fGExdfWY
+
+A History of Site Reliability Engineering at Uber
+https://www.youtube.com/watch?v=qJnS-EfIIIE
+
+A History of Site Reliability Engineering at Uber
+https://www.youtube.com/watch?v=qJnS-EfIIIE
+
+Uber Engineering: Data Visualization at Uber
+https://www.youtube.com/watch?v=nLy3OQYsXWA
+
+Uber Marketplace: Fixing GPS in Cities
+https://www.youtube.com/watch?v=-6JZSV3jjLA
+
+[Visualization Nights] Designing for Complex Data Visualization - Elijah Meeks
+https://www.youtube.com/watch?v=iqWSJLFa9hg
+
+[Uber Marketplace] An Introduction -- Chintan Turakhia
+https://www.youtube.com/watch?v=cdNn44JYtNw
+
+[Uber Open Summit 2018] Scaling Uber's Big Data Platform
+https://www.youtube.com/watch?v=aveES6gn1Gs
+
+[Visualization Nights] Real-time Mapping with Vision -- Tory Smith (Mapbox)
+https://www.youtube.com/watch?v=aeFLvwu6wLw
+
+[Uber Open Summit Sofia 2019] Visualization Frameworks at Uber
+https://www.youtube.com/watch?v=r18wCWbnnQw
+
+[Uber Open Summit Sofia 2019] Metrics at Uber
+https://www.youtube.com/watch?v=GYmDVsNueY4
+
+[Destination:Web] A Doc Site That Writes Code for You
+https://www.youtube.com/watch?v=wSq-k6LPX7E

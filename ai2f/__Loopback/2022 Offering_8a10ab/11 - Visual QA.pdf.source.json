@@ -1,0 +1,33 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Devi Parikh",
+      "university": "Virginia Tech"
+    },
+    {
+      "name": "Dhruv Bhatra",
+      "university": null
+    },
+    {
+      "name": "Ethan Perez",
+      "university": null
+    },
+    {
+      "name": "Jacob Andreas",
+      "university": null
+    },
+    {
+      "name": "Marcus Rorbach",
+      "university": null
+    }
+  ],
+  "university_course_name": "Visual Question Answering",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 178,
+  "size_mb": 23.66,
+  "link_to_license": null,
+  "changes_were_made": false
+}

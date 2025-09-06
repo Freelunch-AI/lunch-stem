@@ -1,0 +1,5 @@
+https://about.gitlab.com/blog/2022/08/15/the-importance-of-compliance-in-devops/
+https://dzone.com/refcardz/compliant-devops
+https://www.anecdotes.ai/post/devops-compliance-automation-tools
+https://www.opsmx.com/blog/how-to-ensure-compliance-in-devops/
+https://devops.com/how-to-use-devops-for-compliance/amp/

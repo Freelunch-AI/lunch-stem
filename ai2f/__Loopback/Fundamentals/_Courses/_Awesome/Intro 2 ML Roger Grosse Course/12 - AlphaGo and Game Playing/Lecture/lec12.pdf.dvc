@@ -1,0 +1,5 @@
+outs:
+- md5: 42228dcc95e3f548c53c6b66a0dee920
+  size: 5127431
+  hash: md5
+  path: lec12.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 7fd1c7e8164ba5193751f705e69d3f92
+  size: 2953963
+  hash: md5
+  path: grammar_slides.pdf

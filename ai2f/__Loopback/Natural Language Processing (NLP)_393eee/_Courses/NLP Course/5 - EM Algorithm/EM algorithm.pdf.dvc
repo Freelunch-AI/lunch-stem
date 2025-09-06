@@ -1,0 +1,5 @@
+outs:
+- md5: 31c10422ed2b77a8c307717c38bd39b6
+  size: 1651884
+  hash: md5
+  path: EM algorithm.pdf

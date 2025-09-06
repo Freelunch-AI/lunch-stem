@@ -1,0 +1,5 @@
+outs:
+- md5: 17a44ad1d699ca707ad96fe2e9fb3230
+  size: 325598
+  hash: md5
+  path: gputhread.pdf

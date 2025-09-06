@@ -1,0 +1,17 @@
+title: Methods for artifact detection and removal
+from scalp EEG: A review
+
+DOI: http://dx.doi.org/10.1016/j.neucli.2016.07.002
+
+notes:
+
+
+--------------------------------
+
+title: EEG artifact removal—state-of-the-art and guidelines
+
+DOI: http://dx.doi.org/10.1088/1741-2560/12/3/031001
+
+notes:
+
+

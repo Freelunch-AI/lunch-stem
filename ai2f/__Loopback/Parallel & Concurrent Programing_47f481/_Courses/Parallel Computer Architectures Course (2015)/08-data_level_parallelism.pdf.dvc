@@ -1,0 +1,5 @@
+outs:
+- md5: 001bdae26d64e74cb2b8189f1ee1224f
+  size: 3868406
+  hash: md5
+  path: 08-data_level_parallelism.pdf

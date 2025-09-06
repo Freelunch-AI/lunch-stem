@@ -1,0 +1,5 @@
+outs:
+- md5: ebc0b891225418ef97cb1e940ae3cb63
+  size: 2545508
+  hash: md5
+  path: cheatsheet-convolutional-neural-networks.pdf

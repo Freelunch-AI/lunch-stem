@@ -1,0 +1,3 @@
+https://developer.mozilla.org/en-US/docs/WebAssembly
+
+https://blog.logrocket.com/webassembly-how-and-why-559b7f96cd71/

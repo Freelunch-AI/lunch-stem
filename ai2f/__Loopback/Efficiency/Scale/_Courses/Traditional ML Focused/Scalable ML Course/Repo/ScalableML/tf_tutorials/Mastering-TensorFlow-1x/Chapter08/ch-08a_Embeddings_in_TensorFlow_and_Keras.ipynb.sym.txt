@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\ch-08a_Embeddings_in_TensorFlow_and_Keras.ipynb_9c60c3

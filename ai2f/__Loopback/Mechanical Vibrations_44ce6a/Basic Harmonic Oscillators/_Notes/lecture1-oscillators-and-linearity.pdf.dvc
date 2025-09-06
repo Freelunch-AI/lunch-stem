@@ -1,0 +1,5 @@
+outs:
+- md5: b83abfadd2b995c3855308c88e65fb97
+  size: 308203
+  hash: md5
+  path: lecture1-oscillators-and-linearity.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 118da316fd4505793d7778da2d100c75
+  size: 4175311
+  hash: md5
+  path: nn4nlp-20-latent.pdf

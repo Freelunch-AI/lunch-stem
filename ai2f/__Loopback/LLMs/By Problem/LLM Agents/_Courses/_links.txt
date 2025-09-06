@@ -1,0 +1,4 @@
+https://learn.deeplearning.ai/courses/ai-agentic-design-patterns-with-autogen/lesson/1/introduction
+https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/
+https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/
+https://www.deeplearning.ai/short-courses/building-your-own-database-agent/?utm_campaign=azure-launch&utm_content=296802097&utm_medium=social&utm_source=linkedin&hss_channel=lcp-18246783

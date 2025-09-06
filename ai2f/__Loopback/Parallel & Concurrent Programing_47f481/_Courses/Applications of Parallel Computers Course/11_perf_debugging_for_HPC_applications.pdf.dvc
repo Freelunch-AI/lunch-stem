@@ -1,0 +1,5 @@
+outs:
+- md5: b4f1c84971e08555d9e75c22978351ad
+  size: 8613096
+  hash: md5
+  path: 11_perf_debugging_for_HPC_applications.pdf

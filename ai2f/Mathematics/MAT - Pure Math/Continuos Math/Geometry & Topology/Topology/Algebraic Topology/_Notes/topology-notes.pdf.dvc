@@ -1,0 +1,5 @@
+outs:
+- md5: 642dbeb54369cd61c9939a6b790782cd
+  size: 479603
+  hash: md5
+  path: topology-notes.pdf

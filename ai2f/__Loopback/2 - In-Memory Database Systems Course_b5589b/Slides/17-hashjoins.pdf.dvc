@@ -1,0 +1,5 @@
+outs:
+- md5: 9e6d3036f7b4877c3f88b70efd2889b9
+  size: 1302938
+  hash: md5
+  path: 17-hashjoins.pdf

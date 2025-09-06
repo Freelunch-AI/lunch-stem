@@ -1,0 +1,4 @@
+https://www.coursera.org/lecture/probabilistic-graphical-models/factors-tEZ6S
+https://www.coursera.org/lecture/probabilistic-graphical-models/general-gibbs-distribution-GYaK2
+https://www.coursera.org/lecture/probabilistic-graphical-models/pairwise-markov-networks-KTtNd
+https://www.coursera.org/lecture/probabilistic-graphical-models/independencies-in-markov-networks-6HFmc

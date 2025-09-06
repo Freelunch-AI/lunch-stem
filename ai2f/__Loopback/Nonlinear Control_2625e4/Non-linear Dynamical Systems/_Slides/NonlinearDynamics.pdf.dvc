@@ -1,0 +1,5 @@
+outs:
+- md5: d88c52ede37aa32eda2d687476804b89
+  size: 1585049
+  hash: md5
+  path: NonlinearDynamics.pdf

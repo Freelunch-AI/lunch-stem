@@ -1,0 +1,5 @@
+outs:
+- md5: 8b60782e971f9f19ec8d8a868135760f
+  size: 10591325
+  hash: md5
+  path: 18-robot-motion-planning.pdf

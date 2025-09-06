@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\t10k-images-idx3-ubyte.gz_5883ea

@@ -1,0 +1,5 @@
+outs:
+- md5: 6ca1bd6f2117b369e70675464ed3d56a
+  size: 410189
+  hash: md5
+  path: sgd-gd-revisited.pdf

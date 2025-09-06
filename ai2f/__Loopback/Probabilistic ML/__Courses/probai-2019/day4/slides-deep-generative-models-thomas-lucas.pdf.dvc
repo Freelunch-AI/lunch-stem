@@ -1,0 +1,5 @@
+outs:
+- md5: 4d7daf744dba87e96417b8563aa78ef5
+  size: 31318192
+  hash: md5
+  path: slides-deep-generative-models-thomas-lucas.pdf

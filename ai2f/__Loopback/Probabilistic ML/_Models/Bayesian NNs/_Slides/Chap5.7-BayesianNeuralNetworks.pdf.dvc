@@ -1,0 +1,5 @@
+outs:
+- md5: 78c7a27dd779cc80fc3c2f275f620d71
+  size: 1058132
+  hash: md5
+  path: Chap5.7-BayesianNeuralNetworks.pdf

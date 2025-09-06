@@ -1,0 +1,5 @@
+outs:
+- md5: 6d3902e001435c194c60d507a345b3f2
+  size: 462180
+  hash: md5
+  path: Finite-state machine.pdf

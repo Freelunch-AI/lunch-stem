@@ -1,0 +1,5 @@
+outs:
+- md5: 34b18b4a413c63d608ca9722a2cec612
+  size: 362116
+  hash: md5
+  path: 06-Query-Execution.pdf

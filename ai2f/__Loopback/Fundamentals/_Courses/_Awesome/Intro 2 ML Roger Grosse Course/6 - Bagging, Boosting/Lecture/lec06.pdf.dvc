@@ -1,0 +1,5 @@
+outs:
+- md5: a2152a5ab41145f4f2df6aa3004711fc
+  size: 3722656
+  hash: md5
+  path: lec06.pdf

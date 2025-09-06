@@ -1,0 +1,5 @@
+outs:
+- md5: 61a80fd3828429ae71f457244e4ffc56
+  size: 2609850
+  hash: md5
+  path: slides-course-dynamical-systems.pdf

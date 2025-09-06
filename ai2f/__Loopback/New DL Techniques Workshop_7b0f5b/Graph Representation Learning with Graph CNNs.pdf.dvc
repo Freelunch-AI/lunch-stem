@@ -1,0 +1,5 @@
+outs:
+- md5: 8d093e57f04553f5463011c199b5190f
+  size: 9729110
+  hash: md5
+  path: Graph Representation Learning with Graph CNNs.pdf

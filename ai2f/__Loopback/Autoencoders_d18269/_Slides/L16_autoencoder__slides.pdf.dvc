@@ -1,0 +1,5 @@
+outs:
+- md5: a67ae19dc357ad2b77678c8c678a4fd8
+  size: 2912238
+  hash: md5
+  path: L16_autoencoder__slides.pdf

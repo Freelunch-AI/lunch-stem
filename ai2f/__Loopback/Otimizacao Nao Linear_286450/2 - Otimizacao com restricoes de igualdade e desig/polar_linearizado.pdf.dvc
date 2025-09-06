@@ -1,0 +1,5 @@
+outs:
+- md5: 6c69251c11ca997e5dcdebe53e469c9f
+  size: 1335949
+  hash: md5
+  path: polar_linearizado.pdf

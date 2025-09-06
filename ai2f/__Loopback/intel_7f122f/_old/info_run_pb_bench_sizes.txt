@@ -1,0 +1,7 @@
+python run_pb_bench_sizes.py -hw CPU -pb validation_networks/tf2_keras_mobilenetv2_class/tf_mobilenet_dim_224_224_frozen.pb -size [1,224,224,3]
+
+-hw (CPU|MYRIAD)
+-size (batch, width, height, channels=3)
+-pb Frozen file
+
+finished reports can be found in profiling_data_sync

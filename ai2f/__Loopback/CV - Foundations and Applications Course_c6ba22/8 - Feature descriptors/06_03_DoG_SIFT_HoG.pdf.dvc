@@ -1,0 +1,5 @@
+outs:
+- md5: f16b20dc32238cbc9ebd3a7a44afe8fc
+  size: 811561
+  hash: md5
+  path: 06_03_DoG_SIFT_HoG.pdf

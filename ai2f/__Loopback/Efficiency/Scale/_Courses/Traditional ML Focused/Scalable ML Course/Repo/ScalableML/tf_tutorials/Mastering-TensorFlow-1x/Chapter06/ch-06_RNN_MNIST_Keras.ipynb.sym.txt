@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\ch-06_RNN_MNIST_Keras.ipynb_c9dc4b

@@ -1,0 +1,5 @@
+outs:
+- md5: 6ba13cf0e97a75669185cb8a18859069
+  size: 346382
+  hash: md5
+  path: spectral.pdf

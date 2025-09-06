@@ -1,0 +1,5 @@
+outs:
+- md5: e7323d489e6830e946801a1c94aa3aa2
+  size: 224503
+  hash: md5
+  path: svm-notes.pdf

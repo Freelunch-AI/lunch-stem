@@ -1,0 +1,237 @@
+link do video: https://www.youtube.com/watch?v=1nVUfZg2dSA
+codigo do projeto: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbl85LUVYd1loRWJ0am5SN2FFeWpxR3JQcEN5UXxBQ3Jtc0tsdnZCU2FPcHYxRFBjbzlZcWwyMk5sbDYzcFpRVGljY2E2RmR5cS1ZNWdOVWI0QkVNUlEzbHhyc2Y2WG93bkduSE53TTdscFpMQWxQN3RqVFBsZjJVNC1SeDZzcXhGMWJONHZ3YTFPUVBNMUdhZDNPYw&q=https%3A%2F%2Fgithub.com%2Frocketseat-content%2Freact-nextjs-typescript-structure
+
+1. criou projeto com create next app
+	1.1 lembrando q nao precia de react router dom
+	cada arquivo dentro de pages já é uma rota
+	1.2 podemos usar a tah head pra colocar meta tags
+	pra indexagem
+2. instalou typescript e as tipagens
+3. roda yarn dev que cria um ts.config.json e um next-env
+pq ele detectou que  a gent eta usando typescript
+4. intalou eslint
+5. yarn eslint --init
+	5.1 na pergunta where does you could run? seleciona tanto browser como
+	node pq eh server side rendering
+instala todas dependencias pelo eslint msm (usa npm)
+ai deleta o package-lock gerado e roda yarn pra instalar com yarn 
+6. instalou pacotes: plugin prettier e config prettier
+dentro do eslin.json em na propriedade "env" já coloca "jest": true dentro;
+emm "extends" colocou: "prettier/@typescript-eslint", "pretti/standard", "prettier/react"
+que sao as integracoes do prettier com oq a gente ta utilizando. No plugins
+coloca "pretttier" e em "rules" coloca "prettier/prettier": "error" e "space-before-function-paren": "off" e 
+"react/prop-types": "off"
+7. criou .eslintignore e colcou lah: 
+	node_modules
+	.next
+	/*.js
+8. criou prettier.config.js e colocou:
+
+module.exports = {
+	semi: false,
+	singleQuote: true,
+	arrowParens: 'avoid',
+	trailingComma: 'none',
+	endOfLine: 'auto'
+};
+
+colocar o fucntional component assim:
+
+exemplo:
+
+const Home: React.FC = () => {}
+
+e se tiver props:
+
+exemplo:
+
+import { AppProps } from 'next/app'
+
+const App: React.FC<AppProps> = ({Component, pageProps}) => {}
+
+9. instalar extensao EditorConfig
+-> muda as cofiguracoes do editor independente da IDE
+pra td mundo do time, msm que em ides diferentes, ficarem igual
+
+10. fazer genarate .editorconfig
+
+mudar as linhas para:
+
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+
+11. Configuracao do styled components pra next js
+obs: pq o styled ccomponents sem qq configuracao pra nextjs
+ele soh funciona no lado do cliente, isso vai causar um flesh na tela, tipo
+vai chegar do servidor sem estilo e ai vai ficar com estilo
+
+	11.1 instalar styed components
+
+	11.2 criou babael.config.js
+	
+	11.3 colocou e exemplo q o proprio nextjs da:
+
+	module.exports = {
+		"presets": ["next/babel"],
+		"plugins": [["styled-components", {"ssr":true}]]
+	};
+
+	11.4 criou_document.tsx dentro de pages:	
+	
+	copiou e colou oq ta no exemplo do nextjs tb e alterou isso:
+
+		ajeitando coisas:
+		colocar a tipagem de promise na fucnao asincrona
+
+		exemplo:
+
+		import Document, {DocumentInitialProps} from 'next/document'
+
+		export defaultstatic async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {}
+
+
+	esse arquivo colete os styles da pagina do serverside rendering e aplica na pagina antes de ficar pronta pro cliente
+
+12. Criando estilos globais:
+
+obs: o next entende quando vc muda a pasta pages de lugar
+
+cria um diretorio styles e denntro dele:
+
+	global.ts
+
+13. ai importa no _app.tsx e fica assim exemplo:
+
+return (
+	<ThemeProvider theme={theme}>
+		<Component {...pageProps} />
+		<GlobalStyle />	/* vai ter acesso ao theme por props*/
+	<ThemeProvider/>
+)
+
+14. criou arquivo de tema theme.js dentrod e styles
+
+15. criou arquivo styled.d.ts
+por padrao se olha essse arquivo (.d.ts) pra procurar tipos
+
+	detnro dele importou styled components e tema
+
+	import 'styled-compoenents'
+	import theme from './theme'
+	
+	export type Theme = typeof theme
+
+	declare module 'styled-components' {
+		export interface DefaultTheme extends Theme {}
+	}
+		
+	pra o eslint nao ficar reclamando ele colocou um codigo pronto do eslint de no mpty interface off (eh um comentario)
+	
+	isso tudo soh pro eslint reconhecer a tipagem quandoa  genteusar theme
+
+
+	
+16. fontes: se  agente colocar uam fonte head de alguma pagina vai ser soh pra aquela pagina
+pra ser globla tem que mexer no _document.tsx
+
+dentre desse aquivo colocar:
+
+import {Html, Head, Main} from 'next/document'
+
+render(): JSX.Element {
+	return (
+		<Html lang="pt">
+			<Head>
+				<meta charSet="utf-8" />
+				<link
+					href="linkdafonte"
+					rel="stylesheet"
+				/>
+				
+				<link rel="icon" href="linkdofavicon"/> /* é o icone que aparece na aba do browser */
+			</Head>	
+			<body>
+				<Main />
+				<NextScript />
+			</body>
+		</Html>
+	)
+}
+
+17. integrar plugin de imagens
+
+apenas importar a imagem e usar ela dentrod e umm <img src={myimage} alt=""/> nao vai funcionar
+
+por padrao no next tem que colocar na pasta public e ai nem precissa importar soh coloca src="/rocketseat.svg"
+
+problema disso: n da pra tratar nenhuma imagem
+
+solucao: plugin next-images
+
+yarn add next-iamges
+
+criar next.config.js e colocar:
+
+const withImages = require('next-images')
+module.exports = withImages({
+	esModule: true
+})
+
+dentro do next.env.ts adicionar:
+
+/// <reference types="next-images" />
+
+pra ele entender q quando a gente importar um arquivo de imagem
+ele eh um arquivo válido
+
+18. como a gente mudou configuracao do next, parar e rodar aplicacao denovo
+
+em vez dele referenciar e fazer uma requisicao http pra pegar a imagem, ele jah embuti o proprio codigo
+da imagem svg dentro
+
+problema: ele converte pra abse 64 e isso pra imagem grande pode ficar ruim
+
+solucao: 
+
+yarn add babel-plugin-inline-react-svg
+
+vai no babel.config.js e coloca ele:
+
+"inline-react-svg" dentro de plugins
+
+agora oq muda eh na importacao que a gente importa a imgame como componente react:
+
+import RcoketseatLogo from '../assets/rocketseat.svg'
+
+ai pra usar usa <RocketseatLogo />
+
+obs: isso soh pra svg, pro resto continua fazendo base64 mas q jah eh melhor doq ue o padroa da web de fazer requisicao http pra cada imagem
+
+
+19. estilizacao de paginas
+
+separa estilos das pages:
+
+dentro da  pasta styles cria pasta pages
+e ai criar aquivo de estilizacao de cada pagina
+
+
+outras bibliotecas recomendadas:
+
+- jest e cypress (pra testes de integracao)
+
+- SWR
+
+
+
+
+
+
+
+
+
+
+
+
+

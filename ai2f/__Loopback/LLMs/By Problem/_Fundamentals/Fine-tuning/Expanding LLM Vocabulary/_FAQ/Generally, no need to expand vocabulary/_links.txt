@@ -1,0 +1,4 @@
+Basically you will just suffer from data distribution drift from having it pretrained on a certian token distribution; and
+finetuned and used for inference at a new token distribution.
+
+https://datascience.stackexchange.com/questions/123325/how-do-we-adapt-llm-token-embeddings-with-custom-vocab

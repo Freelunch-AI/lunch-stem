@@ -1,0 +1,33 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "A. van den Oord",
+      "university": null
+    },
+    {
+      "name": "O. Vinyals",
+      "university": null
+    },
+    {
+      "name": "K. Kavukcuoglu",
+      "university": null
+    },
+    {
+      "name": "Yulia Rubanova",
+      "university": null
+    },
+    {
+      "name": "Eddie (Shu Jian) Du",
+      "university": null
+    }
+  ],
+  "university_course_name": "CSC2547/STA4273",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": null,
+  "num_of_pages": 33,
+  "size_mb": 0.93,
+  "link_to_license": null,
+  "changes_were_made": false
+}

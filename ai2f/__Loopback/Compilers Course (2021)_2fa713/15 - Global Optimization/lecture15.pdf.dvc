@@ -1,0 +1,5 @@
+outs:
+- md5: 09fecc5085c6c496a8ec8bd720f82eca
+  size: 205551
+  hash: md5
+  path: lecture15.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: a417c076c9307a619e3029094f4c7b38
+  size: 211580
+  hash: md5
+  path: hw5-sol.pdf

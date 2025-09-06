@@ -1,0 +1,5 @@
+outs:
+- md5: 810c849808caad48e9b6e08a43f74644
+  size: 1057972
+  hash: md5
+  path: 06-memory_consistency_models.pdf

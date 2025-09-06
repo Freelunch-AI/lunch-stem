@@ -1,0 +1,8 @@
+Aula 1: Penalidade externa e ideias iniciais. Algoritmo geral com shifts:
+https://drive.google.com/file/d/16BLL2A_J7j2MWD8LLuIw4NxhSwnDwmPZ/view
+
+Aula 2: Resultados com resolução global aproximada dos subproblemas:
+https://drive.google.com/file/d/1Ip6d0qHd5w3QqGvqQpXe80WYiZA7xwBZ/view
+
+Aula 3: Resultados encontrando pontos estacionários aproximados:
+https://drive.google.com/file/d/1zoGe_s3Fa2Pz-1HafPoPGx5W1JDff6Cf/view

@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\KafkaStreamExample3.png_0bfa0a

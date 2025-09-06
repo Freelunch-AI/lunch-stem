@@ -1,0 +1,22 @@
+/1 - Intro.pdf
+/10 - Data and Model Parallelism for Distributed.pdf
+/11 - Pipeline Parallelism for Distributed Train.pdf
+/12 - Memory-Efficient Training - Tensor Remater.pdf
+/13 - Memory-Efficient Training - Zero Redundanc.pdf
+/14 - Transformers and Language Models.pdf
+/15 - Resource-Efficient Execution of DL Computa.pdf
+/16 - Graph Neural Networks.pdf
+/17 - Autotuning Production ML Compilers.pdf
+/18 - ML Hardware.pdf
+/18 - Model Compression.pdf
+/19 - Disruptive Research on Distributed ML Syst.pdf
+/2 - Intro DNNs.pdf
+/20 - Federated learning.pdf
+/21 - The library to accelerate training and inf.pdf
+/3 - Intro DL Systems.pdf
+/4 - Systems for DL.pdf
+/5 - Systems for Classical ML.pdf
+/6 - ML Compilation 1.pdf
+/7 - ML Compilation 2.pdf
+/8 - Graph-Level Optimizations.pdf
+/9 - RL for Device Placement and Graph Optimizat.pdf

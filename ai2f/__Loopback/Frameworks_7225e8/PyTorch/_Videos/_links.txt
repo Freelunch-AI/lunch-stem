@@ -1,0 +1,2 @@
+Daniel Bourke: Learn Pytorch in a Day
+https://www.youtube.com/watch?v=Z_ikDlimN6A

@@ -1,0 +1,29 @@
+{
+  "license": "Open Access Policy Articles",
+  "authors": [
+    {
+      "name": "Jasper Snoek",
+      "university": "University of Toronto"
+    },
+    {
+      "name": "Hugo Larochelle",
+      "university": "University of Sherbrooke"
+    },
+    {
+      "name": "Ryan P. Adams",
+      "university": "Harvard University"
+    },
+    {
+      "name": "Hutter",
+      "university": null
+    }
+  ],
+  "university_course_name": null,
+  "publisher": "Advances in Neural Information Processing Systems",
+  "educational_platform": null,
+  "source_link": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:11708816",
+  "num_of_pages": 10,
+  "size_mb": 0.55,
+  "link_to_license": null,
+  "changes_were_made": false
+}

@@ -1,0 +1,5 @@
+outs:
+- md5: d810b106c3125338e7f3d718cbe8a60f
+  size: 1383996
+  hash: md5
+  path: 13_directory_cache_coherence.pdf

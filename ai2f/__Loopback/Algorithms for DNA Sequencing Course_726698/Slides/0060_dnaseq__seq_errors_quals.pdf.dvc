@@ -1,0 +1,5 @@
+outs:
+- md5: 3cbaa56a14f37fee0cca36b3c6b4a60f
+  size: 556707
+  hash: md5
+  path: 0060_dnaseq__seq_errors_quals.pdf

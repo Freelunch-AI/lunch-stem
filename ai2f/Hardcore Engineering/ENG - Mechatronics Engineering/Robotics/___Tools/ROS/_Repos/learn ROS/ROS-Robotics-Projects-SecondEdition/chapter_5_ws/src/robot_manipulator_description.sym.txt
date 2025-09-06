@@ -1,0 +1,1 @@
+temp_extracted_local\__Loopback\robot_manipulator_description_8b133e

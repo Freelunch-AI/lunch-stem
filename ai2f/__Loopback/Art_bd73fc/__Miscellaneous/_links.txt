@@ -1,0 +1,4 @@
+https://magenta.tensorflow.org/
+https://medium.com/artists-and-machine-intelligence
+https://kcimc.medium.com/a-return-to-machine-learning-2de3728558eb
+https://medium.com/machine-intelligence-report/machine-deep-learning-in-an-artistic-context-441f28774bcc

@@ -1,0 +1,5 @@
+outs:
+- md5: 9d08456f67d401f68fa88e2061aca45f
+  size: 5419032
+  hash: md5
+  path: discretization-of-continuous-state-space-MDPs-v.pdf

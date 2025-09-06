@@ -1,0 +1,5 @@
+outs:
+- md5: 93e00a86816c212476e1999e99d13d73
+  size: 3047565
+  hash: md5
+  path: onur-comparch-fall2020-lecture24-simdandgpu-aft.pdf

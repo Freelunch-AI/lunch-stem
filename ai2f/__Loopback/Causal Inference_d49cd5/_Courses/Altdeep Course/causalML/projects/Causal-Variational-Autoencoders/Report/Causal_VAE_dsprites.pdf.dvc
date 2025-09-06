@@ -1,0 +1,5 @@
+outs:
+- md5: f866482a52a711bba90bc2fe947d19dd
+  size: 3177395
+  hash: md5
+  path: Causal_VAE_dsprites.pdf

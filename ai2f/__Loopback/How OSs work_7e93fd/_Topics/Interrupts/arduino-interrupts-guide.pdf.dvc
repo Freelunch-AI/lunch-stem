@@ -1,0 +1,5 @@
+outs:
+- md5: a8c9e6839461397b84b8a56f5f558182
+  size: 449811
+  hash: md5
+  path: arduino-interrupts-guide.pdf

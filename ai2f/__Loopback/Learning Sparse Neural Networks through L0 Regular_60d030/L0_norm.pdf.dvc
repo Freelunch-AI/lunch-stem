@@ -1,0 +1,5 @@
+outs:
+- md5: 38f12d6fee04710cc3db2ec4b2199fe2
+  size: 709244
+  hash: md5
+  path: L0_norm.pdf

@@ -1,0 +1,5 @@
+outs:
+- md5: 91d3b616e5d676dc014a2693c2d59dc0
+  size: 3036417
+  hash: md5
+  path: lecture-notes.pdf

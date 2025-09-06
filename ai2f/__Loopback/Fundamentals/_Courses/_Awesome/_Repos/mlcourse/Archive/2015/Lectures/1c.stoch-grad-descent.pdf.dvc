@@ -1,0 +1,5 @@
+outs:
+- md5: f72299a37d4fbce1dd2638657dccaf24
+  size: 324119
+  hash: md5
+  path: 1c.stoch-grad-descent.pdf

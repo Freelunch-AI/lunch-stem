@@ -1,0 +1,5 @@
+outs:
+- md5: 8458ce09cd37011d5b533cd9fe01de43
+  size: 6244016
+  hash: md5
+  path: 03_a_modern_multicore-processor.pdf

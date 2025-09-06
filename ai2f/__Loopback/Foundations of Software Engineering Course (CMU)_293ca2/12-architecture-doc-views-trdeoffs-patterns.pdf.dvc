@@ -1,0 +1,5 @@
+outs:
+- md5: ac862c78657765e50e123d665005e914
+  size: 5673547
+  hash: md5
+  path: 12-architecture-doc-views-trdeoffs-patterns.pdf

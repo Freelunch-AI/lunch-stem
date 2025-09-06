@@ -1,0 +1,5 @@
+outs:
+- md5: 65282a9ff814fd9306799874bafe2a92
+  size: 60166
+  hash: md5
+  path: cs231n-github-io-transfer-learning.pdf

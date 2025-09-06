@@ -1,0 +1,1 @@
+The difference between quality assurance and testing is that quality assurance is about the activities designed to make sure the project is conforming to the expectations of the stakeholders, while the test is a process to explore a system to find defects

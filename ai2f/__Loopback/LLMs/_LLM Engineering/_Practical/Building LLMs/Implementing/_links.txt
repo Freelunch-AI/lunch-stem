@@ -1,0 +1,4 @@
+https://github.com/huggingface/alignment-handbook
+https://github.com/pytorch-labs/gpt-fast
+https://github.com/lucidrains/x-transformers
+https://github.com/lucidrains/nGPT-pytorch

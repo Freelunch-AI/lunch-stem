@@ -1,0 +1,14 @@
+pelo que eu entendi era:
+
+- tempo de preprocessamento (limpar) muito alto
+
+- falta de entendimento de como eeg pode ser uado para tomada de decisao na reabilitacao
+de AVC
+	-> falta de entendimento de como eeg pode servir de referencia como
+	metodo para inferir caracteristicas do paciente a tratamentos, estado do paciente
+	e explicacao neurologica do porque do estado do paciente (e como isso se relaciona com a 
+	incapacidade/doença do paciente). 
+	-> basicamente entender tudo do processo de rabilitacao olhando pro eeg
+	(visão utópica)
+
+- como integrar outros tipos de dados com eeg para auxiliar na tomada de decisão

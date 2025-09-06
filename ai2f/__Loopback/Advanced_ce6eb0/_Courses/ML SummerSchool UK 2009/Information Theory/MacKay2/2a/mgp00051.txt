@@ -1,0 +1,11 @@
+
+Rate, error probability, complexity
+
+
+
+
+For any channel:
+Reliable (virtually error-free) communication is possible
+at rates up to C
+
+

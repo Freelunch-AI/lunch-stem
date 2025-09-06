@@ -1,0 +1,5 @@
+outs:
+- md5: b8acd87d778d0de72ddd8de30c1443f4
+  size: 163371
+  hash: md5
+  path: how-signed-integers-are-stored-in-memory.pdf

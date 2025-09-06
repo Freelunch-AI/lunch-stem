@@ -1,0 +1,21 @@
+{
+  "license": null,
+  "authors": [
+    {
+      "name": "Brendan Shillingford",
+      "university": "Oxford University"
+    },
+    {
+      "name": "Brendan Shillingford",
+      "university": null
+    }
+  ],
+  "university_course_name": "Machine Learning",
+  "publisher": null,
+  "educational_platform": null,
+  "source_link": "https://github.com/oxford-cs-ml-2015/practical1",
+  "num_of_pages": 2,
+  "size_mb": 0.17,
+  "link_to_license": null,
+  "changes_were_made": false
+}

@@ -1,0 +1,7 @@
+The only other thing I'll point out (that hasn't been mentioned so far) is the concept of a "software interrupt" (sometimes called a "trap"), which most processors support.
+
+The idea is that a special instruction causes an exception to take place, and often with a software interrupt, either the opcode causing the exception, or registers set up prior to the exception, can contain values/arguments.
+
+For example, in ARM processors, look up "SWI" or "SVC", depending on your architecture. I believe with the SWI instruction, the lower 8 bits are not part of the opcode - you can fill in whatever you want & pass a value from 0-255 (memory a little fuzzy here).
+
+Unlike a hardware-initiated interrupt, which is totally asynchronous to the code running on the CPU, a software interrupt is synchronous - it occurs when the initiating instruction is executed (barring interrupt masking, nesting, etc.)

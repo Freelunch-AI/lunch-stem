@@ -1,0 +1,5 @@
+outs:
+- md5: 69903dbfbeeb82dc66e7afb07fe8e950
+  size: 1205023
+  hash: md5
+  path: 17-chaos-engineering.pdf

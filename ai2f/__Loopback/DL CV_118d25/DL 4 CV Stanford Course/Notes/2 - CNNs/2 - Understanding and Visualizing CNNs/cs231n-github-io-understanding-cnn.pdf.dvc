@@ -1,0 +1,5 @@
+outs:
+- md5: ab283d25c2d2b546cf74cbba11b9f08a
+  size: 1027832
+  hash: md5
+  path: cs231n-github-io-understanding-cnn.pdf

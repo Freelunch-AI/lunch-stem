@@ -1,0 +1,5 @@
+outs:
+- md5: b74cf91d14ef78f0b254ecf131b6c005
+  size: 362080
+  hash: md5
+  path: tutorialVAE.pdf

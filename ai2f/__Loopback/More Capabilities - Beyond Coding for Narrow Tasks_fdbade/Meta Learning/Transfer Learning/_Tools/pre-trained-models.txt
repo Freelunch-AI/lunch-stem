@@ -1,0 +1,4 @@
+TensorflowHub
+PyTorchHub
+HuggingFace Transformers 
+Detectron2 (CV)

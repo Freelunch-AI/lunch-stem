@@ -1,0 +1,5 @@
+outs:
+- md5: 18014afb0acd5c5439cf3e4d7a365c33
+  size: 113834
+  hash: md5
+  path: sparse-matrix-mul.pdf

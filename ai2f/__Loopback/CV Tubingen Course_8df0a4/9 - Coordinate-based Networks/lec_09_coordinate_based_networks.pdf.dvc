@@ -1,0 +1,5 @@
+outs:
+- md5: d52bdadf27eb2a8cca8ff744049a0f23
+  size: 21761650
+  hash: md5
+  path: lec_09_coordinate_based_networks.pdf

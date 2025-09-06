@@ -1,0 +1,5 @@
+ede neural ruim -> faz mcts usando ela -> treina ela com o ground truth obtido de varias runs 
+(input: estado do tabuleiro; output: chance de ganhar [-1,1] 
+e distribuição de prob pras ações deste estado) -> rede neural menos ruim 
+-> ... rede neural foda. Na inferencia pra escolher proxima jogada: faz busca maxmin, 
+onde os valores finais dos nós (sua proxima jogada) é o mcts usando sua rede neural foda

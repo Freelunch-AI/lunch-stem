@@ -1,0 +1,5 @@
+outs:
+- md5: a520c41e1a3dec7a713542469f6ec950
+  size: 1070664
+  hash: md5
+  path: cs231n-github-io-neural-networks-3.pdf

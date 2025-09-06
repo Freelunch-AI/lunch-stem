@@ -1,0 +1,5 @@
+outs:
+- md5: 423499a57068c2f8ee7f8dedf73aa0d4
+  size: 55859
+  hash: md5
+  path: MCU Memory Hierarchy.pdf
