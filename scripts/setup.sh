@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Run this script in linux shell to set up the environment for using lunch.sh CLI.
+# It adds the script directory to the PATH for the current session and provides instructions for making it
+
+# Usage:
+# .\setup.sh
+
+# Get the directory where this setup script is located
+scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Add dvc-download.sh script to PATH for easy access
+export PATH="$scriptDir:$PATH"
+
+# Make the lunch.sh script executable (if it exists)
+if [ -f "$scriptDir/lunch.sh" ]; then
+    chmod +x "$scriptDir/lunch.sh"
+    echo "Made lunch.sh executable"
+fi
+
+# Check if the script directory is already in PATH permanently
+if ! grep -q "$scriptDir" ~/.bashrc 2>/dev/null; then
+    echo "To make this PATH change permanent, add the following line to your ~/.bashrc:"
+    echo "export PATH=\"$scriptDir:\$PATH\""
+    echo ""
+    echo "Or run: echo 'export PATH=\"$scriptDir:\$PATH\"' >> ~/.bashrc"
+else
+    echo "Script directory already found in ~/.bashrc"
+fi
+
+echo "Setup complete! Script directory added to PATH: $scriptDir"
+echo "You can now run 'lunch.sh' from anywhere in this session just by typing lunch"

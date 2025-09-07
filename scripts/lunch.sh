@@ -1,0 +1,390 @@
+#!/bin/bash
+
+# DVC Download CLI Tool
+# A bash script to download DVC-tracked files from Google Drive storage
+
+set -e  # Exit on any error
+
+# Configuration
+RCLONE_REMOTE="gdrive:lunch-stem-dvc-data/files/md5"
+TEMP_FOLDER="./temp_folder"
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Help function
+show_help() {
+    cat << EOF
+DVC Download CLI Tool
+
+USAGE:
+    dvc-download.sh files <file1> [file2] [file3] ... [options]
+    dvc-download.sh directory <directory_path> [options]
+
+COMMANDS:
+    files       Download specific DVC files
+    directory   Download all DVC files from a directory
+
+ARGUMENTS FOR 'files' COMMAND:
+    <file1> [file2] ...         DVC file paths to download (required, space-separated)
+                                Supports both absolute and relative paths
+
+ARGUMENTS FOR 'directory' COMMAND:
+    <directory_path>            Target directory containing DVC files (required)
+                                Supports both absolute and relative paths
+
+OPTIONS:
+    --in-place                  Download files in the same directory as their .dvc files
+    --recursive                 (directory command only) Download DVC files recursively from subdirectories
+    --help                      Show this help message
+
+EXAMPLES:
+    # Download specific files to current directory (relative paths)
+    lunch files "docs/file1.pdf.dvc" "../other/file2.pdf.dvc"
+    
+    # Download specific files (absolute paths)
+    lunch files "/home/user/project/file1.pdf.dvc" "/tmp/file2.pdf.dvc"
+
+    # Download specific files in-place
+    lunch files "docs/file1.pdf.dvc" --in-place
+
+    # Download all DVC files from directory (relative path)
+    lunch directory "docs/target_folder"
+    
+    # Download all DVC files from directory (absolute path)
+    lunch directory "/home/user/project/target_folder"
+
+    # Download all DVC files recursively, preserve structure
+    lunch directory "docs/target_folder" --recursive
+
+    # Download all DVC files in-place
+    lunch directory "/absolute/path/to/target" --recursive --in-place
+
+EOF
+}
+
+# Logging functions
+log_info() {
+    echo -e "${BLUE}[INFO]${NC} $1"
+}
+
+log_success() {
+    echo -e "${GREEN}[SUCCESS]${NC} $1"
+}
+
+log_warning() {
+    echo -e "${YELLOW}[WARNING]${NC} $1"
+}
+
+log_error() {
+    echo -e "${RED}[ERROR]${NC} $1"
+}
+
+# Function to extract MD5 hash from DVC file
+get_md5_hash() {
+    local dvc_file="$1"
+    
+    if [[ ! -f "$dvc_file" ]]; then
+        log_error "DVC file not found: $dvc_file"
+        return 1
+    fi
+    
+    local md5_hash=$(grep -oP 'md5: \K[a-f0-9]+' "$dvc_file" 2>/dev/null)
+    
+    if [[ -z "$md5_hash" ]]; then
+        log_error "Could not find MD5 hash in $dvc_file"
+        return 1
+    fi
+    
+    echo "$md5_hash"
+}
+
+# Function to download a single DVC file
+download_dvc_file() {
+    local dvc_file="$1"
+    local in_place="$2"
+    local base_output_dir="$3"  # Optional: for directory downloads
+    
+    # Convert to absolute path for consistent handling
+    dvc_file=$(realpath "$dvc_file")
+    
+    log_info "Processing: $(basename "$dvc_file")"
+    
+    # Get MD5 hash
+    local md5_hash
+    md5_hash=$(get_md5_hash "$dvc_file")
+    if [[ $? -ne 0 ]]; then
+        return 1
+    fi
+    
+    # Calculate output file path
+    local base_filename
+    base_filename=$(basename "$dvc_file" .dvc)
+    
+    local output_file
+    if [[ "$in_place" == "true" ]]; then
+        # Download in the same directory as the .dvc file
+        output_file="$(dirname "$dvc_file")/$base_filename"
+    elif [[ -n "$base_output_dir" ]]; then
+        # For directory downloads with structure preservation
+        local dvc_dir
+        dvc_dir=$(dirname "$dvc_file")
+        local target_dir="$4"  # Original target directory
+        
+        # Convert target_dir to absolute path for comparison
+        target_dir=$(realpath "$target_dir")
+        
+        if [[ "$dvc_dir" == "$target_dir" ]]; then
+            # File is in root target directory
+            output_file="$base_output_dir/$base_filename"
+            mkdir -p "$base_output_dir"
+        else
+            # File is in subdirectory, preserve structure
+            local relative_path
+            relative_path=$(realpath --relative-to="$target_dir" "$dvc_dir")
+            output_file="$base_output_dir/$relative_path/$base_filename"
+            mkdir -p "$base_output_dir/$relative_path"
+        fi
+    else
+        # Simple download to current directory
+        output_file="$base_filename"
+    fi
+    
+    log_info "  MD5: $md5_hash"
+    log_info "  Output: $output_file"
+    
+    # Check if file already exists
+    if [[ -f "$output_file" ]]; then
+        log_warning "  Skipping: $output_file already exists"
+        return 0
+    fi
+    
+    # Create temp directory
+    mkdir -p "$TEMP_FOLDER"
+    
+    # Calculate rclone path
+    local hash_prefix="${md5_hash:0:2}"
+    local hash_suffix="${md5_hash:2}"
+    local rclone_path="$RCLONE_REMOTE/$hash_prefix/$hash_suffix"
+    
+    log_info "  Downloading from: $rclone_path"
+    
+    # Download file
+    if rclone copy "$rclone_path" "$TEMP_FOLDER" >/dev/null 2>&1; then
+        # Find downloaded file
+        local downloaded_file="$TEMP_FOLDER/$hash_suffix"
+        
+        if [[ -f "$downloaded_file" ]]; then
+            # Move to final location
+            mv "$downloaded_file" "$output_file"
+            log_success "  Downloaded: $output_file"
+        else
+            log_error "  Error: No file downloaded"
+            return 1
+        fi
+    else
+        log_error "  Error: Failed to download from rclone"
+        return 1
+    fi
+    
+    # Clean up temp folder
+    rm -rf "$TEMP_FOLDER"
+    
+    return 0
+}
+
+# Command: Download specific files
+cmd_files() {
+    local dvc_files=()
+    local in_place="false"
+    
+    # Parse positional arguments (files) and optional flags
+    while [[ $# -gt 0 ]]; do
+        case $1 in
+            --in-place)
+                in_place="true"
+                shift
+                ;;
+            --help)
+                show_help
+                exit 0
+                ;;
+            --*)
+                log_error "Unknown option: $1"
+                show_help
+                exit 1
+                ;;
+            *)
+                # Positional argument (DVC file path)
+                dvc_files+=("$1")
+                shift
+                ;;
+        esac
+    done
+    
+    # Validate required arguments
+    if [[ ${#dvc_files[@]} -eq 0 ]]; then
+        log_error "Missing required arguments: DVC file paths"
+        show_help
+        exit 1
+    fi
+    
+    log_info "Processing ${#dvc_files[@]} DVC file(s)"
+    if [[ "$in_place" == "true" ]]; then
+        log_info "Mode: In-place download"
+    else
+        log_info "Mode: Download to current directory"
+    fi
+    
+    local success_count=0
+    local total_count=${#dvc_files[@]}
+    
+    # Process each file
+    for dvc_file in "${dvc_files[@]}"; do
+        if download_dvc_file "$dvc_file" "$in_place"; then
+            ((success_count++))
+        fi
+        echo
+    done
+    
+    log_success "Download complete! Successfully downloaded $success_count/$total_count files"
+}
+
+# Command: Download directory
+cmd_directory() {
+    local target_directory=""
+    local recursive="false"
+    local in_place="false"
+    
+    # First positional argument should be the directory
+    if [[ $# -gt 0 ]] && [[ ! "$1" =~ ^-- ]]; then
+        target_directory="$1"
+        shift
+    fi
+    
+    # Parse optional flags
+    while [[ $# -gt 0 ]]; do
+        case $1 in
+            --recursive)
+                recursive="true"
+                shift
+                ;;
+            --in-place)
+                in_place="true"
+                shift
+                ;;
+            --help)
+                show_help
+                exit 0
+                ;;
+            --*)
+                log_error "Unknown option: $1"
+                show_help
+                exit 1
+                ;;
+            *)
+                log_error "Unexpected positional argument: $1"
+                log_error "Directory path should be the first argument"
+                show_help
+                exit 1
+                ;;
+        esac
+    done
+    
+    # Validate required arguments
+    if [[ -z "$target_directory" ]]; then
+        log_error "Missing required argument: directory path"
+        show_help
+        exit 1
+    fi
+    
+    # Check if directory exists
+    if [[ ! -d "$target_directory" ]]; then
+        log_error "Directory not found: $target_directory"
+        exit 1
+    fi
+    
+    # Convert to absolute path for consistent handling
+    target_directory=$(realpath "$target_directory")
+    
+    # Find DVC files
+    local dvc_files=()
+    if [[ "$recursive" == "true" ]]; then
+        while IFS= read -r -d '' file; do
+            dvc_files+=("$file")
+        done < <(find "$target_directory" -name "*.dvc" -type f -print0)
+        log_info "Found ${#dvc_files[@]} DVC files in directory (recursive)"
+    else
+        while IFS= read -r -d '' file; do
+            dvc_files+=("$file")
+        done < <(find "$target_directory" -maxdepth 1 -name "*.dvc" -type f -print0)
+        log_info "Found ${#dvc_files[@]} DVC files in directory (current level only)"
+    fi
+    
+    if [[ ${#dvc_files[@]} -eq 0 ]]; then
+        log_warning "No DVC files found in $target_directory"
+        exit 0
+    fi
+    
+    # Determine output structure
+    local base_output_dir=""
+    if [[ "$in_place" == "true" ]]; then
+        log_info "Mode: In-place download"
+    else
+        base_output_dir=$(basename "$target_directory")
+        log_info "Mode: Download to ./$base_output_dir/"
+    fi
+    
+    local success_count=0
+    local total_count=${#dvc_files[@]}
+    
+    # Process each file
+    for dvc_file in "${dvc_files[@]}"; do
+        if download_dvc_file "$dvc_file" "$in_place" "$base_output_dir" "$target_directory"; then
+            ((success_count++))
+        fi
+        echo
+    done
+    
+    log_success "Batch download complete! Successfully downloaded $success_count/$total_count files"
+}
+
+# Main function
+main() {
+    # Check if rclone is available
+    if ! command -v rclone &> /dev/null; then
+        log_error "rclone is not installed or not in PATH"
+        exit 1
+    fi
+    
+    # Check for help or no arguments
+    if [[ $# -eq 0 ]] || [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
+        show_help
+        exit 0
+    fi
+    
+    # Parse command
+    local command="$1"
+    shift
+    
+    case "$command" in
+        files)
+            cmd_files "$@"
+            ;;
+        directory)
+            cmd_directory "$@"
+            ;;
+        *)
+            log_error "Unknown command: $command"
+            show_help
+            exit 1
+            ;;
+    esac
+}
+
+# Run main function with all arguments
+main "$@"

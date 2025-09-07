@@ -48,7 +48,7 @@
 > 
 > Documents in *lunchSTEM* are created by external authors, not by us. We don't support inclusion of non-distributable documents without author permission (for non-distributable documents: check `author_permissions.jsonl`).
 > 
-> Each document credits its author(s) in a corresponding `[file_name].[file_extension].source.json` file.
+> Each document credits its author(s) in a corresponding `<file_name>.<file_extension>.source.json` file.
 > 
 > Authors may request content removal at any time. After following our streamlined protocol for *Content Removal Requests*, we remove content within 24 hours. This option is faster and more friendly than a *Digital Millennium Copyright Act (DMCA)* notification (which can shutdown the project).
 
@@ -59,7 +59,7 @@
 > 
 > • **MCP Server:** useful for AI Agents doing complex engineering work or scientific research.
 > 
-> • **CLI** where users can do keyword and semantic search.
+> • **Proper CLI** where users can do keyword and semantic search.
 
 ## Overview
 
@@ -95,19 +95,22 @@ However, we cannot guarantee perfection in this process, therefore, if you find 
 
 ## Credit Attribution 
 
-Credit attribution data of a pdf file is stored in `[file_name].pdf.source.json` which should be opened directly (without `dvc pull`). This file can contain authors, university, publisher, link do the source, and other metadata about the specific file it references. Default value of fields are `null`, with the exception of the default value of the `changes_were_made` field which is `False`.
+Credit attribution data of a pdf file is stored in `<file_name>.pdf.source.json` which should be opened directly (without `dvc pull`). This file can contain authors, university, publisher, link do the source, and other metadata about the specific file it references. Default value of fields are `null`, with the exception of the default value of the `changes_were_made` field which is `False`.
 
-## Requirements
+## Requirements for Usage
 
 Make sure you have these tools installed:
 
 - `git`
-- `dvc`
+- `rclone`
 
 These can be installed by following their repsective installation guide on their websites.
 
 - [git installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [dvc installation guide](https://dvc.org/doc/install)
+- [rclone installation guide](https://rclone.org/install/)
+
+> [!NOTE]
+> When configuring a remote storage for _rclone_, make shure to use the service account option and `lunch-stem-fadf503639fe.json` as the service account file.
 
 ## How to Use
 
@@ -121,6 +124,21 @@ These can be installed by following their repsective installation guide on their
 > [!NOTE]
 > If you are using Windows, it's important to clone inside a top-level directory, to avoid potential errors related to the creating file paths that are too long. Windows typically has a maximum file path of 260 characters.
 
+3. Setup the project
+
+   For Linux:
+
+   ```bash
+   scripts/setup.sh 
+      ```
+
+   For Windows:
+
+   ```powershell
+   scripts/setup.ps1
+      ```
+
+
 3. Enter the `lunch-stem` folder
 
    ```bash
@@ -129,25 +147,52 @@ These can be installed by following their repsective installation guide on their
 
 4. **Browse inside the `ai2f` folder**
 
-5. **Download a specific pdf file via:**
+5. **Download a specific pdf files via:**
 
    ```bash
-   dvc pull [pdf_file_path_placeholder]
+   lunch <first_dvc_file_path_placeholder> [second_dvc_file_path_placeholder] ...
    ```
 
-   This command will get the `.pdf` file and put it in the same location as the `.pdf.dvc` file.
+   This command will get the `.pdf` files and put it in your current directory.
 
-   - _Note 1:_ the file path used in this command shouldn't have `.source.json` at the end of it. it should end with `.pdf.dvc`.
-   - _Note 2:_ other types of files (e.g. `.txt`) should be opened directly, without dvc.
-   - _Note 3:_ if `.web.txt` is present, then you shouldn't try this command, just copy and paste the link inside `.web.txt` in your browser. We will implement a `lunchstem pull` later on to get files from the web.
-   - _Note 4:_ the `.pdf` file shouldn't be visible before you run this command.
-   - _Note 5:_ you can get the file path via the graphical user interface, each operating system has an easy way.
-
-   You can also pull multiple files at once:
+   If you want to put files in the same place as the `pdf.dvc ` file then use:
 
    ```bash
-   dvc pull [first_pdf_file_path_placeholder] [second_pdf_file_path_placeholder]
+   lunch <first_dvc_file_path_placeholder> [second_dvc_file_path_placeholder] --in-place ...
    ```
+
+   - _Note 1:_ first file path argument is required, the rest are optional.
+   - _Note 2:_ the file path used in this command shouldn't have `.source.json` at the end of it. it should end with `.pdf.dvc`.
+   - _Note 3:_ other types of files (e.g. `.txt`) should be opened directly, without dvc.
+   - _Note 4:_ if `.web.txt` is present, then you shouldn't try this command, just copy and paste the link inside `.web.txt` in your browser. We will implement a `lunch get` later on to get files from the web.
+   - _Note 5:_ the `.pdf` file shouldn't be visible before you run this command.
+   - _Note 6:_ you can get the file paths via the graphical user interface of your Operating System, each operating system has an easy way.
+
+
+6. **Download all the files from a specific folder via:**
+
+   ```bash
+   lunch folder <folder_path_placeholder>
+      ```
+
+      If you want to put the new pdf files in the same place as ther corresponding `pdf.dvc` files then use:
+
+      ```bash
+      lunch folder <folder_path_placeholder> --in-place
+      ```
+
+      If you want to download all the files from all subdirectories (recursively) then use:
+
+      ```bash
+      lunch folder <folder_path_placeholder> --recursive
+      ```
+
+      If you want to put files in the same place as the `pdf.dvc ` file and for all subdirectories then use:
+
+      ```bash
+      lunch folder <folder_path_placeholder> --in-place --recursive
+      ```
+
 
 ## Directory Structure and Naming Conventions
 
@@ -178,8 +223,8 @@ These can be installed by following their repsective installation guide on their
 
 ### Phase B: Important Additions
 
-4. **[b][a]** Create a *lunchSTEM CLI* where you can:
-   1. Pull actual files/directories locally
+4. **[b][a]** Create a proper *lunchSTEM CLI* package where you can:
+   1. Get files or directories (already implemented in a basic way)
    2. Hide/Show certain file types (e.g., hide: .dvc, .source.json, .prerequisites.json, symlinks for other operating systems, etc)
    3. Do search: keyword search and semantic search
 
@@ -200,14 +245,18 @@ These can be installed by following their repsective installation guide on their
 
 7. **[b]** Get sponsors and grants to: (1) support our app hosting; (2) build a dedicated team of *lunchSTEM* maintainers; (3) pay experts for peer-review processes; and (4) to route a percentage of the money to contributing authors. All sponsorship money would be reinvested in the project, it's a non-profit project.
 
-8. **[b][a]** Add malicious file removal, large file removal, git repo removal, coding file removal, copyrighted material removal, etc in CI via *GitHub Actions* to automatically avoid bad PRs.
+8. Make CI Workflows
 
-9. **[b][a]** Add standard conventions enforcement in CI to keep the knowledge base consistent, avoiding inconsistent PRs.
+   1. **[b][a]** Replace actual `.pdf` files with `.pdf.dvc` files, avoiding actual knowledge files in the repo.
+
+   2. **[b][a]** Add malicious file removal, large file removal, git repo removal, removal of files with not-accepted extensions, copyrighted material removal, etc to automatically avoid bad PRs.
+
+   3. **[b][a]** Add standard conventions enforcement in CI to keep the knowledge base consistent, avoiding inconsistent PRs.
 
 ### Phase C: More Core Features
 
 10. **[b][c][d]** Add features to *lunchSTEM*, potentially using *AgentPool* to help (in parallel: keep adding more materials from `to_add.txt`, but add as `file_name.file_extension.web.txt` with the HTTPS link inside the file):
-    - **Prerequisites:** Add `[file_name.[file_extension].prerequisites.json` containing hierarchical list of prerequisites for each file
+    - **Prerequisites:** Add `<file_name>.<file_extension>.prerequisites.json` containing hierarchical list of prerequisites for each file
     - **Exercises:** Put exercises with solutions in every topic directory inside `__Exercises`
     - **Tools:** put software tools in very topic inside `__Tools`. Can be tools for doing or understanding something related to the topic.
     - **Learning & Certification tracks:** guided sequential tracks (e.g., ML Engineer track) with estimated completion time of 3 or 6 months, and with an internal or external exam/certification in the end.

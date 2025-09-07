@@ -102,17 +102,20 @@ Wir können jedoch keine Perfektion in diesem Prozess garantieren, daher, wenn S
 
 Autorenkredit-Daten einer PDF-Datei werden in `[dateiname].pdf.source.json` gespeichert, welche direkt geöffnet werden sollte (ohne `dvc pull`). Diese Datei kann Autoren, Universität, Verleger, Link zur Quelle und andere Metadaten über die spezifische Datei enthalten, auf die sie sich bezieht. Standardwert der Felder ist `null`, mit Ausnahme des Standardwerts des `changes_were_made` Feldes, welcher `False` ist.
 
-## Anforderungen
+## Anforderungen für die Nutzung
 
 Stellen Sie sicher, dass Sie diese Tools installiert haben:
 
 - `git`
-- `dvc`
+- `rclone`
 
 Diese können installiert werden, indem Sie deren jeweilige Installationsanleitung auf ihren Websites befolgen.
 
 - [git Installationsanleitung](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [dvc Installationsanleitung](https://dvc.org/doc/install)
+- [rclone Installationsanleitung](https://rclone.org/install/)
+
+> [!NOTE]
+> Bei der Konfiguration eines Remote-Speichers für _rclone_, stellen Sie sicher, dass Sie die Service-Account-Option und `lunch-stem-fadf503639fe.json` als Service-Account-Datei verwenden.
 
 ## Wie zu Verwenden
 

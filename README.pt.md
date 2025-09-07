@@ -98,19 +98,22 @@ Contudo, não podemos garantir perfeição neste processo, portanto, se você en
 
 ## Atribuição de Créditos
 
-Dados de atribuição de créditos de um arquivo pdf são armazenados em `[nome_arquivo].pdf.source.json` que deve ser aberto diretamente (sem `dvc pull`). Este arquivo pode conter autores, universidade, editora, link para a fonte, e outros metadados sobre o arquivo específico que referencia. Valor padrão dos campos é `null`, com exceção do valor padrão do campo `changes_were_made` que é `False`.
+Dados de atribuição de créditos de um arquivo pdf são armazenados em `<nome_arquivo>.pdf.source.json` que deve ser aberto diretamente (sem `dvc pull`). Este arquivo pode conter autores, universidade, editora, link para a fonte, e outros metadados sobre o arquivo específico que referencia. Valor padrão dos campos é `null`, com exceção do valor padrão do campo `changes_were_made` que é `False`.
 
-## Requisitos
+## Requisitos para Uso
 
 Certifique-se de ter essas ferramentas instaladas:
 
 - `git`
-- `dvc`
+- `rclone`
 
 Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus websites.
 
 - [guia de instalação do git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [guia de instalação do dvc](https://dvc.org/doc/install)
+- [guia de instalação do rclone](https://rclone.org/install/)
+
+> [!NOTE]
+> Ao configurar um armazenamento remoto para _rclone_, certifique-se de usar a opção de conta de serviço e `lunch-stem-fadf503639fe.json` como arquivo de conta de serviço.
 
 ## Como Usar
 
@@ -124,6 +127,20 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 > [!NOTE]
 > Se você estiver usando Windows, é importante clonar dentro de um diretório de nível superior, para evitar erros potenciais relacionados à criação de caminhos de arquivo muito longos. O Windows tipicamente tem um caminho de arquivo máximo de 260 caracteres.
 
+3. Configure o projeto
+
+   Para Linux:
+
+   ```bash
+   scripts/setup.sh 
+      ```
+
+   Para Windows:
+
+   ```powershell
+   scripts/setup.ps1
+      ```
+
 3.  Entre na pasta `lunch-stem`.
 
     ```bash
@@ -132,25 +149,50 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 4.  **Navegue pela pasta `ai2f`**
 
-5.  **Baixe um arquivo pdf específico via:**
+5.  **Baixe arquivos pdf específicos via:**
 
     ```bash
-    dvc pull [placeholder_caminho_do_arquivo_pdf]
+    lunch <primeiro_placeholder_caminho_arquivo_dvc> [segundo_placeholder_caminho_arquivo_dvc] ...
     ```
 
-    Este comando obterá o arquivo `.pdf` e o colocará no mesmo local que o arquivo `.pdf.dvc`.
+    Este comando obterá os arquivos `.pdf` e os colocará no seu diretório atual.
 
-    - _Nota 1:_ o caminho do arquivo usado neste comando não deve ter `.source.json` no final. deve terminar com `.pdf.dvc`.
-    - _Nota 2:_ outros tipos de arquivo (ex., `.txt`) devem ser abertos diretamente, sem o dvc.
-    - _Nota 3:_ se `.web.txt` estiver presente, então você não deve tentar este comando, apenas copie e cole o link dentro de `.web.txt` em seu navegador. Mais tarde, implementaremos um `lunchstem pull` para buscar arquivos da web.
-    - _Nota 4:_ o arquivo `.pdf` não deve estar visível antes de você executar este comando.
-    - _Nota 5:_ você pode obter o caminho do arquivo através da interface gráfica do usuário, cada sistema operacional tem uma maneira fácil.
-
-    Você também pode baixar múltiplos arquivos de uma vez:
+    Se você quiser colocar arquivos no mesmo lugar que o arquivo `.pdf.dvc` então use:
 
     ```bash
-    dvc pull [primeiro_placeholder_arquivo_pdf] [segundo_placeholder_arquivo_pdf]
+    lunch <primeiro_placeholder_caminho_arquivo_dvc> [segundo_placeholder_caminho_arquivo_dvc] --in-place ...
     ```
+
+    - _Nota 1:_ o primeiro argumento de caminho de arquivo é obrigatório, o resto é opcional.
+    - _Nota 2:_ o caminho do arquivo usado neste comando não deve ter `.source.json` no final. deve terminar com `.pdf.dvc`.
+    - _Nota 3:_ outros tipos de arquivo (ex., `.txt`) devem ser abertos diretamente, sem o dvc.
+    - _Nota 4:_ se `.web.txt` estiver presente, então você não deve tentar este comando, apenas copie e cole o link dentro de `.web.txt` em seu navegador. Implementaremos um `lunch get` mais tarde para buscar arquivos da web.
+    - _Nota 5:_ o arquivo `.pdf` não deve estar visível antes de você executar este comando.
+    - _Nota 6:_ você pode obter os caminhos dos arquivos através da interface gráfica do usuário do seu Sistema Operacional, cada sistema operacional tem uma maneira fácil.
+
+6. **Baixe todos os arquivos de uma pasta específica via:**
+
+   ```bash
+   lunch folder <placeholder_caminho_pasta>
+      ```
+
+      Se você quiser colocar os novos arquivos pdf no mesmo lugar que seus arquivos `.pdf.dvc` correspondentes então use:
+
+      ```bash
+      lunch folder <placeholder_caminho_pasta> --in-place
+      ```
+
+      Se você quiser baixar todos os arquivos de todos os subdiretórios (recursivamente) então use:
+
+      ```bash
+      lunch folder <placeholder_caminho_pasta> --recursive
+      ```
+
+      Se você quiser colocar arquivos no mesmo lugar que o arquivo `.pdf.dvc` e para todos os subdiretórios então use:
+
+      ```bash
+      lunch folder <placeholder_caminho_pasta> --in-place --recursive
+      ```
 
 ## Estrutura de Diretórios e Convenções de Nomenclatura
 
@@ -203,9 +245,13 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 7. **[b]** Conseguir patrocinadores e subsídios para: (1) apoiar nossa hospedagem de aplicativo; (2) construir uma equipe dedicada de mantenedores do *lunchSTEM*; (3) pagar especialistas para processos de revisão por pares; e (4) direcionar uma porcentagem do dinheiro para autores contribuintes. Todo dinheiro de patrocínio seria reinvestido no projeto, é um projeto sem fins lucrativos.
 
-8. **[b][a]** Adicionar remoção de arquivo malicioso, remoção de arquivo grande, remoção de repositório git, remoção de arquivo de código, remoção de material protegido por direitos autorais, etc no CI via *GitHub Actions* para automaticamente evitar PRs ruins.
+8. Criar Fluxos de Trabalho CI
 
-9. **[b][a]** Adicionar aplicação de convenções padrão no CI para manter a base de conhecimento consistente, evitando PRs inconsistentes.
+   1. **[b][a]** Substituir arquivos `.pdf` reais com arquivos `.pdf.dvc`, evitando arquivos de conhecimento reais no repositório.
+
+   2. **[b][a]** Adicionar remoção de arquivo malicioso, remoção de arquivo grande, remoção de repositório git, remoção de arquivos com extensões não aceitas, remoção de material protegido por direitos autorais, etc para automaticamente evitar PRs ruins.
+
+   3. **[b][a]** Adicionar aplicação de convenções padrão no CI para manter a base de conhecimento consistente, evitando PRs inconsistentes.
 
 ### Fase C: Mais Características Principais
 

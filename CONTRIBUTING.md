@@ -42,7 +42,7 @@ We are currently accepting these types of PRs:
 
 ### References To Content Within The Repo
 
-- To reference other file or directory in the folder use `[file_name].[file_extension].sym.txt` file with the path of that file or directory written inside it, per file/directory. This avoid unnecessary duplication of content.
+- To reference other file or directory in the folder use `<file_name>.<file_extension>.sym.txt` file with the path of that file or directory written inside it, per file/directory. This avoid unnecessary duplication of content.
 
 ## How to Submit a Pull Request
 
@@ -104,7 +104,7 @@ https://physics-1-course.edu/physics-1-course-notes.pdf
 1. All PRs are reviewed for compliance with these guidelines and content quality.
 2. PRs may get closed and requested to make change to comply with the rules.
 3. Large PRs may take longer to review
-4. Content Addition PRs may take longer to review. If the content is not from a respected source (check `respected_sources.md`), we will need to spawn a peer-review process per document. If possible, always host the content elsewhere and link to it with `[file_name].[file_extension].web.txt`. If the content is hosted on a respected source, then the review process can be skipped, thus the PR is accepted super fast.
+4. Content Addition PRs may take longer to review. If the content is not from a respected source (check `respected_sources.md`), we will need to spawn a peer-review process per document. If possible, always host the content elsewhere and link to it with `<file_name>.<file_extension>.web.txt`. If the content is hosted on a respected source, then the review process can be skipped, thus the PR is accepted super fast.
 5. We will respond (and resolve copyright issues, if it's the case) emails within 24 hours.
 
 ## Want to be a maintainer?

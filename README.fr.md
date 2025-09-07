@@ -100,17 +100,20 @@ Cependant, nous ne pouvons pas garantir la perfection dans ce processus, donc, s
 
 Les données d'attribution de crédits d'un fichier pdf sont stockées dans `[nom_fichier].pdf.source.json` qui devrait être ouvert directement (sans `dvc pull`). Ce fichier peut contenir des auteurs, université, éditeur, lien vers la source, et d'autres métadonnées sur le fichier spécifique qu'il référence. La valeur par défaut des champs est `null`, à l'exception de la valeur par défaut du champ `changes_were_made` qui est `False`.
 
-## Exigences
+## Exigences pour l'Utilisation
 
 Assurez-vous d'avoir ces outils installés :
 
 - `git`
-- `dvc`
+- `rclone`
 
 Ceux-ci peuvent être installés en suivant leur guide d'installation respectif sur leurs sites web.
 
 - [guide d'installation de git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [guide d'installation de dvc](https://dvc.org/doc/install)
+- [guide d'installation de rclone](https://rclone.org/install/)
+
+> [!NOTE]
+> Lors de la configuration d'un stockage distant pour _rclone_, assurez-vous d'utiliser l'option de compte de service et `lunch-stem-fadf503639fe.json` comme fichier de compte de service.
 
 ## Comment Utiliser
 
