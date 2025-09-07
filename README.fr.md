@@ -64,8 +64,6 @@
 > 
 > • **CLI** où les utilisateurs peuvent faire des recherches par mots-clés et sémantiques.
 
-<br>
-
 ## Aperçu
 
 Ceci est une base de connaissances *STEM* (Science, Technologie, Ingénierie et Mathématiques) en évolution, destinée à être examinée et améliorée avec l'effort de la communauté. Elle peut être utilisée et améliorée par les humains et les agents IA.

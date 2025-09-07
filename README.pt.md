@@ -64,8 +64,6 @@
 > 
 > • **CLI** onde usuários podem fazer busca por palavras-chave e semântica.
 
-<br>
-
 ## Visão Geral
 
 Esta é uma base de conhecimento *STEM* (Ciência, Tecnologia, Engenharia e Matemática) em evolução, destinada a ser revisada e melhorada com o esforço da comunidade. Pode ser usada e melhorada por humanos e agentes de IA.

@@ -61,8 +61,6 @@
 > 
 > • **CLI** where users can do keyword and semantic search.
 
-<br>
-
 ## Overview
 
 This is an evolving *STEM* (Science, Technology, Engineering and Mathematics) knowledge base, meant to be reviewed and improved with the effort of the community. It can be used and improved by humans and AI agents.
