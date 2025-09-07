@@ -138,11 +138,19 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
     dvc pull [placeholder_caminho_do_arquivo_pdf]
     ```
 
-    - _Nota 1:_ o caminho do arquivo usado neste comando não deve ter `.source.json` no final. deve terminar com `.pdf`.
+    Este comando obterá o arquivo `.pdf` e o colocará no mesmo local que o arquivo `.pdf.dvc`.
+
+    - _Nota 1:_ o caminho do arquivo usado neste comando não deve ter `.source.json` no final. deve terminar com `.pdf.dvc`.
     - _Nota 2:_ outros tipos de arquivo (ex., `.txt`) devem ser abertos diretamente, sem o dvc.
     - _Nota 3:_ se `.web.txt` estiver presente, então você não deve tentar este comando, apenas copie e cole o link dentro de `.web.txt` em seu navegador. Mais tarde, implementaremos um `lunchstem pull` para buscar arquivos da web.
     - _Nota 4:_ o arquivo `.pdf` não deve estar visível antes de você executar este comando.
     - _Nota 5:_ você pode obter o caminho do arquivo através da interface gráfica do usuário, cada sistema operacional tem uma maneira fácil.
+
+    Você também pode baixar múltiplos arquivos de uma vez:
+
+    ```bash
+    dvc pull [primeiro_placeholder_arquivo_pdf] [segundo_placeholder_arquivo_pdf]
+    ```
 
 ## Estrutura de Diretórios e Convenções de Nomenclatura
 

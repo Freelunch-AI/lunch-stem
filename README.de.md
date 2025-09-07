@@ -140,11 +140,19 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
     dvc pull [pdf_dateipfad_platzhalter]
     ```
 
-    - _Hinweis 1:_ der in diesem Befehl verwendete Dateipfad sollte nicht `.source.json` am Ende haben. er sollte mit `.pdf` enden.
+    Dieser Befehl holt die `.pdf`-Datei und platziert sie am gleichen Ort wie die `.pdf.dvc`-Datei.
+
+    - _Hinweis 1:_ der in diesem Befehl verwendete Dateipfad sollte nicht `.source.json` am Ende haben. er sollte mit `.pdf.dvc` enden.
     - _Hinweis 2:_ andere Dateitypen (z.B. `.txt`) sollten direkt geöffnet werden, ohne dvc.
     - _Hinweis 3:_ wenn `.web.txt` vorhanden ist, dann sollten Sie diesen Befehl nicht versuchen, kopieren und fügen Sie einfach den Link innerhalb von `.web.txt` in Ihren Browser ein. Wir werden später ein `lunchstem pull` implementieren, um Dateien aus dem Web zu holen.
     - _Hinweis 4:_ die `.pdf` Datei sollte nicht sichtbar sein, bevor Sie diesen Befehl ausführen.
     - _Hinweis 5:_ Sie können den Dateipfad über die grafische Benutzeroberfläche erhalten, jedes Betriebssystem hat eine einfache Möglichkeit.
+
+    Sie können auch mehrere Dateien auf einmal herunterladen:
+
+    ```bash
+    dvc pull [erster_pdf_dateipfad_platzhalter] [zweiter_pdf_dateipfad_platzhalter]
+    ```
 
 ## Verzeichnisstruktur und Namenskonventionen
 

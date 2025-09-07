@@ -135,11 +135,19 @@ These can be installed by following their repsective installation guide on their
    dvc pull [pdf_file_path_placeholder]
    ```
 
-   - _Note 1:_ the file path used in this command shouldn't have `.source.json` at the end of it. it should end with `.pdf`.
+   This command will get the `.pdf` file and put it in the same location as the `.pdf.dvc` file.
+
+   - _Note 1:_ the file path used in this command shouldn't have `.source.json` at the end of it. it should end with `.pdf.dvc`.
    - _Note 2:_ other types of files (e.g. `.txt`) should be opened directly, without dvc.
    - _Note 3:_ if `.web.txt` is present, then you shouldn't try this command, just copy and paste the link inside `.web.txt` in your browser. We will implement a `lunchstem pull` later on to get files from the web.
    - _Note 4:_ the `.pdf` file shouldn't be visible before you run this command.
    - _Note 5:_ you can get the file path via the graphical user interface, each operating system has an easy way.
+
+   You can also pull multiple files at once:
+
+   ```bash
+   dvc pull [first_pdf_file_path_placeholder] [second_pdf_file_path_placeholder]
+   ```
 
 ## Directory Structure and Naming Conventions
 
