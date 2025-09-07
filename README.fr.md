@@ -44,20 +44,25 @@
 
 <br>
 
-<span style="background-color:#ffe066; color:#222; display:block; padding:20px; border-radius:6px"> 
-<span style="font-size:1.1em"><strong>⚠️ Important</strong></span><br><br>
-Les documents dans <em>lunchSTEM</em> sont créés par des auteurs externes, pas par nous. Nous ne soutenons pas l'inclusion de documents non distribuables sans l'autorisation de l'auteur (pour les documents non distribuables : vérifiez <code>author_permissions.jsonl</code>). <br><br>Chaque document crédite son/ses auteur(s) dans un fichier correspondant <code>[nom_fichier].[extension_fichier].source.json</code>.<br><br>
-Les auteurs peuvent demander la suppression de contenu à tout moment. Après avoir suivi notre protocole simplifié pour les <i>Demandes de Suppression de Contenu</i>, nous supprimons le contenu dans les 24 heures. Cette option est plus rapide et plus conviviale qu'une notification de la <i>Loi sur les Droits d'Auteur du Millénaire Numérique (DMCA)</i> (qui peut fermer le projet).
-</span>
+> [!WARNING]
+> **⚠️ Important**
+> 
+> Les documents dans *lunchSTEM* sont créés par des auteurs externes, pas par nous. Nous ne soutenons pas l'inclusion de documents non distribuables sans l'autorisation de l'auteur (pour les documents non distribuables : vérifiez `author_permissions.jsonl`).
+> 
+> Chaque document crédite son/ses auteur(s) dans un fichier correspondant `[nom_fichier].[extension_fichier].source.json`.
+> 
+> Les auteurs peuvent demander la suppression de contenu à tout moment. Après avoir suivi notre protocole simplifié pour les *Demandes de Suppression de Contenu*, nous supprimons le contenu dans les 24 heures. Cette option est plus rapide et plus conviviale qu'une notification de la *Loi sur les Droits d'Auteur du Millénaire Numérique (DMCA)* (qui peut fermer le projet).
 
 <br>
 
-<span style="background-color:#b6f5b6; color:#222; display:block; padding:20px; border-radius:6px;">
-<span style="font-size:1.1em"><strong>🟩 Bientôt Disponible</strong><br><br></span>
-• <b>Site web</b> avec des pages d'auteurs, recherche par mots-clés/sémantique, forums de discussion sur les documents, aperçus de contenu, visualisations interactives de contenu, marquage/étiquetage/mise en favoris de contenu, prise de notes sur les documents, documents tendance/populaires, statistiques pour les documents et auteurs, et plus.<br>
-• <b>Serveur MCP :</b> utile pour les Agents IA effectuant du travail d'ingénierie complexe ou de la recherche scientifique.<br>
-• <b>CLI</b> où les utilisateurs peuvent faire des recherches par mots-clés et sémantiques.
-</span>
+> [!NOTE]
+> **🟩 Bientôt Disponible**
+> 
+> • **Site web** avec des pages d'auteurs, recherche par mots-clés/sémantique, forums de discussion sur les documents, aperçus de contenu, visualisations interactives de contenu, marquage/étiquetage/mise en favoris de contenu, prise de notes sur les documents, documents tendance/populaires, statistiques pour les documents et auteurs, et plus.
+> 
+> • **Serveur MCP :** utile pour les Agents IA effectuant du travail d'ingénierie complexe ou de la recherche scientifique.
+> 
+> • **CLI** où les utilisateurs peuvent faire des recherches par mots-clés et sémantiques.
 
 <br>
 
@@ -118,6 +123,8 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
     ```bash
     git clone https://github.com/Freelunch-AI/lunch-stem.git
     ```
+> [!NOTE]
+> Si vous utilisez Windows, il est important de cloner dans un répertoire de niveau supérieur, pour éviter les erreurs potentielles liées à la création de chemins de fichiers trop longs. Windows a généralement un chemin de fichier maximum de 260 caractères.
 
 3.  Entrez dans le dossier `lunch-stem`.
 
@@ -231,7 +238,7 @@ __Vous voulez être un sponsor ? Envoyez un email à bruno.c.scaglione@gmail.com
 
 ## [Freelunch](https://freelunch.dev)
 
-![Logo Freelunch](.\sponsors\freelunch\logo_freelunch_with_name.png)
+![Logo Freelunch](./sponsors/freelunch/logo_freelunch_with_name.png)
 
 ## Remerciements
 

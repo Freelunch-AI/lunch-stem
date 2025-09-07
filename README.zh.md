@@ -46,18 +46,25 @@
 
 <br>
 
-<span style="background-color:#ffe066; color:#222; display:block; padding:20px; border-radius:6px"> 
-<span style="font-size:1.1em"><strong>⚠️ 重要</strong></span><br><br>
-<em>lunchSTEM</em> 中的文档由外部作者创建，而不是我们。我们不支持在没有作者许可的情况下包含不可分发的文档（对于不可分发的文档：请查看 <code>author_permissions.jsonl</code>）。<br><br>每个文档在相应的 <code>[文件名].[文件扩展名].source.json</code> 文件中标注其作者。<br><br>
-作者可以随时请求删除内容。在遵循我们的简化 <i>内容删除请求</i> 协议后，我们会在24小时内删除内容。这个选项比 <i>数字千年版权法 (DMCA)</i> 通知更快更友好（DMCA可能会关闭项目）。
-</span>
+> [!WARNING]
+> **⚠️ 重要**
+> 
+> *lunchSTEM* 中的文档由外部作者创建，而不是我们。我们不支持在没有作者许可的情况下包含不可分发的文档（对于不可分发的文档：请查看 `author_permissions.jsonl`）。
+> 
+> 每个文档在相应的 `[文件名].[文件扩展名].source.json` 文件中标注其作者。
+> 
+> 作者可以随时请求删除内容。在遵循我们的简化 *内容删除请求* 协议后，我们会在24小时内删除内容。这个选项比 *数字千年版权法 (DMCA)* 通知更快更友好（DMCA可能会关闭项目）。
 
 <br>
 
-<span style="background-color:#b6f5b6; color:#222; display:block; padding:20px; border-radius:6px;">
-<span style="font-size:1.1em"><strong>🟩 即将推出</strong><br><br></span>
-• <b>网站</b> 包含作者主页、关键词/语义搜索、文档讨论论坛、内容预览、交互式内容可视化、内容收藏/标签/喜爱、文档注释、热门/流行文档、文档和作者统计等功能。<br>
-• <b>MCP 服务器：</b> 对进行复杂工程工作或科学研究的AI代理很有用。<br>
+> [!NOTE]
+> **🟩 即将推出**
+> 
+> • **网站** 包含作者主页、关键词/语义搜索、文档讨论论坛、内容预览、交互式内容可视化、内容收藏/标签/喜爱、文档注释、热门/流行文档、文档和作者统计等功能。
+> 
+> • **MCP 服务器：** 对进行复杂工程工作或科学研究的AI代理很有用。
+> 
+> • **CLI** 用户可以进行关键词和语义搜索。
 • <b>CLI</b> 用户可以进行关键词和语义搜索。
 </span>
 
@@ -122,6 +129,8 @@ pdf文件的作者归属数据存储在 `[文件名].pdf.source.json` 中，应�
     ```bash
     git clone https://github.com/Freelunch-AI/lunch-stem.git
     ```
+> [!NOTE]
+> 如果您使用的是Windows，重要的是要在顶级目录内进行克隆，以避免与创建过长的文件路径相关的潜在错误。Windows通常的文件路径最大长度为260个字符。
 
 3.  进入`lunch-stem`文件夹。
 
@@ -235,7 +244,7 @@ __想成为赞助商？发送邮件至 bruno.c.scaglione@gmail.com，主题为 "
 
 ## [Freelunch](https://freelunch.dev)
 
-![Freelunch Logo](.\sponsors\freelunch\logo_freelunch_with_name.png)
+![Freelunch Logo](./sponsors/freelunch/logo_freelunch_with_name.png)
 
 ## 致谢
 

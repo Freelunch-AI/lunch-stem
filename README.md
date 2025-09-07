@@ -43,22 +43,23 @@
 
 ---
 
-<br>
+> [!WARNING]
+> **⚠️ Important**
+> 
+> Documents in *lunchSTEM* are created by external authors, not by us. We don't support inclusion of non-distributable documents without author permission (for non-distributable documents: check `author_permissions.jsonl`).
+> 
+> Each document credits its author(s) in a corresponding `[file_name].[file_extension].source.json` file.
+> 
+> Authors may request content removal at any time. After following our streamlined protocol for *Content Removal Requests*, we remove content within 24 hours. This option is faster and more friendly than a *Digital Millennium Copyright Act (DMCA)* notification (which can shutdown the project).
 
-<span style="background-color:#ffe066; color:#222; display:block; padding:20px; border-radius:6px"> 
-<span style="font-size:1.1em"><strong>⚠️ Important</strong></span><br><br>
-Documents in <em>lunchSTEM</em> are created by external authors, not by us. We don't support inclusion of non-distributable documents without author permission (for non-distributable documents: check <code>author_permissions.jsonl</code>). <br><br>Each document credits its author(s) in a corresponding <code>[file_name].[file_extension].source.json</code> file.<br><br>
-Authors may request content removal at any time. After following our streamlined protocol for <i>Content Removal Requests</i>, we remove content within 24 hours. This option is faster and more friendly than a <i>Digital Millennium Copyright Act (DMCA)</i> notification (which can shutdown the project).
-</span>
-
-<br>
-
-<span style="background-color:#b6f5b6; color:#222; display:block; padding:20px; border-radius:6px;">
-<span style="font-size:1.1em"><strong>🟩 Coming Soon</strong><br><br></span>
-• <b>Website</b> with author homepages, keyword/semantic search, discussion forums on top of documents, content previews, interactive content visualizations, content starring/tagging/favouriting, making notes on top of documents, trending/popular documents, statistics for documents and authors, and more.<br>
-• <b>MCP Server:</b> useful for AI Agents doing complex engineering work or scientific research.<br>
-• <b>CLI</b> where users can do keyword and semantic search.
-</span>
+> [!NOTE]
+> **🟩 Coming Soon**
+> 
+> • **Website** with author homepages, keyword/semantic search, discussion forums on top of documents, content previews, interactive content visualizations, content starring/tagging/favouriting, making notes on top of documents, trending/popular documents, statistics for documents and authors, and more.
+> 
+> • **MCP Server:** useful for AI Agents doing complex engineering work or scientific research.
+> 
+> • **CLI** where users can do keyword and semantic search.
 
 <br>
 
@@ -119,6 +120,8 @@ These can be installed by following their repsective installation guide on their
    ```bash
    git clone https://github.com/Freelunch-AI/lunch-stem.git
    ```
+> [!NOTE]
+> If you are using Windows, it's important to clone inside a top-level directory, to avoid potential errors related to the creating file paths that are too long. Windows typically has a maximum file path of 260 characters.
 
 3. Enter the `lunch-stem` folder
 
@@ -232,7 +235,7 @@ __Want to be a sponsor? Send an email to bruno.c.scaglione@gmail.com with the su
 
 ## [Freelunch](https://freelunch.dev)
 
-![Freelunch Logo](.\sponsors\freelunch\logo_freelunch_with_name.png)
+![Freelunch Logo](./sponsors/freelunch/logo_freelunch_with_name.png)
 
 ## Acknowledgements
 

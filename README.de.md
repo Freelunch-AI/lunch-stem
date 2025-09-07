@@ -44,20 +44,25 @@
 
 <br>
 
-<span style="background-color:#ffe066; color:#222; display:block; padding:20px; border-radius:6px"> 
-<span style="font-size:1.1em"><strong>⚠️ Wichtig</strong></span><br><br>
-Dokumente in <em>lunchSTEM</em> werden von externen Autoren erstellt, nicht von uns. Wir unterstützen die Aufnahme von nicht verteilbaren Dokumenten ohne Autorenerlaubnis nicht (für nicht verteilbare Dokumente: prüfen Sie <code>author_permissions.jsonl</code>). <br><br>Jedes Dokument würdigt seine(n) Autor(en) in einer entsprechenden <code>[dateiname].[dateierweiterung].source.json</code> Datei.<br><br>
-Autoren können jederzeit die Entfernung von Inhalten beantragen. Nach Befolgen unseres vereinfachten Protokolls für <i>Inhaltsverwendungsanträge</i> entfernen wir Inhalte innerhalb von 24 Stunden. Diese Option ist schneller und freundlicher als eine <i>Digital Millennium Copyright Act (DMCA)</i> Benachrichtigung (die das Projekt schließen kann).
-</span>
+> [!WARNING]
+> **⚠️ Wichtig**
+> 
+> Dokumente in *lunchSTEM* werden von externen Autoren erstellt, nicht von uns. Wir unterstützen die Aufnahme von nicht verteilbaren Dokumenten ohne Autorenerlaubnis nicht (für nicht verteilbare Dokumente: prüfen Sie `author_permissions.jsonl`).
+> 
+> Jedes Dokument würdigt seine(n) Autor(en) in einer entsprechenden `[dateiname].[dateierweiterung].source.json` Datei.
+> 
+> Autoren können jederzeit die Entfernung von Inhalten beantragen. Nach Befolgen unseres vereinfachten Protokolls für *Inhaltsverwendungsanträge* entfernen wir Inhalte innerhalb von 24 Stunden. Diese Option ist schneller und freundlicher als eine *Digital Millennium Copyright Act (DMCA)* Benachrichtigung (die das Projekt schließen kann).
 
 <br>
 
-<span style="background-color:#b6f5b6; color:#222; display:block; padding:20px; border-radius:6px;">
-<span style="font-size:1.1em"><strong>🟩 Demnächst Verfügbar</strong><br><br></span>
-• <b>Website</b> mit Autorenseiten, Schlagwort-/semantischer Suche, Diskussionsforen zu Dokumenten, Inhaltsvorschauen, interaktiven Inhaltsvisualisierungen, Inhaltsmartierung/-markierung/-favorisierung, Notizen zu Dokumenten, trendige/beliebte Dokumente, Statistiken für Dokumente und Autoren, und mehr.<br>
-• <b>MCP Server:</b> nützlich für KI-Agenten, die komplexe Ingenieurarbeit oder wissenschaftliche Forschung durchführen.<br>
-• <b>CLI</b> wo Benutzer Schlagwort- und semantische Suche durchführen können.
-</span>
+> [!NOTE]
+> **🟩 Demnächst Verfügbar**
+> 
+> • **Website** mit Autorenseiten, Schlagwort-/semantischer Suche, Diskussionsforen zu Dokumenten, Inhaltsvorschauen, interaktiven Inhaltsvisualisierungen, Inhaltsmartierung/-markierung/-favorisierung, Notizen zu Dokumenten, trendige/beliebte Dokumente, Statistiken für Dokumente und Autoren, und mehr.
+> 
+> • **MCP Server:** nützlich für KI-Agenten, die komplexe Ingenieurarbeit oder wissenschaftliche Forschung durchführen.
+> 
+> • **CLI** wo Benutzer Schlagwort- und semantische Suche durchführen können.
 
 <br>
 
@@ -118,6 +123,8 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
     ```bash
     git clone https://github.com/Freelunch-AI/lunch-stem.git
     ```
+> [!NOTE]
+> Wenn Sie Windows verwenden, ist es wichtig, in einem Verzeichnis der obersten Ebene zu klonen, um potenzielle Fehler im Zusammenhang mit der Erstellung zu langer Dateipfade zu vermeiden. Windows hat typischerweise eine maximale Dateipfadlänge von 260 Zeichen.
 
 3.  Betreten Sie den `lunch-stem` Ordner.
 

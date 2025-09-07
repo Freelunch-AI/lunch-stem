@@ -6,7 +6,7 @@
 
 We are currently accepting these types of PRs:
 
-1. **Content removal**: remove the `.source.json` file and we will delete the actual file from Google Drive if the PR is accepted. 
+1. **Content removal**: remove the `.dvc` file and the `.source.json` file and we will delete the actual `.pdf` file from Google Drive if the PR is accepted. 
 2. **Credit attribution information improvement**: `.source.json` files with more accurate info
 3. **Substitution of actual content files for `.web.txt` files**
 4. **Organization/Cleaning of the repo**
@@ -25,6 +25,7 @@ We are currently accepting these types of PRs:
 - **English content**
 - **Favor links** instead of actual content, using: `.web.txt` + `.source.json` files per content file
 - **The only allowed file types: `.pdf`, `.ipynb`, `.md`, `.source.json`, `.web.txt`, `.sym.txt`**
+- **Cannot create new directories of files that full path exceeds 150 characters:** use `.sym.txt` to bypass this.
 
 ### Directory Structure
 
