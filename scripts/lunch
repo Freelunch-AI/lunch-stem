@@ -6,7 +6,7 @@
 set -e  # Exit on any error
 
 # Configuration
-RCLONE_REMOTE="gdrive:lunch-stem-dvc-data/files/md5"
+RCLONE_REMOTE="gdrive-lunch-stem:lunch-stem-dvc-data/files/md5"
 TEMP_FOLDER="./temp_folder"
 VERBOSE="false"
 
@@ -75,24 +75,24 @@ EOF
 
 # Logging functions
 log_info() {
-    echo -e "${BLUE}[INFO]${NC} $1"
+    echo -e "${BLUE}[INFO]${NC} $1" >&2
 }
 
 log_success() {
-    echo -e "${GREEN}[SUCCESS]${NC} $1"
+    echo -e "${GREEN}[SUCCESS]${NC} $1" >&2
 }
 
 log_warning() {
-    echo -e "${YELLOW}[WARNING]${NC} $1"
+    echo -e "${YELLOW}[WARNING]${NC} $1" >&2
 }
 
 log_error() {
-    echo -e "${RED}[ERROR]${NC} $1"
+    echo -e "${RED}[ERROR]${NC} $1" >&2
 }
 
 log_verbose() {
     if [[ "$VERBOSE" == "true" ]]; then
-        echo -e "${PURPLE}[VERBOSE]${NC} $1"
+        echo -e "${PURPLE}[VERBOSE]${NC} $1" >&2
     fi
 }
 
@@ -101,26 +101,69 @@ get_md5_hash() {
     local dvc_file="$1"
     
     log_verbose "Attempting to extract MD5 hash from DVC file: $dvc_file"
+    log_verbose "DVC file size: $(stat -c%s "$dvc_file" 2>/dev/null || echo "unknown") bytes"
     
     if [[ ! -f "$dvc_file" ]]; then
         log_error "DVC file not found: $dvc_file"
+        log_verbose "Attempted file path: $(realpath "$dvc_file" 2>/dev/null || echo "invalid path")"
         return 1
     fi
     
     log_verbose "DVC file exists, reading content..."
+    log_verbose "File permissions: $(stat -c%A "$dvc_file" 2>/dev/null || echo "unknown")"
     
-    local md5_hash=$(grep -oP 'md5: \K[a-f0-9]+' "$dvc_file" 2>/dev/null)
+    # First, let's see what we're working with
+    if [[ "$VERBOSE" == "true" ]]; then
+        log_verbose "DVC file first 10 lines:"
+        head -10 "$dvc_file" 2>/dev/null | while IFS= read -r line; do
+            log_verbose "  $line"
+        done || log_verbose "Could not read file content"
+    fi
     
-    if [[ -z "$md5_hash" ]]; then
+    # Extract MD5 hash with detailed debugging
+    local grep_result
+    log_verbose "Running grep command: grep -oP 'md5: \K[a-f0-9]+' \"$dvc_file\""
+    grep_result=$(grep -oP 'md5: \K[a-f0-9]+' "$dvc_file" 2>&1)
+    local grep_exit_code=$?
+    
+    log_verbose "Grep exit code: $grep_exit_code"
+    log_verbose "Grep raw result: '$grep_result'"
+    
+    local md5_hash
+    if [[ $grep_exit_code -eq 0 && -n "$grep_result" ]]; then
+        md5_hash="$grep_result"
+        log_verbose "Successfully extracted MD5 hash: $md5_hash"
+        log_verbose "MD5 hash length: ${#md5_hash} characters"
+        
+        # Validate MD5 format
+        if [[ "$md5_hash" =~ ^[a-f0-9]{32}$ ]]; then
+            log_verbose "MD5 hash format validation: PASSED"
+        else
+            log_warning "MD5 hash format validation: FAILED (expected 32 hex characters)"
+        fi
+    else
         log_error "Could not find MD5 hash in $dvc_file"
+        log_verbose "Grep command failed or returned empty result"
+        
         if [[ "$VERBOSE" == "true" ]]; then
-            log_verbose "DVC file content:"
-            cat "$dvc_file" | head -20  # Show first 20 lines for debugging
+            log_verbose "Full DVC file content for debugging:"
+            local file_content
+            file_content=$(cat "$dvc_file" 2>/dev/null)
+            if [[ -n "$file_content" ]]; then
+                echo "$file_content" | while IFS= read -r line; do
+                    log_verbose "  $line"
+                done
+            else
+                log_verbose "Could not read file content"
+            fi
+            log_verbose "Searching for any 'md5' occurrences:"
+            grep -n "md5" "$dvc_file" 2>/dev/null | while IFS= read -r line; do
+                log_verbose "  $line"
+            done || log_verbose "No 'md5' found in file"
         fi
         return 1
     fi
     
-    log_verbose "Successfully extracted MD5 hash: $md5_hash"
     echo "$md5_hash"
 }
 
@@ -130,8 +173,27 @@ download_dvc_file() {
     local in_place="$2"
     local base_output_dir="$3"  # Optional: for directory downloads
     
+    log_verbose "=== Starting download_dvc_file function ==="
+    log_verbose "Input parameters:"
+    log_verbose "  dvc_file: '$dvc_file'"
+    log_verbose "  in_place: '$in_place'"
+    log_verbose "  base_output_dir: '$base_output_dir'"
+    log_verbose "  \$4 (target_dir): '$4'"
+    
     # Convert to absolute path for consistent handling
+    local original_dvc_file="$dvc_file"
     dvc_file=$(realpath "$dvc_file")
+    local realpath_exit_code=$?
+    
+    log_verbose "Path resolution:"
+    log_verbose "  Original path: '$original_dvc_file'"
+    log_verbose "  Resolved path: '$dvc_file'"
+    log_verbose "  realpath exit code: $realpath_exit_code"
+    
+    if [[ $realpath_exit_code -ne 0 ]]; then
+        log_error "Failed to resolve absolute path for: $original_dvc_file"
+        return 1
+    fi
     
     log_info "Processing: $(basename "$dvc_file")"
     log_verbose "Absolute path: $dvc_file"
@@ -140,8 +202,16 @@ download_dvc_file() {
     
     # Get MD5 hash
     local md5_hash
+    log_verbose "Calling get_md5_hash function..."
     md5_hash=$(get_md5_hash "$dvc_file")
-    if [[ $? -ne 0 ]]; then
+    local get_md5_exit_code=$?
+    
+    log_verbose "get_md5_hash result:"
+    log_verbose "  Exit code: $get_md5_exit_code"
+    log_verbose "  MD5 hash: '$md5_hash'"
+    
+    if [[ $get_md5_exit_code -ne 0 ]]; then
+        log_error "Failed to extract MD5 hash from DVC file"
         return 1
     fi
     
@@ -149,115 +219,405 @@ download_dvc_file() {
     local base_filename
     base_filename=$(basename "$dvc_file" .dvc)
     
-    log_verbose "Base filename (without .dvc extension): $base_filename"
+    log_verbose "Filename processing:"
+    log_verbose "  DVC file basename: '$(basename "$dvc_file")'"
+    log_verbose "  Base filename (without .dvc): '$base_filename'"
     
     local output_file
+    log_verbose "Determining output file path..."
+    
     if [[ "$in_place" == "true" ]]; then
         # Download in the same directory as the .dvc file
-        output_file="$(dirname "$dvc_file")/$base_filename"
-        log_verbose "In-place mode: output file will be $output_file"
+        local dvc_dir
+        dvc_dir=$(dirname "$dvc_file")
+        output_file="$dvc_dir/$base_filename"
+        
+        log_verbose "In-place mode selected:"
+        log_verbose "  DVC directory: '$dvc_dir'"
+        log_verbose "  Output file: '$output_file'"
+        
     elif [[ -n "$base_output_dir" ]]; then
         # For directory downloads with structure preservation
         local dvc_dir
         dvc_dir=$(dirname "$dvc_file")
         local target_dir="$4"  # Original target directory
         
-        log_verbose "Directory mode: dvc_dir=$dvc_dir, target_dir=$target_dir"
+        log_verbose "Directory mode selected:"
+        log_verbose "  DVC directory: '$dvc_dir'"
+        log_verbose "  Target directory (original): '$target_dir'"
         
         # Convert target_dir to absolute path for comparison
+        local original_target_dir="$target_dir"
         target_dir=$(realpath "$target_dir")
+        local target_realpath_exit_code=$?
+        
+        log_verbose "  Target directory resolution:"
+        log_verbose "    Original: '$original_target_dir'"
+        log_verbose "    Resolved: '$target_dir'"
+        log_verbose "    realpath exit code: $target_realpath_exit_code"
+        
+        if [[ $target_realpath_exit_code -ne 0 ]]; then
+            log_error "Failed to resolve target directory: $original_target_dir"
+            return 1
+        fi
         
         if [[ "$dvc_dir" == "$target_dir" ]]; then
             # File is in root target directory
             output_file="$base_output_dir/$base_filename"
+            log_verbose "  Root directory mode detected"
+            log_verbose "  Creating directory: '$base_output_dir'"
+            
             mkdir -p "$base_output_dir"
-            log_verbose "Root directory mode: creating $base_output_dir"
+            local mkdir_exit_code=$?
+            log_verbose "  mkdir exit code: $mkdir_exit_code"
+            
+            if [[ $mkdir_exit_code -ne 0 ]]; then
+                log_error "Failed to create output directory: $base_output_dir"
+                return 1
+            fi
         else
             # File is in subdirectory, preserve structure
             local relative_path
             relative_path=$(realpath --relative-to="$target_dir" "$dvc_dir")
+            local relative_path_exit_code=$?
+            
+            log_verbose "  Subdirectory mode detected"
+            log_verbose "  Relative path calculation:"
+            log_verbose "    Command: realpath --relative-to='$target_dir' '$dvc_dir'"
+            log_verbose "    Result: '$relative_path'"
+            log_verbose "    Exit code: $relative_path_exit_code"
+            
+            if [[ $relative_path_exit_code -ne 0 ]]; then
+                log_error "Failed to calculate relative path"
+                return 1
+            fi
+            
             output_file="$base_output_dir/$relative_path/$base_filename"
-            mkdir -p "$base_output_dir/$relative_path"
-            log_verbose "Subdirectory mode: relative_path=$relative_path, creating $base_output_dir/$relative_path"
+            local target_subdir="$base_output_dir/$relative_path"
+            
+            log_verbose "  Creating subdirectory: '$target_subdir'"
+            mkdir -p "$target_subdir"
+            local mkdir_exit_code=$?
+            log_verbose "  mkdir exit code: $mkdir_exit_code"
+            
+            if [[ $mkdir_exit_code -ne 0 ]]; then
+                log_error "Failed to create output subdirectory: $target_subdir"
+                return 1
+            fi
         fi
     else
         # Simple download to current directory
         output_file="$base_filename"
-        log_verbose "Simple mode: downloading to current directory"
+        log_verbose "Simple mode selected:"
+        log_verbose "  Downloading to current directory"
+        log_verbose "  Current working directory: '$(pwd)'"
     fi
+    
+    log_verbose "Final output file path: '$output_file'"
     
     log_info "  MD5: $md5_hash"
     log_info "  Output: $output_file"
     
     # Check if file already exists
+    log_verbose "Checking if output file already exists..."
     if [[ -f "$output_file" ]]; then
+        local existing_file_size
+        existing_file_size=$(stat -c%s "$output_file" 2>/dev/null || echo "unknown")
         log_warning "  Skipping: $output_file already exists"
-        log_verbose "  File already exists at: $(realpath "$output_file")"
+        log_verbose "  Existing file details:"
+        log_verbose "    Path: $(realpath "$output_file")"
+        log_verbose "    Size: $existing_file_size bytes"
+        log_verbose "    Modified: $(stat -c%y "$output_file" 2>/dev/null || echo "unknown")"
         return 0
     fi
     
     # Create temp directory
+    log_verbose "Setting up temporary directory..."
+    log_verbose "  Temp folder path: '$TEMP_FOLDER'"
+    log_verbose "  Creating temp directory..."
+    
     mkdir -p "$TEMP_FOLDER"
-    log_verbose "Created temp directory: $(realpath "$TEMP_FOLDER")"
+    local mkdir_temp_exit_code=$?
+    log_verbose "  mkdir exit code: $mkdir_temp_exit_code"
+    
+    if [[ $mkdir_temp_exit_code -ne 0 ]]; then
+        log_error "Failed to create temporary directory: $TEMP_FOLDER"
+        return 1
+    fi
+    
+    local temp_realpath
+    temp_realpath=$(realpath "$TEMP_FOLDER")
+    log_verbose "  Temp directory created: '$temp_realpath'"
+    log_verbose "  Temp directory permissions: $(stat -c%A "$TEMP_FOLDER" 2>/dev/null || echo "unknown")"
     
     # Calculate rclone path
+    log_verbose "Calculating rclone path from MD5 hash..."
     local hash_prefix="${md5_hash:0:2}"
     local hash_suffix="${md5_hash:2}"
     local rclone_path="$RCLONE_REMOTE/$hash_prefix/$hash_suffix"
     
-    log_info "  Downloading from: $rclone_path"
-    log_verbose "  Hash prefix: $hash_prefix"
-    log_verbose "  Hash suffix: $hash_suffix"
-    log_verbose "  Full rclone path: $rclone_path"
-    log_verbose "  Temp folder: $TEMP_FOLDER"
+    log_verbose "  MD5 hash breakdown:"
+    log_verbose "    Full MD5: '$md5_hash'"
+    log_verbose "    Hash prefix (first 2 chars): '$hash_prefix'"
+    log_verbose "    Hash suffix (remaining chars): '$hash_suffix'"
+    log_verbose "    Hash suffix length: ${#hash_suffix} characters"
     
-    # Download file
+    log_info "  Downloading from: $rclone_path"
+    log_verbose "  Full rclone details:"
+    log_verbose "    Remote: '$RCLONE_REMOTE'"
+    log_verbose "    Full path: '$rclone_path'"
+    log_verbose "    Destination: '$TEMP_FOLDER'"
+    
+    # Pre-flight checks
+    log_verbose "Pre-flight checks:"
+    log_verbose "  rclone executable: $(which rclone 2>/dev/null || echo "not found")"
+    log_verbose "  rclone config check:"
+    
     if [[ "$VERBOSE" == "true" ]]; then
-        log_verbose "Running rclone command with verbose output:"
-        log_verbose "rclone copy \"$rclone_path\" \"$TEMP_FOLDER\" --progress --verbose"
-        if rclone copy "$rclone_path" "$TEMP_FOLDER" --progress --verbose; then
-            rclone_success=true
+        local config_output
+        config_output=$(rclone config show 2>/dev/null | head -5)
+        if [[ -n "$config_output" ]]; then
+            echo "$config_output" | while IFS= read -r line; do
+                log_verbose "    $line"
+            done
         else
-            rclone_success=false
-        fi
-    else
-        if rclone copy "$rclone_path" "$TEMP_FOLDER" >/dev/null 2>&1; then
-            rclone_success=true
-        else
-            rclone_success=false
+            log_verbose "    Could not show rclone config"
         fi
     fi
     
+    # Download file with enhanced debugging
+    log_verbose "Starting rclone download..."
+    local rclone_success="false"
+    local rclone_start_time
+    rclone_start_time=$(date +%s)
+    log_verbose "  Download start time: $(date)"
+    
+    if [[ "$VERBOSE" == "true" ]]; then
+        log_verbose "Running rclone with verbose output:"
+        log_verbose "Command: rclone copy \"$rclone_path\" \"$TEMP_FOLDER\" --progress --verbose"
+        
+        # Capture both stdout and stderr for detailed analysis
+        local rclone_output
+        local rclone_exit_code
+        rclone_output=$(rclone copy "$rclone_path" "$TEMP_FOLDER" --progress --verbose 2>&1)
+        rclone_exit_code=$?
+        
+        log_verbose "rclone exit code: $rclone_exit_code"
+        log_verbose "rclone output length: ${#rclone_output} characters"
+        
+        if [[ -n "$rclone_output" ]]; then
+            log_verbose "rclone full output:"
+            echo "$rclone_output" | while IFS= read -r line; do
+                log_verbose "  $line"
+            done
+        else
+            log_verbose "rclone produced no output"
+        fi
+        
+        if [[ $rclone_exit_code -eq 0 ]]; then
+            rclone_success="true"
+            log_verbose "rclone command completed successfully"
+        else
+            rclone_success="false"
+            log_verbose "rclone command failed with exit code: $rclone_exit_code"
+        fi
+    else
+        log_verbose "Running rclone in quiet mode:"
+        log_verbose "Command: rclone copy \"$rclone_path\" \"$TEMP_FOLDER\""
+        
+        local rclone_exit_code
+        rclone copy "$rclone_path" "$TEMP_FOLDER" >/dev/null 2>&1
+        rclone_exit_code=$?
+        
+        log_verbose "rclone exit code: $rclone_exit_code"
+        
+        if [[ $rclone_exit_code -eq 0 ]]; then
+            rclone_success="true"
+        else
+            rclone_success="false"
+        fi
+    fi
+    
+    local rclone_end_time
+    rclone_end_time=$(date +%s)
+    local rclone_duration=$((rclone_end_time - rclone_start_time))
+    log_verbose "  Download end time: $(date)"
+    log_verbose "  Download duration: ${rclone_duration} seconds"
+    
+    # Post-download file handling
+    log_verbose "Post-download analysis..."
+    log_verbose "  rclone_success: '$rclone_success'"
+    
     if [[ "$rclone_success" == "true" ]]; then
-        # Find downloaded file
+        # Analyze temp directory contents
+        log_verbose "Analyzing temporary directory contents..."
+        log_verbose "  Temp directory: '$TEMP_FOLDER'"
+        
+        if [[ -d "$TEMP_FOLDER" ]]; then
+            local temp_dir_contents
+            temp_dir_contents=$(ls -la "$TEMP_FOLDER" 2>/dev/null)
+            log_verbose "  Temp directory listing:"
+            echo "$temp_dir_contents" | while IFS= read -r line; do
+                log_verbose "    $line"
+            done
+            
+            local file_count
+            file_count=$(find "$TEMP_FOLDER" -type f | wc -l)
+            log_verbose "  Files in temp directory: $file_count"
+        else
+            log_verbose "  Temp directory does not exist after rclone command"
+        fi
+        
+        # Look for the expected downloaded file
         local downloaded_file="$TEMP_FOLDER/$hash_suffix"
-        log_verbose "  Looking for downloaded file: $downloaded_file"
+        log_verbose "  Looking for downloaded file: '$downloaded_file'"
+        log_verbose "  Expected filename: '$hash_suffix'"
         
         if [[ -f "$downloaded_file" ]]; then
-            log_verbose "  Downloaded file found, moving to final location"
-            # Move to final location
+            log_verbose "  Downloaded file found!"
+            
+            # Analyze the downloaded file
+            local file_size
+            file_size=$(stat -c%s "$downloaded_file" 2>/dev/null || echo "unknown")
+            local file_perms
+            file_perms=$(stat -c%A "$downloaded_file" 2>/dev/null || echo "unknown")
+            
+            log_verbose "  Downloaded file details:"
+            log_verbose "    Path: '$downloaded_file'"
+            log_verbose "    Size: $file_size bytes"
+            log_verbose "    Permissions: $file_perms"
+            log_verbose "    Modified: $(stat -c%y "$downloaded_file" 2>/dev/null || echo "unknown")"
+            
+            # Prepare for file move
+            log_verbose "  Moving file to final location..."
+            log_verbose "    Source: '$downloaded_file'"
+            log_verbose "    Destination: '$output_file'"
+            
+            # Check if destination directory exists
+            local output_dir
+            output_dir=$(dirname "$output_file")
+            log_verbose "    Destination directory: '$output_dir'"
+            
+            if [[ ! -d "$output_dir" ]]; then
+                log_verbose "    Destination directory does not exist, creating..."
+                mkdir -p "$output_dir"
+                local mkdir_output_exit_code=$?
+                log_verbose "    mkdir exit code: $mkdir_output_exit_code"
+                
+                if [[ $mkdir_output_exit_code -ne 0 ]]; then
+                    log_error "  Failed to create destination directory: $output_dir"
+                    return 1
+                fi
+            fi
+            
+            # Perform the move
             mv "$downloaded_file" "$output_file"
-            log_success "  Downloaded: $output_file"
-            log_verbose "  Final file location: $(realpath "$output_file")"
+            local mv_exit_code=$?
+            log_verbose "    mv exit code: $mv_exit_code"
+            
+            if [[ $mv_exit_code -eq 0 ]]; then
+                log_success "  Downloaded: $output_file"
+                
+                # Verify final file
+                if [[ -f "$output_file" ]]; then
+                    local final_file_size
+                    final_file_size=$(stat -c%s "$output_file" 2>/dev/null || echo "unknown")
+                    log_verbose "  Final file verification:"
+                    log_verbose "    Path: $(realpath "$output_file")"
+                    log_verbose "    Size: $final_file_size bytes"
+                    log_verbose "    Size match: $([ "$file_size" = "$final_file_size" ] && echo "YES" || echo "NO")"
+                else
+                    log_error "  Final file verification failed - file not found at destination"
+                    return 1
+                fi
+            else
+                log_error "  Failed to move file to final location (exit code: $mv_exit_code)"
+                return 1
+            fi
         else
             log_error "  Error: No file downloaded"
-            log_verbose "  Expected file not found: $downloaded_file"
-            if [[ "$VERBOSE" == "true" ]]; then
-                log_verbose "  Contents of temp folder:"
-                ls -la "$TEMP_FOLDER" 2>/dev/null || log_verbose "  Temp folder is empty or doesn't exist"
+            log_verbose "  Expected file not found: '$downloaded_file'"
+            
+            # Enhanced debugging for missing file
+            log_verbose "  Debugging missing download:"
+            
+            # Check if any files were downloaded
+            local downloaded_files
+            downloaded_files=$(find "$TEMP_FOLDER" -type f 2>/dev/null)
+            if [[ -n "$downloaded_files" ]]; then
+                log_verbose "  Found other files in temp directory:"
+                echo "$downloaded_files" | while IFS= read -r file; do
+                    local other_file_size
+                    other_file_size=$(stat -c%s "$file" 2>/dev/null || echo "unknown")
+                    log_verbose "    $(basename "$file") ($other_file_size bytes)"
+                done
+            else
+                log_verbose "  No files found in temp directory"
             fi
+            
+            # Check if the expected hash_suffix exists with different extension or path
+            log_verbose "  Searching for files matching hash_suffix pattern..."
+            local matching_files
+            matching_files=$(find "$TEMP_FOLDER" -name "*$hash_suffix*" 2>/dev/null)
+            if [[ -n "$matching_files" ]]; then
+                log_verbose "  Found files matching hash pattern:"
+                echo "$matching_files" | while IFS= read -r file; do
+                    log_verbose "    $file"
+                done
+            else
+                log_verbose "  No files matching hash pattern found"
+            fi
+            
             return 1
         fi
     else
         log_error "  Error: Failed to download from rclone"
-        log_verbose "  rclone command failed with exit code: $?"
+        log_verbose "  rclone command failed"
+        
+        # Additional debugging for rclone failure
+        log_verbose "  Debugging rclone failure:"
+        log_verbose "    Command attempted: rclone copy \"$rclone_path\" \"$TEMP_FOLDER\""
+        log_verbose "    Remote path: $rclone_path"
+        log_verbose "    Destination: $TEMP_FOLDER"
+        
+        # Test rclone connectivity
+        if [[ "$VERBOSE" == "true" ]]; then
+            log_verbose "  Testing rclone connectivity..."
+            local rclone_ls_output
+            rclone_ls_output=$(rclone ls "$RCLONE_REMOTE" --max-depth 1 2>&1 | head -5)
+            if [[ $? -eq 0 ]]; then
+                log_verbose "  rclone remote is accessible"
+                if [[ -n "$rclone_ls_output" ]]; then
+                    log_verbose "  Sample remote contents:"
+                    echo "$rclone_ls_output" | while IFS= read -r line; do
+                        log_verbose "    $line"
+                    done
+                fi
+            else
+                log_verbose "  rclone remote is not accessible or has issues"
+                log_verbose "  rclone ls error output:"
+                echo "$rclone_ls_output" | while IFS= read -r line; do
+                    log_verbose "    $line"
+                done
+            fi
+        fi
+        
         return 1
     fi
     
     # Clean up temp folder
+    log_verbose "Cleaning up temporary directory..."
     rm -rf "$TEMP_FOLDER"
-    log_verbose "  Cleaned up temp folder"
+    local cleanup_exit_code=$?
+    log_verbose "  rm exit code: $cleanup_exit_code"
     
+    if [[ $cleanup_exit_code -eq 0 ]]; then
+        log_verbose "  Temp directory cleaned up successfully"
+    else
+        log_warning "  Failed to clean up temp directory (exit code: $cleanup_exit_code)"
+    fi
+    
+    log_verbose "=== download_dvc_file function completed successfully ==="
     return 0
 }
 
@@ -324,7 +684,7 @@ cmd_files() {
         if download_dvc_file "$dvc_file" "$in_place"; then
             ((success_count++))
         fi
-        echo
+        echo >&2
     done
     
     # Report results based on success rate
@@ -443,7 +803,7 @@ cmd_directory() {
         if download_dvc_file "$dvc_file" "$in_place" "$base_output_dir" "$target_directory"; then
             ((success_count++))
         fi
-        echo
+        echo >&2
     done
     
     # Report results based on success rate
@@ -461,36 +821,104 @@ cmd_directory() {
 # Main function
 main() {
     # Check if rclone is available
+    log_verbose "=== Starting main function ==="
+    log_verbose "Checking rclone availability..."
+    
     if ! command -v rclone &> /dev/null; then
         log_error "rclone is not installed or not in PATH"
+        log_verbose "PATH: $PATH"
+        log_verbose "Searched for rclone in PATH directories"
         exit 1
     fi
     
-    log_verbose "rclone found: $(which rclone)"
+    local rclone_path
+    rclone_path=$(which rclone)
+    log_verbose "rclone found: $rclone_path"
+    
     if [[ "$VERBOSE" == "true" ]]; then
-        log_verbose "rclone version:"
-        rclone version 2>/dev/null | head -3 || log_verbose "Could not get rclone version"
+        log_verbose "rclone version information:"
+        local version_output
+        version_output=$(rclone version 2>&1)
+        local version_exit_code=$?
+        
+        if [[ $version_exit_code -eq 0 ]]; then
+            echo "$version_output" | head -5 | while IFS= read -r line; do
+                log_verbose "  $line"
+            done
+        else
+            log_verbose "Could not get rclone version (exit code: $version_exit_code)"
+            echo "$version_output" | head -3 | while IFS= read -r line; do
+                log_verbose "  $line"
+            done
+        fi
+        
+        # Test rclone config
+        log_verbose "Testing rclone configuration..."
+        local config_test
+        config_test=$(rclone config show 2>&1)
+        local config_exit_code=$?
+        
+        if [[ $config_exit_code -eq 0 ]]; then
+            log_verbose "rclone config is readable"
+            if [[ -n "$config_test" ]]; then
+                log_verbose "Available remotes:"
+                echo "$config_test" | grep '^\[' | while IFS= read -r line; do
+                    log_verbose "  $line"
+                done
+            else
+                log_verbose "No remotes configured"
+            fi
+        else
+            log_verbose "rclone config has issues (exit code: $config_exit_code)"
+        fi
     fi
     
     # Check for help or no arguments
+    log_verbose "Parsing command line arguments..."
+    log_verbose "Number of arguments: $#"
+    if [[ "$VERBOSE" == "true" && $# -gt 0 ]]; then
+        log_verbose "Arguments provided:"
+        local i=1
+        for arg in "$@"; do
+            log_verbose "  \$$i: '$arg'"
+            ((i++))
+        done
+    fi
+    
     if [[ $# -eq 0 ]] || [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
+        log_verbose "Help requested or no arguments provided"
         show_help
         exit 0
     fi
     
     # Parse command
     local command="$1"
+    log_verbose "Command: '$command'"
     shift
+    
+    log_verbose "Remaining arguments after command:"
+    if [[ "$VERBOSE" == "true" && $# -gt 0 ]]; then
+        local i=1
+        for arg in "$@"; do
+            log_verbose "  \$$i: '$arg'"
+            ((i++))
+        done
+    elif [[ $# -eq 0 ]]; then
+        log_verbose "  (no remaining arguments)"
+    fi
     
     case "$command" in
         files)
+            log_verbose "Executing 'files' command"
             cmd_files "$@"
             ;;
         folder)
+            log_verbose "Executing 'folder' command"
             cmd_directory "$@"
             ;;
         *)
             log_error "Unknown command: $command"
+            log_verbose "Available commands: files, folder"
             show_help
             exit 1
             ;;

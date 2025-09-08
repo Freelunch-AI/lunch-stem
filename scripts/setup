@@ -9,13 +9,13 @@
 # Get the directory where this setup script is located
 scriptDir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Add dvc-download.sh script to PATH for easy access
+# Add lunch script to PATH for easy access
 export PATH="$scriptDir:$PATH"
 
-# Make the lunch.sh script executable (if it exists)
-if [ -f "$scriptDir/lunch.sh" ]; then
+# Make the lunch script executable (if it exists)
+if [ -f "$scriptDir/lunch" ]; then
     chmod +x "$scriptDir/lunch"
-    echo "Made lunch.sh executable"
+    echo "Made lunch executable"
 fi
 
 # Check if the script directory is already in PATH permanently
@@ -30,7 +30,8 @@ fi
 
 # Configure rclone
 export RCLONE_CONFIG="$scriptDir/../config/rclone.conf"
+export RCLONE_SA="$scriptDir/../lunch-stem-fadf503639fe.json"
 
 echo "Setup complete! Script directory added to PATH: $scriptDir"
 echo "You can now run 'lunch' from anywhere in this session just by typing lunch"
-echo "Configured rclone with config file at $RCLONE_CONFIG"
+echo "Configured rclone with config file at $RCLONE_CONFIG and service account at $RCLONE_SA"

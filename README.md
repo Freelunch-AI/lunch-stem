@@ -124,7 +124,13 @@ These can be installed by following their repsective installation guide on their
 > [!NOTE]
 > If you are using Windows, it's important to clone inside a top-level directory, to avoid potential errors related to the creating file paths that are too long. Windows typically has a maximum file path of 260 characters.
 
-3. Setup the project
+3. Enter the `lunch-stem` folder
+
+   ```bash
+   cd lunch-stem
+   ```
+
+4. Setup the project
 
    **For Linux**
 
@@ -154,18 +160,11 @@ These can be installed by following their repsective installation guide on their
 
    ```powershell
    scripts/setup.ps1
-      ```
+      ``
 
+5. **Browse inside the `ai2f` folder**
 
-3. Enter the `lunch-stem` folder
-
-   ```bash
-   cd lunch-stem
-   ```
-
-4. **Browse inside the `ai2f` folder**
-
-5. **Download pdf files:**
+6. **Download pdf files:**
 
    - For `.pdf.dvc` files
 

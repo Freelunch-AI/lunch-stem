@@ -8,9 +8,9 @@
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 # Get the directory where this setup script is located
-$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 
-# Add dvc-download.ps1 script to PATH for easy access
+# Add lunch.ps1 script to PATH for easy access
 $env:Path += ";$scriptDir"
 
 # Check if the lunch.ps1 script exists
@@ -36,10 +36,12 @@ if ($userPath -notlike "*$scriptDir*") {
 }
 
 # Configure rclone
-$rcloneConfig = Join-Path (Get-Location) "..\config\rclone.conf"
+$rcloneConfig = Join-Path $scriptDir "..\config\rclone.conf"
 $env:RCLONE_CONFIG = $rcloneConfig
+$env:RCLONE_SA = Join-Path $scriptDir "..\lunch-stem-fadf503639fe.json"
 
 Write-Host ""
+Write-Host "DEBUG: scriptDir = '$scriptDir'" -ForegroundColor Magenta
 Write-Host "Setup complete! Script directory added to PATH: $scriptDir" -ForegroundColor Green
 Write-Host "You can now run 'lunch.ps1' from anywhere in this session just by typing lunch" -ForegroundColor Green
-Write-Host "Configured rclone with config file at $env:RCLONE_CONFIG" -ForegroundColor Green
+Write-Host "Configured rclone with config file at $scriptDir\..\config\rclone.conf and service account at $scriptDir\..\lunch-stem-fadf503639fe.json" -ForegroundColor Green
