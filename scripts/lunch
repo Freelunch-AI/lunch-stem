@@ -724,7 +724,7 @@ cmd_files() {
     # Process each file
     for dvc_file in "${dvc_files[@]}"; do
         if download_dvc_file "$dvc_file" "$in_place"; then
-            ((success_count++))
+            success_count=$((success_count + 1))
         fi
         echo >&2
     done
@@ -843,7 +843,7 @@ cmd_directory() {
     # Process each file
     for dvc_file in "${dvc_files[@]}"; do
         if download_dvc_file "$dvc_file" "$in_place" "$base_output_dir" "$target_directory"; then
-            ((success_count++))
+            success_count=$((success_count + 1))
         fi
         echo >&2
     done
