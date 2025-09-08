@@ -21,11 +21,11 @@ NC='\033[0m' # No Color
 # Help function
 show_help() {
     cat << EOF
-DVC Download CLI Tool
+LunchSTEM CLI
 
 USAGE:
-    dvc-download.sh files <file1> [file2] [file3] ... [options]
-    dvc-download.sh folder <folder_path> [options]
+    lunch files <file1> [file2] [file3] ... [options]
+    lunch folder <folder_path> [options]
 
 COMMANDS:
     files       Download specific DVC files

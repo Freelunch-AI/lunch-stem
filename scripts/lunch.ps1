@@ -45,11 +45,11 @@ function Write-Verbose {
 # Help function
 function Show-Help {
     @"
-DVC Download CLI Tool - PowerShell Version
+LunchSTEM CLI - PowerShell Version
 
 USAGE:
-    .\dvc-download.ps1 files <file1> [file2] [file3] ... [options]
-    .\dvc-download.ps1 folder <directory_path> [options]
+    lunch files <file1> [file2] [file3] ... [options]
+    lunch folder <directory_path> [options]
 
 COMMANDS:
     files       Download specific DVC files
