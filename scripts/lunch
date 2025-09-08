@@ -311,6 +311,30 @@ download_dvc_file() {
         log_verbose "Simple mode selected:"
         log_verbose "  Downloading to current directory"
         log_verbose "  Current working directory: '$(pwd)'"
+        
+        # Check for filename collision and make unique if necessary
+        if [[ -f "$output_file" ]]; then
+            local counter=1
+            local name_without_ext="${base_filename%.*}"
+            local extension="${base_filename##*.}"
+            
+            # Handle files without extension
+            if [[ "$name_without_ext" == "$extension" ]]; then
+                # No extension
+                while [[ -f "${base_filename}_${counter}" ]]; do
+                    ((counter++))
+                done
+                output_file="${base_filename}_${counter}"
+            else
+                # Has extension
+                while [[ -f "${name_without_ext}_${counter}.${extension}" ]]; do
+                    ((counter++))
+                done
+                output_file="${name_without_ext}_${counter}.${extension}"
+            fi
+            
+            log_info "  Note: Original filename exists, using: $output_file"
+        fi
     fi
     
     log_verbose "Final output file path: '$output_file'"
@@ -318,16 +342,34 @@ download_dvc_file() {
     log_info "  MD5: $md5_hash"
     log_info "  Output: $output_file"
     
-    # Check if file already exists
+    # Check if file already exists (after filename collision resolution)
     log_verbose "Checking if output file already exists..."
     if [[ -f "$output_file" ]]; then
         local existing_file_size
         existing_file_size=$(stat -c%s "$output_file" 2>/dev/null || echo "unknown")
-        log_warning "  Skipping: $output_file already exists"
+        
+        # Check if this is the same DVC file content by comparing MD5
+        log_verbose "File exists, checking if it's the same content..."
+        local existing_md5=""
+        
+        # Try to find corresponding .dvc file for the existing file to compare MD5
+        local potential_dvc_file="${output_file}.dvc"
+        if [[ -f "$potential_dvc_file" ]]; then
+            existing_md5=$(get_md5_hash "$potential_dvc_file" 2>/dev/null || echo "")
+        fi
+        
+        if [[ -n "$existing_md5" && "$existing_md5" == "$md5_hash" ]]; then
+            log_info "  Skipping: $output_file already exists with same content"
+        else
+            log_warning "  Skipping: $output_file already exists (content may differ)"
+        fi
+        
         log_verbose "  Existing file details:"
-        log_verbose "    Path: $(realpath "$output_file")"
+        log_verbose "    Path: $(realpath "$output_file" 2>/dev/null || echo "$output_file")"
         log_verbose "    Size: $existing_file_size bytes"
         log_verbose "    Modified: $(stat -c%y "$output_file" 2>/dev/null || echo "unknown")"
+        log_verbose "    Expected MD5: $md5_hash"
+        log_verbose "    Existing MD5: ${existing_md5:-"unknown"}"
         return 0
     fi
     
@@ -346,7 +388,7 @@ download_dvc_file() {
     fi
     
     local temp_realpath
-    temp_realpath=$(realpath "$TEMP_FOLDER")
+    temp_realpath=$(realpath "$TEMP_FOLDER" 2>/dev/null || echo "$TEMP_FOLDER")
     log_verbose "  Temp directory created: '$temp_realpath'"
     log_verbose "  Temp directory permissions: $(stat -c%A "$TEMP_FOLDER" 2>/dev/null || echo "unknown")"
     
@@ -462,7 +504,7 @@ download_dvc_file() {
             done
             
             local file_count
-            file_count=$(find "$TEMP_FOLDER" -type f | wc -l)
+            file_count=$(find "$TEMP_FOLDER" -type f 2>/dev/null | wc -l)
             log_verbose "  Files in temp directory: $file_count"
         else
             log_verbose "  Temp directory does not exist after rclone command"
@@ -523,7 +565,7 @@ download_dvc_file() {
                     local final_file_size
                     final_file_size=$(stat -c%s "$output_file" 2>/dev/null || echo "unknown")
                     log_verbose "  Final file verification:"
-                    log_verbose "    Path: $(realpath "$output_file")"
+                    log_verbose "    Path: $(realpath "$output_file" 2>/dev/null || echo "$output_file")"
                     log_verbose "    Size: $final_file_size bytes"
                     log_verbose "    Size match: $([ "$file_size" = "$final_file_size" ] && echo "YES" || echo "NO")"
                 else

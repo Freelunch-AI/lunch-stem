@@ -298,6 +298,36 @@ function Download-DvcFile {
     } else {
         # Simple download to current directory
         $outputFile = $baseFilename
+        
+        # Handle filename collisions by adding a unique suffix
+        $counter = 1
+        while ((Test-Path $outputFile) -and ($outputFile -ne $baseFilename -or $counter -eq 1)) {
+            if ($counter -eq 1) {
+                # First collision detected, check if existing file is from a different DVC file
+                $existingMightBeDifferent = $true
+            }
+            
+            # Create unique filename
+            $fileExtension = [System.IO.Path]::GetExtension($baseFilename)
+            $fileNameWithoutExt = [System.IO.Path]::GetFileNameWithoutExtension($baseFilename)
+            
+            if ($fileExtension) {
+                $outputFile = "${fileNameWithoutExt}_${counter}${fileExtension}"
+            } else {
+                $outputFile = "${baseFilename}_${counter}"
+            }
+            $counter++
+            
+            if ($counter -gt 100) {
+                Write-ErrorMsg "Too many filename conflicts for $baseFilename"
+                return $false
+            }
+        }
+        
+        if ($outputFile -ne $baseFilename) {
+            Write-Info "  Filename collision resolved: $baseFilename -> $outputFile"
+        }
+        
         Write-Verbose "Simple mode selected:"
         Write-Verbose "  Downloading to current directory"
         Write-Verbose "  Current working directory: '$(Get-Location)'"
@@ -308,11 +338,17 @@ function Download-DvcFile {
     Write-Info "  MD5: $md5Hash"
     Write-Info "  Output: $outputFile"
     
-    # Check if file already exists
+    # Check if file already exists (this should be rare now due to collision handling above)
     Write-Verbose "Checking if output file already exists..."
     if (Test-Path $outputFile) {
         $existingFile = Get-Item $outputFile
-        Write-Warning "  Skipping: $outputFile already exists"
+        if ($outputFile -eq $baseFilename) {
+            # Original filename exists - this is a true skip case
+            Write-Warning "  Skipping: $outputFile already exists"
+        } else {
+            # This shouldn't happen due to our collision handling above, but just in case
+            Write-Warning "  Skipping: $outputFile already exists (unexpected)"
+        }
         Write-Verbose "  Existing file details:"
         Write-Verbose "    Path: $($existingFile.FullName)"
         Write-Verbose "    Size: $($existingFile.Length) bytes"

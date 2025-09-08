@@ -160,7 +160,7 @@ These can be installed by following their repsective installation guide on their
 
    ```powershell
    scripts/setup.ps1
-      ``
+      ```
 
 5. **Browse inside the `ai2f` folder**
 

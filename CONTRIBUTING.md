@@ -89,9 +89,10 @@ https://physics-1-course.edu/physics-1-course-notes.pdf
 ## Issues & Contact
 
 ### Issue Types
+- **Found a functional bug?** Open a `functional-bug` issue
 - **Want to request content removal?** Open a `content-removal` issue
 - **Found wrong or missing credit attribution data?** Open a `attribution-correction` issue
-- **Feature request?** Open a `feature-request` issue
+- **Want to request a new feature?** Open a `feature-request` issue
 
 ### Security & Compliance
 - **Found security vulnerability?** Email with the subject `[LunchSTEM] Security Vulnerability`
