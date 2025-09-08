@@ -8,12 +8,14 @@ set -e  # Exit on any error
 # Configuration
 RCLONE_REMOTE="gdrive:lunch-stem-dvc-data/files/md5"
 TEMP_FOLDER="./temp_folder"
+VERBOSE="false"
 
 # Colors for output
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
+PURPLE='\033[0;35m'
 NC='\033[0m' # No Color
 
 # Help function
@@ -40,6 +42,7 @@ ARGUMENTS FOR 'directory' COMMAND:
 OPTIONS:
     --in-place                  Download files in the same directory as their .dvc files
     --recursive                 (directory command only) Download DVC files recursively from subdirectories
+    --verbose                   Enable verbose mode for detailed debugging output (especially for rclone)
     --help                      Show this help message
 
 EXAMPLES:
@@ -52,6 +55,9 @@ EXAMPLES:
     # Download specific files in-place
     lunch files "docs/file1.pdf.dvc" --in-place
 
+    # Download specific files with verbose output
+    lunch files "docs/file1.pdf.dvc" --verbose
+
     # Download all DVC files from folder (relative path)
     lunch folder "docs/target_folder"
 
@@ -61,8 +67,8 @@ EXAMPLES:
     # Download all DVC files recursively, preserve structure
     lunch folder "docs/target_folder" --recursive
 
-    # Download all DVC files in-place
-    lunch folder "/absolute/path/to/target" --recursive --in-place
+    # Download all DVC files in-place with verbose debugging
+    lunch folder "/absolute/path/to/target" --recursive --in-place --verbose
 
 EOF
 }
@@ -84,22 +90,37 @@ log_error() {
     echo -e "${RED}[ERROR]${NC} $1"
 }
 
+log_verbose() {
+    if [[ "$VERBOSE" == "true" ]]; then
+        echo -e "${PURPLE}[VERBOSE]${NC} $1"
+    fi
+}
+
 # Function to extract MD5 hash from DVC file
 get_md5_hash() {
     local dvc_file="$1"
+    
+    log_verbose "Attempting to extract MD5 hash from DVC file: $dvc_file"
     
     if [[ ! -f "$dvc_file" ]]; then
         log_error "DVC file not found: $dvc_file"
         return 1
     fi
     
+    log_verbose "DVC file exists, reading content..."
+    
     local md5_hash=$(grep -oP 'md5: \K[a-f0-9]+' "$dvc_file" 2>/dev/null)
     
     if [[ -z "$md5_hash" ]]; then
         log_error "Could not find MD5 hash in $dvc_file"
+        if [[ "$VERBOSE" == "true" ]]; then
+            log_verbose "DVC file content:"
+            cat "$dvc_file" | head -20  # Show first 20 lines for debugging
+        fi
         return 1
     fi
     
+    log_verbose "Successfully extracted MD5 hash: $md5_hash"
     echo "$md5_hash"
 }
 
@@ -113,6 +134,9 @@ download_dvc_file() {
     dvc_file=$(realpath "$dvc_file")
     
     log_info "Processing: $(basename "$dvc_file")"
+    log_verbose "Absolute path: $dvc_file"
+    log_verbose "In-place mode: $in_place"
+    log_verbose "Base output dir: $base_output_dir"
     
     # Get MD5 hash
     local md5_hash
@@ -125,15 +149,20 @@ download_dvc_file() {
     local base_filename
     base_filename=$(basename "$dvc_file" .dvc)
     
+    log_verbose "Base filename (without .dvc extension): $base_filename"
+    
     local output_file
     if [[ "$in_place" == "true" ]]; then
         # Download in the same directory as the .dvc file
         output_file="$(dirname "$dvc_file")/$base_filename"
+        log_verbose "In-place mode: output file will be $output_file"
     elif [[ -n "$base_output_dir" ]]; then
         # For directory downloads with structure preservation
         local dvc_dir
         dvc_dir=$(dirname "$dvc_file")
         local target_dir="$4"  # Original target directory
+        
+        log_verbose "Directory mode: dvc_dir=$dvc_dir, target_dir=$target_dir"
         
         # Convert target_dir to absolute path for comparison
         target_dir=$(realpath "$target_dir")
@@ -142,16 +171,19 @@ download_dvc_file() {
             # File is in root target directory
             output_file="$base_output_dir/$base_filename"
             mkdir -p "$base_output_dir"
+            log_verbose "Root directory mode: creating $base_output_dir"
         else
             # File is in subdirectory, preserve structure
             local relative_path
             relative_path=$(realpath --relative-to="$target_dir" "$dvc_dir")
             output_file="$base_output_dir/$relative_path/$base_filename"
             mkdir -p "$base_output_dir/$relative_path"
+            log_verbose "Subdirectory mode: relative_path=$relative_path, creating $base_output_dir/$relative_path"
         fi
     else
         # Simple download to current directory
         output_file="$base_filename"
+        log_verbose "Simple mode: downloading to current directory"
     fi
     
     log_info "  MD5: $md5_hash"
@@ -160,11 +192,13 @@ download_dvc_file() {
     # Check if file already exists
     if [[ -f "$output_file" ]]; then
         log_warning "  Skipping: $output_file already exists"
+        log_verbose "  File already exists at: $(realpath "$output_file")"
         return 0
     fi
     
     # Create temp directory
     mkdir -p "$TEMP_FOLDER"
+    log_verbose "Created temp directory: $(realpath "$TEMP_FOLDER")"
     
     # Calculate rclone path
     local hash_prefix="${md5_hash:0:2}"
@@ -172,27 +206,57 @@ download_dvc_file() {
     local rclone_path="$RCLONE_REMOTE/$hash_prefix/$hash_suffix"
     
     log_info "  Downloading from: $rclone_path"
+    log_verbose "  Hash prefix: $hash_prefix"
+    log_verbose "  Hash suffix: $hash_suffix"
+    log_verbose "  Full rclone path: $rclone_path"
+    log_verbose "  Temp folder: $TEMP_FOLDER"
     
     # Download file
-    if rclone copy "$rclone_path" "$TEMP_FOLDER" >/dev/null 2>&1; then
+    if [[ "$VERBOSE" == "true" ]]; then
+        log_verbose "Running rclone command with verbose output:"
+        log_verbose "rclone copy \"$rclone_path\" \"$TEMP_FOLDER\" --progress --verbose"
+        if rclone copy "$rclone_path" "$TEMP_FOLDER" --progress --verbose; then
+            rclone_success=true
+        else
+            rclone_success=false
+        fi
+    else
+        if rclone copy "$rclone_path" "$TEMP_FOLDER" >/dev/null 2>&1; then
+            rclone_success=true
+        else
+            rclone_success=false
+        fi
+    fi
+    
+    if [[ "$rclone_success" == "true" ]]; then
         # Find downloaded file
         local downloaded_file="$TEMP_FOLDER/$hash_suffix"
+        log_verbose "  Looking for downloaded file: $downloaded_file"
         
         if [[ -f "$downloaded_file" ]]; then
+            log_verbose "  Downloaded file found, moving to final location"
             # Move to final location
             mv "$downloaded_file" "$output_file"
             log_success "  Downloaded: $output_file"
+            log_verbose "  Final file location: $(realpath "$output_file")"
         else
             log_error "  Error: No file downloaded"
+            log_verbose "  Expected file not found: $downloaded_file"
+            if [[ "$VERBOSE" == "true" ]]; then
+                log_verbose "  Contents of temp folder:"
+                ls -la "$TEMP_FOLDER" 2>/dev/null || log_verbose "  Temp folder is empty or doesn't exist"
+            fi
             return 1
         fi
     else
         log_error "  Error: Failed to download from rclone"
+        log_verbose "  rclone command failed with exit code: $?"
         return 1
     fi
     
     # Clean up temp folder
     rm -rf "$TEMP_FOLDER"
+    log_verbose "  Cleaned up temp folder"
     
     return 0
 }
@@ -207,6 +271,11 @@ cmd_files() {
         case $1 in
             --in-place)
                 in_place="true"
+                shift
+                ;;
+            --verbose)
+                VERBOSE="true"
+                log_verbose "Verbose mode enabled"
                 shift
                 ;;
             --help)
@@ -240,6 +309,13 @@ cmd_files() {
         log_info "Mode: Download to current directory"
     fi
     
+    if [[ "$VERBOSE" == "true" ]]; then
+        log_verbose "Files to process:"
+        for file in "${dvc_files[@]}"; do
+            log_verbose "  - $file"
+        done
+    fi
+    
     local success_count=0
     local total_count=${#dvc_files[@]}
     
@@ -251,7 +327,16 @@ cmd_files() {
         echo
     done
     
-    log_success "Download complete! Successfully downloaded $success_count/$total_count files"
+    # Report results based on success rate
+    if [[ $success_count -eq $total_count ]]; then
+        log_success "Download complete! Successfully downloaded $success_count/$total_count files"
+    elif [[ $success_count -gt 0 ]]; then
+        log_warning "Download partially complete! Successfully downloaded $success_count/$total_count files"
+        exit 1
+    else
+        log_error "Download failed! Successfully downloaded $success_count/$total_count files"
+        exit 1
+    fi
 }
 
 # Command: Download directory
@@ -275,6 +360,11 @@ cmd_directory() {
                 ;;
             --in-place)
                 in_place="true"
+                shift
+                ;;
+            --verbose)
+                VERBOSE="true"
+                log_verbose "Verbose mode enabled"
                 shift
                 ;;
             --help)
@@ -310,17 +400,22 @@ cmd_directory() {
     
     # Convert to absolute path for consistent handling
     target_directory=$(realpath "$target_directory")
+    log_verbose "Resolved target directory: $target_directory"
     
     # Find DVC files
     local dvc_files=()
     if [[ "$recursive" == "true" ]]; then
+        log_verbose "Searching recursively for DVC files..."
         while IFS= read -r -d '' file; do
             dvc_files+=("$file")
+            log_verbose "Found DVC file: $file"
         done < <(find "$target_directory" -name "*.dvc" -type f -print0)
         log_info "Found ${#dvc_files[@]} DVC files in directory (recursive)"
     else
+        log_verbose "Searching for DVC files in current level only..."
         while IFS= read -r -d '' file; do
             dvc_files+=("$file")
+            log_verbose "Found DVC file: $file"
         done < <(find "$target_directory" -maxdepth 1 -name "*.dvc" -type f -print0)
         log_info "Found ${#dvc_files[@]} DVC files in directory (current level only)"
     fi
@@ -337,6 +432,7 @@ cmd_directory() {
     else
         base_output_dir=$(basename "$target_directory")
         log_info "Mode: Download to ./$base_output_dir/"
+        log_verbose "Base output directory: $base_output_dir"
     fi
     
     local success_count=0
@@ -350,7 +446,16 @@ cmd_directory() {
         echo
     done
     
-    log_success "Batch download complete! Successfully downloaded $success_count/$total_count files"
+    # Report results based on success rate
+    if [[ $success_count -eq $total_count ]]; then
+        log_success "Batch download complete! Successfully downloaded $success_count/$total_count files"
+    elif [[ $success_count -gt 0 ]]; then
+        log_warning "Batch download partially complete! Successfully downloaded $success_count/$total_count files"
+        exit 1
+    else
+        log_error "Batch download failed! Successfully downloaded $success_count/$total_count files"
+        exit 1
+    fi
 }
 
 # Main function
@@ -359,6 +464,12 @@ main() {
     if ! command -v rclone &> /dev/null; then
         log_error "rclone is not installed or not in PATH"
         exit 1
+    fi
+    
+    log_verbose "rclone found: $(which rclone)"
+    if [[ "$VERBOSE" == "true" ]]; then
+        log_verbose "rclone version:"
+        rclone version 2>/dev/null | head -3 || log_verbose "Could not get rclone version"
     fi
     
     # Check for help or no arguments

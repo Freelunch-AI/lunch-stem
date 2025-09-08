@@ -36,7 +36,8 @@ if ($userPath -notlike "*$scriptDir*") {
 }
 
 # Configure rclone
-$env:RCLONE_CONFIG = "$scriptDir\config\rclone.conf"
+$rcloneConfig = Join-Path (Get-Location) "..\config\rclone.conf"
+$env:RCLONE_CONFIG = $rcloneConfig
 
 Write-Host ""
 Write-Host "Setup complete! Script directory added to PATH: $scriptDir" -ForegroundColor Green
