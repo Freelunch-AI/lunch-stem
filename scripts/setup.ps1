@@ -35,6 +35,10 @@ if ($userPath -notlike "*$scriptDir*") {
     Write-Host "Script directory already found in permanent PATH" -ForegroundColor Green
 }
 
+# Configure rclone
+$env:RCLONE_CONFIG = "$scriptDir\config\rclone.conf"
+
 Write-Host ""
 Write-Host "Setup complete! Script directory added to PATH: $scriptDir" -ForegroundColor Green
 Write-Host "You can now run 'lunch.ps1' from anywhere in this session just by typing lunch" -ForegroundColor Green
+Write-Host "Configured rclone with config file at $env:RCLONE_CONFIG" -ForegroundColor Green

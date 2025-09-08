@@ -129,13 +129,29 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 3. Configure o projeto
 
-   Para Linux:
+   **Para Linux**
+
+   Habilite execução de scripts
 
    ```bash
-   scripts/setup.sh 
+   chmod +x scripts/setup 
       ```
 
-   Para Windows:
+   Execute script de configuração
+
+   ```bash
+   source scripts/setup 
+      ```
+
+   **Para Windows:**
+
+   Habilite execução de scripts dentro da sessão do terminal
+
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+      ```
+
+   Execute script de configuração
 
    ```powershell
    scripts/setup.ps1
@@ -149,31 +165,35 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 4.  **Navegue pela pasta `ai2f`**
 
-5.  **Baixe arquivos pdf específicos via:**
+5.  **Baixe arquivos pdf:**
 
-    ```bash
-    lunch <primeiro_placeholder_caminho_arquivo_dvc> [segundo_placeholder_caminho_arquivo_dvc] ...
-    ```
+   - Para arquivos `.pdf.dvc`
 
-    Este comando obterá os arquivos `.pdf` e os colocará no seu diretório atual.
+      **Baixe arquivos pdf específicos via:**
 
-    Se você quiser colocar arquivos no mesmo lugar que o arquivo `.pdf.dvc` então use:
+      ```bash
+      lunch files <primeiro_placeholder_caminho_arquivo_dvc> [segundo_placeholder_caminho_arquivo_dvc] ...
+      ```
 
-    ```bash
-    lunch <primeiro_placeholder_caminho_arquivo_dvc> [segundo_placeholder_caminho_arquivo_dvc] --in-place ...
-    ```
+      Este comando obterá os arquivos `.pdf` e os colocará no seu diretório atual.
 
-    - _Nota 1:_ o primeiro argumento de caminho de arquivo é obrigatório, o resto é opcional.
-    - _Nota 2:_ o caminho do arquivo usado neste comando não deve ter `.source.json` no final. deve terminar com `.pdf.dvc`.
-    - _Nota 3:_ outros tipos de arquivo (ex., `.txt`) devem ser abertos diretamente, sem o dvc.
-    - _Nota 4:_ se `.web.txt` estiver presente, então você não deve tentar este comando, apenas copie e cole o link dentro de `.web.txt` em seu navegador. Implementaremos um `lunch get` mais tarde para buscar arquivos da web.
-    - _Nota 5:_ o arquivo `.pdf` não deve estar visível antes de você executar este comando.
-    - _Nota 6:_ você pode obter os caminhos dos arquivos através da interface gráfica do usuário do seu Sistema Operacional, cada sistema operacional tem uma maneira fácil.
+      Se você quiser colocar arquivos no mesmo lugar que o arquivo `.pdf.dvc` então use:
 
-6. **Baixe todos os arquivos de uma pasta específica via:**
+      ```bash
+      lunch files <primeiro_placeholder_caminho_arquivo_dvc> [segundo_placeholder_caminho_arquivo_dvc] --in-place ...
+      ```
 
-   ```bash
-   lunch folder <placeholder_caminho_pasta>
+      - _Nota 1:_ o primeiro argumento de caminho de arquivo é obrigatório, o resto é opcional.
+      - _Nota 2:_ o caminho do arquivo usado neste comando não deve ter `.source.json` no final. deve terminar com `.pdf.dvc`.
+      - _Nota 3:_ outros tipos de arquivo (ex., `.txt`) devem ser abertos diretamente, sem o dvc.
+      - _Nota 4:_ se `.web.txt` estiver presente, então você não deve tentar este comando, apenas copie e cole o link dentro de `.web.txt` em seu navegador. Implementaremos um `lunch get` mais tarde para buscar arquivos da web.
+      - _Nota 5:_ o arquivo `.pdf` não deve estar visível antes de você executar este comando.
+      - _Nota 6:_ você pode obter os caminhos dos arquivos através da interface gráfica do usuário do seu Sistema Operacional, cada sistema operacional tem uma maneira fácil.
+
+      **Baixe todos os arquivos de uma pasta específica via:**
+
+      ```bash
+      lunch folder <placeholder_caminho_pasta>
       ```
 
       Se você quiser colocar os novos arquivos pdf no mesmo lugar que seus arquivos `.pdf.dvc` correspondentes então use:
@@ -193,6 +213,10 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
       ```bash
       lunch folder <placeholder_caminho_pasta> --in-place --recursive
       ```
+
+   - Para arquivos `pdf.web.txt`:
+
+      Simplesmente abra o arquivo e siga o link web dentro dele.
 
 ## Estrutura de Diretórios e Convenções de Nomenclatura
 

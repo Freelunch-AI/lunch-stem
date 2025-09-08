@@ -127,6 +127,36 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 > [!NOTE]
 > Si vous utilisez Windows, il est important de cloner dans un répertoire de niveau supérieur, pour éviter les erreurs potentielles liées à la création de chemins de fichiers trop longs. Windows a généralement un chemin de fichier maximum de 260 caractères.
 
+3. Configurer le projet
+
+   **Pour Linux**
+
+   Activer l'exécution de scripts
+
+   ```bash
+   chmod +x scripts/setup 
+      ```
+
+   Exécuter le script de configuration
+
+   ```bash
+   source scripts/setup 
+      ```
+
+   **Pour Windows :**
+
+   Activer l'exécution de scripts dans la session de terminal
+
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+      ```
+
+   Exécuter le script de configuration
+
+   ```powershell
+   scripts/setup.ps1
+      ```
+
 3.  Entrez dans le dossier `lunch-stem`.
 
     ```bash
@@ -135,25 +165,58 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
 4.  **Parcourez le dossier `ai2f`**
 
-5.  **Téléchargez un fichier pdf spécifique via:**
+5.  **Téléchargez des fichiers pdf :**
 
-    ```bash
-    dvc pull [placeholder_chemin_fichier_pdf]
-    ```
+   - Pour les fichiers `.pdf.dvc`
 
-    Cette commande récupérera le fichier `.pdf` et le placera au même endroit que le fichier `.pdf.dvc`.
+      **Téléchargez des fichiers pdf spécifiques avec :**
 
-    - _Note 1:_ le chemin de fichier utilisé dans cette commande ne doit pas avoir `.source.json` à la fin. il doit se terminer par `.pdf.dvc`.
-    - _Note 2:_ les autres types de fichiers (par ex., `.txt`) doivent être ouverts directement, sans dvc.
-    - _Note 3:_ si `.web.txt` est présent, alors vous ne devriez pas essayer cette commande, copiez et collez simplement le lien à l'intérieur de `.web.txt` dans votre navigateur. Nous implémenterons plus tard un `lunchstem pull` pour récupérer les fichiers du web.
-    - _Note 4:_ le fichier `.pdf` ne devrait pas être visible avant que vous n'exécutiez cette commande.
-    - _Note 5:_ vous pouvez obtenir le chemin du fichier via l'interface utilisateur graphique, chaque système d'exploitation a un moyen facile.
+      ```bash
+      lunch files <premier_placeholder_chemin_fichier_dvc> [deuxième_placeholder_chemin_fichier_dvc] ...
+      ```
 
-    Vous pouvez aussi télécharger plusieurs fichiers à la fois :
+      Cette commande récupérera les fichiers `.pdf` et les placera dans votre répertoire actuel.
 
-    ```bash
-    dvc pull [premier_placeholder_fichier_pdf] [deuxième_placeholder_fichier_pdf]
-    ```
+      Si vous voulez placer les fichiers au même endroit que le fichier `.pdf.dvc`, utilisez :
+
+      ```bash
+      lunch files <premier_placeholder_chemin_fichier_dvc> [deuxième_placeholder_chemin_fichier_dvc] --in-place ...
+      ```
+
+      - _Note 1 :_ le premier argument de chemin de fichier est requis, le reste est optionnel.
+      - _Note 2 :_ le chemin de fichier utilisé dans cette commande ne doit pas avoir `.source.json` à la fin. il doit se terminer par `.pdf.dvc`.
+      - _Note 3 :_ les autres types de fichiers (par ex., `.txt`) doivent être ouverts directement, sans dvc.
+      - _Note 4 :_ si `.web.txt` est présent, alors vous ne devriez pas essayer cette commande, copiez et collez simplement le lien à l'intérieur de `.web.txt` dans votre navigateur. Nous implémenterons un `lunch get` plus tard pour récupérer les fichiers du web.
+      - _Note 5 :_ le fichier `.pdf` ne devrait pas être visible avant que vous n'exécutiez cette commande.
+      - _Note 6 :_ vous pouvez obtenir les chemins de fichiers via l'interface utilisateur graphique de votre Système d'Exploitation, chaque système d'exploitation a un moyen facile.
+
+      **Téléchargez tous les fichiers d'un dossier spécifique via :**
+
+      ```bash
+      lunch folder <placeholder_chemin_dossier>
+      ```
+
+      Si vous voulez placer les nouveaux fichiers pdf au même endroit que leurs fichiers `.pdf.dvc` correspondants, utilisez :
+
+      ```bash
+      lunch folder <placeholder_chemin_dossier> --in-place
+      ```
+
+      Si vous voulez télécharger tous les fichiers de tous les sous-répertoires (récursivement), utilisez :
+
+      ```bash
+      lunch folder <placeholder_chemin_dossier> --recursive
+      ```
+
+      Si vous voulez placer les fichiers au même endroit que le fichier `.pdf.dvc` et pour tous les sous-répertoires, utilisez :
+
+      ```bash
+      lunch folder <placeholder_chemin_dossier> --in-place --recursive
+      ```
+
+   - Pour les fichiers `pdf.web.txt` :
+
+      Ouvrez simplement le fichier et suivez le lien web qu'il contient.
 
 ## Structure des Répertoires et Conventions de Nommage
 

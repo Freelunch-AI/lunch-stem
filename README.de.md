@@ -129,6 +129,36 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 > [!NOTE]
 > Wenn Sie Windows verwenden, ist es wichtig, in einem Verzeichnis der obersten Ebene zu klonen, um potenzielle Fehler im Zusammenhang mit der Erstellung zu langer Dateipfade zu vermeiden. Windows hat typischerweise eine maximale Dateipfadlänge von 260 Zeichen.
 
+3. Das Projekt einrichten
+
+   **Für Linux**
+
+   Skriptausführung aktivieren
+
+   ```bash
+   chmod +x scripts/setup 
+      ```
+
+   Setup-Skript ausführen
+
+   ```bash
+   source scripts/setup 
+      ```
+
+   **Für Windows:**
+
+   Skriptausführung innerhalb der Terminal-Sitzung aktivieren
+
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+      ```
+
+   Setup-Skript ausführen
+
+   ```powershell
+   scripts/setup.ps1
+      ```
+
 3.  Betreten Sie den `lunch-stem` Ordner.
 
     ```bash
@@ -137,25 +167,58 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
 4.  **Durchsuchen Sie den `ai2f` Ordner**
 
-5.  **Laden Sie eine spezifische PDF-Datei herunter über:**
+5.  **Laden Sie PDF-Dateien herunter:**
 
-    ```bash
-    dvc pull [pdf_dateipfad_platzhalter]
-    ```
+   - Für `.pdf.dvc` Dateien
 
-    Dieser Befehl holt die `.pdf`-Datei und platziert sie am gleichen Ort wie die `.pdf.dvc`-Datei.
+      **Laden Sie spezifische PDF-Dateien herunter mit:**
 
-    - _Hinweis 1:_ der in diesem Befehl verwendete Dateipfad sollte nicht `.source.json` am Ende haben. er sollte mit `.pdf.dvc` enden.
-    - _Hinweis 2:_ andere Dateitypen (z.B. `.txt`) sollten direkt geöffnet werden, ohne dvc.
-    - _Hinweis 3:_ wenn `.web.txt` vorhanden ist, dann sollten Sie diesen Befehl nicht versuchen, kopieren und fügen Sie einfach den Link innerhalb von `.web.txt` in Ihren Browser ein. Wir werden später ein `lunchstem pull` implementieren, um Dateien aus dem Web zu holen.
-    - _Hinweis 4:_ die `.pdf` Datei sollte nicht sichtbar sein, bevor Sie diesen Befehl ausführen.
-    - _Hinweis 5:_ Sie können den Dateipfad über die grafische Benutzeroberfläche erhalten, jedes Betriebssystem hat eine einfache Möglichkeit.
+      ```bash
+      lunch files <erster_dvc_dateipfad_platzhalter> [zweiter_dvc_dateipfad_platzhalter] ...
+      ```
 
-    Sie können auch mehrere Dateien auf einmal herunterladen:
+      Dieser Befehl holt die `.pdf`-Dateien und platziert sie in Ihrem aktuellen Verzeichnis.
 
-    ```bash
-    dvc pull [erster_pdf_dateipfad_platzhalter] [zweiter_pdf_dateipfad_platzhalter]
-    ```
+      Wenn Sie Dateien am gleichen Ort wie die `.pdf.dvc` Datei platzieren möchten, verwenden Sie:
+
+      ```bash
+      lunch files <erster_dvc_dateipfad_platzhalter> [zweiter_dvc_dateipfad_platzhalter] --in-place ...
+      ```
+
+      - _Hinweis 1:_ das erste Dateipfad-Argument ist erforderlich, der Rest ist optional.
+      - _Hinweis 2:_ der in diesem Befehl verwendete Dateipfad sollte nicht `.source.json` am Ende haben. er sollte mit `.pdf.dvc` enden.
+      - _Hinweis 3:_ andere Dateitypen (z.B. `.txt`) sollten direkt geöffnet werden, ohne dvc.
+      - _Hinweis 4:_ wenn `.web.txt` vorhanden ist, dann sollten Sie diesen Befehl nicht versuchen, kopieren und fügen Sie einfach den Link innerhalb von `.web.txt` in Ihren Browser ein. Wir werden später ein `lunch get` implementieren, um Dateien aus dem Web zu holen.
+      - _Hinweis 5:_ die `.pdf` Datei sollte nicht sichtbar sein, bevor Sie diesen Befehl ausführen.
+      - _Hinweis 6:_ Sie können die Dateipfade über die grafische Benutzeroberfläche Ihres Betriebssystems erhalten, jedes Betriebssystem hat eine einfache Möglichkeit.
+
+      **Laden Sie alle Dateien aus einem spezifischen Ordner herunter über:**
+
+      ```bash
+      lunch folder <ordnerpfad_platzhalter>
+      ```
+
+      Wenn Sie die neuen PDF-Dateien am gleichen Ort wie ihre entsprechenden `.pdf.dvc` Dateien platzieren möchten, verwenden Sie:
+
+      ```bash
+      lunch folder <ordnerpfad_platzhalter> --in-place
+      ```
+
+      Wenn Sie alle Dateien aus allen Unterverzeichnissen (rekursiv) herunterladen möchten, verwenden Sie:
+
+      ```bash
+      lunch folder <ordnerpfad_platzhalter> --recursive
+      ```
+
+      Wenn Sie Dateien am gleichen Ort wie die `.pdf.dvc` Datei und für alle Unterverzeichnisse platzieren möchten, verwenden Sie:
+
+      ```bash
+      lunch folder <ordnerpfad_platzhalter> --in-place --recursive
+      ```
+
+   - Für `pdf.web.txt` Dateien:
+
+      Öffnen Sie einfach die Datei und folgen Sie dem Weblink darin.
 
 ## Verzeichnisstruktur und Namenskonventionen
 

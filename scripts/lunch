@@ -23,11 +23,11 @@ DVC Download CLI Tool
 
 USAGE:
     dvc-download.sh files <file1> [file2] [file3] ... [options]
-    dvc-download.sh directory <directory_path> [options]
+    dvc-download.sh folder <folder_path> [options]
 
 COMMANDS:
     files       Download specific DVC files
-    directory   Download all DVC files from a directory
+    folder      Download all DVC files from a directory
 
 ARGUMENTS FOR 'files' COMMAND:
     <file1> [file2] ...         DVC file paths to download (required, space-separated)
@@ -52,17 +52,17 @@ EXAMPLES:
     # Download specific files in-place
     lunch files "docs/file1.pdf.dvc" --in-place
 
-    # Download all DVC files from directory (relative path)
-    lunch directory "docs/target_folder"
-    
-    # Download all DVC files from directory (absolute path)
-    lunch directory "/home/user/project/target_folder"
+    # Download all DVC files from folder (relative path)
+    lunch folder "docs/target_folder"
+
+    # Download all DVC files from folder (absolute path)
+    lunch folder "/home/user/project/target_folder"
 
     # Download all DVC files recursively, preserve structure
-    lunch directory "docs/target_folder" --recursive
+    lunch folder "docs/target_folder" --recursive
 
     # Download all DVC files in-place
-    lunch directory "/absolute/path/to/target" --recursive --in-place
+    lunch folder "/absolute/path/to/target" --recursive --in-place
 
 EOF
 }
@@ -375,7 +375,7 @@ main() {
         files)
             cmd_files "$@"
             ;;
-        directory)
+        folder)
             cmd_directory "$@"
             ;;
         *)

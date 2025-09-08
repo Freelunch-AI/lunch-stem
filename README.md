@@ -126,13 +126,31 @@ These can be installed by following their repsective installation guide on their
 
 3. Setup the project
 
-   For Linux:
+   **For Linux**
+
+   Configure rclone
+
+   Enable script execution
 
    ```bash
-   scripts/setup.sh 
+   chmod +x scripts/setup 
       ```
 
-   For Windows:
+   Run setup script
+
+   ```bash
+   source scripts/setup 
+      ```
+
+   **For Windows:**
+
+   Enable execution of scripts within the terminal session
+
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+      ```
+
+   Run setup script
 
    ```powershell
    scripts/setup.ps1
@@ -147,52 +165,59 @@ These can be installed by following their repsective installation guide on their
 
 4. **Browse inside the `ai2f` folder**
 
-5. **Download a specific pdf files via:**
+5. **Download pdf files:**
 
-   ```bash
-   lunch <first_dvc_file_path_placeholder> [second_dvc_file_path_placeholder] ...
-   ```
+   - For `.pdf.dvc` files
 
-   This command will get the `.pdf` files and put it in your current directory.
+      **Download specific pdf files with:**
 
-   If you want to put files in the same place as the `pdf.dvc ` file then use:
+      ```bash
+      lunch files "<first_dvc_file_path_placeholder>" "[second_dvc_file_path_placeholder]" ...
+      ```
 
-   ```bash
-   lunch <first_dvc_file_path_placeholder> [second_dvc_file_path_placeholder] --in-place ...
-   ```
+      This command will get the `.pdf` files and put it in your current directory.
 
-   - _Note 1:_ first file path argument is required, the rest are optional.
-   - _Note 2:_ the file path used in this command shouldn't have `.source.json` at the end of it. it should end with `.pdf.dvc`.
-   - _Note 3:_ other types of files (e.g. `.txt`) should be opened directly, without dvc.
-   - _Note 4:_ if `.web.txt` is present, then you shouldn't try this command, just copy and paste the link inside `.web.txt` in your browser. We will implement a `lunch get` later on to get files from the web.
-   - _Note 5:_ the `.pdf` file shouldn't be visible before you run this command.
-   - _Note 6:_ you can get the file paths via the graphical user interface of your Operating System, each operating system has an easy way.
+      If you want to put files in the same place as the `pdf.dvc ` file then use:
+
+      ```bash
+      lunch files "<first_dvc_file_path_placeholder>" "[second_dvc_file_path_placeholder]" --in-place ...
+      ```
+
+      - _Note 1:_ first file path argument is required, the rest are optional.
+      - _Note 2:_ the file path used in this command shouldn't have `.source.json` at the end of it. it should end with `.pdf.dvc`.
+      - _Note 3:_ other types of files (e.g. `.txt`) should be opened directly, without dvc.
+      - _Note 4:_ if `.web.txt` is present, then you shouldn't try this command, just copy and paste the link inside `.web.txt` in your browser. We will implement a `lunch get` later on to get files from the web.
+      - _Note 5:_ the `.pdf` file shouldn't be visible before you run this command.
+      - _Note 6:_ you can get the file paths via the graphical user interface of your Operating System, each operating system has an easy way.
 
 
-6. **Download all the files from a specific folder via:**
+      **Download all the files from a specific folder via:**
 
-   ```bash
-   lunch folder <folder_path_placeholder>
+      ```bash
+         lunch folder "<folder_path_placeholder>"
       ```
 
       If you want to put the new pdf files in the same place as ther corresponding `pdf.dvc` files then use:
 
       ```bash
-      lunch folder <folder_path_placeholder> --in-place
+      lunch folder "<folder_path_placeholder>" --in-place
       ```
 
       If you want to download all the files from all subdirectories (recursively) then use:
 
       ```bash
-      lunch folder <folder_path_placeholder> --recursive
+      lunch folder "<folder_path_placeholder>" --recursive
       ```
 
       If you want to put files in the same place as the `pdf.dvc ` file and for all subdirectories then use:
 
       ```bash
-      lunch folder <folder_path_placeholder> --in-place --recursive
+      lunch folder "<folder_path_placeholder>" --in-place --recursive
       ```
 
+   - For `pdf.web.txt` files:
+
+      Simply open the file and follow the web link inside it.
 
 ## Directory Structure and Naming Conventions
 

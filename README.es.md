@@ -129,13 +129,29 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
 3. Configurar el proyecto
 
-   Para Linux:
+   **Para Linux**
+
+   Habilitar ejecución de scripts
 
    ```bash
-   scripts/setup.sh 
+   chmod +x scripts/setup 
       ```
 
-   Para Windows:
+   Ejecutar script de configuración
+
+   ```bash
+   source scripts/setup 
+      ```
+
+   **Para Windows:**
+
+   Habilitar ejecución de scripts dentro de la sesión de terminal
+
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+      ```
+
+   Ejecutar script de configuración
 
    ```powershell
    scripts/setup.ps1
@@ -149,31 +165,35 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
 4.  **Explora la carpeta `ai2f`**
 
-5.  **Descarga archivos pdf específicos via:**
+5.  **Descarga archivos pdf:**
 
-    ```bash
-    lunch <primer_placeholder_ruta_archivo_dvc> [segundo_placeholder_ruta_archivo_dvc] ...
-    ```
+   - Para archivos `.pdf.dvc`
 
-    Este comando obtendrá los archivos `.pdf` y los colocará en tu directorio actual.
+      **Descarga archivos pdf específicos con:**
 
-    Si quieres colocar los archivos en el mismo lugar que el archivo `.pdf.dvc` entonces usa:
+      ```bash
+      lunch files <primer_placeholder_ruta_archivo_dvc> [segundo_placeholder_ruta_archivo_dvc] ...
+      ```
 
-    ```bash
-    lunch <primer_placeholder_ruta_archivo_dvc> [segundo_placeholder_ruta_archivo_dvc] --in-place ...
-    ```
+      Este comando obtendrá los archivos `.pdf` y los colocará en tu directorio actual.
 
-    - _Nota 1:_ el primer argumento de ruta de archivo es requerido, el resto son opcionales.
-    - _Nota 2:_ la ruta del archivo utilizada en este comando no debe tener `.source.json` al final. debe terminar con `.pdf.dvc`.
-    - _Nota 3:_ otros tipos de archivo (p. ej., `.txt`) deben abrirse directamente, sin dvc.
-    - _Nota 4:_ si `.web.txt` está presente, entonces no debes intentar este comando, solo copia y pega el enlace dentro de `.web.txt` en tu navegador. Implementaremos un `lunch get` más adelante para obtener archivos de la web.
-    - _Nota 5:_ el archivo `.pdf` no debería ser visible antes de ejecutar este comando.
-    - _Nota 6:_ puedes obtener las rutas de archivos a través de la interfaz gráfica de usuario de tu Sistema Operativo, cada sistema operativo tiene una manera fácil.
+      Si quieres colocar los archivos en el mismo lugar que el archivo `.pdf.dvc` entonces usa:
 
-6. **Descarga todos los archivos de una carpeta específica via:**
+      ```bash
+      lunch files <primer_placeholder_ruta_archivo_dvc> [segundo_placeholder_ruta_archivo_dvc] --in-place ...
+      ```
 
-   ```bash
-   lunch folder <placeholder_ruta_carpeta>
+      - _Nota 1:_ el primer argumento de ruta de archivo es requerido, el resto son opcionales.
+      - _Nota 2:_ la ruta del archivo utilizada en este comando no debe tener `.source.json` al final. debe terminar con `.pdf.dvc`.
+      - _Nota 3:_ otros tipos de archivo (p. ej., `.txt`) deben abrirse directamente, sin dvc.
+      - _Nota 4:_ si `.web.txt` está presente, entonces no debes intentar este comando, solo copia y pega el enlace dentro de `.web.txt` en tu navegador. Implementaremos un `lunch get` más adelante para obtener archivos de la web.
+      - _Nota 5:_ el archivo `.pdf` no debería ser visible antes de ejecutar este comando.
+      - _Nota 6:_ puedes obtener las rutas de archivos a través de la interfaz gráfica de usuario de tu Sistema Operativo, cada sistema operativo tiene una manera fácil.
+
+      **Descarga todos los archivos de una carpeta específica via:**
+
+      ```bash
+      lunch folder <placeholder_ruta_carpeta>
       ```
 
       Si quieres colocar los nuevos archivos pdf en el mismo lugar que sus archivos `.pdf.dvc` correspondientes entonces usa:
@@ -193,6 +213,10 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
       ```bash
       lunch folder <placeholder_ruta_carpeta> --in-place --recursive
       ```
+
+   - Para archivos `pdf.web.txt`:
+
+      Simplemente abre el archivo y sigue el enlace web dentro de él.
 
 ## Estructura de Directorios y Convenciones de Nomenclatura
 

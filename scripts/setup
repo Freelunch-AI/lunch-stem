@@ -28,5 +28,9 @@ else
     echo "Script directory already found in ~/.bashrc"
 fi
 
+# Configure rclone
+export RCLONE_CONFIG="$(pwd)/config/rclone.conf"
+
 echo "Setup complete! Script directory added to PATH: $scriptDir"
 echo "You can now run 'lunch.sh' from anywhere in this session just by typing lunch"
+echo "Configured rclone with config file at $RCLONE_CONFIG"
