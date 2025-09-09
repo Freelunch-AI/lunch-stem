@@ -1,4 +1,0 @@
-tensorflow
-keras
-numpy
-onnx

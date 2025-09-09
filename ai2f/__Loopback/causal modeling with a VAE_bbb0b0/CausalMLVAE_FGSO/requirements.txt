@@ -1,9 +1,0 @@
-#Install dependencies
-pyro-ppl
-torch
-torchvision
-pydrive
-tqdm
-gputil
-psutil
-humanize

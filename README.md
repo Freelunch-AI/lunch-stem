@@ -250,7 +250,7 @@ These can be installed by following their repsective installation guide on their
 
 ### Phase B: Important Additions
 
-5. **[b][a]** Create a proper (not in bash, modular, with tests, compiled) *lunchSTEM CLI* package/installable where you can:
+5. **[b][a]** Create a proper (not in bash, with docstrings, modular, with tests, compiled) *lunchSTEM CLI* package/installable where you can:
    1. Get files or directories (already implemented in a basic way)
    2. Hide/Show certain file types (e.g., hide: .dvc, .source.json, .prerequisites.json, symlinks for other operating systems, etc)
    3. Do search: keyword search and semantic search
