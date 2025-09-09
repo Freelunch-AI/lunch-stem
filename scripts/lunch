@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# DVC Download CLI Tool
+# Lunch CLI Tool
 # A bash script to download DVC-tracked files from Google Drive storage
 
 set -e  # Exit on any error
 
 # Configuration
-RCLONE_REMOTE="gdrive-lunch-stem:lunch-stem-dvc-data/files/md5"
+RCLONE_REMOTE="gdrive-lunch-stem:files/md5"
 TEMP_FOLDER="./temp_folder"
 VERBOSE="false"
 

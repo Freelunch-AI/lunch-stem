@@ -1,4 +1,4 @@
-# DVC Download CLI Tool - PowerShell Version
+# Lunch CLI Tool - PowerShell Version
 # A PowerShell script to download DVC-tracked files from Google Drive storage
 
 param(
@@ -7,7 +7,7 @@ param(
 )
 
 # Configuration
-$RCLONE_REMOTE = "gdrive-lunch-stem:lunch-stem-dvc-data/files/md5"
+$RCLONE_REMOTE = "gdrive-lunch-stem:files/md5"
 $TEMP_FOLDER = "./temp_folder"
 $VERBOSE = $false
 

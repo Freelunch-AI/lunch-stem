@@ -213,6 +213,7 @@ These can be installed by following their repsective installation guide on their
       ```bash
       lunch folder "<folder_path_placeholder>" --in-place --recursive
       ```
+      For debugging, use the `--verbose` flag.
 
    - For `pdf.web.txt` files:
 
@@ -247,7 +248,7 @@ These can be installed by following their repsective installation guide on their
 
 ### Phase B: Important Additions
 
-4. **[b][a]** Create a proper *lunchSTEM CLI* package where you can:
+4. **[b][a]** Create a proper (not in bash, modular, with tests, compiled) *lunchSTEM CLI* package/installable where you can:
    1. Get files or directories (already implemented in a basic way)
    2. Hide/Show certain file types (e.g., hide: .dvc, .source.json, .prerequisites.json, symlinks for other operating systems, etc)
    3. Do search: keyword search and semantic search
@@ -279,7 +280,7 @@ These can be installed by following their repsective installation guide on their
 
 ### Phase C: More Core Features
 
-10. **[b][c][d]** Add features to *lunchSTEM*, potentially using *AgentPool* to help (in parallel: keep adding more materials from `to_add.txt`, but add as `file_name.file_extension.web.txt` with the HTTPS link inside the file):
+9. **[b][c][d]** Add features to *lunchSTEM*, potentially using *AgentPool* to help (in parallel: keep adding more materials from `to_add.txt`, but add as `file_name.file_extension.web.txt` with the HTTPS link inside the file):
     - **Prerequisites:** Add `<file_name>.<file_extension>.prerequisites.json` containing hierarchical list of prerequisites for each file
     - **Exercises:** Put exercises with solutions in every topic directory inside `__Exercises`
     - **Tools:** put software tools in very topic inside `__Tools`. Can be tools for doing or understanding something related to the topic.
@@ -292,9 +293,9 @@ These can be installed by following their repsective installation guide on their
 
 ### Phase D: Nice to Have Improvements
 
-11. **[d]** Migrate from *Google Drive* to a better storage option (e.g., *S3*).
+10. **[d]** Migrate from *Google Drive* (I was already paying for 2TB, so that's why I used it) to a better storage option (e.g., *S3*).
 
-12. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes by finetuning SLMs. Agents are continually modified to ensure diversity and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
+11. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes by finetuning SLMs. Agents are continually modified to ensure diversity and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
 
 ## Disclaimer & Terms
 
