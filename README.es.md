@@ -5,7 +5,11 @@
 <h1 align="center">Democratizando el conocimiento <i>STEM</i> de manera organizada</h1><br>
 
 <p align="center">
-   <strong>🌟 Proyecto sin fines de lucro y de código abierto 🌟</strong>
+   <strong>🌟 Proyecto sin fines de lucro y de ### Fase D: Mejoras Agradables de Tener
+
+11. **[d]** Migrar de *Google Drive* (ya estaba pagando por 2TB, por eso lo usé) a una mejor opción de almacenamiento (ej., *S3*).
+
+12. **[d]** Hacer *AgentPool*: equipo de agentes diversos que hacen PRs al repositorio *lunchSTEM* después de discusiones internas, haciendo preguntas a humanos y evaluando cambios propuestos mediante fine-tuning de SLMs. Los agentes se modifican continuamente para asegurar diversidad y para mejorar su inteligencia basada en nuevo conocimiento aprobado agregado a *lunchSTEM*.o abierto 🌟</strong>
 </p>
 
 <p align="center">
@@ -42,18 +46,14 @@
 
 ---
 
-<br>
-
 > [!WARNING]
 > **⚠️ Importante**
 > 
 > Los documentos en *lunchSTEM* son creados por autores externos, no por nosotros. No apoyamos la inclusión de documentos no distribuibles sin el permiso del autor (para documentos no distribuibles: consulta `author_permissions.jsonl`).
 > 
-> Cada documento acredita a su(s) autor(es) en un archivo correspondiente `[nombre_archivo].[extensión_archivo].source.json`.
+> Cada documento acredita a su(s) autor(es) en un archivo correspondiente `<nombre_archivo>.<extensión_archivo>.source.json`.
 > 
 > Los autores pueden solicitar la eliminación de contenido en cualquier momento. Después de seguir nuestro protocolo simplificado para *Solicitudes de Eliminación de Contenido*, eliminamos el contenido dentro de 24 horas. Esta opción es más rápida y amigable que una notificación de la *Ley de Derechos de Autor del Milenio Digital (DMCA)* (que puede cerrar el proyecto).
-
-<br>
 
 > [!NOTE]
 > **🟩 Próximamente**
@@ -62,7 +62,7 @@
 > 
 > • **Servidor MCP:** útil para Agentes de IA que realizan trabajo de ingeniería complejo o investigación científica.
 > 
-> • **CLI** donde los usuarios pueden hacer búsquedas por palabras clave y semánticas.
+> • **CLI adecuado** donde los usuarios pueden hacer búsquedas por palabras clave y semánticas.
 
 ## Descripción General
 
@@ -117,17 +117,23 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
 ## Cómo Usar
 
-1.  **Abre una terminal**: Para abrir la terminal, usa la funcionalidad de búsqueda de tu sistema operativo (presionando la tecla de Windows o Cmd + Espacio en Mac) y escribe "terminal", "símbolo del sistema" o "Windows Terminal" y selecciona la aplicación.
+1. **Abre una terminal**: Para abrir la terminal, usa la funcionalidad de búsqueda de tu sistema operativo (presionando la tecla de Windows o Cmd + Espacio en Mac) y escribe "terminal", "símbolo del sistema" o "Windows Terminal" y selecciona la aplicación
 
-2.  **Clona el repositorio con git** (este comando creará una carpeta `lunch-stem` en tu directorio actual).
+2. **Clona el repositorio con git** (este comando creará una carpeta `lunch-stem` en tu directorio actual)
 
-    ```bash
-    git clone https://github.com/Freelunch-AI/lunch-stem.git
-    ```
+   ```bash
+   git clone https://github.com/Freelunch-AI/lunch-stem.git
+   ```
 > [!NOTE]
 > Si estás usando Windows, es importante clonar dentro de un directorio de nivel superior, para evitar errores potenciales relacionados con la creación de rutas de archivo demasiado largas. Windows típicamente tiene un máximo de ruta de archivo de 260 caracteres.
 
-3. Configurar el proyecto
+3. Entra en la carpeta `lunch-stem`
+
+   ```bash
+   cd lunch-stem
+   ```
+
+4. Configurar el proyecto
 
    **Para Linux**
 
@@ -157,30 +163,24 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
    scripts/setup.ps1
       ```
 
-3.  Entra en la carpeta `lunch-stem`.
+5. **Explora dentro de la carpeta `ai2f`**
 
-    ```bash
-    cd lunch-stem
-    ```
-
-4.  **Explora la carpeta `ai2f`**
-
-5.  **Descarga archivos pdf:**
+6. **Descarga archivos pdf:**
 
    - Para archivos `.pdf.dvc`
 
       **Descarga archivos pdf específicos con:**
 
       ```bash
-      lunch files <primer_placeholder_ruta_archivo_dvc> [segundo_placeholder_ruta_archivo_dvc] ...
+      lunch files "<primer_dvc_file_path_placeholder>" "[segundo_dvc_file_path_placeholder]" ...
       ```
 
       Este comando obtendrá los archivos `.pdf` y los colocará en tu directorio actual.
 
-      Si quieres colocar los archivos en el mismo lugar que el archivo `.pdf.dvc` entonces usa:
+      Si quieres colocar los archivos en el mismo lugar que el archivo `pdf.dvc ` entonces usa:
 
       ```bash
-      lunch files <primer_placeholder_ruta_archivo_dvc> [segundo_placeholder_ruta_archivo_dvc] --in-place ...
+      lunch files "<primer_dvc_file_path_placeholder>" "[segundo_dvc_file_path_placeholder]" --in-place ...
       ```
 
       - _Nota 1:_ el primer argumento de ruta de archivo es requerido, el resto son opcionales.
@@ -190,29 +190,31 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
       - _Nota 5:_ el archivo `.pdf` no debería ser visible antes de ejecutar este comando.
       - _Nota 6:_ puedes obtener las rutas de archivos a través de la interfaz gráfica de usuario de tu Sistema Operativo, cada sistema operativo tiene una manera fácil.
 
+
       **Descarga todos los archivos de una carpeta específica via:**
 
       ```bash
-      lunch folder <placeholder_ruta_carpeta>
+         lunch folder "<folder_path_placeholder>"
       ```
 
-      Si quieres colocar los nuevos archivos pdf en el mismo lugar que sus archivos `.pdf.dvc` correspondientes entonces usa:
+      Si quieres colocar los nuevos archivos pdf en el mismo lugar que sus archivos `pdf.dvc` correspondientes entonces usa:
 
       ```bash
-      lunch folder <placeholder_ruta_carpeta> --in-place
+      lunch folder "<folder_path_placeholder>" --in-place
       ```
 
       Si quieres descargar todos los archivos de todos los subdirectorios (recursivamente) entonces usa:
 
       ```bash
-      lunch folder <placeholder_ruta_carpeta> --recursive
+      lunch folder "<folder_path_placeholder>" --recursive
       ```
 
-      Si quieres colocar archivos en el mismo lugar que el archivo `.pdf.dvc` y para todos los subdirectorios entonces usa:
+      Si quieres colocar archivos en el mismo lugar que el archivo `pdf.dvc ` y para todos los subdirectorios entonces usa:
 
       ```bash
-      lunch folder <placeholder_ruta_carpeta> --in-place --recursive
+      lunch folder "<folder_path_placeholder>" --in-place --recursive
       ```
+      Para depuración, usa la bandera `--verbose`.
 
    - Para archivos `pdf.web.txt`:
 
@@ -238,23 +240,25 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
 ### Fase A: Problemas Fundamentales
 
-1. **[a]** Resolver problemas urgentes de derechos de autor y atribución de créditos relacionados con archivos reales que se almacenan
+1. **[b][a]** Crear convención de nomenclatura de ramas y reglas de ramas.
+
+2. **[a]** Resolver problemas urgentes de derechos de autor y atribución de créditos relacionados con archivos reales que se almacenan
    - Hacer script CI que construya una lista de rutas `.source.json` que no tienen información de autor - estos deberían ser prioridad.
 
-2. **[a]** Reemplazar archivos reales (y enlaces de página de inicio/punto de entrada) con enlaces para obtener los archivos directamente de su host original (usar un agente de IA que use navegador para ayudar con esto). El objetivo es que la mayoría de los archivos sean `nombre_archivo.extensión_archivo.web.txt` con el enlace dentro (es decir, archivo alojado externamente). Los usuarios aún pueden contribuir con archivos reales si son los autores de estos archivos (como hace *arXiv*) porque internamente seguiremos usando DVC para archivos reales.
+3. **[a]** Reemplazar archivos reales (y enlaces de página de inicio/punto de entrada) con enlaces para obtener los archivos directamente de su host original (usar un agente de IA que use navegador para ayudar con esto). El objetivo es que la mayoría de los archivos sean `nombre_archivo.extensión_archivo.web.txt` con el enlace dentro (es decir, archivo alojado externamente). Los usuarios aún pueden contribuir con archivos reales si son los autores de estos archivos (como hace *arXiv*) porque internamente seguiremos usando DVC para archivos reales.
 
-3. **[a]** Implementar enlaces simbólicos adecuados que funcionen en todos los Sistemas Operativos. No más buscar manualmente la ruta dentro del archivo `.sym.txt` e ir manualmente a ese directorio. También implementar enlaces web fáciles, para evitar copiar/pegar manual de rutas dentro de `.web.txt` al navegador.
+4. **[a]** Implementar enlaces simbólicos adecuados que funcionen en todos los Sistemas Operativos. No más buscar manualmente la ruta dentro del archivo `.sym.txt` e ir manualmente a ese directorio. También implementar enlaces web fáciles, para evitar copiar/pegar manual de rutas dentro de `.web.txt` al navegador.
 
 ### Fase B: Adiciones Importantes
 
-4. **[b][a]** Crear un *CLI de lunchSTEM* donde puedas:
-   1. Extraer archivos/directorios reales localmente
+5. **[b][a]** Crear un *CLI de lunchSTEM* adecuado (no en bash, con docstrings, modular, con pruebas, compilado) paquete/instalable donde puedas:
+   1. Obtener archivos o directorios (ya implementado de manera básica)
    2. Ocultar/Mostrar ciertos tipos de archivos (ej., ocultar: .dvc, .source.json, .prerequisites.json, enlaces simbólicos para otros sistemas operativos, etc)
    3. Hacer búsqueda: búsqueda por palabras clave y búsqueda semántica
 
-5. **[b]** Hacer un *Servidor MCP de lunchSTEM*: primero, necesitar crear una versión `.md` de cada `.pdf`
+6. **[b]** Hacer un *Servidor MCP de lunchSTEM*: primero, necesitar crear una versión `.md` de cada `.pdf`
 
-6. **[b][a]** Hacer un sitio web para facilitar el consumo de *lunchSTEM* por humanos, donde los usuarios puedan:
+7. **[b][a]** Hacer un sitio web para facilitar el consumo de *lunchSTEM* por humanos, donde los usuarios puedan:
    1. Visualizar y navegar el repositorio como un gráfico
    2. Usar búsqueda por palabras clave, basada en filtros y semántica
    3. Ver vista previa de documentos sin tener que abrirlos
@@ -267,9 +271,9 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
    10. Ver documentos y autores populares/tendencia
    11. Ver estadísticas para documentos y autores
 
-7. **[b]** Conseguir patrocinadores y subvenciones para: (1) apoyar nuestro alojamiento de aplicación; (2) construir un equipo dedicado de mantenedores de *lunchSTEM*; (3) pagar expertos para procesos de revisión por pares; y (4) enrutar un porcentaje del dinero a autores contribuyentes. Todo el dinero de patrocinio sería reinvertido en el proyecto, es un proyecto sin fines de lucro.
+8. **[b]** Conseguir patrocinadores y subvenciones para: (1) apoyar nuestro alojamiento de aplicación; (2) construir un equipo dedicado de mantenedores de *lunchSTEM*; (3) pagar expertos para procesos de revisión por pares; y (4) enrutar un porcentaje del dinero a autores contribuyentes. Todo el dinero de patrocinio sería reinvertido en el proyecto, es un proyecto sin fines de lucro.
 
-8. Crear Flujos de Trabajo CI
+9. Crear Flujos de Trabajo CI
 
    1. **[b][a]** Reemplazar archivos `.pdf` reales con archivos `.pdf.dvc`, evitando archivos de conocimiento reales en el repositorio.
 

@@ -42,18 +42,14 @@
 
 ---
 
-<br>
-
 > [!WARNING]
 > **⚠️ Importante**
 > 
 > Documentos no *lunchSTEM* são criados por autores externos, não por nós. Não apoiamos a inclusão de documentos não distribuíveis sem permissão do autor (para documentos não distribuíveis: verifique `author_permissions.jsonl`).
 > 
-> Cada documento credita seu(s) autor(es) num arquivo correspondente `[nome_arquivo].[extensão_arquivo].source.json`.
+> Cada documento credita seu(s) autor(es) num arquivo correspondente `<nome_arquivo>.<extensão_arquivo>.source.json`.
 > 
 > Autores podem solicitar remoção de conteúdo a qualquer momento. Após seguir nosso protocolo simplificado para *Solicitações de Remoção de Conteúdo*, removemos o conteúdo em 24 horas. Esta opção é mais rápida e amigável que uma notificação da *Lei de Direitos Autorais do Milênio Digital (DMCA)* (que pode fechar o projeto).
-
-<br>
 
 > [!NOTE]
 > **🟩 Em Breve**
@@ -62,7 +58,7 @@
 > 
 > • **Servidor MCP:** útil para Agentes de IA fazendo trabalho de engenharia complexo ou pesquisa científica.
 > 
-> • **CLI** onde usuários podem fazer busca por palavras-chave e semântica.
+> • **CLI adequado** onde usuários podem fazer busca por palavras-chave e semântica.
 
 ## Visão Geral
 
@@ -117,17 +113,23 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 ## Como Usar
 
-1.  **Abra um terminal**: Para abrir o terminal, use a funcionalidade de busca do seu sistema operacional (pressionando a tecla Windows ou Cmd + Espaço no Mac) e digite "terminal", "prompt de comando" ou "Windows Terminal" e selecione o aplicativo.
+1. **Abra um terminal**: Para abrir o terminal, use a funcionalidade de busca do seu sistema operacional (pressionando a tecla Windows ou Cmd + Espaço no Mac) e digite "terminal", "prompt de comando" ou "Windows Terminal" e selecione o aplicativo
 
-2.  **Clone o repositório com git** (este comando criará uma pasta `lunch-stem` no seu diretório atual).
+2. **Clone o repositório com git** (este comando criará uma pasta `lunch-stem` no seu diretório atual)
 
-    ```bash
-    git clone https://github.com/Freelunch-AI/lunch-stem.git
-    ```
+   ```bash
+   git clone https://github.com/Freelunch-AI/lunch-stem.git
+   ```
 > [!NOTE]
 > Se você estiver usando Windows, é importante clonar dentro de um diretório de nível superior, para evitar erros potenciais relacionados à criação de caminhos de arquivo muito longos. O Windows tipicamente tem um caminho de arquivo máximo de 260 caracteres.
 
-3. Configure o projeto
+3. Entre na pasta `lunch-stem`
+
+   ```bash
+   cd lunch-stem
+   ```
+
+4. Configure o projeto
 
    **Para Linux**
 
@@ -157,30 +159,24 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
    scripts/setup.ps1
       ```
 
-3.  Entre na pasta `lunch-stem`.
+5. **Navegue dentro da pasta `ai2f`**
 
-    ```bash
-    cd lunch-stem
-    ```
-
-4.  **Navegue pela pasta `ai2f`**
-
-5.  **Baixe arquivos pdf:**
+6. **Baixe arquivos pdf:**
 
    - Para arquivos `.pdf.dvc`
 
       **Baixe arquivos pdf específicos via:**
 
       ```bash
-      lunch files <primeiro_placeholder_caminho_arquivo_dvc> [segundo_placeholder_caminho_arquivo_dvc] ...
+      lunch files "<primeiro_dvc_file_path_placeholder>" "[segundo_dvc_file_path_placeholder]" ...
       ```
 
       Este comando obterá os arquivos `.pdf` e os colocará no seu diretório atual.
 
-      Se você quiser colocar arquivos no mesmo lugar que o arquivo `.pdf.dvc` então use:
+      Se você quiser colocar arquivos no mesmo lugar que o arquivo `pdf.dvc ` então use:
 
       ```bash
-      lunch files <primeiro_placeholder_caminho_arquivo_dvc> [segundo_placeholder_caminho_arquivo_dvc] --in-place ...
+      lunch files "<primeiro_dvc_file_path_placeholder>" "[segundo_dvc_file_path_placeholder]" --in-place ...
       ```
 
       - _Nota 1:_ o primeiro argumento de caminho de arquivo é obrigatório, o resto é opcional.
@@ -190,29 +186,31 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
       - _Nota 5:_ o arquivo `.pdf` não deve estar visível antes de você executar este comando.
       - _Nota 6:_ você pode obter os caminhos dos arquivos através da interface gráfica do usuário do seu Sistema Operacional, cada sistema operacional tem uma maneira fácil.
 
+
       **Baixe todos os arquivos de uma pasta específica via:**
 
       ```bash
-      lunch folder <placeholder_caminho_pasta>
+         lunch folder "<folder_path_placeholder>"
       ```
 
-      Se você quiser colocar os novos arquivos pdf no mesmo lugar que seus arquivos `.pdf.dvc` correspondentes então use:
+      Se você quiser colocar os novos arquivos pdf no mesmo lugar que seus arquivos `pdf.dvc` correspondentes então use:
 
       ```bash
-      lunch folder <placeholder_caminho_pasta> --in-place
+      lunch folder "<folder_path_placeholder>" --in-place
       ```
 
       Se você quiser baixar todos os arquivos de todos os subdiretórios (recursivamente) então use:
 
       ```bash
-      lunch folder <placeholder_caminho_pasta> --recursive
+      lunch folder "<folder_path_placeholder>" --recursive
       ```
 
-      Se você quiser colocar arquivos no mesmo lugar que o arquivo `.pdf.dvc` e para todos os subdiretórios então use:
+      Se você quiser colocar arquivos no mesmo lugar que o arquivo `pdf.dvc ` e para todos os subdiretórios então use:
 
       ```bash
-      lunch folder <placeholder_caminho_pasta> --in-place --recursive
+      lunch folder "<folder_path_placeholder>" --in-place --recursive
       ```
+      Para depuração, use a flag `--verbose`.
 
    - Para arquivos `pdf.web.txt`:
 
@@ -238,23 +236,25 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 ### Fase A: Problemas Fundamentais
 
-1. **[a]** Resolver problemas urgentes de direitos autorais e atribuição de créditos relacionados aos arquivos reais sendo armazenados
+1. **[b][a]** Criar convenção de nomenclatura de branches e regras de branches.
+
+2. **[a]** Resolver problemas urgentes de direitos autorais e atribuição de créditos relacionados aos arquivos reais sendo armazenados
    - Fazer script CI que constrói uma lista de caminhos `.source.json` que não têm informação de autor - estes devem ser prioridade.
 
-2. **[a]** Substituir arquivos reais (e links de homepage/ponto de entrada) com links para obter os arquivos diretamente do seu host original (usar um agente de IA usando navegador para ajudar com isso). O objetivo é que a maioria dos arquivos seja `nome_arquivo.extensão_arquivo.web.txt` com o link dentro dele (ou seja, arquivo hospedado externamente). Usuários ainda podem contribuir com arquivos reais se forem os autores desses arquivos (como o *arXiv* faz) porque internamente ainda estaremos usando DVC para arquivos reais.
+3. **[a]** Substituir arquivos reais (e links de homepage/ponto de entrada) com links para obter os arquivos diretamente do seu host original (usar um agente de IA usando navegador para ajudar com isso). O objetivo é que a maioria dos arquivos seja `nome_arquivo.extensão_arquivo.web.txt` com o link dentro dele (ou seja, arquivo hospedado externamente). Usuários ainda podem contribuir com arquivos reais se forem os autores desses arquivos (como o *arXiv* faz) porque internamente ainda estaremos usando DVC para arquivos reais.
 
-3. **[a]** Implementar symlinks adequados que funcionem em todos os Sistemas Operacionais. Não mais procurar manualmente o caminho dentro do arquivo `.sym.txt` e ir manualmente para aquele diretório. Também implementar weblinks fáceis, para evitar copiar/colar manual de caminhos dentro de `.web.txt` para o navegador.
+4. **[a]** Implementar symlinks adequados que funcionem em todos os Sistemas Operacionais. Não mais procurar manualmente o caminho dentro do arquivo `.sym.txt` e ir manualmente para aquele diretório. Também implementar weblinks fáceis, para evitar copiar/colar manual de caminhos dentro de `.web.txt` para o navegador.
 
 ### Fase B: Adições Importantes
 
-4. **[b][a]** Criar um *CLI do lunchSTEM* onde você pode:
-   1. Puxar arquivos/diretórios reais localmente
+5. **[b][a]** Criar um *CLI do lunchSTEM* adequado (não em bash, com docstrings, modular, com testes, compilado) pacote/instalável onde você pode:
+   1. Obter arquivos ou diretórios (já implementado de forma básica)
    2. Ocultar/Mostrar certos tipos de arquivo (ex., ocultar: .dvc, .source.json, .prerequisites.json, symlinks para outros sistemas operacionais, etc)
    3. Fazer busca: busca por palavras-chave e busca semântica
 
-5. **[b]** Fazer um *Servidor MCP do lunchSTEM*: primeiro, precisa criar uma versão `.md` de cada `.pdf`
+6. **[b]** Fazer um *Servidor MCP do lunchSTEM*: primeiro, precisa criar uma versão `.md` de cada `.pdf`
 
-6. **[b][a]** Fazer um website para facilitar o consumo do *lunchSTEM* por humanos, onde usuários podem:
+7. **[b][a]** Fazer um website para facilitar o consumo do *lunchSTEM* por humanos, onde usuários podem:
    1. Visualizar e navegar o repositório como um gráfico
    2. Usar busca por palavras-chave, baseada em filtros e semântica
    3. Ver prévia de documentos sem ter que abri-los
@@ -267,9 +267,9 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
    10. Ver documentos e autores populares/em alta
    11. Ver estatísticas para documentos e autores
 
-7. **[b]** Conseguir patrocinadores e subsídios para: (1) apoiar nossa hospedagem de aplicativo; (2) construir uma equipe dedicada de mantenedores do *lunchSTEM*; (3) pagar especialistas para processos de revisão por pares; e (4) direcionar uma porcentagem do dinheiro para autores contribuintes. Todo dinheiro de patrocínio seria reinvestido no projeto, é um projeto sem fins lucrativos.
+8. **[b]** Conseguir patrocinadores e subsídios para: (1) apoiar nossa hospedagem de aplicativo; (2) construir uma equipe dedicada de mantenedores do *lunchSTEM*; (3) pagar especialistas para processos de revisão por pares; e (4) direcionar uma porcentagem do dinheiro para autores contribuintes. Todo dinheiro de patrocínio seria reinvestido no projeto, é um projeto sem fins lucrativos.
 
-8. Criar Fluxos de Trabalho CI
+9. Criar Fluxos de Trabalho CI
 
    1. **[b][a]** Substituir arquivos `.pdf` reais com arquivos `.pdf.dvc`, evitando arquivos de conhecimento reais no repositório.
 
@@ -292,7 +292,7 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 ### Fase D: Melhorias Legais de Ter
 
-11. **[d]** Migrar do *Google Drive* para uma opção de armazenamento melhor (ex., *S3*).
+11. **[d]** Migrar do *Google Drive* (eu já estava pagando por 2TB, por isso usei) para uma opção de armazenamento melhor (ex., *S3*).
 
 12. **[d]** Fazer *AgentPool*: equipe de agentes diversos que fazem PRs para o repositório *lunchSTEM* após discussões internas, fazendo perguntas aos humanos e avaliando mudanças propostas por fine-tuning de SLMs. Agentes são continuamente modificados para garantir diversidade e melhorar sua inteligência baseada em novo conhecimento aprovado adicionado ao *lunchSTEM*.
 
@@ -314,7 +314,7 @@ __Quer ser um patrocinador? Envie um email para bruno.c.scaglione@gmail.com com 
 
 ## [Freelunch](https://freelunch.dev)
 
-![Logo do Freelunch](./ponsors/freelunch/logo_freelunch_with_name.png)
+![Logo do Freelunch](./sponsors/freelunch/logo_freelunch_with_name.png)
 
 ## Agradecimentos
 

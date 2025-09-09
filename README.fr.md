@@ -42,18 +42,14 @@
 
 ---
 
-<br>
-
 > [!WARNING]
 > **⚠️ Important**
 > 
 > Les documents dans *lunchSTEM* sont créés par des auteurs externes, pas par nous. Nous ne soutenons pas l'inclusion de documents non distribuables sans l'autorisation de l'auteur (pour les documents non distribuables : vérifiez `author_permissions.jsonl`).
 > 
-> Chaque document crédite son/ses auteur(s) dans un fichier correspondant `[nom_fichier].[extension_fichier].source.json`.
+> Chaque document crédite son/ses auteur(s) dans un fichier correspondant `<nom_fichier>.<extension_fichier>.source.json`.
 > 
 > Les auteurs peuvent demander la suppression de contenu à tout moment. Après avoir suivi notre protocole simplifié pour les *Demandes de Suppression de Contenu*, nous supprimons le contenu dans les 24 heures. Cette option est plus rapide et plus conviviale qu'une notification de la *Loi sur les Droits d'Auteur du Millénaire Numérique (DMCA)* (qui peut fermer le projet).
-
-<br>
 
 > [!NOTE]
 > **🟩 Bientôt Disponible**
@@ -62,7 +58,7 @@
 > 
 > • **Serveur MCP :** utile pour les Agents IA effectuant du travail d'ingénierie complexe ou de la recherche scientifique.
 > 
-> • **CLI** où les utilisateurs peuvent faire des recherches par mots-clés et sémantiques.
+> • **CLI approprié** où les utilisateurs peuvent faire des recherches par mots-clés et sémantiques.
 
 ## Aperçu
 
@@ -117,27 +113,33 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
 ## Comment Utiliser
 
-1.  **Ouvrez un terminal**: Pour ouvrir le terminal, utilisez la fonctionnalité de recherche de votre système d'exploitation (en appuyant sur la touche Windows ou Cmd + Espace sur Mac) et tapez "terminal", "invite de commandes" ou "Windows Terminal" et sélectionnez l'application.
+1. **Ouvrez un terminal**: Pour ouvrir le terminal, utilisez la fonctionnalité de recherche de votre système d'exploitation (en appuyant sur la touche Windows ou Cmd + Espace sur Mac) et tapez "terminal", "invite de commandes" ou "Windows Terminal" et sélectionnez l'application
 
-2.  **Clonez le dépôt avec git** (cette commande créera un dossier `lunch-stem` dans votre répertoire actuel).
+2. **Clonez le dépôt avec git** (cette commande créera un dossier `lunch-stem` dans votre répertoire actuel)
 
-    ```bash
-    git clone https://github.com/Freelunch-AI/lunch-stem.git
-    ```
+   ```bash
+   git clone https://github.com/Freelunch-AI/lunch-stem.git
+   ```
 > [!NOTE]
 > Si vous utilisez Windows, il est important de cloner dans un répertoire de niveau supérieur, pour éviter les erreurs potentielles liées à la création de chemins de fichiers trop longs. Windows a généralement un chemin de fichier maximum de 260 caractères.
 
-3. Configurer le projet
+3. Entrez dans le dossier `lunch-stem`
+
+   ```bash
+   cd lunch-stem
+   ```
+
+4. Configurez le projet
 
    **Pour Linux**
 
-   Activer l'exécution de scripts
+   Activez l'exécution de scripts
 
    ```bash
    chmod +x scripts/setup 
       ```
 
-   Exécuter le script de configuration
+   Exécutez le script de configuration
 
    ```bash
    source scripts/setup 
@@ -145,42 +147,36 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
    **Pour Windows :**
 
-   Activer l'exécution de scripts dans la session de terminal
+   Activez l'exécution de scripts dans la session de terminal
 
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
       ```
 
-   Exécuter le script de configuration
+   Exécutez le script de configuration
 
    ```powershell
    scripts/setup.ps1
       ```
 
-3.  Entrez dans le dossier `lunch-stem`.
+5. **Parcourez dans le dossier `ai2f`**
 
-    ```bash
-    cd lunch-stem
-    ```
-
-4.  **Parcourez le dossier `ai2f`**
-
-5.  **Téléchargez des fichiers pdf :**
+6. **Téléchargez des fichiers pdf :**
 
    - Pour les fichiers `.pdf.dvc`
 
       **Téléchargez des fichiers pdf spécifiques avec :**
 
       ```bash
-      lunch files <premier_placeholder_chemin_fichier_dvc> [deuxième_placeholder_chemin_fichier_dvc] ...
+      lunch files "<premier_dvc_file_path_placeholder>" "[deuxième_dvc_file_path_placeholder]" ...
       ```
 
       Cette commande récupérera les fichiers `.pdf` et les placera dans votre répertoire actuel.
 
-      Si vous voulez placer les fichiers au même endroit que le fichier `.pdf.dvc`, utilisez :
+      Si vous voulez placer les fichiers au même endroit que le fichier `pdf.dvc ` alors utilisez :
 
       ```bash
-      lunch files <premier_placeholder_chemin_fichier_dvc> [deuxième_placeholder_chemin_fichier_dvc] --in-place ...
+      lunch files "<premier_dvc_file_path_placeholder>" "[deuxième_dvc_file_path_placeholder]" --in-place ...
       ```
 
       - _Note 1 :_ le premier argument de chemin de fichier est requis, le reste est optionnel.
@@ -190,29 +186,31 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
       - _Note 5 :_ le fichier `.pdf` ne devrait pas être visible avant que vous n'exécutiez cette commande.
       - _Note 6 :_ vous pouvez obtenir les chemins de fichiers via l'interface utilisateur graphique de votre Système d'Exploitation, chaque système d'exploitation a un moyen facile.
 
+
       **Téléchargez tous les fichiers d'un dossier spécifique via :**
 
       ```bash
-      lunch folder <placeholder_chemin_dossier>
+         lunch folder "<folder_path_placeholder>"
       ```
 
-      Si vous voulez placer les nouveaux fichiers pdf au même endroit que leurs fichiers `.pdf.dvc` correspondants, utilisez :
+      Si vous voulez placer les nouveaux fichiers pdf au même endroit que leurs fichiers `pdf.dvc` correspondants alors utilisez :
 
       ```bash
-      lunch folder <placeholder_chemin_dossier> --in-place
+      lunch folder "<folder_path_placeholder>" --in-place
       ```
 
-      Si vous voulez télécharger tous les fichiers de tous les sous-répertoires (récursivement), utilisez :
+      Si vous voulez télécharger tous les fichiers de tous les sous-répertoires (récursivement) alors utilisez :
 
       ```bash
-      lunch folder <placeholder_chemin_dossier> --recursive
+      lunch folder "<folder_path_placeholder>" --recursive
       ```
 
-      Si vous voulez placer les fichiers au même endroit que le fichier `.pdf.dvc` et pour tous les sous-répertoires, utilisez :
+      Si vous voulez placer les fichiers au même endroit que le fichier `pdf.dvc ` et pour tous les sous-répertoires alors utilisez :
 
       ```bash
-      lunch folder <placeholder_chemin_dossier> --in-place --recursive
+      lunch folder "<folder_path_placeholder>" --in-place --recursive
       ```
+      Pour le débogage, utilisez le flag `--verbose`.
 
    - Pour les fichiers `pdf.web.txt` :
 
@@ -238,23 +236,25 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
 ### Phase A : Problèmes Fondamentaux
 
-1. **[a]** Résoudre les problèmes urgents de droits d'auteur et d'attribution de crédits liés aux fichiers réels étant stockés
+1. **[b][a]** Créer une convention de nommage des branches et des règles de branches.
+
+2. **[a]** Résoudre les problèmes urgents de droits d'auteur et d'attribution de crédits liés aux fichiers réels étant stockés
    - Faire un script CI qui construit une liste de chemins `.source.json` qui n'ont pas d'informations d'auteur - ceux-ci devraient être prioritaires.
 
-2. **[a]** Remplacer les fichiers réels (et les liens de page d'accueil/point d'entrée) par des liens pour obtenir les fichiers directement depuis leur hôte original (utiliser un agent IA utilisant un navigateur pour aider avec cela). L'objectif est que la plupart des fichiers soient `nom_fichier.extension_fichier.web.txt` avec le lien à l'intérieur (c'est-à-dire, fichier hébergé externement). Les utilisateurs peuvent toujours contribuer avec des fichiers réels s'ils sont les auteurs de ces fichiers (comme le fait *arXiv*) car en arrière-plan nous utiliserons toujours DVC pour les fichiers réels.
+3. **[a]** Remplacer les fichiers réels (et les liens de page d'accueil/point d'entrée) par des liens pour obtenir les fichiers directement depuis leur hôte original (utiliser un agent IA utilisant un navigateur pour aider avec cela). L'objectif est que la plupart des fichiers soient `nom_fichier.extension_fichier.web.txt` avec le lien à l'intérieur (c'est-à-dire, fichier hébergé externement). Les utilisateurs peuvent toujours contribuer avec des fichiers réels s'ils sont les auteurs de ces fichiers (comme le fait *arXiv*) car en arrière-plan nous utiliserons toujours DVC pour les fichiers réels.
 
-3. **[a]** Implémenter des liens symboliques appropriés qui fonctionnent sur tous les Systèmes d'Exploitation. Plus besoin de chercher manuellement le chemin dans le fichier `.sym.txt` et d'aller manuellement à ce répertoire. Aussi implémenter des liens web faciles, pour éviter le copier/coller manuel de chemins dans `.web.txt` vers le navigateur.
+4. **[a]** Implémenter des liens symboliques appropriés qui fonctionnent sur tous les Systèmes d'Exploitation. Plus besoin de chercher manuellement le chemin dans le fichier `.sym.txt` et d'aller manuellement à ce répertoire. Aussi implémenter des liens web faciles, pour éviter le copier/coller manuel de chemins dans `.web.txt` vers le navigateur.
 
 ### Phase B : Ajouts Importants
 
-4. **[b][a]** Créer un *CLI lunchSTEM* où vous pouvez :
-   1. Tirer des fichiers/répertoires réels localement
+5. **[b][a]** Créer un *CLI lunchSTEM* approprié (pas en bash, avec docstrings, modulaire, avec tests, compilé) package/installable où vous pouvez :
+   1. Obtenir des fichiers ou répertoires (déjà implémenté de manière basique)
    2. Cacher/Afficher certains types de fichiers (ex., cacher : .dvc, .source.json, .prerequisites.json, liens symboliques pour d'autres systèmes d'exploitation, etc)
    3. Faire une recherche : recherche par mots-clés et recherche sémantique
 
-5. **[b]** Faire un *Serveur MCP lunchSTEM* : d'abord, besoin de créer une version `.md` de chaque `.pdf`
+6. **[b]** Faire un *Serveur MCP lunchSTEM* : d'abord, besoin de créer une version `.md` de chaque `.pdf`
 
-6. **[b][a]** Faire un site web pour faciliter la consommation de *lunchSTEM* par les humains, où les utilisateurs peuvent :
+7. **[b][a]** Faire un site web pour faciliter la consommation de *lunchSTEM* par les humains, où les utilisateurs peuvent :
    1. Visualiser et naviguer dans le dépôt comme un graphique
    2. Utiliser la recherche par mots-clés, basée sur des filtres et sémantique
    3. Voir un aperçu des documents sans avoir à les ouvrir
@@ -267,11 +267,15 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
    10. Voir des documents et auteurs tendance/populaires
    11. Voir des statistiques pour les documents et auteurs
 
-7. **[b]** Obtenir des sponsors et des subventions pour : (1) soutenir notre hébergement d'application ; (2) construire une équipe dédiée de mainteneurs *lunchSTEM* ; (3) payer des experts pour les processus d'évaluation par les pairs ; et (4) router un pourcentage de l'argent vers les auteurs contributeurs. Tout l'argent de sponsoring serait réinvesti dans le projet, c'est un projet à but non lucratif.
+8. **[b]** Obtenir des sponsors et des subventions pour : (1) soutenir notre hébergement d'application ; (2) construire une équipe dédiée de mainteneurs *lunchSTEM* ; (3) payer des experts pour les processus d'évaluation par les pairs ; et (4) router un pourcentage de l'argent vers les auteurs contributeurs. Tout l'argent de sponsoring serait réinvesti dans le projet, c'est un projet à but non lucratif.
 
-8. **[b][a]** Ajouter la suppression de fichiers malveillants, la suppression de gros fichiers, la suppression de dépôts git, la suppression de fichiers de code, la suppression de matériel protégé par des droits d'auteur, etc dans CI via *GitHub Actions* pour éviter automatiquement les mauvaises PRs.
+9. Créer des Workflows CI
 
-9. **[b][a]** Ajouter l'application de conventions standards dans CI pour garder la base de connaissances cohérente, évitant les PRs incohérentes.
+   1. **[b][a]** Remplacer les fichiers `.pdf` réels avec des fichiers `.pdf.dvc`, évitant les fichiers de connaissance réels dans le dépôt.
+
+   2. **[b][a]** Ajouter la suppression de fichiers malveillants, la suppression de gros fichiers, la suppression de dépôts git, la suppression de fichiers avec des extensions non acceptées, la suppression de matériel protégé par des droits d'auteur, etc pour éviter automatiquement les mauvaises PRs.
+
+   3. **[b][a]** Ajouter l'application de conventions standards dans CI pour garder la base de connaissances cohérente, évitant les PRs incohérentes.
 
 ### Phase C : Plus de Fonctionnalités Principales
 
@@ -288,7 +292,7 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
 ### Phase D : Améliorations Agréables à Avoir
 
-11. **[d]** Migrer de *Google Drive* vers une meilleure option de stockage (ex., *S3*).
+11. **[d]** Migrer de *Google Drive* (je payais déjà pour 2TB, c'est pourquoi je l'ai utilisé) vers une meilleure option de stockage (ex., *S3*).
 
 12. **[d]** Faire *AgentPool* : équipe d'agents divers qui font des PRs au dépôt *lunchSTEM* après des discussions internes, posant des questions aux humains et évaluant les changements proposés par fine-tuning de SLMs. Les agents sont continuellement modifiés pour assurer la diversité et pour améliorer leur intelligence basée sur de nouvelles connaissances approuvées ajoutées à *lunchSTEM*.
 

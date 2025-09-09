@@ -42,18 +42,14 @@
 
 ---
 
-<br>
-
 > [!WARNING]
 > **⚠️ Wichtig**
 > 
 > Dokumente in *lunchSTEM* werden von externen Autoren erstellt, nicht von uns. Wir unterstützen die Aufnahme von nicht verteilbaren Dokumenten ohne Autorenerlaubnis nicht (für nicht verteilbare Dokumente: prüfen Sie `author_permissions.jsonl`).
 > 
-> Jedes Dokument würdigt seine(n) Autor(en) in einer entsprechenden `[dateiname].[dateierweiterung].source.json` Datei.
+> Jedes Dokument würdigt seine(n) Autor(en) in einer entsprechenden `<dateiname>.<dateierweiterung>.source.json` Datei.
 > 
 > Autoren können jederzeit die Entfernung von Inhalten beantragen. Nach Befolgen unseres vereinfachten Protokolls für *Inhaltsverwendungsanträge* entfernen wir Inhalte innerhalb von 24 Stunden. Diese Option ist schneller und freundlicher als eine *Digital Millennium Copyright Act (DMCA)* Benachrichtigung (die das Projekt schließen kann).
-
-<br>
 
 > [!NOTE]
 > **🟩 Demnächst Verfügbar**
@@ -62,9 +58,7 @@
 > 
 > • **MCP Server:** nützlich für KI-Agenten, die komplexe Ingenieurarbeit oder wissenschaftliche Forschung durchführen.
 > 
-> • **CLI** wo Benutzer Schlagwort- und semantische Suche durchführen können.
-
-<br>
+> • **Ordnungsgemäße CLI** wo Benutzer Schlagwort- und semantische Suche durchführen können.
 
 ## Überblick
 
@@ -119,17 +113,23 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
 ## Wie zu Verwenden
 
-1.  **Öffnen Sie ein Terminal**: Um das Terminal zu öffnen, verwenden Sie die Suchfunktion Ihres Betriebssystems (durch Drücken der Windows-Taste oder Cmd + Leertaste auf Mac) und tippen Sie "terminal", "Eingabeaufforderung" oder "Windows Terminal" und wählen Sie die App.
+1. **Öffnen Sie ein Terminal**: Um das Terminal zu öffnen, verwenden Sie die Suchfunktion Ihres Betriebssystems (durch Drücken der Windows-Taste oder Cmd + Leertaste auf Mac) und tippen Sie "terminal", "Eingabeaufforderung" oder "Windows Terminal" und wählen Sie die App
 
-2.  **Klonen Sie das Repo mit git** (dieser Befehl erstellt einen `lunch-stem` Ordner in Ihrem aktuellen Verzeichnis).
+2. **Klonen Sie das Repo mit git** (dieser Befehl erstellt einen `lunch-stem` Ordner in Ihrem aktuellen Verzeichnis)
 
-    ```bash
-    git clone https://github.com/Freelunch-AI/lunch-stem.git
-    ```
+   ```bash
+   git clone https://github.com/Freelunch-AI/lunch-stem.git
+   ```
 > [!NOTE]
 > Wenn Sie Windows verwenden, ist es wichtig, in einem Verzeichnis der obersten Ebene zu klonen, um potenzielle Fehler im Zusammenhang mit der Erstellung zu langer Dateipfade zu vermeiden. Windows hat typischerweise eine maximale Dateipfadlänge von 260 Zeichen.
 
-3. Das Projekt einrichten
+3. Betreten Sie den `lunch-stem` Ordner
+
+   ```bash
+   cd lunch-stem
+   ```
+
+4. Das Projekt einrichten
 
    **Für Linux**
 
@@ -159,30 +159,24 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
    scripts/setup.ps1
       ```
 
-3.  Betreten Sie den `lunch-stem` Ordner.
+5. **Durchsuchen Sie innerhalb des `ai2f` Ordners**
 
-    ```bash
-    cd lunch-stem
-    ```
-
-4.  **Durchsuchen Sie den `ai2f` Ordner**
-
-5.  **Laden Sie PDF-Dateien herunter:**
+6. **Laden Sie PDF-Dateien herunter:**
 
    - Für `.pdf.dvc` Dateien
 
       **Laden Sie spezifische PDF-Dateien herunter mit:**
 
       ```bash
-      lunch files <erster_dvc_dateipfad_platzhalter> [zweiter_dvc_dateipfad_platzhalter] ...
+      lunch files "<erster_dvc_file_path_placeholder>" "[zweiter_dvc_file_path_placeholder]" ...
       ```
 
       Dieser Befehl holt die `.pdf`-Dateien und platziert sie in Ihrem aktuellen Verzeichnis.
 
-      Wenn Sie Dateien am gleichen Ort wie die `.pdf.dvc` Datei platzieren möchten, verwenden Sie:
+      Wenn Sie Dateien am gleichen Ort wie die `pdf.dvc ` Datei platzieren möchten dann verwenden Sie:
 
       ```bash
-      lunch files <erster_dvc_dateipfad_platzhalter> [zweiter_dvc_dateipfad_platzhalter] --in-place ...
+      lunch files "<erster_dvc_file_path_placeholder>" "[zweiter_dvc_file_path_placeholder]" --in-place ...
       ```
 
       - _Hinweis 1:_ das erste Dateipfad-Argument ist erforderlich, der Rest ist optional.
@@ -192,29 +186,31 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
       - _Hinweis 5:_ die `.pdf` Datei sollte nicht sichtbar sein, bevor Sie diesen Befehl ausführen.
       - _Hinweis 6:_ Sie können die Dateipfade über die grafische Benutzeroberfläche Ihres Betriebssystems erhalten, jedes Betriebssystem hat eine einfache Möglichkeit.
 
+
       **Laden Sie alle Dateien aus einem spezifischen Ordner herunter über:**
 
       ```bash
-      lunch folder <ordnerpfad_platzhalter>
+         lunch folder "<folder_path_placeholder>"
       ```
 
-      Wenn Sie die neuen PDF-Dateien am gleichen Ort wie ihre entsprechenden `.pdf.dvc` Dateien platzieren möchten, verwenden Sie:
+      Wenn Sie die neuen PDF-Dateien am gleichen Ort wie ihre entsprechenden `pdf.dvc` Dateien platzieren möchten dann verwenden Sie:
 
       ```bash
-      lunch folder <ordnerpfad_platzhalter> --in-place
+      lunch folder "<folder_path_placeholder>" --in-place
       ```
 
-      Wenn Sie alle Dateien aus allen Unterverzeichnissen (rekursiv) herunterladen möchten, verwenden Sie:
+      Wenn Sie alle Dateien aus allen Unterverzeichnissen (rekursiv) herunterladen möchten dann verwenden Sie:
 
       ```bash
-      lunch folder <ordnerpfad_platzhalter> --recursive
+      lunch folder "<folder_path_placeholder>" --recursive
       ```
 
-      Wenn Sie Dateien am gleichen Ort wie die `.pdf.dvc` Datei und für alle Unterverzeichnisse platzieren möchten, verwenden Sie:
+      Wenn Sie Dateien am gleichen Ort wie die `pdf.dvc ` Datei und für alle Unterverzeichnisse platzieren möchten dann verwenden Sie:
 
       ```bash
-      lunch folder <ordnerpfad_platzhalter> --in-place --recursive
+      lunch folder "<folder_path_placeholder>" --in-place --recursive
       ```
+      Für Debugging verwenden Sie das `--verbose` Flag.
 
    - Für `pdf.web.txt` Dateien:
 
@@ -240,23 +236,25 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
 ### Phase A: Fundamentale Probleme
 
-1. **[a]** Lösen Sie dringende Urheberrechts- und Autorenkredit-Probleme im Zusammenhang mit tatsächlich gespeicherten Dateien
+1. **[b][a]** Branch-Namenskonvention und Branch-Regeln erstellen.
+
+2. **[a]** Lösen Sie dringende Urheberrechts- und Autorenkredit-Probleme im Zusammenhang mit tatsächlich gespeicherten Dateien
    - Erstellen Sie ein CI-Skript, das eine Liste von `.source.json` Pfaden erstellt, die keine Autoreninformationen haben - diese sollten Priorität haben.
 
-2. **[a]** Ersetzen Sie tatsächliche Dateien (und Homepage/Einstiegspunkt-Links) mit Links, um die Dateien direkt von ihrem ursprünglichen Host zu erhalten (verwenden Sie einen Browser-nutzenden KI-Agenten, um dabei zu helfen). Das Ziel ist, dass die meisten Dateien `dateiname.dateierweiterung.web.txt` mit dem Link darin sind (d.h., extern gehostete Datei). Benutzer können immer noch mit tatsächlichen Dateien beitragen, wenn sie die Autoren dieser Dateien sind (wie es *arXiv* tut), weil wir im Hintergrund immer noch DVC für tatsächliche Dateien verwenden werden.
+3. **[a]** Ersetzen Sie tatsächliche Dateien (und Homepage/Einstiegspunkt-Links) mit Links, um die Dateien direkt von ihrem ursprünglichen Host zu erhalten (verwenden Sie einen Browser-nutzenden KI-Agenten, um dabei zu helfen). Das Ziel ist, dass die meisten Dateien `dateiname.dateierweiterung.web.txt` mit dem Link darin sind (d.h., extern gehostete Datei). Benutzer können immer noch mit tatsächlichen Dateien beitragen, wenn sie die Autoren dieser Dateien sind (wie es *arXiv* tut), weil wir im Hintergrund immer noch DVC für tatsächliche Dateien verwenden werden.
 
-3. **[a]** Implementieren Sie ordnungsgemäße Symlinks, die betriebssystemübergreifend funktionieren. Kein manuelles Nachschauen des Pfads in der `.sym.txt` Datei und manuelles Gehen zu diesem Verzeichnis mehr. Implementieren Sie auch einfache Weblinks, um manuelles Kopieren/Einfügen von Pfaden in `.web.txt` zum Browser zu vermeiden.
+4. **[a]** Implementieren Sie ordnungsgemäße Symlinks, die betriebssystemübergreifend funktionieren. Kein manuelles Nachschauen des Pfads in der `.sym.txt` Datei und manuelles Gehen zu diesem Verzeichnis mehr. Implementieren Sie auch einfache Weblinks, um manuelles Kopieren/Einfügen von Pfaden in `.web.txt` zum Browser zu vermeiden.
 
 ### Phase B: Wichtige Ergänzungen
 
-4. **[b][a]** Erstellen Sie eine *lunchSTEM CLI*, wo Sie können:
-   1. Tatsächliche Dateien/Verzeichnisse lokal ziehen
+5. **[b][a]** Erstellen Sie eine ordnungsgemäße *lunchSTEM CLI* (nicht in bash, mit Docstrings, modular, mit Tests, kompiliert) Paket/installierbar, wo Sie können:
+   1. Dateien oder Verzeichnisse erhalten (bereits in grundlegender Weise implementiert)
    2. Bestimmte Dateitypen verstecken/anzeigen (z.B., verstecken: .dvc, .source.json, .prerequisites.json, Symlinks für andere Betriebssysteme, etc)
    3. Suche durchführen: Schlagwortsuche und semantische Suche
 
-5. **[b]** Erstellen Sie einen *lunchSTEM MCP Server*: zuerst müssen Sie eine `.md` Version jeder `.pdf` erstellen
+6. **[b]** Erstellen Sie einen *lunchSTEM MCP Server*: zuerst müssen Sie eine `.md` Version jeder `.pdf` erstellen
 
-6. **[b][a]** Erstellen Sie eine Website, um den *lunchSTEM* Verbrauch durch Menschen zu erleichtern, wo Benutzer können:
+7. **[b][a]** Erstellen Sie eine Website, um den *lunchSTEM* Verbrauch durch Menschen zu erleichtern, wo Benutzer können:
    1. Das Repo als Diagramm visualisieren und navigieren
    2. Schlagwort-, filter-basierte und semantische Suche verwenden
    3. Vorschau von Dokumenten sehen, ohne sie öffnen zu müssen
@@ -269,11 +267,15 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
    10. Trendige/beliebte Dokumente und Autoren sehen
    11. Statistiken für Dokumente und Autoren sehen
 
-7. **[b]** Sponsoren und Zuschüsse erhalten für: (1) Unterstützung unseres App-Hostings; (2) Aufbau eines dedizierten Teams von *lunchSTEM* Betreuern; (3) Bezahlung von Experten für Peer-Review-Prozesse; und (4) Weiterleitung eines Prozentsatzes des Geldes an beitragende Autoren. Alles Sponsoring-Geld würde in das Projekt reinvestiert werden, es ist ein gemeinnütziges Projekt.
+8. **[b]** Sponsoren und Zuschüsse erhalten für: (1) Unterstützung unseres App-Hostings; (2) Aufbau eines dedizierten Teams von *lunchSTEM* Betreuern; (3) Bezahlung von Experten für Peer-Review-Prozesse; und (4) Weiterleitung eines Prozentsatzes des Geldes an beitragende Autoren. Alles Sponsoring-Geld würde in das Projekt reinvestiert werden, es ist ein gemeinnütziges Projekt.
 
-8. **[b][a]** Hinzufügung von bösartiger Dateiverwendung, großer Dateiverwendung, Git-Repo-Verwendung, Code-Dateiverwendung, urheberrechtlich geschütztem Material-Verwendung, etc in CI über *GitHub Actions*, um automatisch schlechte PRs zu vermeiden.
+9. CI Workflows erstellen
 
-9. **[b][a]** Hinzufügung von Standard-Konventionen-Durchsetzung in CI, um die Wissensbasis konsistent zu halten und inkonsistente PRs zu vermeiden.
+   1. **[b][a]** Tatsächliche `.pdf` Dateien durch `.pdf.dvc` Dateien ersetzen, um tatsächliche Wissensdateien im Repo zu vermeiden.
+
+   2. **[b][a]** Hinzufügung von bösartiger Dateiverwendung, großer Dateiverwendung, Git-Repo-Verwendung, Entfernung von Dateien mit nicht akzeptierten Erweiterungen, urheberrechtlich geschütztem Material-Verwendung, etc um automatisch schlechte PRs zu vermeiden.
+
+   3. **[b][a]** Hinzufügung von Standard-Konventionen-Durchsetzung in CI, um die Wissensbasis konsistent zu halten und inkonsistente PRs zu vermeiden.
 
 ### Phase C: Mehr Kernfunktionen
 
@@ -290,7 +292,7 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
 ### Phase D: Schöne Verbesserungen
 
-11. **[d]** Von *Google Drive* zu einer besseren Speicheroption migrieren (z.B., *S3*).
+11. **[d]** Von *Google Drive* (ich zahlte bereits für 2TB, deshalb habe ich es verwendet) zu einer besseren Speicheroption migrieren (z.B., *S3*).
 
 12. **[d]** *AgentPool* erstellen: Team diverser Agenten, die PRs zum *lunchSTEM* Repo nach internen Diskussionen machen, Menschen Fragen stellen und vorgeschlagene Änderungen durch Finetuning von SLMs bewerten. Agenten werden kontinuierlich modifiziert, um Diversität sicherzustellen und ihre Intelligenz basierend auf genehmigtem neuem Wissen zu verbessern, das zu *lunchSTEM* hinzugefügt wird.
 
@@ -312,7 +314,7 @@ __Möchten Sie Sponsor werden? Senden Sie eine E-Mail an bruno.c.scaglione@gmail
 
 ## [Freelunch](https://freelunch.dev)
 
-![Freelunch Logo](.\sponsors\freelunch\logo_freelunch_with_name.png)
+![Freelunch Logo](./sponsors/freelunch/logo_freelunch_with_name.png)
 
 ## Anerkennungen
 
