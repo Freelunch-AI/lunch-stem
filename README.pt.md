@@ -120,8 +120,8 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
    ```bash
    git clone https://github.com/Freelunch-AI/lunch-stem.git
    ```
-> [!NOTE]
-> Se você estiver usando Windows, é importante clonar dentro de um diretório de nível superior, para evitar erros potenciais relacionados à criação de caminhos de arquivo muito longos. O Windows tipicamente tem um caminho de arquivo máximo de 260 caracteres.
+   > [!NOTE]
+   > Se você estiver usando Windows, é importante clonar dentro de um diretório de nível superior, para evitar erros potenciais relacionados à criação de caminhos de arquivo muito longos. O Windows tipicamente tem um caminho de arquivo máximo de 260 caracteres.
 
 3. Entre na pasta `lunch-stem`
 

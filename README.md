@@ -121,8 +121,8 @@ These can be installed by following their repsective installation guide on their
    ```bash
    git clone https://github.com/Freelunch-AI/lunch-stem.git
    ```
-> [!NOTE]
-> If you are using Windows, it's important to clone inside a top-level directory, to avoid potential errors related to the creating file paths that are too long. Windows typically has a maximum file path of 260 characters.
+   > [!NOTE]
+   > If you are using Windows, it's important to clone inside a top-level directory, to avoid potential errors related to the creating file paths that are too long. Windows typically has a maximum file path of 260 characters.
 
 3. Enter the `lunch-stem` folder
 

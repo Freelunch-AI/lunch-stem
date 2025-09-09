@@ -1,7 +1,5 @@
 <p align="center">
-   <img src="./assets/logos/lunch_stem_light_logo_with_name.png" alt="lunchSTEM Logo" width## 如何使用
-
-1.  **打开一个终端**：要打开终端，请使用您操作系统的搜索功能（在Mac上按Windows键或Cmd + Space），然后输入"terminal"、"command prompt"或"Windows Terminal"并选择该应用程序。"/>
+   <img src="./assets/logos/lunch_stem_light_logo_with_name.png" alt="lunchSTEM Logo" width="300"/>
 </p>
 
 <h1 align="center">以有组织的方式民主化 <i>STEM</i> 知识</h1><br>
@@ -121,11 +119,11 @@ pdf文件的作者归属数据存储在 `[文件名].pdf.source.json` 中，应�
 
 2.  **使用git克隆仓库**（此命令将在您当前目录中创建一个`lunch-stem`文件夹）。
 
-    ```bash
-    git clone https://github.com/Freelunch-AI/lunch-stem.git
-    ```
-> [!NOTE]
-> 如果您使用的是Windows，重要的是要在顶级目录内进行克隆，以避免与创建过长的文件路径相关的潜在错误。Windows通常的文件路径最大长度为260个字符。
+      ```bash
+      git clone https://github.com/Freelunch-AI/lunch-stem.git
+      ```
+      > [!NOTE]
+      > 如果您使用的是Windows，重要的是要在顶级目录内进行克隆，以避免与创建过长的文件路径相关的潜在错误。Windows通常的文件路径最大长度为260个字符。
 
 3. 设置项目
 

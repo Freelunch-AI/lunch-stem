@@ -5,11 +5,7 @@
 <h1 align="center">Democratizando el conocimiento <i>STEM</i> de manera organizada</h1><br>
 
 <p align="center">
-   <strong>🌟 Proyecto sin fines de lucro y de ### Fase D: Mejoras Agradables de Tener
-
-11. **[d]** Migrar de *Google Drive* (ya estaba pagando por 2TB, por eso lo usé) a una mejor opción de almacenamiento (ej., *S3*).
-
-12. **[d]** Hacer *AgentPool*: equipo de agentes diversos que hacen PRs al repositorio *lunchSTEM* después de discusiones internas, haciendo preguntas a humanos y evaluando cambios propuestos mediante fine-tuning de SLMs. Los agentes se modifican continuamente para asegurar diversidad y para mejorar su inteligencia basada en nuevo conocimiento aprobado agregado a *lunchSTEM*.o abierto 🌟</strong>
+   <strong>🌟 Proyecto sin fines de lucro y de código abierto 🌟</strong>
 </p>
 
 <p align="center">
@@ -124,8 +120,8 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
    ```bash
    git clone https://github.com/Freelunch-AI/lunch-stem.git
    ```
-> [!NOTE]
-> Si estás usando Windows, es importante clonar dentro de un directorio de nivel superior, para evitar errores potenciales relacionados con la creación de rutas de archivo demasiado largas. Windows típicamente tiene un máximo de ruta de archivo de 260 caracteres.
+   > [!NOTE]
+   > Si estás usando Windows, es importante clonar dentro de un directorio de nivel superior, para evitar errores potenciales relacionados con la creación de rutas de archivo demasiado largas. Windows típicamente tiene un máximo de ruta de archivo de 260 caracteres.
 
 3. Entra en la carpeta `lunch-stem`
 

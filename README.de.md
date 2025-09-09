@@ -120,8 +120,8 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
    ```bash
    git clone https://github.com/Freelunch-AI/lunch-stem.git
    ```
-> [!NOTE]
-> Wenn Sie Windows verwenden, ist es wichtig, in einem Verzeichnis der obersten Ebene zu klonen, um potenzielle Fehler im Zusammenhang mit der Erstellung zu langer Dateipfade zu vermeiden. Windows hat typischerweise eine maximale Dateipfadlänge von 260 Zeichen.
+   > [!NOTE]
+   > Wenn Sie Windows verwenden, ist es wichtig, in einem Verzeichnis der obersten Ebene zu klonen, um potenzielle Fehler im Zusammenhang mit der Erstellung zu langer Dateipfade zu vermeiden. Windows hat typischerweise eine maximale Dateipfadlänge von 260 Zeichen.
 
 3. Betreten Sie den `lunch-stem` Ordner
 
