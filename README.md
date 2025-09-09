@@ -239,23 +239,25 @@ These can be installed by following their repsective installation guide on their
 
 ### Phase A: Fundamental Problems
 
-1. **[a]** Solve urgent copyright and credit attribution issues related to actual files being stored
+1. **[b][a]** Create branch naminging convention and branch rules.
+
+2. **[a]** Solve urgent copyright and credit attribution issues related to actual files being stored
    - Make CI script that builds a list of `.source.json` paths that don't have author info - these should be priority.
 
-2. **[a]** Replace actual files (and homepage/entrypoint links) with links to get the files directly from their original host (use a browser-using AI agent to help with this). The goal is for most files to be `file_name.file_extension.web.txt` with the link inside of it (i.e., file hosted externally). Users can still contribute with actual files if they are the authors of these files (like *arXiv* does) because under the hood we will still be using DVC for actual files.
+3. **[a]** Replace actual files (and homepage/entrypoint links) with links to get the files directly from their original host (use a browser-using AI agent to help with this). The goal is for most files to be `file_name.file_extension.web.txt` with the link inside of it (i.e., file hosted externally). Users can still contribute with actual files if they are the authors of these files (like *arXiv* does) because under the hood we will still be using DVC for actual files.
 
-3. **[a]** Implement proper symlinks that work across Operating Systems. No more manually looking the path inside the `.sym.txt` file and manually going to that directory. Also implementing easy weblinks, to avoid manual copy/paste of paths inside `.web.txt` to the browser.
+4. **[a]** Implement proper symlinks that work across Operating Systems. No more manually looking the path inside the `.sym.txt` file and manually going to that directory. Also implementing easy weblinks, to avoid manual copy/paste of paths inside `.web.txt` to the browser.
 
 ### Phase B: Important Additions
 
-4. **[b][a]** Create a proper (not in bash, modular, with tests, compiled) *lunchSTEM CLI* package/installable where you can:
+5. **[b][a]** Create a proper (not in bash, modular, with tests, compiled) *lunchSTEM CLI* package/installable where you can:
    1. Get files or directories (already implemented in a basic way)
    2. Hide/Show certain file types (e.g., hide: .dvc, .source.json, .prerequisites.json, symlinks for other operating systems, etc)
    3. Do search: keyword search and semantic search
 
-5. **[b]** Make a *lunchSTEM MCP Server*: first, need to create a `.md` version of each `.pdf`
+6. **[b]** Make a *lunchSTEM MCP Server*: first, need to create a `.md` version of each `.pdf`
 
-6. **[b][a]** Make a website to ease *lunchSTEM* consumption by humans, where users can:
+7. **[b][a]** Make a website to ease *lunchSTEM* consumption by humans, where users can:
    1. Visualize and navigate the repo as a graph
    2. Use keyword, filter-based and semantic search
    3. See preview of documents without having to open them
@@ -268,9 +270,9 @@ These can be installed by following their repsective installation guide on their
    10. See trending/popular documents and authors
    11. See statistics for documents and authors
 
-7. **[b]** Get sponsors and grants to: (1) support our app hosting; (2) build a dedicated team of *lunchSTEM* maintainers; (3) pay experts for peer-review processes; and (4) to route a percentage of the money to contributing authors. All sponsorship money would be reinvested in the project, it's a non-profit project.
+8. **[b]** Get sponsors and grants to: (1) support our app hosting; (2) build a dedicated team of *lunchSTEM* maintainers; (3) pay experts for peer-review processes; and (4) to route a percentage of the money to contributing authors. All sponsorship money would be reinvested in the project, it's a non-profit project.
 
-8. Make CI Workflows
+9. Make CI Workflows
 
    1. **[b][a]** Replace actual `.pdf` files with `.pdf.dvc` files, avoiding actual knowledge files in the repo.
 
@@ -280,7 +282,7 @@ These can be installed by following their repsective installation guide on their
 
 ### Phase C: More Core Features
 
-9. **[b][c][d]** Add features to *lunchSTEM*, potentially using *AgentPool* to help (in parallel: keep adding more materials from `to_add.txt`, but add as `file_name.file_extension.web.txt` with the HTTPS link inside the file):
+10. **[b][c][d]** Add features to *lunchSTEM*, potentially using *AgentPool* to help (in parallel: keep adding more materials from `to_add.txt`, but add as `file_name.file_extension.web.txt` with the HTTPS link inside the file):
     - **Prerequisites:** Add `<file_name>.<file_extension>.prerequisites.json` containing hierarchical list of prerequisites for each file
     - **Exercises:** Put exercises with solutions in every topic directory inside `__Exercises`
     - **Tools:** put software tools in very topic inside `__Tools`. Can be tools for doing or understanding something related to the topic.
@@ -293,9 +295,9 @@ These can be installed by following their repsective installation guide on their
 
 ### Phase D: Nice to Have Improvements
 
-10. **[d]** Migrate from *Google Drive* (I was already paying for 2TB, so that's why I used it) to a better storage option (e.g., *S3*).
+11. **[d]** Migrate from *Google Drive* (I was already paying for 2TB, so that's why I used it) to a better storage option (e.g., *S3*).
 
-11. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes by finetuning SLMs. Agents are continually modified to ensure diversity and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
+12. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes by finetuning SLMs. Agents are continually modified to ensure diversity and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
 
 ## Disclaimer & Terms
 
