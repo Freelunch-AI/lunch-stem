@@ -197,7 +197,7 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
       **Téléchargez tous les fichiers d'un dossier spécifique via :**
 
       ```bash
-         lunch folder "<folder_path_placeholder>"
+      lunch folder "<folder_path_placeholder>"
       ```
 
       Si vous voulez placer les nouveaux fichiers pdf au même endroit que leurs fichiers `pdf.dvc` correspondants alors utilisez :
@@ -222,6 +222,10 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
    - Pour les fichiers `pdf.web.txt` :
 
       Ouvrez simplement le fichier et suivez le lien web qu'il contient.
+
+   - Pour les fichiers `.sym.txt` :
+
+      Ouvrez simplement le fichier et naviguez vers le chemin du fichier ou dossier écrit à l'intérieur. Ce fichier ou dossier sera dans le `__Loopback`.
 
 ## 📁 Structure des Répertoires et Conventions de Nommage
 

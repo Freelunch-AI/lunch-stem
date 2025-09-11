@@ -197,7 +197,7 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
       **Laden Sie alle Dateien aus einem spezifischen Ordner herunter über:**
 
       ```bash
-         lunch folder "<folder_path_placeholder>"
+      lunch folder "<folder_path_placeholder>"
       ```
 
       Wenn Sie die neuen PDF-Dateien am gleichen Ort wie ihre entsprechenden `pdf.dvc` Dateien platzieren möchten dann verwenden Sie:
@@ -222,6 +222,10 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
    - Für `pdf.web.txt` Dateien:
 
       Öffnen Sie einfach die Datei und folgen Sie dem Weblink darin.
+
+   - Für `.sym.txt` Dateien:
+
+      Öffnen Sie einfach die Datei und navigieren Sie zu dem darin geschriebenen Datei- oder Ordnerpfad. Diese Datei oder dieser Ordner befindet sich im `__Loopback`.
 
 ## 📁 Verzeichnisstruktur und Namenskonventionen
 

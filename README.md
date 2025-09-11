@@ -200,7 +200,7 @@ These can be installed by following their repsective installation guide on their
       **Download all the files from a specific folder via:**
 
       ```bash
-         lunch folder "<folder_path_placeholder>"
+      lunch folder "<folder_path_placeholder>"
       ```
 
       If you want to put the new pdf files in the same place as ther corresponding `pdf.dvc` files then use:
@@ -225,6 +225,10 @@ These can be installed by following their repsective installation guide on their
    - For `pdf.web.txt` files:
 
       Simply open the file and follow the web link inside it.
+
+   - For `.sym.txt` files:
+
+      Simply open the file and navigate to the file or folder path written inside it. This file or folder will be inside the `__Loopback`.
 
 ## 📁 Directory Structure and Naming Conventions
 

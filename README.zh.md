@@ -205,7 +205,7 @@ pdf文件的作者归属数据存储在 `[文件名].pdf.source.json` 中，应�
       **通过以下方式下载特定文件夹中的所有文件：**
 
       ```bash
-         lunch folder "<folder_path_placeholder>"
+      lunch folder "<folder_path_placeholder>"
       ```
 
       如果您想将新的pdf文件放在与其对应的`pdf.dvc`文件相同的位置，则使用：
@@ -246,6 +246,10 @@ pdf文件的作者归属数据存储在 `[文件名].pdf.source.json` 中，应�
    - 对于`pdf.web.txt`文件：
 
       简单地打开文件并跟随其中的网络链接。
+
+   - 对于`.sym.txt`文件：
+
+      简单地打开文件并导航到其中写的文件或文件夹路径。该文件或文件夹将在`__Loopback`内。
 
 ## 📁 目录结构和命名约定
 
