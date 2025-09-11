@@ -231,7 +231,7 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 - O diretório **`__Loopback`** contém arquivos que tinham um caminho muito longo. Um arquivo ponteiro `.sym.txt` foi criado no lugar desses arquivos apontando para o arquivo real localizado dentro do diretório `__Loopback`. Estes arquivos txt ponteiro seguem esta convenção de nomenclatura: `nome_arquivo.extensão_arquivo.sym.txt` e estão localizados no mesmo diretório onde o arquivo real deveria estar.
 
-- O arquivo **`to-add.txt`** na raiz contém links para materiais a serem incluídos posteriormente no lunchSTEM.
+- O arquivo **`to_add.txt`** na raiz contém links para materiais a serem incluídos posteriormente no lunchSTEM.
 
 - Arquivos ou pastas começando com **MEGA** indicam materiais agregadores (materiais que agregam um monte de links sobre um tópico específico).
 

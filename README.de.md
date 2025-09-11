@@ -231,7 +231,7 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
 - Das **`__Loopback`** Verzeichnis enthält Dateien, die einen zu langen Pfad hatten. Eine Zeiger `.sym.txt` Datei wurde anstelle dieser Dateien erstellt, die auf die tatsächliche Datei im `__Loopback` Verzeichnis zeigt. Diese Zeiger-txt-Dateien folgen dieser Namenskonvention: `dateiname.dateierweiterung.sym.txt` und befinden sich im selben Verzeichnis, wo die tatsächliche Datei sein sollte.
 
-- Die **`to-add.txt`** Datei im Root enthält Links zu Materialien, die später in lunchSTEM aufgenommen werden sollen.
+- Die **`to_add.txt`** Datei im Root enthält Links zu Materialien, die später in lunchSTEM aufgenommen werden sollen.
 
 - Dateien oder Ordner, die mit **MEGA** beginnen, zeigen Aggregator-Materialien an (Materialien, die eine Menge von Links zu einem spezifischen Thema aggregieren).
 

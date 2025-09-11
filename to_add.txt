@@ -1668,6 +1668,27 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 - Online Softmax Article: https://dev.to/lewis_won/online-softmax-by-hand-4h13?trk=public_post_comment-text
 
 - agentic ai crash course: https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main/free_courses/agentic_ai_crash_course
+
+- Awesome Defeating non-determinism on llm inference: https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/
+
+- MEGA System Design and Scaling: https://github.com/Sagor0078/System-Design-and-Scaling
+
+- Awesome GPU Glossary: https://modal.com/gpu-glossary/readme
+
+- Flash Attention Series: https://lubits.ch/flash/Part-1
+
+- Notes on NVIDIA Shared Memory Banks: https://feldmann.nyc/blog/smem-microbenchmarks
+
+- Principles for AI Products: https://blog.huikang.dev/2025/09/07/principles-for-ai-products.html
+
+- Chaos Engineering article: https://newsletter.caffeinatedengineer.dev/p/the-inevitable-chaos-embracing-failure
+
+- Principles of good system design article: https://www.seangoedecke.com/good-system-design/
+
+- Journey of building an LLM from scratch repo: https://github.com/silvaxxx1/MyLLM
+
+- Math foundaitons of Geometric Deep Learning: https://media.licdn.com/dms/document/media/v2/D561FAQGAlDDlFJl6qw/feedshare-document-pdf-analyzed/B56ZibvFtFHUAc-/0/1754959479085?e=1758153600&v=beta&t=KFZUaYjo4a_dc84b1p78wyyTe0ZGFwLW1kl4NIFxe4o
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

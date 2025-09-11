@@ -231,7 +231,7 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
 - El directorio **`__Loopback`** contiene archivos que tenían una ruta demasiado larga. Se creó un archivo puntero `.sym.txt` en lugar de estos archivos apuntando al archivo real ubicado dentro del directorio `__Loopback`. Estos archivos txt puntero siguen esta convención de nomenclatura: `nombre_archivo.extensión_archivo.sym.txt` y están ubicados en el mismo directorio donde debería estar el archivo real.
 
-- El archivo **`to-add.txt`** en la raíz contiene enlaces a materiales que se incluirán más tarde en lunchSTEM.
+- El archivo **`to_add.txt`** en la raíz contiene enlaces a materiales que se incluirán más tarde en lunchSTEM.
 
 - Los archivos o carpetas que comienzan con **MEGA** indican materiales agregadores (materiales que agregan un montón de enlaces sobre un tema específico).
 

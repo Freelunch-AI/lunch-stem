@@ -234,7 +234,7 @@ These can be installed by following their repsective installation guide on their
 
 - **`__Loopback`** directory contains files that had a path that was too long. A pointer `.sym.txt` file was created in place of these files pointing to the actual file located inside the `__Loopback` directory. These pointer txt files follow this naming convention: `file_name.file_extension.sym.txt` and are located in the same directory where the actual file should be.
 
-- **`to-add.txt`** file at root contains links to materials to be included later in lunchSTEM.
+- **`to_add.txt`** file at root contains links to materials to be included later in lunchSTEM.
 
 - Files or folders starting with **MEGA** indicate aggregator materials (materials that aggregate a bunch of links regarding a specific topic).
 
