@@ -61,7 +61,7 @@
 > 
 > • **Proper CLI** where users can do keyword and semantic search.
 
-## Overview
+## 🔍 Overview
 
 This is an evolving *STEM* (Science, Technology, Engineering and Mathematics) knowledge base, meant to be reviewed and improved with the effort of the community. It can be used and improved by humans and AI agents.
 
@@ -71,7 +71,14 @@ It should be more organized and higher-quality (signal-to-noise ratio) than defa
 
 The goal is to, later on, enable AI agents to easily use it as a tool by making a *lunchSTEM MCP Server*.
 
-## Content Removal and Credit Attribution Requests
+## 📊 Project Statistics
+
+- **Size:** 60+ GB (including a lot of links)
+- **Number of pdf files** 10k+
+- **Number of sub-topics** 6k+
+- **Language of materials:** English
+
+## 🗑️ Content Removal and Credit Attribution Requests
 
 A big effort was made to detect and remove copyrighted (non-distributable) content, and to recognize the authors/publishers/universities of the remaining materials. Manual review of each file couldn't be done because of the sheer amount of files (but we welcome the community to help us with this by, opening issues and PRs).
 1. We ran scripts to delete any file containing any other extension outside of: `.pdf`, `.txt`, `.md`, `.ipynb`, `.json`
@@ -93,11 +100,11 @@ However, we cannot guarantee perfection in this process, therefore, if you find 
 
 ***Digital Millennium Copyright Act* (*DMCA*) Compliance:** we comply with the Digital Millennium Copyright Act (DMCA). For formal takedown requests, please follow the *DMCA* process.
 
-## Credit Attribution 
+## 📝 Credit Attribution 
 
 Credit attribution data of a pdf file is stored in `<file_name>.pdf.source.json` which should be opened directly (without `dvc pull`). This file can contain authors, university, publisher, link do the source, and other metadata about the specific file it references. Default value of fields are `null`, with the exception of the default value of the `changes_were_made` field which is `False`.
 
-## Requirements for Usage
+## ⚙️ Requirements for Usage
 
 Make sure you have these tools installed:
 
@@ -112,7 +119,7 @@ These can be installed by following their repsective installation guide on their
 > [!NOTE]
 > When configuring a remote storage for _rclone_, make shure to use the service account option and `lunch-stem-fadf503639fe.json` as the service account file.
 
-## How to Use
+## 🚀 How to Use
 
 1. **Open a terminal**: To open the terminal, use your operating system's search function (by pressing the Windows key or Cmd + Space bar on Mac) and type "terminal," "Command Prompt," or "Windows Terminal" and select the app
 
@@ -219,7 +226,7 @@ These can be installed by following their repsective installation guide on their
 
       Simply open the file and follow the web link inside it.
 
-## Directory Structure and Naming Conventions
+## 📁 Directory Structure and Naming Conventions
 
 - **`__Loopback`** directory contains files that had a path that was too long. A pointer `.sym.txt` file was created in place of these files pointing to the actual file located inside the `__Loopback` directory. These pointer txt files follow this naming convention: `file_name.file_extension.sym.txt` and are located in the same directory where the actual file should be.
 
@@ -229,11 +236,17 @@ These can be installed by following their repsective installation guide on their
 
 - Files or folders starting with **Awesome** indicate super high quality content.
 
-## Notes
+## 🔬 Coverage of _STEM_ Fields
 
-- *lunchSTEM* is at the moment more complete in the fields of Computer Science and AI specifically. The fields of `Hardcore Science` are notably more superficial in terms of the tree of topics.
+### Strongest Fields
 
-## Roadmap Attempt
+*lunchSTEM* is at the moment more complete in the fields of `Computer Science & Engineering` and `AI` specifically. 
+
+### Weakest Fields
+
+The fields of `Hardcore Science` (Physics, Chemistry, Biology, Economics) are notably more superficial in terms of the depth of their tree of topics.
+
+## 🗺️ Roadmap Attempt
 
 > **Note:** Steps with the same **[letter]** can be done in parallel.
 
@@ -299,7 +312,7 @@ These can be installed by following their repsective installation guide on their
 
 12. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes by finetuning SLMs. Agents are continually modified to ensure diversity and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
 
-## Disclaimer & Terms
+## ⚖️ Disclaimer & Terms
 
 **AS-IS BASIS:** This project is provided "as-is" without warranties of any kind. We make no representations about the accuracy, completeness, or legality of the content.
 
@@ -311,7 +324,7 @@ These can be installed by following their repsective installation guide on their
 
 **Educational Purpose:** This project aims to provide organized access to educational materials for non-commercial, educational purposes. We believe many uses of the content may qualify for fair use protections, but fair use determinations are made on a case-by-case basis by courts.
 
-## Sponsors
+## 💎 Sponsors
 
 __Want to be a sponsor? Send an email to bruno.c.scaglione@gmail.com with the subject "[lunchSTEM] Sponsorship"__ 
 
@@ -319,7 +332,7 @@ __Want to be a sponsor? Send an email to bruno.c.scaglione@gmail.com with the su
 
 ![Freelunch Logo](./sponsors/freelunch/logo_freelunch_with_name.png)
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 
 

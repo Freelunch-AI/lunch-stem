@@ -60,7 +60,7 @@
 > 
 > • **Ordnungsgemäße CLI** wo Benutzer Schlagwort- und semantische Suche durchführen können.
 
-## Überblick
+## 🔍 Überblick
 
 Dies ist eine sich entwickelnde *STEM* (Science, Technology, Engineering and Mathematics) Wissensbasis, die mit der Anstrengung der Gemeinschaft überprüft und verbessert werden soll. Sie kann von Menschen und KI-Agenten genutzt und verbessert werden.
 
@@ -70,7 +70,14 @@ Sie sollte organisierter und von höherer Qualität (Signal-Rausch-Verhältnis) 
 
 Das Ziel ist es, später KI-Agenten zu ermöglichen, sie einfach als Werkzeug zu nutzen, indem ein *lunchSTEM MCP Server* erstellt wird.
 
-## Inhaltsverwendungs- und Autorenkredit-Anfragen
+## 📊 Projektstatistiken
+
+- **Größe:** 60+ GB (einschließlich vieler Links)
+- **Anzahl der PDF-Dateien** 10k+
+- **Anzahl der Unterthemen** 6k+
+- **Sprache der Materialien:** Englisch
+
+## 🗑️ Inhaltsverwendungs- und Autorenkredit-Anfragen
 
 Es wurde ein großer Aufwand betrieben, um urheberrechtlich geschützte (nicht verteilbare) Inhalte zu erkennen und zu entfernen und die Autoren/Verlage/Universitäten der verbleibenden Materialien zu würdigen. Eine manuelle Überprüfung jeder Datei konnte aufgrund der schieren Anzahl von Dateien nicht durchgeführt werden (aber wir begrüßen die Gemeinschaft, uns dabei zu helfen, indem sie Issues und PRs öffnet).
 1. Wir führten Skripte aus, um jede Datei zu löschen, die eine andere Erweiterung außerhalb von enthält: `.pdf`, `.txt`, `.md`, `.ipynb`, `.json`
@@ -92,11 +99,11 @@ Wir können jedoch keine Perfektion in diesem Prozess garantieren, daher, wenn S
 
 **Einhaltung des *Digital Millennium Copyright Act* (*DMCA*):** wir halten uns an den Digital Millennium Copyright Act (DMCA). Für formelle Takedown-Anfragen folgen Sie bitte dem *DMCA* Prozess.
 
-## Autorenkredit
+## 📝 Autorenkredit
 
 Autorenkredit-Daten einer PDF-Datei werden in `[dateiname].pdf.source.json` gespeichert, welche direkt geöffnet werden sollte (ohne `dvc pull`). Diese Datei kann Autoren, Universität, Verleger, Link zur Quelle und andere Metadaten über die spezifische Datei enthalten, auf die sie sich bezieht. Standardwert der Felder ist `null`, mit Ausnahme des Standardwerts des `changes_were_made` Feldes, welcher `False` ist.
 
-## Anforderungen für die Nutzung
+## ⚙️ Anforderungen für die Nutzung
 
 Stellen Sie sicher, dass Sie diese Tools installiert haben:
 
@@ -111,7 +118,7 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 > [!NOTE]
 > Bei der Konfiguration eines Remote-Speichers für _rclone_, stellen Sie sicher, dass Sie die Service-Account-Option und `lunch-stem-fadf503639fe.json` als Service-Account-Datei verwenden.
 
-## Wie zu Verwenden
+## 🚀 Wie zu Verwenden
 
 1. **Öffnen Sie ein Terminal**: Um das Terminal zu öffnen, verwenden Sie die Suchfunktion Ihres Betriebssystems (durch Drücken der Windows-Taste oder Cmd + Leertaste auf Mac) und tippen Sie "terminal", "Eingabeaufforderung" oder "Windows Terminal" und wählen Sie die App
 
@@ -216,7 +223,7 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
       Öffnen Sie einfach die Datei und folgen Sie dem Weblink darin.
 
-## Verzeichnisstruktur und Namenskonventionen
+## 📁 Verzeichnisstruktur und Namenskonventionen
 
 - Das **`__Loopback`** Verzeichnis enthält Dateien, die einen zu langen Pfad hatten. Eine Zeiger `.sym.txt` Datei wurde anstelle dieser Dateien erstellt, die auf die tatsächliche Datei im `__Loopback` Verzeichnis zeigt. Diese Zeiger-txt-Dateien folgen dieser Namenskonvention: `dateiname.dateierweiterung.sym.txt` und befinden sich im selben Verzeichnis, wo die tatsächliche Datei sein sollte.
 
@@ -226,11 +233,17 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
 - Dateien oder Ordner, die mit **Awesome** beginnen, zeigen super hochqualitative Inhalte an.
 
-## Hinweise
+## 🔬 Abdeckung der _STEM_ Bereiche
 
-- *lunchSTEM* ist im Moment vollständiger in den Bereichen Informatik und KI speziell. Die Bereiche von `Hardcore Science` sind bemerkenswert oberflächlicher in Bezug auf den Themenbaum.
+### Stärkste Bereiche
 
-## Roadmap-Versuch
+*lunchSTEM* ist im Moment vollständiger in den Bereichen `Computer Science & Engineering` und `AI` speziell.
+
+### Schwächste Bereiche
+
+Die Bereiche von `Hardcore Science` (Physik, Chemie, Biologie, Wirtschaft) sind bemerkenswert oberflächlicher in Bezug auf die Tiefe ihres Themenbaums.
+
+## 🗺️ Roadmap-Versuch
 
 > **Hinweis:** Schritte mit demselben **[buchstaben]** können parallel durchgeführt werden.
 
@@ -296,7 +309,7 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
 12. **[d]** *AgentPool* erstellen: Team diverser Agenten, die PRs zum *lunchSTEM* Repo nach internen Diskussionen machen, Menschen Fragen stellen und vorgeschlagene Änderungen durch Finetuning von SLMs bewerten. Agenten werden kontinuierlich modifiziert, um Diversität sicherzustellen und ihre Intelligenz basierend auf genehmigtem neuem Wissen zu verbessern, das zu *lunchSTEM* hinzugefügt wird.
 
-## Haftungsausschluss & Bedingungen
+## ⚖️ Haftungsausschluss & Bedingungen
 
 **WIE-IST-BASIS:** Dieses Projekt wird "wie es ist" ohne Gewährleistungen jeglicher Art bereitgestellt. Wir machen keine Darstellungen über die Genauigkeit, Vollständigkeit oder Rechtmäßigkeit des Inhalts.
 
@@ -308,7 +321,7 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
 **Bildungszweck:** Dieses Projekt zielt darauf ab, organisierten Zugang zu Bildungsmaterialien für nicht-kommerzielle, Bildungszwecke zu bieten. Wir glauben, dass viele Nutzungen des Inhalts für Fair-Use-Schutz qualifiziert sein könnten, aber Fair-Use-Bestimmungen werden von Gerichten von Fall zu Fall getroffen.
 
-## Sponsoren
+## 💎 Sponsoren
 
 __Möchten Sie Sponsor werden? Senden Sie eine E-Mail an bruno.c.scaglione@gmail.com mit dem Betreff "[lunchSTEM] Sponsoring"__ 
 
@@ -316,5 +329,5 @@ __Möchten Sie Sponsor werden? Senden Sie eine E-Mail an bruno.c.scaglione@gmail
 
 ![Freelunch Logo](./sponsors/freelunch/logo_freelunch_with_name.png)
 
-## Anerkennungen
+## 🙏 Anerkennungen
 

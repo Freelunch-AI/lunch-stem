@@ -60,7 +60,7 @@
 > 
 > • **CLI adequado** onde usuários podem fazer busca por palavras-chave e semântica.
 
-## Visão Geral
+## 🔍 Visão Geral
 
 Esta é uma base de conhecimento *STEM* (Ciência, Tecnologia, Engenharia e Matemática) em evolução, destinada a ser revisada e melhorada com o esforço da comunidade. Pode ser usada e melhorada por humanos e agentes de IA.
 
@@ -70,7 +70,14 @@ Deve ser mais organizada e de maior qualidade (relação sinal-ruído) que a bus
 
 O objetivo é, mais tarde, permitir que agentes de IA a usem facilmente como ferramenta fazendo um *Servidor MCP do lunchSTEM*.
 
-## Solicitações de Remoção de Conteúdo e Atribuição de Créditos
+## 📊 Estatísticas do Projeto
+
+- **Tamanho:** 60+ GB (incluindo muitos links)
+- **Número de arquivos pdf** 10k+
+- **Número de subtópicos** 6k+
+- **Idioma dos materiais:** Inglês
+
+## 🗑️ Solicitações de Remoção de Conteúdo e Atribuição de Créditos
 
 Um grande esforço foi feito para detectar e remover conteúdo protegido por direitos autorais (não distribuível), e para reconhecer os autores/editoras/universidades dos materiais restantes. Revisão manual de cada arquivo não pôde ser feita devido à quantidade enorme de arquivos (mas damos as boas-vindas à comunidade para nos ajudar com isso abrindo issues e PRs).
 1. Executamos scripts para deletar qualquer arquivo contendo qualquer outra extensão fora de: `.pdf`, `.txt`, `.md`, `.ipynb`, `.json`
@@ -92,11 +99,11 @@ Contudo, não podemos garantir perfeição neste processo, portanto, se você en
 
 **Conformidade com a *Lei de Direitos Autorais do Milênio Digital* (*DMCA*):** cumprimos com a Lei de Direitos Autorais do Milênio Digital (DMCA). Para solicitações formais de remoção, por favor siga o processo *DMCA*.
 
-## Atribuição de Créditos
+## 📝 Atribuição de Créditos
 
 Dados de atribuição de créditos de um arquivo pdf são armazenados em `<nome_arquivo>.pdf.source.json` que deve ser aberto diretamente (sem `dvc pull`). Este arquivo pode conter autores, universidade, editora, link para a fonte, e outros metadados sobre o arquivo específico que referencia. Valor padrão dos campos é `null`, com exceção do valor padrão do campo `changes_were_made` que é `False`.
 
-## Requisitos para Uso
+## ⚙️ Requisitos para Uso
 
 Certifique-se de ter essas ferramentas instaladas:
 
@@ -111,7 +118,7 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 > [!NOTE]
 > Ao configurar um armazenamento remoto para _rclone_, certifique-se de usar a opção de conta de serviço e `lunch-stem-fadf503639fe.json` como arquivo de conta de serviço.
 
-## Como Usar
+## 🚀 Como Usar
 
 1. **Abra um terminal**: Para abrir o terminal, use a funcionalidade de busca do seu sistema operacional (pressionando a tecla Windows ou Cmd + Espaço no Mac) e digite "terminal", "prompt de comando" ou "Windows Terminal" e selecione o aplicativo
 
@@ -216,7 +223,7 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
       Simplesmente abra o arquivo e siga o link web dentro dele.
 
-## Estrutura de Diretórios e Convenções de Nomenclatura
+## 📁 Estrutura de Diretórios e Convenções de Nomenclatura
 
 - O diretório **`__Loopback`** contém arquivos que tinham um caminho muito longo. Um arquivo ponteiro `.sym.txt` foi criado no lugar desses arquivos apontando para o arquivo real localizado dentro do diretório `__Loopback`. Estes arquivos txt ponteiro seguem esta convenção de nomenclatura: `nome_arquivo.extensão_arquivo.sym.txt` e estão localizados no mesmo diretório onde o arquivo real deveria estar.
 
@@ -226,11 +233,17 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 - Arquivos ou pastas começando com **Awesome** indicam conteúdo de qualidade super alta.
 
-## Notas
+## 🔬 Cobertura de Campos _STEM_
 
-- *lunchSTEM* está no momento mais completo nos campos de Ciência da Computação e IA especificamente. Os campos de `Hardcore Science` são notavelmente mais superficiais em termos da árvore de tópicos.
+### Campos Mais Fortes
 
-## Tentativa de Roteiro
+*lunchSTEM* está no momento mais completo nos campos de `Computer Science & Engineering` e `AI` especificamente.
+
+### Campos Mais Fracos
+
+Os campos de `Hardcore Science` (Física, Química, Biologia, Economia) são notavelmente mais superficiais em termos da profundidade de sua árvore de tópicos.
+
+## 🗺️ Tentativa de Roteiro
 
 > **Nota:** Passos com a mesma **[letra]** podem ser feitos em paralelo.
 
@@ -296,7 +309,7 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 12. **[d]** Fazer *AgentPool*: equipe de agentes diversos que fazem PRs para o repositório *lunchSTEM* após discussões internas, fazendo perguntas aos humanos e avaliando mudanças propostas por fine-tuning de SLMs. Agentes são continuamente modificados para garantir diversidade e melhorar sua inteligência baseada em novo conhecimento aprovado adicionado ao *lunchSTEM*.
 
-## Isenção de Responsabilidade e Termos
+## ⚖️ Isenção de Responsabilidade e Termos
 
 **BASE COMO ESTÁ:** Este projeto é fornecido "como está" sem garantias de qualquer tipo. Não fazemos representações sobre a precisão, completude ou legalidade do conteúdo.
 
@@ -308,7 +321,7 @@ Estas podem ser instaladas seguindo seu respectivo guia de instalação em seus 
 
 **Propósito Educacional:** Este projeto visa fornecer acesso organizado a materiais educacionais para fins educacionais não comerciais. Acreditamos que muitos usos do conteúdo podem se qualificar para proteções de uso justo, mas determinações de uso justo são feitas caso a caso pelos tribunais.
 
-## Patrocinadores
+## 💎 Patrocinadores
 
 __Quer ser um patrocinador? Envie um email para bruno.c.scaglione@gmail.com com o assunto "[lunchSTEM] Patrocínio"__ 
 
@@ -316,6 +329,6 @@ __Quer ser um patrocinador? Envie um email para bruno.c.scaglione@gmail.com com 
 
 ![Logo do Freelunch](./sponsors/freelunch/logo_freelunch_with_name.png)
 
-## Agradecimentos
+## 🙏 Agradecimentos
 
 

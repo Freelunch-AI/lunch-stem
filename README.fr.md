@@ -60,7 +60,7 @@
 > 
 > • **CLI approprié** où les utilisateurs peuvent faire des recherches par mots-clés et sémantiques.
 
-## Aperçu
+## 🔍 Aperçu
 
 Ceci est une base de connaissances *STEM* (Science, Technologie, Ingénierie et Mathématiques) en évolution, destinée à être examinée et améliorée avec l'effort de la communauté. Elle peut être utilisée et améliorée par les humains et les agents IA.
 
@@ -70,7 +70,14 @@ Elle devrait être plus organisée et de meilleure qualité (rapport signal/brui
 
 L'objectif est, plus tard, de permettre aux agents IA de l'utiliser facilement comme outil en créant un *Serveur MCP lunchSTEM*.
 
-## Demandes de Suppression de Contenu et d'Attribution de Crédits
+## 📊 Statistiques du Projet
+
+- **Taille :** 60+ GB (incluant beaucoup de liens)
+- **Nombre de fichiers pdf** 10k+
+- **Nombre de sous-sujets** 6k+
+- **Langue des matériaux :** Anglais
+
+## 🗑️ Demandes de Suppression de Contenu et d'Attribution de Crédits
 
 Un grand effort a été fait pour détecter et supprimer le contenu protégé par des droits d'auteur (non distribuable), et pour reconnaître les auteurs/éditeurs/universités des matériaux restants. L'examen manuel de chaque fichier n'a pas pu être fait à cause du nombre énorme de fichiers (mais nous accueillons la communauté pour nous aider avec cela en ouvrant des issues et des PRs).
 1. Nous avons exécuté des scripts pour supprimer tout fichier contenant toute autre extension en dehors de : `.pdf`, `.txt`, `.md`, `.ipynb`, `.json`
@@ -92,11 +99,11 @@ Cependant, nous ne pouvons pas garantir la perfection dans ce processus, donc, s
 
 **Conformité à la *Loi sur les Droits d'Auteur du Millénaire Numérique* (*DMCA*) :** nous nous conformons à la Loi sur les Droits d'Auteur du Millénaire Numérique (DMCA). Pour les demandes formelles de retrait, veuillez suivre le processus *DMCA*.
 
-## Attribution de Crédits
+## 📝 Attribution de Crédits
 
 Les données d'attribution de crédits d'un fichier pdf sont stockées dans `[nom_fichier].pdf.source.json` qui devrait être ouvert directement (sans `dvc pull`). Ce fichier peut contenir des auteurs, université, éditeur, lien vers la source, et d'autres métadonnées sur le fichier spécifique qu'il référence. La valeur par défaut des champs est `null`, à l'exception de la valeur par défaut du champ `changes_were_made` qui est `False`.
 
-## Exigences pour l'Utilisation
+## ⚙️ Exigences pour l'Utilisation
 
 Assurez-vous d'avoir ces outils installés :
 
@@ -111,7 +118,7 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 > [!NOTE]
 > Lors de la configuration d'un stockage distant pour _rclone_, assurez-vous d'utiliser l'option de compte de service et `lunch-stem-fadf503639fe.json` comme fichier de compte de service.
 
-## Comment Utiliser
+## 🚀 Comment Utiliser
 
 1. **Ouvrez un terminal**: Pour ouvrir le terminal, utilisez la fonctionnalité de recherche de votre système d'exploitation (en appuyant sur la touche Windows ou Cmd + Espace sur Mac) et tapez "terminal", "invite de commandes" ou "Windows Terminal" et sélectionnez l'application
 
@@ -216,7 +223,7 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
       Ouvrez simplement le fichier et suivez le lien web qu'il contient.
 
-## Structure des Répertoires et Conventions de Nommage
+## 📁 Structure des Répertoires et Conventions de Nommage
 
 - Le répertoire **`__Loopback`** contient des fichiers qui avaient un chemin trop long. Un fichier pointeur `.sym.txt` a été créé à la place de ces fichiers pointant vers le fichier réel situé dans le répertoire `__Loopback`. Ces fichiers txt pointeurs suivent cette convention de nommage : `nom_fichier.extension_fichier.sym.txt` et sont situés dans le même répertoire où le fichier réel devrait être.
 
@@ -226,11 +233,17 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
 - Les fichiers ou dossiers commençant par **Awesome** indiquent du contenu de super haute qualité.
 
-## Notes
+## 🔬 Couverture des Domaines _STEM_
 
-- *lunchSTEM* est pour le moment plus complet dans les domaines de l'Informatique et de l'IA spécifiquement. Les domaines de `Hardcore Science` sont notamment plus superficiels en termes d'arbre de sujets.
+### Domaines les Plus Forts
 
-## Tentative de Feuille de Route
+*lunchSTEM* est pour le moment plus complet dans les domaines de `Computer Science & Engineering` et de `AI` spécifiquement.
+
+### Domaines les Plus Faibles
+
+Les domaines de `Hardcore Science` (Physique, Chimie, Biologie, Économie) sont notamment plus superficiels en termes de profondeur de leur arbre de sujets.
+
+## 🗺️ Tentative de Feuille de Route
 
 > **Note :** Les étapes avec la même **[lettre]** peuvent être faites en parallèle.
 
@@ -296,7 +309,7 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
 12. **[d]** Faire *AgentPool* : équipe d'agents divers qui font des PRs au dépôt *lunchSTEM* après des discussions internes, posant des questions aux humains et évaluant les changements proposés par fine-tuning de SLMs. Les agents sont continuellement modifiés pour assurer la diversité et pour améliorer leur intelligence basée sur de nouvelles connaissances approuvées ajoutées à *lunchSTEM*.
 
-## Avertissement et Conditions
+## ⚖️ Avertissement et Conditions
 
 **BASE EN L'ÉTAT :** Ce projet est fourni "en l'état" sans garanties d'aucune sorte. Nous ne faisons aucune représentation sur l'exactitude, la complétude ou la légalité du contenu.
 
@@ -308,7 +321,7 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
 **Objectif Éducatif :** Ce projet vise à fournir un accès organisé aux matériaux éducatifs à des fins éducatives non commerciales. Nous croyons que de nombreuses utilisations du contenu peuvent se qualifier pour les protections d'usage équitable, mais les déterminations d'usage équitable sont faites au cas par cas par les tribunaux.
 
-## Sponsors
+## 💎 Sponsors
 
 __Vous voulez être un sponsor ? Envoyez un email à bruno.c.scaglione@gmail.com avec le sujet "[lunchSTEM] Sponsoring"__ 
 
@@ -316,5 +329,5 @@ __Vous voulez être un sponsor ? Envoyez un email à bruno.c.scaglione@gmail.com
 
 ![Logo Freelunch](./sponsors/freelunch/logo_freelunch_with_name.png)
 
-## Remerciements
+## 🙏 Remerciements
 

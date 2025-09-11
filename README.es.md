@@ -60,7 +60,7 @@
 > 
 > • **CLI adecuado** donde los usuarios pueden hacer búsquedas por palabras clave y semánticas.
 
-## Descripción General
+## 🔍 Descripción General
 
 Esta es una base de conocimiento *STEM* (Ciencia, Tecnología, Ingeniería y Matemáticas) en evolución, destinada a ser revisada y mejorada con el esfuerzo de la comunidad. Puede ser utilizada y mejorada por humanos y agentes de IA.
 
@@ -70,7 +70,14 @@ Debería ser más organizada y de mayor calidad (relación señal-ruido) que la 
 
 El objetivo es, más adelante, permitir que los agentes de IA la utilicen fácilmente como herramienta creando un *Servidor MCP de lunchSTEM*.
 
-## Solicitudes de Eliminación de Contenido y Atribución de Créditos
+## 📊 Estadísticas del Proyecto
+
+- **Tamaño:** 60+ GB (incluyendo muchos enlaces)
+- **Número de archivos pdf** 10k+
+- **Número de subtemas** 6k+
+- **Idioma de los materiales:** Inglés
+
+## 🗑️ Solicitudes de Eliminación de Contenido y Atribución de Créditos
 
 Se hizo un gran esfuerzo para detectar y eliminar contenido con derechos de autor (no distribuible), y para reconocer a los autores/editores/universidades de los materiales restantes. No se pudo hacer una revisión manual de cada archivo debido a la gran cantidad de archivos (pero damos la bienvenida a la comunidad para que nos ayude con esto abriendo issues y PRs).
 1. Ejecutamos scripts para eliminar cualquier archivo que contenga cualquier otra extensión fuera de: `.pdf`, `.txt`, `.md`, `.ipynb`, `.json`
@@ -92,11 +99,11 @@ Sin embargo, no podemos garantizar la perfección en este proceso, por lo tanto,
 
 **Cumplimiento de la *Ley de Derechos de Autor del Milenio Digital* (*DMCA*):** cumplimos con la Ley de Derechos de Autor del Milenio Digital (DMCA). Para solicitudes formales de eliminación, por favor sigue el proceso *DMCA*.
 
-## Atribución de Créditos
+## 📝 Atribución de Créditos
 
 Los datos de atribución de créditos de un archivo pdf se almacenan en `<nombre_archivo>.pdf.source.json` que debe abrirse directamente (sin `dvc pull`). Este archivo puede contener autores, universidad, editorial, enlace a la fuente, y otros metadatos sobre el archivo específico al que hace referencia. El valor predeterminado de los campos es `null`, con la excepción del valor predeterminado del campo `changes_were_made` que es `False`.
 
-## Requisitos para el Uso
+## ⚙️ Requisitos para el Uso
 
 Asegúrate de tener estas herramientas instaladas:
 
@@ -111,7 +118,7 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 > [!NOTE]
 > Al configurar un almacenamiento remoto para _rclone_, asegúrate de usar la opción de cuenta de servicio y `lunch-stem-fadf503639fe.json` como archivo de cuenta de servicio.
 
-## Cómo Usar
+## 🚀 Cómo Usar
 
 1. **Abre una terminal**: Para abrir la terminal, usa la funcionalidad de búsqueda de tu sistema operativo (presionando la tecla de Windows o Cmd + Espacio en Mac) y escribe "terminal", "símbolo del sistema" o "Windows Terminal" y selecciona la aplicación
 
@@ -216,7 +223,7 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
       Simplemente abre el archivo y sigue el enlace web dentro de él.
 
-## Estructura de Directorios y Convenciones de Nomenclatura
+## 📁 Estructura de Directorios y Convenciones de Nomenclatura
 
 - El directorio **`__Loopback`** contiene archivos que tenían una ruta demasiado larga. Se creó un archivo puntero `.sym.txt` en lugar de estos archivos apuntando al archivo real ubicado dentro del directorio `__Loopback`. Estos archivos txt puntero siguen esta convención de nomenclatura: `nombre_archivo.extensión_archivo.sym.txt` y están ubicados en el mismo directorio donde debería estar el archivo real.
 
@@ -226,11 +233,17 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
 - Los archivos o carpetas que comienzan con **Awesome** indican contenido de súper alta calidad.
 
-## Notas
+## 🔬 Cobertura de Campos _STEM_
 
-- *lunchSTEM* está en este momento más completo en los campos de Ciencias de la Computación e IA específicamente. Los campos de `Hardcore Science` son notablemente más superficiales en términos del árbol de temas.
+### Campos Más Fuertes
 
-## Intento de Hoja de Ruta
+*lunchSTEM* está en este momento más completo en los campos de `Computer Science & Engineering` e `AI` específicamente.
+
+### Campos Más Débiles
+
+Los campos de `Hardcore Science` (Física, Química, Biología, Economía) son notablemente más superficiales en términos de la profundidad de su árbol de temas.
+
+## 🗺️ Intento de Hoja de Ruta
 
 > **Nota:** Los pasos con la misma **[letra]** pueden hacerse en paralelo.
 
@@ -296,7 +309,7 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
 12. **[d]** Hacer *AgentPool*: equipo de agentes diversos que hacen PRs al repositorio *lunchSTEM* después de discusiones internas, haciendo preguntas a humanos y evaluando cambios propuestos mediante fine-tuning de SLMs. Los agentes se modifican continuamente para asegurar diversidad y para mejorar su inteligencia basada en nuevo conocimiento aprobado agregado a *lunchSTEM*.
 
-## Descargo de Responsabilidad y Términos
+## ⚖️ Descargo de Responsabilidad y Términos
 
 **BASE TAL COMO ESTÁ:** Este proyecto se proporciona "tal como está" sin garantías de ningún tipo. No hacemos representaciones sobre la precisión, completitud o legalidad del contenido.
 
@@ -308,7 +321,7 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
 **Propósito Educativo:** Este proyecto tiene como objetivo proporcionar acceso organizado a materiales educativos para fines educativos no comerciales. Creemos que muchos usos del contenido pueden calificar para protecciones de uso justo, pero las determinaciones de uso justo se hacen caso por caso por los tribunales.
 
-## Patrocinadores
+## 💎 Patrocinadores
 
 __¿Quieres ser un patrocinador? Envía un correo electrónico a bruno.c.scaglione@gmail.com con el asunto "[lunchSTEM] Patrocinio"__ 
 
@@ -316,7 +329,7 @@ __¿Quieres ser un patrocinador? Envía un correo electrónico a bruno.c.scaglio
 
 ![Logo de Freelunch](./sponsors/freelunch/logo_freelunch_with_name.png)
 
-## Reconocimientos
+## 🙏 Reconocimientos
 
 
 
