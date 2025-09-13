@@ -73,18 +73,18 @@ Se você acha o lunchSTEM útil, por favor considere nos dar uma estrela no GitH
 
 ## � Sumário
 
-- [🔍 Visão Geral](#🔍-visão-geral)
-- [📊 Estatísticas do Projeto](#📊-estatísticas-do-projeto)
-- [🗑️ Solicitações de Remoção de Conteúdo e Atribuição de Créditos](#🗑️-solicitações-de-remoção-de-conteúdo-e-atribuição-de-créditos)
-- [📝 Atribuição de Créditos](#📝-atribuição-de-créditos)
-- [⚙️ Requisitos para Uso](#⚙️-requisitos-para-uso)
-- [🚀 Como Usar](#🚀-como-usar)
-- [📁 Estrutura de Diretórios e Convenções de Nomenclatura](#📁-estrutura-de-diretórios-e-convenções-de-nomenclatura)
-- [🔬 Cobertura de Campos STEM](#🔬-cobertura-de-campos-stem)
-- [🗺️ Tentativa de Roteiro](#🗺️-tentativa-de-roteiro)
-- [⚖️ Isenção de Responsabilidade e Termos](#⚖️-isenção-de-responsabilidade-e-termos)
-- [💎 Patrocinadores](#💎-patrocinadores)
-- [🙏 Agradecimentos](#🙏-agradecimentos)
+- [🔍 Visão Geral](#-visão-geral)
+- [📊 Estatísticas do Projeto](#-estatísticas-do-projeto)
+- [🗑️ Solicitações de Remoção de Conteúdo e Atribuição de Créditos](#-solicitações-de-remoção-de-conteúdo-e-atribuição-de-créditos)
+- [📝 Atribuição de Créditos](#-atribuição-de-créditos)
+- [⚙️ Requisitos para Uso](#-requisitos-para-uso)
+- [🚀 Como Usar](#-como-usar)
+- [📁 Estrutura de Diretórios e Convenções de Nomenclatura](#-estrutura-de-diretórios-e-convenções-de-nomenclatura)
+- [🔬 Cobertura de Campos STEM](#-cobertura-de-campos-stem)
+- [🗺️ Tentativa de Roteiro](#-tentativa-de-roteiro)
+- [⚖️ Isenção de Responsabilidade e Termos](#-isenção-de-responsabilidade-e-termos)
+- [💎 Patrocinadores](#-patrocinadores)
+- [🙏 Agradecimentos](#-agradecimentos)
 
 ## �🔍 Visão Geral
 

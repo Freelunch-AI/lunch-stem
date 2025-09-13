@@ -74,18 +74,18 @@ If you find lunchSTEM useful, please consider giving us a star on GitHub! It hel
 
 ## 📚 Table of Contents
 
-- [🔍 Overview](#🔍-overview)
-- [📊 Project Statistics](#📊-project-statistics)
-- [🗑️ Content Removal and Credit Attribution Requests](#🗑️-content-removal-and-credit-attribution-requests)
-- [📝 Credit Attribution](#📝-credit-attribution)
-- [⚙️ Requirements for Usage](#⚙️-requirements-for-usage)
-- [🚀 How to Use](#🚀-how-to-use)
-- [📁 Directory Structure and Naming Conventions](#📁-directory-structure-and-naming-conventions)
-- [🔬 Coverage of STEM Fields](#🔬-coverage-of-stem-fields)
-- [🗺️ Roadmap Attempt](#🗺️-roadmap-attempt)
-- [⚖️ Disclaimer & Terms](#⚖️-disclaimer--terms)
-- [💎 Sponsors](#💎-sponsors)
-- [🙏 Acknowledgements](#🙏-acknowledgements)
+- [🔍 Overview](#-overview)
+- [📊 Project Statistics](#-project-statistics)
+- [🗑️ Content Removal and Credit Attribution Requests](#-content-removal-and-credit-attribution-requests)
+- [📝 Credit Attribution](#-credit-attribution)
+- [⚙️ Requirements for Usage](#-requirements-for-usage)
+- [🚀 How to Use](#-how-to-use)
+- [📁 Directory Structure and Naming Conventions](#-directory-structure-and-naming-conventions)
+- [🔬 Coverage of STEM Fields](#-coverage-of-stem-fields)
+- [🗺️ Roadmap Attempt](#-roadmap-attempt)
+- [⚖️ Disclaimer & Terms](#-disclaimer--terms)
+- [💎 Sponsors](#-sponsors)
+- [🙏 Acknowledgements](#-acknowledgements)
 
 ## 🔍 Overview
 

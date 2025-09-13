@@ -73,18 +73,18 @@ Si vous trouvez lunchSTEM utile, veuillez considérer nous donner une étoile su
 
 ## � Table des Matières
 
-- [🔍 Aperçu](#🔍-aperçu)
-- [📊 Statistiques du Projet](#📊-statistiques-du-projet)
-- [🗑️ Demandes de Suppression de Contenu et d'Attribution de Crédits](#🗑️-demandes-de-suppression-de-contenu-et-dattribution-de-crédits)
-- [📝 Attribution de Crédits](#📝-attribution-de-crédits)
-- [⚙️ Exigences d'Utilisation](#⚙️-exigences-dutilisation)
-- [🚀 Comment Utiliser](#🚀-comment-utiliser)
-- [📁 Structure des Répertoires et Conventions de Nommage](#📁-structure-des-répertoires-et-conventions-de-nommage)
-- [🔬 Couverture des Domaines STEM](#🔬-couverture-des-domaines-stem)
-- [🗺️ Tentative de Feuille de Route](#🗺️-tentative-de-feuille-de-route)
-- [⚖️ Clause de Non-responsabilité et Conditions](#⚖️-clause-de-non-responsabilité-et-conditions)
-- [💎 Sponsors](#💎-sponsors)
-- [🙏 Remerciements](#🙏-remerciements)
+- [🔍 Aperçu](#-aperçu)
+- [📊 Statistiques du Projet](#-statistiques-du-projet)
+- [🗑️ Demandes de Suppression de Contenu et d'Attribution de Crédits](#-demandes-de-suppression-de-contenu-et-dattribution-de-crédits)
+- [📝 Attribution de Crédits](#-attribution-de-crédits)
+- [⚙️ Exigences d'Utilisation](#-exigences-dutilisation)
+- [🚀 Comment Utiliser](#-comment-utiliser)
+- [📁 Structure des Répertoires et Conventions de Nommage](#-structure-des-répertoires-et-conventions-de-nommage)
+- [🔬 Couverture des Domaines STEM](#-couverture-des-domaines-stem)
+- [🗺️ Tentative de Feuille de Route](#-tentative-de-feuille-de-route)
+- [⚖️ Clause de Non-responsabilité et Conditions](#-clause-de-non-responsabilité-et-conditions)
+- [💎 Sponsors](#-sponsors)
+- [🙏 Remerciements](#-remerciements)
 
 ## �🔍 Aperçu
 

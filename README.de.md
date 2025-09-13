@@ -73,18 +73,18 @@ Wenn Sie lunchSTEM nützlich finden, erwägen Sie bitte, uns einen Stern auf Git
 
 ## � Inhaltsverzeichnis
 
-- [🔍 Überblick](#🔍-überblick)
-- [📊 Projektstatistiken](#📊-projektstatistiken)
-- [🗑️ Inhaltsverwendungs- und Autorenkredit-Anfragen](#🗑️-inhaltsverwendungs--und-autorenkredit-anfragen)
-- [📝 Autorenzuschreibung](#📝-autorenzuschreibung)
-- [⚙️ Nutzungsanforderungen](#⚙️-nutzungsanforderungen)
-- [🚀 Wie zu verwenden](#🚀-wie-zu-verwenden)
-- [📁 Verzeichnisstruktur und Benennungskonventionen](#📁-verzeichnisstruktur-und-benennungskonventionen)
-- [🔬 Abdeckung von STEM-Bereichen](#🔬-abdeckung-von-stem-bereichen)
-- [🗺️ Roadmap-Versuch](#🗺️-roadmap-versuch)
-- [⚖️ Haftungsausschluss & Bedingungen](#⚖️-haftungsausschluss--bedingungen)
-- [💎 Sponsoren](#💎-sponsoren)
-- [🙏 Danksagungen](#🙏-danksagungen)
+- [🔍 Überblick](#-überblick)
+- [📊 Projektstatistiken](#-projektstatistiken)
+- [🗑️ Inhaltsverwendungs- und Autorenkredit-Anfragen](#-inhaltsverwendungs--und-autorenkredit-anfragen)
+- [📝 Autorenzuschreibung](#-autorenzuschreibung)
+- [⚙️ Nutzungsanforderungen](#-nutzungsanforderungen)
+- [🚀 Wie zu verwenden](#-wie-zu-verwenden)
+- [📁 Verzeichnisstruktur und Benennungskonventionen](#-verzeichnisstruktur-und-benennungskonventionen)
+- [🔬 Abdeckung von STEM-Bereichen](#-abdeckung-von-stem-bereichen)
+- [🗺️ Roadmap-Versuch](#-roadmap-versuch)
+- [⚖️ Haftungsausschluss & Bedingungen](#-haftungsausschluss--bedingungen)
+- [💎 Sponsoren](#-sponsoren)
+- [🙏 Danksagungen](#-danksagungen)
 
 ## �🔍 Überblick
 
