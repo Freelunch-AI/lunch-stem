@@ -40,6 +40,17 @@
    </a>
 </p>
 
+<h2 align="center">⭐ Dê uma Estrela ao Projeto</h2>
+
+Se você acha o lunchSTEM útil, por favor considere nos dar uma estrela no GitHub! Isso nos ajuda a alcançar mais pessoas e nos mantém motivados.
+
+<p align="center">
+   <a href="https://github.com/Freelunch-AI/lunch-stem">
+      <img src="assets/star-github.png" alt="Dar uma estrela a um projeto do Github" width=200>
+   </a> <br>
+   <em>Imagem de Exemplo</em>
+</p>
+
 ---
 
 > [!WARNING]
@@ -60,7 +71,22 @@
 > 
 > • **CLI adequado** onde usuários podem fazer busca por palavras-chave e semântica.
 
-## 🔍 Visão Geral
+## � Sumário
+
+- [🔍 Visão Geral](#🔍-visão-geral)
+- [📊 Estatísticas do Projeto](#📊-estatísticas-do-projeto)
+- [🗑️ Solicitações de Remoção de Conteúdo e Atribuição de Créditos](#🗑️-solicitações-de-remoção-de-conteúdo-e-atribuição-de-créditos)
+- [📝 Atribuição de Créditos](#📝-atribuição-de-créditos)
+- [⚙️ Requisitos para Uso](#⚙️-requisitos-para-uso)
+- [🚀 Como Usar](#🚀-como-usar)
+- [📁 Estrutura de Diretórios e Convenções de Nomenclatura](#📁-estrutura-de-diretórios-e-convenções-de-nomenclatura)
+- [🔬 Cobertura de Campos STEM](#🔬-cobertura-de-campos-stem)
+- [🗺️ Tentativa de Roteiro](#🗺️-tentativa-de-roteiro)
+- [⚖️ Isenção de Responsabilidade e Termos](#⚖️-isenção-de-responsabilidade-e-termos)
+- [💎 Patrocinadores](#💎-patrocinadores)
+- [🙏 Agradecimentos](#🙏-agradecimentos)
+
+## �🔍 Visão Geral
 
 Esta é uma base de conhecimento *STEM* (Ciência, Tecnologia, Engenharia e Matemática) em evolução, destinada a ser revisada e melhorada com o esforço da comunidade. Pode ser usada e melhorada por humanos e agentes de IA.
 
@@ -69,6 +95,14 @@ Seu caso de uso ideal é **aprofundar-se num tópico *STEM* (e tópicos relacion
 Deve ser mais organizada e de maior qualidade (relação sinal-ruído) que a busca padrão do Google/pesquisa profunda de IA para este caso de uso.
 
 O objetivo é, mais tarde, permitir que agentes de IA a usem facilmente como ferramenta fazendo um *Servidor MCP do lunchSTEM*.
+
+## 🎯 Para quem é isto?
+
+- **Estudantes** procurando materiais de aprendizagem complementares
+- **Profissionais** querendo aprofundar seu conhecimento STEM
+- **Pesquisadores** precisando de materiais de referência organizados
+- **Educadores** procurando recursos de ensino
+- **Autodidatas** buscando estudo independente
 
 ## 📊 Estatísticas do Projeto
 

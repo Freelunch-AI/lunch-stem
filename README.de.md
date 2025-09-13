@@ -40,6 +40,17 @@
    </a>
 </p>
 
+<h2 align="center">⭐ Geben Sie dem Projekt einen Stern</h2>
+
+Wenn Sie lunchSTEM nützlich finden, erwägen Sie bitte, uns einen Stern auf GitHub zu geben! Es hilft uns, mehr Menschen zu erreichen und hält uns motiviert.
+
+<p align="center">
+   <a href="https://github.com/Freelunch-AI/lunch-stem">
+      <img src="assets/star-github.png" alt="Geben Sie einem Github-Projekt einen Stern" width=200>
+   </a> <br>
+   <em>Beispielbild</em>
+</p>
+
 ---
 
 > [!WARNING]
@@ -60,7 +71,22 @@
 > 
 > • **Ordnungsgemäße CLI** wo Benutzer Schlagwort- und semantische Suche durchführen können.
 
-## 🔍 Überblick
+## � Inhaltsverzeichnis
+
+- [🔍 Überblick](#🔍-überblick)
+- [📊 Projektstatistiken](#📊-projektstatistiken)
+- [🗑️ Inhaltsverwendungs- und Autorenkredit-Anfragen](#🗑️-inhaltsverwendungs--und-autorenkredit-anfragen)
+- [📝 Autorenzuschreibung](#📝-autorenzuschreibung)
+- [⚙️ Nutzungsanforderungen](#⚙️-nutzungsanforderungen)
+- [🚀 Wie zu verwenden](#🚀-wie-zu-verwenden)
+- [📁 Verzeichnisstruktur und Benennungskonventionen](#📁-verzeichnisstruktur-und-benennungskonventionen)
+- [🔬 Abdeckung von STEM-Bereichen](#🔬-abdeckung-von-stem-bereichen)
+- [🗺️ Roadmap-Versuch](#🗺️-roadmap-versuch)
+- [⚖️ Haftungsausschluss & Bedingungen](#⚖️-haftungsausschluss--bedingungen)
+- [💎 Sponsoren](#💎-sponsoren)
+- [🙏 Danksagungen](#🙏-danksagungen)
+
+## �🔍 Überblick
 
 Dies ist eine sich entwickelnde *STEM* (Science, Technology, Engineering and Mathematics) Wissensbasis, die mit der Anstrengung der Gemeinschaft überprüft und verbessert werden soll. Sie kann von Menschen und KI-Agenten genutzt und verbessert werden.
 
@@ -69,6 +95,14 @@ Ihr idealer Anwendungsfall ist, **tief in ein *STEM*-Thema (und verwandte Themen
 Sie sollte organisierter und von höherer Qualität (Signal-Rausch-Verhältnis) sein als die Standard-Google-Suche/KI-Tiefenforschung für diesen Anwendungsfall.
 
 Das Ziel ist es, später KI-Agenten zu ermöglichen, sie einfach als Werkzeug zu nutzen, indem ein *lunchSTEM MCP Server* erstellt wird.
+
+## 🎯 Für wen ist das?
+
+- **Studenten**, die nach ergänzenden Lernmaterialien suchen
+- **Fachkräfte**, die ihr STEM-Wissen vertiefen möchten
+- **Forscher**, die organisierte Referenzmaterialien benötigen
+- **Pädagogen**, die nach Unterrichtsmaterialien suchen
+- **Selbstlerner**, die unabhängiges Studium betreiben
 
 ## 📊 Projektstatistiken
 

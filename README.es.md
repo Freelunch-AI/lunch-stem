@@ -40,6 +40,17 @@
    </a>
 </p>
 
+<h2 align="center">⭐ Dale una Estrella al Proyecto</h2>
+
+Si encuentras lunchSTEM útil, ¡por favor considera darnos una estrella en GitHub! Nos ayuda a llegar a más personas y nos mantiene motivados.
+
+<p align="center">
+   <a href="https://github.com/Freelunch-AI/lunch-stem">
+      <img src="assets/star-github.png" alt="Dale una estrella a un proyecto de Github" width=200>
+   </a> <br>
+   <em>Imagen de Ejemplo</em>
+</p>
+
 ---
 
 > [!WARNING]
@@ -60,7 +71,22 @@
 > 
 > • **CLI adecuado** donde los usuarios pueden hacer búsquedas por palabras clave y semánticas.
 
-## 🔍 Descripción General
+## � Tabla de Contenidos
+
+- [🔍 Descripción General](#🔍-descripción-general)
+- [📊 Estadísticas del Proyecto](#📊-estadísticas-del-proyecto)
+- [🗑️ Solicitudes de Eliminación de Contenido y Atribución de Créditos](#🗑️-solicitudes-de-eliminación-de-contenido-y-atribución-de-créditos)
+- [📝 Atribución de Créditos](#📝-atribución-de-créditos)
+- [⚙️ Requisitos para el Uso](#⚙️-requisitos-para-el-uso)
+- [🚀 Cómo Usar](#🚀-cómo-usar)
+- [📁 Estructura de Directorios y Convenciones de Nomenclatura](#📁-estructura-de-directorios-y-convenciones-de-nomenclatura)
+- [🔬 Cobertura de Campos STEM](#🔬-cobertura-de-campos-stem)
+- [🗺️ Intento de Hoja de Ruta](#🗺️-intento-de-hoja-de-ruta)
+- [⚖️ Descargo de Responsabilidad y Términos](#⚖️-descargo-de-responsabilidad-y-términos)
+- [💎 Patrocinadores](#💎-patrocinadores)
+- [🙏 Agradecimientos](#🙏-agradecimientos)
+
+## �🔍 Descripción General
 
 Esta es una base de conocimiento *STEM* (Ciencia, Tecnología, Ingeniería y Matemáticas) en evolución, destinada a ser revisada y mejorada con el esfuerzo de la comunidad. Puede ser utilizada y mejorada por humanos y agentes de IA.
 
@@ -69,6 +95,14 @@ Su caso de uso ideal es **profundizar en un tema *STEM* (y temas relacionados) d
 Debería ser más organizada y de mayor calidad (relación señal-ruido) que la búsqueda predeterminada de Google/investigación profunda de IA para este caso de uso.
 
 El objetivo es, más adelante, permitir que los agentes de IA la utilicen fácilmente como herramienta creando un *Servidor MCP de lunchSTEM*.
+
+## 🎯 ¿Para quién es esto?
+
+- **Estudiantes** que buscan materiales de aprendizaje complementarios
+- **Profesionales** que quieren profundizar su conocimiento STEM
+- **Investigadores** que necesitan materiales de referencia organizados
+- **Educadores** que buscan recursos de enseñanza
+- **Autodidactas** que persiguen el estudio independiente
 
 ## 📊 Estadísticas del Proyecto
 

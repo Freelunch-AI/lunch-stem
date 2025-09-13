@@ -41,6 +41,17 @@
    </a>
 </p>
 
+<h2 align="center">⭐ Star the Project</h2>
+
+If you find lunchSTEM useful, please consider giving us a star on GitHub! It helps us reach more people and keeps us motivated.
+
+<p align="center">
+   <a href="https://github.com/Freelunch-AI/lunch-stem">
+      <img src="assets/star-github.png" alt="Give a star to a Github project" width=200>
+   </a> <br>
+   <em>Example Image</em>
+</p>
+
 ---
 
 > [!WARNING]
@@ -61,6 +72,21 @@
 > 
 > • **Proper CLI** where users can do keyword and semantic search.
 
+## 📚 Table of Contents
+
+- [🔍 Overview](#🔍-overview)
+- [📊 Project Statistics](#📊-project-statistics)
+- [🗑️ Content Removal and Credit Attribution Requests](#🗑️-content-removal-and-credit-attribution-requests)
+- [📝 Credit Attribution](#📝-credit-attribution)
+- [⚙️ Requirements for Usage](#⚙️-requirements-for-usage)
+- [🚀 How to Use](#🚀-how-to-use)
+- [📁 Directory Structure and Naming Conventions](#📁-directory-structure-and-naming-conventions)
+- [🔬 Coverage of STEM Fields](#🔬-coverage-of-stem-fields)
+- [🗺️ Roadmap Attempt](#🗺️-roadmap-attempt)
+- [⚖️ Disclaimer & Terms](#⚖️-disclaimer--terms)
+- [💎 Sponsors](#💎-sponsors)
+- [🙏 Acknowledgements](#🙏-acknowledgements)
+
 ## 🔍 Overview
 
 This is an evolving *STEM* (Science, Technology, Engineering and Mathematics) knowledge base, meant to be reviewed and improved with the effort of the community. It can be used and improved by humans and AI agents.
@@ -70,6 +96,14 @@ Its ideal use-case is to be used to **go deep into a *STEM* topic (and related t
 It should be more organized and higher-quality (signal-to-noise ratio) than default Google search/AI deep research for this use-case. 
 
 The goal is to, later on, enable AI agents to easily use it as a tool by making a *lunchSTEM MCP Server*.
+
+## 🎯 Who is this for?
+
+- **Students** looking for supplementary learning materials
+- **Professionals** wanting to deepen their STEM knowledge
+- **Researchers** needing organized reference materials
+- **Educators** searching for teaching resources
+- **Self-learners** pursuing independent study
 
 ## 📊 Project Statistics
 
