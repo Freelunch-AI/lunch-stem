@@ -183,20 +183,22 @@ pdf文件的作者归属数据存储在 `[文件名].pdf.source.json` 中，应�
       **通过以下方式下载特定的pdf文件：**
 
       ```bash
-      lunch files "<第一个dvc_file_path_placeholder>" "[第二个dvc_file_path_placeholder]" ...
+      lunch files "<first/dvc/file/path/placeholder.pdf.dvc>" "[second/dvc/file/path/placeholder.pdf.dvc]"
       ```
 
-      此命令将获取`.pdf`文件并将其放在您当前目录中。
+      您可以放入多个文件路径，只有第一个是必需的。
+
+      此命令将获取`.pdf`文件并将其放在您当前目录中.
 
       如果您想将文件放在与`pdf.dvc ` 文件相同的位置，则使用：
 
       ```bash
-      lunch files "<第一个dvc_file_path_placeholder>" "[第二个dvc_file_path_placeholder]" --in-place ...
+      lunch files "<first/dvc/file/path/placeholder.pdf.dvc>" "second/dvc/file/path/placeholder.pdf.dvc]" --in-place 
       ```
 
       - _注意1：_ 第一个文件路径参数是必需的，其余是可选的。
       - _注意2：_ 此命令中使用的文件路径不应以`.source.json`结尾，而应以`.pdf.dvc`结尾。
-      - _注意3：_ 其他文件类型（例如`.txt`）应直接打开，无需dvc。
+      - _注意3：_ 其他文件类型（例如`.txt`）应直接打开，无需使用lunch CLI。
       - _注意4：_ 如果存在`.web.txt`，则不应尝试此命令，只需将`.web.txt`内的链接复制并粘贴到浏览器中即可。我们稍后将实现一个`lunch get`来从网络上获取文件。
       - _注意5：_ 在运行此命令之前，`.pdf`文件应该不可见。
       - _注意6：_ 您可以通过您操作系统的图形用户界面获取文件路径，每个操作系统都有简单的方法。
@@ -205,25 +207,25 @@ pdf文件的作者归属数据存储在 `[文件名].pdf.source.json` 中，应�
       **通过以下方式下载特定文件夹中的所有文件：**
 
       ```bash
-      lunch folder "<folder_path_placeholder>"
+      lunch folder "<folder/path/placeholder>"
       ```
 
       如果您想将新的pdf文件放在与其对应的`pdf.dvc`文件相同的位置，则使用：
 
       ```bash
-      lunch folder "<folder_path_placeholder>" --in-place
+      lunch folder "<folder/path/placeholder>" --in-place
       ```
 
       如果您想从所有子目录（递归）下载所有文件，则使用：
 
       ```bash
-      lunch folder "<folder_path_placeholder>" --recursive
+      lunch folder "<folder/path/placeholder>" --recursive
       ```
 
       如果您想将文件放在与`pdf.dvc ` 文件相同的位置并且对所有子目录都这样做，则使用：
 
       ```bash
-      lunch folder "<folder_path_placeholder>" --in-place --recursive
+      lunch folder "<folder/path/placeholder>" --in-place --recursive
       ```
       为了调试，请使用`--verbose`标志。
 

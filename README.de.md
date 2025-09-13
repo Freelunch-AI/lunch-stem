@@ -175,20 +175,22 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
       **Laden Sie spezifische PDF-Dateien herunter mit:**
 
       ```bash
-      lunch files "<erster_dvc_file_path_placeholder>" "[zweiter_dvc_file_path_placeholder]" ...
+      lunch files "<first/dvc/file/path/placeholder.pdf.dvc>" "[second/dvc/file/path/placeholder.pdf.dvc]"
       ```
+
+      wobei Sie mehrere Dateipfade eingeben können, nur der erste ist erforderlich.
 
       Dieser Befehl holt die `.pdf`-Dateien und platziert sie in Ihrem aktuellen Verzeichnis.
 
       Wenn Sie Dateien am gleichen Ort wie die `pdf.dvc ` Datei platzieren möchten dann verwenden Sie:
 
       ```bash
-      lunch files "<erster_dvc_file_path_placeholder>" "[zweiter_dvc_file_path_placeholder]" --in-place ...
+      lunch files "<first/dvc/file/path/placeholder.pdf.dvc>" "[second/dvc/file/path/placeholder.pdf.dvc]" --in-place
       ```
 
       - _Hinweis 1:_ das erste Dateipfad-Argument ist erforderlich, der Rest ist optional.
       - _Hinweis 2:_ der in diesem Befehl verwendete Dateipfad sollte nicht `.source.json` am Ende haben. er sollte mit `.pdf.dvc` enden.
-      - _Hinweis 3:_ andere Dateitypen (z.B. `.txt`) sollten direkt geöffnet werden, ohne dvc.
+      - _Hinweis 3:_ andere Dateitypen (z.B. `.txt`) sollten direkt geöffnet werden, ohne die lunch CLI zu verwenden.
       - _Hinweis 4:_ wenn `.web.txt` vorhanden ist, dann sollten Sie diesen Befehl nicht versuchen, kopieren und fügen Sie einfach den Link innerhalb von `.web.txt` in Ihren Browser ein. Wir werden später ein `lunch get` implementieren, um Dateien aus dem Web zu holen.
       - _Hinweis 5:_ die `.pdf` Datei sollte nicht sichtbar sein, bevor Sie diesen Befehl ausführen.
       - _Hinweis 6:_ Sie können die Dateipfade über die grafische Benutzeroberfläche Ihres Betriebssystems erhalten, jedes Betriebssystem hat eine einfache Möglichkeit.
@@ -197,25 +199,25 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
       **Laden Sie alle Dateien aus einem spezifischen Ordner herunter über:**
 
       ```bash
-      lunch folder "<folder_path_placeholder>"
+      lunch folder "<folder/path/placeholder>"
       ```
 
       Wenn Sie die neuen PDF-Dateien am gleichen Ort wie ihre entsprechenden `pdf.dvc` Dateien platzieren möchten dann verwenden Sie:
 
       ```bash
-      lunch folder "<folder_path_placeholder>" --in-place
+      lunch folder "<folder/path/placeholder>" --in-place
       ```
 
       Wenn Sie alle Dateien aus allen Unterverzeichnissen (rekursiv) herunterladen möchten dann verwenden Sie:
 
       ```bash
-      lunch folder "<folder_path_placeholder>" --recursive
+      lunch folder "<folder/path/placeholder>" --recursive
       ```
 
       Wenn Sie Dateien am gleichen Ort wie die `pdf.dvc ` Datei und für alle Unterverzeichnisse platzieren möchten dann verwenden Sie:
 
       ```bash
-      lunch folder "<folder_path_placeholder>" --in-place --recursive
+      lunch folder "<folder/path/placeholder>" --in-place --recursive
       ```
       Für Debugging verwenden Sie das `--verbose` Flag.
 

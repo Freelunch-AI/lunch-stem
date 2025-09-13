@@ -175,20 +175,22 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
       **Descarga archivos pdf específicos con:**
 
       ```bash
-      lunch files "<primer_dvc_file_path_placeholder>" "[segundo_dvc_file_path_placeholder]" ...
+      lunch files "<first/dvc/file/path/placeholder.pdf.dvc>" "[second/dvc/file/path/placeholder.pdf.dvc]"
       ```
+
+      donde puedes poner múltiples rutas de archivos, solo la primera es requerida.
 
       Este comando obtendrá los archivos `.pdf` y los colocará en tu directorio actual.
 
       Si quieres colocar los archivos en el mismo lugar que el archivo `pdf.dvc ` entonces usa:
 
       ```bash
-      lunch files "<primer_dvc_file_path_placeholder>" "[segundo_dvc_file_path_placeholder]" --in-place ...
+      lunch files "<first/dvc/file/path/placeholder.pdf.dvc>" "[second/dvc/file/path/placeholder.pdf.dvc]" --in-place
       ```
 
       - _Nota 1:_ el primer argumento de ruta de archivo es requerido, el resto son opcionales.
       - _Nota 2:_ la ruta del archivo utilizada en este comando no debe tener `.source.json` al final. debe terminar con `.pdf.dvc`.
-      - _Nota 3:_ otros tipos de archivo (p. ej., `.txt`) deben abrirse directamente, sin dvc.
+      - _Nota 3:_ otros tipos de archivo (p. ej., `.txt`) deben abrirse directamente, sin usar la CLI de lunch.
       - _Nota 4:_ si `.web.txt` está presente, entonces no debes intentar este comando, solo copia y pega el enlace dentro de `.web.txt` en tu navegador. Implementaremos un `lunch get` más adelante para obtener archivos de la web.
       - _Nota 5:_ el archivo `.pdf` no debería ser visible antes de ejecutar este comando.
       - _Nota 6:_ puedes obtener las rutas de archivos a través de la interfaz gráfica de usuario de tu Sistema Operativo, cada sistema operativo tiene una manera fácil.
@@ -197,25 +199,25 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
       **Descarga todos los archivos de una carpeta específica via:**
 
       ```bash
-      lunch folder "<folder_path_placeholder>"
+      lunch folder "<folder/path/placeholder>"
       ```
 
       Si quieres colocar los nuevos archivos pdf en el mismo lugar que sus archivos `pdf.dvc` correspondientes entonces usa:
 
       ```bash
-      lunch folder "<folder_path_placeholder>" --in-place
+      lunch folder "<folder/path/placeholder>" --in-place
       ```
 
       Si quieres descargar todos los archivos de todos los subdirectorios (recursivamente) entonces usa:
 
       ```bash
-      lunch folder "<folder_path_placeholder>" --recursive
+      lunch folder "<folder/path/placeholder>" --recursive
       ```
 
       Si quieres colocar archivos en el mismo lugar que el archivo `pdf.dvc ` y para todos los subdirectorios entonces usa:
 
       ```bash
-      lunch folder "<folder_path_placeholder>" --in-place --recursive
+      lunch folder "<folder/path/placeholder>" --in-place --recursive
       ```
       Para depuración, usa la bandera `--verbose`.
 
