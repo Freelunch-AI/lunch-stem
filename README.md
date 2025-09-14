@@ -6,7 +6,7 @@
 <h1 align="center">Democratizing <i>STEM</i> knowledge in an organized manner</h1><br>
 
 <p align="center">
-   <strong>🌟 Non-profit, open source project 🌟</strong>
+   <strong>🌟 Non-profit, open source project (v0.1.0) 🌟</strong>
 </p>
 
 <p align="center">
@@ -82,6 +82,7 @@ If you find lunchSTEM useful, please consider giving us a star on GitHub! It hel
 - [🚀 How to Use](#-how-to-use)
 - [📁 Directory Structure and Naming Conventions](#-directory-structure-and-naming-conventions)
 - [🔬 Coverage of STEM Fields](#-coverage-of-stem-fields)
+- [🤝 Contributions](#-contributions)
 - [🗺️ Roadmap Attempt](#-roadmap-attempt)
 - [⚖️ Disclaimer & Terms](#-disclaimer--terms)
 - [💎 Sponsors](#-sponsors)
@@ -285,6 +286,17 @@ These can be installed by following their repsective installation guide on their
 ### Weakest Fields
 
 The fields of `Hardcore Science` (Physics, Chemistry, Biology, Economics) are notably more superficial in terms of the depth of their tree of topics.
+
+## 🤝 Contributions
+
+If you want to contribute to the project, check out our [CONTRIBUTING.md](https://github.com/Freelunch-AI/lunch-stem/blob/main/CONTRIBUTING.md).
+
+> [!WARNING]
+> The GCP service account file is purposely public in this repo, it only has read rights to the Google Drive folder containing the pdfs.
+>
+> We know it's not good practice to make them publicly available, but it was the way to be able to leverage our existing Google Drive subscription (without having to make globally scalable backend).
+>
+> We will soon move to a public S3 bucket, and then, this little "hack" will be removed.
 
 ## 🗺️ Roadmap Attempt
 

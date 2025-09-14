@@ -81,6 +81,7 @@ Si encuentras lunchSTEM útil, ¡por favor considera darnos una estrella en GitH
 - [🚀 Cómo Usar](#-cómo-usar)
 - [📁 Estructura de Directorios y Convenciones de Nomenclatura](#-estructura-de-directorios-y-convenciones-de-nomenclatura)
 - [🔬 Cobertura de Campos STEM](#-cobertura-de-campos-stem)
+- [🤝 Contribuciones](#-contribuciones)
 - [🗺️ Intento de Hoja de Ruta](#-intento-de-hoja-de-ruta)
 - [⚖️ Descargo de Responsabilidad y Términos](#-descargo-de-responsabilidad-y-términos)
 - [💎 Patrocinadores](#-patrocinadores)
@@ -282,6 +283,17 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 ### Campos Más Débiles
 
 Los campos de `Hardcore Science` (Física, Química, Biología, Economía) son notablemente más superficiales en términos de la profundidad de su árbol de temas.
+
+## 🤝 Contribuciones
+
+Si quieres contribuir al proyecto, consulta nuestro [CONTRIBUTING.md](https://github.com/Freelunch-AI/lunch-stem/blob/main/CONTRIBUTING.md).
+
+> [!WARNING]
+> El archivo de cuenta de servicio de GCP es intencionalmente público en este repositorio, solo tiene derechos de lectura a la carpeta de Google Drive que contiene los pdfs.
+>
+> Sabemos que no es una buena práctica hacerlos públicamente disponibles, pero fue la forma de poder aprovechar nuestra suscripción existente de Google Drive (sin tener que hacer un backend globalmente escalable).
+>
+> Pronto nos moveremos a un bucket público de S3, y entonces, este pequeño "hack" será eliminado.
 
 ## 🗺️ Intento de Hoja de Ruta
 

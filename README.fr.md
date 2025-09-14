@@ -5,7 +5,7 @@
 <h1 align="center">Démocratiser la connaissance <i>STEM</i> de manière organisée</h1><br>
 
 <p align="center">
-   <strong>🌟 Projet à but non lucratif et open source 🌟</strong>
+   <strong>🌟 Projet à but non lucratif et open source (v0.1.0) 🌟</strong>
 </p>
 
 <p align="center">
@@ -81,6 +81,7 @@ Si vous trouvez lunchSTEM utile, veuillez considérer nous donner une étoile su
 - [🚀 Comment Utiliser](#-comment-utiliser)
 - [📁 Structure des Répertoires et Conventions de Nommage](#-structure-des-répertoires-et-conventions-de-nommage)
 - [🔬 Couverture des Domaines STEM](#-couverture-des-domaines-stem)
+- [🤝 Contributions](#-contributions)
 - [🗺️ Tentative de Feuille de Route](#-tentative-de-feuille-de-route)
 - [⚖️ Clause de Non-responsabilité et Conditions](#-clause-de-non-responsabilité-et-conditions)
 - [💎 Sponsors](#-sponsors)
@@ -282,6 +283,17 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 ### Domaines les Plus Faibles
 
 Les domaines de `Hardcore Science` (Physique, Chimie, Biologie, Économie) sont notamment plus superficiels en termes de profondeur de leur arbre de sujets.
+
+## 🤝 Contributions
+
+Si vous souhaitez contribuer au projet, consultez notre [CONTRIBUTING.md](https://github.com/Freelunch-AI/lunch-stem/blob/main/CONTRIBUTING.md).
+
+> [!WARNING]
+> Le fichier de compte de service GCP est volontairement public dans ce dépôt, il n'a que des droits de lecture sur le dossier Google Drive contenant les pdfs.
+>
+> Nous savons que ce n'est pas une bonne pratique de les rendre publiquement disponibles, mais c'était le moyen de pouvoir tirer parti de notre abonnement Google Drive existant (sans avoir à créer un backend globalement évolutif).
+>
+> Nous allons bientôt migrer vers un bucket S3 public, et alors, ce petit "hack" sera supprimé.
 
 ## 🗺️ Tentative de Feuille de Route
 

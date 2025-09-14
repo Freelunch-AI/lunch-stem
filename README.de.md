@@ -5,7 +5,7 @@
 <h1 align="center">Demokratisierung von <i>STEM</i>-Wissen auf organisierte Weise</h1><br>
 
 <p align="center">
-   <strong>🌟 Gemeinnütziges Open-Source-Projekt 🌟</strong>
+   <strong>🌟 Gemeinnütziges Open-Source-Projekt (v0.1.0) 🌟</strong>
 </p>
 
 <p align="center">
@@ -81,6 +81,7 @@ Wenn Sie lunchSTEM nützlich finden, erwägen Sie bitte, uns einen Stern auf Git
 - [🚀 Wie zu verwenden](#-wie-zu-verwenden)
 - [📁 Verzeichnisstruktur und Benennungskonventionen](#-verzeichnisstruktur-und-benennungskonventionen)
 - [🔬 Abdeckung von STEM-Bereichen](#-abdeckung-von-stem-bereichen)
+- [🤝 Beiträge](#-beiträge)
 - [🗺️ Roadmap-Versuch](#-roadmap-versuch)
 - [⚖️ Haftungsausschluss & Bedingungen](#-haftungsausschluss--bedingungen)
 - [💎 Sponsoren](#-sponsoren)
@@ -282,6 +283,17 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 ### Schwächste Bereiche
 
 Die Bereiche von `Hardcore Science` (Physik, Chemie, Biologie, Wirtschaft) sind bemerkenswert oberflächlicher in Bezug auf die Tiefe ihres Themenbaums.
+
+## 🤝 Beiträge
+
+Wenn Sie zum Projekt beitragen möchten, schauen Sie sich unsere [CONTRIBUTING.md](https://github.com/Freelunch-AI/lunch-stem/blob/main/CONTRIBUTING.md) an.
+
+> [!WARNING]
+> Die GCP-Dienstkonten-Datei ist absichtlich öffentlich in diesem Repository, sie hat nur Leserechte für den Google Drive-Ordner, der die PDFs enthält.
+>
+> Wir wissen, dass es keine gute Praxis ist, sie öffentlich verfügbar zu machen, aber es war der Weg, um unser bestehendes Google Drive-Abonnement nutzen zu können (ohne ein global skalierbares Backend erstellen zu müssen).
+>
+> Wir werden bald zu einem öffentlichen S3-Bucket wechseln, und dann wird dieser kleine "Hack" entfernt.
 
 ## 🗺️ Roadmap-Versuch
 

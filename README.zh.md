@@ -11,7 +11,7 @@ PDF文件的作者归## 🚀 如何使用
 <h1 align="center">以有组织的方式民主化 <i>STEM</i> 知识</h1><br>
 
 <p align="center">
-   <strong>🌟 非营利开源项目 🌟</strong>
+   <strong>🌟 非营利开源项目 (v0.1.0) 🌟</strong>
 </p>
 
 <p align="center">
@@ -87,6 +87,7 @@ PDF文件的作者归## 🚀 如何使用
 - [🚀 如何使用](#-如何使用)
 - [📁 目录结构和命名约定](#-目录结构和命名约定)
 - [🔬 STEM领域覆盖](#-stem领域覆盖)
+- [🤝 贡献](#-贡献)
 - [🗺️ 路线图尝试](#-路线图尝试)
 - [⚖️ 免责声明和条款](#-免责声明和条款)
 - [💎 赞助商](#-赞助商)
@@ -306,6 +307,17 @@ pdf文件的作者归属数据存储在 `[文件名].pdf.source.json` 中，应�
 ### 最弱领域
 
 `Hardcore Science`（物理学、化学、生物学、经济学）领域在主题树的深度方面明显更加表面。
+
+## 🤝 贡献
+
+如果你想为项目做贡献，请查看我们的 [CONTRIBUTING.md](https://github.com/Freelunch-AI/lunch-stem/blob/main/CONTRIBUTING.md)。
+
+> [!WARNING]
+> GCP服务账户文件在此仓库中是故意公开的，它只对包含PDF的Google Drive文件夹具有读取权限。
+>
+> 我们知道公开这些文件不是好的做法，但这是能够利用我们现有Google Drive订阅的方式（无需构建全球可扩展的后端）。
+>
+> 我们很快会迁移到公共S3存储桶，然后这个小"hack"将被移除。
 
 ## 🗺️ 路线图尝试
 
