@@ -374,5 +374,9 @@ __Want to be a sponsor? Send an email to bruno.c.scaglione@gmail.com with the su
 
 ## 🙏 Acknowledgements
 
+To all the authors that made their content publicly available.
 
+To our early testers.
+
+To our contributors, maintainers and sponsors that keep the project alive and evolving.
 

@@ -369,5 +369,11 @@ __Möchten Sie Sponsor werden? Senden Sie eine E-Mail an bruno.c.scaglione@gmail
 
 ![Freelunch Logo](./sponsors/freelunch/logo_freelunch_with_name.png)
 
-## 🙏 Anerkennungen
+## 🙏 Danksagungen
+
+An alle Autoren, die ihre Inhalte öffentlich zugänglich gemacht haben.
+
+An unsere frühen Tester.
+
+An unsere Mitwirkenden, Betreuer und Sponsoren, die das Projekt am Leben und in der Entwicklung halten.
 

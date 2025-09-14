@@ -371,4 +371,10 @@ __Quer ser um patrocinador? Envie um email para bruno.c.scaglione@gmail.com com 
 
 ## 🙏 Agradecimentos
 
+A todos os autores que disponibilizaram seu conteúdo publicamente.
+
+Aos nossos primeiros testadores.
+
+Aos nossos contribuidores, mantenedores e patrocinadores que mantêm o projeto vivo e em evolução.
+
 

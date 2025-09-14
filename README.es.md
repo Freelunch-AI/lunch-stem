@@ -73,18 +73,18 @@ Si encuentras lunchSTEM útil, ¡por favor considera darnos una estrella en GitH
 
 ## � Tabla de Contenidos
 
-- [🔍 Descripción General](#🔍-descripción-general)
-- [📊 Estadísticas del Proyecto](#📊-estadísticas-del-proyecto)
-- [🗑️ Solicitudes de Eliminación de Contenido y Atribución de Créditos](#🗑️-solicitudes-de-eliminación-de-contenido-y-atribución-de-créditos)
-- [📝 Atribución de Créditos](#📝-atribución-de-créditos)
-- [⚙️ Requisitos para el Uso](#⚙️-requisitos-para-el-uso)
-- [🚀 Cómo Usar](#🚀-cómo-usar)
-- [📁 Estructura de Directorios y Convenciones de Nomenclatura](#📁-estructura-de-directorios-y-convenciones-de-nomenclatura)
-- [🔬 Cobertura de Campos STEM](#🔬-cobertura-de-campos-stem)
-- [🗺️ Intento de Hoja de Ruta](#🗺️-intento-de-hoja-de-ruta)
-- [⚖️ Descargo de Responsabilidad y Términos](#⚖️-descargo-de-responsabilidad-y-términos)
-- [💎 Patrocinadores](#💎-patrocinadores)
-- [🙏 Agradecimientos](#🙏-agradecimientos)
+- [🔍 Descripción General](#-descripción-general)
+- [📊 Estadísticas del Proyecto](#-estadísticas-del-proyecto)
+- [🗑️ Solicitudes de Eliminación de Contenido y Atribución de Créditos](#-solicitudes-de-eliminación-de-contenido-y-atribución-de-créditos)
+- [📝 Atribución de Créditos](#-atribución-de-créditos)
+- [⚙️ Requisitos para el Uso](#-requisitos-para-el-uso)
+- [🚀 Cómo Usar](#-cómo-usar)
+- [📁 Estructura de Directorios y Convenciones de Nomenclatura](#-estructura-de-directorios-y-convenciones-de-nomenclatura)
+- [🔬 Cobertura de Campos STEM](#-cobertura-de-campos-stem)
+- [🗺️ Intento de Hoja de Ruta](#-intento-de-hoja-de-ruta)
+- [⚖️ Descargo de Responsabilidad y Términos](#-descargo-de-responsabilidad-y-términos)
+- [💎 Patrocinadores](#-patrocinadores)
+- [🙏 Agradecimientos](#-agradecimientos)
 
 ## �🔍 Descripción General
 
@@ -370,6 +370,12 @@ __¿Quieres ser un patrocinador? Envía un correo electrónico a bruno.c.scaglio
 ![Logo de Freelunch](./sponsors/freelunch/logo_freelunch_with_name.png)
 
 ## 🙏 Reconocimientos
+
+A todos los autores que hicieron que su contenido esté disponible públicamente.
+
+A nuestros primeros probadores.
+
+A nuestros contribuyentes, mantenedores y patrocinadores que mantienen el proyecto vivo y en evolución.
 
 
 

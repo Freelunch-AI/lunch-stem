@@ -371,3 +371,8 @@ __Vous voulez être un sponsor ? Envoyez un email à bruno.c.scaglione@gmail.com
 
 ## 🙏 Remerciements
 
+À tous les auteurs qui ont rendu leur contenu accessible au public.
+
+À nos premiers testeurs.
+
+À nos contributeurs, mainteneurs et sponsors qui maintiennent le projet vivant et en évolution.
