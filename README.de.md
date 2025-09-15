@@ -290,7 +290,7 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 > [!NOTE]
 > **🟩 Demnächst verfügbar**
 > 
-> • **Website** mit Autoren-Homepages, Schlüsselwort-/semantischer Suche, Diskussionsforen über Dokumenten, Inhaltsvorschauen, interaktiven Inhaltsvisualisierungen, Inhaltsbewertung/Tagging/Favorisierung, Notizen über Dokumenten, trending/beliebte Dokumente, Statistiken für Dokumente und Autoren und mehr.
+> • **Browser-App** mit Autoren-Homepages, Schlüsselwort-/semantischer Suche, Diskussionsforen über Dokumenten, Inhaltsvorschauen, interaktiven Inhaltsvisualisierungen, Inhaltsbewertung/Tagging/Favorisierung, Notizen über Dokumenten, trending/beliebte Dokumente, Statistiken für Dokumente und Autoren und mehr.
 > 
 > • **MCP Server:** nützlich für KI-Agenten, die komplexe Ingenieursarbeit oder wissenschaftliche Forschung durchführen.
 > 
@@ -351,7 +351,7 @@ Wenn Sie zum Projekt beitragen möchten, schauen Sie sich unsere [CONTRIBUTING.m
 
 6. **[b]** Ein *lunchSTEM MCP Server* erstellen: zuerst muss eine `.md` Version jeder `.pdf` erstellt werden
 
-7. **[b][a]** Eine Website erstellen, um den *lunchSTEM* Konsum durch Menschen zu erleichtern, wo Benutzer:
+7. **[b][a]** Eine Browser-App erstellen, um den *lunchSTEM* Konsum durch Menschen zu erleichtern, wo Benutzer:
    1. Das Repository als Graph visualisieren und navigieren können
    2. Schlüsselwort-, filter-basierte und semantische Suche verwenden können
    3. Vorschau von Dokumenten sehen können, ohne sie öffnen zu müssen

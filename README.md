@@ -292,7 +292,7 @@ These can be installed by following their respective installation guide on their
 > [!NOTE]
 > **🟩 Coming Soon**
 > 
-> • **Website** with author homepages, keyword/semantic search, discussion forums on top of documents, content previews, interactive content visualizations, content starring/tagging/favouriting, making notes on top of documents, trending/popular documents, statistics for documents and authors, and more.
+> • **Browser App** with author homepages, keyword/semantic search, discussion forums on top of documents, content previews, interactive content visualizations, content starring/tagging/favouriting, making notes on top of documents, trending/popular documents, statistics for documents and authors, and more.
 > 
 > • **MCP Server:** useful for AI Agents doing complex engineering work or scientific research.
 > 
@@ -353,7 +353,7 @@ If you want to contribute to the project, check out our [CONTRIBUTING.md](https:
 
 6. **[b]** Make a *lunchSTEM MCP Server*: first, need to create a `.md` version of each `.pdf`
 
-7. **[b][a]** Make a website to ease *lunchSTEM* consumption by humans, where users can:
+7. **[b][a]** Make a browser app to ease *lunchSTEM* consumption by humans, where users can:
    1. Visualize and navigate the repo as a graph
    2. Use keyword, filter-based and semantic search
    3. See preview of documents without having to open them

@@ -290,7 +290,7 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 > [!NOTE]
 > **🟩 Bientôt Disponible**
 > 
-> • **Site Web** avec pages d'accueil d'auteurs, recherche par mots-clés/sémantique, forums de discussion sur les documents, aperçus de contenu, visualisations de contenu interactives, étoiles/tags/favoris de contenu, prise de notes sur les documents, documents tendance/populaires, statistiques pour les documents et auteurs, et plus.
+> • **Application de navigateur** avec pages d'accueil d'auteurs, recherche par mots-clés/sémantique, forums de discussion sur les documents, aperçus de contenu, visualisations de contenu interactives, étoiles/tags/favoris de contenu, prise de notes sur les documents, documents tendance/populaires, statistiques pour les documents et auteurs, et plus.
 > 
 > • **Serveur MCP :** utile pour les Agents IA effectuant des travaux d'ingénierie complexes ou de la recherche scientifique.
 > 
@@ -351,7 +351,7 @@ Si vous voulez contribuer au projet, consultez notre [CONTRIBUTING.md](https://g
 
 6. **[b]** Créer un *Serveur MCP lunchSTEM* : d'abord, besoin de créer une version `.md` de chaque `.pdf`
 
-7. **[b][a]** Créer un site web pour faciliter la consommation de *lunchSTEM* par les humains, où les utilisateurs peuvent :
+7. **[b][a]** Créer une application de navigateur pour faciliter la consommation de *lunchSTEM* par les humains, où les utilisateurs peuvent :
    1. Visualiser et naviguer dans le dépôt comme un graphique
    2. Utiliser la recherche par mots-clés, basée sur des filtres et sémantique
    3. Voir un aperçu des documents sans avoir à les ouvrir

@@ -290,7 +290,7 @@ Estas podem ser instaladas seguindo seus respectivos guias de instalação em se
 > [!NOTE]
 > **🟩 Em Breve**
 > 
-> • **Site** com páginas iniciais de autores, busca por palavra-chave/semântica, fóruns de discussão em cima de documentos, pré-visualizações de conteúdo, visualizações interativas de conteúdo, estrelas/tags/favoritos de conteúdo, fazer anotações em cima de documentos, documentos em alta/populares, estatísticas para documentos e autores, e mais.
+> • **Aplicativo de navegador** com páginas iniciais de autores, busca por palavra-chave/semântica, fóruns de discussão em cima de documentos, pré-visualizações de conteúdo, visualizações interativas de conteúdo, estrelas/tags/favoritos de conteúdo, fazer anotações em cima de documentos, documentos em alta/populares, estatísticas para documentos e autores, e mais.
 > 
 > • **Servidor MCP:** útil para Agentes de IA fazendo trabalho de engenharia complexo ou pesquisa científica.
 > 
@@ -351,7 +351,7 @@ Se você quer contribuir para o projeto, confira nosso [CONTRIBUTING.md](https:/
 
 6. **[b]** Fazer um *Servidor MCP lunchSTEM*: primeiro, precisa criar uma versão `.md` de cada `.pdf`
 
-7. **[b][a]** Fazer um site para facilitar o consumo de *lunchSTEM* por humanos, onde usuários podem:
+7. **[b][a]** Fazer um aplicativo de navegador para facilitar o consumo de *lunchSTEM* por humanos, onde usuários podem:
    1. Visualizar e navegar no repositório como um gráfico
    2. Usar busca por palavra-chave, baseada em filtros e semântica
    3. Ver pré-visualização de documentos sem ter que abri-los
