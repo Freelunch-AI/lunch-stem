@@ -201,35 +201,35 @@ These can be installed by following their respective installation guide on their
 
       This command will get the `.pdf` files and put it in your current directory.
 
-      > [!WARNING]
-      > **`/` or `\` as separators inside the paths?**
-      >
-      > `Linux` only accepts `/`
-      >
-      > `Windows` accepts both.
+> [!WARNING]
+> **`/` or `\` as separators inside the paths?**
+>
+> `Linux` only accepts `/`
+>
+> `Windows` accepts both.
 
-      > [!WARNING]
-      > Is it necessary to put paths inside `""` quotes?
-      >
-      > Yes, it is. Because a lot of paths have directories and/or files with blank spaces. **If don't put the path inside `""` quotes, the command will not work.**
+> [!WARNING]
+> Is it necessary to put paths inside `""` quotes?
+>
+> Yes, it is. Because a lot of paths have directories and/or files with blank spaces. **If don't put the path inside `""` quotes, the command will not work.**
    
-      > [!TIP]
-      > **Example Usage with absolute paths:**
-      > Suppose `current_path` == `"D:\coding-workspace\lunch-stem"`
-      > 
-      > ```bash
-      > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
-      > ```
-      > This command downloads `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` and `5 - Threads, Condition Variables, Preemption.pdf` in `current_path`.
+> [!TIP]
+> **Example Usage with absolute paths:**
+> Suppose `current_path` == `"D:\coding-workspace\lunch-stem"`
+> 
+> ```bash
+> lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
+> ```
+> This command downloads `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` and `5 - Threads, Condition Variables, Preemption.pdf` in `current_path`.
 
-      > [!TIP]
-      > **Example Usage with relative paths (relative to the current path in which you are running the command):**
-      > Suppose `current_path` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
-      > 
-      > ```bash
-      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
-      > ```
-      > This command downloads `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` and `5 - Threads, Condition Variables, Preemption.pdf` in `current_path`.
+> [!TIP]
+> **Example Usage with relative paths (relative to the current path in which you are running the command):**
+> Suppose `current_path` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+> 
+> ```bash
+> lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+> ```
+> This command downloads `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` and `5 - Threads, Condition Variables, Preemption.pdf` in `current_path`.
 
 
       If you want to put files in the same place as their respective `pdf.dvc` file then use:
