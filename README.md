@@ -54,36 +54,19 @@ If you find lunchSTEM useful, please consider giving us a star on GitHub! It hel
 
 ---
 
-> [!WARNING]
-> **⚠️ Important**
-> 
-> Documents in *lunchSTEM* are created by external authors, not by us. We don't support inclusion of non-distributable documents without author permission (for non-distributable documents: check `author_permissions.jsonl`).
-> 
-> Each document credits its author(s) in a corresponding `<file_name>.<file_extension>.source.json` file.
-> 
-> Authors may request content removal at any time. After following our streamlined protocol for *Content Removal Requests*, we remove content within 24 hours. This option is faster and more friendly than a *Digital Millennium Copyright Act (DMCA)* notification (which can shutdown the project).
-
-> [!NOTE]
-> **🟩 Coming Soon**
-> 
-> • **Website** with author homepages, keyword/semantic search, discussion forums on top of documents, content previews, interactive content visualizations, content starring/tagging/favouriting, making notes on top of documents, trending/popular documents, statistics for documents and authors, and more.
-> 
-> • **MCP Server:** useful for AI Agents doing complex engineering work or scientific research.
-> 
-> • **Proper CLI** where users can do keyword and semantic search.
-
 ## 📚 Table of Contents
 
 - [🔍 Overview](#-overview)
-- [📊 Project Statistics](#-project-statistics)
-- [🗑️ Content Removal and Credit Attribution Requests](#-content-removal-and-credit-attribution-requests)
-- [📝 Credit Attribution](#-credit-attribution)
+- [🎯 Who is this for?](#-who-is-this-for)
+- [� Project Statistics](#-project-statistics)
 - [⚙️ Requirements for Usage](#-requirements-for-usage)
 - [🚀 How to Use](#-how-to-use)
 - [📁 Directory Structure and Naming Conventions](#-directory-structure-and-naming-conventions)
 - [🔬 Coverage of STEM Fields](#-coverage-of-stem-fields)
 - [🤝 Contributions](#-contributions)
 - [🗺️ Roadmap Attempt](#-roadmap-attempt)
+- [🗑️ Content Removal and Credit Attribution Requests](#-content-removal-and-credit-attribution-requests)
+- [📝 Credit Attribution](#-credit-attribution)
 - [⚖️ Disclaimer & Terms](#-disclaimer--terms)
 - [💎 Sponsors](#-sponsors)
 - [🙏 Acknowledgements](#-acknowledgements)
@@ -113,32 +96,6 @@ The goal is to, later on, enable AI agents to easily use it as a tool by making 
 - **Number of sub-topics** 6k+
 - **Language of materials:** English
 
-## 🗑️ Content Removal and Credit Attribution Requests
-
-A big effort was made to detect and remove copyrighted (non-distributable) content, and to recognize the authors/publishers/universities of the remaining materials. Manual review of each file couldn't be done because of the sheer amount of files (but we welcome the community to help us with this by, opening issues and PRs).
-1. We ran scripts to delete any file containing any other extension outside of: `.pdf`, `.txt`, `.md`, `.ipynb`, `.json`
-2. We ran scripts for automated detection of copyright-related keywords in documents and deletion of such documents
-3. We ran scripts for automated removal of academic papers.
-4. We manually replaced each book pdf for a link to it.
-5. We ran scripts for automated creation of a credit attribution file (`.source.json`) for each remaining pdf, with info such as: authors, link to source, modified or not, etc. Default value of fields are `null`, with the exception of the default value of the `changes_were_made` field which is `False`. Default values are used when the info can't be found in the pdf itself.
-
-However, we cannot guarantee perfection in this process, therefore, if you find any copyrighted content or content without proper credit attribution data, please open an issue and/or make a PR and/or send an email to bruno.c.scaglione@gmail.com. We aim to resolve the problem in 24h. Refer to the `CONTRIBUTING.md` file for the guidelines for this.
-
-> **Streamlined Protocol for Content Removal Requests (Recommended over _DMCA_)**
-   > 1. Read CONTRIBUTING.md to see issue guidelines
-   > 2. Open a *content removal request* issue
-   > 3. Send an email to bruno.c.scaglione@gmail.com with the subject "[lunchSTEM] Content Removal Request: #GITHUB_ISSUE_NUMBER_PLACEHOLDER" explaining: who you are, the path of the content(s) you need to be removed and link to the specific issue you opened.
-
-<br>
-
-> This option is __faster and more friendly than a *DMCA*__ notification. If we receive multiple *DMCA* notifications, the project risks being removed from *Github* (even after taking down the contents) and a lot of people that could benefit from it will be affected.
-
-***Digital Millennium Copyright Act* (*DMCA*) Compliance:** we comply with the Digital Millennium Copyright Act (DMCA). For formal takedown requests, please follow the *DMCA* process.
-
-## 📝 Credit Attribution 
-
-Credit attribution data of a pdf file is stored in `<file_name>.pdf.source.json` which should be opened directly (without `dvc pull`). This file can contain authors, university, publisher, link do the source, and other metadata about the specific file it references. Default value of fields are `null`, with the exception of the default value of the `changes_were_made` field which is `False`.
-
 ## ⚙️ Requirements for Usage
 
 Make sure you have these tools installed:
@@ -146,13 +103,15 @@ Make sure you have these tools installed:
 - `git`
 - `rclone`
 
-These can be installed by following their repsective installation guide on their websites.
+These can be installed by following their respective installation guide on their websites.
 
 - [git installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [rclone installation guide](https://rclone.org/install/)
 
 > [!NOTE]
 > When configuring a remote storage for _rclone_, make shure to use the service account option and `lunch-stem-fadf503639fe.json` as the service account file.
+>
+> Also, when installing *rclone*, *Windows* users might see a security warning, it's normal.
 
 ## 🚀 How to Use
 
@@ -165,6 +124,9 @@ These can be installed by following their repsective installation guide on their
    ```
    > [!NOTE]
    > If you are using Windows, it's important to clone inside a top-level directory, to avoid potential errors related to the creating file paths that are too long. Windows typically has a maximum file path of 260 characters.
+
+   > [!NOTE]
+   > The `git clone` command will copy the project in your machine with the entire folder structure already in place.
 
 3. Enter the `lunch-stem` folder
 
@@ -190,6 +152,8 @@ These can be installed by following their repsective installation guide on their
    source scripts/setup 
       ```
 
+   You should see `Setup complete!` message printed in the terminal, along with other details.
+
    **For Windows:**
 
    Enable execution of scripts within the terminal session
@@ -204,7 +168,17 @@ These can be installed by following their repsective installation guide on their
    scripts/setup.ps1
       ```
 
+   You should see `Setup complete!` message printed in the terminal, along with other details.
+
 5. **Browse inside the `ai2f` folder**
+
+   `ai2f` folder structure:
+
+         ├── __Loopback
+         ├── Computer Science and Engineering 
+         ├── Hardcore Engineering 
+         ├── Hardcore Science  
+         └── Mathematics
 
 6. **Download pdf files:**
 
@@ -219,6 +193,15 @@ These can be installed by following their repsective installation guide on their
       where you can put multiple file paths, only the first is required.
 
       This command will get the `.pdf` files and put it in your current directory.
+
+      > [!TIP]
+      > **Example Usage:**
+      > 
+      > ```bash
+      > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
+      > ```
+      > Downloads `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` and `5 - Threads, Condition Variables, Preemption.pdf` in the directory the command was run.
+
 
       If you want to put files in the same place as the `pdf.dvc ` file then use:
 
@@ -266,6 +249,24 @@ These can be installed by following their repsective installation guide on their
    - For `.sym.txt` files:
 
       Simply open the file and navigate to the file or folder path written inside it. This file or folder will be inside the `__Loopback`.
+
+> [!WARNING]
+> **⚠️ Important**
+> 
+> Documents in *lunchSTEM* are created by external authors, not by us. We don't support inclusion of non-distributable documents without author permission (for non-distributable documents: check `author_permissions.jsonl`).
+> 
+> Each document credits its author(s) in a corresponding `<file_name>.<file_extension>.source.json` file.
+> 
+> Authors may request content removal at any time. After following our streamlined protocol for *Content Removal Requests*, we remove content within 24 hours. This option is faster and more friendly than a *Digital Millennium Copyright Act (DMCA)* notification (which can shutdown the project).
+
+> [!NOTE]
+> **🟩 Coming Soon**
+> 
+> • **Website** with author homepages, keyword/semantic search, discussion forums on top of documents, content previews, interactive content visualizations, content starring/tagging/favouriting, making notes on top of documents, trending/popular documents, statistics for documents and authors, and more.
+> 
+> • **MCP Server:** useful for AI Agents doing complex engineering work or scientific research.
+> 
+> • **Proper CLI** where users can do keyword and semantic search.
 
 ## 📁 Directory Structure and Naming Conventions
 
@@ -363,6 +364,32 @@ If you want to contribute to the project, check out our [CONTRIBUTING.md](https:
 11. **[d]** Migrate from *Google Drive* (I was already paying for 2TB, so that's why I used it) to a better storage option (e.g., *S3*).
 
 12. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes by finetuning SLMs. Agents are continually modified to ensure diversity and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
+
+## 🗑️ Content Removal and Credit Attribution Requests
+
+A big effort was made to detect and remove copyrighted (non-distributable) content, and to recognize the authors/publishers/universities of the remaining materials. Manual review of each file couldn't be done because of the sheer amount of files (but we welcome the community to help us with this by, opening issues and PRs).
+1. We ran scripts to delete any file containing any other extension outside of: `.pdf`, `.txt`, `.md`, `.ipynb`, `.json`
+2. We ran scripts for automated detection of copyright-related keywords in documents and deletion of such documents
+3. We ran scripts for automated removal of academic papers.
+4. We manually replaced each book pdf for a link to it.
+5. We ran scripts for automated creation of a credit attribution file (`.source.json`) for each remaining pdf, with info such as: authors, link to source, modified or not, etc. Default value of fields are `null`, with the exception of the default value of the `changes_were_made` field which is `False`. Default values are used when the info can't be found in the pdf itself.
+
+However, we cannot guarantee perfection in this process, therefore, if you find any copyrighted content or content without proper credit attribution data, please open an issue and/or make a PR and/or send an email to bruno.c.scaglione@gmail.com. We aim to resolve the problem in 24h. Refer to the `CONTRIBUTING.md` file for the guidelines for this.
+
+> **Streamlined Protocol for Content Removal Requests (Recommended over _DMCA_)**
+   > 1. Read CONTRIBUTING.md to see issue guidelines
+   > 2. Open a *content removal request* issue
+   > 3. Send an email to bruno.c.scaglione@gmail.com with the subject "[lunchSTEM] Content Removal Request: #GITHUB_ISSUE_NUMBER_PLACEHOLDER" explaining: who you are, the path of the content(s) you need to be removed and link to the specific issue you opened.
+
+<br>
+
+> This option is __faster and more friendly than a *DMCA*__ notification. If we receive multiple *DMCA* notifications, the project risks being removed from *Github* (even after taking down the contents) and a lot of people that could benefit from it will be affected.
+
+***Digital Millennium Copyright Act* (*DMCA*) Compliance:** we comply with the Digital Millennium Copyright Act (DMCA). For formal takedown requests, please follow the *DMCA* process.
+
+## 📝 Credit Attribution 
+
+Credit attribution data of a pdf file is stored in `<file_name>.pdf.source.json` which should be opened directly (without `dvc pull`). This file can contain authors, university, publisher, link do the source, and other metadata about the specific file it references. Default value of fields are `null`, with the exception of the default value of the `changes_were_made` field which is `False`.
 
 ## ⚖️ Disclaimer & Terms
 
