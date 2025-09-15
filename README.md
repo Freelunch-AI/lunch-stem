@@ -62,7 +62,7 @@ If you find lunchSTEM useful, please consider giving us a star on GitHub! It hel
 
 - [🔍 Overview](#-overview)
 - [🎯 Who is this for?](#-who-is-this-for)
-- [� Project Statistics](#-project-statistics)
+- [📊 Project Statistics](#-project-statistics)
 - [⚙️ Requirements for Usage](#-requirements-for-usage)
 - [🚀 How to Use](#-how-to-use)
 - [📁 Directory Structure and Naming Conventions](#-directory-structure-and-naming-conventions)
