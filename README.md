@@ -119,7 +119,10 @@ These can be installed by following their respective installation guide on their
 
 ## 🚀 How to Use
 
-1. **Open a terminal**: To open the terminal, use your operating system's search function (by pressing the Windows key or Cmd + Space bar on Mac) and type "terminal," "Command Prompt," or "Windows Terminal" and select the app
+1. **Open a terminal**: To open the terminal, use your operating system's search box.
+
+- For *Linux*: search "terminal"
+- For *Windows*: search "powershell" and click on "Windows Powershell"
 
 2. **Clone the repo with git** (this command will create a `lunch-stem` folder in your current directory)
 
@@ -144,7 +147,7 @@ These can be installed by following their respective installation guide on their
 
    Configure rclone
 
-   Enable script execution
+   Enable _bash_ script execution
 
    ```bash
    chmod +x scripts/setup 
@@ -160,7 +163,7 @@ These can be installed by following their respective installation guide on their
 
    **For Windows:**
 
-   Enable execution of scripts within the terminal session
+   Enable execution of scripts within the _powershell_ session
 
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
@@ -198,28 +201,48 @@ These can be installed by following their respective installation guide on their
 
       This command will get the `.pdf` files and put it in your current directory.
 
+      > [!WARNING]
+      > **`/` or `\` as separators inside the paths?**
+      >
+      > `Linux` only accepts `/`
+      >
+      > `Windows` accepts both.
+
+      > [!WARNING]
+      > Is it necessary to put paths inside `""` quotes?
+      >
+      > Yes, it is. Because a lot of paths have directories and/or files with blank spaces. **If don't put the path inside `""` quotes, the command will not work.**
+   
       > [!TIP]
-      > **Example Usage:**
+      > **Example Usage with absolute paths:**
+      > Suppose `current_path` == `"D:\coding-workspace\lunch-stem"`
       > 
       > ```bash
       > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
       > ```
-      > Downloads `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` and `5 - Threads, Condition Variables, Preemption.pdf` in the directory the command was run.
+      > This command downloads `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` and `5 - Threads, Condition Variables, Preemption.pdf` in `current_path`.
+
+      > [!TIP]
+      > **Example Usage with relative paths (relative to the current path in which you are running the command):**
+      > Suppose `current_path` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+      > 
+      > ```bash
+      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+      > ```
+      > This command downloads `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` and `5 - Threads, Condition Variables, Preemption.pdf` in `current_path`.
 
 
-      If you want to put files in the same place as the `pdf.dvc ` file then use:
+      If you want to put files in the same place as their respective `pdf.dvc` file then use:
 
       ```bash
       lunch files "<first/dvc/file/path/placeholder.pdf.dvc>" "[second/dvc/file/path/placeholder.pdf.dvc]" --in-place
       ```
-
       - _Note 1:_ first file path argument is required, the rest are optional.
       - _Note 2:_ the file path used in this command shouldn't have `.source.json` at the end of it. it should end with `.pdf.dvc`.
       - _Note 3:_ other types of files (e.g. `.txt`) should be opened directly, without using the lunch CLI.
       - _Note 4:_ if `.web.txt` is present, then you shouldn't try this command, just copy and paste the link inside `.web.txt` in your browser. We will implement a `lunch get` later on to get files from the web.
       - _Note 5:_ the `.pdf` file shouldn't be visible before you run this command.
       - _Note 6:_ you can get the file paths via the graphical user interface of your Operating System, each operating system has an easy way.
-
 
       **Download all the files from a specific folder via:**
 
@@ -320,8 +343,8 @@ If you want to contribute to the project, check out our [CONTRIBUTING.md](https:
 
 ### Phase B: Important Additions
 
-5. **[b][a]** Create a proper (not in bash, with docstrings, modular, with tests, compiled) *lunchSTEM CLI* package/installable where you can:
-   1. Get files or directories (already implemented in a basic way)
+5. **[b][a]** Create a proper (not in bash, with docstrings, modular, with tests, compiled) *lunchSTEM CLI* package/installable where you can also:
+   1. Get files or directories from the web.
    2. Hide/Show certain file types (e.g., hide: .dvc, .source.json, .prerequisites.json, symlinks for other operating systems, etc)
    3. Do search: keyword search and semantic search
 

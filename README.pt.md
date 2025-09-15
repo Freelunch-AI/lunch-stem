@@ -118,7 +118,10 @@ Estas podem ser instaladas seguindo seus respectivos guias de instalação em se
 
 ## 🚀 Como Usar
 
-1. **Abrir um terminal**: Para abrir o terminal, use a função de pesquisa do seu sistema operacional (pressionando a tecla Windows ou Cmd + Barra de espaço no Mac) e digite "terminal", "Prompt de Comando" ou "Windows Terminal" e selecione o aplicativo
+1. **Abrir um terminal**: Para abrir o terminal, use a caixa de pesquisa do seu sistema operacional.
+
+- Para *Linux*: pesquise "terminal"
+- Para *Windows*: pesquise "powershell" e clique em "Windows Powershell"
 
 2. **Clonar o repositório com git** (este comando criará uma pasta `lunch-stem` no seu diretório atual)
 
@@ -143,7 +146,7 @@ Estas podem ser instaladas seguindo seus respectivos guias de instalação em se
 
    Configurar rclone
 
-   Habilitar execução de script
+   Habilitar execução de script _bash_
 
    ```bash
    chmod +x scripts/setup 
@@ -159,7 +162,7 @@ Estas podem ser instaladas seguindo seus respectivos guias de instalação em se
 
    **Para Windows:**
 
-   Habilitar execução de scripts dentro da sessão do terminal
+   Habilitar execução de scripts dentro da sessão do _powershell_
 
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
@@ -197,13 +200,35 @@ Estas podem ser instaladas seguindo seus respectivos guias de instalação em se
 
       Este comando obterá os arquivos `.pdf` e os colocará no seu diretório atual.
 
+      > [!WARNING]
+      > **`/` ou `\` como separadores dentro dos caminhos?**
+      >
+      > `Linux` aceita apenas `/`
+      >
+      > `Windows` aceita ambos.
+
+      > [!WARNING]
+      > É necessário colocar os caminhos dentro de aspas `""`?
+      >
+      > Sim, é necessário. Porque muitos caminhos têm diretórios e/ou arquivos com espaços em branco. **Se você não colocar o caminho dentro de aspas `""`, o comando não funcionará.**
+
       > [!TIP]
-      > **Exemplo de Uso:**
+      > **Exemplo de Uso com caminhos absolutos:**
+      > Suponha que `caminho_atual` == `"D:\coding-workspace\lunch-stem"`
       > 
       > ```bash
       > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
       > ```
-      > Baixa `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` e `5 - Threads, Condition Variables, Preemption.pdf` no diretório onde o comando foi executado.
+      > Baixa `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` e `5 - Threads, Condition Variables, Preemption.pdf` em `caminho_atual`.
+
+      > [!TIP]
+      > **Exemplo de Uso com caminhos relativos (relativos ao caminho atual no qual você está executando o comando):**
+      > Suponha que `caminho_atual` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+      > 
+      > ```bash
+      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+      > ```
+      > Baixa `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` e `5 - Threads, Condition Variables, Preemption.pdf` em `caminho_atual`.
 
 
       Se você quiser colocar arquivos no mesmo lugar que o arquivo `pdf.dvc`, use:
@@ -320,7 +345,7 @@ Se você quer contribuir para o projeto, confira nosso [CONTRIBUTING.md](https:/
 ### Fase B: Adições Importantes
 
 5. **[b][a]** Criar um pacote/instalável *CLI lunchSTEM* adequado (não em bash, com docstrings, modular, com testes, compilado) onde você pode:
-   1. Obter arquivos ou diretórios (já implementado de forma básica)
+   1. Obter arquivos ou diretórios da web.
    2. Esconder/Mostrar certos tipos de arquivo (ex., esconder: .dvc, .source.json, .prerequisites.json, symlinks para outros sistemas operacionais, etc)
    3. Fazer busca: busca por palavra-chave e busca semântica
 

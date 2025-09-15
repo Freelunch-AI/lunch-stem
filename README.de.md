@@ -118,7 +118,10 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
 ## 🚀 Verwendung
 
-1. **Terminal öffnen**: Um das Terminal zu öffnen, verwenden Sie die Suchfunktion Ihres Betriebssystems (durch Drücken der Windows-Taste oder Cmd + Leertaste auf Mac) und geben Sie "Terminal", "Eingabeaufforderung" oder "Windows Terminal" ein und wählen Sie die App aus
+1. **Terminal öffnen**: Um das Terminal zu öffnen, verwenden Sie das Suchfeld Ihres Betriebssystems.
+
+- Für *Linux*: suchen Sie nach "terminal"
+- Für *Windows*: suchen Sie nach "powershell" und klicken Sie auf "Windows Powershell"
 
 2. **Repository mit git klonen** (dieser Befehl erstellt einen `lunch-stem` Ordner in Ihrem aktuellen Verzeichnis)
 
@@ -143,7 +146,7 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
    rclone konfigurieren
 
-   Skriptausführung aktivieren
+   _Bash_-Skriptausführung aktivieren
 
    ```bash
    chmod +x scripts/setup 
@@ -159,7 +162,7 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
    **Für Windows:**
 
-   Ausführung von Skripten innerhalb der Terminal-Sitzung aktivieren
+   Ausführung von Skripten innerhalb der _PowerShell_-Sitzung aktivieren
 
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
@@ -197,13 +200,35 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
       Dieser Befehl holt die `.pdf` Dateien und legt sie in Ihr aktuelles Verzeichnis.
 
+      > [!WARNING]
+      > **`/` oder `\` als Trennzeichen in den Pfaden?**
+      >
+      > `Linux` akzeptiert nur `/`
+      >
+      > `Windows` akzeptiert beide.
+
+      > [!WARNING]
+      > Ist es notwendig, Pfade in `""` Anführungszeichen zu setzen?
+      >
+      > Ja, das ist notwendig. Denn viele Pfade haben Verzeichnisse und/oder Dateien mit Leerzeichen. **Wenn Sie den Pfad nicht in `""` Anführungszeichen setzen, funktioniert der Befehl nicht.**
+
       > [!TIP]
-      > **Beispiel-Verwendung:**
+      > **Beispiel-Verwendung mit absoluten Pfaden:**
+      > Angenommen `aktueller_pfad` == `"D:\coding-workspace\lunch-stem"`
       > 
       > ```bash
       > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
       > ```
-      > Lädt `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` und `5 - Threads, Condition Variables, Preemption.pdf` in das Verzeichnis herunter, in dem der Befehl ausgeführt wurde.
+      > Lädt `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` und `5 - Threads, Condition Variables, Preemption.pdf` in `aktueller_pfad` herunter.
+
+      > [!TIP]
+      > **Beispiel-Verwendung mit relativen Pfaden (relativ zum aktuellen Pfad, in dem Sie den Befehl ausführen):**
+      > Angenommen `aktueller_pfad` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+      > 
+      > ```bash
+      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+      > ```
+      > Lädt `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` und `5 - Threads, Condition Variables, Preemption.pdf` in `aktueller_pfad` herunter.
 
 
       Wenn Sie Dateien an derselben Stelle wie die `pdf.dvc` Datei ablegen möchten, verwenden Sie:
@@ -320,7 +345,7 @@ Wenn Sie zum Projekt beitragen möchten, schauen Sie sich unsere [CONTRIBUTING.m
 ### Phase B: Wichtige Ergänzungen
 
 5. **[b][a]** Ein ordentliches (nicht in bash, mit Docstrings, modular, mit Tests, kompiliert) *lunchSTEM CLI* Paket/installierbar erstellen, wo Sie:
-   1. Dateien oder Verzeichnisse erhalten können (bereits grundlegend implementiert)
+   1. Dateien oder Verzeichnisse aus dem Web erhalten können.
    2. Bestimmte Dateitypen verstecken/anzeigen können (z.B. verstecken: .dvc, .source.json, .prerequisites.json, Symlinks für andere Betriebssysteme, etc.)
    3. Suche durchführen können: Schlüsselwortsuche und semantische Suche
 

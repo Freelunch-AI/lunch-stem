@@ -118,7 +118,10 @@
 
 ## 🚀 如何使用
 
-1. **打开终端**：要打开终端，请使用操作系统的搜索功能（按 Windows 键或在 Mac 上按 Cmd + 空格键）并输入"terminal"、"Command Prompt"或"Windows Terminal"，然后选择应用程序
+1. **打开终端**：要打开终端，请使用操作系统的搜索框。
+
+- 对于 *Linux*：搜索"terminal"
+- 对于 *Windows*：搜索"powershell"并点击"Windows Powershell"
 
 2. **使用 git 克隆仓库**（此命令将在您当前目录中创建一个 `lunch-stem` 文件夹）
 
@@ -143,7 +146,7 @@
 
    配置 rclone
 
-   启用脚本执行
+   启用 _bash_ 脚本执行
 
    ```bash
    chmod +x scripts/setup 
@@ -159,7 +162,7 @@
 
    **对于 Windows：**
 
-   在终端会话中启用脚本执行
+   在 _powershell_ 会话中启用脚本执行
 
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
@@ -197,13 +200,35 @@
 
       此命令将获取 `.pdf` 文件并将其放在您当前的目录中。
 
+      > [!WARNING]
+      > **路径中使用 `/` 还是 `\` 作为分隔符？**
+      >
+      > `Linux` 只接受 `/`
+      >
+      > `Windows` 两者都接受。
+
+      > [!WARNING]
+      > 是否需要将路径放在 `""` 引号内？
+      >
+      > 是的，这是必要的。因为许多路径的目录和/或文件名中有空格。**如果不将路径放在 `""` 引号内，命令将无法工作。**
+
       > [!TIP]
-      > **使用示例：**
+      > **绝对路径使用示例：**
+      > 假设 `当前路径` == `"D:\coding-workspace\lunch-stem"`
       > 
       > ```bash
       > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
       > ```
-      > 在运行命令的目录中下载 `3 - OS, Virtual Memory, OS Abstractions.pdf`、`4 - Bounded Buffers, Concurrency, Locks.pdf` 和 `5 - Threads, Condition Variables, Preemption.pdf`。
+      > 在 `当前路径` 中下载 `3 - OS, Virtual Memory, OS Abstractions.pdf`、`4 - Bounded Buffers, Concurrency, Locks.pdf` 和 `5 - Threads, Condition Variables, Preemption.pdf`。
+
+      > [!TIP]
+      > **相对路径使用示例（相对于您运行命令的当前路径）：**
+      > 假设 `当前路径` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+      > 
+      > ```bash
+      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+      > ```
+      > 在 `当前路径` 中下载 `3 - OS, Virtual Memory, OS Abstractions.pdf`、`4 - Bounded Buffers, Concurrency, Locks.pdf` 和 `5 - Threads, Condition Variables, Preemption.pdf`。
 
 
       如果您想将文件放在与 `pdf.dvc` 文件相同的位置，请使用：
@@ -320,7 +345,7 @@
 ### 阶段 B：重要添加
 
 5. **[b][a]** 创建适当的（不是 bash，有文档字符串、模块化、有测试、编译的）*lunchSTEM CLI* 包/可安装包，您可以：
-   1. 获取文件或目录（已以基本方式实现）
+   1. 从网络获取文件或目录。
    2. 隐藏/显示某些文件类型（例如，隐藏：.dvc、.source.json、.prerequisites.json、其他操作系统的符号链接等）
    3. 进行搜索：关键词搜索和语义搜索
 

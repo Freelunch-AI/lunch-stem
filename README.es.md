@@ -118,7 +118,10 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
 ## 🚀 Cómo Usar
 
-1. **Abrir una terminal**: Para abrir la terminal, usa la función de búsqueda de tu sistema operativo (presionando la tecla Windows o Cmd + barra espaciadora en Mac) y escribe "terminal", "Símbolo del sistema" o "Windows Terminal" y selecciona la aplicación
+1. **Abrir una terminal**: Para abrir la terminal, usa el cuadro de búsqueda de tu sistema operativo.
+
+- Para *Linux*: busca "terminal"
+- Para *Windows*: busca "powershell" y haz clic en "Windows Powershell"
 
 2. **Clonar el repositorio con git** (este comando creará una carpeta `lunch-stem` en tu directorio actual)
 
@@ -143,7 +146,7 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
    Configurar rclone
 
-   Habilitar ejecución de scripts
+   Habilitar ejecución de scripts _bash_
 
    ```bash
    chmod +x scripts/setup 
@@ -159,7 +162,7 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
    **Para Windows:**
 
-   Habilitar ejecución de scripts dentro de la sesión de terminal
+   Habilitar ejecución de scripts dentro de la sesión de _powershell_
 
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
@@ -197,13 +200,35 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
       Este comando obtendrá los archivos `.pdf` y los pondrá en tu directorio actual.
 
+      > [!WARNING]
+      > **¿`/` o `\` como separadores dentro de las rutas?**
+      >
+      > `Linux` solo acepta `/`
+      >
+      > `Windows` acepta ambos.
+
+      > [!WARNING]
+      > ¿Es necesario poner las rutas dentro de comillas `""`?
+      >
+      > Sí, es necesario. Porque muchas rutas tienen directorios y/o archivos con espacios en blanco. **Si no pones la ruta dentro de comillas `""`, el comando no funcionará.**
+
       > [!TIP]
-      > **Ejemplo de Uso:**
+      > **Ejemplo de Uso con rutas absolutas:**
+      > Supongamos que `ruta_actual` == `"D:\coding-workspace\lunch-stem"`
       > 
       > ```bash
       > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
       > ```
-      > Descarga `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` y `5 - Threads, Condition Variables, Preemption.pdf` en el directorio donde se ejecutó el comando.
+      > Descarga `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` y `5 - Threads, Condition Variables, Preemption.pdf` en `ruta_actual`.
+
+      > [!TIP]
+      > **Ejemplo de Uso con rutas relativas (relativas a la ruta actual en la que estás ejecutando el comando):**
+      > Supongamos que `ruta_actual` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+      > 
+      > ```bash
+      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+      > ```
+      > Descarga `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` y `5 - Threads, Condition Variables, Preemption.pdf` en `ruta_actual`.
 
 
       Si quieres poner archivos en el mismo lugar que el archivo `pdf.dvc`, entonces usa:
@@ -320,7 +345,7 @@ Si quieres contribuir al proyecto, revisa nuestro [CONTRIBUTING.md](https://gith
 ### Fase B: Adiciones Importantes
 
 5. **[b][a]** Crear un paquete/instalable *CLI de lunchSTEM* apropiado (no en bash, con docstrings, modular, con pruebas, compilado) donde puedas:
-   1. Obtener archivos o directorios (ya implementado de manera básica)
+   1. Obtener archivos o directorios desde la web.
    2. Ocultar/Mostrar ciertos tipos de archivo (ej., ocultar: .dvc, .source.json, .prerequisites.json, enlaces simbólicos para otros sistemas operativos, etc.)
    3. Hacer búsqueda: búsqueda por palabras clave y búsqueda semántica
 

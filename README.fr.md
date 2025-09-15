@@ -118,7 +118,10 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
 ## 🚀 Comment Utiliser
 
-1. **Ouvrir un terminal** : Pour ouvrir le terminal, utilisez la fonction de recherche de votre système d'exploitation (en appuyant sur la touche Windows ou Cmd + Barre d'espace sur Mac) et tapez "terminal", "Invite de commandes" ou "Windows Terminal" et sélectionnez l'application
+1. **Ouvrir un terminal** : Pour ouvrir le terminal, utilisez la zone de recherche de votre système d'exploitation.
+
+- Pour *Linux* : recherchez "terminal"
+- Pour *Windows* : recherchez "powershell" et cliquez sur "Windows Powershell"
 
 2. **Cloner le dépôt avec git** (cette commande créera un dossier `lunch-stem` dans votre répertoire actuel)
 
@@ -143,7 +146,7 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
    Configurer rclone
 
-   Activer l'exécution de scripts
+   Activer l'exécution de scripts _bash_
 
    ```bash
    chmod +x scripts/setup 
@@ -159,7 +162,7 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
    **Pour Windows :**
 
-   Activer l'exécution de scripts dans la session terminal
+   Activer l'exécution de scripts dans la session _powershell_
 
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
@@ -197,13 +200,35 @@ Ceux-ci peuvent être installés en suivant leur guide d'installation respectif 
 
       Cette commande obtiendra les fichiers `.pdf` et les mettra dans votre répertoire actuel.
 
+      > [!WARNING]
+      > **`/` ou `\` comme séparateurs dans les chemins ?**
+      >
+      > `Linux` n'accepte que `/`
+      >
+      > `Windows` accepte les deux.
+
+      > [!WARNING]
+      > Est-il nécessaire de mettre les chemins entre guillemets `""` ?
+      >
+      > Oui, c'est nécessaire. Parce que beaucoup de chemins ont des répertoires et/ou des fichiers avec des espaces. **Si vous ne mettez pas le chemin entre guillemets `""`, la commande ne fonctionnera pas.**
+
       > [!TIP]
-      > **Exemple d'Utilisation :**
+      > **Exemple d'Utilisation avec chemins absolus :**
+      > Supposons que `chemin_actuel` == `"D:\coding-workspace\lunch-stem"`
       > 
       > ```bash
       > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
       > ```
-      > Télécharge `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` et `5 - Threads, Condition Variables, Preemption.pdf` dans le répertoire où la commande a été exécutée.
+      > Télécharge `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` et `5 - Threads, Condition Variables, Preemption.pdf` dans `chemin_actuel`.
+
+      > [!TIP]
+      > **Exemple d'Utilisation avec chemins relatifs (relatifs au chemin actuel dans lequel vous exécutez la commande) :**
+      > Supposons que `chemin_actuel` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+      > 
+      > ```bash
+      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+      > ```
+      > Télécharge `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` et `5 - Threads, Condition Variables, Preemption.pdf` dans `chemin_actuel`.
 
 
       Si vous voulez mettre les fichiers au même endroit que le fichier `pdf.dvc`, utilisez :
@@ -320,7 +345,7 @@ Si vous voulez contribuer au projet, consultez notre [CONTRIBUTING.md](https://g
 ### Phase B : Ajouts Importants
 
 5. **[b][a]** Créer un package/installable *CLI lunchSTEM* approprié (pas en bash, avec docstrings, modulaire, avec tests, compilé) où vous pouvez :
-   1. Obtenir des fichiers ou répertoires (déjà implémenté de manière basique)
+   1. Obtenir des fichiers ou répertoires depuis le web.
    2. Cacher/Montrer certains types de fichiers (ex., cacher : .dvc, .source.json, .prerequisites.json, liens symboliques pour d'autres systèmes d'exploitation, etc)
    3. Faire une recherche : recherche par mots-clés et recherche sémantique
 
