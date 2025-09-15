@@ -201,6 +201,8 @@ These can be installed by following their respective installation guide on their
 
       This command will get the `.pdf` files and put it in your current directory.
 
+---
+
 > [!WARNING]
 > **`/` or `\` as separators inside the paths?**
 >
@@ -232,6 +234,7 @@ These can be installed by following their respective installation guide on their
 > This command downloads `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` and `5 - Threads, Condition Variables, Preemption.pdf` in `current_path`.
 
 
+   - (continuation) <br>
       If you want to put files in the same place as their respective `pdf.dvc` file then use:
 
       ```bash
