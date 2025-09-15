@@ -1,7 +1,8 @@
 
-<p align="center">
-   <img src="./assets/logos/lunch_stem_light_logo_with_name.png" alt="lunchSTEM Logo" width="300"/>
-</p>
+<div align="center">
+   <img src="./assets/logos/lunch_stem_light_logo_with_name.png" alt="lunchSTEM Logo" width="300" style="display: inline-block; margin-right: 10px;"/> 
+   <img src="./assets/lunch-stem-promotion-meme.jpg" alt="lunchSTEM meme" width="300" style="display: inline-block;">
+</div>
 
 <h1 align="center">Democratizing <i>STEM</i> knowledge in an organized manner</h1><br>
 
