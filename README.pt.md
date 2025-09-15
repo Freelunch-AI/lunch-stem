@@ -200,37 +200,37 @@ Estas podem ser instaladas seguindo seus respectivos guias de instalação em se
 
       Este comando obterá os arquivos `.pdf` e os colocará no seu diretório atual.
 
-      > [!WARNING]
-      > **`/` ou `\` como separadores dentro dos caminhos?**
-      >
-      > `Linux` aceita apenas `/`
-      >
-      > `Windows` aceita ambos.
+> [!WARNING]
+> **`/` ou `\` como separadores dentro dos caminhos?**
+>
+> `Linux` aceita apenas `/`
+>
+> `Windows` aceita ambos.
 
-      > [!WARNING]
-      > É necessário colocar os caminhos dentro de aspas `""`?
-      >
-      > Sim, é necessário. Porque muitos caminhos têm diretórios e/ou arquivos com espaços em branco. **Se você não colocar o caminho dentro de aspas `""`, o comando não funcionará.**
+> [!WARNING]
+> É necessário colocar os caminhos dentro de aspas `""`?
+>
+> Sim, é necessário. Porque muitos caminhos têm diretórios e/ou arquivos com espaços em branco. **Se você não colocar o caminho dentro de aspas `""`, o comando não funcionará.**
 
-      > [!TIP]
-      > **Exemplo de Uso com caminhos absolutos:**
-      > Suponha que `caminho_atual` == `"D:\coding-workspace\lunch-stem"`
-      > 
-      > ```bash
-      > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
-      > ```
-      > Baixa `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` e `5 - Threads, Condition Variables, Preemption.pdf` em `caminho_atual`.
+> [!TIP]
+> **Exemplo de Uso com caminhos absolutos:**
+> Suponha que `caminho_atual` == `"D:\coding-workspace\lunch-stem"`
+> 
+> ```bash
+> lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
+> ```
+> Baixa `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` e `5 - Threads, Condition Variables, Preemption.pdf` em `caminho_atual`.
 
-      > [!TIP]
-      > **Exemplo de Uso com caminhos relativos (relativos ao caminho atual no qual você está executando o comando):**
-      > Suponha que `caminho_atual` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
-      > 
-      > ```bash
-      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
-      > ```
-      > Baixa `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` e `5 - Threads, Condition Variables, Preemption.pdf` em `caminho_atual`.
+> [!TIP]
+> **Exemplo de Uso com caminhos relativos (relativos ao caminho atual no qual você está executando o comando):**
+> Suponha que `caminho_atual` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+> 
+> ```bash
+> lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+> ```
+> Baixa `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` e `5 - Threads, Condition Variables, Preemption.pdf` em `caminho_atual`.
 
-
+   - (continuação) <br>
       Se você quiser colocar arquivos no mesmo lugar que o arquivo `pdf.dvc`, use:
 
       ```bash

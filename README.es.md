@@ -200,37 +200,37 @@ Estas pueden instalarse siguiendo su respectiva guía de instalación en sus sit
 
       Este comando obtendrá los archivos `.pdf` y los pondrá en tu directorio actual.
 
-      > [!WARNING]
-      > **¿`/` o `\` como separadores dentro de las rutas?**
-      >
-      > `Linux` solo acepta `/`
-      >
-      > `Windows` acepta ambos.
+> [!WARNING]
+> **¿`/` o `\` como separadores dentro de las rutas?**
+>
+> `Linux` solo acepta `/`
+>
+> `Windows` acepta ambos.
 
-      > [!WARNING]
-      > ¿Es necesario poner las rutas dentro de comillas `""`?
-      >
-      > Sí, es necesario. Porque muchas rutas tienen directorios y/o archivos con espacios en blanco. **Si no pones la ruta dentro de comillas `""`, el comando no funcionará.**
+> [!WARNING]
+> ¿Es necesario poner las rutas dentro de comillas `""`?
+>
+> Sí, es necesario. Porque muchas rutas tienen directorios y/o archivos con espacios en blanco. **Si no pones la ruta dentro de comillas `""`, el comando no funcionará.**
 
-      > [!TIP]
-      > **Ejemplo de Uso con rutas absolutas:**
-      > Supongamos que `ruta_actual` == `"D:\coding-workspace\lunch-stem"`
-      > 
-      > ```bash
-      > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
-      > ```
-      > Descarga `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` y `5 - Threads, Condition Variables, Preemption.pdf` en `ruta_actual`.
+> [!TIP]
+> **Ejemplo de Uso con rutas absolutas:**
+> Supongamos que `ruta_actual` == `"D:\coding-workspace\lunch-stem"`
+> 
+> ```bash
+> lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
+> ```
+> Descarga `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` y `5 - Threads, Condition Variables, Preemption.pdf` en `ruta_actual`.
 
-      > [!TIP]
-      > **Ejemplo de Uso con rutas relativas (relativas a la ruta actual en la que estás ejecutando el comando):**
-      > Supongamos que `ruta_actual` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
-      > 
-      > ```bash
-      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
-      > ```
-      > Descarga `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` y `5 - Threads, Condition Variables, Preemption.pdf` en `ruta_actual`.
+> [!TIP]
+> **Ejemplo de Uso con rutas relativas (relativas a la ruta actual en la que estás ejecutando el comando):**
+> Supongamos que `ruta_actual` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+> 
+> ```bash
+> lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+> ```
+> Descarga `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` y `5 - Threads, Condition Variables, Preemption.pdf` en `ruta_actual`.
 
-
+   - (continuación) <br>
       Si quieres poner archivos en el mismo lugar que el archivo `pdf.dvc`, entonces usa:
 
       ```bash

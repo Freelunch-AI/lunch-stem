@@ -200,37 +200,37 @@
 
       此命令将获取 `.pdf` 文件并将其放在您当前的目录中。
 
-      > [!WARNING]
-      > **路径中使用 `/` 还是 `\` 作为分隔符？**
-      >
-      > `Linux` 只接受 `/`
-      >
-      > `Windows` 两者都接受。
+> [!WARNING]
+> **路径中使用 `/` 还是 `\` 作为分隔符？**
+>
+> `Linux` 只接受 `/`
+>
+> `Windows` 两者都接受。
 
-      > [!WARNING]
-      > 是否需要将路径放在 `""` 引号内？
-      >
-      > 是的，这是必要的。因为许多路径的目录和/或文件名中有空格。**如果不将路径放在 `""` 引号内，命令将无法工作。**
+> [!WARNING]
+> 是否需要将路径放在 `""` 引号内？
+>
+> 是的，这是必要的。因为许多路径的目录和/或文件名中有空格。**如果不将路径放在 `""` 引号内，命令将无法工作。**
 
-      > [!TIP]
-      > **绝对路径使用示例：**
-      > 假设 `当前路径` == `"D:\coding-workspace\lunch-stem"`
-      > 
-      > ```bash
-      > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
-      > ```
-      > 在 `当前路径` 中下载 `3 - OS, Virtual Memory, OS Abstractions.pdf`、`4 - Bounded Buffers, Concurrency, Locks.pdf` 和 `5 - Threads, Condition Variables, Preemption.pdf`。
+> [!TIP]
+> **绝对路径使用示例：**
+> 假设 `当前路径` == `"D:\coding-workspace\lunch-stem"`
+> 
+> ```bash
+> lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
+> ```
+> 在 `当前路径` 中下载 `3 - OS, Virtual Memory, OS Abstractions.pdf`、`4 - Bounded Buffers, Concurrency, Locks.pdf` 和 `5 - Threads, Condition Variables, Preemption.pdf`。
 
-      > [!TIP]
-      > **相对路径使用示例（相对于您运行命令的当前路径）：**
-      > 假设 `当前路径` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
-      > 
-      > ```bash
-      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
-      > ```
-      > 在 `当前路径` 中下载 `3 - OS, Virtual Memory, OS Abstractions.pdf`、`4 - Bounded Buffers, Concurrency, Locks.pdf` 和 `5 - Threads, Condition Variables, Preemption.pdf`。
+> [!TIP]
+> **相对路径使用示例（相对于您运行命令的当前路径）：**
+> 假设 `当前路径` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+> 
+> ```bash
+> lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+> ```
+> 在 `当前路径` 中下载 `3 - OS, Virtual Memory, OS Abstractions.pdf`、`4 - Bounded Buffers, Concurrency, Locks.pdf` 和 `5 - Threads, Condition Variables, Preemption.pdf`。
 
-
+   - (继续) <br>
       如果您想将文件放在与 `pdf.dvc` 文件相同的位置，请使用：
 
       ```bash

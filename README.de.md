@@ -200,37 +200,37 @@ Diese können installiert werden, indem Sie deren jeweilige Installationsanleitu
 
       Dieser Befehl holt die `.pdf` Dateien und legt sie in Ihr aktuelles Verzeichnis.
 
-      > [!WARNING]
-      > **`/` oder `\` als Trennzeichen in den Pfaden?**
-      >
-      > `Linux` akzeptiert nur `/`
-      >
-      > `Windows` akzeptiert beide.
+> [!WARNING]
+> **`/` oder `\` als Trennzeichen in den Pfaden?**
+>
+> `Linux` akzeptiert nur `/`
+>
+> `Windows` akzeptiert beide.
 
-      > [!WARNING]
-      > Ist es notwendig, Pfade in `""` Anführungszeichen zu setzen?
-      >
-      > Ja, das ist notwendig. Denn viele Pfade haben Verzeichnisse und/oder Dateien mit Leerzeichen. **Wenn Sie den Pfad nicht in `""` Anführungszeichen setzen, funktioniert der Befehl nicht.**
+> [!WARNING]
+> Ist es notwendig, Pfade in `""` Anführungszeichen zu setzen?
+>
+> Ja, das ist notwendig. Denn viele Pfade haben Verzeichnisse und/oder Dateien mit Leerzeichen. **Wenn Sie den Pfad nicht in `""` Anführungszeichen setzen, funktioniert der Befehl nicht.**
 
-      > [!TIP]
-      > **Beispiel-Verwendung mit absoluten Pfaden:**
-      > Angenommen `aktueller_pfad` == `"D:\coding-workspace\lunch-stem"`
-      > 
-      > ```bash
-      > lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
-      > ```
-      > Lädt `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` und `5 - Threads, Condition Variables, Preemption.pdf` in `aktueller_pfad` herunter.
+> [!TIP]
+> **Beispiel-Verwendung mit absoluten Pfaden:**
+> Angenommen `aktueller_pfad` == `"D:\coding-workspace\lunch-stem"`
+> 
+> ```bash
+> lunch files "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b\5 - Threads, Condition Variables, Preemption.pdf.dvc"
+> ```
+> Lädt `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` und `5 - Threads, Condition Variables, Preemption.pdf` in `aktueller_pfad` herunter.
 
-      > [!TIP]
-      > **Beispiel-Verwendung mit relativen Pfaden (relativ zum aktuellen Pfad, in dem Sie den Befehl ausführen):**
-      > Angenommen `aktueller_pfad` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
-      > 
-      > ```bash
-      > lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
-      > ```
-      > Lädt `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` und `5 - Threads, Condition Variables, Preemption.pdf` in `aktueller_pfad` herunter.
+> [!TIP]
+> **Beispiel-Verwendung mit relativen Pfaden (relativ zum aktuellen Pfad, in dem Sie den Befehl ausführen):**
+> Angenommen `aktueller_pfad` == `"D:\coding-workspace\lunch-stem\ai2f\__Loopback\1 - OS Fundamentals_56b97b"`
+> 
+> ```bash
+> lunch files "3 - OS, Virtual Memory, OS Abstractions.pdf.dvc" "4 - Bounded Buffers, Concurrency, Locks.pdf.dvc" "5 - Threads, Condition Variables, Preemption.pdf.dvc"
+> ```
+> Lädt `3 - OS, Virtual Memory, OS Abstractions.pdf`, `4 - Bounded Buffers, Concurrency, Locks.pdf` und `5 - Threads, Condition Variables, Preemption.pdf` in `aktueller_pfad` herunter.
 
-
+   - (fortsetzung) <br>
       Wenn Sie Dateien an derselben Stelle wie die `pdf.dvc` Datei ablegen möchten, verwenden Sie:
 
       ```bash
