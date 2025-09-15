@@ -1,6 +1,9 @@
 <div align="center">
-   <img src="./assets/logos/lunch_stem_light_logo_with_name.png" alt="lunchSTEM Logo" width="300" style="display: inline-block; margin-right: 30px;"/> 
-   <img src="./assets/lunch-stem-promotion-meme.jpg" alt="lunchSTEM meme" width="300" style="display: inline-block;">
+
+| | |
+|:---:|:---:|
+| <img src="./assets/logos/lunch_stem_light_logo_with_name.png" alt="lunchSTEM Logo" width="300"/> | <img src="./assets/lunch-stem-promotion-meme.jpg" alt="lunchSTEM meme" width="300"/> |
+
 </div>
 
 <h1 align="center">以有组织的方式民主化 <i>STEM</i> 知识</h1><br>
