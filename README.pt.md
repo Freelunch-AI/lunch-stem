@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-   <a href="https://discord.gg/W6wmJbZx">
+   <a href="https://discord.gg/eYemXMe8A6">
       <img src="https://img.shields.io/badge/Discord-Junte%20se%20à%20Nossa%20Comunidade-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
    </a>
 </p>
