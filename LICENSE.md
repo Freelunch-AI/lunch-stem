@@ -1,5 +1,11 @@
 # License information
 
+## For the code in this repo
+
+GPL v3 applies.
+
+## For the data files in this repo
+
 For each file in this repo, share-alike distribution applies when possible:
 - __if__ the file internally states that it has *licence X* (where X refers to any specific licence): *licence X* applies to that file
 - __elseif__ the source website of the file states that it has *licence Y* (where Y refers to any specific licence): *licence Y* applies to that file. Note: source website can be contested, because there can be errors in automatic metadata extraction.
