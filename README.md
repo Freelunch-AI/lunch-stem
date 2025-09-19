@@ -376,9 +376,11 @@ If you want to contribute to the project, check out our [CONTRIBUTING.md](https:
 
    3. **[b][a]** Add standard conventions enforcement in CI to keep the knowledge base consistent, avoiding inconsistent PRs.
 
+10. Make a lunchSTEM dataset and put it on *HuggingFace*.
+
 ### Phase C: More Core Features
 
-10. **[b][c][d]** Add features to *lunchSTEM*, potentially using *AgentPool* to help (in parallel: keep adding more materials from `to_add.txt`, but add as `file_name.file_extension.web.txt` with the HTTPS link inside the file):
+11. **[b][c][d]** Add features to *lunchSTEM*, potentially using *AgentPool* to help (in parallel: keep adding more materials from `to_add.txt`, but add as `file_name.file_extension.web.txt` with the HTTPS link inside the file):
     - **Prerequisites:** Add `<file_name>.<file_extension>.prerequisites.json` containing hierarchical list of prerequisites for each file
     - **Exercises:** Put exercises with solutions in every topic directory inside `__Exercises`
     - **Tools:** put software tools in very topic inside `__Tools`. Can be tools for doing or understanding something related to the topic.
@@ -391,9 +393,9 @@ If you want to contribute to the project, check out our [CONTRIBUTING.md](https:
 
 ### Phase D: Nice to Have Improvements
 
-11. **[d]** Migrate from *Google Drive* (I was already paying for 2TB, so that's why I used it) to a better storage option (e.g., *S3*).
+12. **[d]** Migrate from *Google Drive* (I was already paying for 2TB, so that's why I used it) to a better storage option (e.g., *S3*).
 
-12. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes by finetuning SLMs. Agents are continually modified to ensure diversity and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
+13. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes by finetuning SLMs. Agents are continually modified to ensure diversity and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
 
 ## 🗑️ Content Removal and Credit Attribution Requests
 
