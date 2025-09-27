@@ -7,7 +7,7 @@
 
 </div>
 
-<h1 align="center">Democratizing <i>STEM</i> knowledge in an organized manner</h1><br>
+<h1 align="center">Forget paying to learn: just use lunchSTEM for free</h1><br>
 
 <p align="center">
    <strong>🌟 Non-profit, open source project (v0.1.0) 🌟</strong>
