@@ -1689,6 +1689,25 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 
 - Math foundaitons of Geometric Deep Learning: https://media.licdn.com/dms/document/media/v2/D561FAQGAlDDlFJl6qw/feedshare-document-pdf-analyzed/B56ZibvFtFHUAc-/0/1754959479085?e=1758153600&v=beta&t=KFZUaYjo4a_dc84b1p78wyyTe0ZGFwLW1kl4NIFxe4o
 
+- Context Engineering: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
+- AI in Math Course: https://github.com/Nebius-Academy/ai-in-math-course
+
+- LLMs for SRE: https://www.infoq.com/news/2025/09/clickhouse-llm-sre-report/
+
+- Awesome High-performance GPU MatMul: https://www.aleksagordic.com/blog/matmul
+
+- Math foundations for DL Book: https://media.licdn.com/dms/document/media/v2/D4D1FAQHVMLf1h3X_5w/feedshare-document-pdf-analyzed/B4DZmW3g0GJUAY-/0/1759172764632?e=1759968000&v=beta&t=frWovG8KARhJWX1tWifMWHsFGZr6DXvGXCNtvcqOx-Y
+
+- Awesome LoRA: https://thinkingmachines.ai/blog/lora/
+
+- Multimodal AI Slides: https://media.licdn.com/dms/document/media/v2/D4D1FAQEQzqXSMiGVgw/feedshare-document-pdf-analyzed/B4DZmVJEqGJEAY-/0/1759143815324?e=1759968000&v=beta&t=ZEuJWfae2NpteDv9yWEYuXvFnr2pYtjDb5I1s4xvL6M
+
+- Deep Research Agents from Scatch: https://www.newsletter.swirlai.com/p/building-deep-research-agent-from
+
+- ML Lec Notes: https://github.com/merlihson/scientific-resources/blob/main/learning%20materials/machine%20learning/applicative%20ML/Lecture%20Notes%20for%20Machine%20Learning%20and%20Data%20Science%20Courses%20Information%20School%2C%20University%20of%20Washington_compressed.pdf
+
+- Deep RL Book: https://arxiv.org/pdf/2201.02135
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
