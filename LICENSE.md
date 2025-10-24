@@ -2,7 +2,7 @@
 
 ## For the project as a whole
 
-lunchSTEM can be used for any purpose (including commercial purposes), but lunchSTEM cannot be redistributed (for example: forking and sharing is not allowed) without explicit permission from us. 
+lunchSTEM can be used for any purpose (including commercial purposes), but lunchSTEM cannot be redistributed (for example: forking and then publicly sharing the fork is not allowed) without explicit permission from us. 
 
 Also, any project built on top of lunchSTEM (that uses lunchSTEM under the hood, for example, an MCP Server for lunchSTEM contents) can only be published/distributed by a third-party with our explicit permission.
 
