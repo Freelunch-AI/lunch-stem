@@ -113,9 +113,7 @@ These can be installed by following their respective installation guide on their
 - [rclone installation guide](https://rclone.org/install/)
 
 > [!NOTE]
-> When configuring a remote storage for _rclone_, make shure to use the service account option and `lunch-stem-fadf503639fe.json` as the service account file.
->
-> Also, when installing *rclone*, *Windows* users might see a security warning, it's normal.
+> When installing *rclone*, *Windows* users might see a security warning, it's normal.
 
 ## 🚀 How to Use
 
@@ -144,8 +142,6 @@ These can be installed by following their respective installation guide on their
 4. Setup the project
 
    **For Linux**
-
-   Configure rclone
 
    Enable _bash_ script execution
 
