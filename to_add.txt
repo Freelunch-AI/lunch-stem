@@ -1708,6 +1708,115 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 - ML Lec Notes: https://github.com/merlihson/scientific-resources/blob/main/learning%20materials/machine%20learning/applicative%20ML/Lecture%20Notes%20for%20Machine%20Learning%20and%20Data%20Science%20Courses%20Information%20School%2C%20University%20of%20Washington_compressed.pdf
 
 - Deep RL Book: https://arxiv.org/pdf/2201.02135
+
+- Context Enigneering: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
+- LLM Inference Optimization: https://xmarva.github.io/blog/2025/inference-optimization/
+
+- PEFT: https://xmarva.github.io/blog/2025/adapters/
+
+- GPU Engineering for LLMs: https://modelcraft.substack.com/p/fundamentals-of-gpu-engineering
+
+- GEMM on tensor cores: https://am17an.bearblog.dev/a-gentle-introduction-to-gemm-using-mma-tensor-cores/
+
+- Intro to Probability Lec Notes: https://media.licdn.com/dms/document/media/v2/D4D1FAQHZ7omNCDsFEg/feedshare-document-pdf-analyzed/B4DZmlssDpHwAY-/0/1759421584464?e=1762992000&v=beta&t=n9V0ZV8odBJ-khS4vZUFoo4Y0Oa-CVsG575Ryr_TOMk
+
+- DevOps Playgrounds: https://kodekloud.com/studio/labs
+
+- LMs Lec Notes: https://media.licdn.com/dms/document/media/v2/D4D1FAQH8S0CHasRuyg/feedshare-document-pdf-analyzed/B4DZmt4HbFHwAY-/0/1759558921027?e=1762992000&v=beta&t=3gUXSAweeXt67fbViTGbiJ0LQrz50J8nODxSdkVlRwE
+
+- Math of DL Book: https://deeplearningmath.org/
+
+- Self Attention in Depth: https://media.licdn.com/dms/document/media/v2/D4D1FAQHLddTNU2VWhw/feedshare-document-pdf-analyzed/B4DZmb_VAsGwAY-/0/1759258703753?e=1762992000&v=beta&t=nQtoQqC09Z2MwYsOuv5OEOtNBoJRXUf3liUx3kP638c
+
+- LLM Evals: https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches?utm_source=post-email-title&publication_id=1174659&post_id=175225406&utm_campaign=email-post-title&isFreemail=true&r=u733s&triedRedirect=true&utm_medium=email
+
+- ML Hardware & Systems Youtube Course: https://www.youtube.com/playlist?list=PL0mFAhrXqy9CuopJhAB8GVu_Oy7J0ery6
+
+- Scalable and Efficient Systems for LLMs: https://www.youtube.com/watch?v=aPqvrAk1o5w
+
+- Agents in Prod Playbook: https://drive.google.com/file/d/1GVPdwEh48bErTNdhxD0vqxPAifSx1I6Y/view
+
+- How HF mainatins the gigantic transformers codebase: https://huggingface.co/spaces/transformers-community/Transformers-tenets
+
+- LLM Optimization: https://gaurigupta19.github.io/llms/distributed%20ml/optimization/2025/10/02/efficient-ml.html
+
+- Intro to LLMs Youtube Course: https://www.youtube.com/playlist?list=PLZ2ps__7DhBbaMNZoyW2Hizl8DG6ikkjo
+
+- Math Foundations of ML Youtube Course: https://www.youtube.com/playlist?list=PLgMDNELGJ1CYPJS6m_ygxb4KtHYxh1HjR
+
+- Linear Algebra for ML & Robotics Book: https://www.cis.upenn.edu/~cis5150/linalg-I-f.pdf
+
+- Lec Notes on Quantum Algorithms: https://www.cs.umd.edu/~amchilds/qa/qa.pdf
+
+- LLMs from Scratch Youtube Stanford Course: https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_
+
+- VLMs Youtube Course: https://www.youtube.com/watch?v=tfpGS_doPvY
+
+- LLM RL Finetuning; https://januverma.substack.com/p/fine-tuning-llms-using-reinforcement
+
+- Online RL for LLMs: https://cameronrwolfe.substack.com/p/reinforce?r=56huj&utm_medium=ios&triedRedirect=true
+
+- AI in Multiple GPUs Medium Course: https://medium.com/@lorenzocesconetto/ai-in-multiple-gpus-with-pytorch-1-4-24ce932dff8d
+
+- Learning DSPy: https://thedataquarry.com/blog/learning-dspy-1-the-power-of-good-abstractions/
+
+- Building an SLM from scratch video: https://www.youtube.com/watch?v=lF1yuipDf3U
+
+- MEGA GPU Engineering: https://gpuengineering.com/
+
+- Temporal Agents with Knowledge Graphs: https://cookbook.openai.com/examples/partners/temporal_agents_with_knowledge_graphs/temporal_agents_with_knowledge_graphs
+
+- Pytorch with no-GIL Python for multi-threaded inference: https://trent.me/articles/pytorch-and-python-free-threading/
+
+- SciML course: https://camlab-ethz.github.io/ai4s-course/
+
+- MAth for ML Roadmap: https://thepalindrome.org/p/the-roadmap-of-mathematics-for-machine-learning
+
+- Transformers & LLMs Stanford Youtube Course: https://www.youtube.com/watch?v=Ub3GoFaUcds
+
+- The Geometry of Information: Parallels Between Black Holes and Data Science Models: https://substack.com/inbox/post/176308757?r=dr9w7&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true&triedRedirect=true
+
+- Math for GenAI Youtube Course: https://www.youtube.com/playlist?list=PLZ2ps__7DhBa5xCmncgH7kPqLqMBq7xlu
+
+- HF Robotics Course: https://huggingface.co/robotics-course
+
+- State of FOundation Models Report 2025: https://foundationmodelreport.ai/2025.pdf
+
+- Porting LLMs to Edge Devices: https://multimodalai.substack.com/p/an-ai-engineers-guide-to-running?r=1otddg
+
+- LLM Rl Finetuning: https://januverma.substack.com/p/fine-tuning-llms-using-reinforcement
+
+- ML for Biology Course: https://perso.univ-rennes1.fr/valerie.monbet/MachineLearning/ML_BMC.pdf
+
+- Artificial Intelligence in Biology and Medicine Course: https://ics.uci.edu/~xhx/courses/CS284A/
+
+- GNNs Notes: https://aman.ai/primers/ai/gnn/
+
+- GNN-based Recysys Notes: https://aman.ai/recsys/gnn/
+
+- Graph RAG Article: https://towardsdatascience.com/how-to-implement-graph-rag-using-knowledge-graphs-and-vector-databases-60bb69a22759/
+
+- RAG Applications in different levels of complexity article: https://jxnl.github.io/blog/writing/2024/02/28/levels-of-complexity-rag-applications/
+
+- vLLM Semantic Router Under The Hood Article: https://psinghal.me/posts/03-vllm-semantic-router/
+
+- LM Developemnt Book: https://media.licdn.com/dms/document/media/v2/D4D1FAQHTSBGRwTKg_A/feedshare-document-pdf-analyzed/B4DZomunxNKIAY-/0/1761586354309?e=1762387200&v=beta&t=C4F4R4BcDAM4eIWvVNCV3AwIkXOyTxHWTbPw-PKS9tg
+
+- Vsualizaing VLMs Artice: https://medium.com/advanced-deep-learning/how-ai-sees-and-reads-visualising-vision-language-models-5903c0fab0ab
+
+- Claude Agent Skills under the hood: https://leehanchung.github.io/blogs/2025/10/26/claude-skills-deep-dive/
+
+- Pubic Cloud Services COmparison Website: https://comparecloud.in/
+
+- Training an LLM with just Numpy: https://www.youtube.com/watch?v=1ceCvJvyjzM
+
+- Priciples of Diffusion Models: https://www.arxiv.org/pdf/2510.21890
+
+- CUDA Programming Youtube Freecodecamp Course: https://www.youtube.com/watch?app=desktop&v=86FAWCzIe_4
+
+- LLM Inference Pipeline: https://www.linkedin.com/posts/goabiaryan_%F0%9D%98%8C%F0%9D%98%B7%F0%9D%98%A6%F0%9D%98%B3-%F0%9D%98%B8%F0%9D%98%B0%F0%9D%98%AF%F0%9D%98%A5%F0%9D%98%A6%F0%9D%98%B3-%F0%9D%98%B8%F0%9D%98%A9%F0%9D%98%A2%F0%9D%98%B5-%F0%9D%98%A9%F0%9D%98%A2%F0%9D%98%B1%F0%9D%98%B1%F0%9D%98%A6-activity-7389964386632810496-D6Gs/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACdgFHEBfDzeG8Hs9aTfgvTj3XFXb9MKECQ
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
