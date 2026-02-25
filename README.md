@@ -113,9 +113,7 @@ These can be installed by following their respective installation guide on their
 - [rclone installation guide](https://rclone.org/install/)
 
 > [!NOTE]
-> When configuring a remote storage for _rclone_, make shure to use the service account option and `lunch-stem-fadf503639fe.json` as the service account file.
->
-> Also, when installing *rclone*, *Windows* users might see a security warning, it's normal.
+> When installing *rclone*, *Windows* users might see a security warning, it's normal.
 
 ## 🚀 How to Use
 
@@ -129,11 +127,11 @@ These can be installed by following their respective installation guide on their
    ```bash
    git clone https://github.com/Freelunch-AI/lunch-stem.git
    ```
-   > [!NOTE]
-   > If you are using Windows, it's important to clone inside a top-level directory, to avoid potential errors related to the creating file paths that are too long. Windows typically has a maximum file path of 260 characters.
+> [!NOTE]
+> If you are using Windows, it's important to clone inside a top-level directory, to avoid potential errors related to the creating file paths that are too long. Windows typically has a maximum file path of 260 characters.
 
-   > [!NOTE]
-   > The `git clone` command will copy the project in your machine with the entire folder structure already in place.
+> [!NOTE]
+> The `git clone` command will copy the project in your machine with the entire folder structure already in place.
 
 3. Enter the `lunch-stem` folder
 
@@ -144,8 +142,6 @@ These can be installed by following their respective installation guide on their
 4. Setup the project
 
    **For Linux**
-
-   Configure rclone
 
    Enable _bash_ script execution
 
