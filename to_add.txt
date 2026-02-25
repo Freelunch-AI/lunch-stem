@@ -1695,7 +1695,9 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 
 - LLMs for SRE: https://www.infoq.com/news/2025/09/clickhouse-llm-sre-report/
 
-- Awesome High-performance GPU MatMul: https://www.aleksagordic.com/blog/matmul
+- Awesome GPU Explanation via building High-performance MatMul Kernel: https://www.aleksagordic.com/blog/matmul
+
+- Awesome Browser-based Visualizer of GPU Kernel -> GPU Instructions -> Emulated GPU Running the Kernel
 
 - Math foundations for DL Book: https://media.licdn.com/dms/document/media/v2/D4D1FAQHVMLf1h3X_5w/feedshare-document-pdf-analyzed/B4DZmW3g0GJUAY-/0/1759172764632?e=1759968000&v=beta&t=frWovG8KARhJWX1tWifMWHsFGZr6DXvGXCNtvcqOx-Y
 
@@ -1816,6 +1818,106 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 - CUDA Programming Youtube Freecodecamp Course: https://www.youtube.com/watch?app=desktop&v=86FAWCzIe_4
 
 - LLM Inference Pipeline: https://www.linkedin.com/posts/goabiaryan_%F0%9D%98%8C%F0%9D%98%B7%F0%9D%98%A6%F0%9D%98%B3-%F0%9D%98%B8%F0%9D%98%B0%F0%9D%98%AF%F0%9D%98%A5%F0%9D%98%A6%F0%9D%98%B3-%F0%9D%98%B8%F0%9D%98%A9%F0%9D%98%A2%F0%9D%98%B5-%F0%9D%98%A9%F0%9D%98%A2%F0%9D%98%B1%F0%9D%98%B1%F0%9D%98%A6-activity-7389964386632810496-D6Gs/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACdgFHEBfDzeG8Hs9aTfgvTj3XFXb9MKECQ
+
+- gpt oss 20b from scratch: https://github.com/HamzaElshafie/gpt-oss-20B
+
+- MEGA computer science: https://github.com/ossu/computer-science
+
+- Math Foundations of RL: https://media.licdn.com/dms/document/media/v2/D4D1FAQGxy9MbB6TKpw/feedshare-document-pdf-analyzed/B4DZpFm4BhJIAY-/0/1762104422901?e=1762992000&v=beta&t=YxDSzniPSRzTt83lIwc5LVE25i5vHoH0_NlM4APXCrc
+
+- CI/CD for K8s: https://www.youtube.com/watch?v=NnkUGzaqqOc
+
+- LLMs Advanced Course: https://www.youtube.com/playlist?list=PLqGkIjcOyrGlVqG-CKnVIFKHivbgLzRRJ
+
+- LLMs Course: https://www.youtube.com/playlist?list=PLqGkIjcOyrGnjyBHl4GE2S9kX47X96FH-
+
+- PPO ALgorithm for RL: https://mlwithouttears.com/2025/11/17/understanding-ppo-from-first-principles/
+
+- Lerning Statisics with Jamovi Book: https://davidfoxcroft.github.io/lsj-book/lsj-free.pdf
+
+- DL for CFD: https://theses.hal.science/tel-04393815v1/file/fernandogonzalez.pdf
+
+- ML in CAD: https://web.mit.edu/kjb/www/Principal_Publications/FJ%20Montans,%20%20E%20Cueto%20and%20KJ%20Bathe%20Machine%20Learning%20in%20Computer%20Aided%20Engineering.pdf
+
+- Making a Diffusion Based Vision Action Language Model: https://vaidehibagaria.substack.com/p/creating-a-diffusion-based-vision?r=6km8nh&utm_campaign=post&utm_medium=web&triedRedirect=true
+
+- Interpretable ML Book: https://www.firmai.org/bit/
+
+- MLOps & LLMOps: Production AI Systems Course: https://harvard-iacs.github.io/2024-AC215/#lectures
+
+- Comprehensive Study on Coding Models and Agents: https://arxiv.org/pdf/2511.18538
+
+- LLM Evals Guidebook: https://huggingface.co/spaces/OpenEvals/evaluation-guidebook#llm-basics-to-understand-evaluation
+
+- Certified K8s Adm Course: https://github.com/kodekloudhub/certified-kubernetes-administrator-course
+
+- MLOps Course: https://www.youtube.com/playlist?list=PLupK5DK91flV45dkPXyGViMLtHadRr6sp
+
+- AI-native Software Developer Course: https://themodernsoftware.dev/
+
+- Understanding TPUs: https://considerthebulldog.com/tte-tpu/
+
+- COmplex Analysis Book: https://complex-analysis.com/content/table_of_contents.html
+
+- Manga Linear Algebra Book: https://web.math.ucsb.edu/~marcosreyes/teaching/Fall2018-4A/The%20Manga%20Guide%20to%20Linear%20Algebra.pdf
+
+- AsyncIO for AI Apps Course: https://abdulsaleh.github.io/asyncio-for-ai/introduction.html
+
+- Math Foundations of Geometric DL: https://arxiv.org/pdf/2508.02723
+
+- LLMs History and Implementation: https://lazarzivanovicc.github.io/blogs/blog_1.html
+
+- NNs meet Quantum Field Theory: https://arxiv.org/pdf/2008.08601
+
+- Fundamentals of building LLM Agents: https://arxiv.org/pdf/2510.09244
+
+- Robot Learning Course: https://www.cs.cornell.edu/courses/cs4756/2025sp/
+
+- AI For Autonomous Robots: Bridging Theory And Practice: https://timothy-wiley.github.io/essai.html
+
+- Secure Software Design Course: https://sites.google.com/unical.it/inf-ssd
+
+- Cybersecurity Offense & Defense Course: https://sites.google.com/unical.it/inf-cod
+
+- Knowledge Representation Course: https://sites.google.com/unical.it/inf-kr
+
+- DL on Graphs: https://yaoma24.github.io/dlg_book/dlg_book.pdf
+
+- Lesssons learned building a high performance storage engine: https://tidesdb.com/articles/what-i-learned-building-a-storage-engine-that-outperforms-rocksdb/
+
+- Causal ML Book: https://www.causalmlbook.com/
+
+- RL Algorithms explained: https://cameronrwolfe.substack.com/
+
+- Intro to DL: https://academicweb.nd.edu/~lemmon/courses/deep-learning/lecture-book/deep-learning-book-2025.pdf
+
+- Sandboxes for AI: https://www.luiscardoso.dev/blog/sandboxes-for-ai
+
+- Intro 2 Flow Matching & Diffusion Models: https://diffusion.csail.mit.edu/2025/index.html#notes
+
+- Diffusion Models from Scratch: https://www.youtube.com/watch?v=B4oHJpEJBAA
+
+- Diffusion Models Course: https://www.youtube.com/playlist?list=PLMXUGj9FrocjWlh8GapcbfACJUPooTQA4
+
+- Formal Aspects of Language Modeling: https://arxiv.org/abs/2311.04329
+
+- LLM Systems Course: https://csdiy.wiki/en/%E6%B7%B1%E5%BA%A6%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/CMU11-868/
+
+- A guide to learning CS: https://beej.us/guide/bglcs/html/#on-the-term-computer-science
+
+- Intor to ML Book: https://www.cis.jhu.edu/~younes/machine_learning.pdf
+
+- Memory Addressing and Memory Mapped I/O: https://medium.com/@tom_84912/memory-addressing-and-memory-mapped-i-o-7b602958da94
+
+- Fairness & ML Slides: https://fairmlbook.org/pdf/fairmlbook.pdf
+
+- Probabilisitc ML Advanced Topics Book: https://probml.github.io/pml-book/book2.html
+
+- Visualizing Parallelism in Trasformers: https://ailzhang.github.io/posts/distributed-compute-in-transformer/
+
+- K8s Course: https://rodrigogmartins.github.io/kubernetes-from-zero-to-production/
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
