@@ -1917,7 +1917,19 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 
 - K8s Course: https://rodrigogmartins.github.io/kubernetes-from-zero-to-production/
 
+- Best Alphazero Explanation: https://timallanwheeler.com/blog/2017/11/02/alphago-zero-how-and-why-it-works/
 
+- Computer Organization & Architecture Course: https://computation-structures.github.io/course/
+
+- Find your first open source contribution: https://felipeness.github.io/opensource-guide/pt/
+
+- Awesome Designing AI Chip Hardware and Software: https://docs.google.com/document/d/1dZ3vF8GE8_gx6tl52sOaUVEPq0ybmai1xvu3uk89_is/edit?tab=t.0#heading=h.rduzhxi11vcn
+
+- AI-assisted Chip Design Youtube Course: https://www.youtube.com/watch?v=EtIWwJWN7M8&list=PLa-FBNGUMtfPExbq0Mpvyw192ydTIJPv9
+
+- Edge ML Book: https://6371311.fs1.hubspotusercontent-na1.net/hubfs/6371311/Content%20and%20Docs/AI%20at%20the%20Edge%20-%20full%20book%20-%20compressed.pdf
+
+- Intro to Paralel Programming Book: https://www.ime.usp.br/~alvaroma/ucsp/parallel/an_introduction_to_parallel_programming_-_peter_s._pacheco.pdf
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
