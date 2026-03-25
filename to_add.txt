@@ -1919,6 +1919,7 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 
 - Best Alphazero Explanation: https://timallanwheeler.com/blog/2017/11/02/alphago-zero-how-and-why-it-works/
 
+
 - Computer Organization & Architecture Course: https://computation-structures.github.io/course/
 
 - Find your first open source contribution: https://felipeness.github.io/opensource-guide/pt/
@@ -1931,6 +1932,43 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 
 - Intro to Paralel Programming Book: https://www.ime.usp.br/~alvaroma/ucsp/parallel/an_introduction_to_parallel_programming_-_peter_s._pacheco.pdf
 
+- Modern MLE/LLME Interview Guide: https://www.yuan-meng.com/posts/mle_interviews_2.0/
+
+- Preparing for ML Infra System Design Interviews: https://www.yuan-meng.com/posts/ml_infra_interviews/
+
+- Cincurrency and Multithreading 101: https://www.yuan-meng.com/posts/concurrency_101/
+
+- LLM Finetuning Youtube Course: https://www.youtube.com/watch?v=CcrC5zSv1iA
+
+- Awesome LLM & Agent Infra Course: https://cseweb.ucsd.edu/~yiying/cse291a-fall25/
+
+- Agentic RAG Infra Video: https://www.youtube.com/watch?v=1T9pVXVpJmU
+
+- LLMOps Video Course: https://www.youtube.com/watch?v=jhKq8WQmgH4
+
+- Harness Engineering for Coding Agents: https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents
+
+- Pair Programming: https://martinfowler.com/articles/on-pair-programming.html
+
+- Transformer Explained: https://www.vizuaranewsletter.com/p/the-transformers?r=5b5pyd&utm_campaign=post&utm_medium=web
+
+- Building your own git from scratch: https://wyag.thb.lt/
+
+- VLMs understood visually: https://www.vizuaranewsletter.com/p/vision-transformers?r=5b5pyd&utm_campaign=post&utm_medium=web
+
+- Choosing Spot Instances on AWS Guide: https://spotuai.com.br/
+
+- how to avoid ml pitafalls: https://media.licdn.com/dms/document/media/v2/D4D1FAQEIv5SmTG0Y0Q/feedshare-document-pdf-analyzed/B4DZ0WdwU9GoAY-/0/1774198393397?e=1775088000&v=beta&t=trYbr7dnacw4zrcJegSDMUIEHnoSQ3gSoi06ODxbmz8
+
+- how to build an agentic rag asustem for legla document QA: https://www.linkedin.com/pulse/how-build-so-agentic-legal-rag-system-azamat-yelmagambetov-w1fhc/?trackingId=3nJ5vkPrwFcFqQqnYTbvhQ%3D%3D
+
+- awesome agentic ai course: https://rdi.berkeley.edu/agentic-ai/f25
+
+- awesome embodied ai safety course: https://abajcsy.github.io/embodied-ai-safety/
+
+- awesome human-robot interaction course: https://abajcsy.github.io/human-robot-interaction/
+
+- awesome LLMOps course: https://scalable-ai.eecs.berkeley.edu/
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
