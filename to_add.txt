@@ -1274,7 +1274,7 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 
 - robotic systems book: https://motion.cs.illinois.edu/RoboticSystems/
 
-- adaptive MPC ==  Model-based RL
+- adaptive MPC == Model-based RL
 
 - robotics workshop: https://www.youtube.com/watch?v=0OdOvkm5Xi4
 
@@ -1919,7 +1919,6 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 
 - Best Alphazero Explanation: https://timallanwheeler.com/blog/2017/11/02/alphago-zero-how-and-why-it-works/
 
-
 - Computer Organization & Architecture Course: https://computation-structures.github.io/course/
 
 - Find your first open source contribution: https://felipeness.github.io/opensource-guide/pt/
@@ -1968,7 +1967,11 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 
 - awesome human-robot interaction course: https://abajcsy.github.io/human-robot-interaction/
 
-- awesome LLMOps course: https://scalable-ai.eecs.berkeley.edu/
+- awesome LLM Systems & LLMOps course: https://scalable-ai.eecs.berkeley.edu/
+
+- awesome LLM Systems & LLMOps course: https://training-large-models-course.github.io/
+
+- branch & bound technique for combinatorial optimization: https://media.licdn.com/dms/document/media/v2/D561FAQGSlGfUVdQeKA/feedshare-document-sanitized-pdf/B56Z0vks4BGsA8-/0/1774619644469?e=1775235600&v=beta&t=HIK2EGHdd01a5q8x7euHHDWwTcgnxTeXQrtJaYWKiMM
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
