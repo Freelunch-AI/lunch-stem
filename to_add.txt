@@ -1972,6 +1972,18 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 - awesome LLM Systems & LLMOps course: https://training-large-models-course.github.io/
 
 - branch & bound technique for combinatorial optimization: https://media.licdn.com/dms/document/media/v2/D561FAQGSlGfUVdQeKA/feedshare-document-sanitized-pdf/B56Z0vks4BGsA8-/0/1774619644469?e=1775235600&v=beta&t=HIK2EGHdd01a5q8x7euHHDWwTcgnxTeXQrtJaYWKiMM
+
+- Awesome Frontiern Model Training Methodologies: https://djdumpling.github.io/2026/01/31/frontier_training.html
+
+- Rowhammer attacks on CPU/GPU Memory: https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/
+
+- Awesome Components of a Coding Agent: https://magazine.sebastianraschka.com/p/components-of-a-coding-agent?utm_campaign=post-expanded-share&utm_medium=web&triedRedirect=true
+
+- Adaptive Guardrails for Agents: https://magazine.sebastianraschka.com/p/components-of-a-coding-agent?utm_campaign=post-expanded-share&utm_medium=web&triedRedirect=true
+
+- On-demand container image building for fast contianer start up: https://www.union.ai/blog-post/we-cut-container-cold-boot-from-minutes-to-seconds-heres-how
+
+- Modern Operating Systems Book: https://github.com/lighthousand/books/blob/master/Modern%20Operating%20Systems%204th%20Edition--Andrew%20Tanenbaum.pdf
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
