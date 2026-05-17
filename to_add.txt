@@ -1984,6 +1984,24 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 - On-demand container image building for fast contianer start up: https://www.union.ai/blog-post/we-cut-container-cold-boot-from-minutes-to-seconds-heres-how
 
 - Modern Operating Systems Book: https://github.com/lighthousand/books/blob/master/Modern%20Operating%20Systems%204th%20Edition--Andrew%20Tanenbaum.pdf
+
+- Awesome ML Chips & COmpilers Symposium: https://chips-compilers-mlsys-22.github.io/
+
+- The JAX/XLA/TPU Stack: https://patricktoulme.substack.com/
+
+- Awesome GPU Programming Interactive Course: https://brrrviz.com/
+
+- Awesome Numerical Methods for Data science Book: https://www.cs.cornell.edu/~bindel/nmds/
+
+-  How to build an agent: https://ampcode.com/notes/how-to-build-an-agent
+
+- Recursive Language Models: https://karthik-ragunath-ananda-kumar-blogs.notion.site/Recursive-Reasoning-Models-Understanding-The-Intuitions-From-Code-Implementation-POV-35e11b898cc480e19dd8d1800a50a92e
+
+- Disaggregated Inference blog series: https://www.gomomento.com/blog/disaggregated-inference-part-1-when-and-where-to-route/
+
+- Using CPU & GPU Together in LLM Inference -- Asynchronous Batching Inference: https://huggingface.co/blog/continuous_async
+
+- Awesome MEGA Cornell Virtual Workshops on HPC & AI: https://cvw.cac.cornell.edu/Roadmaps/
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
