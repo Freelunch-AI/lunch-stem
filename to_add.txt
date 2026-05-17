@@ -2002,6 +2002,8 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 - Using CPU & GPU Together in LLM Inference -- Asynchronous Batching Inference: https://huggingface.co/blog/continuous_async
 
 - Awesome MEGA Cornell Virtual Workshops on HPC & AI: https://cvw.cac.cornell.edu/Roadmaps/
+
+- Statistical Physics for DL Lecture Notes: https://media.licdn.com/dms/document/media/v2/D4E1FAQEfopECvQ4CJg/feedshare-document-sanitized-pdf/B4EZ4I6m5iIcA8-/0/1778266043385?e=1779638400&v=beta&t=_EGivMGiuNXnPfO7Ec4nG91PQVUibXb-SIfw-R1o0fY
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
