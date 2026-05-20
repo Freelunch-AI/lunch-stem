@@ -2004,6 +2004,11 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 - Awesome MEGA Cornell Virtual Workshops on HPC & AI: https://cvw.cac.cornell.edu/Roadmaps/
 
 - Statistical Physics for DL Lecture Notes: https://media.licdn.com/dms/document/media/v2/D4E1FAQEfopECvQ4CJg/feedshare-document-sanitized-pdf/B4EZ4I6m5iIcA8-/0/1778266043385?e=1779638400&v=beta&t=_EGivMGiuNXnPfO7Ec4nG91PQVUibXb-SIfw-R1o0fY
+
+- Math Foundations of ML/DL: https://media.licdn.com/dms/document/media/v2/D561FAQH2KWCVje_-Ug/feedshare-document-url-metadata-scrapper-pdf/B56Z5EwjctHkA4-/0/1779270041441?e=1779904800&v=beta&t=Ji6C2zk2-ubWEtDa5Vl74xdKvH_0sgG_I9-H81KfyFU
+
+- Awesome AI (ML/DL/LLM/Agent) Engineering From Scratch Course: https://github.com/rohitg00/ai-engineering-from-scratch
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
