@@ -2009,6 +2009,12 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 
 - Awesome AI (ML/DL/LLM/Agent) Engineering From Scratch Course: https://github.com/rohitg00/ai-engineering-from-scratch
 
+- Rust Course: https://jadnohra.com/learn-rust/
+
+- Transformer in Deth, the life of a token: https://www.aleksagordic.com/blog/transformer
+
+- Monorepo bible: https://monorepo.tools/
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
