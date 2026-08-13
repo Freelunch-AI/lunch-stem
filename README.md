@@ -391,7 +391,7 @@ If you want to contribute to the project, check out our [CONTRIBUTING.md](https:
 
 12. **[d]** Migrate from *Google Drive* (I was already paying for 2TB, so that's why I used it) to a better storage option (e.g., *S3*).
 
-13. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes by finetuning SLMs. Agents are continually modified to ensure diversity and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
+13. **[d]** Make *AgentPool*: team of diverse agents that make PRs to the *lunchSTEM* repo after internal discussions, asking humans questions and evaluating proposed changes via STEM benchamarks. Agents are continually finetuned to ensure diversity between them (tema intelligence > individual) and to improve their intelligence based on approved new knowledge added to *lunchSTEM*.
 
 ## 🗑️ Content Removal and Credit Attribution Requests
 
