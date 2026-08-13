@@ -2015,6 +2015,32 @@ Books: https://eng.libretexts.org/Bookshelves/Computer_Science
 
 - Monorepo bible: https://monorepo.tools/
 
+- AI Engineer's guide to choosing GPU: https://read.theaimerge.com/p/an-ai-engineers-guide-to-choosing
+
+- GPU Programming for high-performance AI Book: https://mlc.ai/modern-gpu-programming-for-mlsys/#
+
+- Writing an OS in Rust Course: https://os.phil-opp.com/
+
+- Intro to wafer scle compute: https://www.nishaanthreddy.com/blog/tokens-per-second-race/
+
+- XLA ML Compiler explained: https://hiraditya.github.io/posts/a-tour-of-xla-where-mlir-lives/
+
+- LLM Inference Handbook: https://handbook.modular.com/
+
+- LLM Engineer's Handbook: https://promptcraze.com/wp-content/uploads/2025/02/LLM-Engineers-Handbook.pdf
+
+- Awesome Stanford self-improving LLM Agents Course: https://cs329a.stanford.edu/
+
+- Computer networking 
+	- youtube course: https://www.youtube.com/watch?v=fQbBPa0ADvs
+	- course: https://mrcet.com/downloads/digital_notes/CSE/III%20Year/COMPUTER%20NETWORKS%20NOTES.pdf
+	- book: https://jcer.in/jcer-docs/E-Learning/Digital%20Library%20/E-Books/Data-Communications-and-Network-5e.pdf
+	- course: https://netbook.cs.purdue.edu/Lecture_Notes.pdf
+	- book: https://networking.harshkapadia.me/files/books/computer-networks-tanenbaum-5th-edition.pdf
+	- book: https://ebooks.karbust.me/Technology/Computer%20Networking%20A%20Top-Down%20Approach,%208th%20Edition%20by%20James%20F.%20Kurose,%20Keith%20W.%20Ross-Pearson-9780136681557.pdf
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
